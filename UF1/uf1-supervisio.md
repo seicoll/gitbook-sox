@@ -62,11 +62,13 @@ Teniu **quatre vies per accedir** a l’administrador de tasques:
 * Clicar a Inicio, escriure _**taskmgr**_ en el quadre de text, clicar a Iniciar la cerca i prémer Enter.
 * Clicar amb el botó dret del ratolí a la barra d’eines i seleccionar l’opció _**Administrador de tasques**_.
 
-### Administrador de serveis
+### Administrador de serveis _[Services]_
 
 Els **serveis** són programes que funcionen sense interactuar directament amb l'usuari.
 
 Normalment són programes que s'arranquen amb el sistema operatiu.
+
+L'eina **Serveis** mostra l'estat dels serveis i permet gestionar-los.
 
 Cada servei el podem configurar: Ens posem a sobre &gt; boto dret ratolí &gt; propietats:
 
@@ -84,7 +86,7 @@ Existeixen quatre **tipus d’arrencada d’un servei**:
 * **Automàtic:** El servei que s’iniciarà quan l’equip s’engegui.
 * **Automàtic \(inici retardat\):** el servei s’inicia quan l’equip està en marxa i tots els serveis automàtics \(marcats amb l’opció anterior\) estan funcionant. 
 * **Manual:** el servei s’haurà d’iniciar manualment.
-* **Deshabilitat:** el servei estarà desactivat.
+* **Deshabilitat:** el servei estarà desactivat i no es pot engegar.
 
 > Tenir executant-se serveis que no fem servir consumirà recursos innecessaris.
 
@@ -102,7 +104,16 @@ Existeixen tres opcions de **recuperació d’un servei**:
 
 ### Registre d’esdeveniments _[Event Viewer]_
 
-El **registre d’esdeveniments** posa a disposició de l’administrador informació historial, amb la qual pot localitzar problemes de seguretat i del sistema.
+El **registre d’esdeveniments** mostra a l’administrador informació sobre els error o avisos que s'han produït.
+
+Els principals són:
+* Registres de Windows
+  * Aplicacions
+  * Seguretat
+  * Instal·lació
+  * Sistema
+* Registres d'aplicacions i serveis
+  * Esdeveniments de hardware
 
 ![](/assets/EventViewer.png)
 
