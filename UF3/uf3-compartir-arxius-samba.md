@@ -42,9 +42,7 @@ Per instal·lar el servei i el client Samba a l'Ubuntu
 
 ## Configuració del servidor Samba
 
-La configuració del servidor **Samba** es fa, principalment, a partir del **fitxer de configuració**: 
-
-`/etc/samba/smb.conf`
+La configuració del servidor **Samba** es fa, principalment, a partir del **fitxer de configuració** `/etc/samba/smb.conf`.
 
 ```
 [global]
