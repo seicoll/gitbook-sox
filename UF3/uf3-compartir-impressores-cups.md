@@ -52,6 +52,8 @@ El paquet **cups-pdf** ens instal·la una eina que ens permet crear fitxers PDF 
 
 Per instal·lar una impressora en el servidor CUPS hem de seleccionar l’opció **Add printer** de la pestanya **Administration**.
 
+![](/assets/CUPSAdministration.png)
+
 1. Seleccionem la impressora a instal·lar. Per exemple l’impressora local **CUPS-PDF (Virtual PDF Printer)**.
 2. Ens demanarà un nom, descripció i ubicació de la impressora i marcarem l’opció de **“Share This Printer”**.
 3. Ens demanarà el **fabricant **de la impressora. Seleccionem la marca **Generic**.
