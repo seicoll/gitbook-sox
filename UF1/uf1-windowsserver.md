@@ -1,11 +1,16 @@
 # Windows Server
 
-És un sistema operatiu dissenyat per servidors que treballa sobre un model denominat domini.
-Un domini és un conjunt d’equips (clients i sevidors) que comparteixen una política de seguretat i una base de dades comú. Cada domini té un nom únic.
-El controlador de domini és una part essencial dels sistemes operatius de Microsoft. S’encarrega fonamentalment d’emmagatzemar les parelles usuari-contrasenya dels comptes d’usuari que tenen accés al domini de xarxa.
-Aquest controlador centralitza la funció d’autenticar l’accés al domini
-
 ![Windwos Server 2012](/assets/WindowsServer2012-2.png)
+
+És un sistema operatiu dissenyat per servidors que treballa sobre un model denominat **domini**.
+
+Un **domini **és un conjunt d’equips (clients i sevidors) que comparteixen una política de seguretat i una base de dades comú. 
+
+Cada domini té un nom únic.
+
+El **controlador de domini** és una part essencial dels sistemes operatius de Microsoft. S’encarrega fonamentalment d’emmagatzemar les parelles usuari-contrasenya dels comptes d’usuari que tenen accés al domini de xarxa.
+
+Aquest controlador centralitza la funció d’autenticar l’accés al domini
 
 ## Microsoft Windows Server 2012 R2
 
