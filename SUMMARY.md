@@ -8,6 +8,9 @@
 * [Instal·lació Windows Server](UF1/uf1-instalacio-windowsserver.md)
 * [Supervisió en Windows Server](UF1/uf1-supervisio.md)
 
+### Gestió de dominis. Active Directory
+* [Introducció als dominis](UF1/uf1-introduccio-dominis.md)
+
 ## UF2. Sistemes operatius lliures en xarxa
 
 ## UF3. Compartició de recursos i seguretat
