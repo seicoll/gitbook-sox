@@ -38,3 +38,17 @@ L'**Administrador del servidor**,  amb una única eina, permet als administrador
 * Determinar l'**estat del servidor**.
 * Identificar **esdeveniments crítics**. 
 * Analitzar i solucionar **problemes o errors de configuració**.
+
+### Administrador de tasques _[Task Manager]_
+
+L’**administrador de tasques** és l’eina principal per administrar processos i aplicacions del sistema.
+L’**administrador de tasques** disposa de cinc pestanyes. Aquestes pestanyes us ajudarà a administrar **processos, rendiment, usuaris i serveis**.
+
+![](/assets/TaskManager.png)
+
+Teniu **quatre vies per accedir** a l’administrador de tasques:
+
+* Combinar les tecles **_Control, Majúscules i Esc_**.
+* Combinar les tecles ****Control, Alt i Supr**** i escollir l’opció Iniciar l’administrador de tasques.
+* Clicar a Inicio, escriure **_taskmgr_** en el quadre de text, clicar a Iniciar la cerca i prémer Enter.
+* Clicar amb el botó dret del ratolí a la barra d’eines i seleccionar l’opció _**Administrador de tasques**_.
