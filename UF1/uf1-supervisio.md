@@ -42,7 +42,7 @@ L'**Administrador del servidor**,  amb una única eina, permet als administrador
 ### Administrador de tasques _[Task Manager]_
 
 L’**administrador de tasques** és l’eina principal per administrar processos i aplicacions del sistema.
-L’**administrador de tasques** disposa de cinc pestanyes. Aquestes pestanyes us ajudarà a administrar **processos, rendiment, usuaris i serveis**.
+Disposa de cinc pestanyes. Aquestes pestanyes us ajudaran a administrar **processos, rendiment, usuaris i serveis**.
 
 ![](/assets/TaskManager.png)
 
