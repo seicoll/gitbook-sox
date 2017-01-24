@@ -46,7 +46,7 @@ Una vegada s’ha instal·lat el sistema operatiu caldrà proporcionar la inform
 ## Post instal·lació. Funcionalitats i característiques
 
 Instal·lar noves funcionalitats o noves característiques: 
-* **Funcionalitats o rols:** Conjunt de programes que fan una funció específica per diferents usuaris o altres equips d'una xarxa. 
+* **Funcions de servidor o rols:** Conjunt de programes que fan una funció específica per diferents usuaris o altres equips d'una xarxa. Un servidor pot realitzar més d'una funció o rol.
   * Servidor de fitxers. 
   * Servidor d'aplicacions. 
   * Servidor de correu. 
@@ -54,7 +54,13 @@ Instal·lar noves funcionalitats o noves característiques:
  * Control de domini. 
   * Servidor DNS: realitza la resolució de noms del domini. 
   * Servidor DHCP: realitza l’assignació direccions IP automàtiques.
-* **Característiques:** són programes per complementar o augmentar la funcionalitat del servidor. 
+  * etc.
+* **Serveis de funcions** (serveis de rol): afegeixen més funcionalitat a un servidor. 
+  * Alguns rols, com per exemple el de servidor de DNS, només tenen una funcionalitat, i per tant no tenen serveis de rol disponibles. 
+  * Altres, com per exemple el de servidor d'escriptori remot, tenen diferents serveis de rol que es poden afegir en funció de les necessitats de l'empresa.
+* **Característiques:** són programes per complementar o augmentar la funcionalitat del servidor però no tenen cap relació amb els rols que desenvolupa. 
+  * Client TFTP
+  * Client Telnet
 
 > Un servidor es pot especialitzar en una única funció o en diverses.
 
