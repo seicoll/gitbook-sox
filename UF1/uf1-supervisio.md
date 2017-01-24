@@ -25,3 +25,5 @@ El sistema operatiu Microsoft Windows Server 2012 us proporciona una sèrie d’
 * **Administració de tasques**
 * **Administració de serveis**
 * **Registre d’esdeveniments**
+
+### Administrador del servidor
