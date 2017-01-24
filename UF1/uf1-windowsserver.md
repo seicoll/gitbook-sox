@@ -13,10 +13,18 @@ El llançament comercial de **Microsoft Windows Server 2012 R2** va tenir lloc l
 Actualment la versió més recent és la Microsoft Windows Server 2016.
 
 Els 3 trets diferenciadors que cal destacar en aquest sistema operatiu són els següents:
-  * Utilització d’una tècnica modular. Dissenyat de manera independent els components del sistema operatiu. Permet eliminar o instal·lar components nous amb facilitat.
-  * Entorn de preinstal·lació i prearrencada. 
-  * Control de comptes d’usuari. Les aplicacions s’executaran sempre sota els privilegis d’un compte d’usuari. El control de comptes d’usuari (UAC, user account control) millora la seguretat de l’equip.
-  * L’ús d’un nou sistema d’arxius ReFS.
+
+  * **Utilització d’una tècnica modular**. Dissenyat de manera independent els components del sistema operatiu. Permet eliminar o instal·lar components nous amb facilitat.
+  * **Entorn de preinstal·lació i prearrencada**. 
+  * **Control de comptes d’usuari**. Les aplicacions s’executaran sempre sota els privilegis d’un compte d’usuari. El control de comptes d’usuari (UAC, user account control) millora la seguretat de l’equip.
+  * L’ús d’un **nou sistema d’arxius ReFS**.
+
+Cal tenir present que una màquina gestionada amb el Microsoft Server 2012:
+
+  * No pot ni hivernar ni entrar en mode suspès.
+  * No es pot restaurar.
+  * Té limitacions pel que fa a l’estalvi energètic.
+
 
 ![](/assets/WindowsServer2012Icon.png)
 
