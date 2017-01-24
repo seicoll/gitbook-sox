@@ -42,7 +42,7 @@ amb el paràmebre `--remote-admin` que habilita l'accés remot però només des 
 
 `sudo cupsctl --remote-admin`
 
-### Instal·lació de la impressora CUPS-PDF en xarxa
+## Instal·lació de la impressora CUPS-PDF en xarxa
 
 El paquet **cups-pdf** ens instal·la una eina que ens permet crear fitxers PDF a partir del CUPS, com si fos una impressora. És similar al PDFCreator del Windows.
 
