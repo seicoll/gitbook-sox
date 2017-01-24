@@ -19,7 +19,7 @@ Per poder-lo configurar i administrar el servidor CUPS disposes de:
 La interfície web permet afegir, cercar i eliminar impressores i controlar els treballs en les cues d’impressió.
 
 S'hi pot accedir des de:
-> http://localhost:631
+> http://IP_servidor:631
 
 ## Permetre la configuració remota a través de la interfície web
 
@@ -30,6 +30,7 @@ amb el paràmebre `--remote-admin` que habilita l'accés remot però només des 
 
 `sudo cupsctl --remote-admin`
 
+## Instal·lació d'una impressora en xarxa
 
 
 
