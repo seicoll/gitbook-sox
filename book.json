@@ -1,12 +1,16 @@
 {
-  "plugins": [
-    "etoc"
-  ],
-  "pluginsConfig": {
-    "etoc": {
-      "mindepth": 2,
-      "maxdepth": 4,
-      "notoc": false
+    "plugins": [
+        "etoc",
+        "styles-sass"
+    ],
+    "pluginsConfig": {
+        "etoc": {
+            "mindepth": 2,
+            "maxdepth": 4,
+            "notoc": false
+        }
+    },
+    "styles": {
+        "pdf": "./styles/pdf.sass"
     }
-  }
 }
