@@ -32,10 +32,14 @@ amb el paràmebre `--remote-admin` que habilita l'accés remot però només des 
 
 ## Instal·lació d'una impressora en xarxa
 
-
-
-
+## Instal·lació de la impressora CUPS-PDF en xarxa
 
 El que sí instal·larem és el paquet cups-pdf que ens instal·la una eina que ens permet crear fitxers PDF a partir del CUPS, com si fos una impressora. 
 És similar al PDFCreator del Windows.
 sudo apt-get install cups-pdf
+
+
+## Instal·lació en el client d'una impressora compartida
+
+
+
