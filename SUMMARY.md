@@ -22,5 +22,15 @@
 
 ## UF3. Compartició de recursos i seguretat
 
+* Compartir recursos en xarxa i seguretat en sistemes de propietat
+  * [Compartir arxius i carpetes en Windows]()
+  * [Compartir impressores en Windows]()
+* Compartir recursos en xarxa i seguretat en sistemes de lliures
+  * [Compartir arxius i carpetes amb NFS]()
+  * [Compartir impressores amb CUPS]()
+
+  
+
+
 ## UF4. Integració de sistemes operatius
 
