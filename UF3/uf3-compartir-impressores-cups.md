@@ -1,6 +1,18 @@
 # Compartir impressores amb CUPS
 
-## Instal·lació i configuració del CUPS
+## Servei d'impressió CUPS
+
+**CUPS _(common Unix printing system)_** eina que ens proporciona un sistema d’impressió que ens permet **centralitzar, compartir i gestionar impressores** instal·lades en una màquina que fa les tasques de servidor d’impressió.
+
+Permet que un ordinador actuï com a servidor d’impressió.
+
+Un ordinador que executa el **CUPS **actua com un servidor que pot acceptar tasques d’impressió des d’altres ordinadors clients, les processa i les envia a la impressora apropiada.
+La gran majoria de distribucions GNU/Linux utilitzen el CUPS com a sistema d’impressió per defecte.
+
+Quan el **CUPS **es fa servir amb el **Samba**, les impressores també es poden utilitzar en ordinadors **Windows **remots per imprimir per mitjà de la xarxa.
+
+
+### Instal·lació i configuració del CUPS
 
 La instal·lació de CUPS en Ubuntu no és necessaria perquè ja ve instal·lat per defecte. 
 
@@ -10,7 +22,7 @@ Es podria instal·lar amb la comanda:
 
 `sudo apt-get install cups`
 
-## Administrar el servidor d'impressió CUPS
+### Administrar el servidor d'impressió CUPS
 
 Per poder-lo configurar i administrar el servidor CUPS disposes de:
 * **comandes **de l’intèrpret d’ordres
@@ -21,7 +33,7 @@ La interfície web permet afegir, cercar i eliminar impressores i controlar els 
 S'hi pot accedir des de:
 > http://IP_servidor:631
 
-## Permetre la configuració remota a través de la interfície web
+### Permetre la configuració remota a través de la interfície web
 
 La interfície web per l'administració remote de CUPS està per defecte deshabilitada. 
 
