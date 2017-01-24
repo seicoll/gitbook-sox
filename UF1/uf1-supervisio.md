@@ -17,3 +17,11 @@ Algunes de **tasques d'un administrador de sistemes **d'informació:
   * els possibles problemes generats pel programari
   * etc
 
+## Eines de supervisió
+
+El sistema operatiu Microsoft Windows Server 2012 us proporciona una sèrie d’**eines** i facilitats perquè pugueu **administrar el sistema** de manera efectiva i ràpida:
+
+* **Administrador del servidor**
+* **Administració de tasques**
+* **Administració de serveis**
+* **Registre d’esdeveniments**
