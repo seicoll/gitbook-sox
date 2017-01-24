@@ -23,6 +23,13 @@ S'hi pot accedir des de:
 
 ## Permetre la configuració remota a través de la interfície web
 
+La interfície web per l'administració remote de CUPS està per defecte deshabilitada. 
+
+Per permetre l'accés remot utilitzarem la comanda `cupsctl`.
+amb el paràmebre `--remote-admin` que habilita l'accés remot però només des de la xarxa local
+
+`sudo cupsctl --remote-admin`
+
 
 
 
