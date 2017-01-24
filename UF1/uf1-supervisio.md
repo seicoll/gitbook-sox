@@ -44,7 +44,14 @@ L'**Administrador del servidor**,  amb una única eina, permet als administrador
 ### Administrador de tasques _\[Task Manager\]_
 
 L’**administrador de tasques** és l’eina principal per administrar processos i aplicacions del sistema.  
+
 Disposa de cinc pestanyes. Aquestes pestanyes us ajudaran a administrar **processos, rendiment, usuaris i serveis**.
+
+* **Processos**: aplicacions d'usuari i processos que s'estan executant en segon pla (processos del sistema), i la utilització què estan fent del sistema (CPU i memòria)
+* **Detalls**: programes associats a les aplicacions. Permet canviar la prioritat de cada un
+* **Usuaris**: quins usuaris estan connectats i quines aplicacions estan utilitzant; també es poden desconnectar
+* **Serveis**: quins serveis estan engegats o aturats. Permet aturar o iniciar serveis. També es pot obrir l'administrador de serveis per gestionar els serveis de forma més detallada
+* **Rendimient**: veure la utilització global de la CPU, la memòria i la xarxa; des d'aquest apartat es pot obrir el Monitor de recursos, que permet veure amb més detall la utilització de la CPU, la memòria, la xarxa i els discos
 
 ![](/assets/TaskManager.png)
 
