@@ -1,0 +1,36 @@
+# Instal·lació Windows Server 2012 R2
+
+## Opcions d'instal·lació
+
+* **Opció Instal·lació Servidor amb GUI _[Grafic User Interface]_**
+
+  * S’instal·la la interfície d’usuari estàndard.
+  
+* **Opció Instal·lació Server Core. **
+
+  * No s’instal·la la interfície d’usuari estàndard i el servidor s’administra amb la línia de comandes (Windows PowerShell) o bé remotament.
+  * És l’opció predeterminada i recomanada per Micrososft. 
+  * **Avantatges**: requereix menys espai de disc (uns 4GB menys) i s’augmenta la seguretat.
+
+> **Es pot passar d’una opció a l’altra** en qualsevol moment.
+
+> Podem instal·lar l’opció Servidor amb GUI al principi, utilitzar les eines gràfiques per configurar el servidor, i després, canviar a l’opció instal·lació Server Core.
+
+## Minimal Server Interface
+
+La possibilitat de passar d’una instal·lació a una altra, crea una instal·lació intermitja anomenda **Mininal Server Interface**.
+
+Aquesta interface és el resultat d’iniciar amb una instal·lació** Servidor amb GUI** i després canviar a una instal·lació **Server Core**. 
+
+Amb **Minimal Server Interface**, la Consola d’Administració Microsoft _[Microsoft Management Console (MMC)]_, l’Administrador del Servidor i una part del Tauler de Control, continuen instal·lats.
+
+![Minimal Server Interface](/assets/WindowsServerMinimal.png)
+
+## Tipus d’instal·lació
+
+Una vegada escollit l’opció d’instal·lació, cal que decidiu si fareu una instal·lació des de zero o bé optareu per actualitzar el vostre sistema.
+
+* **Instal·lació des de zero: **El sistema operatiu que hi hagi a l’equip se substituirà completament, de manera que les configuracions i les aplicacions es perdran.
+* **Actualització:** el sistema operatiu s’instal·la i es fa una migració de les configuracions, els documents i les aplicacions.
+
+> Si durant el procés d’instal·lació en falta alguna informació que necessitem per continuar. En el moment que es demana On es vol instal·lar Windows? es pot accedir a la línia de comandes prement Majúscules i F10.
