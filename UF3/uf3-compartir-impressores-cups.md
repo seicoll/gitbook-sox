@@ -46,24 +46,46 @@ amb el paràmebre `--remote-admin` que habilita l'accés remot però només des 
 
 ## Instal·lació de la impressora CUPS-PDF en xarxa
 
-El paquet **cups-pdf** ens instal·la una eina que ens permet crear fitxers PDF a partir del CUPS, com si fos una impressora. És similar al PDFCreator del Windows.
+El paquet **cups-pdf** ens instal·la una impressora virtual que permet crear fitxers PDF. Quan s'envia un document a aquesta impressora, enlloc d'imprimir-se, es converteix a PDF i es guarda en una carpeta predeterminada. 
+
+És similar al PDFCreator del Windows.
 
 `sudo apt-get install cups-pdf`
+
+### Afegir la impressora CUPS-PDF en el servidor CUPS
 
 Per instal·lar una impressora en el servidor CUPS hem de seleccionar l’opció **Add printer** de la pestanya **Administration**.
 
 ![](/assets/CUPSAdministration.png)
 
 1. Seleccionem la impressora a instal·lar. Per exemple l’impressora local **CUPS-PDF (Virtual PDF Printer)**.
-2. Ens demanarà un nom, descripció i ubicació de la impressora i marcarem l’opció de **“Share This Printer”**.
+2. Cal posar un nom a la impressora, i si es vol, una descripció i lloc on es troba la impressora. 
+  * També cal marcar l’opció de **“Share This Printer”** per compartir-la.
 3. Ens demanarà el **fabricant **de la impressora. Seleccionem la marca **Generic**.
 4. Seguidament, ens demanarà pel **model d'impressora** per instal·lar els controladors més adequats. 
-També, permet especificar aquests controladors mitjançant un fitxer de text en format PPD (PostScript printer description).
-Seleccionem el model **Generic CUPS-PDF Printer (en)**.
+  * També, permet especificar aquests controladors mitjançant un fitxer de text en format PPD (PostScript printer description).
+  * Seleccionem el model **Generic CUPS-PDF Printer (en)**.
 5. Si s’instal·la correctament, apareixerà una pantalla que ens permetrà configurar les** opcions generals d’impressió** de la impressora.
 6. Amb això ja tenim la impressora configurada.
 
+### Configuració del directori on s'envien els documents PDF
 
+La configuració es troba a l'arxiu `/etc/cups/cups-pdf.conf`, en el paràmetre **Out**.
+
+En el cas d'Ubuntu, envia els documents a una carpeta anomenada **PDF**, dins del directori personal de l'usuari que ha imprès el document (el valor **${HOME}** equival a `/home/usuari`):
+
+`Out  ${HOME}/PDF`
+
+Per motius de seguretat, el programa CUPS només pot escriure en algunes carpetes, i això ho determina la configuració del programa **apparmor**.
+
+### Configuració d'un directori comú on s'envien els documents PDF
+
+Si es vol que tots els document de la impressora **cups-pdf** vagin a una carpeta comuna, per exemple a `/svr/documents/pdf`, primer s'ha de crear la carpeta on s'han d'enviar els documents generats per la impressora cups-pdf, i donar-li permisos de lectura i escriptura per a tothom:
+
+```
+sudo mkdir -p /srv/documents/pdf
+sudo chmod 777 /srv/documents/pdf
+```
 
 
 ## Instal·lació en el client d'una impressora compartida
