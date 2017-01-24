@@ -63,11 +63,3 @@ Instal·lar noves funcionalitats o noves característiques:
   * Client Telnet
 
 > Un servidor es pot especialitzar en una única funció o en diverses.
-
-## Administrador del Servidor _[Server Manager]_
-
-* Permet instal·lar **rols i característiques** _[roles and features]_ del Servidor.
-
-* En Server 2012 el **_Server Manager_** a part de gestionar el servidor local, permet gestionar múltiples servidors.
-
-![Server Manager](/assets/ServerManager.png)
