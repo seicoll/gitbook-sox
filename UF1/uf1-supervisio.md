@@ -52,3 +52,13 @@ Teniu **quatre vies per accedir** a l’administrador de tasques:
 * Combinar les tecles ****Control, Alt i Supr**** i escollir l’opció Iniciar l’administrador de tasques.
 * Clicar a Inicio, escriure **_taskmgr_** en el quadre de text, clicar a Iniciar la cerca i prémer Enter.
 * Clicar amb el botó dret del ratolí a la barra d’eines i seleccionar l’opció _**Administrador de tasques**_.
+
+### Administrador de serveis 
+
+Els **serveis** són programes que funcionen sense interactuar directament amb l'usuari. 
+
+Normalment són programes que s'arranquen amb el sistema operatiu.
+
+Cada servei el podem configurar: Ens posem a sobre > boto dret ratolí > propietats:
+
+![](/assets/services.png)
