@@ -4,8 +4,8 @@
 
 ## UF1. Sistemes operatius propietaris en xarxa
 * [Introducció als sistemes operatius en xarxa](UF1/uf1-introduccio.md)
-* [Windows Server](UF1/uf1-windowsserver.md)
-* [Instal·lació Windows Server](UF1/uf1-instalacio-windowsserver.md)
+  * [Windows Server](UF1/uf1-windowsserver.md)
+  * [Instal·lació Windows Server](UF1/uf1-instalacio-windowsserver.md)
 * [Supervisió en Windows Server](UF1/uf1-supervisio.md)
 
 ### Gestió de dominis. Active Directory
