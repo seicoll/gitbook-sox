@@ -26,5 +26,15 @@ El sistema operatiu Microsoft Windows Server 2012 us proporciona una sèrie d’
 * **Administració de serveis**
 * **Registre d’esdeveniments**
 
-### Administrador del servidor
+### Administrador del servidor _[Server Manager]_
 
+L'**Administrador del servidor** permet veure, en una única pantalla, la informació del sistema, opcions de configuració de seguretat i  les rols i caracterísiques intal·lats i els seus possibles problemes de configuració.
+
+![](/assets/ServerManager.png)
+
+L'**Administrador del servidor**,  amb una única eina, permet als administradors:
+* Veure i modificar els** rols i característiques instal·lats** al servidor.
+* Realitzar tasques d'administració com **iniciar o aturar serveis** i administrar comptes d'usuari locals.
+* Determinar l'**estat del servidor**.
+* Identificar **esdeveniments crítics**. 
+* Analitzar i solucionar **problemes o errors de configuració**.
