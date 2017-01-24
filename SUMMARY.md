@@ -28,7 +28,5 @@
   * [Compartir impressores amb CUPS](UF3/uf3-compartir-impressores-cups.md)
   * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
 
-
-
 ## UF4. Integració de sistemes operatius
 

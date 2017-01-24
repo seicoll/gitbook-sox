@@ -1,4 +1,4 @@
-# Compatir arxiu i carpetes amb SAMBA
+# Compatir arxius i carpetes amb SAMBA
 
 ## Introducció
 
