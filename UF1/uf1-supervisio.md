@@ -97,3 +97,15 @@ Existeixen tres opcions de **recuperació d’un servei**:
 
 El **registre d’esdeveniments** posa a disposició de l’administrador informació historial, amb la qual pot localitzar problemes de seguretat i del sistema.
 
+![](/assets/EventViewer.png)
+
+## Actualitzacions
+
+Tant important és la monitorització com **l’actualització **dels components del Sistema Operatiu.
+
+**Tipus d'actualitzacions:** 
+
+  * **Pedaç, “Parches” (Hot fixes)**: Un fitxer que modifica el codi de programes intentant solucionar problemes de seguretat trobats en el programa fins el moment, intenta no modificar el funcionament del programa. 
+  * **Services pack (SP)**: Consteix en un conjunt de pedaços que actualitzen, corregeixen i milloren aplicacions i sistemes operatius.
+  
+Des de **Windows Update** existeixen **quatre configuracions** possibles: 
