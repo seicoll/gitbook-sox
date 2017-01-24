@@ -100,10 +100,8 @@ Això es fa en l'arxiu `/etc/apparmor.d/usr.sbin.cupsd`.
 Es pot afegir la línia a continuació de les que configuren els directoris personals.
 
 ```
-...
   @{HOME}/PDF/* rw,
   /srv/docs/pdf/* rw,
-...
 ```
 
 I reiniciar el servei **apparmor**:
