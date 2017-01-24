@@ -42,9 +42,22 @@ Per instal·lar el servei i el client Samba a l'Ubuntu
 
 ## Configuració del servidor Samba
 
-La configuració del servidor **Samba **es fa a partir del **fitxer de configuració**: 
+La configuració del servidor **Samba** es fa, principalment, a partir del **fitxer de configuració**: 
 
 `/etc/samba/smb.conf`
+
+```
+[global]
+    workgroup = WORKGROUP
+    server string = %h server (Samba, Ubuntu)
+    server role = standalone server
+...
+[homes]
+...
+[printers]
+    comment = All Printers
+    path = /var/spool/samba
+```
 
 Editant aquest fitxer, es poden configurar més de tres-cents paràmetres.
 
