@@ -62,3 +62,19 @@ Normalment són programes que s'arranquen amb el sistema operatiu.
 Cada servei el podem configurar: Ens posem a sobre > boto dret ratolí > propietats:
 
 ![](/assets/services.png)
+
+#### Configuració d'inici dels serveis
+
+És important que feu la **configuració d’inici** dels serveis més escaient.
+Que un servei estigui instal·lat no vol dir que s'estigui executant. 
+
+![](/assets/SevicesStart.png)
+
+Existeixen quatre **tipus d’arrencada d’un servei**:
+* **Automàtic:** El servei que s’iniciarà quan l’equip s’engegui.
+* **Automàtic (inici retardat):** el servei s’inicia quan l’equip està en marxa i tots els serveis automàtics (marcats amb l’opció anterior) estan funcionant. 
+* **Manual:** el servei s’haurà d’iniciar manualment.
+* **Deshabilitat:** el servei estarà desactivat.
+
+> Tenir executant-se serveis que no fem servir consumirà recursos innecessaris.
+
