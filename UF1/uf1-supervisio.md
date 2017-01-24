@@ -109,3 +109,14 @@ Tant important és la monitorització com **l’actualització **dels components
   * **Services pack (SP)**: Consteix en un conjunt de pedaços que actualitzen, corregeixen i milloren aplicacions i sistemes operatius.
   
 Des de **Windows Update** existeixen **quatre configuracions** possibles: 
+
+![](/assets/WindowsUpdate.png)
+
+* **Instal·lar actualitzacions automàticament (recomenat)**.
+  * Les actualitacions requereix reiniciar, per aquesta, raó si triem l'opció automàtica, **configurarem el dia i la hora** que no afecti al funcionanament de l'empresa o als processos del servidor o sistema informàtic. 
+* **Descarregar actualitzacions, però deixar-me triar quan instal·lar-les**.
+* **Buscar actualitzacions, però deixar triar si vull descarregar-es i intalar-les**.
+  * Quan volem controlar quines actualitzacions s’instal·len.
+* **No buscar actualitzacions (no recomenat)**
+  * Podem instal·lar manualment les actualitzacions des de la web oficial de Windows.
+
