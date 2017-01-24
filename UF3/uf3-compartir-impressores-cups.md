@@ -80,13 +80,35 @@ Per motius de seguretat, el programa CUPS només pot escriure en algunes carpete
 
 ### Configuració d'un directori comú on s'envien els documents PDF
 
-Si es vol que tots els document de la impressora **cups-pdf** vagin a una carpeta comuna, per exemple a `/svr/documents/pdf`, primer s'ha de crear la carpeta on s'han d'enviar els documents generats per la impressora cups-pdf, i donar-li permisos de lectura i escriptura per a tothom:
+Si es vol que tots els document de la impressora **cups-pdf** vagin a una carpeta comuna, per exemple a `/svr/documents/pdf`, primer s'ha de crear la carpeta on s'han d'enviar els documents generats per la impressora **cups-pdf**, i donar-li permisos de lectura i escriptura per a tothom.
 
 ```
 sudo mkdir -p /srv/documents/pdf
 sudo chmod 777 /srv/documents/pdf
 ```
 
+Després, en l'arxiu `/etc/cups/cups-pdf.conf`, posar en el paràmetre **Out** el nou directori.
+
+`Out  /documents/pdf`
+
+I reiniciar el servei cups:
+
+`sudo service cups reload`
+
+Finalment s'ha d'afegir aquest directori a la llista de directoris on pot escriure el programa CUPS.
+Això es fa en l'arxiu `/etc/apparmor.d/usr.sbin.cupsd`.
+Es pot afegir la línia a continuació de les que configuren els directoris personals.
+
+```
+...
+  @{HOME}/PDF/* rw,
+  /srv/docs/pdf/* rw,
+...
+```
+
+I reiniciar el servei **apparmor**:
+
+`sudo service apparmor reload`
 
 ## Instal·lació en el client d'una impressora compartida
 
