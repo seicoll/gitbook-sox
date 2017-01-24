@@ -23,11 +23,13 @@
 ## UF3. Compartició de recursos i seguretat
 
 * Compartir recursos en xarxa i seguretat en sistemes de propietat
-  * [Compartir arxius i carpetes en Windows]()
-  * [Compartir impressores en Windows]()
+  * [Compartir arxius i carpetes en Windows](UF3/uf3-compartir-arxius-windows.md)
+  * [Compartir impressores en Windows](UF3/uf3-compartir-impressores-windows.md)
+
 * Compartir recursos en xarxa i seguretat en sistemes de lliures
-  * [Compartir arxius i carpetes amb NFS]()
-  * [Compartir impressores amb CUPS]()
+  * [Compartir arxius i carpetes amb NFS](UF3/uf3-compartir-arxius-nfs.md)
+  * [Compartir impressores amb CUPS](UF3/uf3-compartir-impressores-cups.md)
+
 
   
 
