@@ -1,4 +1,4 @@
-# Compatir arxius i carpetes amb SAMBA
+# Compartir arxius i carpetes amb SAMBA
 
 ## Introducció
 
@@ -61,8 +61,10 @@ La configuració del servidor **Samba** es fa, principalment, a partir del **fit
 
 Editant aquest fitxer, es poden configurar més de tres-cents paràmetres.
 
-El fitxer està dividit en **tres seccions** predefinides (_**global, homes i printers**_) que estableixen el valor d’uns quants paràmetres i determinen quines són les carpetes i les impressores compartides.
+El fitxer està dividit en **tres seccions** principals (_**global, homes i printers**_) que estableixen el valor d’uns quants paràmetres i determinen quines són les carpetes i les impressores compartides.
 * **[global]**. Defineix els** paràmetres generals** del servidor Samba.
 * **[homes]**. Ens permet **compartir les carpetes home** de cada usuari del servidor SAMBA. S’utilitza per crear **perfils mòbils** per tal que cada usuari pugui accedir a la seva carpeta home en qualsevol equip de la xarxa.
 * **[printers]**. Ens permet compartir **impressores**.
+
+## Configurar Samba com a servidor d'arxius
 
