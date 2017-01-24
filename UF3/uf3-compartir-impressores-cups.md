@@ -42,13 +42,24 @@ amb el paràmebre `--remote-admin` que habilita l'accés remot però només des 
 
 `sudo cupsctl --remote-admin`
 
-## Instal·lació d'una impressora en xarxa
+### Instal·lació de la impressora CUPS-PDF en xarxa
 
-## Instal·lació de la impressora CUPS-PDF en xarxa
+El paquet **cups-pdf** ens instal·la una eina que ens permet crear fitxers PDF a partir del CUPS, com si fos una impressora. És similar al PDFCreator del Windows.
 
-El que sí instal·larem és el paquet cups-pdf que ens instal·la una eina que ens permet crear fitxers PDF a partir del CUPS, com si fos una impressora. 
-És similar al PDFCreator del Windows.
-sudo apt-get install cups-pdf
+`sudo apt-get install cups-pdf`
+
+Per instal·lar una impressora en el servidor CUPS hem de seleccionar l’opció **Add printer** de la pestanya **Administration**.
+
+1. Seleccionem la impressora a instal·lar. Per exemple l’impressora local **CUPS-PDF (Virtual PDF Printer)**.
+2. Ens demanarà un nom, descripció i ubicació de la impressora i marcarem l’opció de **“Share This Printer”**.
+3. Ens demanarà el **fabricant **de la impressora. Seleccionem la marca **Generic**.
+4. Seguidament, ens demanarà pel **model d'impressora** per instal·lar els controladors més adequats. 
+També, permet especificar aquests controladors mitjançant un fitxer de text en format PPD (PostScript printer description).
+Seleccionem el model **Generic CUPS-PDF Printer (en)**.
+5. Si s’instal·la correctament, apareixerà una pantalla que ens permetrà configurar les** opcions generals d’impressió** de la impressora.
+6. Amb això ja tenim la impressora configurada.
+
+
 
 
 ## Instal·lació en el client d'una impressora compartida
