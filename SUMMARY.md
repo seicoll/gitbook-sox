@@ -26,6 +26,9 @@
 * [Compartir recursos en xarxa i seguretat en sistemes de lliures](UF3/compartir-recursos-linux.md)
   * [Compartir arxius i carpetes amb NFS](UF3/uf3-compartir-arxius-nfs.md)
   * [Compartir impressores amb CUPS](UF3/uf3-compartir-impressores-cups.md)
+  * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
+
+
 
 ## UF4. Integració de sistemes operatius
 
