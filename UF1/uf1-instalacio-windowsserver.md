@@ -34,3 +34,34 @@ Una vegada escollit l’opció d’instal·lació, cal que decidiu si fareu una 
 * **Actualització:** el sistema operatiu s’instal·la i es fa una migració de les configuracions, els documents i les aplicacions.
 
 > Si durant el procés d’instal·lació en falta alguna informació que necessitem per continuar. En el moment que es demana On es vol instal·lar Windows? es pot accedir a la línia de comandes prement Majúscules i F10.
+
+## Post-instal·lació
+
+Una vegada s’ha instal·lat el sistema operatiu caldrà proporcionar la informació següent a l’equip:
+* Establir **zona horària**.
+* Canviar el **nom de l’equip**.
+* Configuració de la **Xarxa**. 
+* **Actualització **del sistema operatiu (SO). 
+
+## Post instal·lació. Funcionalitats i característiques
+
+Instal·lar noves funcionalitats o noves característiques: 
+* **Funcionalitats o rols:** Conjunt de programes que fan una funció específica per diferents usuaris o altres equips d'una xarxa. 
+  * Servidor de fitxers. 
+  * Servidor d'aplicacions. 
+  * Servidor de correu. 
+  * Terminal server: permet l’administració remota del servidor des d’un altre equip de la xarxa. 
+ * Control de domini. 
+  * Servidor DNS: realitza la resolució de noms del domini. 
+  * Servidor DHCP: realitza l’assignació direccions IP automàtiques.
+* **Característiques:** són programes per complementar o augmentar la funcionalitat del servidor. 
+
+> Un servidor es pot especialitzar en una única funció o en diverses.
+
+## Administrador del Servidor _[Server Manager]_
+
+* Permet instal·lar **rols i característiques** _[roles and features]_ del Servidor.
+
+* En Server 2012 el **_Server Manager_** a part de gestionar el servidor local, permet gestionar múltiples servidors.
+
+![Server Manager](/assets/ServerManager.png)
