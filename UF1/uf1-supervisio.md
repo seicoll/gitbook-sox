@@ -27,3 +27,4 @@ El sistema operatiu Microsoft Windows Server 2012 us proporciona una sèrie d’
 * **Registre d’esdeveniments**
 
 ### Administrador del servidor
+
