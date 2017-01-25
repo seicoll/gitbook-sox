@@ -136,11 +136,11 @@ També permet **llistar els recursos compartits** d’una màquina remota:
 
 `smbclient -L servidor`
 
-#### Accedir de forma gràfica
+#### Accedir a carpetes compartides de forma gràfica
 
 L’Ubuntu ens permet accedir **gràficament **als recursos disponibles dels grups de treball del Samba amb el navegador Nautilus, per mitjà del menú **_Llocs > Xarxa_**.
 
-#### Muntar carptes compartides
+#### Muntar carpetes compartides
 
 També hi ha la **possibilitat de muntar les unitats de xarxa** en carpetes del nostre sistema com si es tractés d'una carpeta local. 
   * És igual com en els recursos **NFS**.
