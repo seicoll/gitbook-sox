@@ -64,6 +64,11 @@ El fitxer està dividit en **tres seccions** principals (_**global, homes i prin
 * **[homes]**. Ens permet **compartir les carpetes home** de cada usuari del servidor SAMBA. S’utilitza per crear **perfils mòbils** per tal que cada usuari pugui accedir a la seva carpeta home en qualsevol equip de la xarxa.
 * **[printers]**. Ens permet compartir **impressores**.
 
+> **Recordeu**, com tots els serveis de Linux, sempre que fem un canvi en els arxius de configuració del Samba, cal **reiniciar el servei smbd**.
+
+`service smbd restart`
+
+
 ### Recomanacions durant la configuració del Samba
 
 És **important** crear una **còpia de seguretat** de l’arxiu `/etc/samba/smb.conf` abans de fer cap canvi per poder tornar a l’estat anterior en cas que fem una modificació incorrecta que impedeixi que el servei arrenqui. 
@@ -123,17 +128,21 @@ I reiniciem Samba.
 
 `service smbd restart`
 
-## Accedir recurs compartit SAMBA des de Windows
+## Accedir recurs compartit Samba des de Windows
 
 En un **Windows** hem d’afegir el nostre equip al **grup de treball**:
-  * Botó dret a l’icona de **_“Equip” > propietats_**
+  * Botó dret a l’icona de **_Equip > propietats_**
   * I afegim l’equip al grup de treball que hem creat en el server.
 
-Anem al explorador d’arxius i dintre de xarxes cerquem el nostre equip i la nostra carpeta compartida.
+Si volem accedir al recurs compartit a través de l'**interfície gràfica**, anem al explorador d’arxius i dintre de xarxes cerquem el nostre equip i la nostra carpeta compartida.
 
-## Accedir a recursos compartits SAMBA des de Linux
+Si volem accedir al recurs compartit a través de **comandes**:
 
-En l'Ubuntu instal·lem el **client Samba**:
+`net use X: \\servidor\recurs`
+
+## Accedir a recursos compartits Samba des de Linux
+
+Per accedir a un recurs compartit amb Samba en l'Ubuntu cal instal·lar el **client Samba (paquet smbclient)**:
 
 `apt-get install smbclient cifs-utils`
 
@@ -158,7 +167,7 @@ També hi ha la **possibilitat de muntar les unitats de xarxa** en carpetes del 
   * La **diferència **entre **NFS** i **SMB **és que NFS no requereix que l’usuari que fa la connexió s’autentifiqui i amb SMB sí cal autentificació.
   * **Per exemple**, si volem accedir des de l’equip d’un professor a una carpeta compartida amb el nom de professors al servidor, executarem:
  
-`mount –t cifs //servidor/professors /professors –o username=usuari,workgroup=MEUGRUP`
+`mount –t cifs //servidor/professors /professors –o username=usuari,password=pass`
 
 Si el servidor no requereix que l’usuari s’autentiqui (permet accés a convidats), els paràmetres username, password i workgroup es poden obviar. 
 
@@ -296,11 +305,9 @@ Per determinar els permisos que tindrà l'usuari, Samba realitza les següents c
 
 2. Comprova si l'usuari té permís per accedir al recurs compartit i quin tipus de permís (només lectura o lectura i escriptura)
 
-3. Converteix l'usuari Samba en l'usuari local relacionat
+3. Converteix l'usuari Samba en l'usuari local relacionat.
 
-4. Determina els permisos triant els més restrictius entre els permisos que té l'usuari Samba sobre el recurs compartit i els permisos que té l'usuari local sobre la carpeta local
-
-5. Si l'usuari final és el root i en els permisos de compartició pot llegir i escriure, tindrà tots els permisos independentment dels permisos locals
+4. Determina els permisos triant els **més restrictius** entre els permisos que té l'usuari Samba sobre el recurs compartit i els permisos que té l'usuari local sobre la carpeta local
 
 ## Documentació i recursos
 
