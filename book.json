@@ -12,7 +12,7 @@
         }
     },
     "styles": {
-        "pdf": "./styles/pdf.sass"        
+        "pdf": {"./styles/pdf.sass"}
     }
    // Options for PDF generation
     "pdf": {
