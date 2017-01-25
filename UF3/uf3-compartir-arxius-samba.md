@@ -260,5 +260,9 @@ Per **exemple**, podem tenir un directori compartit anomenat **share** amb permi
 
 Però si en l’arxiu de configuració del Samba aquest recurs té el paràmetre **read only = yes**, no s’hi podran efectuar canvis, ja que està compartit amb permís només de lectura.
 
+
+Més informació: https://help.ubuntu.com/lts/serverguide/samba-fileprint-security.html
+http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/gestin_de_usuarios_grupos_y_permisos_de_samba.html
+
 [Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
 
