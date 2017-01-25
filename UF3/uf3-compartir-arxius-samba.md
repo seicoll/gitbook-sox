@@ -92,13 +92,14 @@ security = share
 
 Per compartir una carpeta, hem d’editar el fitxer `/etc/samba/smb.conf` i crear un **nova secció amb un nom entre claudàtors** que serà el **nom que el recurs compartit** tindrà a la xarxa. Normalment aquesta nova secció es posa al final del fitxer.
 
-**Per exemple**, si volem compartir la carpeta `/home/samba/alumnes` i anomenar al recurs **_alumnes_**, crearem una secció **_[alumnes]_** on es configurarà amb els paràmetres específics.
+Per **exemple**, si volem compartir la carpeta `/home/samba/alumnes` i anomenar al recurs **_alumnes_**, crearem una secció **_[alumnes]_** on es configurarà amb els paràmetres específics.
 
-Els principals paràmetres que s'han de configurar són:
+Els principals **paràmetres** que s'han de configurar per un recurs compartit són:
 * **Nom** del recurs compartit: No cal que sigui el mateix nom que té l'arxiu o carpeta que es vol compartir. 
-* **Path**: Ruta loca on es troba l'arxiu o carpeta que es vol compartir.
-* **Permisos**: si tindrà permís de lectura i/o escriptura.
-* **Visibilitat**: si serà visible de forma remota.
+* **Path**: Ruta local on es troba l'arxiu o carpeta que es vol compartir.
+* **Mode de compartició**: si tindrà permís de lectura i/o escriptura (**_read only_** o **_writeable_**).
+   * Només es pot posar un d'aquests dos últims paràmetres: tots dos serveixen per indicar el mode de compartició però amb l'efecte contrari un de l'altre (_**writable = no**_ seria el mateix que _**read only = yes**_).
+* **Visibilitat**: si serà visible de forma remota (_**browsable**_).
 * **Accessibilitat**: si serà accessible per tothom o només per alguns usuaris o grups.
 
 ```
@@ -178,7 +179,6 @@ Si el recurs compartit està protegit per contrassenya:
 
 [Més informació:](https://wiki.ubuntu.com/MountWindowsSharesPermanently)
 
-
 ## Gestió d'usuaris Samba
 
 El **Samba** és un servei que **requereix l’administració dels usuaris** per poder-ne gestionar els permisos.
@@ -235,24 +235,11 @@ L’ordre `smbpasswd` disposa d’altres opcions interessants:
 
 (Necessita paràmetre null **passwords = yes** en secció GLOBAL de l’arxiu de configuració del Samba).
 
-
-
 ## Permisos Samba
 
 Un **permís** és una marca associada a cada recurs de xarxa (fitxers, directoris, impressores, etc.) que regula quins usuaris i de quina manera hi tenen accés.
 
 Per fer la gestió d’usuaris, grups i permisos, es recomana fer servir els **permisos GNU/Linux**, els quals permeten assignar permisos de lectura, escriptura i execució (rwx) a l’usuari propietari de l’arxiu, al grup propietari de l’arxiu i a la resta d’usuaris del sistema.
-
-### Determinar els permisos efectius
-
-Quan s'accedix a un recurs compartit amb Samba, cal utilitzar l'identificador i la contrasenya configurats en la base de dades d'usuaris de Samba, no amb usuaris locals.
-
-Per determinar els permisos que tindrà l'usuari, Samba realitza les següents comprovacions:
-1. Comprova si l'usuari es troba a la llista d'usuaris Samba
-2. Comprova si l'usuari té permís per accedir al recurs compartit i quin tipus de permís (només lectura o lectura i escriptura)
-3. Converteix l'usuari Samba en l'usuari local relacionat
-4. Determina els permisos triant els més restrictius entre els permisos que té l'usuari Samba sobre el recurs compartit i els permisos que té l'usuari local sobre la carpeta local
-5. Si l'usuari final és el root i en els permisos de compartició pot llegir i escriure, tindrà tots els permisos independentment dels permisos locals
 
 ### Configurar propietaris i permisos locals, i usuaris i permisos Samba
 Una forma senzilla de configurar els permisos desitjats és posar tots els permisos en els permisos locals, i en la configuració de Samba indicar els usuaris que tenen accés i amb quins permisos.
@@ -264,38 +251,62 @@ Per **exemple**, per compartir la carpeta alumnes i donar permisos de lectura, e
 drwxrwx--- 2 root alumnes 4096 alumnes
 ```
 
-Si es vol definir un grup en el fitxer de configuració del Samba, `/etc/samba/smb.conf`, cal posar "**@**" davant del nom del grup.
+Si es vol definir un **grup** en el fitxer de configuració del Samba, `/etc/samba/smb.conf`, cal posar "**@**" davant del nom del grup.
 
 **Per exemple**, si heu definit una carpeta compartida del Samba anomenada **share** i desitgeu:
-* Donar permisos només de lectura al grup d'usuaris anomenat _alumnes_. 
-* Restringir l’accés a l’usuari _alumne1_.
-* Permetre l'escriptura al grup anomenat _professors_ i a l'usuari _sergi_.
+* Tot i que el recurs hem comparit el recurs amb permisos de lectura i escriptura (**_read only=no_**), volem donar permisos només de  lectura al grup d'usuaris anomenat **_alumnes_**. 
+* Restringir l’accés a l’usuari **_alumne1_**.
+* Permetre l'escriptura al grup anomenat **_professors_** i a l'usuari **_sergi_**.
 
 ```
 # Carpeta comú alumnes
 [share] 
+path = /home/samba/alumnes
 browsable = yes
 read only = no
 invalid users = alumne1
 read list = @alumnes
 write list = @professors, sergi
-path = /home/samba/alumnes
 ```
 
 * **valid users**: Llista d'usuaris que poden accedir al recurs. 
 * **invalid users**: Llista d'usuaris que no poden accedir al recurs. 
-* **read list**: Llista d'usuaris que només tindran permisos de lectura en el recurs. Si el paràmetre és read only = yes, per defecte tots els usuaris només tindran permís de lectura.
-* **write list**: Llista d'usuaris que tindran permís de lectura i escriptura en el recurs. Ignora l'opció read only = yes 
+* **read list**: Llista d'usuaris que només tindran permisos de lectura en el recurs. Si el paràmetre és **_read only = yes_**, per defecte tots els usuaris només tindran permís de lectura.
+* **write list**: Llista d'usuaris que tindran permís de lectura i escriptura en el recurs. Ignora l'opció _**read only = yes**_. 
+
+> **ATENCIÓ**: els usuaris i grups que es posen en aquests paràmetres, han de ser **usuaris i grups de Linux**, no de Samba.
+
+> Si es configuren els paràmetres **valid users** i **write list**, els usuaris de **write list** també han d'estar a **valid users**.
+
+> Quan s'accedix a un recurs compartit amb Samba, cal utilitzar l'identificador i la contrasenya configurats en la base de dades d'usuaris de Samba, no amb usuaris locals.
+
+### Determinar els permisos efectius
 
 Ens podem trobar que els **permisos GNU/Linux** es contradiguin amb els **permisos Samba**.
 
-Per **exemple**, podem tenir un directori compartit anomenat **share** amb permisos GNU/Linux de lectura, escriptura i execució per a **tots els usuaris** del sistema. 
+Per **exemple**, podem tenir un directori compartit anomenat **share** amb permisos GNU/Linux de lectura, escriptura i execució per a **tots els usuaris** del sistema.
 
 Però si en l’arxiu de configuració del Samba aquest recurs té el paràmetre **read only = yes**, no s’hi podran efectuar canvis, ja que està compartit amb permís només de lectura.
 
+> Quan els permisos GNU/Linux es contradiuen amb els permisos Samba, el permís efectiu és el **més restrictiu**.
 
-Més informació: https://help.ubuntu.com/lts/serverguide/samba-fileprint-security.html
+Per determinar els permisos que tindrà l'usuari, Samba realitza les següents comprovacions:
+
+1. Comprova si l'usuari es troba a la llista d'usuaris Samba
+
+2. Comprova si l'usuari té permís per accedir al recurs compartit i quin tipus de permís (només lectura o lectura i escriptura)
+
+3. Converteix l'usuari Samba en l'usuari local relacionat
+
+4. Determina els permisos triant els més restrictius entre els permisos que té l'usuari Samba sobre el recurs compartit i els permisos que té l'usuari local sobre la carpeta local
+
+5. Si l'usuari final és el root i en els permisos de compartició pot llegir i escriure, tindrà tots els permisos independentment dels permisos locals
+
+
+## Documentació i recursos
+
+* Més informació: https://help.ubuntu.com/lts/serverguide/samba-fileprint-security.html
 http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/gestin_de_usuarios_grupos_y_permisos_de_samba.html
 
-[Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
+* [Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
 
