@@ -169,7 +169,7 @@ Si el recurs compartit està protegit per contrassenya:
 [Més informació:](https://wiki.ubuntu.com/MountWindowsSharesPermanently)
 
 
-## Gestió d'usuaris i permisos Samba
+## Gestió d'usuaris Samba
 
 El **Samba** és un servei que **requereix l’administració dels usuaris** per poder-ne gestionar els permisos.
 
@@ -183,6 +183,77 @@ Com que els usuaris utilitzen altres recursos del servidor, com carpetes i impre
 La **gestió d’usuaris Samba** (crear, eliminar, canviar contrassenya, etc) es fa amb la comanda.
 
 `smbpasswd`
+
+### Creació d’usuaris Samba
+
+1. Haurem de crear l’usuari a l’Ubuntu amb l’ordre següent:
+
+`sudo adduser alumne`
+
+2. Habilitar l’usuari al Samba, executant aquesta ordre:
+
+`sudo smbpasswd -a alumne`
+
+`-a` vol dir que Samba afegirà l’usuari a la llista d’usuaris Samba
+
+### Eliminació d’usuaris Samba
+
+`sudo smbpasswd -x alumne`
+
+> L’usuari desapareixerà immediatament de la base de dades d’usuaris Samba, però **continuarà essent un usuari de GNU/Linux**.
+
+
+### Altres opcions de smbpasswd
+
+L’ordre `smbpasswd` disposa d’altres opcions interessants:
+
+-d: deshabilitar un usuari.
+
+-i: habilitar un usuari.
+
+-n: establir un usuari sense contrasenya.
+
+(Necessita paràmetre null **passwords = yes** en secció GLOBAL de l’arxiu de configuració del Samba).
+
+### Llistar usuaris SAMBA
+`sudo pdbedit -L`
+
+## Permisos Samba
+
+Un **permís** és una marca associada a cada recurs de xarxa (fitxers, directoris, impressores, etc.) que regula quins usuaris i de quina manera hi tenen accés.
+
+Per fer la gestió d’usuaris, grups i permisos, es recomana fer servir els **permisos GNU/Linux**, els quals permeten assignar permisos de lectura, escriptura i execució (rwx) a l’usuari propietari de l’arxiu, al grup propietari de l’arxiu i a la resta d’usuaris del sistema.
+
+Per **exemple**, per compartir la carpeta alumnes i donar permisos de lectura, escriptura i execució a tots els usuaris del grup alumnes.
+
+```
+# ls -l /home/samba/
+drwxrwx--- 2 root alumnes 4096 alumnes
+```
+
+Si es vol definir un grup en el fitxer de configuració del Samba, `/etc/samba/smb.conf`, cal posar "**@**" davant del nom del grup.
+
+**Per exemple**, si heu definit una carpeta compartida del Samba anomenada **share** i desitgeu:
+* Donar permisos només de lectura al grup d'usuaris anomenat _alumnes_. 
+* Restringir l’accés a l’usuari _alumne1_.
+* Permetre l'escriptura al grup anomenat _professors_ i a l'usuari _sergi_.
+
+```
+# Carpeta comú alumnes
+[share] 
+browsable = yes
+read only = no
+invalid users = alumne1
+read list = @alumnes
+write list = @professors, sergi
+path = /home/samba/alumnes
+```
+
+* **valid users**: Llista d'usuaris que poden accedir al recurs. 
+* **invalid users**: Llista d'usuaris que no poden accedir al recurs. 
+* **read list**: Llista d'usuaris que només tindran permisos de lectura en el recurs. Si el paràmetre és read only = yes, per defecte tots els usuaris només tindran permís de lectura.
+* **write list**: Llista d'usuaris que tindran permís de lectura i escriptura en el recurs. Ignora l'opció read only = yes 
+
 
 
 [Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
