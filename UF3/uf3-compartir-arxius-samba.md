@@ -88,7 +88,7 @@ workgroup = BOSCCOMA
 security = share
 ```
 
-### Compartir un nou recurs (arxiu o carpeta) amb Samba
+## Compartir un nou recurs (arxiu o carpeta) amb Samba
 
 Per compartir una carpeta, hem d’editar el fitxer `/etc/samba/smb.conf` i crear un **nova secció amb un nom entre claudàtors** que serà el **nom que el recurs compartit** tindrà a la xarxa.
 
@@ -122,7 +122,7 @@ I reiniciem Samba.
 
 `service smbd restart`
 
-### Accedir recurs compartit SAMBA des de Windows
+## Accedir recurs compartit SAMBA des de Windows
 
 En un **Windows** hem d’afegir el nostre equip al **grup de treball**:
   * Botó dret a l’icona de **_“Equip” > propietats_**
@@ -130,7 +130,7 @@ En un **Windows** hem d’afegir el nostre equip al **grup de treball**:
 
 Anem al explorador d’arxius i dintre de xarxes cerquem el nostre equip i la nostra carpeta compartida.
 
-### Accedir a recursos compartits SAMBA des de Linux
+## Accedir a recursos compartits SAMBA des de Linux
 
 En l'Ubuntu instal·lem el **client Samba**:
 
@@ -146,11 +146,11 @@ També permet **llistar els recursos compartits** d’una màquina remota:
 
 `smbclient -L servidor`
 
-#### Accedir a carpetes compartides de forma gràfica
+### Accedir a carpetes compartides de forma gràfica
 
 L’Ubuntu ens permet accedir **gràficament **als recursos disponibles dels grups de treball del Samba amb el navegador Nautilus, per mitjà del menú **_Llocs > Xarxa_**.
 
-#### Muntar carpetes compartides
+### Muntar carpetes compartides
 
 També hi ha la **possibilitat de muntar les unitats de xarxa** en carpetes del nostre sistema com si es tractés d'una carpeta local. 
   * És igual com en els recursos **NFS**.
@@ -163,7 +163,7 @@ Si el servidor no requereix que l’usuari s’autentiqui (permet accés a convi
 
 `mount –t cifs //servidor/professors /professors`
 
-#### Connectar carpetes compartides de forma automàtica
+### Muntar carpetes compartides de forma automàtica
 
 Si volem que una carpeta compartida **es connecti sempre de forma automàtica** quan iniciem el nostre Linux, cal afegir a l'arxiu `/etc/fstab` una línia com:
 
