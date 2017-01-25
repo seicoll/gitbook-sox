@@ -17,7 +17,6 @@
 
 * [UF2. Sistemes operatius lliures en xarxa](README.md)
 
-
 * [UF3. Compartició de recursos i seguretat](README.md)
 
   * [Introducció](UF3/uf3-introduccio.md)
