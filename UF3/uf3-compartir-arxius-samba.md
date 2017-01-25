@@ -66,11 +66,11 @@ El fitxer està dividit en **tres seccions** principals (_**global, homes i prin
 
 ### Recomanacions durant la configuració del Samba
 
-És convenient crear una còpia de seguretat de l’arxiu `/etc/samba/smb.conf` abans de fer cap canvi per poder tornar a l’estat anterior en cas que fem una modificació incorrecta que impedeixi que el servei arrenqui. 
+És **important** crear una **còpia de seguretat** de l’arxiu `/etc/samba/smb.conf` abans de fer cap canvi per poder tornar a l’estat anterior en cas que fem una modificació incorrecta que impedeixi que el servei arrenqui. 
 
 `sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak`
 
-Per **comprovar** que el nostre arxiu `/etc/samba/smb.conf` és **correcte**, podem utilitzar l’ordre `testparm` per localitzar-hi errors.
+Per **comprovar** que el nostre arxiu `/etc/samba/smb.conf` és **correcte**, és recomenable utilitzar l’ordre `testparm` per localitzar-hi errors.
 
 ## Configurar Samba com a servidor d'arxius
 
