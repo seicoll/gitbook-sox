@@ -254,7 +254,11 @@ path = /home/samba/alumnes
 * **read list**: Llista d'usuaris que només tindran permisos de lectura en el recurs. Si el paràmetre és read only = yes, per defecte tots els usuaris només tindran permís de lectura.
 * **write list**: Llista d'usuaris que tindran permís de lectura i escriptura en el recurs. Ignora l'opció read only = yes 
 
+Ens podem trobar que els **permisos GNU/Linux** es contradiguin amb els **permisos Samba**.
 
+Per **exemple**, podem tenir un directori compartit anomenat **share** amb permisos GNU/Linux de lectura, escriptura i execució per a **tots els usuaris** del sistema. 
+
+Però si en l’arxiu de configuració del Samba aquest recurs té el paràmetre **read only = yes**, no s’hi podran efectuar canvis, ja que està compartit amb permís només de lectura.
 
 [Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
 
