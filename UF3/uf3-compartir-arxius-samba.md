@@ -80,6 +80,5 @@ workgroup = BOSCCOMA
 security = share
 ```
 
-
 ![Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
 
