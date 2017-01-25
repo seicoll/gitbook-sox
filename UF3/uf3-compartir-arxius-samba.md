@@ -36,9 +36,9 @@ Els paquets més utilitzats són els següents:
 * **samba-doc**: documentació del Samba.
 * **cifs-utils**: ordres per muntar i desmuntar unitats de xarxa Samba.
 
-Per instal·lar el servei i el client Samba a l'Ubuntu
+Per instal·lar el servei Samba a l'Ubuntu.
 
-`apt-get install samba smbclient cifs-utils`
+`sudo apt-get install samba cifs-utils`
 
 ## Configuració del servidor Samba
 
@@ -64,6 +64,14 @@ El fitxer està dividit en **tres seccions** principals (_**global, homes i prin
 * **[homes]**. Ens permet **compartir les carpetes home** de cada usuari del servidor SAMBA. S’utilitza per crear **perfils mòbils** per tal que cada usuari pugui accedir a la seva carpeta home en qualsevol equip de la xarxa.
 * **[printers]**. Ens permet compartir **impressores**.
 
+### Recomanacions durant la configuració del Samba
+
+És convenient crear una còpia de seguretat de l’arxiu `/etc/samba/smb.conf` abans de fer cap canvi per poder tornar a l’estat anterior en cas que fem una modificació incorrecta que impedeixi que el servei arrenqui. 
+
+`sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak`
+
+Per **comprovar** que el nostre arxiu `/etc/samba/smb.conf` és **correcte**, podem utilitzar l’ordre `testparm` per localitzar-hi errors.
+
 ## Configurar Samba com a servidor d'arxius
 
 Una de les formes de compartir axius en xarxa amb equips **Ubuntu i Windows** és configurar **Samba com a servidor d'arxius**. 
@@ -79,11 +87,6 @@ workgroup = BOSCCOMA
 ...
 security = share
 ```
-### Recomanacions durant la configuració del Samba
-
-És convenient crear una còpia de seguretat de l’arxiu `/etc/samba/smb.conf` abans de fer cap canvi per poder tornar a l’estat anterior en cas que fem una modificació incorrecta que impedeixi que el servei arrenqui. 
-
-Per **comprovar** que el nostre arxiu `/etc/samba/smb.conf` és **correcte**, podem utilitzar l’ordre `testparm` per localitzar-hi errors.
 
 ### Compartir un nou recurs (arxiu o carpeta) amb Samba
 
