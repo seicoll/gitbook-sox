@@ -80,7 +80,7 @@ workgroup = BOSCCOMA
 security = share
 ```
 
-### Compartir un nou recurs
+### Compartir un nou recurs (arxiu o carpeta) amb Samba
 
 Per compartir una carpeta, hem d’editar el fitxer `/etc/samba/smb.conf` i crear un **nova secció amb un nom entre claudàtors** que serà els nom que el recurs compartit tindrà a la xarxa.
 
