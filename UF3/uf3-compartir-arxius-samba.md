@@ -302,7 +302,6 @@ Per determinar els permisos que tindrà l'usuari, Samba realitza les següents c
 
 5. Si l'usuari final és el root i en els permisos de compartició pot llegir i escriure, tindrà tots els permisos independentment dels permisos locals
 
-
 ## Documentació i recursos
 
 * Més informació: https://help.ubuntu.com/lts/serverguide/samba-fileprint-security.html
