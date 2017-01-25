@@ -165,8 +165,25 @@ Si el recurs compartit està protegit per contrassenya:
 
 `//servidor/professors /professors cifs  username=usuari,password=constrasenya,sec=ntlm  0  0`
 
-![Més informació:](https://wiki.ubuntu.com/MountWindowsSharesPermanently)
+
+[Més informació:](https://wiki.ubuntu.com/MountWindowsSharesPermanently)
 
 
-![Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
+## Gestió d'usuaris i permisos Samba
+
+El **Samba** és un servei que **requereix l’administració dels usuaris** per poder-ne gestionar els permisos.
+
+En funció de l’usuari que hi accedeixi, el Samba es comportarà d’una manera o d’una altra.
+
+El **Samba** disposa de la seva **pròpia base de dades d’usuaris** Samba. 
+Com que els usuaris utilitzen altres recursos del servidor, com carpetes i impressores, cal que aquests usuaris també estiguin creats en el sistema GNU/Linux.
+
+> Per poder ser usuari del Samba, cal disposar d’un compte d’usuari a GNU/Linux i d’un compte d’usuari al Samba
+
+La **gestió d’usuaris Samba** (crear, eliminar, canviar contrassenya, etc) es fa amb la comanda.
+
+`smbpasswd`
+
+
+[Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
 
