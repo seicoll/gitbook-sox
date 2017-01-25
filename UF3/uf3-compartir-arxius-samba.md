@@ -112,6 +112,47 @@ I reiniciem Samba.
 
 `service smbd restart`
 
+### Accedir recurs compartit SAMBA des de Windows
+
+En un **Windows** hem d’afegir el nostre equip al **grup de treball**:
+  * Botó dret a l’icona de **_“Equip” > propietats_**
+  * I afegim l’equip al grup de treball que hem creat en el server.
+
+Anem al explorador d’arxius i dintre de xarxes cerquem el nostre equip i la nostra carpeta compartida.
+
+### Accedir a recursos compartits SAMBA des de Linux
+
+En l'Ubuntu instal·lem el **client Samba**:
+
+`apt-get install smbclient cifs-utils`
+
+La comanda `smbclient` ens permet accedir a un recurs del servidor com si es tractés d’una mena d’accés FTP.
+
+Per **exemple**, si volem accedir a la carpeta compartida 'alumnes' del 'servidor', executarem:
+
+`smbclient //servidor/alumnes`
+
+També permet **llistar els recursos compartits** d’una màquina remota:
+
+`smbclient -L servidor`
+
+#### Accedir de forma gràfica
+
+L’Ubuntu ens permet accedir **gràficament **als recursos disponibles dels grups de treball del Samba amb el navegador Nautilus, per mitjà del menú **_Llocs > Xarxa_**.
+
+#### Muntar unitats de xarxa
+
+També hi ha la** possibilitat de muntar les unitats de xarxa** en carpetes del nostre sistema com si es tractés d'una carpeta local. 
+  * És igual com en els recursos **NFS**.
+  * La **diferència **entre **NFS** i **SMB **és que NFS no requereix que l’usuari que fa la connexió s’autentifiqui i amb SMB sí cal autentificació.
+ * Per exemple, si volem accedir des de l’equip d’un professor a una carpeta compartida amb el nom de professors al servidor, executarem:
+ 
+`mount –t cifs //servidor/professors /professors –o username=usuari,workgroup=MEUGRUP`
+
+Si el servidor no requereix que l’usuari s’autentiqui (permet accés a convidats), els paràmetres username, password i workgroup es poden obviar. 
+
+`mount –t cifs //servidor/professors /professors`
+
 
 ![Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
 
