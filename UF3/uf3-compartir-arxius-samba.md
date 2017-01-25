@@ -81,11 +81,11 @@ Per **comprovar** que el nostre arxiu `/etc/samba/smb.conf` és **correcte**, é
 
 **Samba** es pot configurar en diversos nivells de seguretat.
 
-* **share**:  Cada recurs compartit té associat una contrasenya. Tothom que sàpiga aquesta contrasenya pot accedir al recurs independement de l'usuari que es connecti.
+* **_security=share_**: Permet que els clients es connectin als recursos compartits sense proporcionar cap nom d'usuari ni contrasenya.
  
-* **user (user-level secutity)**: És l'opció per defecte i és la més simple. Un cop l'usuari ha iniciat la sessió, pot accedir als recursos remots sense haver de tornar a especificar la contrasenya.
+* **_security=user_**: És l'opció per defecte i és la més simple. Es requereix un usuari i contrasenya per accedir a un recurs compartit.
 
-* **domain**:  la base de dades d’usuaris està centralitzada en un controlador de domini.
+* **_security=domain_**: el servidor Samba actua com un controlador de domini.
 
 ## Configurar Samba com a servidor d'arxius
 
@@ -100,7 +100,7 @@ I definirem el paràmetre **security = share** per què no demani usuari i contr
 ```
 workgroup = BOSCCOMA
 ...
-security = share
+security = user
 ```
 
 ## Compartir un nou recurs (arxiu o carpeta) amb Samba
