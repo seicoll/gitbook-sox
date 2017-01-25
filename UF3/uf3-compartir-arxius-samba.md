@@ -153,6 +153,20 @@ Si el servidor no requereix que l’usuari s’autentiqui (permet accés a convi
 
 `mount –t cifs //servidor/professors /professors`
 
+#### Connectar carpetes compartides de forma automàtica
+
+Si volem que una carpeta compartida **es connecti sempre de forma automàtica** quan iniciem el nostre Linux, cal afegir a l'arxiu `/etc/fstab` una línia com:
+
+Si el recurs compartit permet l’accés a convidats (guests):
+
+`//servidor/professors  /professors  cifs  guest,uid=1000  0  0`
+
+Si el recurs compartit està protegit per contrassenya:
+
+`//servidor/professors /professors cifs  username=usuari,password=constrasenya,sec=ntlm  0  0`
+
+![Més informació:](https://wiki.ubuntu.com/MountWindowsSharesPermanently)
+
 
 ![Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
 
