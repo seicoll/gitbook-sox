@@ -1,4 +1,5 @@
 {
+    "title": "Sistemes Operatius en Xarxa",
     "plugins": [
         "etoc",
         "styles-sass"
@@ -11,11 +12,12 @@
         }
     },
     "styles": {
-        "pdf": "./styles/pdf.sass"
+        "pdf": "./styles/pdf.sass",
+        
     }
     // Options for PDF generation
     "pdf": {
         // Font size for the file content
-        "fontSize": 11
+        "fontSize": 10
     }
 }
