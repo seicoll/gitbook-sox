@@ -12,11 +12,6 @@
         }
     },
     "styles": {
-        "pdf": {"./styles/pdf.sass"}
-    }
-   // Options for PDF generation
-    "pdf": {
-    // Font size for the file content
-    "fontSize": 10
+        "pdf": "./styles/pdf.sass"
     }
 }
