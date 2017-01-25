@@ -87,16 +87,23 @@ Per **comprovar** que el nostre arxiu `/etc/samba/smb.conf` és **correcte**, po
 
 ### Compartir un nou recurs (arxiu o carpeta) amb Samba
 
-Per compartir una carpeta, hem d’editar el fitxer `/etc/samba/smb.conf` i crear un **nova secció amb un nom entre claudàtors** que serà els nom que el recurs compartit tindrà a la xarxa.
+Per compartir una carpeta, hem d’editar el fitxer `/etc/samba/smb.conf` i crear un **nova secció amb un nom entre claudàtors** que serà el **nom que el recurs compartit** tindrà a la xarxa.
 
 **Per exemple**, si volem compartir la carpeta `/home/samba/alumnes` i anomenar al recurs **_alumnes_**, crearem una secció **_[alumnes]_** on es configurarà amb els paràmetres específics.
 
+Els principals paràmetres que s'han de configurar són:
+* **Nom** del recurs compartit: No cal que sigui el mateix nom que té l'arxiu o carpeta que es vol compartir. 
+* **Path**: Ruta loca on es troba l'arxiu o carpeta que es vol compartir.
+* **Permisos**: si tindrà permís de lectura i/o escriptura.
+* **Visibilitat**: si serà visible de forma remota.
+* **Accessibilitat**: si serà accessible per tothom o només per alguns usuaris o grups.
+
 ```
-# Carpeta comú alumnes
+# Carpeta comuna alumnes
 [alumnes] 
+path = /home/samba/alumnes
 browsable = yes
 read only = no
-path = /home/samba/alumnes
 guest ok = yes
 guest account = nobody
 guest only = yes
@@ -173,9 +180,12 @@ Si el recurs compartit està protegit per contrassenya:
 
 El **Samba** és un servei que **requereix l’administració dels usuaris** per poder-ne gestionar els permisos.
 
+El **Samba** disposa de la seva **pròpia base de dades d’usuaris** Samba que podran accedir als recursos compartits.
+ 
 En funció de l’usuari que hi accedeixi, el Samba es comportarà d’una manera o d’una altra.
 
-El **Samba** disposa de la seva **pròpia base de dades d’usuaris** Samba. 
+> Per poder accedir a recursos compartits amb Samba, s'han d'utilitzar els usuaris Samba, **no els de Linux**.
+
 Com que els usuaris utilitzen altres recursos del servidor, com carpetes i impressores, cal que aquests usuaris també estiguin creats en el sistema GNU/Linux.
 
 > Per poder ser usuari del Samba, cal disposar d’un compte d’usuari a GNU/Linux i d’un compte d’usuari al Samba
@@ -223,6 +233,20 @@ L’ordre `smbpasswd` disposa d’altres opcions interessants:
 Un **permís** és una marca associada a cada recurs de xarxa (fitxers, directoris, impressores, etc.) que regula quins usuaris i de quina manera hi tenen accés.
 
 Per fer la gestió d’usuaris, grups i permisos, es recomana fer servir els **permisos GNU/Linux**, els quals permeten assignar permisos de lectura, escriptura i execució (rwx) a l’usuari propietari de l’arxiu, al grup propietari de l’arxiu i a la resta d’usuaris del sistema.
+
+### Determinar els permisos efectius
+
+Quan s'accedix a un recurs compartit amb Samba, cal utilitzar l'identificador i la contrasenya configurats en la base de dades d'usuaris de Samba, no amb usuaris locals.
+
+Per determinar els permisos que tindrà l'usuari, Samba realitza les següents comprovacions:
+1. Comprova si l'usuari es troba a la llista d'usuaris Samba
+2. Comprova si l'usuari té permís per accedir al recurs compartit i quin tipus de permís (només lectura o lectura i escriptura)
+3. Converteix l'usuari Samba en l'usuari local relacionat
+4. Determina els permisos triant els més restrictius entre els permisos que té l'usuari Samba sobre el recurs compartit i els permisos que té l'usuari local sobre la carpeta local
+5. Si l'usuari final és el root i en els permisos de compartició pot llegir i escriure, tindrà tots els permisos independentment dels permisos locals
+
+### Configurar propietaris i permisos locals, i usuaris i permisos Samba
+Una forma senzilla de configurar els permisos desitjats és posar tots els permisos en els permisos locals, i en la configuració de Samba indicar els usuaris que tenen accés i amb quins permisos.
 
 Per **exemple**, per compartir la carpeta alumnes i donar permisos de lectura, escriptura i execució a tots els usuaris del grup alumnes.
 
