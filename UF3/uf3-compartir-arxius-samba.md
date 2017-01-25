@@ -80,5 +80,33 @@ workgroup = BOSCCOMA
 security = share
 ```
 
+### Compartir un nou recurs
+
+Per compartir una carpeta, hem d’editar el fitxer `/etc/samba/smb.conf` i crear un **nova secció amb un nom entre claudàtors** que serà els nom que el recurs compartit tindrà a la xarxa.
+
+**Per exemple**, si volem compartir la carpeta `/home/samba/alumnes` i anomenar al recurs **_alumnes_**, crearem una secció **_[alumnes]_** on es configurarà amb els paràmetres específics.
+
+```
+# Carpeta comú alumnes
+[alumnes] 
+browsable = yes
+read only = no
+path = /home/samba/alumnes
+guest ok = yes
+guest account = nobody
+guest only = yes
+```
+
+Creem la carpeta al servidor i canviem els seus permisos.
+
+`sudo mkdir -p /home/samba/alumnes`
+
+`sudo chown nobody:nogroup /home/samba/alumnes`
+
+I reiniciem Samba.
+
+`service smbd restart`
+
+
 ![Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
 
