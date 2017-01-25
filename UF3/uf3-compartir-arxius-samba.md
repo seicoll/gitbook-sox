@@ -70,14 +70,16 @@ Una de les formes de compartir axius en xarxa amb equips **Ubuntu i Windows** é
 
 El servidor es configurarà per **compartir arxius amb qualsevol client de la xarxa sense sol·licitar cap contrasenya**. 
 
-En la secció **[global]** del fitxer de configuració de samba hi ha un paràmetre anomenat **workgroup **on hi posarem el nom de la nostra xarxa.
+En la secció **[global]** del fitxer de configuració de samba `/etc/samba/smb.conf` hi ha un paràmetre anomenat **workgroup **on hi posarem el nom de la nostra xarxa.
 
 I definirem el paràmetre **security = share** per què no demani usuari i contrassenya per entrar a la carpeta compartida.
 
 ```
 workgroup = BOSCCOMA
 ...
-security = user
+security = share
 ```
 
+
+![Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
 
