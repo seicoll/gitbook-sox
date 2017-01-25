@@ -47,7 +47,7 @@ La configuració del servidor **Samba** es fa, principalment, a partir del **fit
 ```
 [global]
     workgroup = WORKGROUP
-    server string = %h server (Samba, Ubuntu)
+    security = user
     server role = standalone server
 ...
 [homes]
@@ -104,10 +104,10 @@ Els principals paràmetres que s'han de configurar són:
 ```
 # Carpeta comuna alumnes
 [alumnes] 
-path = /home/samba/alumnes
-browsable = yes
-read only = no
-guest ok = yes
+path = /home/samba/alumnes    ; carpeta a compartir
+browsable = yes               ; la carpeta serà visible quan accedir a \\IP_servidor
+read only = no                ; es permet l'escriptura
+guest ok = yes                ; s'admet l'usuari convidat
 guest account = nobody
 guest only = yes
 ```
@@ -215,8 +215,15 @@ La **gestió d’usuaris Samba** (crear, eliminar, canviar contrassenya, etc) es
 
 > L’usuari desapareixerà immediatament de la base de dades d’usuaris Samba, però **continuarà essent un usuari de GNU/Linux**.
 
+### Llistar usuaris Samba
 
-### Altres opcions de smbpasswd
+Mostrar la llista d'usuaris Samba:
+`sudo pdbedit -L`
+
+Mostrar la llista d'usuaris Samba amb més detalls:
+`sudo pdbedit -Lv`
+
+### Altres opcions de gestió d'usuaris
 
 L’ordre `smbpasswd` disposa d’altres opcions interessants:
 
@@ -228,8 +235,7 @@ L’ordre `smbpasswd` disposa d’altres opcions interessants:
 
 (Necessita paràmetre null **passwords = yes** en secció GLOBAL de l’arxiu de configuració del Samba).
 
-### Llistar usuaris SAMBA
-`sudo pdbedit -L`
+
 
 ## Permisos Samba
 
