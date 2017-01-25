@@ -66,3 +66,18 @@ El fitxer està dividit en **tres seccions** principals (_**global, homes i prin
 
 ## Configurar Samba com a servidor d'arxius
 
+Una de les formes de compartir axius en xarxa amb equips **Ubuntu i Windows** és configurar **Samba com a servidor d'arxius**. 
+
+El servidor es configurarà per **compartir arxius amb qualsevol client de la xarxa sense sol·licitar cap contrasenya**. 
+
+En la secció **[global]** del fitxer de configuració de samba hi ha un paràmetre anomenat **workgroup **on hi posarem el nom de la nostra xarxa.
+
+I definirem el paràmetre **security = share** per què no demani usuari i contrassenya per entrar a la carpeta compartida.
+
+```
+workgroup = BOSCCOMA
+...
+security = user
+```
+
+
