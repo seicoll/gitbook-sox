@@ -77,6 +77,16 @@ El fitxer està dividit en **tres seccions** principals (_**global, homes i prin
 
 Per **comprovar** que el nostre arxiu `/etc/samba/smb.conf` és **correcte**, és recomenable utilitzar l’ordre `testparm` per localitzar-hi errors.
 
+## Nivells de seguretat
+
+**Samba** es pot configurar en diversos nivells de seguretat.
+
+* **share**:  Cada recurs compartit té associat una contrasenya. Tothom que sàpiga aquesta contrasenya pot accedir al recurs independement de l'usuari que es connecti.
+ 
+* **user (user-level secutity)**: És l'opció per defecte i és la més simple. Un cop l'usuari ha iniciat la sessió, pot accedir als recursos remots sense haver de tornar a especificar la contrasenya.
+
+* **domain**:  la base de dades d’usuaris està centralitzada en un controlador de domini.
+
 ## Configurar Samba com a servidor d'arxius
 
 Una de les formes de compartir axius en xarxa amb equips **Ubuntu i Windows** és configurar **Samba com a servidor d'arxius**. 
@@ -115,7 +125,7 @@ browsable = yes               ; la carpeta serà visible quan accedir a \\IP_ser
 read only = no                ; es permet l'escriptura
 guest ok = yes                ; s'admet l'usuari convidat
 guest account = nobody
-guest only = yes
+guest only = yes              ; tots els accessos al recurs s'accepten en mode convidat
 ```
 
 Creem la carpeta al servidor i canviem els seus permisos.
@@ -312,7 +322,6 @@ Per determinar els permisos que tindrà l'usuari, Samba realitza les següents c
 ## Documentació i recursos
 
 * Més informació: https://help.ubuntu.com/lts/serverguide/samba-fileprint-security.html
-http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/gestin_de_usuarios_grupos_y_permisos_de_samba.html
 
 * [Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
 
