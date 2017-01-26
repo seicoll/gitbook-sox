@@ -140,11 +140,15 @@ I reiniciem Samba.
 
 ## Accedir a recursos compartit Samba des de Windows
 
-En un **Windows** hem d’afegir el nostre equip al **grup de treball**:
+Si, hem configurat els servidor Samba en mode `security=share`, cal afegir el client **Windows** al **grup de treball**:
   * Botó dret a l’icona de **_Equip > propietats_**
   * I afegim l’equip al grup de treball que hem creat en el server.
 
+### Accedir a carpetes compartides de forma gràfica
+
 Si volem accedir al recurs compartit a través de l'**interfície gràfica**, anem al explorador d’arxius i dintre de xarxes cerquem el nostre equip i la nostra carpeta compartida.
+
+### Accedir a carpetes compartides amb comandes
 
 Si volem accedir al recurs compartit a través de **comandes**:
 
