@@ -95,7 +95,7 @@ El servidor es configurarà per **compartir arxius amb qualsevol client de la xa
 
 En la secció **[global]** del fitxer de configuració de samba `/etc/samba/smb.conf` hi ha un paràmetre anomenat **workgroup **on hi posarem el nom de la nostra xarxa.
 
-I definirem el paràmetre **security = share** per què no demani usuari i contrassenya per entrar a la carpeta compartida.
+I definirem el paràmetre **security = share** per què no demani usuari i contrasenya per entrar a la carpeta compartida.
 
 ```
 workgroup = BOSCCOMA
