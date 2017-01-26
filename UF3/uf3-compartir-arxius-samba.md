@@ -103,9 +103,9 @@ workgroup = BOSCCOMA
 security = share
 ```
 
-## Compartir un nou recurs (arxiu o carpeta) amb Samba
+## Compartir un nou recurs amb Samba
 
-Per compartir una carpeta, hem d’editar el fitxer `/etc/samba/smb.conf` i crear un **nova secció amb un nom entre claudàtors** que serà el **nom que el recurs compartit** tindrà a la xarxa. Normalment aquesta nova secció es posa al final del fitxer.
+Per compartir un recurs (arxiu o carpeta), hem d’editar el fitxer `/etc/samba/smb.conf` i crear un **nova secció amb un nom entre claudàtors** que serà el **nom que el recurs compartit** tindrà a la xarxa. Normalment aquesta nova secció es posa al final del fitxer.
 
 Per **exemple**, si volem compartir la carpeta `/home/samba/alumnes` i anomenar al recurs **_alumnes_**, crearem una secció **_[alumnes]_** on es configurarà amb els paràmetres específics.
 
@@ -138,7 +138,7 @@ I reiniciem Samba.
 
 `service smbd restart`
 
-## Accedir recurs compartit Samba des de Windows
+## Accedir a recursos compartit Samba des de Windows
 
 En un **Windows** hem d’afegir el nostre equip al **grup de treball**:
   * Botó dret a l’icona de **_Equip > propietats_**
