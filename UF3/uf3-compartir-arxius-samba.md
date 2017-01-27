@@ -44,7 +44,7 @@ Per instal·lar el servei Samba a l'Ubuntu.
 
 La configuració del servidor **Samba** es fa, principalment, a partir del **fitxer de configuració** `/etc/samba/smb.conf`.
 
-```bash
+```
 [global]
     workgroup = WORKGROUP
     security = user
