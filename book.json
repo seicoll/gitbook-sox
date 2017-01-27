@@ -1,9 +1,7 @@
 {
     "plugins": [
         "etoc",
-        "styles-sass",
-        "-highlight",
-        "sunlight-highlighter"
+        "styles-sass"
     ],
     "styles": {
         "pdf": "./styles/pdf.sass"
