@@ -1,9 +1,13 @@
 {
-    "title": "Sistemes Operatius en Xarxa",
     "plugins": [
         "etoc",
-        "styles-sass"
+        "styles-sass",
+        "-highlight",
+        "sunlight-highlighter"
     ],
+    "styles": {
+        "pdf": "./styles/pdf.sass"
+    },
     "pluginsConfig": {
         "etoc": {
             "mindepth": 2,
@@ -11,7 +15,5 @@
             "notoc": false
         }
     },
-    "styles": {
-        "pdf": "./styles/pdf.sass"
-    }
+    "title": "Sistemes Operatius en Xarxa"
 }
