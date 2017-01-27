@@ -123,7 +123,7 @@ path = /home/samba/alumnes    ; carpeta a compartir
 browsable = yes               ; la carpeta serà visible quan accedir a \\IP_servidor
 read only = no                ; es permet l'escriptura
 guest ok = yes                ; s'admet l'usuari convidat
-guest account = nobody
+guest account = nobody        ; els usuaris convidats utilitzaran el compte d'usuari nobody de Linux per accedir al recurs
 guest only = yes              ; tots els accessos al recurs s'accepten en mode convidat
 ```
 
