@@ -201,6 +201,11 @@ Si el recurs compartit està protegit per contrassenya:
 
 `//servidor/professors /professors cifs  username=usuari,password=constrasenya,sec=ntlm  0  0`
 
+Per muntar automàticament els recussos definits a `/etc/fstab` sense necessitat de reiniciar el sistema podeu executar.
+
+`sudo mount -a`
+
+Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la comanda `mount`.
 
 [Més informació:](https://wiki.ubuntu.com/MountWindowsSharesPermanently)
 
