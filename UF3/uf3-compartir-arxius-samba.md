@@ -99,8 +99,7 @@ I definirem el paràmetre **security = share** per què no demani usuari i contr
 
 ```
 workgroup = BOSCCOMA
-...
-security = share
+
 ```
 
 ## Compartir un nou recurs amb Samba
