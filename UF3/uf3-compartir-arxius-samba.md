@@ -116,6 +116,9 @@ Els principals **paràmetres** que s'han de configurar per un recurs compartit s
 * **Visibilitat**: si serà visible de forma remota (_**browsable**_).
 * **Accessibilitat**: si serà accessible per tothom o només per alguns usuaris o grups.
 
+
+En aquest **exemple** compartim el recurs _**alumnes**_ de manera que es permeti l'accés als usuaris convidats sense necessitat d'introduir una contrasenya d'accés. 
+
 ```
 # Carpeta comuna alumnes
 [alumnes] 
