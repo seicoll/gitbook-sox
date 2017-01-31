@@ -18,16 +18,11 @@ img
 
 
 /* code */
-.markdown-section code {
-    padding: .2em;
-    margin: 0;
-    font-size: .85em;
-    background-color: #202020; //#f7f7f7;
-    color: white;
-}
-
 .markdown-section code, .markdown-section pre {
     font-family: Monaco, Consolas,"Liberation Mono",Menlo,Courier,monospace;  
+    background-color: #202020; //#f7f7f7;
+    color: white;
+
 }
 
 
