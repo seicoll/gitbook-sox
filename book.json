@@ -15,7 +15,7 @@
             "notoc": false
         },
         "customtheme": {
-           "css": ['styles/website.css'] // custom is a folder on the root level
+           "css": ["styles/website.css"] // custom is a folder on the root level
          }
     },
     "title": "Sistemes Operatius en Xarxa"
