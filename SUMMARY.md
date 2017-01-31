@@ -16,6 +16,8 @@
 
 * [UF2. Sistemes operatius lliures en xarxa](UF2/UF2.md)
 
+---
+
 * [UF3. Compartició de recursos i seguretat](UF3/UF3.md)
   * [Introducció](UF3/uf3-introduccio.md)
   * Compartir recursos en xarxa i seguretat en sistemes de propietat
@@ -25,6 +27,8 @@
     * [Compartir arxius i carpetes amb NFS](UF3/uf3-compartir-arxius-nfs.md)
     * [Compartir impressores amb CUPS](UF3/uf3-compartir-impressores-cups.md)
     * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
+
+---
 
 * [UF4. Integració de sistemes operatius](UF4/UF4.md)
 
