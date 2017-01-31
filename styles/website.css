@@ -19,10 +19,8 @@ img
 
 /* code */
 .markdown-section code, .markdown-section pre {
-    font-family: Monaco, Consolas,"Liberation Mono",Menlo,Courier,monospace;  
-    background-color: #202020; //#f7f7f7;
-    color: white;
-
+    background-color: #ddd;
+    padding: 7px;
 }
 
 
