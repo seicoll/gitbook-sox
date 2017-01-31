@@ -4,7 +4,8 @@
         "styles-sass"
     ],
     "styles": {
-        "pdf": "./styles/pdf.sass"
+        "pdf": "./styles/pdf.sass",
+        "website": "./styles/website.css"
     },
     "pluginsConfig": {
         "etoc": {
