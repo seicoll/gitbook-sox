@@ -1,7 +1,8 @@
 {
     "plugins": [
         "etoc",
-        "styles-sass"
+        "styles-sass",
+        "customtheme"
     ],
     "styles": {
         "pdf": "styles/pdf.sass",
@@ -12,7 +13,10 @@
             "mindepth": 2,
             "maxdepth": 4,
             "notoc": false
-        }
+        },
+        "customtheme": {
+           "css": ['styles/websit.css'] // custom is a folder on the root level
+         }
     },
     "title": "Sistemes Operatius en Xarxa"
 }
