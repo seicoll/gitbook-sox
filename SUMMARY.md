@@ -2,7 +2,7 @@
 
 * [Introducció](README.md)
 
-<!--- * **[UF1. Sistemes operatius propietaris en xarxa](UF1/UF1.md)** -->
+* **[UF1. Sistemes operatius propietaris en xarxa](UF1/UF1.md)** 
   * [Introducció als sistemes operatius en xarxa](UF1/uf1-introduccio.md)
     * [Windows Server](UF1/uf1-windowsserver.md)
     * [Instal·lació Windows Server](UF1/uf1-instalacio-windowsserver.md)
