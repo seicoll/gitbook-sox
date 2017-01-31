@@ -1,3 +1,3 @@
-## UF1. Sistemes operatius propietaris en xarxa
+# UF1. Sistemes operatius propietaris en xarxa
 
 <!-- toc -->
