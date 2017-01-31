@@ -38,7 +38,9 @@ Els paquets més utilitzats són els següents:
 
 Per instal·lar el servei Samba a l'Ubuntu.
 
-`sudo apt-get install samba cifs-utils`
+```sh
+sudo apt-get install samba cifs-utils
+```
 
 ## Configuració del servidor Samba
 
