@@ -2,9 +2,7 @@
 
 ![Windwos Server 2012](/assets/WindowsServer2012-2.png)
 
-<div class="alert alert-info">
 És un sistema operatiu dissenyat per servidors que treballa sobre un model denominat **domini**.
-<div>
 
 Un **domini **és un conjunt d’equips (clients i sevidors) que comparteixen una política de seguretat i una base de dades comú. 
 
