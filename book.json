@@ -12,10 +12,6 @@
             "mindepth": 2,
             "maxdepth": 4,
             "notoc": false
-        },
-        "theme-default": {
-            "styles": "styles/website.css",
-            "showLevel": true
         }
     },
     "title": "Sistemes Operatius en Xarxa"
