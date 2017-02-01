@@ -209,6 +209,8 @@ Si el servidor no requereix que l’usuari s’autentiqui (permet accés a convi
 
 `mount –t cifs //IP_servidor/alumnes /mnt/alumnes`
 
+> **ATENCIÓ:** per saber els permisos efectius d'accés a una carpeta compartida cal tenir en compte els permisos que té l'usuari que es connecta a la carpeta remota (usuari Samba) i els permisos que té l'usuari actual sobre la carpeta local on està muntada la carpeta compartida.
+
 ### Muntar carpetes compartides de forma automàtica
 
 Si volem que una carpeta compartida **es connecti sempre de forma automàtica** quan iniciem el nostre Linux, cal afegir a l'arxiu `/etc/fstab` una línia com:
