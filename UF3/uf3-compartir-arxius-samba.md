@@ -290,7 +290,7 @@ Si es vol definir un **grup** en el fitxer de configuració del Samba, `/etc/sam
 * Restringir l’accés a l’usuari **_alumne1_**.
 * Permetre l'escriptura al grup anomenat **_professors_** i a l'usuari **_sergi_**.
 
-```
+``` bash
 # Carpeta comú alumnes
 [share] 
 path = /home/samba/alumnes
