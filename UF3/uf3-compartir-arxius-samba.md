@@ -278,7 +278,7 @@ Una forma senzilla de configurar els permisos desitjats és posar tots els permi
 
 Per **exemple**, per compartir la carpeta alumnes i donar permisos de lectura, escriptura i execució a tots els usuaris del grup alumnes.
 
-``` bash
+```
 # ls -l /home/samba/
 drwxrwx--- 2 root alumnes 4096 alumnes
 ```
@@ -290,7 +290,7 @@ Si es vol definir un **grup** en el fitxer de configuració del Samba, `/etc/sam
 * Restringir l’accés a l’usuari **_alumne1_**.
 * Permetre l'escriptura al grup anomenat **_professors_** i a l'usuari **_sergi_**.
 
-``` bash
+```
 # Carpeta comú alumnes
 [share] 
 path = /home/samba/alumnes
