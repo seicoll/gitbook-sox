@@ -203,11 +203,11 @@ Cal instal·lar el paquet **cifs-utils**:
   
 **Per exemple**, si volem accedir des de l’equip d’un professor a una carpeta compartida amb el nom de professors al servidor, executarem:
  
-`mount –t cifs //servidor/professors /professors –o username=usuari,password=pass`
+`mount –t cifs //IP_servidor/alumnes /mnt/alumnes –o username=usuari,password=pass`
 
 Si el servidor no requereix que l’usuari s’autentiqui (permet accés a convidats), els paràmetres username, password i workgroup es poden obviar. 
 
-`mount –t cifs //servidor/professors /professors`
+`mount –t cifs //servidor/alumnes /mnt/alumnes`
 
 ### Muntar carpetes compartides de forma automàtica
 
