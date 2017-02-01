@@ -278,7 +278,7 @@ Una forma senzilla de configurar els permisos desitjats és posar tots els permi
 
 Per **exemple**, per compartir la carpeta alumnes i donar permisos de lectura, escriptura i execució a tots els usuaris del grup alumnes.
 
-```bash
+``` bash
 # ls -l /home/samba/
 drwxrwx--- 2 root alumnes 4096 alumnes
 ```
