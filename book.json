@@ -2,7 +2,9 @@
     "plugins": [
         "etoc",
         "styles-sass",
-        "customtheme"
+        "customtheme",
+        "-highlight",
+        "sunlight-highlighter"
     ],
     "styles": {
         "pdf": "styles/pdf.sass",
@@ -15,8 +17,10 @@
             "notoc": false
         },
         "customtheme": {
-           "css": ["styles/website.css"] 
-         }
+            "css": [
+                "styles/website.css"
+            ]
+        }
     },
     "title": "Sistemes Operatius en Xarxa"
 }
