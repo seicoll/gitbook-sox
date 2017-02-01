@@ -193,10 +193,15 @@ També es pot accedir directament a una de les carpetes compartides si es coneix
 
 ### Muntar carpetes compartides
 
-També hi ha la **muntar les carpetes compartides** en carpetes del nostre sistema com si es tractés d'una carpeta local. 
+També hi ha la possibilitat **muntar les carpetes compartides** en carpetes del nostre sistema com si es tractés d'una carpeta local. 
   * És igual com en els recursos **NFS**.
   * La **diferència **entre **NFS** i **SMB **és que NFS no requereix que l’usuari que fa la connexió s’autentifiqui i amb SMB sí cal autentificació.
-  * **Per exemple**, si volem accedir des de l’equip d’un professor a una carpeta compartida amb el nom de professors al servidor, executarem:
+  
+Cal instal·lar el paquet **cifs-utils**:
+
+`sudo apt-get install cifs-utils`
+  
+**Per exemple**, si volem accedir des de l’equip d’un professor a una carpeta compartida amb el nom de professors al servidor, executarem:
  
 `mount –t cifs //servidor/professors /professors –o username=usuari,password=pass`
 
