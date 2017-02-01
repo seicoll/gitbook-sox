@@ -207,7 +207,7 @@ Cal instal·lar el paquet **cifs-utils**:
 
 Si el servidor no requereix que l’usuari s’autentiqui (permet accés a convidats), els paràmetres username, password i workgroup es poden obviar. 
 
-`mount –t cifs //servidor/alumnes /mnt/alumnes`
+`mount –t cifs //IP_servidor/alumnes /mnt/alumnes`
 
 ### Muntar carpetes compartides de forma automàtica
 
@@ -215,11 +215,11 @@ Si volem que una carpeta compartida **es connecti sempre de forma automàtica** 
 
 Si el recurs compartit permet l’accés a convidats (guests):
 
-`//servidor/professors  /professors  cifs  guest,uid=1000  0  0`
+`//IP_servidor/professors  /professors  cifs  guest,uid=1000  0  0`
 
 Si el recurs compartit està protegit per contrassenya:
 
-`//servidor/professors /professors cifs  username=usuari,password=constrasenya,sec=ntlm  0  0`
+`//IP_servidor/professors /professors cifs  username=usuari,password=constrasenya,sec=ntlm  0  0`
 
 Per muntar automàticament els recussos definits a `/etc/fstab` sense necessitat de reiniciar el sistema podeu executar.
 
