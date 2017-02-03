@@ -126,7 +126,7 @@ Premem **_Siguiente_** i apareix una pantalla de **contrasenyes **amb diverses o
 
 > Les **contrasenyes **en **Windows Server** han de tenir un mínim de 7 caràcters amb al menys una lletra majúscula, una minúscula i un número.
 
-### Modificacio d'usuaris globals
+#### Modificacio d'usuaris globals
 
 Un cop creats els usuaris es poden fer moltes modificacions.
 Seleccionem compte la que volem modificar i amb botó dret farem **propiedades**.
