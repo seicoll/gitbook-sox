@@ -1,5 +1,7 @@
 # Relacions de confiança
 
+## Denifició
+
 El dominis poden compartir informació mitjançant **relacions de confiança**. 
 
 Les relacions de **confiança entre dominis** permeten:
