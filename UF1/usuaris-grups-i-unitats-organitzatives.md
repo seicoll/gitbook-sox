@@ -80,8 +80,6 @@ Els **usuaris locals** poden crear-se en qualsevol equip Windows Server **except
 
 Es poden **crear usuaris locals** en un equip anant a _**Inici > Eines Administratives > Administració del equip > Eines del sistema > Usuaris i grups locals**_.
 
-> IMATGE
-
 ### Usuaris globals
 
 Els comptes d'**usuari del domini o usuaris globals** s'emmagatzemen en el directori actiu i per tant són coneguts per tots els ordinadors del domini.
