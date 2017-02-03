@@ -42,9 +42,10 @@ Aquí trobarem l’opció _**Usuaris i equips de Active Directory**_ on podrem a
 
 La base de dades del Directori Actiu emmagatzema **un compte d'equip per cada un dels ordinadors** que formen part del domini. 
 
-Les comptes dels DCs s'ubiquen a la unitat organitzativa (UO) anomenada "DomainControllers". 
+* Les comptes d'equip dels DCs s'ubiquen a la unitat organitzativa (UO) anomenada "_**DomainControllers**_". 
+* Les comptes de la resta d'equips s'ubiquen per defecte al contenidor "_**Computers**_" 
 
-Les de la resta d'ordinadors s'ubiquen per defecte al contenidor "Computers" (tots dos contenidors se situen just a sota del contenidor que representa el domini).
+Tots dos contenidors se situen just a sota del contenidor que representa el domini.
 
 Entre altres dades, el compte d'equip que cada ordinador té al domini inclou els següents atributs: 
 * **Nom de l'equip**. Coincideix amb el nom que l'equip té, sense comptar amb seu sufix DNS. 
