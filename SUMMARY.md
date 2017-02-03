@@ -11,7 +11,7 @@
     * [Relacions de confiança](UF1/relacions-de-confianca.md)
     * [Usuaris, grups i unitats organitzatives](UF1/usuaris-grups-i-unitats-organitzatives.md)
     * [Directives de grup](UF1/directives-de-grup.md)
-    * Perfils d'usuaris
+    * [Perfils d'usuaris](UF1/perfils-usuari.md)
 
 ---
 
