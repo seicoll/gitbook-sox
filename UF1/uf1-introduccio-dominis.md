@@ -59,9 +59,11 @@ Mitjançant el DNS un equip que es connecta en xarxa pot trobar el **controlador
 * A les màquines client posarem la IP del servidor com a servidor DNS a la configuració de la xarxa.
 
 Cada **domini **de Windows Server queda identificat únivocament per un nom DNS. Per exemple:
+
 `bosccoma.local`
 
 Cada **equip **que forma part d’un domini tindrà la categoria de subdomini i tindrà un nom DNS amb sufix el nom DNS del domini. Per exemple:
+
 `equip1.bosccoma.local`
 
 ## Estructura lògica. Domini, Arbre, Bosc
