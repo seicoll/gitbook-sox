@@ -82,6 +82,25 @@ Els **usuaris locals** poden crear-se en qualsevol equip Windows Server **except
 
 Es poden **crear usuaris locals** en un equip anant a _Inici > Eines Administratives > Administració del equip > Eines del sistema > Usuaris i grups locals_.
 
+> IMATGE
+
+### Usuaris globals
+
+Els comptes d'**usuari del domini o usuaris globals** s'emmagatzemen en el directori actiu i per tant són coneguts per tots els ordinadors del domini.
+
+L’**inici de sessió** al domini utilitzant un usuari global por fer-se de dues formes:
+* Nom NetBios del domini seguit del símbol “\” i nom d’usuari: 
+
+`BOSCCOMA\sergi`
+
+* Identificador d’usuari seguit del símbol “@” i el nom de domini:
+
+`sergi@bosccoma.local`
+        
+A l'inici de sessió en qualsevol **equip del domini** utilitzant un compte d'usuari global, l'ordinador en qüestió realitzarà una **consulta al Directori Actiu** per validar les credencials de l'usuari.
+El resultat de la validació és enviat a l'equip on s'està iniciant la sessió, concedint o rebutjant la connexió.
+
+
 ## Grups 
 
 De forma similar als usuaris, hi ha **grups d’usuaris** que són emmagatzemats en el **Directori Actiu** i que per tant són visibles des de tots els ordinadors del domini.
