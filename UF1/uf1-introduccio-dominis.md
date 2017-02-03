@@ -74,12 +74,11 @@ L’estructura del servei de directori està constituïda per diferents elements
 * **Arbre**: És un conjunt de dominis que s’estructuren jeràrquicament i comparteixen recursos, clients i un sistema de resolució de noms. 
 * **Bosc (_Forest_)**: Si el conjunt de dominis no comparteixen un nom d’arrel comú, s’anomen bosc. Per tant, un bosc és un conjunt d’arbres de domini.
 
-Els boscos poden compartir informació mitjançant **relacions de confiança**. Aquestes relacions establertes entre dos dominis permeten als usuaris d'un domini ser reconeguts pels controladors de domini (DC) d'un altre domini.
 Aquesta estructura facilita la cerca i l'accés als recursos dins de l'arbre formant un espai que compateix un nom d'arrel únic. 
 
-Per exemple:
-* cendrassos.local i aula1.cendrassos.local és un arbre AD amb 2 dominis.
-* cendrassos.local i montsacopa.loca són dos arbres amb dos dominis 
+**Per exemple:**
+* `institut1.local` i `aula1.institut1.local` és un arbre AD amb 2 dominis.
+* `institut1.local` i `institut2.local` són dos arbres amb dos dominis 
 * Tots 3 poden estar dins el mateix bosc.
 
 > IMATGE
