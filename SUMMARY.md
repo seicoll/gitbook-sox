@@ -10,7 +10,7 @@
     * [Introducció als dominis](UF1/uf1-introduccio-dominis.md)
     * [Relacions de confiança](UF1/relacions-de-confianca.md)
     * [Directives de grup](UF1/directives-de-grup.md)
-    * Usuaris, grups i unitats organitzatives
+    * [Usuaris, grups i unitats organitzatives](UF1/usuaris-grups-i-unitats-organitzatives.md)
     * Perfils d'usuaris
 
 ---
