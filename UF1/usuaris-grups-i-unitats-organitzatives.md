@@ -55,6 +55,32 @@ Aquesta contrasenya es genera automàticament quan s'agrega l'equip al domini, i
 
 ## Comptes d'usuari
 
+En un sistema en xarxa cada persona que tingui accés al sistema requereix d'un compte d'usuari que l'identifiqui amb **un nom únic de compte (login)** i una **contrasenya (password)**. 
+
+Un compte d'usuari fa possible: 
+* Autenticar la identitat de la persona que es connecta al sistema. 
+* Controlar i validar l'accés als recursos mitjançant permisos.
+* Auditar les accions efectuades per l'usuari.
+
+Al Windows Server els usuaris poden ser de dos tipus: 
+
+* **Usuaris locals:** Són comptes d'usuari definides només per accedir a un equip determinat. No poden accedir al domini i per tant només concedeixen drets i permisos sobre l'equip on es crea i utilitza.
+
+> Amb **usuaris locals**, si una persona ha de treballar en diversos ordinadors de l’organització, necessita posseir un compte d’usuari en cada un d’ells. 
+
+* **Usuaris globals o usuaris de domini:** Comptes d'usuari creades mitjançant el Directori Actiu. 
+  * Les dades d’una compte d’usuari global, es guarden en el Directori Actiu i, per tant, són coneguts per tots els equips del domini.
+  * Qualsevol ordinador de fa de DC - Domain Controller, pot crear comptes d’usuari de domini.
+
+> Amb **usuaris de domini**, una persona pot validar-se amb el mateix compte d’usuari des de qualsevol ordinador integrat al domini i accedir als recursos de tot el domini.
+
+### Usuaris locals
+
+No és incompatible que els equips **clients d’un domini**, a més de conèixer els usuaris globals, tinguin també **els seus propis usuaris locals** que només són visibles en l’ordinador que han estat creats.
+
+Els **usuaris locals** poden crear-se en qualsevol equip Windows Server **excepte en els equips controladors de domini** que gestionen els usuaris com globals a través del Directori Actiu.
+
+Es poden **crear usuaris locals** en un equip anant a _Inici > Eines Administratives > Administració del equip > Eines del sistema > Usuaris i grups locals_.
 
 ## Grups 
 
