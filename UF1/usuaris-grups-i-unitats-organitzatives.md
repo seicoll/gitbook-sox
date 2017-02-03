@@ -55,3 +55,36 @@ Aquesta contrasenya es genera automàticament quan s'agrega l'equip al domini, i
 
 ## Comptes d'usuari
 
+
+## Grups 
+
+De forma similar als usuaris, hi ha **grups d’usuaris** que són emmagatzemats en el **Directori Actiu** i que per tant són visibles des de tots els ordinadors del domini.
+
+Els **grups d’usuaris** s’utilitzen per simplificar la gestió de permisos sobre els recursos del domini.
+
+Els **membres d’un grup d’usuaris** poden ser usuaris, equips o altres grups d’usuaris.
+
+Windows Server té creats una sèrie de grups d’usuaris predefenits (“Tots”, “Administradors”, ”Equips del domini”, etc.)
+
+### Tipus de grups
+
+Al directori actiu es poden crear **dos tipus de grups**: 
+
+* **Grups de seguretat**: s'utilitzen per assignar permisos d’utilització de recursos del domini.
+* **Grups de distribució**: s'utilitzen per realitzar instal·lacions remotes de software en els equips client on es validin els usuaris del grup.
+Nosaltres veurem únicament els primers.
+
+### Àmbit del grup
+
+Quan es crea un grup se li assigna un **àmbit** que determini al visibilitat dins del domini.
+En dominis Windows Server els grups es poden definir en tres àmbits diferents: 
+* **Grups d’àmbit local**: 
+  * Només són visibles en el domini en què es creen. 
+  * Els permisos concedits només són efectius per recursos del domini en el que es crea el grup.
+* **Grups d’àmbit global**: 
+  * Són visibles en tots els dominis del bosc. 
+  * Poden contenir usuaris del mateix domini i els permisos concedits a aquest grup tenen validesa en qualsevol domini.
+* **Grups d’àmbit universal**: 
+  * Són visibles a tot el bosc. 
+  * Poden tenir membres procedents de qualsevol domini.
+
