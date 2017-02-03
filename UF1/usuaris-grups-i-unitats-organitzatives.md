@@ -88,3 +88,27 @@ En dominis Windows Server els grups es poden definir en tres àmbits diferents:
   * Són visibles a tot el bosc. 
   * Poden tenir membres procedents de qualsevol domini.
 
+## Unitats Organitzatives (UO)
+
+Les **unitats organitzatives (OU)** són objectes contenidors del directori actiu que agrupen altres objectes com a usuaris, grups, equips i altres unitats organitzatives. 
+
+El seu **objectiu **és permetre **ordenar el conjunt d'objectes del directori** agrupant-los de forma organitzada (per exemple per departaments, seus, delegacions , etc.).
+
+Els objectes d'una unitat organitzativa poden moure a una altra però **mai duplicar doncs cada objecte és únic al directori** i independent de la unitat organitzativa a la qual pertanyi. 
+
+En una UO podem posar-hi:
+* Equips
+* Contactes
+* Grups
+* Impresores
+* Usuaris
+* Altres Unitats Organitzatives (UO)
+
+Les seves principals **funcions** són : 
+* Representar estructures jeràrquiques existents dins de la pròpia organització com alternativa als dominis. 
+* Permetre l'**aplicació de directrius** per personalitzar el comportament d'usuaris i equips definint així polítiques de grup comuns a usuaris, grups i equips ubicats en una determinada unitat organitzativa. 
+* **Delegar l'administració **dels seus objectes a altres usuaris diferents a l'administrador de domini. 
+  * **Per exemple**: podem fer que un usuari no administrador pugui donar d’alta usuaris d’un determinat departament.
+
+
+> En les organitzacions de mida reduïda , és preferible implementar un model de **domini únic amb diferents unitats organitzatives d'administració delegada** i comportament diferent, que utilitzar un model de múltiples dominis.
