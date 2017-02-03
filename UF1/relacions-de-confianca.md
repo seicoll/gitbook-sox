@@ -1,6 +1,6 @@
 # Relacions de confiança
 
-## Denifició
+## Què són les relacions de confiança?
 
 El dominis poden compartir informació mitjançant **relacions de confiança**. 
 
