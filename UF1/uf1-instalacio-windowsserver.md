@@ -40,8 +40,10 @@ Una vegada escollit l’opció d’instal·lació, cal que decidiu si fareu una 
 Una vegada s’ha instal·lat el sistema operatiu caldrà proporcionar la informació següent a l’equip:
 * Establir **zona horària**.
 * Canviar el **nom de l’equip**.
-* Configuració de la **Xarxa**. 
-* **Actualització **del sistema operatiu (SO). 
+  * Fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar l'opció **Sistema**. Després anar a _**Cambiar configuración > Cambiar... > Nombre de equipo**_.
+* Configuració de la **Xarxa**.
+  * Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de conèixer per poder accedir-hi i utilitzar els seus serveis. 
+* **Actualització **del sistema operatiu. 
 
 ## Post instal·lació. Funcionalitats i característiques
 
