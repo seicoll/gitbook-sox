@@ -168,6 +168,8 @@ Els **membres d’un grup d’usuaris** poden ser:
 
 Windows Server té creats una sèrie de **grups d’usuaris predefenits** (_**Tots**_, **_Administradors_**, **_Equips del domini_**, etc.)
 
+> Un usuari ha de pertànyer com a mínim a un grup, però pot pertànyer a més d'un.
+
 ### Tipus de grups
 
 Al directori actiu es poden crear **dos tipus de grups**: 
@@ -183,11 +185,12 @@ Al directori actiu es poden crear **dos tipus de grups**:
 
 ### Àmbit del grup
 
-Quan es crea un grup se li assigna un **àmbit** que determini al visibilitat dins del domini.
-En dominis Windows Server els grups es poden definir en tres àmbits diferents: 
+Quan es crea un grup se li assigna un **àmbit** que determini la visibilitat dins del domini.
+
+En dominis Windows Server els grups es poden definir en **tres àmbits** diferents: 
 * **Grups d’àmbit local**: 
   * Només són visibles en el domini en què es creen. 
-  * Els permisos concedits només són efectius per recursos del domini en el que es crea el grup.
+  * Només es poden assignar permisos sobre recursos del mateix domini en el que es crea el grup.
 * **Grups d’àmbit global**: 
   * Són visibles en tots els dominis del bosc. 
   * Poden contenir usuaris del mateix domini i els permisos concedits a aquest grup tenen validesa en qualsevol domini.
