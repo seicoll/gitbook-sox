@@ -23,7 +23,6 @@ Unidireccional de sortida en el domini A i d'entrada en el domini B:
 
 ![Relació unidireccional](/assets/Relacions_Unidireccional.svg)
 
-
 Vol dir que el domini A confia en el domini B però B no confia en A. Els usuaris del domini B es poden validar en màquines unides al domini A però els usuaris del domini A no es poden validar en màquines unides al domini B.
 
 ### Transitives i no transitives
