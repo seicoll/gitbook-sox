@@ -78,7 +78,7 @@ No és incompatible que els equips **clients d’un domini**, a més de conèixe
 
 Els **usuaris locals** poden crear-se en qualsevol equip Windows Server **excepte en els equips controladors de domini** que gestionen els usuaris com globals a través del Directori Actiu.
 
-Es poden **crear usuaris locals** en un equip anant a _Inici > Eines Administratives > Administració del equip > Eines del sistema > Usuaris i grups locals_.
+Es poden **crear usuaris locals** en un equip anant a _**Inici > Eines Administratives > Administració del equip > Eines del sistema > Usuaris i grups locals**_.
 
 > IMATGE
 
@@ -100,18 +100,23 @@ El resultat de la validació és enviat a l'equip on s'està iniciant la sessió
 
 #### Creació d'usuaris globals
 
-Des de l’Administrador del Servidor > Usuaris i equips de Active Directory
+1. Ves a l’_**Administrador del Servidor > Usuaris i equips de Active Directory.**_
+2. Situa't **sobre l'arrel del domini o una unitat organitzativa** on vulguis crear l'usuari i obre el menú contextual amb el botó dret del ratolí. 
+3. Selecciona l'opció **Nou > Usuari**.
 
 ![Nou usuari](/assets/usuari_nou.png)
 
-En aquesta pantalla introduirem, per aquest ordre: 
-* **_Nombre de pila_**: que no és el login i les inicials per identificar l’usuari. 
-* **_Apellidos_**: continua identificant l’usuari. 
+En aquesta pantalla introduirem: 
+* **_Nombre de pila_** i **_Apellidos_**: No de l'usuari (que no és el login) i les inicials per identificar l’usuari. 
 * _**Nombre completo**_: s’omplirà automàticament. 
 * _**Nombre de inicio de sesión de usuario**_: El login de usuari que ens permetrà iniciar sessió al sistema (ja sigui des d’un client o des del propi servidor).
 * _**Nombre de inicio anterior a Windows 2000**_: Aquesta opció serveix per tal que l’usuari pugui iniciar sessió en un domini Windows NT4.0 Server amb el que s’han establert relacions de confiança. 
 
-Premem **_Siguiente_** i apareix una pantalla de **contrasenyes **amb diverses opcions: 
+Premem **_Siguiente_** i apareix una pantalla de **contrasenyes: **
+
+![Nou usuari](/assets/usuari_contrassenyes.png)
+
+Disposem de diverses opcions: 
 * **L’usuari ha de canviar la contrasenya en el següent inici de sessió**. 
   * Si activem aquesta opció, quan l’usuari es connecti per primera vegada li exigirà un canvi obligatori de contrasenya. Li demanarà la contrasenya anterior (per tant l’haurà de conèixer i la nova.
 * **L´usuari no pot canviar la contrassenya**.
@@ -124,7 +129,7 @@ Premem **_Siguiente_** i apareix una pantalla de **contrasenyes **amb diverses o
 
 > Les **contrasenyes **en **Windows Server** han de tenir un mínim de 7 caràcters amb al menys una lletra majúscula, una minúscula i un número.
 
-#### Modificacio d'usuaris globals
+#### Modificació d'usuaris globals
 
 Un cop creats els usuaris es poden fer moltes modificacions.
 Seleccionem compte la que volem modificar i amb botó dret farem **propiedades**.
@@ -132,11 +137,12 @@ Seleccionem compte la que volem modificar i amb botó dret farem **propiedades**
 ![Usuaris propietats](/assets/user_propietats.png)
 
 Això és el que podem fer a les pestanyes més significatives:
-* **_General_**: Dades identificatives del usuari
-* **_Cuenta_**: Nom d’inici de sessió, restricció d’inici de sessió, opcions de contrasenya i caducitat del compte..
+* **_General_**: Dades identificatives del usuari.
+* **_Cuenta_**: Nom d’inici de sessió, restricció d’inici de sessió, opcions de contrasenya, caducitat del compte i dies hores en què pot iniciar sessió.
   * Hores de inici de sessió, podem indicar a quines hores cada usuari podrà connectar-se.
-* **_Membre de_**: Aquins grups pertany.
-* **_Control remoto_**: Configuració del control remot d’una sessió del usuari.
+* **_Miembro de_**: A quins grups pertany l'usuari.
+* **_Perfil_**: permet configurar alguns paràmetres del perfil, com ara la carpeta on es guarden els perfils, una carpeta personal o un script d'inici de sessió.
+* **_Control remoto_**: permet habilitat el control remot de la sessió del usuari.
 
 ### Creació de plantilles d'usuaris
 
@@ -151,7 +157,6 @@ Les **plantilles de comptes d’usuaris** ens ajuden en aquesta tasca ja que só
   2. Cada vegada que haguem de donar d’alta un comercial, **farem un còpia d’aquest usuari** i així el nou usuari hereda tota la configuració original de la plantilla.
   
   3. Finalment, **personalitzem el nou compte** amb el nom, cognoms, contrasenya, etc. particulars però la resta de treball de configuració ja estarà realitzat.
-
 
 ## Grups 
 
@@ -195,6 +200,13 @@ En dominis Windows Server els grups es poden definir en **tres àmbits** diferen
 * **Grups d’àmbit universal**: 
   * Són visibles a tot el bosc. 
   * Poden tenir membres procedents de qualsevol domini.
+  
+### Creació de grups
+
+1. Ves al **_Administrador del Servidor > Usuaris i equips del Directori Actiu_**.
+2. Situa't **sobre l'arrel del domini o una unitat organitzativa** on vulguis crear grup i obre el menú contextual amb el botó dret del ratolí. 
+3. Selecciona l'opció **Nou > Unitat Organitzativa**. 
+4. Ara has d'**introduir el nom del grup** i seleccionar l'**àmbit** i el **tipus **de grup.
 
 ## Unitats Organitzatives (UO)
 
@@ -223,9 +235,9 @@ Les seves principals **funcions** són :
 
 La creació d'unitats organitzatives és molt senzilla: 
 
-1. Ves al **_Administrador del Servidor > Usuaris_** i equips del Directori Actiu.
-2. Situa't **sobre el domini** on vulguis crear la unitat organitzativa i obre el menú contextual amb el botó dret del ratolí. 
-3. Marca **l'opció nou** i al menú emergent l'opció **Unitat Organitzativa**. 
+1. Ves al **_Administrador del Servidor > Usuaris i equips del Directori Actiu_**.
+2. Situa't **sobre l'arrel del domini o una altra unitat organitzativa** on vulguis crear la unitat organitzativa i obre el menú contextual amb el botó dret del ratolí. 
+3. Selecciona l'opció **Nou > Unitat Organitzativa**. 
 4. Ara has d'**introduir el nom de la nova unitat organitzativa** i per defecte deixar marcada l'opció de _Protegir contenidor contra esborrat accidental_. Prem Acceptar. 
 5. Apareix un nou contenidor al menú d'usuaris i equips de Directori Actiu. Ja pots **crear nous objectes** (usuaris, grups, equips, etc.) en aquesta nova unitat organitzativa **o bé moure objectes ja existents** senzillament arrossegant des d'altres contenidors.
 
