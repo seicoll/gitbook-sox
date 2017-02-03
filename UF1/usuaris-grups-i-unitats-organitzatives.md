@@ -142,7 +142,7 @@ Això és el que podem fer a les pestanyes més significatives:
   * Hores de inici de sessió, podem indicar a quines hores cada usuari podrà connectar-se.
 * **_Miembro de_**: A quins grups pertany l'usuari.
 * **_Perfil_**: permet configurar alguns paràmetres del perfil, com ara la carpeta on es guarden els perfils, una carpeta personal o un script d'inici de sessió.
-* **_Control remoto_**: permet habilitat el control remot de la sessió del usuari.
+* **_Control remoto_**: permet habilitar el control remot de la sessió del usuari.
 
 ### Creació de plantilles d'usuaris
 
