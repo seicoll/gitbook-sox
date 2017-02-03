@@ -217,11 +217,11 @@ Si volem que una carpeta compartida **es connecti sempre de forma automàtica** 
 
 Si el recurs compartit permet l’accés a convidats (guests):
 
-`//IP_servidor/professors  /professors  cifs  guest,uid=1000  0  0`
+`//IP_servidor/professors  /mnt/professors  cifs  guest  0  0`
 
 Si el recurs compartit està protegit per contrassenya:
 
-`//IP_servidor/professors /professors cifs  username=usuari,password=constrasenya,sec=ntlm  0  0`
+`//IP_servidor/professors /mnt/professors cifs  username=usuari,password=constrasenya,sec=ntlm  0  0`
 
 Per muntar automàticament els recussos definits a `/etc/fstab` sense necessitat de reiniciar el sistema podeu executar.
 
