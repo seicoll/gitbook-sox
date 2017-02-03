@@ -161,17 +161,25 @@ De forma similar als usuaris, hi ha **grups d’usuaris** que són emmagatzemats
 
 Els **grups d’usuaris** s’utilitzen per simplificar la gestió de permisos sobre els recursos del domini.
 
-Els **membres d’un grup d’usuaris** poden ser usuaris, equips o altres grups d’usuaris.
+Els **membres d’un grup d’usuaris** poden ser:
+* Usuaris
+* Equips 
+* Altres grups d’usuaris
 
-Windows Server té creats una sèrie de grups d’usuaris predefenits (“Tots”, “Administradors”, ”Equips del domini”, etc.)
+Windows Server té creats una sèrie de **grups d’usuaris predefenits** (_**Tots**_, **_Administradors_**, **_Equips del domini_**, etc.)
 
 ### Tipus de grups
 
 Al directori actiu es poden crear **dos tipus de grups**: 
 
-* **Grups de seguretat**: s'utilitzen per assignar permisos d’utilització de recursos del domini.
-* **Grups de distribució**: s'utilitzen per realitzar instal·lacions remotes de software en els equips client on es validin els usuaris del grup.
-Nosaltres veurem únicament els primers.
+* **Grups de seguretat**
+  * Aquests tipus de grups s'utilitzen per assignar permisos d’utilització de recursos del domini i així no cal fer-ho usuari per usuari.
+  * És l'opció per defecte.
+  
+* **Grups de distribució**: 
+  * Aquets tipus de grups s'utilitzen per realitzar instal·lacions remotes de software en els equips client on es validin els usuaris del grup.
+
+> Nosaltres utilitzarem, únicament, els grups de seguretat.
 
 ### Àmbit del grup
 
@@ -191,13 +199,12 @@ En dominis Windows Server els grups es poden definir en tres àmbits diferents:
 
 Les **unitats organitzatives (OU)** són objectes contenidors del directori actiu que agrupen altres objectes com a usuaris, grups, equips i altres unitats organitzatives. 
 
-El seu **objectiu **és permetre **ordenar el conjunt d'objectes del directori** agrupant-los de forma organitzada (per exemple per departaments, seus, delegacions , etc.).
+El seu **objectiu** és permetre **ordenar el conjunt d'objectes del directori** agrupant-los de forma organitzada (per exemple per departaments, seus, delegacions , etc.).
 
-Els objectes d'una unitat organitzativa poden moure a una altra però **mai duplicar doncs cada objecte és únic al directori** i independent de la unitat organitzativa a la qual pertanyi. 
+> Els objectes d'una unitat organitzativa poden moure a una altra però **mai duplicar ja que cada objecte és únic al directori**. 
 
 En una UO podem posar-hi:
 * Equips
-* Contactes
 * Grups
 * Impresores
 * Usuaris
