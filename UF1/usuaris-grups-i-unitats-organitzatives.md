@@ -100,6 +100,60 @@ L’**inici de sessió** al domini utilitzant un usuari global por fer-se de due
 A l'inici de sessió en qualsevol **equip del domini** utilitzant un compte d'usuari global, l'ordinador en qüestió realitzarà una **consulta al Directori Actiu** per validar les credencials de l'usuari.
 El resultat de la validació és enviat a l'equip on s'està iniciant la sessió, concedint o rebutjant la connexió.
 
+#### Creació d'usuaris globals
+
+Des de l’Administrador del Servidor > Usuaris i equips de Active Directory
+
+![Nou usuari](/assets/usuari_nou.png)
+
+En aquesta pantalla introduirem, per aquest ordre: 
+* **_Nombre de pila_**: que no és el login i les inicials per identificar l’usuari. 
+* **_Apellidos_**: continua identificant l’usuari. 
+* _**Nombre completo**_: s’omplirà automàticament. 
+* _**Nombre de inicio de sesión de usuario**_: El login de usuari que ens permetrà iniciar sessió al sistema (ja sigui des d’un client o des del propi servidor).
+* _**Nombre de inicio anterior a Windows 2000**_: Aquesta opció serveix per tal que l’usuari pugui iniciar sessió en un domini Windows NT4.0 Server amb el que s’han establert relacions de confiança. 
+
+Premem **_Siguiente_** i apareix una pantalla de **contrasenyes **amb diverses opcions: 
+* **L’usuari ha de canviar la contrasenya en el següent inici de sessió**. 
+  * Si activem aquesta opció, quan l’usuari es connecti per primera vegada li exigirà un canvi obligatori de contrasenya. Li demanarà la contrasenya anterior (per tant l’haurà de conèixer i la nova.
+* **L´usuari no pot canviar la contrassenya**.
+  * Per poder activar aquest check-box haurem de desactivar l’anterior.
+  * A diferència del cas anterior, ara l’administrador sí que coneix la clau d’accés del nou usuari. En el cas anterior, l’administrador coneixerà la primera clau (l’haurà donada ell) però quan el usuari la canviï no coneixerà el nou password. Aquest fet no afecta per res a la gestió que l’administrador faci de les contrasenyes, ja que, encara que no la conegui, la podrà modificar i fins i tot borrar. 
+* **La contrasenya mai caduca**. 
+  * Si no marquem aquesta casella, la contrasenya caducarà, per defecte, al cap de 42 dies. 
+* **Compte deshabilitat**. 
+  *Permet que un usuari no es pugui connectar sense haver d’esborrar el compte amb totes les dades que contenia. Això es fa quan volem denegar l’accés temporalment.
+
+> Les **contrasenyes **en **Windows Server** han de tenir un mínim de 7 caràcters amb al menys una lletra majúscula, una minúscula i un número.
+
+### Modificacio d'usuaris globals
+
+Un cop creats els usuaris es poden fer moltes modificacions.
+Seleccionem compte la que volem modificar i amb botó dret farem **propiedades**.
+
+![Usuaris propietats](/assets/user_propietats.png)
+
+Això és el que podem fer a les pestanyes més significatives:
+* **_General_**: Dades identificatives del usuari
+* **_Cuenta_**: Nom d’inici de sessió, restricció d’inici de sessió, opcions de contrasenya i caducitat del compte..
+  * Hores de inici de sessió, podem indicar a quines hores cada usuari podrà connectar-se.
+* **_Membre de_**: Aquins grups pertany.
+* **_Control remoto_**: Configuració del control remot d’una sessió del usuari.
+
+### Creació de plantilles d'usuaris
+
+Una de les tasques més repetitives en l’administració de Sistemes Operatius és la creació de comptes d’usuari que acostumen a tenir molts valors de configuració similars.
+
+Les **plantilles de comptes d’usuaris** ens ajuden en aquesta tasca ja que són comptes d’usuari estàndard creades amb les propietats que s’apliquen a usuaris amb necessitats comunes.
+
+**Com utilitzar plantilles**:
+
+  1. En primer lloc es crea un compte d’usuari normal amb tots els valors de configuració, permisos, pertinences a grups, etc. corresponents a un tipus d’usuari en concret. Per exemple “professors” i guardem aquest compte amb un nom com **_Plantilla_Professor_**.
+  
+  2. Cada vegada que haguem de donar d’alta un comercial, **farem un còpia d’aquest usuari** i així el nou usuari hereda tota la configuració original de la plantilla.
+  
+  3. Finalment, **personalitzem el nou compte** amb el nom, cognoms, contrasenya, etc. particulars però la resta de treball de configuració ja estarà realitzat.
+
 
 ## Grups 
 
