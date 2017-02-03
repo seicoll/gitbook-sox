@@ -10,16 +10,14 @@ Els **objectes **que administra un domini són:
 
 * **Usuaris globals** 
   * Són usuaris reconeguts per tots els equips que formen part del domini.
-  * Són gestionats pel Directori Actiu de forma centralizada.
-Permet identificar i autenticar els usuaris que poden accedir al sistema.
-Permet gestionar els permisos d'aquests usuaris als recursos compartits. 
-
+  * Són gestionats pel Directori Actiu de forma centralitzada.
+  * Permet identificar i autenticar els usuaris que poden accedir al sistema.
+  * Permet gestionar els permisos d'aquests usuaris als recursos compartits. 
 
 * **Grups **
 
   * Els usuaris globals es poden assignar a grups.
   * Facilitar l'administració quan diversos usuaris tenen perfils de seguretat i accés comuns. 
-
 
 * **Equips** 
   * La base de dades del Directori Actiu també guarda informació dels diferents equips que pertanyen al domini.
@@ -32,11 +30,11 @@ Permet gestionar els permisos d'aquests usuaris als recursos compartits.
 
 ## Eines per a l’administració del domini
 
-Per accedir a les eines que permeten la gestió del Directori Actiu cal anar a _**Inici > Eines administratives**_
+Per accedir a les eines que permeten la gestió del Directori Actiu cal anar a _**Administrador del servidor > Herramientas > Usuarios y equipos de Active Directory**_
 
-Aquí trobarem l’opció _**Usuaris i equips de Active Directory**_ on podrem administrar els usuaris globals, grups i equips del domini.
+En aquesta pantalla podrem administrar els usuaris globals, grups i equips del domini.
 
-> Imatge
+![Usuarios y equipos de Active Directory](/assets/users_active_directori.png)
 
 ## Equips
 
