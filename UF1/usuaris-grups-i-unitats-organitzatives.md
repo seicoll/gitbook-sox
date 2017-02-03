@@ -211,7 +211,7 @@ Les seves principals **funcions** són :
 
 > En les organitzacions de mida reduïda , és preferible implementar un model de **domini únic amb diferents unitats organitzatives d'administració delegada** i comportament diferent, que utilitzar un model de múltiples dominis.
 
-### Creació d'Unitats Organitzatives
+### Creació d'Unitats Organitzatives (UO)
 
 La creació d'unitats organitzatives és molt senzilla: 
 
@@ -221,4 +221,4 @@ La creació d'unitats organitzatives és molt senzilla:
 4. Ara has d'**introduir el nom de la nova unitat organitzativa** i per defecte deixar marcada l'opció de _Protegir contenidor contra esborrat accidental_. Prem Acceptar. 
 5. Apareix un nou contenidor al menú d'usuaris i equips de Directori Actiu. Ja pots **crear nous objectes** (usuaris, grups, equips, etc.) en aquesta nova unitat organitzativa **o bé moure objectes ja existents** senzillament arrossegant des d'altres contenidors.
 
-> Per poder **esborrar l'Unitat Organitzativa** cal prémer sobre Ver i activar l’opció “Característiques avançades”. Després a les Propietats de la UO apareix una pestanya Objecte on es pot desactivar la casella _Protegir contenidor contra esborrat accidental_. I ara sí es pot eliminar la UO.
+> Per poder **esborrar l'Unitat Organitzativa** cal prémer sobre Ver i activar l’opció _Característiques avançades_. Després a les _Propietats_ de la UO apareix una pestanya _Objecte_ on es pot desactivar la casella _Protegir contenidor contra esborrat accidental_. I ara sí es pot eliminar la UO.
