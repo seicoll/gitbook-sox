@@ -209,5 +209,16 @@ Les seves principals **funcions** són :
 * **Delegar l'administració **dels seus objectes a altres usuaris diferents a l'administrador de domini. 
   * **Per exemple**: podem fer que un usuari no administrador pugui donar d’alta usuaris d’un determinat departament.
 
-
 > En les organitzacions de mida reduïda , és preferible implementar un model de **domini únic amb diferents unitats organitzatives d'administració delegada** i comportament diferent, que utilitzar un model de múltiples dominis.
+
+### Creació d'Unitats Organitzatives
+
+La creació d'unitats organitzatives és molt senzilla: 
+
+1. Ves al **_Administrador del Servidor > Usuaris_** i equips del Directori Actiu.
+2. Situa't **sobre el domini** on vulguis crear la unitat organitzativa i obre el menú contextual amb el botó dret del ratolí. 
+3. Marca **l'opció nou** i al menú emergent l'opció **Unitat Organitzativa**. 
+4. Ara has d'**introduir el nom de la nova unitat organitzativa** i per defecte deixar marcada l'opció de _Protegir contenidor contra esborrat accidental_. Prem Acceptar. 
+5. Apareix un nou contenidor al menú d'usuaris i equips de Directori Actiu. Ja pots **crear nous objectes** (usuaris, grups, equips, etc.) en aquesta nova unitat organitzativa **o bé moure objectes ja existents** senzillament arrossegant des d'altres contenidors.
+
+> Per poder **esborrar l'Unitat Organitzativa** cal prémer sobre Ver i activar l’opció “Característiques avançades”. Després a les Propietats de la UO apareix una pestanya Objecte on es pot desactivar la casella _Protegir contenidor contra esborrat accidental_. I ara sí es pot eliminar la UO.
