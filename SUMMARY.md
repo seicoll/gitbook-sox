@@ -1,16 +1,15 @@
 # Summary
 
 * [Introducció](README.md)
-
-* **[UF1. Sistemes operatius propietaris en xarxa](UF1/UF1.md)** 
+* [UF1. Sistemes operatius propietaris en xarxa](UF1/UF1.md)
   * [Introducció als sistemes operatius en xarxa](UF1/uf1-introduccio.md)
     * [Windows Server](UF1/uf1-windowsserver.md)
     * [Instal·lació Windows Server](UF1/uf1-instalacio-windowsserver.md)
   * [Supervisió en Windows Server](UF1/uf1-supervisio.md)
-  * Gestió de dominis. Active Directory
+  * [Gestió de dominis. Active Directory](UF1/gestio-de-dominis.-active-directory.md)
     * [Introducció als dominis](UF1/uf1-introduccio-dominis.md)
-    * Relacions de confiança
-    * Directives de grup
+    * [Relacions de confiança](UF1/relacions-de-confianca.md)
+    * [Directives de grup](UF1/directives-de-grup.md)
     * Usuaris, grups i unitats organitzatives
     * Perfils d'usuaris
 
