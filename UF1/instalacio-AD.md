@@ -56,6 +56,6 @@ Un cop instal·lats els serveis bàsics de Directori Actiu és necessari complet
 
 5. Entreu a la màquina client i **afegiu-la al domini**, canviant el mode de grup de treball al mode de domini. Necessitareu les credencials d'administrador del domini. 
 
-6. Ara entreu a la màquina client i veureu que podeu entrar al domini mitjançant les credencials de l'administrador. Posa una captura de pantalla que mostri que has pogut accedir.
+6. Ara entreu a la màquina client i veureu que podeu entrar al domini mitjançant les credencials de l'administrador. 
 
 7. **Entra al servidor i busca el nou equip** a **_Eines administratives > Usuaris i equips de l’Active Directory_**.
