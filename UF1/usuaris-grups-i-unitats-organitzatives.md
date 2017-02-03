@@ -19,3 +19,12 @@ Permet gestionar els permisos d'aquests usuaris als recursos compartits.
 
   * Els usuaris globals es poden assignar a grups.
   * Facilitar l'administració quan diversos usuaris tenen perfils de seguretat i accés comuns. 
+
+
+* **Equips** 
+  * La base de dades del Directori Actiu també guarda informació dels diferents equips que pertanyen al domini.
+  * Com per exemple el nom del ordinador així com un identificador únic que permet assignar drets i permisos.
+
+
+* **Unitats organitzatives (UO)** 
+  * Són objectes de directori que contenen altres objectes com usuaris, grups, equips o altres unitats organitzatives.
