@@ -30,19 +30,30 @@ Un cop instal·lats els serveis bàsics de **Directori Actiu** és necessari com
 ![](/assets/AD_ins5.png)
 
 2. Després de la pantalla d'inici de l’assistent hi ha tres opcions: 
-  * Afegir l'equip com a controlador de domini a un domini ja existent. 
-  * Afegir un nou domini en un bosc existent.
-  * Afegir un nou bosc.
+  * **_Afegir l'equip com a controlador de domini a un domini ja existent_**: serveix per afegir un controlador secundari a un domini ja creat. 
+  * **_Afegir un nou domini en un bosc existent_**.
+  * **_Afegir un nou bosc_**.
   
-3. Com que no tenim encara cap domini creat escollim la tercera opció _**Afegir un nou bosc**_.
+  Com que no tenim encara cap domini creat escollim la tercera opció _**Afegir un nou bosc**_.
 
-4. A continuació has d'introduir el nom complet del domini arrel que serà el primer del nostre bosc. Aquest nom ha de complir l'estructura DNS (Domain Name System) amb sufix inclòs amb el que definirem el nom del bosc i l'espai de noms, per exemple `bosccoma.local`. Prem _**Següent**_.
+  A continuació has d'introduir el nom complet del domini arrel. Aquest nom ha de complir l'estructura DNS (_Domain Name System_) amb sufix inclòs amb el que definirem el nom del bosc i l'espai de noms, per exemple `bosccoma.local`. 
 
-5. Després de comprovar si el nou nom de bosc ja existís, l'assistent ens convida a determinar el nivell de funcionalitat del sistema que es determinem en funció de la compatibilitat per integrar amb altres dominis gestionats per versions anteriors. En el nostre cas, per assegurar la compatibilitat amb Windows 2008 R2 cal seleccionar l'opció "**_Nivell de funcionalitat Windows 2012 R2_**" i prem **_Següent_**.
 
-6. Després d'examinar la configuració DNS i, en el cas de no estar instal·lat aquest servei, has de deixar marcada la casella "**Servidor DNS**" i prémer Següent doncs **cal tenir instal·lat el servei de resolució de noms per al correcte funcionament del Directori Actiu**.
 
-7. L'assistent ens demana ara una **contrasenya **per poder administrar el **Directori Actiu** en determinades circumstàncies. En general, encara que poden ser diferents, sol ser convenient posar la mateixa contrasenya que l'administrador de l'equip. Introdueix doncs la contrasenya de l'administrador i prem **_Següent_**.
+    
+        Imatge
+  
+
+
+
+
+3. Després ens demana el nivell de funcionalitat del sistema que es determina en funció de la compatibilitat per integrar amb altres dominis gestionats per versions anteriors. 
+  En el nostre cas, per assegurar la compatibilitat amb Windows 2008 R2 cal seleccionar l'opció "**_Nivell de funcionalitat Windows 2012 R2_**" i prem **_Següent_**.
+
+4. Després d'examinar la configuració DNS i, en el cas de no estar instal·lat aquest servei, has de deixar marcada la casella **_Servidor DNS_** i prémer Següent doncs **cal tenir instal·lat el servei de resolució de noms per al correcte funcionament del Directori Actiu**.
+
+5. L'assistent ens demana ara una **contrasenya **per poder administrar el **Directori Actiu**. En general, encara que poden ser diferents, sol ser convenient posar la mateixa contrasenya que l'administrador de l'equip. 
+  Introdueix doncs la contrasenya de l'administrador i prem **_Següent_**.
 
 8. A continuació s'ha d'indicar la localització dels arxius bàsics que utilitzarà el Directori Actiu: la carpeta per a base de dades, la carpeta d'arxius de registre i la carpeta SYSVOL que conté els arxius públics del domini que han de ser compartits.
 
