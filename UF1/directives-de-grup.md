@@ -27,7 +27,6 @@ Configuracions que permeten:
 
   * Són aquelles que s'apliquen a un conjunt d'usuaris o equips del domini.
 
-
 ## Principals polítiques incloses en un directriu de grup (GPO)
 
 Cada **GPO** conté la configuració del **equip **i d'**usuari**. Cadascuna d’aquestes es divideix en arbres iguals.
