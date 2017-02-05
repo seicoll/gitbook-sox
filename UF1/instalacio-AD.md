@@ -51,7 +51,6 @@ Introdueix doncs la contrasenya de l'administrador i prem **_Següent_**.
 
   ![](/assets/AD_ins7.png)
 
-
 A continuació indicarà que no troba un servidor DNS, però **no cal fer res**; automàticament s'instal·larà el servei de DNS en aquest mateix servidor doncs **cal tenir instal·lat el servei de resolució de noms per al correcte funcionament del Directori Actiu**.
 
 La finestra següent, demanarà el **nom NetBIOS** del domini. Es pot deixar el què proposa per defecte, que serà `BOSCCOMA` (el nom del domini en majúscules i sense .local).
@@ -62,24 +61,61 @@ A continuació, se'ns informa mitjançant un **resum**, de tota les configuracio
 
 En prémer **_Següent_** comença el procés de comprovació de requeriment previs i després podem sel·leccionar **_Instal·lar_** i comença el procés de **promoció de l'equip a Controlador de Domini**. 
 
-Finalment apareix una pantalla informativa un cop acabada la instal·lació. Prémer **_Finalitza _** i després **Reiniciar l'equip** perquè el Directori Actiu s’iniciï i estigui operatiu.
+Un cop acabada la instal·lació es **reiniciarà l'equip** perquè el Directori Actiu s’iniciï i estigui operatiu.
 
 > Si tot ha funcionat correctament, el nostre equip ja està convertit en un controlador de domini del Directori Actiu per gestionar de forma centralitzada els recursos de la xarxa.
 
-Un cop reiniciat el sistema, en la pantalla d'inici de sessió, on demana l'usuari i contrasenya, ja es pot veure un canvi: el nom d'usuari és `BOSCCOMA\Administrador`. 
+Un cop reiniciat el sistema, en la **pantalla d'inici** de sessió, on demana l'usuari i contrasenya, ja es pot veure un canvi: el nom d'usuari és `BOSCCOMA\Administrador`. 
+
+### Eliminació del domini
+
+1. Si s'intenta desinstal·lar **_Servicios de dominio de Active Directory_**, s'arriba a un punt en què avisa que primer s'ha de degradar el controlador de domini, i posa un enllaç per fer-ho.
+
+2. Si aquest és l'últim controlador de domini (de fet, és l'únic), cal marcar l'opció **_Último controlador de dominio en el dominio_**.
+
+3. Avisarà què el servidor té altres rols relacionats, però s'ha de marcar  **_Continuar con la eliminación_** i seguir endavant.
+
+4. Després també s'ha de marcar **_Quitar esta zona de DNS..._** i **_Quitar particiones de aplicación_**.
+
+5. I finalment clicar el botó **_Disminuir nivel_**.
+
+Després de  reiniciar, en l'inici de sessió, el nom d'usuari ja no inclou el nom del domini.
 
 ## Unir equips al domini
 
-1. Configureu una **xarxa interna** en VirtualBox amb un servidor Windows 2012 com a controlador de domini i un ordinador client Windows 10.
+1. Configureu una **xarxa interna** en VirtualBox amb un servidor Windows 2012 com a controlador de domini i un ordinador client Windows.
 
-2. Configureu la tarjeta de xarxa de les màquines virtuals en mode de **Xarxa interna**.
+2. Assigneu IP Estàtica a la màquina servidor (per exemple 192.168.0.10) i a la màquina client (192.168.0.20). El controlador de domini també dona servei DNS al client per tant, al client, **cal posar com a servidor DNS principal la IP del servidor de domini**.
 
-3. Assigneu IP Estàtica a la màquina servidor (per exemple 192.168.0.10) i a la màquina client (192.168.0.20). El controlador de domini també dona servei DNS al client per tant, al client, **cal posar com a servidor DNS principal la IP del servidor de domini**.
+> **ATENCIÓ**: és important recordar que per unir un client a un domini, el primer que cal fer és configurar com a DNS principal l'adreça del servidor DNS del domini, que és també el controlador de domini.
 
-4. Fes pings per a verificar que el client pot comunicar-se amb el servidor.
+3. Fes pings per a verificar que el client pot comunicar-se amb el servidor.
 
-5. Entreu a la màquina client i **afegiu-la al domini**, canviant el mode de grup de treball al mode de domini. Necessitareu les credencials d'administrador del domini. 
+4. Entreu a la màquina client i **afegiu-la al domini**, canviant el mode de grup de treball al mode de domini. 
+  Una forma d'arribar a la configuracio és fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar **_Sistema > Cambiar configuración > Cambiar..._**
+  
+5. Cal seleccionar l'opció **_Dominio _**i posar el nom del domini al qual voleu connercar-la (`bosccoma.local`). El nom del domini també es pot posar en el format NetBIOS (`BOSCCOMA`).
+  
+6. Si pot connectar amb el servidor, demanarà les credencials de l'administrador del domini. 
 
-6. Ara entreu a la màquina client i veureu que podeu entrar al domini mitjançant les credencials de l'administrador. 
+7. Si tot ha anat bé, ens indicarà que l'equip s'ha unit al domini però que **cal reiniciar**.
 
-7. **Entra al servidor i busca el nou equip** a **_Eines administratives > Usuaris i equips de l’Active Directory_**.
+6. Ara entreu a la màquina client i veureu que podeu entrar al domini mitjançant les credencials de l'administrador. L'inici de sessió amb un usuari de domini es pot fer tal i com s'indica a la [teoria](/UF1/usuaris-grups-i-unitats-organitzatives.html#usuaris-globals).
+
+7. Entra al servidor i busca el nou equip a **_Eines administratives > Usuaris i equips de l’Active Directory_**.
+
+### Desconnectar un client del domini
+
+Si es vol desconnectar la màquina client del domini on estava connectada, cal tornar a l'apartat on hem anat per unir-la al domini, seleccionar l'opció **_Grupo de trabajo_** i posar un nom (per defecte **_WORKGROUP_**).
+
+Demanarà el nom i la contrasenya d'un usuari vàlid per realitzar aquesta acció i ens avisarà si s'ha produït algun error. Si tot ha anat correctament, **cal reiniciar** la màquina.
+
+Si s'elimina el servidor DNS del domini, a la configuració de xarxa s'ha de treure el servidor 
+DNS del domini i posar altres servidors DNS.
+
+### Connectar el client a un altre domini
+
+Un cop desconnectat el client del domini, cal posar com a servidor primari de DNS la IP del servidor DNS del nou domini.
+
+Després repetirem els passos per unir el client a un domini posant el nom del nou domini.
+
