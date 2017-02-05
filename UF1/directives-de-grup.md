@@ -4,16 +4,18 @@
 
 Una **directriu de grup (GPO)** és un component a on **es defineixen les regles** o polítiques que compatiran tot un grup de comptes d'usuari o equips en un domini.
 
-Una **directriu de grup** és un conjunt d'una o més polítiques que controlen el que els usuaris poden o no poden fer en un sistema informàtic.
+> Una **directriu de grup** és un conjunt d'una o més polítiques que defineixen el què els usuaris poden o no poden fer en un sistema informàtic (drets i privilegis).
 
-Les directrius de grup s**implifiquen molt l’administració i configuració dels  ordinadors** de la nostra empresa.
+* **Per exemple**: bloquejar l’accés a l’administrador de tasques, restringir l’accés a determinades carpetes, deshabilitar la descàrrega d’arxius executables, etc.
+
+Les directrius de grup **simplifiquen molt l’administració i configuració dels ordinadors** de la nostra empresa.
 
 Les directrius de grup sovint s’**utilitzen per restringir certes accions** que poden presentar riscos de seguretat. 
 
-  * **Per exemple**: bloquejar l’accés a l’administrador de tasques, restringir l’accés a determinades carpetes, deshabilitar la descàrrega d’arxius executables, etc.
-
-Configuracions que permeten: 
-  * Configuracions del registre, polítiques de seguretat, instal·lació automàtica de programari, execució de scripts, re-direcció de carpetes locals i recursos de xarxa, ...
+Algunes configuracions que permeten les directrius de grup són: 
+  * Polítiques de seguretat 
+  * Instal·lació automàtica de programari
+  * Execució de scripts
 
 ## Tipus de directrius de grup
 
@@ -29,13 +31,15 @@ Configuracions que permeten:
 
 ## Principals polítiques incloses en un directriu de grup (GPO)
 
-Cada **GPO** conté la configuració del **equip **i d'**usuari**. Cadascuna d’aquestes es divideix en arbres iguals.
-
-
+Cada directriu de grup (**GPO**) conté la configuració del **equip **i d'**usuari**. 
 
 * **Configuració de l’equip**: permet establir les directrius que s’aplicaran als equips amb independència de qui inicia la sessió.
 
 * **Configuració d’usuari**: permet establir les directrius que s’aplicaran als usuaris, independentment de l’equip en què hagin iniciat la sessió.
+
+Cadascuna d’aquestes es divideix en arbres iguals.
+
+![](/assets/directrius_edicio.png)
 
 Hi ha polítiques que estan als dos subarbres però amb significats i/o paràmetres diferents.
 Per exemple:
@@ -80,11 +84,13 @@ Per introduir-nos a les directives de grup el millor és començar amb un exempl
   * Els contenidors on es poden vincular GPOs són: sites, dominis, i OUs.
   * Els comptes i equips que estan dins del contenidor reben automàticament les polítiques que estiguin configurades en el GPO.
 
-6. Fem botó dret dintre de la política que acabem de crear i escollim Editar.
+6. Fem botó dret sobre de la política que acabem de crear i escollim **_Editar..._**.
 
 7. S’obrirà l’**Editor de directrius** de la GPO.
 
 8. Anem a **_Configuració d'usuari > Directives > Plantilles administratives > Active Desktop > Active Desktop > Tapiz del escritorio_**.
+
+![](/assets/directriu_escriptori.png)
 
 9. **Habilitem la directriu**, posem el camí de la imatge `\\NomServidor\wallpaper\imatge.jpg` 
 
