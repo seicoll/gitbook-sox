@@ -17,6 +17,11 @@
 ---
 
 * [UF2. Sistemes operatius lliures en xarxa](UF2.md)
+  * [Introducció als sistemes operatius Linux](UF2/uf2-introduccio.md)
+  * [Administració i supervisió](UF2/uf2-supervisio.md)
+  * [Gestió de dominis](UF2/uf2-gestio-dominis.md)
+    * [Introducció als dominis en Linux](UF2/uf2-dominis-linux.md)
+    * [Instal·lació d'un controlador de domini LDAP](UF2/uf2-LDAP.md)
 
 ---
 
