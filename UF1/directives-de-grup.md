@@ -1,5 +1,7 @@
 # Directrius de grup [_Group Policy Object (GPO)_]
 
+## Què és un directriu de grup (GPO)?
+
 Una **directriu de grup (GPO)** és un component a on **es defineixen les regles** o polítiques que compatiran tot un grup de comptes d'usuari o equips en un domini.
 
 Una **directriu de grup** és un conjunt d'una o més polítiques que controlen el que els usuaris poden o no poden fer en un sistema informàtic.
