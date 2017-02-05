@@ -15,7 +15,20 @@ Les directrius de grup sovint s’**utilitzen per restringir certes accions** qu
 Configuracions que permeten: 
   * Configuracions del registre, polítiques de seguretat, instal·lació automàtica de programari, execució de scripts, re-direcció de carpetes locals i recursos de xarxa, ...
 
-## Principals polítiques incloses al GPO
+## Tipus de directrius de grup
+
+* **Directrius de grup local**
+
+  * Són aquelles que només s'apliquen a la màquina on s'han definit.
+
+  * Normalment, es configuren directament en els clients, o bé, quan es treballa en una xarxa sense domini (grup de treball).
+
+* **Directrius de grup d'Active Directory**
+
+  * Són aquelles que s'apliquen a un conjunt d'usuaris o equips del domini.
+
+
+## Principals polítiques incloses en un directriu de grup (GPO)
 
 Cada **GPO** conté la configuració del **equip **i d'**usuari**. Cadascuna d’aquestes es divideix en arbres iguals.
 
