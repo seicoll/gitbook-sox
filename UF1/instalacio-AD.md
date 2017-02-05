@@ -87,7 +87,7 @@ Després de  reiniciar, en l'inici de sessió, el nom d'usuari ja no inclou el n
 
 2. Assigneu IP Estàtica a la màquina servidor (per exemple 192.168.0.10) i a la màquina client (192.168.0.20). El controlador de domini també dona servei DNS al client per tant, al client, **cal posar com a servidor DNS principal la IP del servidor de domini**.
 
-> **ATENCIÓ**: és important recordar que per unir un client a un domini, el primer que cal fer és configurar com a DNS principal l'adreça del servidor DNS del domini, que és també el controlador de domini.
+> **ATENCIÓ**: és important recordar que per unir un client a un domini, el primer que cal fer és configurar com a **DNS principal** l'adreça **IP del servidor DNS** del domini, que és també el controlador de domini.
 
 3. Fes pings per a verificar que el client pot comunicar-se amb el servidor.
 
