@@ -12,7 +12,7 @@ La instal·lació consisteix en instal·lar el paquet **_slapd_**.
 
 Durant l’instal·lació, us demana que introduïu una contrasenya de l’administrador del servei LDAP.
 
-IMATGE
+![](/assets/slapd_instalacio.png)
 
 ## Instal·lació ldap-utils
 
