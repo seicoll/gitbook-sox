@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Introducció als dominis en Linux
 
 En Linux, el protocol que s'encarrega de crear, modificar i accedir a informació en un directori és **LDAP**.
