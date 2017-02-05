@@ -4,15 +4,18 @@
 
 ## Instal·lació del Directori Actiu
 
-La instal·lació del **Directori Actiu** és la implementació d'una funció bàsica o rol del nostre Windows 2012 Server. Com qualsevol altre rol de servidor el podem instal·lar des l’**_Administrador del servidor_**.
+1. La instal·lació del **Directori Actiu** és la implementació d'una funció bàsica o rol del nostre Windows Server. Com qualsevol altre rol de servidor el podem instal·lar des l’**_Administrador del servidor_** i seleccionar l'opció _**Agregar roles y características**_.
 
-1. Obrir l’Administrador del servidor i seleccionar al panell esquerre l'opció **_Administrar i Afegir funcions i característiques_** amb el que s’obrirà l'assistent per afegir funcions. 
+![](/assets/AD_afegir.png)
 
-2. Després d’algunes pantalles d'informació anirem amb el botó de **_Següent _** fins a la llista de possibles funcions per instal·lar en el sistema. 
+2. Obrir l’_**Administrador del servidor**_ i seleccionar al panell esquerre l'opció **_Administrar i Afegir funcions i característiques_** amb el que s’obrirà l'assistent per afegir funcions. 
 
-3. Marcar l'opció **_Serveis de Domini d'Active Directory (AD DS)_** i **_DNS Server_** i prémer el botó de **_Següent_**.
 
-4. Un cop finalitzada la instal·lació ens apareix una pantalla informativa on ens adverteix que per convertir el servidor en un controlador de domini funcional cal o**brir l'assistent per crear un nou domini**.
+3. Després d’algunes pantalles d'informació anirem amb el botó de **_Següent _** fins a la llista de possibles funcions per instal·lar en el sistema. 
+
+4. Marcar l'opció **_Serveis de Domini d'Active Directory (AD DS)_** i **_DNS Server_** i prémer el botó de **_Següent_**.
+
+5. Un cop finalitzada la instal·lació ens apareix una pantalla informativa on ens adverteix que per convertir el servidor en un controlador de domini funcional cal o**brir l'assistent per crear un nou domini**.
 
 ## Creació del domini
 Un cop instal·lats els serveis bàsics de Directori Actiu és necessari completar la instal·lació mitjançant la creació d'un nou domini i la promoció de l'equip a controlador de domini mitjançant els següents passos:
