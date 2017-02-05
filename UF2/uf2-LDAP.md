@@ -45,3 +45,20 @@ La base de dades antiga s'ha guardat a /var/backups.
 
 8. La configuració s'ha realitzat amb èxit.
 
+Una vegada configurat el servei, **ens assegurem que funciona** amb l’ordre següent:
+
+  `sudo nmap localhost`
+  
+* El servei ha d’escoltar en el port 389.
+
+Verifica el seu funcionament amb la comanda `slapcat` que permet veure la base de dades de l’OpenLDAP en format LDIF. 
+
+Per tal d’arrencar o reiniciar el servidor LDAP, executeu l’ordre següent:
+
+   `sudo /etc/init.d/slapd restart`
+   
+**Més informació**: [Instalación y configuración de OpenLDAP](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m6/instalacin_y_configuracin_de_openldap.html)
+
+
+
+
