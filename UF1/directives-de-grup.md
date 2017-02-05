@@ -21,13 +21,13 @@ Algunes configuracions que permeten les directrius de grup són:
 
 * **Directrius de grup local**
 
-  * Són aquelles que només s'apliquen a la màquina on s'han definit.
+  * Són aquelles que només s'apliquen **a la màquina on s'han definit**.
 
   * Normalment, es configuren directament en els clients, o bé, quan es treballa en una xarxa sense domini (grup de treball).
 
 * **Directrius de grup d'Active Directory**
 
-  * Són aquelles que s'apliquen a un conjunt d'usuaris o equips del domini.
+  * Són aquelles que s'apliquen **a un conjunt d'usuaris o equips del domini**.
 
 ## Principals polítiques incloses en un directriu de grup (GPO)
 
