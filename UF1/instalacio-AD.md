@@ -20,50 +20,53 @@
 
 5. Un cop finalitzada la instal·lació ens apareix una pantalla informativa on ens adverteix que per convertir el servidor en un controlador de domini funcional cal obrir l'assistent per crear un nou domini seleccionant _**Promover este servidor a controlador de dominio**_.
 
-![](/assets/AD_ins4.png)
+  ![](/assets/AD_ins4.png)
 
 ## Creació del domini
 Un cop instal·lats els serveis bàsics de **Directori Actiu** és necessari completar la instal·lació mitjançant la creació d'un **nou domini** i la promoció de l'equip a controlador de domini mitjançant els següents passos:
 
-1. En l’_**Administrador del servidor**_ ens apareix una notificació indicant que es requereix una confinguració del AD i mostra l’opció de _**Promover este servidor a controlador de dominio**_.
+En l’_**Administrador del servidor**_ ens apareix una notificació indicant que es requereix una confinguració del AD i mostra l’opció de _**Promover este servidor a controlador de dominio**_.
 
-![](/assets/AD_ins5.png)
+  ![](/assets/AD_ins5.png)
 
-2. Després de la pantalla d'inici de l’assistent hi ha tres opcions: 
+Després de la pantalla d'inici de l’assistent hi ha tres opcions: 
   * **_Afegir l'equip com a controlador de domini a un domini ja existent_**: serveix per afegir un controlador secundari a un domini ja creat. 
   * **_Afegir un nou domini en un bosc existent_**.
   * **_Afegir un nou bosc_**.
   
-  Com que no tenim encara cap domini creat escollim la tercera opció _**Afegir un nou bosc**_.
+Com que no tenim encara cap domini creat escollim la tercera opció _**Afegir un nou bosc**_.
 
-  A continuació has d'introduir el nom complet del domini arrel. Aquest nom ha de complir l'estructura DNS (_Domain Name System_) amb sufix inclòs amb el que definirem el nom del bosc i l'espai de noms, per exemple `bosccoma.local`. 
+A continuació has d'introduir el nom complet del domini arrel. Aquest nom ha de complir l'estructura DNS (_Domain Name System_) amb sufix inclòs amb el que definirem el nom del bosc i l'espai de noms, per exemple `bosccoma.local`. 
 
-
-
-    
-        Imatge
-  
+  ![](/assets/AD_ins6.png)
 
 
+Després ens demana el nivell de funcionalitat del sistema. Sempre escollirem el més alt, a no ser que calgui garantir la compatibilitat amb altres dominis gestionats per versions inferior. 
+
+En el nostre cas, cal seleccionar l'opció "**_Nivell de funcionalitat Windows Server 2012 R2_**" i prem **_Següent_**.
+
+L'assistent ens demana ara una **contrasenya **per poder administrar el **Directori Actiu**. En general, encara que poden ser diferents, sol ser convenient posar la mateixa contrasenya que l'administrador de l'equip. 
+
+Introdueix doncs la contrasenya de l'administrador i prem **_Següent_**.
+
+  ![](/assets/AD_ins7.png)
 
 
-3. Després ens demana el nivell de funcionalitat del sistema que es determina en funció de la compatibilitat per integrar amb altres dominis gestionats per versions anteriors. 
-  En el nostre cas, per assegurar la compatibilitat amb Windows 2008 R2 cal seleccionar l'opció "**_Nivell de funcionalitat Windows 2012 R2_**" i prem **_Següent_**.
+A continuació indicarà que no troba un servidor DNS, però **no cal fer res**; automàticament s'instal·larà el servei de DNS en aquest mateix servidor doncs **cal tenir instal·lat el servei de resolució de noms per al correcte funcionament del Directori Actiu**.
 
-4. Després d'examinar la configuració DNS i, en el cas de no estar instal·lat aquest servei, has de deixar marcada la casella **_Servidor DNS_** i prémer Següent doncs **cal tenir instal·lat el servei de resolució de noms per al correcte funcionament del Directori Actiu**.
+La finestra següent, demanarà el **nom NetBIOS** del domini. Es pot deixar el què proposa per defecte, que serà `BOSCCOMA` (el nom del domini en majúscules i sense .local).
 
-5. L'assistent ens demana ara una **contrasenya **per poder administrar el **Directori Actiu**. En general, encara que poden ser diferents, sol ser convenient posar la mateixa contrasenya que l'administrador de l'equip. 
-  Introdueix doncs la contrasenya de l'administrador i prem **_Següent_**.
+Després s'ha d'indicar la localització dels arxius bàsics que utilitzarà el Directori Actiu: la carpeta per a base de dades, la carpeta d'arxius de registre i la carpeta SYSVOL que conté els arxius públics del domini que han de ser compartits. Podem deixar les opcions per defecte.
 
-8. A continuació s'ha d'indicar la localització dels arxius bàsics que utilitzarà el Directori Actiu: la carpeta per a base de dades, la carpeta d'arxius de registre i la carpeta SYSVOL que conté els arxius públics del domini que han de ser compartits.
+A continuació, se'ns informa mitjançant un **resum**, de tota les configuracions que hem seleccionat. 
 
-9. Se'ns informa a continuació mitjançant un **resum**, de tota les configuracions que hem seleccionat. En aquest punt podríem Exportar Configuració... és a dir, guardar aquestes seleccions en un arxiu per utilitzar-les en futures instal·lacions automàtiques.
+En prémer **_Següent_** comença el procés de comprovació de requeriment previs i després podem sel·leccionar **_Instal·lar_** i comença el procés de **promoció de l'equip a Controlador de Domini**. 
 
-10. En prémer **_Següent _**comença la instal·lació de **Directori Actiu** i el procés de **promoció de l'equip a Controlador de Domini**, que poden portar més o menys temps en funció de l'entorn i de les opcions seleccionades. 
+Finalment apareix una pantalla informativa un cop acabada la instal·lació. Prémer **_Finalitza _** i després **Reiniciar l'equip** perquè el Directori Actiu s’iniciï i estigui operatiu.
 
-11. Finalment apareix una pantalla informativa un cop acabada la instal·lació. Prémer **_Finalitza _**i després **Reiniciar l'equip** perquè el Directori Actiu s’iniciï i estigui operatiu.
+> Si tot ha funcionat correctament, el nostre equip ja està convertit en un controlador de domini del Directori Actiu per gestionar de forma centralitzada els recursos de la xarxa.
 
-12. Si tot ha funcionat correctament, el nostre equip ja està convertit en un controlador de domini del Directori Actiu per gestionar de forma centralitzada els recursos de la xarxa.
+Un cop reiniciat el sistema, en la pantalla d'inici de sessió, on demana l'usuari i contrasenya, ja es pot veure un canvi: el nom d'usuari és `BOSCCOMA\Administrador`. 
 
 ## Unir equips al domini
 
