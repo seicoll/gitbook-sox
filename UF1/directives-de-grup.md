@@ -117,3 +117,44 @@ Per evitar conflictes, s’utilitza el següent **ordre d'aplicació**:
 3. GPOs vinculats a **dominis**.
 4. GPOs vinculats a **Unitats Organitzatives de primer nivell**.
 5. GPOs vinculats a **Unitats Organitzatives de segon nivell**. 
+
+## Delegació del control del GPO
+
+Qualsevol usuari o grup que tingui aplicat el **control total** sobre un GPO pot administrar-lo. 
+
+Per defecte, poden **administrar GPOs**: 
+* Grup administradors d'empresa 
+* Grup adminstradors del domini 
+* Creador del GPO 
+* El propi SYSTEM 
+
+Per defecte, només poden **crear GPOs**: 
+* Administradors d'empresa i domini 
+* Usuaris o grups membres del grup Group Policy Creator Owners 
+
+> Es pot **delegar el control** a altres usuaris i grups posant els usuaris que han de fer aquesta tasca al grup **_Group Policy Creator Owners_**.
+
+## Directrius d'instal·lació de programari
+
+Permet instal·lar programes als ordinadors clients des del servidor.
+
+Serveix tant per instal·lar com per desinstal·lar de forma centralitzada.
+
+Hi ha dues formes desplegar una aplicació:
+
+* **Assignar**: 
+  * Permet que l’aplicació s’instal·li o bé quan l’usuari intenti accedir per primera vegada o bé automàticament. 
+* **Publicar**: 
+  * Dóna la oportunitat a l'usuari d'instal·lar l'aplicació si li interessa, però sense cap acció automàtica. 
+  * La llista aplicacions publicades i instal·lar-les, apareix al **_Panel de control > Añadir / eliminar programas_**.
+
+> La publicació sempre es fa sobre els usuaris, mentre que l’assignació es pot fer sobre el usuaris o sobre els equips.
+
+## Consells d'utilització de polítiques de grup
+
+* **Separar Equips i  Usuaris en OUs** diferenciades: 
+  Facilita tasca d'administració d'usuaris/equips i podem assignar a administradors diferents. 
+
+* **Minimitzar els GPOs **associades a usuaris o equips:
+  Els temps que triga a iniciar equip o usuari depèn del número de polítiques a aplicar. 
+
