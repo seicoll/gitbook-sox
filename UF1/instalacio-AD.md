@@ -4,23 +4,30 @@
 
 ## Instal·lació del Directori Actiu
 
-1. La instal·lació del **Directori Actiu** és la implementació d'una funció bàsica o rol del nostre Windows Server. Com qualsevol altre rol de servidor el podem instal·lar des l’**_Administrador del servidor_** i seleccionar l'opció _**Agregar roles y características**_.
+1. La instal·lació del **Directori Actiu** és la implementació d'una funció bàsica o rol del nostre Windows Server. Com qualsevol altre rol de servidor el podem instal·lar des l’**_Administrador del servidor_** i seleccionar l'opció _**Agregar roles y características**_ que obrirà l'assistent per afegir funcions.
 
-![](/assets/AD_afegir.png)
+  ![](/assets/AD_afegir.png)
 
-2. Obrir l’_**Administrador del servidor**_ i seleccionar al panell esquerre l'opció **_Administrar i Afegir funcions i característiques_** amb el que s’obrirà l'assistent per afegir funcions. 
+2. Triem l'opció _**Instalación basada en características o en roles**_.
 
+  ![](/assets/AD_ins2.png)
 
-3. Després d’algunes pantalles d'informació anirem amb el botó de **_Següent _** fins a la llista de possibles funcions per instal·lar en el sistema. 
+3. Després d’algunes pantalles d'informació on cal escollir a quin servidor el volem instal·lar, anirem amb el botó de **_Següent _** fins a la llista de possibles funcions per instal·lar en el sistema. 
+
+  ![](/assets/AD_ins3.png)
 
 4. Marcar l'opció **_Serveis de Domini d'Active Directory (AD DS)_** i **_DNS Server_** i prémer el botó de **_Següent_**.
 
-5. Un cop finalitzada la instal·lació ens apareix una pantalla informativa on ens adverteix que per convertir el servidor en un controlador de domini funcional cal o**brir l'assistent per crear un nou domini**.
+5. Un cop finalitzada la instal·lació ens apareix una pantalla informativa on ens adverteix que per convertir el servidor en un controlador de domini funcional cal obrir l'assistent per crear un nou domini seleccionant _**Promover este servidor a controlador de dominio**_.
+
+![](/assets/AD_ins4.png)
 
 ## Creació del domini
-Un cop instal·lats els serveis bàsics de Directori Actiu és necessari completar la instal·lació mitjançant la creació d'un nou domini i la promoció de l'equip a controlador de domini mitjançant els següents passos:
+Un cop instal·lats els serveis bàsics de **Directori Actiu** és necessari completar la instal·lació mitjançant la creació d'un **nou domini** i la promoció de l'equip a controlador de domini mitjançant els següents passos:
 
-1. En l’Administrador del servidor ens apareix una notificació indicant que es requereix una confinguració del AD i mostra l’opció de _**Promover este servidor a controlador de dominio**_.
+1. En l’_**Administrador del servidor**_ ens apareix una notificació indicant que es requereix una confinguració del AD i mostra l’opció de _**Promover este servidor a controlador de dominio**_.
+
+![](/assets/AD_ins5.png)
 
 2. Després de la pantalla d'inici de l’assistent hi ha tres opcions: 
   * Afegir l'equip com a controlador de domini a un domini ja existent. 
