@@ -309,13 +309,13 @@ Un **permís** és una marca associada a cada recurs de xarxa \(fitxers, directo
 
 Per fer la gestió d’usuaris, grups i permisos, es recomana fer servir els **permisos GNU/Linux**, els quals permeten assignar permisos de lectura, escriptura i execució \(rwx\) a l’usuari propietari de l’arxiu, al grup propietari de l’arxiu i a la resta d’usuaris del sistema.
 
-### !!!!!Configurar propietaris i permisos locals, i usuaris i permisos Samba
+### Configurar propietaris i permisos locals, i usuaris i permisos Samba
 
 Una forma senzilla de configurar els permisos desitjats és posar tots els permisos en els permisos locals, i en la configuració de Samba indicar els usuaris que tenen accés i amb quins permisos.
 
 Per **exemple**, per compartir la carpeta alumnes i donar permisos de lectura, escriptura i execució a tots els usuaris del grup alumnes.
 
-```
+```bash
 # ls -l /home/samba/
 drwxrwx--- 2 root alumnes 4096 alumnes
 ```
@@ -324,7 +324,7 @@ Si es vol definir un **grup** en el fitxer de configuració del Samba, `/etc/sam
 
 **Per exemple**, si heu definit una carpeta compartida del Samba anomenada **share** i desitgeu:
 
-* Tot i que el recurs hem comparit el recurs amb permisos de lectura i escriptura \(_**read only=no**_\), volem donar permisos només de  lectura al grup d'usuaris anomenat _**alumnes**_. 
+* Tot i que el recurs hem compartit el recurs amb permisos de lectura i escriptura \(_**read only=no**_\), volem donar permisos només de  lectura al grup d'usuaris anomenat _**alumnes**_. 
 * Restringir l’accés a l’usuari _**alumne1**_.
 * Permetre l'escriptura al grup anomenat _**professors**_ i a l'usuari _**sergi**_.
 
@@ -368,6 +368,10 @@ Per **determinar els permisos que tindrà l'usuari**, Samba realitza les següen
 4. **Determina els permisos triant els més restrictius** entre els permisos que té l'usuari Samba sobre el recurs compartit i els permisos que té l'usuari local sobre la carpeta local
 
 > Quan els permisos GNU/Linux es contradiuen amb els permisos Samba, el permís efectiu és el **més restrictiu**.
+
+Podem fer un símil amb l'accés a una vivenda. Els permisos de Samba serien la valla i els permisos locals la porta de casa.
+
+![](/assets/samba-permisos.png)
 
 ## Documentació i recursos
 
