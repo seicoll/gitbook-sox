@@ -26,3 +26,19 @@ Des de l’ubuntu desktop o qualsevol altre clien, aneu a un navegador web i con
 Us demanarà l'usuari (hauria de ser cn=admin,dc=bosccoma,dc=local) i la seva contrasenya.
 
 Si l'identificador no és correcte, cal revisar els canvis fets a l'arxiu `/etc/phpldapadmin/config.php`
+
+## Instal·lació LAT
+
+També hi ha programes per entorn gràfic que permeten gestionar LDAP de forma remota com per exemple **LAT (_LDAP Administration Tool_) **o **JXplorer**.
+
+Es pot instal·lar **LAT **des del Centre de Software d'Ubuntu o per comandes:
+
+`sudo apt-get install lat`
+
+Per posar-lo en marxa és preferible fer-ho des de la consola:
+
+`sudo lat`
+
+Al posar-lo en marxa demanarà amb quin servidor LDAP es vol connectar:
+
+![LAT](/assets/LAT.png)
