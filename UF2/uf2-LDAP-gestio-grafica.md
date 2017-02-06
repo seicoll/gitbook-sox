@@ -1,6 +1,8 @@
 # Gestionar LDAP amb interfície gràfica
 
-## Instal·lació phpLDAPAdmin
+## phpLDAPadmin
+
+### Instal·lació phpLDAPAdmin
 
 Per instal·lar una interfície web de gestió del directori LDAP, instal·la al servidor el **phpLDAPadmin** amb la comanda:
 
@@ -13,9 +15,10 @@ Per configurar el **phpLDAPadmin** per tal que accedeixi al nostre domini, edita
 I modifiqueu `dc=example,dc=com` per `dc=bosccoma,dc=local`
 
 > Amb l'editor nano, es pot buscar text amb la combinació de tecles **Ctrl + W**
+
 > Les línies comentades comencen amb # o // són comentaris i no cal modificar-les.
 
-## Accedir a phpLDAPadmin
+### Accedir a phpLDAPadmin
 
 Des de l’ubuntu desktop o qualsevol altre clien, aneu a un navegador web i connecteu-vos al phpldapadmin posant l'adreça.
 
@@ -27,7 +30,9 @@ Us demanarà l'usuari (hauria de ser cn=admin,dc=bosccoma,dc=local) i la seva co
 
 Si l'identificador no és correcte, cal revisar els canvis fets a l'arxiu `/etc/phpldapadmin/config.php`
 
-## Instal·lació LAT
+## LAT (_LDAP Administration Tool_)
+
+### Instal·lació LAT
 
 També hi ha programes per entorn gràfic que permeten gestionar LDAP de forma remota com per exemple **LAT (_LDAP Administration Tool_) **o **JXplorer**.
 
