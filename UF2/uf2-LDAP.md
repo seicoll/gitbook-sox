@@ -60,5 +60,10 @@ Per tal d’arrencar o reiniciar el servidor LDAP, executeu l’ordre següent:
    
 **Més informació**: [Instalación y configuración de OpenLDAP](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m6/instalacin_y_configuracin_de_openldap.html)
 
+## Reconfigurar el servei LDAP
+
+Si no hem configurat correctament el servei LDAP o volem canviar el nom del domini, es pot tornar a configurar el servei amb la comanda:
+
+ `sudo dpkg-reconfigure slapd`
 
 
