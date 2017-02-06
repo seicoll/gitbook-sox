@@ -305,7 +305,7 @@ Un **permís** és una marca associada a cada recurs de xarxa (fitxers, director
 
 Per fer la gestió d’usuaris, grups i permisos, es recomana fer servir els **permisos GNU/Linux**, els quals permeten assignar permisos de lectura, escriptura i execució (rwx) a l’usuari propietari de l’arxiu, al grup propietari de l’arxiu i a la resta d’usuaris del sistema.
 
-### Configurar propietaris i permisos locals, i usuaris i permisos Samba
+### !!!!!Configurar propietaris i permisos locals, i usuaris i permisos Samba
 Una forma senzilla de configurar els permisos desitjats és posar tots els permisos en els permisos locals, i en la configuració de Samba indicar els usuaris que tenen accés i amb quins permisos.
 
 Per **exemple**, per compartir la carpeta alumnes i donar permisos de lectura, escriptura i execució a tots els usuaris del grup alumnes.
@@ -351,25 +351,18 @@ Ens podem trobar que els **permisos GNU/Linux** es contradiguin amb els **permis
 Per **exemple**, podem tenir un directori compartit anomenat **share** amb permisos GNU/Linux de lectura, escriptura i execució per a **tots els usuaris** del sistema.
 Però si en l’arxiu de configuració del Samba aquest recurs compartit té el paràmetre **read only = yes**, no s’hi podran efectuar canvis, ja que està compartit amb permís només de lectura.
 
-> Quan els permisos GNU/Linux es contradiuen amb els permisos Samba, el permís efectiu és el **més restrictiu**.
-
-
-
-
-
-
-
-
-
 Per determinar els permisos que tindrà l'usuari, Samba realitza les següents comprovacions:
 
-1. Comprova si l'usuari es troba a la llista d'usuaris Samba
+1. Comprova si l'usuari es troba a la llista d'usuaris Samba.
 
 2. Comprova si l'usuari té permís per accedir al recurs compartit i quin tipus de permís (només lectura o lectura i escriptura)
 
 3. Converteix l'usuari Samba en l'usuari local relacionat.
 
 4. Determina els permisos triant els **més restrictius** entre els permisos que té l'usuari Samba sobre el recurs compartit i els permisos que té l'usuari local sobre la carpeta local
+
+> Quan els permisos GNU/Linux es contradiuen amb els permisos Samba, el permís efectiu és el **més restrictiu**.
+
 
 ## Documentació i recursos
 
