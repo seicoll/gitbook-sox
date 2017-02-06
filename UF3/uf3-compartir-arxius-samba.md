@@ -16,7 +16,7 @@ Per aquesta raó cada vegada s’utilitzen més altres sistemes de compartició 
 
 ## Què és Samba?
 
-El **Samba** és un paquet de programari per **Linux** que permet compartir recursos (arxius, carptes i impressores) utilitzant el protocol de comunicació **SMB/CIFS** que és el protocol  utilitzat per sistemes operatius **Windows** per compartir carpetes i impressores. 
+El **Samba** és un paquet de programari per **Linux** que permet compartir recursos \(arxius, carptes i impressores\) utilitzant el protocol de comunicació **SMB/CIFS** que és el protocol  utilitzat per sistemes operatius **Windows** per compartir carpetes i impressores.
 
 Això fa possible que es pugui accedir a recursos compartits amb **Linux** des de clients **Windows**.
 
@@ -29,6 +29,7 @@ També es podrà accedir a aquests recursos des de Linux si es té instal·lat e
 El paquet de programari **Samba** es compon de moltes aplicacions i molts paquets amb diverses finalitats.
 
 Els paquets més utilitzats són els següents:
+
 * **samba**: servidor d'arxius i impressores de xarxa local per a Unix/GNU/Linux.
 * **smbclient**: client simple de xarxa local per a Unix/GNU/Linux.
 * **samba-common**: arxius comuns del Samba que utilitzen els clients i els servidors.
@@ -61,19 +62,19 @@ La configuració del servidor **Samba** es fa, principalment, a partir del **fit
 
 Editant aquest fitxer, es poden configurar més de tres-cents paràmetres.
 
-El fitxer està dividit en **tres seccions** principals (_**global, homes i printers**_) que estableixen el valor d’uns quants paràmetres i determinen quines són les carpetes i les impressores compartides.
-* **[global]**. Defineix els** paràmetres generals** del servidor Samba.
-* **[homes]**. Ens permet **compartir les carpetes home** de cada usuari del servidor SAMBA. S’utilitza per crear **perfils mòbils** per tal que cada usuari pugui accedir a la seva carpeta home en qualsevol equip de la xarxa.
-* **[printers]**. Ens permet compartir **impressores**.
+El fitxer està dividit en **tres seccions** principals \(_**global, homes i printers**_\) que estableixen el valor d’uns quants paràmetres i determinen quines són les carpetes i les impressores compartides.
+
+* **\[global\]**. Defineix els** paràmetres generals** del servidor Samba.
+* **\[homes\]**. Ens permet **compartir les carpetes home** de cada usuari del servidor SAMBA. S’utilitza per crear **perfils mòbils** per tal que cada usuari pugui accedir a la seva carpeta home en qualsevol equip de la xarxa.
+* **\[printers\]**. Ens permet compartir **impressores**.
 
 > **Recordeu**, com tots els serveis de Linux, sempre que fem un canvi en els arxius de configuració del Samba, cal **reiniciar el servei smbd**.
 
 `service smbd restart`
 
-
 ### Recomanacions durant la configuració del Samba
 
-És **important** crear una **còpia de seguretat** de l’arxiu `/etc/samba/smb.conf` abans de fer cap canvi per poder tornar a l’estat anterior en cas que fem una modificació incorrecta que impedeixi que el servei arrenqui. 
+És **important** crear una **còpia de seguretat** de l’arxiu `/etc/samba/smb.conf` abans de fer cap canvi per poder tornar a l’estat anterior en cas que fem una modificació incorrecta que impedeixi que el servei arrenqui.
 
 `sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak`
 
@@ -83,43 +84,42 @@ Per **comprovar** que el nostre arxiu `/etc/samba/smb.conf` és **correcte**, é
 
 **Samba** es pot configurar en diversos nivells de seguretat.
 
-* **_security=share_**: Permet que els clients es connectin als recursos compartits sense proporcionar cap nom d'usuari ni contrasenya.
- 
-* **_security=user_**: És l'opció per defecte i és la més simple. Es requereix un usuari i contrasenya per accedir a un recurs compartit.
+* _**security=share**_: Permet que els clients es connectin als recursos compartits sense proporcionar cap nom d'usuari ni contrasenya.
+   
+* _**security=user**_: És l'opció per defecte i és la més simple. Es requereix un usuari i contrasenya per accedir a un recurs compartit.
 
-* **_security=domain_**: el servidor Samba actua com un controlador de domini.
+* _**security=domain**_: el servidor Samba actua com un controlador de domini.
 
 ## Configurar Samba com a servidor d'arxius
 
-Una de les formes de compartir axius en xarxa amb equips **Ubuntu i Windows** és configurar **Samba com a servidor d'arxius**. 
+Una de les formes de compartir axius en xarxa amb equips **Ubuntu i Windows** és configurar **Samba com a servidor d'arxius**.
 
-El servidor es configurarà per **compartir arxius amb qualsevol client de la xarxa sense sol·licitar cap contrasenya**. 
+El servidor es configurarà per **compartir arxius amb qualsevol client de la xarxa sense sol·licitar cap contrasenya**.
 
-En la secció **[global]** del fitxer de configuració de samba `/etc/samba/smb.conf` hi ha un paràmetre anomenat **workgroup **on hi posarem el nom de la nostra xarxa.
+En la secció **\[global\]** del fitxer de configuració de samba `/etc/samba/smb.conf` hi ha un paràmetre anomenat **workgroup **on hi posarem el nom de la nostra xarxa.
 
 I definirem el paràmetre **security = share** per què no demani usuari i contrasenya per entrar a la carpeta compartida.
 
 ```
 workgroup = BOSCCOMA
-
 ```
 
 ## Compartir un nou recurs amb Samba
 
-Per compartir un recurs (arxiu o carpeta), hem d’editar el fitxer `/etc/samba/smb.conf` i crear un **nova secció amb un nom entre claudàtors** que serà el **nom que el recurs compartit** tindrà a la xarxa. Normalment aquesta nova secció es posa al final del fitxer.
+Per compartir un recurs \(arxiu o carpeta\), hem d’editar el fitxer `/etc/samba/smb.conf` i crear un **nova secció amb un nom entre claudàtors** que serà el **nom que el recurs compartit** tindrà a la xarxa. Normalment aquesta nova secció es posa al final del fitxer.
 
-Per **exemple**, si volem compartir la carpeta `/home/samba/alumnes` i anomenar al recurs **_alumnes_**, crearem una secció **_[alumnes]_** on es configurarà amb els paràmetres específics.
+Per **exemple**, si volem compartir la carpeta `/home/samba/alumnes` i anomenar al recurs _**alumnes**_, crearem una secció _**\[alumnes\]**_ on es configurarà amb els paràmetres específics.
 
 Els principals **paràmetres** que s'han de configurar per un recurs compartit són:
+
 * **Nom** del recurs compartit: No cal que sigui el mateix nom que té l'arxiu o carpeta que es vol compartir. 
 * **Path**: Ruta local on es troba l'arxiu o carpeta que es vol compartir.
-* **Mode de compartició**: si tindrà permís de lectura i/o escriptura (**_read only_** o **_writeable_**).
-   * Només es pot posar un d'aquests dos últims paràmetres: tots dos serveixen per indicar el mode de compartició però amb l'efecte contrari un de l'altre (_**writable = no**_ seria el mateix que _**read only = yes**_).
-* **Visibilitat**: si serà visible de forma remota (_**browsable**_).
+* **Mode de compartició**: si tindrà permís de lectura i/o escriptura \(_**read only**_ o _**writeable**_\).
+  * Només es pot posar un d'aquests dos últims paràmetres: tots dos serveixen per indicar el mode de compartició però amb l'efecte contrari un de l'altre \(_**writable = no**_ seria el mateix que _**read only = yes**_\).
+* **Visibilitat**: si serà visible de forma remota \(_**browsable**_\).
 * **Accessibilitat**: si serà accessible per tothom o només per alguns usuaris o grups.
 
-
-En aquest **exemple** compartim el recurs _**alumnes**_ de manera que es permeti l'accés als usuaris convidats sense necessitat d'introduir una contrasenya d'accés. 
+En aquest **exemple** compartim el recurs _**alumnes**_ de manera que es permeti l'accés als usuaris convidats sense necessitat d'introduir una contrasenya d'accés.
 
 ```
 # Carpeta comuna alumnes
@@ -145,8 +145,9 @@ I reiniciem Samba.
 ## Accedir a recursos compartit Samba des de Windows
 
 Si, hem configurat els servidor Samba en mode `security=share`, cal afegir el client **Windows** al **grup de treball**:
-  * Botó dret a l’icona de **_Equip > propietats_**
-  * I afegim l’equip al grup de treball que hem creat en el server.
+
+* Botó dret a l’icona de _**Equip &gt; propietats**_
+* I afegim l’equip al grup de treball que hem creat en el server.
 
 ### Accedir a carpetes compartides de forma gràfica
 
@@ -162,7 +163,7 @@ Si volem accedir al recurs compartit a través de **comandes**:
 
 > Tot el que s'explica a continuació també servei per accedir a recursos compartits en Windows des de Linux.
 
-Per accedir a un recurs compartit amb Samba (protocol **SMB/CIFS**) des de Linux cal instal·lar el **client Samba (paquet smbclient)**:
+Per accedir a un recurs compartit amb Samba \(protocol **SMB/CIFS**\) des de Linux cal instal·lar el **client Samba \(paquet smbclient\)**:
 
 `apt-get install smbclient cifs-utils`
 
@@ -183,8 +184,9 @@ També permet **llistar els recursos compartits** d’una màquina remota:
 L’Ubuntu ens permet accedir **gràficament** als recursos disponibles dels grups de treball del Samba amb el navegador Nautilus.
 
 Es pot fer de vàries formes:
-* Per mitjà del menú **_Xarxa_** > `IP_servidor` .
-* **Conectar con el servidor** (`smb://IP_servidor`)
+
+* Per mitjà del menú _**Xarxa**_ &gt; `IP_servidor` .
+* **Conectar con el servidor** \(`smb://IP_servidor`\)
 * **Ctrl + L** per poder escriure a la barra d'adreces i escriure `smb://IP_servidor`
 
 També es pot accedir directament a una de les carpetes compartides si es coneix el nom del recurs compartit:
@@ -193,29 +195,30 @@ També es pot accedir directament a una de les carpetes compartides si es coneix
 
 ### Muntar carpetes compartides
 
-També hi ha la possibilitat **muntar les carpetes compartides** en carpetes del nostre sistema com si es tractés d'una carpeta local. 
-  * És igual com en els recursos **NFS**.
-  * La **diferència **entre **NFS** i **SMB **és que NFS no requereix que l’usuari que fa la connexió s’autentifiqui i amb SMB sí cal autentificació.
-  
+També hi ha la possibilitat **muntar les carpetes compartides** en carpetes del nostre sistema com si es tractés d'una carpeta local.
+
+* És igual com en els recursos **NFS**.
+* La **diferència **entre **NFS** i **SMB **és que NFS no requereix que l’usuari que fa la connexió s’autentifiqui i amb SMB sí cal autentificació.
+
 Cal instal·lar el paquet **cifs-utils**:
 
 `sudo apt-get install cifs-utils`
-  
+
 **Per exemple**, si volem accedir des de l’equip d’un professor a una carpeta compartida amb el nom de professors al servidor, executarem:
- 
+
 `mount –t cifs //IP_servidor/alumnes /mnt/alumnes –o username=usuari,password=pass`
 
-Si el servidor no requereix que l’usuari s’autentiqui (permet accés a convidats), els paràmetres username, password i workgroup es poden obviar. 
+Si el servidor no requereix que l’usuari s’autentiqui \(permet accés a convidats\), els paràmetres username, password i workgroup es poden obviar.
 
 `mount –t cifs //IP_servidor/alumnes /mnt/alumnes`
 
-> **ATENCIÓ:** per saber els permisos efectius d'accés a una carpeta compartida cal tenir en compte els permisos que té l'usuari que es connecta a la carpeta remota (usuari Samba) i els permisos que té l'usuari actual sobre la carpeta local on està muntada la carpeta compartida.
+> **ATENCIÓ:** per saber els permisos efectius d'accés a una carpeta compartida cal tenir en compte els permisos que té l'usuari que es connecta a la carpeta remota \(usuari Samba\) i els permisos que té l'usuari actual sobre la carpeta local on està muntada la carpeta compartida.
 
 ### Muntar carpetes compartides de forma automàtica
 
 Si volem que una carpeta compartida **es connecti sempre de forma automàtica** quan iniciem el nostre Linux, cal afegir a l'arxiu `/etc/fstab` una línia com:
 
-Si el recurs compartit permet l’accés a convidats (guests):
+Si el recurs compartit permet l’accés a convidats \(guests\):
 
 `//IP_servidor/professors  /mnt/professors  cifs  guest  0  0`
 
@@ -244,20 +247,21 @@ En funció de l’usuari que hi accedeixi, el **Samba** es comportarà d’una m
 ### Relació entre usuaris Linux i usuaris Samba
 
 **Samba** té un arxiu que relaciona usuaris de Samba amb usuaris de Linux:
+
 * Cada usuari Samba ha d'estar relacionat amb un usuari Linux, però no té perquè tenir el mateix nom
 * Diversos usuaris Samb poden estar relacionats amb un mateix usuari Linux.
 
-| **Usuari Samba**            	| **Usuari Linux** 	|
-|--------------------------	|--------------	|
-| alumne                   	| alumne       	|
-| professorESO                 | professor            |
-| professorCF 	                | professor    	|
-| director                 	| root         	|
-
+| **Usuari Samba** | **Usuari Linux** |  |
+| --- | --- | --- |
+| alumne | alumne | L'usuari Samba _**alumne **_es transformarà en l'usuari Linux _**alumne**_ |
+| professorESO | professor | L'usuri Samba i l'usuari Linux no tenen perquè tenir el mateix nom |
+| professorCF | professor | L'usuari Linux _**professor**_ té més d'un usuari Samba relacionat |
 
 > Per poder ser usuari del Samba, cal disposar d’un compte d'usuari Samba i d'un compte d’usuari a GNU/Linux que hi estigui relacionat.
 
-La **gestió d’usuaris Samba** (crear, eliminar, canviar contrassenya, etc) es fa amb la comanda.
+Aquestes relacions es poden modificar editant l'arxiu `/etc/samba/smbusers`.
+
+La **gestió d’usuaris Samba** \(crear, eliminar, canviar contrassenya, etc\) es fa amb la comanda.
 
 `smbpasswd`
 
@@ -267,7 +271,7 @@ La **gestió d’usuaris Samba** (crear, eliminar, canviar contrassenya, etc) es
 
 `sudo adduser alumne`
 
-2. Habilitar l’usuari al Samba, executant aquesta ordre:
+1. Habilitar l’usuari al Samba, executant aquesta ordre:
 
 `sudo smbpasswd -a alumne`
 
@@ -281,10 +285,10 @@ La **gestió d’usuaris Samba** (crear, eliminar, canviar contrassenya, etc) es
 
 ### Llistar usuaris Samba
 
-Mostrar la llista d'usuaris Samba:
+Mostrar la llista d'usuaris Samba:  
 `sudo pdbedit -L`
 
-Mostrar la llista d'usuaris Samba amb més detalls:
+Mostrar la llista d'usuaris Samba amb més detalls:  
 `sudo pdbedit -Lv`
 
 ### Altres opcions de gestió d'usuaris
@@ -297,15 +301,16 @@ L’ordre `smbpasswd` disposa d’altres opcions interessants:
 
 -n: establir un usuari sense contrasenya.
 
-(Necessita paràmetre null **passwords = yes** en secció GLOBAL de l’arxiu de configuració del Samba).
+\(Necessita paràmetre null **passwords = yes** en secció GLOBAL de l’arxiu de configuració del Samba\).
 
 ## Permisos Samba
 
-Un **permís** és una marca associada a cada recurs de xarxa (fitxers, directoris, impressores, etc.) que regula quins usuaris i de quina manera hi tenen accés.
+Un **permís** és una marca associada a cada recurs de xarxa \(fitxers, directoris, impressores, etc.\) que regula quins usuaris i de quina manera hi tenen accés.
 
-Per fer la gestió d’usuaris, grups i permisos, es recomana fer servir els **permisos GNU/Linux**, els quals permeten assignar permisos de lectura, escriptura i execució (rwx) a l’usuari propietari de l’arxiu, al grup propietari de l’arxiu i a la resta d’usuaris del sistema.
+Per fer la gestió d’usuaris, grups i permisos, es recomana fer servir els **permisos GNU/Linux**, els quals permeten assignar permisos de lectura, escriptura i execució \(rwx\) a l’usuari propietari de l’arxiu, al grup propietari de l’arxiu i a la resta d’usuaris del sistema.
 
 ### !!!!!Configurar propietaris i permisos locals, i usuaris i permisos Samba
+
 Una forma senzilla de configurar els permisos desitjats és posar tots els permisos en els permisos locals, i en la configuració de Samba indicar els usuaris que tenen accés i amb quins permisos.
 
 Per **exemple**, per compartir la carpeta alumnes i donar permisos de lectura, escriptura i execució a tots els usuaris del grup alumnes.
@@ -318,9 +323,10 @@ drwxrwx--- 2 root alumnes 4096 alumnes
 Si es vol definir un **grup** en el fitxer de configuració del Samba, `/etc/samba/smb.conf`, cal posar "**@**" davant del nom del grup.
 
 **Per exemple**, si heu definit una carpeta compartida del Samba anomenada **share** i desitgeu:
-* Tot i que el recurs hem comparit el recurs amb permisos de lectura i escriptura (**_read only=no_**), volem donar permisos només de  lectura al grup d'usuaris anomenat **_alumnes_**. 
-* Restringir l’accés a l’usuari **_alumne1_**.
-* Permetre l'escriptura al grup anomenat **_professors_** i a l'usuari **_sergi_**.
+
+* Tot i que el recurs hem comparit el recurs amb permisos de lectura i escriptura \(_**read only=no**_\), volem donar permisos només de  lectura al grup d'usuaris anomenat _**alumnes**_. 
+* Restringir l’accés a l’usuari _**alumne1**_.
+* Permetre l'escriptura al grup anomenat _**professors**_ i a l'usuari _**sergi**_.
 
 ```
 # Carpeta comú alumnes
@@ -335,27 +341,27 @@ write list = @professors, sergi
 
 * **valid users**: Llista d'usuaris que poden accedir al recurs. 
 * **invalid users**: Llista d'usuaris que no poden accedir al recurs. 
-* **read list**: Llista d'usuaris que només tindran permisos de lectura en el recurs. Si el paràmetre és **_read only = yes_**, per defecte tots els usuaris només tindran permís de lectura.
+* **read list**: Llista d'usuaris que només tindran permisos de lectura en el recurs. Si el paràmetre és _**read only = yes**_, per defecte tots els usuaris només tindran permís de lectura.
 * **write list**: Llista d'usuaris que tindran permís de lectura i escriptura en el recurs. Ignora l'opció _**read only = yes**_. 
 
 > **ATENCIÓ**: els usuaris i grups que es posen en aquests paràmetres, han de ser **usuaris i grups de Linux**, no de Samba.
-
+>
 > Si es configuren els paràmetres **valid users** i **write list**, els usuaris de **write list** també han d'estar a **valid users**.
-
+>
 > Quan s'accedix a un recurs compartit amb Samba, cal utilitzar l'identificador i la contrasenya configurats en la base de dades d'usuaris de Samba, no amb usuaris locals.
 
 ### Determinar els permisos efectius
 
 Ens podem trobar que els **permisos GNU/Linux** es contradiguin amb els **permisos Samba**.
 
-Per **exemple**, podem tenir un directori compartit anomenat **share** amb permisos GNU/Linux de lectura, escriptura i execució per a **tots els usuaris** del sistema.
+Per **exemple**, podem tenir un directori compartit anomenat **share** amb permisos GNU/Linux de lectura, escriptura i execució per a **tots els usuaris** del sistema.  
 Però si en l’arxiu de configuració del Samba aquest recurs compartit té el paràmetre **read only = yes**, no s’hi podran efectuar canvis, ja que està compartit amb permís només de lectura.
 
 Per **determinar els permisos que tindrà l'usuari**, Samba realitza les següents comprovacions:
 
 1. **Comprova** si l'usuari es troba a la llista d'**usuaris Samba**.
 
-2. **Comprova** si l'usuari té **permís per accedir al recurs compartit** i quin tipus de permís (només lectura o lectura i escriptura)
+2. **Comprova** si l'usuari té **permís per accedir al recurs compartit** i quin tipus de permís \(només lectura o lectura i escriptura\)
 
 3. **Converteix l'usuari** Samba en l'usuari local relacionat.
 
@@ -363,10 +369,11 @@ Per **determinar els permisos que tindrà l'usuari**, Samba realitza les següen
 
 > Quan els permisos GNU/Linux es contradiuen amb els permisos Samba, el permís efectiu és el **més restrictiu**.
 
-
 ## Documentació i recursos
 
-* Més informació: https://help.ubuntu.com/lts/serverguide/samba-fileprint-security.html
+* Més informació: [https://help.ubuntu.com/lts/serverguide/samba-fileprint-security.html](https://help.ubuntu.com/lts/serverguide/samba-fileprint-security.html)
 
 * [Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
+
+
 
