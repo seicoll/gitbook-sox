@@ -133,7 +133,7 @@ Si s'ha configurat correctament el client LDAP, es podran veure els usuaris i gr
 `getent passwd`
 
 ```bash
-usuari@ucxxx:~$ getent passwd
+usuari@ubuntuclient:~$ getent passwd
 root:x:0:0:root:/root:/bin/bash
 ...
 usuari:x:1000:1000:usuari,,,:/home/usuari:/bin/bash
@@ -142,15 +142,15 @@ ldapUsuari:*:10000:10000:usuariLDAP:/home/ldapUsuari/ldaUsuari:/bin/bash
 
 S'haurien de veure tots els usuaris i grups, tant els locals com els configurats amb LDAP.
 
-Els usuaris i grups LDAP tenen un * en lloc d'una x, l'identificador ha de ser superior o igual a 10000 i la carpeta personal ha d'estar dins de /home/ldapxxx.
-
+Els **usuaris i grups LDAP** tenen un * en lloc d'una x, l'identificador ha de ser superior o igual a 10000 i la carpeta personal ha d'estar dins de `/home/ldapUsuari`.
 
 Ara podem entrar amb un usuari de LDAP a través de terminal fent:
-`su usuariDomini`
+
+`su usuariLDAP`
 
 o bé
 
-`sudo login usuariDomini`
+`sudo login usuariLDAP`
 
 i veurem que s'ha creat la carpeta home per aquest usuari de LDAP
 
