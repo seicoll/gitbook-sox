@@ -16,7 +16,7 @@ I modifiqueu `dc=example,dc=com` per `dc=bosccoma,dc=local`
 
 > Amb l'editor nano, es pot buscar text amb la combinació de tecles **Ctrl + W**
 
-> Les línies comentades comencen amb # o // són comentaris i no cal modificar-les.
+> Les línies comentades comencen amb **#** o **//** són comentaris i no cal modificar-les.
 
 ### Accedir a phpLDAPadmin
 
