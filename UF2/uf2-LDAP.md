@@ -120,6 +120,10 @@ En la segona comanda cal deixar les opcions per defecte.
 > A partir ara, quan s'engegui la màquina, buscarà el servidor LDAP per validar els usuaris.
 Per tant, cal tenir engegat el servidor abans d'engegar el client, apagar el client abans que el servidor, i no s'hauria de canviar l'adreça del servidor.
 
+### Més configuracions necessàries
+
+> Pag 39 pressentació
+
 
 ### Reconfigurar el client LDAP
 
