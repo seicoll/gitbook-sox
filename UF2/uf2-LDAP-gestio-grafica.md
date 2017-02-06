@@ -2,6 +2,8 @@
 
 ## phpLDAPadmin
 
+![phpLDAPadmin](/assets/phpLDAPadmin.jpg)
+
 ### Instal·lació phpLDAPAdmin
 
 Per instal·lar una interfície web de gestió del directori LDAP, instal·la al servidor el **phpLDAPadmin** amb la comanda:
