@@ -233,17 +233,29 @@ Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la coma
 
 ## Gestió d'usuaris Samba
 
-El **Samba** és un servei que **requereix l’administració dels usuaris** per poder-ne gestionar els permisos.
-
 El **Samba** disposa de la seva **pròpia base de dades d’usuaris** Samba que podran accedir als recursos compartits.
- 
-En funció de l’usuari que hi accedeixi, el Samba es comportarà d’una manera o d’una altra.
+
+Per tant, el **Samba** és un servei que **requereix l’administració dels usuaris** per poder-ne gestionar els permisos.
+
+En funció de l’usuari que hi accedeixi, el **Samba** es comportarà d’una manera o d’una altra.
 
 > Per poder accedir a recursos compartits amb Samba, s'han d'utilitzar els usuaris Samba, **no els de Linux**.
 
-Com que els usuaris utilitzen altres recursos del servidor, com carpetes i impressores, cal que aquests usuaris també estiguin creats en el sistema GNU/Linux.
+### Relació entre usuaris Linux i usuaris Samba
 
-> Per poder ser usuari del Samba, cal disposar d’un compte d’usuari a GNU/Linux i d’un compte d’usuari al Samba
+**Samba** té un arxiu que relaciona usuaris de Samba amb usuaris de Linux:
+* Cada usuari Samba ha d'estar relacionat amb un usuari Linux, però no té perquè tenir el mateix nom
+* Diversos usuaris Samb poden estar relacionats amb un mateix usuari Linux.
+
+| **Usuari Samba**            	| **Usuari Linux** 	|
+|--------------------------	|--------------	|
+| alumne                   	| alumne       	|
+| professorESO                 | professor            |
+| professorCF 	                | professor    	|
+| director                 	| root         	|
+
+
+> Per poder ser usuari del Samba, cal disposar d’un compte d'usuari Samba i d'un compte d’usuari a GNU/Linux que hi estigui relacionat.
 
 La **gestió d’usuaris Samba** (crear, eliminar, canviar contrassenya, etc) es fa amb la comanda.
 
@@ -337,10 +349,17 @@ write list = @professors, sergi
 Ens podem trobar que els **permisos GNU/Linux** es contradiguin amb els **permisos Samba**.
 
 Per **exemple**, podem tenir un directori compartit anomenat **share** amb permisos GNU/Linux de lectura, escriptura i execució per a **tots els usuaris** del sistema.
-
-Però si en l’arxiu de configuració del Samba aquest recurs té el paràmetre **read only = yes**, no s’hi podran efectuar canvis, ja que està compartit amb permís només de lectura.
+Però si en l’arxiu de configuració del Samba aquest recurs compartit té el paràmetre **read only = yes**, no s’hi podran efectuar canvis, ja que està compartit amb permís només de lectura.
 
 > Quan els permisos GNU/Linux es contradiuen amb els permisos Samba, el permís efectiu és el **més restrictiu**.
+
+
+
+
+
+
+
+
 
 Per determinar els permisos que tindrà l'usuari, Samba realitza les següents comprovacions:
 
