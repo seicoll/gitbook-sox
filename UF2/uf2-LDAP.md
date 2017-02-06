@@ -95,7 +95,7 @@ Per tal que en nostre ubuntu desktop client s'autentiqui per LDAP, instal·larem
 > **ATENCIÓ**: Si la següent configuració no es fa correctament, el més probable és que la màquina no s'engegui o trigui molt en fer-ho!!!
 
 Els paràmetres de configuració que demana són els següents:
-* Servidor LDAP: **ldap://_IP_SERVIDOR_**
+* Servidor LDAP: **ldap://_IP_SERVIDOR_** (poseu la IP del vostre servidor!!)
 * Base del domini (DN): **dc=bosccoma,dc=local**
 * Versió de LDAP: **3**
 * Crear una base de dades local: **Sí**
@@ -122,12 +122,21 @@ Per tant, cal tenir engegat el servidor abans d'engegar el client, apagar el cli
 
 ### Més configuracions necessàries
 
-> Pag 39 pressentació
+Per tal que que es crei un directori per l’usuari de forma automàtica quan s’inicia la sessió, editem el fitxer `/etc/pam.d/common-session` i afegim la següent línia just després del comentaris inicials:
 
+`session required pam_mkhomedir.so skel=/etc/skel umask=0022`
+
+Per acabar, es convenient reiniciar el sistema i comprovar que s'engega normalment.
 
 ### Reconfigurar el client LDAP
 
 Es pot reconfigurar el client LDAP amb la comanda 
 
 `sudo dpkg-reconfigure ldap-auth-config`
+
+### Anular la validació d'usuaris LDAP
+
+Per fer que un client deixi de validar usuaris LDAP cal executar la següent comanda:
+
+`sudo auth-client-config -t nss -p lac_ldap -r`
 
