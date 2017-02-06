@@ -44,7 +44,7 @@ Els paràmetres de configuració que demana són els següents:
 
 La comprovació es farà validant usuaris un cop s'hagin creat alguns.
 
-## Configurar l’autenticació d’usuaris (NSS i PAM)
+### Configurar l’autenticació d’usuaris (NSS i PAM)
 
 Les següents comandes serveixen per indicar al sistema que es puguin autenticar usuaris utilitzant tant base de dades d'usuaris locals (arxius `/etc/password`, `/etc/shadow` i `/etc/group`) com la base de dades del servei LDAP.
 
@@ -59,7 +59,7 @@ En la segona comanda cal deixar les opcions per defecte.
 > A partir ara, quan s'engegui la màquina, buscarà el servidor LDAP per validar els usuaris.
 Per tant, cal tenir engegat el servidor abans d'engegar el client, apagar el client abans que el servidor, i no s'hauria de canviar l'adreça del servidor.
 
-## Més configuracions necessàries
+### Més configuracions necessàries
 
 Per tal que que es crei un directori per l’usuari de forma automàtica quan s’inicia la sessió, editem el fitxer `/etc/pam.d/common-session` i afegim la següent línia just després del comentaris inicials:
 
