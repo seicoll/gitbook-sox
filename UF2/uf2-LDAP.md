@@ -126,7 +126,56 @@ Per tal que que es crei un directori per l’usuari de forma automàtica quan s�
 
 `session required pam_mkhomedir.so skel=/etc/skel umask=0022`
 
-Per acabar, es convenient reiniciar el sistema i comprovar que s'engega normalment.
+### Comprovació autenticació LDAP
+
+Si s'ha configurat correctament el client LDAP, es podran veure els usuaris i grups LDAP amb la comanda `getent`:
+
+`getent passwd`
+
+```bash
+usuari@ucxxx:~$ getent passwd
+root:x:0:0:root:/root:/bin/bash
+...
+usuari:x:1000:1000:usuari,,,:/home/usuari:/bin/bash
+ldapUsuari:*:10000:10000:usuariLDAP:/home/ldapUsuari/ldaUsuari:/bin/bash
+```
+
+S'haurien de veure tots els usuaris i grups, tant els locals com els configurats amb LDAP.
+
+Els usuaris i grups LDAP tenen un * en lloc d'una x, l'identificador ha de ser superior o igual a 10000 i la carpeta personal ha d'estar dins de /home/ldapxxx.
+
+
+Ara podem entrar amb un usuari de LDAP a través de terminal fent:
+`su usuariDomini`
+
+o bé
+
+`sudo login usuariDomini`
+
+i veurem que s'ha creat la carpeta home per aquest usuari de LDAP
+
+### Configurar el login d'Ubuntu
+
+Per últim hem d’**activar el login d’Ubuntu** a la màquina client per poder escriure el nom de l’usuari. 
+
+Cal crear el fitxer `/etc/lightdm/lightdm.conf` i afegim les línies següents:
+
+```
+[Seat:*] 
+greeter-hide-users=true
+greeter-show-manual-login=true
+```
+
+* **greeter-hide-users**: amaga (true) o mostra (false) la llista dels últims usuaris que han accedit.
+* **greeter-show-manual-login**: si és true, obliga a introduir manualment l'identificador de l'usuari.
+
+Per carregar aquesta configuració cal reiniciar **lightdm **(es tancarà la sessió):
+
+`sudo service lightdm restart`
+
+Per acabar, es convenient reiniciar el sistema i comprovar que pot entrar amb un usuari del domini.
+
+> No cal indicar res especial per distingir usuaris locals o usuaris LDAP.
 
 ### Reconfigurar el client LDAP
 
