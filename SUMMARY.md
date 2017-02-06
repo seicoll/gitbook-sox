@@ -13,7 +13,7 @@
     * [Usuaris, grups i unitats organitzatives](UF1/usuaris-grups-i-unitats-organitzatives.md)
     * [Perfils d'usuaris](UF1/perfils-usuari.md)
     * [Directives de grup](UF1/directives-de-grup.md)
-    
+
 ---
 
 * [UF2. Sistemes operatius lliures en xarxa](UF2.md)
@@ -23,7 +23,7 @@
     * [Introducció als dominis en Linux](UF2/uf2-dominis-linux.md)
     * [Instal·lació d'un controlador de domini LDAP](UF2/uf2-LDAP.md)
     * [Gestionar LDAP amb interfície gràfica](UF2/uf2-LDAP-gestio-grafica.md)
-    * [Gestionar LDAP amb comandes]
+    * \[Gestionar LDAP amb comandes\]
 
 ---
 
