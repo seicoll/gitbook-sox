@@ -1,5 +1,4 @@
 # Instal·lació d'un controlador de domini LDAP
-
 ## Instal·lació OpenLDAP
 
 La instal·lació consisteix en instal·lar el paquet **_slapd_**.
