@@ -35,13 +35,15 @@ img
 
 /* summary */ 
 
+/*
 .book-summary{
-    width: 400px;
+   width: 400px;
 }
 
 .book-summary ul.summary li a, .book-summary ul.summary li span {
     white-space: normal;        //perquè salti de línia si és molt llarg
 }
+*/
 
 
 
