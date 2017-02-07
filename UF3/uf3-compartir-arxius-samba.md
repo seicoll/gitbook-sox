@@ -232,7 +232,9 @@ Per muntar automàticament els recussos definits a `/etc/fstab` sense necessitat
 
 Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la comanda `mount`.
 
-[Més informació:](https://wiki.ubuntu.com/MountWindowsSharesPermanently)
+**Més informació**: 
+[https://wiki.ubuntu.com](https://wiki.ubuntu.com/MountWindowsSharesPermanently)
+[ITE Educacion: Cliente de Samba](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/cliente_de_samba.html)
 
 ## Gestió d'usuaris Samba
 
