@@ -49,3 +49,25 @@ Les dades que cal introduir són les següents (excepte la contrasenya, si s'han
 
 ![](/assets/saba-domain.png)
   
+Si el procés s'ha realitzat **correctament**, ens apareixerà un missatge domant informació del domini creat.
+
+![](/assets/saba-domain2.png)
+
+Si es produeix un algun **error **en la creació del domini, cal esborrar l'arxiu de configuració de Samba.
+
+ `sudo rm /etc/samba/smb.conf`
+ 
+I tornar a crear el domini amb la comanda anterior.
+
+`sudo samba-tool domain provision --use-rfc2307 --interactive`
+
+Finalment, i **molt important**, cal fer que el servidor s'apunti a sí mateix com a servidor DNS (recordeu que un controlador de domini de Active Directory utilitza el servei DNS).
+
+Així doncs, canviem la configuració de la xarxa editant l'arxiu `interfaces` per indicar els servidors DNS.
+
+```bash
+...
+dns-search elteunom.local
+dns-nameservers 127.0.0.1
+```
+
