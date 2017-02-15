@@ -33,20 +33,22 @@ Version 4.3.8-Ubuntu
 
 A continuació, fem un còpia de l'arxiu de configuració de Samba `/etc/samba/smb.conf` per conservar-lo ja que el procés de creació del domini crearà un arxiu nou.
 
-  `sudo mv /etc/samba/smb.conf  /etc/samba/smb.conf.bak`
+  `sudo mv /etc/samba/smb.conf  /etc/samba/smb.conf.old`
 
 ## Creació d'un domini amb Samba
 
-Un cop tenim instal·lat Samba, podem **crear el domini** utilitzant la comanda.
+Un cop tenim instal·lat Samba, podem **promoure l'equip com a controlador de domini** Samba que actua com un substitut complet d'un servidor de domini de _Active Directory_.
+
+**Crearem el domini** utilitzant la comanda.
 
   `sudo samba-tool domain provision --use-rfc2307 --interactive`
   
 Les dades que cal introduir són les següents (excepte la contrasenya, si s'han fet les configuracions anteriors correctament, només caldrà confirmar l'opció per defecte amb la tecla Intro):
 * **Realm** (Nom del domini): **_ELTEUNOM_.LOCAL** (tot en majúscules)
-* **Domain** (Nom NetBIOS del domini): _**ELTEUNOM**_
+* **Domain** (Nom _NetBIOS_ del domini): _**ELTEUNOM**_
 * **Server Role** (Funció de Samba): **dc** (controlador de domini)
-* **DNS backend** (Servidor DNS): **SAMBA_INTERNAL** (per fer que Samba gestioni el servei DNS). 
-* **DNS forwarder IP address** (Reenviador de DNS): **8.8.8.8** (servidor DNS de Google, del centre o d'un altre servidor extern). 
+* **DNS backend** (Servidor DNS): **SAMBA_INTERNAL** (els sevidor DNS serà el propi Samba). 
+* **DNS forwarder IP address** (Reenviador de DNS): **8.8.8.8** (servidor DNS al que es preguntarà quan no es pugui resoldre un nom, posem el de Google, el del centre o d'un altre servidor extern). 
 * **Administrator password** (Contrasenya per l'usuari _Administrator_): **\*\*\*\*\*\*** (ha de complir els criteris de complexitat de Windows)
 
 ![](/assets/saba-domain.png)
