@@ -61,13 +61,21 @@ I tornar a crear el domini amb la comanda anterior.
 
 `sudo samba-tool domain provision --use-rfc2307 --interactive`
 
-Finalment, i **molt important**, cal fer que el servidor s'apunti a sí mateix com a servidor DNS (recordeu que un controlador de domini de Active Directory utilitza el servei DNS).
+Finalment, i **molt important**, cal fer que el servidor s'apunti a sí mateix com a **servidor DNS** (recordeu que un controlador de domini de Active Directory utilitza el servei DNS).
 
-Així doncs, canviem la configuració de la xarxa editant l'arxiu `interfaces` per indicar els servidors DNS.
+Així doncs, canviem la configuració de la xarxa editant l'arxiu `interfaces` per indicar els servidor DNS.
 
 ```bash
 ...
-dns-search elteunom.local
 dns-nameservers 127.0.0.1
+dns-search elteunom.local
 ```
+
+La segona línia `dns-search elteunom.local` serveix per facilitar les cerques dins del domini. * Per exemple, en comptes d'haver d'escriure la comanda  `nslookup server.elteunom.local` per obtenir l'adreça del servidor, n'hi haurà prou posant `nslookup server`.
+
+Per actualitzar tots els serveis que s'han configurat, el més fàcil és reiniciar el servidor:
+
+ `sudo reboot`
+
+## Comprovació del servei Samba com a controlador de domini
 
