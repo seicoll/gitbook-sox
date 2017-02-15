@@ -171,6 +171,7 @@ Es fa de la mateixa forma que per unir-lo a un domini Windows:
   ![](/assets/samba4_unir_client2.jpg)
   
 
+## Documentació i recursos
 
 * [Samba Wiki: Setting up Samba as an Active Directory Domain Controller](https://wiki.samba.org/index.php/Setting_up_Samba_as_an_Active_Directory_Domain_Controller)
 
