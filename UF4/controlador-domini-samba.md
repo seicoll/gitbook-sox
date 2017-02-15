@@ -175,6 +175,8 @@ Aquestes eines s'instal·len en un **client Windows** i ens permetran gestionar 
 
 Un cop instal·lades, activarem a **_Características de Windows_** les eines d’administració necessàries (Administració Bàsica de l’Active Directory)
 
+
+
 Un cop activades les eines, obrim **_Administrador del servidor > Herramientas administrativas > Usuarios y equipos de Active Directory_** i podrem **gestionar el domini** tal i com realitzaven amb Windows Server.
 
 > Per poder administrar el domini (afegir usuaris, grups...) cal iniciar sessió amb el **compte** d'administrador de Samba (**_Administrator_**).
