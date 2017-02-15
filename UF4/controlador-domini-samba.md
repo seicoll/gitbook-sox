@@ -101,7 +101,9 @@ Si Samba no està funcionant, es pot mirar l'arxiu de registre de Samba `/var/lo
 
 ### Comprovació que Samba resol correctament els DNS necessaris
 
-Comprovem que el servei DNS funciona correctament i mirem si el servei ldap i el servidor es resolen a través del serveis de noms DNS.
+Perquè Samba funcioni correctament és necessari que els servidor DNS associat també funcioni.
+
+Per tant, comprovem que el servei DNS funciona correctament comprovant si el servei ldap i el servidor es resolen a través del servei de noms DNS.
 
 ```bash
 root@server:~# host -t SRV _ldap._tcp.elteunom.local.
@@ -110,7 +112,6 @@ _ldap._tcp.elteunom.local has SRV record 0 100 389 server.elteunom.local.
 root@server:~# host -t A server.elteunom.local.
 server.elteunom.local has address 172.21.0.10
 ```
-
 
 ## Instal·lació del client de Kerberos
 
@@ -125,13 +126,17 @@ En el procés d'instal·lació ens demana el nom del Real, on cal introduir el q
 
 ![](/assets/kerberos1.png)
 
-Finalment, fem la comprovació del servei.
+Finalment, fem la comprovació del servei kerberos.
 
   `kinit administrator@ELTEUNOM.LOCAL`
   
-> **Recorda** que l'usuari administrador de Samba es diu _**administrator**_.
+> **Recorda** que l'usuari administrador de Samba es diu _**administrator**_ i vam assignar-li una contrasenya durant la creació del domini.
 
 ![](/assets/kerberos2.png)
+
+Si tot va bé, `Kinit` ens respont amb la data i hora que caducarà la contrasenya que acaben d'introduir.
+
+També podem utilitzar la comanda `klist` per consultar les autenticacions que hi ha guardades actualment a la caché de Kerberos.
 
 Si et cal reconfigurar els kerberos, utilitza la comanda.
 
@@ -188,6 +193,12 @@ Un cop activades les eines, obrim **_Administrador del servidor > Herramientas a
 
 ## Documentació i recursos
 
-* [Samba Wiki](https://wiki.samba.org/index.php/Setting_up_Samba_as_an_Active_Directory_Domain_Controller)
+* [Samba Wiki: Setting up Samba as an Active Directory Domain Controller](https://wiki.samba.org/index.php/Setting_up_Samba_as_an_Active_Directory_Domain_Controller)
 
-* [Somebooks](http://somebooks.es/capitulo-12-integracion-de-redes-mixtas-con-windows-y-linux/7/)
+* [Somebooks: Crear un controlador de dominio de Active Directory con Samba 4](http://somebooks.es/capitulo-12-integracion-de-redes-mixtas-con-windows-y-linux/7/)
+
+* [Somebooks: Usar Windows 8.1 para administrar el directorio activo de Samba 4](http://somebooks.es/capitulo-12-integracion-de-redes-mixtas-con-windows-y-linux/8/)
+
+
+https://wiki.samba.org/index.php/Required_Settings_for_Samba_NT4_Domains
+https://wiki.samba.org/index.php/Migrating_a_Samba_NT4_Domain_to_Samba_AD_(Classic_Upgrade)
