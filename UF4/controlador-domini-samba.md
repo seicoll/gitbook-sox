@@ -11,12 +11,12 @@ En aquesta tema, veurem la configuració d’un servidor **Samba** com a control
 ## Samba 4
 
 **Active Directory** és la característica més important alhora de decantar-se per **Windows Server** com a Sistema Operatiu en Xarxa. 
+
 * El conjunt de serveis i utilitats que ofereix per la gestió dels usuaris i equips permet ser molt productiva especialment en clients Windows. 
 
-Entre les principals millores de la **versió 4 de Samba** podem esmentar el suport a **Microsoft Active Directory** que permet la implementació d’un Controlador de Domini basat en Active Directory.
-* Podent actuar tant com a client com a servidor de dominis Active Directory .
+Entre les principals millores de la **versió 4 de Samba** cal destacar el suport a **Microsoft Active Directory** que permet la implementació d’un Controlador de Domini basat en Active Directory.
 
-Aquest fet suposa un millora molt atractiva ja que permet a moltes organitzacions **estalviar diners** en la compra de llicències Microsoft Windows Server.
+Aquest fet suposa un millora molt atractiva ja que permet a moltes organitzacions **estalviar diners** en la compra de llicències Microsoft Windows Server i utilitzar Samba com a controlador de domini.
 
 ## Instal·lació de Samba 4
 
@@ -137,11 +137,11 @@ Si et cal reconfigurar els kerberos, utilitza la comanda.
 
 ## Instal·lació del servei NTP (Network Time Protocol)
 
-> **El servei NTP** serveix per sincronitzar els rellotges de les màquines del domini amb precisió. 
+> **El servei NTP** serveix per sincronitzar el rellotge intern del sistema amb algun servidor horari disponible a Internet.
 
-El funcionament de Kerberos, per defecte, no accepta errors de més de 5 minuts entre el servidor i el client que està validant.
+En el nostre cas, l'utilitzarem per sincronitzar els rellotges de les màquines del domini amb precisió ja que el funcionament de **_Kerberos_**, per defecte, no accepta errors de més de 5 minuts entre el servidor i el client que està validant.
 
-Cal instal·lar el paquet **_ntp_**.
+Així doncs, cal instal·lar el paquet **_ntp_**.
 
 `sudo apt-get install ntp`
 
