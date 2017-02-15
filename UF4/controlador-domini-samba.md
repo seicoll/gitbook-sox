@@ -30,3 +30,15 @@ Un cop instal·lat, podem comprovar que tenim instal·lada la versió 4 amb la c
 root@server# samba -V
 Version 4.3-Ubuntu
 ```
+
+A continuació, fem un còpia de l'arxiu de configuració de Samba `/etc/samba/smb.conf` per conservar-lo ja que el procés de creació del domini crearà un arxiu nou.
+
+  `sudo mv /etc/samba/smb.conf  /etc/samba/smb.conf.bak`
+
+## Crear un domini amb Samba
+
+  `sudo samba-tool domain provision --use-rfc2307 --interactive`
+  
+  
+  
+  
