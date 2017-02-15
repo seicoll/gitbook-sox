@@ -141,8 +141,11 @@ Si et cal reconfigurar els kerberos, utilitza la comanda.
 
 El funcionament de Kerberos, per defecte, no accepta errors de més de 5 minuts entre el servidor i el client que està validant.
 
-`apt-get install ntp`
+Cal instal·lar el paquet **_ntp_**.
 
+`sudo apt-get install ntp`
+
+> **ATENCIÓ**: un cop units els clients al domini, si alguna vegada dóna error de validació d'usuaris (fins i tot amb l'administrador), és possible que sigui degut a què la data i/o l'hora siguin diferents en el client i en el servidor. Un dels motius de què passi això és que s'hagi configurat incorrectament la zona horària d'alguna de les màquines. Si el problema es troba en el servidor Linux, es pot corregir amb la comanda `sudo dpkg-reconfigure tzdata`.
 
 ## Unir client Windows al domini Samba
 
