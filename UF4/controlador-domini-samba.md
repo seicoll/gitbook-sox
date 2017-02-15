@@ -63,7 +63,7 @@ I tornar a crear el domini amb la comanda anterior.
 
 Finalment, i **molt important**, cal fer que el servidor s'apunti a sí mateix com a **servidor DNS** (recordeu que un controlador de domini de Active Directory utilitza el servei DNS).
 
-Així doncs, canviem la configuració de la xarxa editant l'arxiu `interfaces` per indicar els servidor DNS.
+Així doncs, canviem la configuració de la xarxa editant l'arxiu `/etc/network/interfaces` per indicar els servidor DNS.
 
 ```bash
 # The primary network interface
