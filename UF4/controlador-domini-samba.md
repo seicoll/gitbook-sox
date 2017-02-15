@@ -20,4 +20,13 @@ Aquest fet suposa un millora molt atractiva ja que permet a moltes organitzacion
 
 ## Instal·lació de Samba 4
 
+**Samba 4** s'instal·la amb la comanda:
 
+  `sudo apt-get install samba`
+  
+Un cop instal·lat, podem comprovar que tenim instal·lada la versió 4 amb la comanda:
+   
+```bash
+root@server# samba -V
+Version 4.3-Ubuntu
+```
