@@ -86,3 +86,24 @@ Per actualitzar tots els serveis que s'han configurat, el més fàcil és reinic
 
 ## Comprovació del servei Samba com a controlador de domini
 
+### Comprovació que el servei Samba està funcionant
+
+```bash
+root@server:~# service samba status
+ * samba is running
+```
+
+Si Samba no està funcionant, es pot mirar l'arxiu de registre de Samba `/var/log/samba/log.samba` per saber el motiu.
+
+### Comprovació que Samba resol correctament els DNS necessaris
+
+```bash
+root@server:~# host -t SRV _ldap._tcp.elteunom.local.
+_ldap._tcp.elteunom.local has SRV record 0 100 389 server.elteunom.local.
+
+root@server:~# host -t SRV _kerberos._udp.elteunom.local.
+_kerberos._udp.elteunom.local has SRV record 0 100 88 server.elteunom.local.
+
+root@server:~# host -t A server.elteunom.local.
+server.elteunom.local has address 172.30.0.4
+```
