@@ -28,7 +28,7 @@ Un cop instal·lat, podem comprovar que tenim instal·lada la versió 4 executan
    
 ```bash
 root@server# samba -V
-Version 4.3-Ubuntu
+Version 4.3.8-Ubuntu
 ```
 
 A continuació, fem un còpia de l'arxiu de configuració de Samba `/etc/samba/smb.conf` per conservar-lo ja que el procés de creació del domini crearà un arxiu nou.
@@ -36,6 +36,8 @@ A continuació, fem un còpia de l'arxiu de configuració de Samba `/etc/samba/s
   `sudo mv /etc/samba/smb.conf  /etc/samba/smb.conf.bak`
 
 ## Crear un domini amb Samba
+
+Un cop tenim instal·lat Samba, podem **crear el domini** utilitzant la comanda.
 
   `sudo samba-tool domain provision --use-rfc2307 --interactive`
   
@@ -59,11 +61,11 @@ Si es produeix un algun **error **en la creació del domini, cal esborrar l'arxi
  
 I tornar a crear el domini amb la comanda anterior.
 
-`sudo samba-tool domain provision --use-rfc2307 --interactive`
+`sudo samba-tool domain provision --use-rfc2307 --interactive --use-ntvfs`
 
 Finalment, i **molt important**, cal fer que el servidor s'apunti a sí mateix com a **servidor DNS** (recordeu que un controlador de domini de Active Directory utilitza el servei DNS).
 
-Així doncs, canviem la configuració de la xarxa editant l'arxiu `/etc/network/interfaces` per indicar els servidor DNS.
+Així doncs, canviem la configuració de la xarxa editant l'arxiu `/etc/network/interfaces` per indicar com a primer servidor DNS el propi equip.
 
 ```bash
 # The primary network interface
@@ -113,11 +115,11 @@ server.elteunom.local has address 172.21.0.10
 > **Kerberos** és un dels protocols d'autenticació entre ordinadors d'una xarxa perquè tant el client com el servidor puguin comprovar de forma fiable la identitat de l'altre. 
 > És un dels protocols utilitzat pel Active Directory de Windows.
 
-Instal·larem els client kerberos al sevidor per poder comprovar si funciona correctament aquest servei crític pel Active Directory.
+Instal·larem els **client kerberos** al sevidor per poder comprovar si funciona correctament aquest servei crític pel Active Directory.
  
   `sudo apt-get install krb5-user`
 
-En el procés d'instal·lació ens demana el nom del Real, on cal introduir el que hem utilitzat per el nostre domini **_ELTEUNOM.LOCAL_**
+En el procés d'instal·lació ens demana el nom del Real, on cal introduir el que hem utilitzat per el nostre domini **_ELTEUNOM.LOCAL_** . **Molt important en MAJÚSCULES!!**
 
 ![](/assets/kerberos1.png)
 
@@ -129,14 +131,42 @@ Finalment, fem la comprovació del servei.
 
 ![](/assets/kerberos2.png)
 
+Si et cal reconfigurar els kerberos, utilitza la comanda.
 
-## Instal·lació del servei NTP
+`dpkg-reconfigure krb5-config`
+
+## Instal·lació del servei NTP (Network Time Protocol)
 
 > **El servei NTP** serveix per sincronitzar els rellotges de les màquines del domini amb precisió. 
 
-Kerberos, per defecte, no accepta errors de més de 5 minuts entre el servidor i el client que està validant.
+El funcionament de Kerberos, per defecte, no accepta errors de més de 5 minuts entre el servidor i el client que està validant.
+
+`apt-get install ntp`
+
+
+## Unir client Windows al domini Samba
+
+Es fa de la mateixa forma que per unir-lo a un domini Windows:
+
+1. Si el client està unit a un domini, primer cal desconnectar-lo del domini i reiniciar.
+
+2. A la configuració de xarxa, canviar els servidors DNS posant com a **DNS principal** la IP del servidor de domini.
+
+  ![](/assets/samba4_unir_client1.jpg)
+
+3. Connectar-lo al nou domini: _**Panel de control > Sistema > Cambiar configuración > Dominio**_
+
+  Caldrà posar el nom del domini (_ELTEUNOM_ o _elteunom.local_) i quan demani un usuari, s'ha de posar **_Administrator_**, que és l'usuari administrador del domini fet amb Samba.
+
+  ![](/assets/samba4_unir_client2.jpg)
+  
+## Instal·lació de les eines per administrar el domini des del client (RSAT)
+
+
+
 
 ## Documentació i recursos
 
 * [Samba Wiki](https://wiki.samba.org/index.php/Setting_up_Samba_as_an_Active_Directory_Domain_Controller)
 
+* [Somebooks](http://somebooks.es/capitulo-12-integracion-de-redes-mixtas-con-windows-y-linux/7/)
