@@ -66,7 +66,13 @@ Finalment, i **molt important**, cal fer que el servidor s'apunti a sí mateix c
 Així doncs, canviem la configuració de la xarxa editant l'arxiu `interfaces` per indicar els servidor DNS.
 
 ```bash
-...
+# The primary network interface
+auto enp0s3
+iface enp0s3 inet static
+address x.x.x.x
+netmask x.x.x.x
+gateway x.x.x.x
+
 dns-nameservers 127.0.0.1
 dns-search elteunom.local
 ```
