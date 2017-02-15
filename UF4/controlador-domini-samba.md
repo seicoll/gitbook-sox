@@ -97,13 +97,23 @@ Si Samba no està funcionant, es pot mirar l'arxiu de registre de Samba `/var/lo
 
 ### Comprovació que Samba resol correctament els DNS necessaris
 
+Comprovem que el servei DNS funciona correctament i mirem si el servei ldap i el servidor es resolen a través del serveis de noms DNS.
+
 ```bash
 root@server:~# host -t SRV _ldap._tcp.elteunom.local.
 _ldap._tcp.elteunom.local has SRV record 0 100 389 server.elteunom.local.
 
-root@server:~# host -t SRV _kerberos._udp.elteunom.local.
-_kerberos._udp.elteunom.local has SRV record 0 100 88 server.elteunom.local.
 
 root@server:~# host -t A server.elteunom.local.
-server.elteunom.local has address 172.30.0.4
+server.elteunom.local has address 172.21.0.10
 ```
+
+
+
+```bash
+root@server:~# host -t SRV _kerberos._udp.elteunom.local.
+_kerberos._udp.elteunom.local has SRV record 0 100 88 server.elteunom.local.
+```
+
+
+
