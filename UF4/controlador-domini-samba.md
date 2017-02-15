@@ -109,11 +109,15 @@ server.elteunom.local has address 172.21.0.10
 ```
 
 
+## Instal·lació del client de Kerberos
 
-```bash
-root@server:~# host -t SRV _kerberos._udp.elteunom.local.
-_kerberos._udp.elteunom.local has SRV record 0 100 88 server.elteunom.local.
-```
+Instal·larem els client kerberos al sevidor per poder comprovar si funciona correctament aquest servei crític pel Active Directory.
+ 
+  `sudo apt-get install krb5-user`
+
+
+
+
 
 
 
