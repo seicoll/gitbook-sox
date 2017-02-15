@@ -77,7 +77,8 @@ dns-nameservers 127.0.0.1
 dns-search elteunom.local
 ```
 
-La segona línia `dns-search elteunom.local` serveix per facilitar les cerques dins del domini. * Per exemple, en comptes d'haver d'escriure la comanda  `nslookup server.elteunom.local` per obtenir l'adreça del servidor, n'hi haurà prou posant `nslookup server`.
+La segona línia `dns-search elteunom.local` serveix per facilitar les cerques dins del domini. 
+* Per exemple, en lloc d'haver d'escriure la comanda  `nslookup server.elteunom.local` per obtenir l'adreça del servidor, n'hi haurà prou posant `nslookup server`.
 
 Per actualitzar tots els serveis que s'han configurat, el més fàcil és reiniciar el servidor:
 
