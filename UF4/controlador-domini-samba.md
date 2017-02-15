@@ -24,7 +24,7 @@ Aquest fet suposa un millora molt atractiva ja que permet a moltes organitzacion
 
   `sudo apt-get install samba`
   
-Un cop instal·lat, podem comprovar que tenim instal·lada la versió 4 amb la comanda:
+Un cop instal·lat, podem comprovar que tenim instal·lada la versió 4 executant la comanda:
    
 ```bash
 root@server# samba -V
@@ -39,6 +39,12 @@ A continuació, fem un còpia de l'arxiu de configuració de Samba `/etc/samba/s
 
   `sudo samba-tool domain provision --use-rfc2307 --interactive`
   
-  
+Les dades que cal introduir són les següents (excepte la contrasenya, si s'han fet les configuracions anteriors correctament, només caldrà confirmar l'opció per defecte amb la tecla Intro):
+* **Realm** (Nom del domini): **_ELTEUNOM_.LOCAL** (tot en majúscules)
+* **Domain** (Nom NetBIOS del domini): _**ELTEUNOM**_
+* **Server Role** (Funció de Samba): **dc** (controlador de domini)
+* **DNS backend** (Servidor DNS): **SAMBA_INTERNAL** (per fer que Samba gestioni el servei DNS). En cas que es vulgui utilitzar un servei DNS propi, cal posar l'opció BIND9_DLZ, afegir alguns paràmetres a la configuració de BIND per què pugui proporcionar informació sobre el servei de Kerberos i tenir en compte que el servei DNS ha d'estar en el mateix servidor que Samba.
+* **DNS forwarder IP address** (Reenviador de DNS): **8.8.8.8** (servidor DNS de Google, del centre o d'un altre servidor extern). En cas que s'hagi triat l'opció BIND9_DNS perquè hi ha un servidor DNS del domini, no demanarà aquest paràmetre, però s'hauran de configurar els reenviadors en el servei DNS.
+* **Administrator password** (Contrasenya per l'usuari Administrator): **\*\*\*\*\*\*** (ha de complir els criteris de complexitat de Windows)
   
   
