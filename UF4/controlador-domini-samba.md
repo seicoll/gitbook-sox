@@ -110,7 +110,8 @@ server.elteunom.local has address 172.21.0.10
 
 ## Instal·lació del client de Kerberos
 
-> **kerberos** és un dels protocols d'autenticació utilitzat pel Active Directory.
+> **Kerberos** és un dels protocols d'autenticació entre ordinadors d'una xarxa perquè tant el client com el servidor puguin comprovar de forma fiable la identitat de l'altre. 
+> És un dels protocols utilitzat pel Active Directory de Windows.
 
 Instal·larem els client kerberos al sevidor per poder comprovar si funciona correctament aquest servei crític pel Active Directory.
  
@@ -129,5 +130,13 @@ Finalment, fem la comprovació del servei.
 ![](/assets/kerberos2.png)
 
 
+## Instal·lació del servei NTP
 
+> **El servei NTP** serveix per sincronitzar els rellotges de les màquines del domini amb precisió. 
+
+Kerberos, per defecte, no accepta errors de més de 5 minuts entre el servidor i el client que està validant.
+
+## Documentació i recursos
+
+* [Samba Wiki](https://wiki.samba.org/index.php/Setting_up_Samba_as_an_Active_Directory_Domain_Controller)
 
