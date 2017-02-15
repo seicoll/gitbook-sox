@@ -103,7 +103,6 @@ Comprovem que el servei DNS funciona correctament i mirem si el servei ldap i el
 root@server:~# host -t SRV _ldap._tcp.elteunom.local.
 _ldap._tcp.elteunom.local has SRV record 0 100 389 server.elteunom.local.
 
-
 root@server:~# host -t A server.elteunom.local.
 server.elteunom.local has address 172.21.0.10
 ```
@@ -111,12 +110,23 @@ server.elteunom.local has address 172.21.0.10
 
 ## Instal·lació del client de Kerberos
 
+> **kerberos** és un dels protocols d'autenticació utilitzat pel Active Directory.
+
 Instal·larem els client kerberos al sevidor per poder comprovar si funciona correctament aquest servei crític pel Active Directory.
  
   `sudo apt-get install krb5-user`
 
+En el procés d'instal·lació ens demana el nom del Real, on cal introduir el que hem utilitzat per el nostre domini **_ELTEUNOM.LOCAL_**
 
+![](/assets/kerberos1.png)
 
+Finalment, fem la comprovació del servei.
+
+  `kinit administrator@ELTEUNOM.LOCAL`
+  
+> **Recorda** que l'usuari administrador de Samba es diu _**administrator**_.
+
+![](/assets/kerberos2.png)
 
 
 
