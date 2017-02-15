@@ -35,7 +35,7 @@ A continuació, fem un còpia de l'arxiu de configuració de Samba `/etc/samba/s
 
   `sudo mv /etc/samba/smb.conf  /etc/samba/smb.conf.bak`
 
-## Crear un domini amb Samba
+## Creació d'un domini amb Samba
 
 Un cop tenim instal·lat Samba, podem **crear el domini** utilitzant la comanda.
 
