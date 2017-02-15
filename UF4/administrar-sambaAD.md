@@ -1,3 +1,5 @@
+# Administrar el directori actiu de Samba 4
+
 ## Instal·lació de les eines per administrar el domini (RSAT)
 
 Per administrar el domini Samba, utilitzarem un conjunt d’eines d’administració gratuïtes que ofereix Microsoft anomenades **_RSAT_** (_Remote Server Administration Tool_).
