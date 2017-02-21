@@ -309,7 +309,19 @@ L’ordre `smbpasswd` disposa d’altres opcions interessants:
 
 Un **permís** és una marca associada a cada recurs de xarxa \(fitxers, directoris, impressores, etc.\) que regula quins usuaris i de quina manera hi tenen accés.
 
-Per fer la gestió d’usuaris, grups i permisos, es recomana fer servir els **permisos GNU/Linux**, els quals permeten assignar permisos de lectura, escriptura i execució \(rwx\) a l’usuari propietari de l’arxiu, al grup propietari de l’arxiu i a la resta d’usuaris del sistema.
+La gestió de grups, usuaris i permisos és diferent en sistemes GNU/Linux i en sistemes Microsoft Windows.
+
+En els **sistemes GNU/Linux**, la gestió dels permisos que els usuaris i els grups tenen sobre els arxius es fa mitjançant un esquema senzill de tres tipus de permisos (lectura, escriptura i execució) aplicables a tres tipus d'usuaris (propietari, grup propietari i resta d'usuaris).
+
+En els **sistemes Windows**, la gestió dels permisos que els usuaris i els grups tenen sobre els arxius es fa mitjançant un esquema complex de llistes de control d'accés (access control lists, ACL) per a cada directori i arxiu.
+
+El sistema **ACL** té l'avantatge de ser molt més flexible que el sistema GNU/Linux, ja que es poden establir més tipus de permisos, donar permisos només a uns quants usuaris i grups, denegar permisos, etc.
+
+En la majoria de casos n'hi ha prou amb les prestacions del sistema GNU/Linux.
+
+Per defecte, el **Samba** utilitza el sistema de permisos de GNU/Linux. Tot i que també pot implementar el sistema ACL i gestionar les llistes mitjançant l'ordre **smbcacls**.
+
+> Per fer la gestió d’usuaris, grups i permisos, es recomana fer servir els **permisos GNU/Linux**, els quals permeten assignar permisos de lectura, escriptura i execució \(rwx\) a l’usuari propietari de l’arxiu, al grup propietari de l’arxiu i a la resta d’usuaris del sistema.
 
 ### Configurar propietaris i permisos locals, i usuaris i permisos Samba
 
