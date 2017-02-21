@@ -163,17 +163,17 @@ Si volem accedir al recurs compartit a través de **comandes**:
 
 > Tot el que s'explica a continuació també serveix per accedir a recursos compartits en Windows des de Linux.
 
-Per accedir a un recurs compartit amb Samba \(protocol **SMB/CIFS**\) des de Linux cal instal·lar el **client Samba \(paquet smbclient\)**:
+Per accedir a un recurs compartit amb Samba \(protocol **SMB/CIFS**\) des de Linux cal instal·lar el **client Samba** \(paquet **smbclient**\):
 
 `apt-get install smbclient cifs-utils`
 
 Per defecte, aquest paquet ja està instal·lat en Ubuntu Desktop.
 
-La comanda `smbclient` ens permet accedir a un recurs del servidor.
+La comanda `smbclient` obre un petita aplicació que ens permet accedir a un recurs del servidor Samba.
 
-Per **exemple**, si volem accedir a la carpeta compartida 'alumnes' del 'servidor', executarem:
+* Per **exemple**, si volem accedir a la carpeta compartida '_alumnes_' del servidor, executarem:
 
-`smbclient //IP_servidor/alumnes`
+  `smbclient //IP_servidor/alumnes`
 
 Aquesta comanda s'utilitza, sobretot, per **llistar els recursos compartits** d’una màquina remota:
 
