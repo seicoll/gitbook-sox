@@ -179,7 +179,7 @@ Aquesta comanda s'utilitza, sobretot, per **llistar els recursos compartits** d�
 
 `smbclient -L IP_servidor`
 
-També podem indicar amb quin usuari hi accedim fent.
+Si el recurs està protegit amb contrasenya, també podem indicar amb quin usuari hi accedim fent.
 
 `smbclient -U usuari -L IP_servidor`
 
