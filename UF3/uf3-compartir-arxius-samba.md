@@ -161,7 +161,7 @@ Si volem accedir al recurs compartit a través de **comandes**:
 
 ## Accedir a recursos compartits Samba des de Linux
 
-> Tot el que s'explica a continuació també servei per accedir a recursos compartits en Windows des de Linux.
+> Tot el que s'explica a continuació també serveix per accedir a recursos compartits en Windows des de Linux.
 
 Per accedir a un recurs compartit amb Samba \(protocol **SMB/CIFS**\) des de Linux cal instal·lar el **client Samba \(paquet smbclient\)**:
 
@@ -175,9 +175,13 @@ Per **exemple**, si volem accedir a la carpeta compartida 'alumnes' del 'servido
 
 `smbclient //IP_servidor/alumnes`
 
-També permet **llistar els recursos compartits** d’una màquina remota:
+Aquesta comanda s'utilitza, sobretot, per **llistar els recursos compartits** d’una màquina remota:
 
 `smbclient -L IP_servidor`
+
+També podem indicar amb quin usuari hi accedim fent.
+
+`smbclient -U usuari -L IP_servidor`
 
 ### Accedir a carpetes compartides de forma gràfica
 
@@ -319,7 +323,7 @@ El sistema **ACL** té l'avantatge de ser molt més flexible que el sistema GNU/
 
 En la majoria de casos n'hi ha prou amb les prestacions del sistema GNU/Linux.
 
-Per defecte, el **Samba** utilitza el sistema de permisos de GNU/Linux. Tot i que també pot implementar el sistema ACL i gestionar les llistes mitjançant l'ordre **smbcacls**.
+Per defecte, el **Samba** utilitza el sistema de permisos de GNU/Linux. Tot i que també pot implementar el sistema ACL i gestionar les llistes mitjançant l'ordre `smbcacls`.
 
 > Per fer la gestió d’usuaris, grups i permisos, es recomana fer servir els **permisos GNU/Linux**, els quals permeten assignar permisos de lectura, escriptura i execució \(rwx\) a l’usuari propietari de l’arxiu, al grup propietari de l’arxiu i a la resta d’usuaris del sistema.
 
