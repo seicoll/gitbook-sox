@@ -4,9 +4,9 @@
 
 Com ja hem comentat anteriorment, una de les utilitats més importants d'un servidor LDAP és com a servidor d'**autenticació**. 
 
-**Autentificar **és necessari per entrar en un sistema linux . 
+**Autentificar** és necessari per entrar en un sistema linux . 
 
-També per accedir a alguns serveis com un **servidor FTP** o a **pàgines privades** en un servidor web. 
+També per accedir a alguns serveis com un **servidor FTP** o a **pàgines web privades** en un servidor web. 
 
 En aquest tema veurem les modificacions que cal realitzar en un sistema Linux perquè autentifiqui als usuaris en un **servidor LDAP** en lloc d'utilitzar els clàssics arxius `/etc/passwd`, `/etc/group` i `/etc/shadow`.
 
