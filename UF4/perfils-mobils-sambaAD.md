@@ -88,3 +88,24 @@ Seleccionant un usuari (o uns quants a la vegada), obrir la configuració del pe
 ## Comprovació dels perfils mòbils
 
 ### Comprovació dels permisos locals en el servidor
+
+...
+
+### Comprovació pràctica accedint i creant arxius des d'un client
+
+**En un client Windows unit al domini Samba, realitza les següents accions:**
+
+* Inicia sessió amb un usuari del domini.
+* Assegura't que no surt el missatge de què ha hagut de crear un perfil temporal.
+* Guarda un document amb el seu nom a l'escriptori.
+* Accedeix a la seva carpeta privada a través de la unitat de xarxa on es troba i guarda un arxiu amb el seu nom.
+* Accedeix a la carpeta compartida amb altres usuaris a través de la unitat de xarxa on es troba i guarda un arxiu amb el seu nom si té permisos per llegir i escriure, o comprova si pot veure els arxius que han creat altres usuaris.
+* Tanca la sessió.
+* Iniciant sessió amb l'administrador del domini, comprova que s'ha creat un perfil mòbil per l'usuari anterior
+
+**En el servidor del domini Samba, fes les següents comprovacions:**
+
+* Comprova que s'ha creat la carpeta del perfil d'aquest usuari i que dins de la carpeta **Escritorio** hi ha l'arxiu que ha creat.
+* Comprova que s'ha creat la seva carpeta privada i que dins d'aquesta carpeta hi ha l'arxiu que ha creat.
+* Comprova que dins de la carpeta compartida amb altres usuaris hi ha l'arxiu que ha creat (si tenia permisos per fer-ho).
+
