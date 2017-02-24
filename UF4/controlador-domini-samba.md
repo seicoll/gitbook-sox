@@ -142,7 +142,7 @@ Domain=[ELTEUNOM] OS=[windows 6.1] Server=[Samba 4.3.11-Ubuntu]
 
 `session setup failed: NT_STATUS_OBJECT_NAME_NOT_FOUND`
 
-És necessari que instal·lis el paquet `winbind
+És necessari que instal·lis el paquet `winbind`
 
 `sudo apt-get install winbind` 
 
