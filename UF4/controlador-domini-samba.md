@@ -28,7 +28,7 @@ Un cop instal·lat, podem comprovar que tenim instal·lada la versió 4 executan
    
 ```bash
 root@server# samba -V
-Version 4.3.8-Ubuntu
+Version 4.3.11-Ubuntu
 ```
 
 A continuació, fem un còpia de l'arxiu de configuració de Samba `/etc/samba/smb.conf` per conservar-lo ja que el procés de creació del domini crearà un arxiu nou.
@@ -93,8 +93,11 @@ Per actualitzar tots els serveis que s'han configurat, el més fàcil és reinic
 ### Comprovació que el servei Samba està funcionant
 
 ```bash
-root@server:~# service samba status
- * samba is running
+root@server:~# service smbd status
+ * smbd.service - LSB: start Samba SMB/CIFS daemon (smbd)
+ Loaded: loaded
+ Active: active (exited)
+ ...
 ```
 
 Si Samba no està funcionant, es pot mirar l'arxiu de registre de Samba `/var/log/samba/log.samba` per saber el motiu.
