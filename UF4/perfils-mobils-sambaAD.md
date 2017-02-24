@@ -75,3 +75,12 @@ Algunes de les accions que es poden posar en aquests arxius són:
 * Sincronitzar la data i hora amb el servidor
 * Connectar una unitat de xarxa amb una carpeta compartida en el servidor
 * Connectar una impressora compartida en el servidor
+
+### Configurar els perfils
+
+Iniciant sessió amb l'administrador del domini Samba (**_administrator_**), obrir les eines d'administració remota del servidor o directament l'administració d'usuaris i equips del domini.
+
+Seleccionant un usuari (o uns quants a la vegada), obrir la configuració del perfil i introduir les següents dades:
+* **Ruta del perfil**: `\\USXXX\perfils\%username%`
+* **Script d'inici de sessió**: `script.bat` (no cal posar la ruta)
+* **Carpeta privada**:   Unitat de xarxa X:  Ruta \\USXXX\privades\%username%
