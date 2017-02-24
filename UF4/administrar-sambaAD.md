@@ -13,11 +13,11 @@ Aquestes eines s'instal·len en un **client Windows** i ens permetran gestionar 
 * Windows 8: http://www.microsoft.com/en-us/download/details.aspx?id=28972
 * Windows 7: http://www.microsoft.com/en-us/download/details.aspx?id=7887
 
-Un cop instal·lades, activarem a **_Características de Windows_** les eines d’administració necessàries (Administració Bàsica de l’Active Directory)
+Un cop instal·lades, activarem a **_Características de Windows_** les eines d’administració necessàries (Remote Server Administration Tools)
 
 ![](/assets/RSAT1.jpg)
 
-Un cop activades les eines, obrim **_Administrador del servidor > Herramientas administrativas > Usuarios y equipos de Active Directory_** i podrem **gestionar el domini** tal i com realitzaven amb Windows Server.
+Un cop activades les eines, **iniciem sessió amb l'usuari administrador** del domini i obrim **_Administrador del servidor > Herramientas administrativas > Usuarios y equipos de Active Directory_** i podrem **gestionar el domini** tal i com realitzaven amb Windows Server.
 
 > Per poder administrar el domini (afegir usuaris, grups...) cal iniciar sessió amb el **compte** d'administrador de Samba (**_Administrator_**).
 
