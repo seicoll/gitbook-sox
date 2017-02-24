@@ -1,4 +1,4 @@
-# Perfils mòbils en un domini Samba AD
+[](//UF1/perfils-usuari.html#què-és-el-perfil-dun-usuari)# Perfils mòbils en un domini Samba AD
 
 ## Creació de perfils mòbils
 
