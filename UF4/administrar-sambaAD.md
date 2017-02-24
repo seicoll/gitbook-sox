@@ -19,6 +19,10 @@ Un cop instal·lades, activarem a **_Características de Windows_** les eines d�
 
 Un cop activades les eines, **iniciem sessió amb l'usuari administrador** del domini i obrim **_Administrador del servidor > Herramientas administrativas > Usuarios y equipos de Active Directory_** i podrem **gestionar el domini** tal i com realitzaven amb Windows Server.
 
+En **Windows 10** totes les eines de RSAT s'activen per defecte al instal·lar-les.
+
+També podem utilitzar l'eina **_Active Directory Users and Computers (AD UC)_**, que ens permet administrar els usuaris, grups i equips del domini.
+
 > Per poder administrar el domini (afegir usuaris, grups...) cal iniciar sessió amb el **compte** d'administrador de Samba (**_Administrator_**).
 
 ## Documentació i recursos
