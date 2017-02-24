@@ -54,3 +54,24 @@ En el mode avançat, **deshabilitar l'herència de permisos** i configurar nomé
   * Permís per travessar aquest directori / executar arxius
   * Permís per mostrar carpeta / llegir dades
   * Permís per crear carpetes / adjuntar dades
+  
+### Configurar els permisos de la carpeta per les carpetes privades
+
+Es configura amb els mateixos permisos que l'anterior
+
+### Configurar els permisos de la carpeta compartida per diversos usuaris
+
+Es configura amb els permisos desitjats per a cada usuari i grup.
+
+### Crear els scripts d'inici de sessió
+
+Els scripts s'han de crear a la carpeta `netlogon` que es troba compartida en el servidor. Cal anar a _**Red > Servidor > netlogon**_ (també es pot accedir posant l'adreça del servidor i el nom de la carpeta compartida: \\USXXX\netlogon) i crear l'script.
+
+> **ATENCIÓ**: els scripts han de ser arxius de text pla (sense format) i amb l'extensió `.bat` 
+
+Si en el perfil d'un usuari es configura un dels scripts creats en aquesta carpeta, les comandes de l'script s'executaran en la màquina client cada cop que l'usuari iniciï la sessió.
+
+Algunes de les accions que es poden posar en aquests arxius són:
+* Sincronitzar la data i hora amb el servidor
+* Connectar una unitat de xarxa amb una carpeta compartida en el servidor
+* Connectar una impressora compartida en el servidor
