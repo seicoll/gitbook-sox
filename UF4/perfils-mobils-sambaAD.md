@@ -1,8 +1,8 @@
-[](//UF1/perfils-usuari.html#què-és-el-perfil-dun-usuari)# Perfils mòbils en un domini Samba AD
+# Perfils mòbils en un domini Samba AD
 
 ## Creació de perfils mòbils
 
-En general, la creació de **perfils mòbils** en un domini Samba és molt similar a la creació de perfils mòbils amb Active Directory si es fa des d'un client Windows unit al domini amb les eines d'administració remota (RSAT) que permeten configurar un domini (usuaris, grups, recursos compartits...).
+En general, la creació de **[perfils mòbils](//UF1/perfils-usuari.html#què-és-el-perfil-dun-usuari)** en un domini Samba és molt similar a la creació de perfils mòbils amb Active Directory si es fa des d'un client Windows unit al domini amb les eines d'administració remota (RSAT) que permeten configurar un domini (usuaris, grups, recursos compartits...).
 
 ## Configuració del servidor
 
