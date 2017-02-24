@@ -84,3 +84,7 @@ Seleccionant un usuari (o uns quants a la vegada), obrir la configuració del pe
 * **Ruta del perfil**: `\\USXXX\perfils\%username%`
 * **Script d'inici de sessió**: `script.bat` (no cal posar la ruta)
 * **Carpeta privada**:   Unitat de xarxa X:  Ruta \\USXXX\privades\%username%
+
+## Comprovació dels perfils mòbils
+
+### Comprovació dels permisos locals en el servidor
