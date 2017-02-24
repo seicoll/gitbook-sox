@@ -116,6 +116,37 @@ root@server:~# host -t A server.elteunom.local.
 server.elteunom.local has address 172.21.0.10
 ```
 
+### Comprovació del servidor de fitxers
+
+Per llistar tots els recursos compartits del controlador de domini (DC) executa:
+
+```bash
+root@server:~# smbclient -L localhost -U%
+Domain=[ELTEUNOM] OS=[windows 6.1] Server=[Samba 4.3.11-Ubuntu]
+
+    Sharename       Type      Comment
+    ---------       ----      -------
+    netlogon        Disk     
+    sysvol          Disk     
+    IPC$            IPC       IPC Service (Samba 4.3.11-Ubuntu)
+Domain=[ELTEUNOM] OS=[windows 6.1] Server=[Samba 4.3.11-Ubuntu]
+
+    Server               Comment
+    ---------            -------
+
+    Workgroup            Master
+    ---------            -------
+```
+
+**Alerta**: Si al fer `smbclient -L localhost -U%` et surt un error que diu: 
+
+`session setup failed: NT_STATUS_OBJECT_NAME_NOT_FOUND`
+
+És necessari que instal·lis el paquet `winbind
+
+`sudo apt-get install winbind` 
+
+
 ## Instal·lació del client de Kerberos
 
 > **Kerberos** és un dels protocols d'autenticació entre ordinadors d'una xarxa perquè tant el client com el servidor puguin comprovar de forma fiable la identitat de l'altre. 
