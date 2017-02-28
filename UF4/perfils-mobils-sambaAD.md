@@ -66,7 +66,7 @@ Eliminem tots els permisos que apareguin i configurem només els permisos següe
   
 ### Crear els scripts d'inici de sessió
 
-Els scripts s'han de crear a la carpeta `netlogon` que es troba compartida en el servidor. Cal anar a _**Red > Servidor > netlogon**_ (també es pot accedir posant l'adreça del servidor i el nom de la carpeta compartida: \\USXXX\netlogon) i crear l'script.
+Els scripts s'han de crear a la carpeta `netlogon` que es troba compartida en el servidor. Cal anar a _**Red > Servidor > netlogon**_ (també es pot accedir posant l'adreça del servidor i el nom de la carpeta compartida: \\IP_servidor\netlogon) i crear l'script.
 
 > **ATENCIÓ**: els scripts han de ser arxius de text pla (sense format) i amb l'extensió `.bat` 
 
