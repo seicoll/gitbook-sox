@@ -59,7 +59,8 @@ Eliminem tots els permisos que apareguin i configurem només els permisos següe
   * Permís per travessar aquest directori / executar arxius.
   * Permís per mostrar carpeta / llegir dades.
   * Permís per crear carpetes / adjuntar dades.
-  
+
+
  ![](/assets/perfils1.jpg)
  ![](/assets/perfils2.jpg)
   
