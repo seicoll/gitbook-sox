@@ -118,7 +118,7 @@ Seleccionem un usuari (o uns quants a la vegada), obrim la configuració del per
 
 **En el servidor del domini Samba, fes les següents comprovacions:**
 
-* Comprova que s'ha creat la carpeta del perfil d'aquest usuari i que dins de la carpeta **Escritorio** hi ha l'arxiu que ha creat.
+* Comprova que s'ha creat la carpeta del perfil d'aquest usuari i que dins de la carpeta **_Escritorio_** hi ha l'arxiu que ha creat.
 
 * Comprova que s'ha creat la seva carpeta personal i que dins d'aquesta carpeta hi ha l'arxiu que ha creat.
 
