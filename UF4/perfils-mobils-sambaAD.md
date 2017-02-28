@@ -8,7 +8,7 @@ En general, la creació de **[perfils mòbils](//UF1/perfils-usuari.html#què-é
 
 ### Crear i compartir les carpetes necessàries
 
-Primer es creen les carpetes on es guardaran les carpetes de perfils, les carpetes privades i una o més carpetes que es compartiran amb diversos usuaris o grups.
+Primer es creen les carpetes on es guardaran les carpetes de perfils, les carpetes personals dels usuaris i algunes carpetes que es compartiran amb diversos usuaris o grups.
 
 Es poden crear a `/srv/samba` (no cal preocupar-se pels permisos locals; la configuració es farà modificant els permisos de seguretat des del client Windows):
 
@@ -16,10 +16,10 @@ Es poden crear a `/srv/samba` (no cal preocupar-se pels permisos locals; la conf
 sudo mkdir /srv/samba
 sudo mkdir /srv/samba/perfils
 sudo mkdir /srv/samba/privades
-sudo mkdir /srv/samba/publica
+sudo mkdir /srv/samba/compartida
 ```
 
-Després, per compartir-les, afegim les següents línies a l'arxiu `/etc/samba/smb.conf` (aquí es pot donar permís de lectura i escriptura a tothom, `read only = no`; la limitació es farà modificant els permisos de seguretat des del client Windows):
+Després, per compartir-les amb Samba, afegim les següents línies a l'arxiu `/etc/samba/smb.conf`. Aquí es pot donar permís de lectura i escriptura a tothom, `read only = no`; la limitació de permisos es farà modificant els permisos de seguretat des del client Windows.
 
 ```
 [perfils]
@@ -31,7 +31,7 @@ Després, per compartir-les, afegim les següents línies a l'arxiu `/etc/samba/
     read only = no
 
 [compartida]
-    path = /srv/samba/publica
+    path = /srv/samba/compartida
     read only = no
 ```
 
