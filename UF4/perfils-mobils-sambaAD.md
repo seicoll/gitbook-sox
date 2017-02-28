@@ -44,25 +44,25 @@ sudo service nmbd restart
 
 ## Configuració del client
 
-### Configurar els permisos de la carpeta de perfils
+### Configurar els permisos de les carpetes compartides
 
-Iniciant sessió amb l'administrador del domini Samba (**administrator**), buscar la carpeta compartida en el servidor i obrir els permisos de seguretat.
-En el mode avançat, **deshabilitar l'herència de permisos** i configurar només els següents:
+Iniciant sessió amb l'administrador del domini Samba (**administrator**), des de l'explorador d'arxius busquem la carpeta compartida en el servidor i obrim els permisos de seguretat.
+
+En el mode avançat, escollim **deshabilitar l'herència de permisos**. 
+
+> És important recordar que hem d'evitar que un usuari tingui accés a la carpeta personal d'un altre usuari, per això, és necessari **deshabilitar l'herència de permisos** de la carpeta `privades` a les carpetes filles creades dins seu.
+
+Eliminem tots els permisos que apareguin i configurem només els permisos següents:
 * Per a l'administrador (**Administrator**): control total sobre aquest directori, els subdirectoris i els fitxers
-* Per al **propietari** (**_CREATOR OWNER_**): control total sobre els subdirectoris i els fitxers
-* Per als usuaris del domini (**Domain users**) o altres grups: els següents permisos avançats només sobre aquest directori
-  * Permís per travessar aquest directori / executar arxius
-  * Permís per mostrar carpeta / llegir dades
-  * Permís per crear carpetes / adjuntar dades
+* Per al **propietari** (**_CREATOR OWNER_**): control total però **només sobre els subdirectoris i els fitxers**.
+* Per als usuaris del domini (**Domain users**) o altres grups: els següents permisos avançats **només sobre aquest directori**.
+  * Permís per travessar aquest directori / executar arxius.
+  * Permís per mostrar carpeta / llegir dades.
+  * Permís per crear carpetes / adjuntar dades.
   
-### Configurar els permisos de la carpeta per les carpetes privades
-
-Es configura amb els mateixos permisos que l'anterior
-
-### Configurar els permisos de la carpeta compartida per diversos usuaris
-
-Es configura amb els permisos desitjats per a cada usuari i grup.
-
+ ![](/assets/perfils1.jpg)
+ ![](/assets/perfils2.jpg)
+  
 ### Crear els scripts d'inici de sessió
 
 Els scripts s'han de crear a la carpeta `netlogon` que es troba compartida en el servidor. Cal anar a _**Red > Servidor > netlogon**_ (també es pot accedir posant l'adreça del servidor i el nom de la carpeta compartida: \\USXXX\netlogon) i crear l'script.
