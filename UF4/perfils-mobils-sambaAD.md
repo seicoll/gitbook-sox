@@ -79,12 +79,18 @@ Algunes de les accions que es poden posar en aquests arxius són:
 
 ### Configurar els perfils
 
-Iniciant sessió amb l'administrador del domini Samba (**_administrator_**), obrir les eines d'administració remota del servidor o directament l'administració d'usuaris i equips del domini.
+Ara només falta configurar el perfil dels usuaris per crear la seva carpeta personal i configurar l'script d'inici de sessió.
 
-Seleccionant un usuari (o uns quants a la vegada), obrir la configuració del perfil i introduir les següents dades:
-* **Ruta del perfil**: `\\USXXX\perfils\%username%`
+Iniciant sessió amb l'administrador del domini Samba (**_administrator_**), obrim les eines d'administració remota del servidor o directament l'_**Administració d'usuaris i equips del domini**_.
+
+Seleccionem un usuari (o uns quants a la vegada), obrim la configuració del perfil amb _**Propietats > Perfil**_ i introduim les següents dades:
+* **Ruta del perfil**: `\\IP_SERVIDOR\perfils\%username%`
 * **Script d'inici de sessió**: `script.bat` (no cal posar la ruta)
-* **Carpeta privada**:   Unitat de xarxa X:  Ruta \\USXXX\privades\%username%
+* **Carpeta privada**:   Unitat de xarxa Z:  Ruta \\IP_SERVIDOR\privades\%username%
+
+> Podem utilitzem la variable `%username%` que es substitueix automàticament pel nom de l'usuari.
+
+![](/assets/perfils3.jpg)
 
 ## Comprovació dels perfils mòbils
 
