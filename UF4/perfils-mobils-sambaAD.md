@@ -8,7 +8,11 @@ En general, la creació de **[perfils mòbils](//UF1/perfils-usuari.html#què-é
 
 ### Crear i compartir les carpetes necessàries
 
-Primer es creen les carpetes on es guardaran les carpetes de perfils, les carpetes personals dels usuaris i algunes carpetes que es compartiran amb diversos usuaris o grups.
+Primer es creen les carpetes de:
+ 
+* **perfils**: on aniran les carpetes (documents, escriptori, videos, imatges, …) dels usuaris. 
+* **privades**: on aniran les carpetes personals dels usuaris.
+* **compartida**: carpeta que es compartirà amb diversos usuaris o grups de domini.
 
 Es poden crear a `/srv/samba` (no cal preocupar-se pels permisos locals; la configuració es farà modificant els permisos de seguretat des del client Windows):
 
