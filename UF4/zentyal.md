@@ -23,11 +23,13 @@ Un cop haguem activat **_Usuaris, Equips i Fitxers_** podem proveir carpetes com
 
 Tot seguit anem al mòdul DNS i a Domains cliquem dins de ” Domain Ip Adress”. A dins hi tindrm les ip’s de les dues interfícies. Només hi ha d’haver la de la xarxa interna. Guardem abans de sortir.
 
-Creació de l’administrador
-* Office> Users and computers > Manage
+Una de les primeres operacions que necessites fer en el teu domini és crear un usuari al directori i unir-lo al grup de **_Domain Admins_**. A l'unir-lo, l'usuari tindrà tots els permisos efectius sobre el domini.
+
+* **_Users and computers > Manage_**
 * Creem un usuari administrador
-* Un cop creat anem al grup “Domain Admins” i afegim l’usuari
-administrador al grup.
+* Afegim l'usuari al grup **_Domain Admins_**.
+
+![](/assets/zentyal-users.png)
 
 ## Unir un client Windows al domini Zentyal
 
