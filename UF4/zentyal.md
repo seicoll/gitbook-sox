@@ -43,7 +43,7 @@ Es fa de la mateixa forma que per unir-lo a un domini Windows:
 
 3. Connectar-lo al nou domini: _**Panel de control > Sistema > Cambiar configuración > Dominio**_
 
-  Caldrà posar el nom del domini (_ELTEUNOM_ o _elteunom.local_) i quan demani un usuari, s'ha de posar **_Administrator_**, que és l'usuari administrador del domini fet amb Samba.
+  Caldrà posar el nom del domini (_ELTEUNOM_ o _elteunom.local_) i quan demani un usuari, s'ha de posar l'usuari **_Domain Admin_** que hem creat prèviament i és l'usuari administrador del domini.
 
   ![](/assets/samba4_unir_client2.jpg)
 
