@@ -10,32 +10,23 @@ Per la compartició d'arxius, **Zentyal** utilitza el protocol **SMB/CIFS** per 
 
 ## Configuració de la xarxa
 
-## Configuració del domini
+## Creació d'un domini amb Zentyal
 
-Anem a configuració general i canvieu el nom del domini a inicial del **_ELTEUNOM.local_** (on _ELTEUNOM_ s'ha de substituir pel teu nom). 
+Un cop tenim instal·lat Zentyal, podem crear un nou domini anant a **_Sistema > General_** i canvieu el nom del domini a **_ELTEUNOM.local_** (on _ELTEUNOM_ s'ha de substituir pel teu nom). 
 
-Tot seguit ens baixarem els mòduls necessaris per establir el zentyal com a PDC.
-
-Entrem a “Gestió del software” i a “Components del Zentyal”
-escullim baixar-nos i instal·lar tot el paquets de components
-“Office”. El torbarem dins del mode avançat.
-
-Un cop fet guardem els canvis.
-
-Anem a estat dels mòduls i activem:
+Anem a **_Configuració de l'estat dels mòduls_** i comprovem que estan actius els mòduls:
 * DNS
 * NTP
-* Usuaris i grups
-* Compartir fitxers
+* Domain Controller and File Sharing
 
-Salvem els canvis i sortim
+Un cop haguem activat **_Usuaris, Equips i Fitxers_** podem proveir carpetes compartides, unir clients Windows al domini, configurar i enllaçar les polítiques GPO i acceptar connexions dels nous controladors de domini addicionals, tant Windows Server® com Zentyal.
 
 Tot seguit anem al mòdul DNS i a Domains cliquem dins de ” Domain Ip Adress”. A dins hi tindrm les ip’s de les dues interfícies. Només hi ha d’haver la de la xarxa interna. Guardem abans de sortir.
 
 Creació de l’administrador
 * Office> Users and computers > Manage
 * Creem un usuari administrador
-* Un cop creat anem al grup “Doamin Admins” i afegim l’usuari
+* Un cop creat anem al grup “Domain Admins” i afegim l’usuari
 administrador al grup.
 
 ## Unir un client Windows al domini Zentyal
