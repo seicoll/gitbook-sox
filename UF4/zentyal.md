@@ -48,6 +48,7 @@ Es fa de la mateixa forma que per unir-lo a un domini Windows:
   ![](/assets/samba4_unir_client2.jpg)
 
 4. Reiniciem la màquina i ja tenim l’equip afegit al domini.
+  El nostre client Windows apareixerà a l'arbre d'LDAP sota la Unitat Organitzativa **_Computers_**.
 
 ## Perfils mòbils
 
