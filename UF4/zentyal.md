@@ -8,6 +8,8 @@
 
 Per la compartició d'arxius, **Zentyal** utilitza el protocol **SMB/CIFS** per mantenir la compatibilitat amb els clients Microsoft. 
 
+## Configuració de la xarxa
+
 ## Configuració del domini
 
 Anem a configuració general i canvieu el nom del domini a inicial del **_EL_MEU_NOM.local_** (on _EL_MEU_NOM_ s'ha de substituir pel teu nom). 
