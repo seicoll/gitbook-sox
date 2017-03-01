@@ -12,7 +12,7 @@ Per la compartició d'arxius, **Zentyal** utilitza el protocol **SMB/CIFS** per 
 
 ## Configuració del domini
 
-Anem a configuració general i canvieu el nom del domini a inicial del **_EL_MEU_NOM.local_** (on _EL_MEU_NOM_ s'ha de substituir pel teu nom). 
+Anem a configuració general i canvieu el nom del domini a inicial del **_ELTEUNOM.local_** (on _ELTEUNOM_ s'ha de substituir pel teu nom). 
 
 Tot seguit ens baixarem els mòduls necessaris per establir el zentyal com a PDC.
 
@@ -38,15 +38,23 @@ Creació de l’administrador
 * Un cop creat anem al grup “Doamin Admins” i afegim l’usuari
 administrador al grup.
 
-## Afegir un client Windows
+## Unir un client Windows al domini Zentyal
 
-Primer de tot comprovarem la connectivitat fent un ping al vostre domini.
+Es fa de la mateixa forma que per unir-lo a un domini Windows:
 
-Si el ping funciona, anirem a “Mi PC” i afegirem l’equip al domini que hem creat al Zentyal.
+1. Si el client està unit a un domini, primer cal desconnectar-lo del domini i reiniciar.
 
-Ens demanarà el compte d’Administrador i la seva contrasenya per tal de poder completar l’operació.
+2. A la configuració de xarxa, canviar els servidors DNS posant com a **DNS principal** la IP del servidor de domini.
 
-Reiniciem la màquina i ja tenim l’equip agregat al domini.
+  ![](/assets/samba4_unir_client1.jpg)
+
+3. Connectar-lo al nou domini: _**Panel de control > Sistema > Cambiar configuración > Dominio**_
+
+  Caldrà posar el nom del domini (_ELTEUNOM_ o _elteunom.local_) i quan demani un usuari, s'ha de posar **_Administrator_**, que és l'usuari administrador del domini fet amb Samba.
+
+  ![](/assets/samba4_unir_client2.jpg)
+
+4. Reiniciem la màquina i ja tenim l’equip afegit al domini.
 
 ## Perfils mòbils
 
@@ -54,7 +62,7 @@ Un perfil és un entorn personalitzat especialment per a un usuari. El perfil co
 
 Perfils mòbils: Quan l’usuari s’identifica en qualsevol dels equips de la xarxa, el perfil s’escaneja automàticament.
 
-Creació de perfils mòbils a Zentyal. Domain> Settings> Marcar “enable roaming profil·les”
+Creació de perfils mòbils a Zentyal. **_Domain> Settings_** i Marcar “enable roaming profil·les”
 
 ## Creació carpetes compartides
 
