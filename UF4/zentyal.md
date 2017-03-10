@@ -54,16 +54,13 @@ Es fa de la mateixa forma que per unir-lo a un domini Windows:
 
 Un perfil és un entorn personalitzat especialment per a un usuari. El perfil conté la configuració de l’escriptori i dels programes de l’usuari. Cada usuari té un perfil, tant si l’administrador ho configura com si no, perquè el perfil es crea automàticament per a cada usuari quan s’inicia sessió en un equip.
 
-Perfils mòbils: Quan l’usuari s’identifica en qualsevol dels equips de la xarxa, el perfil s’escaneja automàticament.
+Podem configurar els **perfils mòbils** per tal que els usuaris tinguin els mateix escriptori i accés als seus documents i configuracions des de qualsevol equip on es connectin. Trobem l’opció de configuració de perfils mòbils a _** Domain > Settings > Marcar “enable roaming profiles”**_ .
 
-Creació de perfils mòbils a Zentyal. **_Domain> Settings_** i Marcar “enable roaming profil·les”
+El servidor Zentyal guarda els perfils mòbils a /home/samba/profiles
 
 ## Creació carpetes compartides
 
-Des de **_Filesharing_** podeu crear tots els recursos compartits que necessiteu
-tal com ho podíeu fer amb el Samba.
-
-Per accedir-hi amb el client haureu d’anar **_Computer > Network_**
+Des de _**Compartició de fitxers [File Sharing]**_ podeu crear tots els recursos compartits que necessiteu tal com ho podíeu fer amb el Samba.  
 
 ## Documentació i recursos
 
