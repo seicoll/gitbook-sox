@@ -184,7 +184,12 @@ En el nostre cas, l'utilitzarem per sincronitzar els rellotges de les màquines 
 
 Així doncs, cal instal·lar el paquet **_ntp_**.
 
-`sudo apt-get install ntp`
+```bash
+sudo apt-get install ntp
+sudo service ntp stop
+sudo ntpdate ntp.ubunbu.com
+sudo service ntp start
+```
 
 > **ATENCIÓ**: un cop units els clients al domini, si alguna vegada dóna error de validació d'usuaris (fins i tot amb l'administrador), és possible que sigui degut a què la data i/o l'hora siguin diferents en el client i en el servidor. Un dels motius de què passi això és que s'hagi configurat incorrectament la zona horària d'alguna de les màquines. Si el problema es troba en el servidor Linux, es pot corregir amb la comanda `sudo dpkg-reconfigure tzdata`.
 
