@@ -170,7 +170,7 @@ Finalment, fem la comprovació del servei kerberos.
 
 ![](/assets/kerberos2.png)
 
-Si tot va bé, `Kinit` ens respont amb la data i hora que caducarà la contrasenya que acaben d'introduir.
+Si tot va bé, `Kinit` ens respon amb la data i hora que caducarà la contrasenya que acaben d'introduir.
 
 També podem utilitzar la comanda `klist` per consultar les autenticacions que hi ha guardades actualment a la caché de Kerberos.
 
