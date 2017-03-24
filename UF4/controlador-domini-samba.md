@@ -138,6 +138,8 @@ Domain=[ELTEUNOM] OS=[windows 6.1] Server=[Samba 4.3.11-Ubuntu]
     ---------            -------
 ```
 
+Us hauria de sortir dos recursos de Windows (netlogon, sysvol) que s'han compartit.
+
 **Alerta**: Si al fer `smbclient -L localhost -U%` et surt un error que diu: 
 
 `session setup failed: NT_STATUS_OBJECT_NAME_NOT_FOUND`
