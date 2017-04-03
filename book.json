@@ -4,7 +4,8 @@
         "styles-sass",
         "customtheme",
         "-highlight",
-        "sunlight-highlighter"
+        "sunlight-highlighter",
+        "footer"
     ],
     "styles": {
         "pdf": "styles/pdf.sass",
@@ -20,6 +21,9 @@
             "css": [
                 "styles/website.css"
             ]
+        },
+        "layout": {
+             "footerPath" : "layouts/footer.html"
         }
     },
     "title": "Sistemes Operatius en Xarxa"
