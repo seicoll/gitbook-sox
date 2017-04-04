@@ -46,8 +46,8 @@ img
 }
 
 /* footer */
-section.markdown-section:after{
-    content: "Sergi Coll"
+section.markdown-section::after{
+    content: "<footer><img src='/assets/by-nc-sa-eu.png'><img><br>Autor: Sergi Coll</footer>"
 }
 
 
