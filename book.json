@@ -26,18 +26,18 @@
         	"footerPath" : "layouts/footer.html"
         },
         "page-footer": {
-            "description": "modified at",
+            "description": "última modificació a",
             "signature": "Sergi Coll",
-            "wisdom": "More than a coder, more than a designer",
+            "wisdom": "<img src='https://seicoll.gitbooks.io/sox/content/assets/by-nc-sa.eu.png'/>More than a coder, more than a designer",
             "format": "yyyy-MM-dd hh:mm:ss",
             "copyright": "Copyright &#169; Sergi Coll",
             "timeColor": "#666",
             "copyrightColor": "#666",
-            "utcOffset": "8",
+            "utcOffset": "1",
             "isShowQRCode": false,
             "baseUri": "https://seicoll.gitbooks.io/sox/content/",
             "isShowIssues": false,
-            "repo": "aleen42/PersonalWiki",
+            "repo": "seicoll",
             "issueNum": "8",
             "token": "",
             "style": "normal"
