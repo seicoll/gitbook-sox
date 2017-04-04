@@ -45,6 +45,11 @@ img
     white-space: normal;        //perquè salti de línia si és molt llarg
 }
 
+/* footer */
+section.markdown-section:after{
+    content: "Sergi Coll"
+}
+
 
 
 
