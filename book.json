@@ -5,7 +5,7 @@
         "customtheme",
         "-highlight",
         "sunlight-highlighter",
-        "footer"
+        "page-footer"
     ],
     "styles": {
         "pdf": "styles/pdf.sass",
@@ -24,6 +24,23 @@
         },
         "layout": {
         	"footerPath" : "layouts/footer.html"
+        },
+        "page-footer": {
+            "description": "modified at",
+            "signature": "Sergi Coll",
+            "wisdom": "More than a coder, more than a designer",
+            "format": "yyyy-MM-dd hh:mm:ss",
+            "copyright": "Copyright &#169; Sergi Coll",
+            "timeColor": "#666",
+            "copyrightColor": "#666",
+            "utcOffset": "8",
+            "isShowQRCode": true,
+            "baseUri": "https://seicoll.gitbooks.io/sox/content/",
+            "isShowIssues": true,
+            "repo": "aleen42/PersonalWiki",
+            "issueNum": "8",
+            "token": "",
+            "style": "normal"
         }
     },
     "title": "Sistemes Operatius en Xarxa"
