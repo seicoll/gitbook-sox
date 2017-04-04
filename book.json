@@ -4,8 +4,7 @@
         "styles-sass",
         "customtheme",
         "-highlight",
-        "sunlight-highlighter",
-        "page-footer"
+        "sunlight-highlighter"
     ],
     "styles": {
         "pdf": "styles/pdf.sass",
@@ -21,23 +20,6 @@
             "css": [
                 "styles/website.css"
             ]
-        },
-        "page-footer": {
-            "description": "última modificació a",
-            "signature": "Sergi Coll",
-            "wisdom": "<img src='https://seicoll.gitbooks.io/sox/content/assets/by-nc-sa.eu.png' width='150px'/>",
-            "format": "dd/MM/yyyy hh:mm",
-            "copyright": "Copyright &#169; Sergi Coll",
-            "timeColor": "#666",
-            "copyrightColor": "#666",
-            "utcOffset": "1",
-            "isShowQRCode": false,
-            "baseUri": "https://seicoll.gitbooks.io/sox/content/",
-            "isShowIssues": false,
-            "repo": "seicoll",
-            "issueNum": "8",
-            "token": "",
-            "style": "normal"
         }
     },
     "title": "Sistemes Operatius en Xarxa"
