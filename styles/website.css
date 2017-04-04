@@ -45,11 +45,6 @@ img
     white-space: normal;        //perquè salti de línia si és molt llarg
 }
 
-/* footer */
-section.markdown-section::after{
-    content: "<footer><img src='/assets/by-nc-sa-eu.png'><img><br>Autor: Sergi Coll</footer>"
-}
-
 
 
 
