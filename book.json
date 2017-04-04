@@ -20,7 +20,11 @@
             "css": [
                 "styles/website.css"
             ]
+        },
+        "theme-default": {
+            "showLevel": true
         }
+    }
     },
     "title": "Sistemes Operatius en Xarxa"
 }
