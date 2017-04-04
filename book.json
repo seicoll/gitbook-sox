@@ -22,9 +22,6 @@
                 "styles/website.css"
             ]
         },
-        "layout": {
-        	"footerPath" : "layouts/footer.html"
-        },
         "page-footer": {
             "description": "última modificació a",
             "signature": "Sergi Coll",
