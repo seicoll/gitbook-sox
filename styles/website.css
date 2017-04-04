@@ -50,8 +50,10 @@ img
 footer{
     float: right;
     padding-top: 1em;
-    font-size: 0.9em;
+    font-size: 0.9em !important;
     color: #333;
+    font-family: arial;
+    font-weight: bold;
 }
 
 
