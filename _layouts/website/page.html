@@ -3,7 +3,7 @@
 {% block page %}
     {{ super() }}
     <footer>
-        <img src='/assets/by-nc-sa.eu.png' width='150px'/>
-        <h1>Autor: Sergi Coll</h1>
+        <img src='{{ "by-nc-sa.eu.png"|resolveAsset }}' width='150px'/>
+        <h5>Autor: Sergi Coll<h5>
     </footer>
 {% endblock %}
