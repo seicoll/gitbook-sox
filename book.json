@@ -26,7 +26,7 @@
             "description": "última modificació a",
             "signature": "Sergi Coll",
             "wisdom": "<img src='https://seicoll.gitbooks.io/sox/content/assets/by-nc-sa.eu.png' width='150px'/>",
-            "format": "dd-MM-yyyy hh:mm",
+            "format": "dd/MM/yyyy hh:mm",
             "copyright": "Copyright &#169; Sergi Coll",
             "timeColor": "#666",
             "copyrightColor": "#666",
