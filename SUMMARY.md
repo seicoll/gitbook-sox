@@ -14,7 +14,6 @@
     * [Perfils d'usuaris](UF1/perfils-usuari.md)
     * [Directives de grup](UF1/directives-de-grup.md)
 
----
 
 * [UF2. Sistemes operatius lliures en xarxa](UF2.md)
   * [Introducció als sistemes operatius Linux](UF2/uf2-introduccio.md)
@@ -26,8 +25,6 @@
     * [Autenticació LDAP](UF2/uf2-auteticacio-ldap.md)
     * \*\*Gestionar LDAP amb comandes
 
----
-
 * [UF3. Compartició de recursos i seguretat](UF3.md)
   * Compartir recursos en xarxa i seguretat en sistemes de propietat
     * [Compartir arxius i carpetes en Windows](UF3/uf3-compartir-arxius-windows.md)
@@ -36,8 +33,6 @@
     * [Compartir arxius i carpetes amb NFS](UF3/uf3-compartir-arxius-nfs.md)
     * [Compartir impressores amb CUPS](UF3/uf3-compartir-impressores-cups.md)
     * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
-
----
 
 * [UF4. Integració de sistemes operatius](UF4/UF4.md)
   * [Samba 4 com a controlador de domini (DC)](UF4/controlador-domini-samba.md)
