@@ -9,8 +9,8 @@
         "back-to-top-button" 
     ],
     "styles": {
-        "pdf": "styles/pdf.sass",
-        "website": "styles/website.css"
+        "pdf": "./styles/pdf.sass",
+        "website": "./styles/website.css"
     },
     "pluginsConfig": {
         "etoc": {
