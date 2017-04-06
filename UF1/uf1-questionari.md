@@ -1,5 +1,7 @@
 # Qüestionari d'autoavaluació de la UF1
 
+---
+
 What does Gitbook support?
 - [x] Table-based questions with radio buttons
 - [x] Table-based questions with checkboxes
@@ -15,3 +17,5 @@ Here's a quiz about Gitbook
 | What is Gitbook? | (x)  | ( ) |
 
 > Gitbook is good
+
+---
