@@ -4,7 +4,8 @@
         "styles-sass",
         "customtheme",
         "-highlight",
-        "sunlight-highlighter"
+        "sunlight-highlighter",
+        "quizzes"
     ],
     "styles": {
         "pdf": "styles/pdf.sass",
