@@ -27,7 +27,7 @@
         },
         "quiz": {
             "labels": {
-                "check"             : "Check my answers",
+                "check"             : "Verificar resposta",
                 "showExplanation"   : "Explain", 
                 "showCorrect"       : "Solució",   
                 "explanationHeader" : "Explanation"
