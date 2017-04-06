@@ -1,7 +1,6 @@
 {
     "plugins": [
         "etoc",
-        "styles-sass",
         "-highlight",
         "sunlight-highlighter",
         "quiz",
