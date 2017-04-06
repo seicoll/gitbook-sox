@@ -5,7 +5,7 @@
         "customtheme",
         "-highlight",
         "sunlight-highlighter",
-        "quizzes"
+        "quiz"
     ],
     "styles": {
         "pdf": "styles/pdf.sass",
@@ -24,7 +24,23 @@
         },
         "theme-default": {
             "showLevel": true
-        }
+        },
+        "quiz": {
+            "labels": {
+                "check"             : "Check my answers",
+                "showExplanation"   : "Explain", 
+                "showCorrect"       : "Show all",   
+                "explanationHeader" : "Explanation"
+            },
+            "text": {
+                "noChosen"    : "Choose at least one answer",  
+                "incomplete"  : "Some correct answers are missing" 
+            },
+            "buttons": {
+                "showCorrect"       : true, 
+                "showExplanation"   : true 
+            }
+    }
     },
     "title": "Sistemes Operatius en Xarxa",
     "author": "Sergi Coll",
