@@ -9,7 +9,7 @@
         "back-to-top-button" 
     ],
     "styles": {
-        "pdf": "./styles/pdf.sass",
+        "pdf": "./styles/pdf.css",
         "website": "./styles/website.css"
     },
     "pluginsConfig": {
