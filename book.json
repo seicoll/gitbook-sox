@@ -2,7 +2,6 @@
     "plugins": [
         "etoc",
         "styles-sass",
-        "customtheme",
         "-highlight",
         "sunlight-highlighter",
         "quiz",
@@ -18,11 +17,6 @@
             "mindepth": 2,
             "maxdepth": 4,
             "notoc": false
-        },
-        "customtheme": {
-            "css": [
-                "styles/website.css"
-            ]
         },
         "theme-default": {
             "showLevel": true
