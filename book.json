@@ -6,7 +6,7 @@
         "-highlight",
         "sunlight-highlighter",
         "quiz",
-        "collapsible-menu",
+        "collapsible-chapters",
         "back-to-top-button" 
     ],
     "styles": {
