@@ -12,6 +12,7 @@
     * [Usuaris, grups i unitats organitzatives](UF1/usuaris-grups-i-unitats-organitzatives.md)
     * [Perfils d'usuaris](UF1/perfils-usuari.md)
     * [Directives de grup](UF1/directives-de-grup.md)
+  * [Qüestionari](UF1/uf1-questionari.md)
 
 
 ### [UF2. Sistemes operatius lliures en xarxa](UF2.md)
