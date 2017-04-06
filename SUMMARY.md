@@ -24,6 +24,7 @@
     * [Gestionar LDAP amb interfície gràfica](UF2/uf2-LDAP-gestio-grafica.md)
     * [Autenticació LDAP](UF2/uf2-auteticacio-ldap.md)
     * \*\*Gestionar LDAP amb comandes
+  * [Qüestionari](UF2/uf2-questionari.md)
 
 ### [UF3. Compartició de recursos i seguretat](UF3.md)
   * Compartir recursos en xarxa i seguretat en sistemes de propietat
