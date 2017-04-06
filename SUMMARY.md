@@ -13,7 +13,7 @@
     * [Perfils d'usuaris](UF1/perfils-usuari.md)
     * [Directives de grup](UF1/directives-de-grup.md)
   * [Activitats](UF1/uf1-activitats.md)
-    * [Instal·lació Windows Server 2012 R2](UF1/uf1-act1-instalacio-md)
+    * [Instal·lació Windows Server 2012 R2](UF1/act/act1-instalacio.md)
     * [Qüestionari](UF1/uf1-questionari.md)
 
 
