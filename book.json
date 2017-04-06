@@ -6,7 +6,7 @@
         "-highlight",
         "sunlight-highlighter",
         "quiz",
-        "toggle-chapters"
+        "expandable-chapters"
     ],
     "styles": {
         "pdf": "styles/pdf.sass",
@@ -41,7 +41,8 @@
                 "showCorrect"       : true, 
                 "showExplanation"   : true 
             }
-    }
+        },
+        "expandable-chapters":{}
     },
     "title": "Sistemes Operatius en Xarxa",
     "author": "Sergi Coll",
