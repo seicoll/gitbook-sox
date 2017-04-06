@@ -8,6 +8,14 @@
         <answer>Opció Instal·lació Servidor amb GUI </answer>
         <answer correct>Opció Instal·lació Server Core Correcte </answer>
     </question>
+    
+    <question>
+        <p>Quina d'aquestes formes NO ens permet accedir a l'Administrador de Tasques?</p>
+        <answer>Escriure taskmgr des de la línia de comandes.</answer>
+        <answer>Control, Majúscules i Esc</answer>
+        <answer correct>Control, Alt i Fletxa amunt Correcte</answer>
+        <answer>Control, Alt i Supr</answer>
+    </question>
 
     <question>
         <p>A on podem trobar l'historial de problemes de seguretat i del sistema?</p>
@@ -50,7 +58,7 @@
     </question>
 
     <question>
-        <p>Els grups de l'Active Directory **NO** poden contenir: </p>
+        <p>Els grups de l'Active Directory NO poden contenir: </p>
         <answer>Altres grups. </answer>
         <answer correct>Unitat organitzativa.</answer>
         <answer>Usuaris. </answer>
@@ -65,27 +73,11 @@
         <answer>No, mai. </answer>
     </question>
 
-
-<question>
-<p> </p>
-<answer> </answer>
-<answer> </answer>
-<answer> </answer>
-<answer> </answer>
-</question>
-
-
-
-
-
-
-
-    
-    
-    <p>What is gitbook used for?</p>
-        <answer correct>To read books</answer>
-        <answer>To book hotel named git</answer>
-        <answer correct>To write and publish beautiful books</answer>
-        <explanation>GitBook.com lets you write, publish and manage your books online as a service.</explanation>
+    <question>
+        <p>Quina és la FALSA: Una unitat organitzativa...</p>
+        <answer>Pot tenir enllaçades directives de grup (GPOs)</answer>
+        <answer>Pot tenir a dins seu una altra unitat organitzativa.</answer>
+        <answer correct>Conté només usuaris Correcte</answer>
+        <answer>És l'entitat més petita a la qual es pot delegar autoritat d'administració.</answer>
     </question>
 </quiz>
