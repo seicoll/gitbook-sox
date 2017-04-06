@@ -6,14 +6,14 @@
         <answer>Opció Instal·lació Minimal Server Interface </answer>
         <answer>Opció Instal·lació Minimal Secure Server </answer>
         <answer>Opció Instal·lació Servidor amb GUI </answer>
-        <answer correct>Opció Instal·lació Server Core Correcte </answer>
+        <answer correct>Opció Instal·lació Server Core</answer>
     </question>
     
     <question>
         <p>Quina d'aquestes formes NO ens permet accedir a l'Administrador de Tasques?</p>
         <answer>Escriure taskmgr des de la línia de comandes.</answer>
         <answer>Control, Majúscules i Esc</answer>
-        <answer correct>Control, Alt i Fletxa amunt Correcte</answer>
+        <answer correct>Control, Alt i Fletxa amunt</answer>
         <answer>Control, Alt i Supr</answer>
     </question>
 
@@ -67,7 +67,7 @@
     
     <question>
         <p>Pot un usuari d'Active Directory pertànyer a més d'un grup? </p>
-        <answer correct>Sí, sempre. Correcte </answer>
+        <answer correct>Sí, sempre.</answer>
         <answer>Només si es tracten de grups predefinits. </answer>
         <answer>Només si utilitzem les versions Standard o Enterprise de Windows Server. </answer>
         <answer>No, mai. </answer>
@@ -77,7 +77,7 @@
         <p>Quina és la FALSA: Una unitat organitzativa...</p>
         <answer>Pot tenir enllaçades directives de grup (GPOs)</answer>
         <answer>Pot tenir a dins seu una altra unitat organitzativa.</answer>
-        <answer correct>Conté només usuaris Correcte</answer>
+        <answer correct>Conté només usuaris</answer>
         <answer>És l'entitat més petita a la qual es pot delegar autoritat d'administració.</answer>
     </question>
 </quiz>
