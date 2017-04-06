@@ -6,7 +6,8 @@
         "-highlight",
         "sunlight-highlighter",
         "quiz",
-        "toggle2"
+        "toggle2",
+        "back-to-top-button" 
     ],
     "styles": {
         "pdf": "styles/pdf.sass",
