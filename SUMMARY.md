@@ -1,6 +1,6 @@
 # Summary
-
-### [UF1. Sistemes operatius propietaris en xarxa](UF1/UF1.md)
+* [Introducció](README.md)
+## UF1. Sistemes operatius propietaris en xarxa
   * [Introducció als sistemes operatius en xarxa](UF1/uf1-introduccio.md)
     * [Windows Server](UF1/uf1-windowsserver.md)
     * [Instal·lació Windows Server](UF1/uf1-instalacio-windowsserver.md)
@@ -17,7 +17,7 @@
     * [Qüestionari](UF1/uf1-questionari.md)
 
 
-### [UF2. Sistemes operatius lliures en xarxa](UF2.md)
+## UF2. Sistemes operatius lliures en xarxa
   * [Introducció als sistemes operatius Linux](UF2/uf2-introduccio.md)
   * [Administració i supervisió](UF2/uf2-supervisio.md)
   * [Gestió de dominis](UF2/uf2-gestio-dominis.md)
