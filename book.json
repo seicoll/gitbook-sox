@@ -6,7 +6,7 @@
         "-highlight",
         "sunlight-highlighter",
         "quiz",
-        "toggle2",
+        "collapsible-menu",
         "back-to-top-button" 
     ],
     "styles": {
