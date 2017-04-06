@@ -5,7 +5,8 @@
         "customtheme",
         "-highlight",
         "sunlight-highlighter",
-        "quiz"
+        "quiz",
+        "toggle-chapters"
     ],
     "styles": {
         "pdf": "styles/pdf.sass",
