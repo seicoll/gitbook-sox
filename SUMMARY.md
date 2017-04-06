@@ -12,7 +12,8 @@
     * [Usuaris, grups i unitats organitzatives](UF1/usuaris-grups-i-unitats-organitzatives.md)
     * [Perfils d'usuaris](UF1/perfils-usuari.md)
     * [Directives de grup](UF1/directives-de-grup.md)
-  * [Qüestionari](UF1/uf1-questionari.md)
+  * [Activitats](UF1/uf1-activitats.md)
+    * [Qüestionari](UF1/uf1-questionari.md)
 
 
 ### [UF2. Sistemes operatius lliures en xarxa](UF2.md)
@@ -24,7 +25,8 @@
     * [Gestionar LDAP amb interfície gràfica](UF2/uf2-LDAP-gestio-grafica.md)
     * [Autenticació LDAP](UF2/uf2-auteticacio-ldap.md)
     * \*\*Gestionar LDAP amb comandes
-  * [Qüestionari](UF2/uf2-questionari.md)
+  * [Activitats](UF2/uf2-activitats.md)
+    * [Qüestionari](UF2/uf2-questionari.md)
 
 ### [UF3. Compartició de recursos i seguretat](UF3.md)
   * [Compartir recursos en xarxa i seguretat en sistemes de propietat](UF3/uf3-compartir-recursos-windows.md)
@@ -34,12 +36,14 @@
     * [Compartir arxius i carpetes amb NFS](UF3/uf3-compartir-arxius-nfs.md)
     * [Compartir impressores amb CUPS](UF3/uf3-compartir-impressores-cups.md)
     * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
+  * [Activitats](UF3/uf3-activitats.md)
 
 ### [UF4. Integració de sistemes operatius](UF4/UF4.md)
   * [Samba 4 com a controlador de domini (DC)](UF4/controlador-domini-samba.md)
   * [Administrar el directori actiu de Samba 4](UF4/administrar-sambaAD.md)
   * [Perfils mòbils en un domini Samba AD](UF4/perfils-mobils-sambaAD.md)
   * [Zentyal com a controlador de domini](UF4/zentyal.md)
+  * [Activitats](UF4/uf4-activitats.md)
 
 
 
