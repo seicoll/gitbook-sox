@@ -2,6 +2,14 @@
 
 <quiz name="">
     <question>
+        <p>Quina és l'opció d'instal·lació del Windows Server 2012 recomanada per Microsoft ja que requereix menys espai de disc i augmenta la seguretat?  </p>
+        <answer>Opció Instal·lació Minimal Server Interface </answer>
+        <answer>Opció Instal·lació Minimal Secure Server </answer>
+        <answer>Opció Instal·lació Servidor amb GUI </answer>
+        <answer correct>Opció Instal·lació Server Core Correcte </answer>
+    </question>
+
+    <question>
         <p>A on podem trobar l'historial de problemes de seguretat i del sistema?</p>
         <answer correct>Registre d'esdeveniments.</answer>
         <answer>Monitor de fiabilitat.</answer>
@@ -42,7 +50,7 @@
     </question>
 
     <question>
-        <p>Els grups de l'Active Directory NO poden contenir: </p>
+        <p>Els grups de l'Active Directory **NO** poden contenir: </p>
         <answer>Altres grups. </answer>
         <answer correct>Unitat organitzativa.</answer>
         <answer>Usuaris. </answer>
