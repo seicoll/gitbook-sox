@@ -29,11 +29,11 @@
             "labels": {
                 "check"             : "Check my answers",
                 "showExplanation"   : "Explain", 
-                "showCorrect"       : "Show all",   
+                "showCorrect"       : "Solució",   
                 "explanationHeader" : "Explanation"
             },
             "text": {
-                "noChosen"    : "Choose at least one answer",  
+                "noChosen"    : "Tria com a mínim una resposta",  
                 "incomplete"  : "Some correct answers are missing" 
             },
             "buttons": {
