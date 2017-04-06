@@ -1,0 +1,29 @@
+@font-size-base:    12px;
+@font-family-base:  sans-serif;
+
+@text-color:        #000;
+@link-color:        #4183c4;
+
+body {
+    font-family: @font-family-base;
+    color: @text-color;
+    .text-adjust(100%);
+}
+
+.pdf-footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    color:#aaa;
+
+    .footer-pages-count {
+        float: right;
+    }
+}
+
+.pdf-header {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    color: #aaa;
+}
