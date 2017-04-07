@@ -20,7 +20,7 @@
 
 * **Planificar el disc**
 
-  Cal planficar la utilització del disc i crear les particions necessaries. A continuació és necessri formatejar les particions amb el sistema de fitxer que el sistema operatiu requereixi.
+  Cal planficar la utilització del disc, decidir les particions necessàries i el sistema de fitxers a utilitzar.
 
 ## Opcions d'instal·lació
 
@@ -28,11 +28,12 @@
 
   * S’instal·la la interfície d’usuari estàndard.
   
+  
 * **Opció Instal·lació Server Core. **
 
   * No s’instal·la la interfície d’usuari estàndard i el servidor s’administra amb la línia de comandes (Windows PowerShell) o bé remotament.
   * És l’opció predeterminada i recomanada per Micrososft. 
-  * **Avantatges**: requereix menys espai de disc (uns 4GB menys) i s’augmenta la seguretat.
+  * **Avantatges**: requereix menys espai de disc (uns 4GB menys), és més eficient i augmenta la seguretat.
 
 > **Es pot passar d’una opció a l’altra** en qualsevol moment.
 
@@ -56,6 +57,8 @@ Una vegada escollit l’opció d’instal·lació, cal que decidiu si fareu una 
 * **Actualització:** el sistema operatiu s’instal·la i es fa una migració de les configuracions, els documents i les aplicacions.
 
 > Si durant el procés d’instal·lació en falta alguna informació que necessitem per continuar. En el moment que es demana On es vol instal·lar Windows? es pot accedir a la línia de comandes prement Majúscules i F10.
+
+## Particionar el disc
 
 ## Post-instal·lació
 
