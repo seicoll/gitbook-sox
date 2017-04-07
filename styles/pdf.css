@@ -30,6 +30,7 @@ img{
 .pdf-header {
     margin-top: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-    color: #aaa;
+    border-bottom: 1px solid #666;
+    color: #666;
+    font-size: 0.8;
 }
