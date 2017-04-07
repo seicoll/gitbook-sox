@@ -4,7 +4,7 @@
 
 ![Active Directory](/assets/ActiveDirectory.png)
 
-**Activitat**
+## Activitat
 
 #### 1. Creació de polítiques de grup globals
 
