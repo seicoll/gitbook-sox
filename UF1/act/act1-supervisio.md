@@ -1,6 +1,6 @@
 <!-- notoc -->
 
-# Activitat 2. Supervisió de SO de propietat
+# Activitat 2. Administració i supervisió de Windows Server 2012
 
 ## Activitat
 
