@@ -1,0 +1,8 @@
+{% extends template.self %}
+
+{% block body %}
+    <h1 class="book-chapter book-chapter-{{ page.depth }}">{{page.depth page.title }}</h1>
+    <div class="section">
+        {{ page.content|safe }}
+    </div>
+{% endblock %}
