@@ -34,3 +34,7 @@ img{
     color: #aaa;
     font-size: 0.9;
 }
+
+.pdf-header .header-right{
+    float: right;
+}
