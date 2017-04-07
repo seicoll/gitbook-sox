@@ -27,6 +27,15 @@ blockquote p:last-child {
     margin-bottom: 0px;
 }*/
 
+/* QUIZ */
+question p{
+    font-weight: bold;
+}
+
+question answer{
+    display: block;
+}
+
 /* FOOTER */
 .pdf-footer {
     margin-top: 20px;
