@@ -1,6 +1,8 @@
+<!-- notoc -->
+
 # Windows Server
 
-![Windwos Server 2012](/assets/WindowsServer2012-2.png)
+![Windows Server 2012](/assets/WindowsServer2012-2.png)
 
 És un sistema operatiu dissenyat per servidors que treballa sobre un model denominat **domini**.
 
