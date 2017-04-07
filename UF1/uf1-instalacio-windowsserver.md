@@ -86,7 +86,7 @@ Una vegada s’ha instal·lat el sistema operatiu caldrà proporcionar la inform
   * Per instal·lar les **_Guest Additions_** cal tenir la màquina virtual engegada i, en el menú de la mateixa finestra de la màquina virtual, seleccionar l'opció **_Dispositivos → Insertar imagen del CD de las Guest Additions_**. Això és equivalent a posar el CD d'instal·lació en la màquina virtual. 
   * En la majoria de sistemes amb entorn gràfic, s'obrirà automàticament una finestra per instal·lar el contingut. Si no, cal obrir el CD i executar el programa **_VBoxWindowsAdditions_**.
 
-## Instal·lar noves funcionalitats i característiques
+## Instal·lació noves funcionalitats i característiques
 
 Instal·lar noves funcionalitats o noves característiques: 
 * **Funcions de servidor o rols:** Conjunt de programes que fan una funció específica per diferents usuaris o altres equips d'una xarxa. Un servidor pot realitzar més d'una funció o rol.
