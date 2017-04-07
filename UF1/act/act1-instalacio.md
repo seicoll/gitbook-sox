@@ -2,9 +2,8 @@
 
 # Activitat 1. Instal·lació Windows Server 2012 R2
 
-## Material que necessiteu: 
+## Material que necessiteu 
 
-* Llibre Windows Server 2012- Up and Running Capítol 2
 * VirtualBox
 * Compte d'usuari Microsoft Imagine
 
@@ -21,3 +20,9 @@
 2. Crea una màquina virtual amb VirtualBox i instal·la Windows Server 2012 Core.
 3. Converteix el teu Server Core en GUI.
 4. Converteix el teu Server GUI en un Minimal Server Interface.
+
+## Documentació i recursos 
+
+* Llibre Windows Server 2012- Up and Running Capítol 2
+
+
