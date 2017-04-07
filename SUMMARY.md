@@ -14,6 +14,7 @@
     * [Directives de grup](UF1/directives-de-grup.md)
   * [Activitats](UF1/uf1-activitats.md)
     * [Instal·lació Windows Server 2012](UF1/act/act1-instalacio.md)
+    * [Administració i supervisió de Windows Server 2012](UF1/act/act1-supervisio.md)
     * [Qüestionari](UF1/act/uf1-questionari.md)
 
 
