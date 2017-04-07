@@ -16,6 +16,7 @@
     * [Instal·lació Windows Server 2012](UF1/act/act1-instalacio.md)
     * [Administració i supervisió de Windows Server 2012](UF1/act/act2-supervisio.md)
     * [Instal·lació Active Directory](UF1/act/act3-instalacio-AD.md)
+    * [Administració Active Directory](UF1/act/act4-administracio-AD.md)
     * [Qüestionari](UF1/act/uf1-questionari.md)
 
 
