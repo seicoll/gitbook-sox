@@ -1,6 +1,6 @@
 <!-- notoc -->
 
-# Activitat A1.1 Instal·lació Windows Server 2012 Core
+# Activitat 1. Instal·lació Windows Server 2012 R2
 
 ## Material que necessiteu: 
 
