@@ -16,6 +16,7 @@
 3. Cerca informació sobre el nou sistema de fitxers ReFS que incorpora el Windows Server 2012. Quines són les seves principals característiques? 
 
 ## Activitat
+
 > Recorda documentar la teva pràctica.
 
 1. Ves a Microsoft Imagine i compra un Windows Server 2012 R2 Standard (English).
