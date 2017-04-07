@@ -2,6 +2,8 @@
 
 # Activitat 2. Administració i supervisió de Windows Server 2012
 
+![](/assets/WindowsServer2012-2.png)
+
 ## Activitat
 
 ####1. Administrador de tasques
