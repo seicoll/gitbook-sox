@@ -50,8 +50,10 @@
   
   5.3. Configureu les actualitzacions crítiques perquè es realitzin sempre a una hora determinada.  
 
-6. Executa l’eina **_Administrador del servidor_**. Quins rols i característiques es poden configurar?  
+#### 6. Administració del servidor
 
-7. Mostra, des del Windows Server, el processador, la RAM i l’espai de disc que té el sistema. 
+6.1. Executa l’eina **_Administrador del servidor_**. Quins rols i característiques es poden configurar?  
 
-8. (**_AMPLIACIÓ_**) Busqueu informació sobre com instal·lar la funció Terminal Server i com podem connectar-nos des d'una màquina remota. Crea un usuari amb el teu nom i cognom (nomcognom). Configura aquest usuari perquè es pugui connectar al servidor des del Windows client mitjançant el terminal server.
+6.2. Mostra, des del Windows Server, el processador, la RAM i l’espai de disc que té el sistema. 
+
+6.3. (**_AMPLIACIÓ_**) Busqueu informació sobre com instal·lar la funció Terminal Server i com podem connectar-nos des d'una màquina remota. Crea un usuari amb el teu nom i cognom (nomcognom). Configura aquest usuari perquè es pugui connectar al servidor des del Windows client mitjançant el terminal server.
