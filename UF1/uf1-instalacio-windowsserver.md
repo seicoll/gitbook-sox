@@ -60,6 +60,14 @@ Una vegada escollit l’opció d’instal·lació, cal que decidiu si fareu una 
 
 ## Particionar el disc
 
+> **ATENCIÓ**: com a norma general crearem una partició pel sistema i una altra per les dades.
+
+* Amb el botó **_Nuevo_**,  crear una partició d'uns 20 GB.
+* Utilitzar l'espai restant per crear una altra partició.
+* Seleccionar la partició de 20 GB per instal·lar el sistema i continuar endavant.
+
+![](/assets/WSInst07-Particionat.png)
+
 ## Post-instal·lació
 
 Una vegada s’ha instal·lat el sistema operatiu caldrà proporcionar la informació següent a l’equip:
