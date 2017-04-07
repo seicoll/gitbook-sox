@@ -11,7 +11,8 @@
 
 1. Explica les principals diferències entre les diferents edicions de Windows Server 2012.
 2. Indica els requeriments d’instal·lació mínims i els recomanats de Windows Server 2012 R2.
-3. Cerca informació sobre el nou sistema de fitxers ReFS que incorpora el Windows Server 2012. 4. Quines són les seves principals característiques? 
+3. Cerca informació sobre el nou sistema de fitxers ReFS que incorpora el Windows Server 2012. 
+4. Quines són les seves principals característiques? 
 
 ## Activitat
 > Recorda documentar la teva pràctica.
