@@ -2,6 +2,8 @@
 
 # Activitat 1. Instal·lació Windows Server 2012 R2
 
+![](/assets/WindowsServer2012-2.png)
+
 ## Material que necessiteu 
 
 * VirtualBox
