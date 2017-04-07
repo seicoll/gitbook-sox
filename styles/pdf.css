@@ -15,7 +15,7 @@ img{
 }
 
 /* blockquote */
-blockquote {
+/*blockquote {
     background: #d6e5ec;
     color: #333; 
     padding: 8px 15px;
@@ -25,7 +25,7 @@ blockquote {
 
 blockquote p:last-child {
     margin-bottom: 0px;
-}
+}*/
 
 /* FOOTER */
 .pdf-footer {
