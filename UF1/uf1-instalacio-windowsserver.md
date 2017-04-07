@@ -1,5 +1,27 @@
 # Instal·lació Windows Server 2012 R2
 
+## Planificació de la instal·lació
+
+* **Comprovar els requeriments de maquinari**
+
+  Cal assegurar-nos que els components del nostre maquinari compleixen els requisits mínims taln del sistema operatiu com de les aplicacions que s'han d'instal·lar.
+
+* **Preparar el programari a instal·lar i les dades a configurar**
+  
+  Cal tenir preparat tot el programari i les dades necessàries: Sistema Operatiu, controladors, claus d'activació, etc.
+
+* **Crear la màquina virtual**
+
+  Cal crear una màquina virtual amb les característiques recomanades per instal·lar Windows Server 2012 R2 64 bits Standard Edition.
+  * Es recomana que l'espai del disc es reservi de forma dinàmica.
+  * Es recomana posar 2 CPU com a mínim.
+  * Si és possible, habilitar l'acceleració gràfica 2D i 3D.
+
+
+* **Planificar el disc**
+
+  Cal planficar la utilització del disc i crear les particions necessaries. A continuació és necessri formatejar les particions amb el sistema de fitxer que el sistema operatiu requereixi.
+
 ## Opcions d'instal·lació
 
 * **Opció Instal·lació Servidor amb GUI _[Grafic User Interface]_**
