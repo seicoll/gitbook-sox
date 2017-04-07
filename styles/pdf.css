@@ -16,7 +16,7 @@ img{
 
 /* FOOTER */
 .pdf-footer {
-    margin-top: 320px;
+    margin-top: 20px;
     padding-top: 10px;
     border-top: 1px solid #aaa;
     color:#aaa;
@@ -26,13 +26,11 @@ img{
     float: right;
 }
 
-
 .pdf-header {
     margin-top: 30px;
     padding-bottom: 10px;
     border-bottom: 1px solid #aaa;
     color: #aaa;
-    font-size: 0.9;
 }
 
 .pdf-header .header-right{
