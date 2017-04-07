@@ -1,4 +1,5 @@
 <!-- notoc -->
+
 # Introducció als Sistemes Operatius en Xarxa
 
 Si volem realitzar una gestió centralitzada dels recursos d’una xarxa necessitem un equip amb un **Sistema Operatiu en Xarxa** instal·lat. Aquest equip s’anomena **Servidor.**.
