@@ -15,7 +15,7 @@ img{
 }
 
 /* blockquote */
-.markdown-section blockquote {
+blockquote {
     background: #d6e5ec;
     color: #333; 
     padding: 8px 15px;
@@ -23,7 +23,7 @@ img{
     border-radius: 3px;
 }
 
-.markdown-section blockquote p:last-child {
+blockquote p:last-child {
     margin-bottom: 0px;
 }
 
