@@ -14,7 +14,8 @@
     * [Directives de grup](UF1/directives-de-grup.md)
   * [Activitats](UF1/uf1-activitats.md)
     * [Instal·lació Windows Server 2012 R2](UF1/act/act1-instalacio.md)
-    * [Qüestionari](UF1/uf1-questionari.md)
+    * [1. Instal·lació Windows Server](UF1/act/act1-instalacio.md)
+    * [Qüestionari](UF1/act/uf1-questionari.md)
 
 
 ### UF2. Sistemes operatius lliures en xarxa
