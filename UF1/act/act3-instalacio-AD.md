@@ -26,7 +26,7 @@ La instal·lació del **Directori Actiu** és la implementació d'una funció b�
 
 Un cop instal·lats els serveis bàsics de **Directori Actiu** és necessari completar la instal·lació mitjançant la **creació d'un nou domini i la promoció de l'equip a controlador de domini** mitjançant els següents passos:
 
-1. En l’Administrador del servidor ens apareix una notificació indicant que es requereix una confinguració del AD i mostra l’opció de **_Promover este servidor a controlador de dominio_***.*
+1. En l’Administrador del servidor ens apareix una notificació indicant que es requereix una confinguració del AD i mostra l’opció de **_Promover este servidor a controlador de dominio_**.
 
 2. Després de la pantalla d'inici de l’assistent hi ha tres opcions: 
 
@@ -36,7 +36,7 @@ Un cop instal·lats els serveis bàsics de **Directori Actiu** és necessari com
 
     * Afegir un nou bosc.
 
-3. Com que no tenim encara cap domini creat escollim la tercera opció **_"Afegir un nou bosc"_**.
+3. Com que no tenim encara cap domini creat escollim la tercera opció **_Afegir un nou bosc_**.
 
 4. A continuació has d'introduir el nom complet del domini arrel que serà el primer del nostre bosc. Aquest nom ha de complir l'estructura DNS (Domain Name System) amb sufix inclòs amb el que definirem el nom del bosc i l'espai de noms, per exemple **bosccoma.local. **Introdueix ara** bosccoma.local** i prem **Següent**.
 
