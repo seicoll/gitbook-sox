@@ -16,9 +16,9 @@ img{
 
 /* FOOTER */
 .pdf-footer {
-    margin-top: 20px;
+    margin-top: 320px;
     padding-top: 10px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #aaa;
     color:#aaa;
 }
 
@@ -28,9 +28,9 @@ img{
 
 
 .pdf-header {
-    margin-top: 20px;
+    margin-top: 30px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #666;
-    color: #666;
-    font-size: 0.8;
+    border-bottom: 1px solid #aaa;
+    color: #aaa;
+    font-size: 0.9;
 }
