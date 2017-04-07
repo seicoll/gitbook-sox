@@ -6,7 +6,7 @@
 
 * Llibre Windows Server 2012- Up and Running Capítol 2
 * VirtualBox
-* Microsoft DreamSpark
+* Compte d'usuari Microsoft Imagine
 
 ## Preguntes
 
@@ -17,7 +17,7 @@
 ## Activitat
 > Recorda documentar la teva pràctica.
 
-1. Ves a Microsoft DreamSpark i compra un Windows Server 2012 R2 (English).
-2. Crea una màquina virtual amb Virtual Box i instal·la Windows Server 2012 Core.
+1. Ves a Microsoft Imagine i compra un Windows Server 2012 R2 (English).
+2. Crea una màquina virtual amb VirtualBox i instal·la Windows Server 2012 Core.
 3. Converteix el teu Server Core en GUI.
 4. Converteix el teu Server GUI en un Minimal Server Interface.
