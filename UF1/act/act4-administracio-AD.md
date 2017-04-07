@@ -84,5 +84,6 @@
   * Pot accedir sempre a totes hores
   * Pertany al grup Professors.
 
-4. Amb aquestes plantilles doneu d'alta **3 usuaris per a cada grup**. Afegeix aquest usuaris a la Unitat Organitzativa que els hi correspon.
+4. Amb aquestes plantilles doneu d'alta **3 usuaris per a cada grup**. 
+Afegeix aquests usuaris a la Unitat Organitzativa que els hi correspon.
 
