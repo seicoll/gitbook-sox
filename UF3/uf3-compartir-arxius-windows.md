@@ -21,7 +21,7 @@ Per compartir recursos de l’equip podem fer servir:
 
 2. L’administració d’equips [_Computer Management_]
 
-  IMATGE
+![](/assets/win-shares.png)
 
   Des de l’administració d’equips veiem això:
     
@@ -47,7 +47,7 @@ Per compartir recursos de l’equip podem fer servir:
 
   permet veure les unitats que tenim compartides en l’equip actual.
   
-  IMATGE
+![](/assets/win-netshare.png)
   
   
 ## Crear carpetes compatides
