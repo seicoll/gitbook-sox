@@ -64,7 +64,7 @@ Per activar les unitats compartides has de fer el següent:
 
 ## Gestió de permisos de compartició
 
-## Conèixer els permisos d’un rescurs compartit
+## Conèixer els permisos d’un recurs compartit
 
 Per **conèixer els permisos** que té un recurs, es poden seguir els passos que es mostren a continuació:
 
