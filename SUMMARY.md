@@ -35,7 +35,7 @@
     * [Qüestionari](UF2/uf2-questionari.md)
 
 ### [UF3. Compartició de recursos i seguretat](UF3.md)
-  * [Introducció a la comptarció de recursos i seguretat](UF3/uf3-introduccio.md)
+  * [Introducció a la comptartició de recursos i seguretat](UF3/uf3-introduccio.md)
   * [Compartir recursos en xarxa i seguretat en sistemes de propietat](UF3/uf3-compartir-recursos-windows.md)
     * [Compartir arxius i carpetes en Windows](UF3/uf3-compartir-arxius-windows.md)
     * [Compartir impressores en Windows](UF3/uf3-compartir-impressores-windows.md)
