@@ -162,9 +162,9 @@ Per activar les unitats compartides has de fer el següent:
 
 * L’opció **_Ús compartit de la carpeta públic_** controla l’accés a les carpetes públiques de l’equip.  
 
+## Veure els recursos compartits
 
-
-## Conèixer els permisos d’un recurs compartit
+### A través de l'interfície gràfica
 
 Per **conèixer els permisos** que té un recurs, es poden seguir els passos que es mostren a continuació:
 
@@ -174,6 +174,17 @@ Per **conèixer els permisos** que té un recurs, es poden seguir els passos que
 4. La fitxa Permisos dels recursos compartits us mostrarà l’usuari o grups d’usuaris que tenen accés al recurs i com és aquest accés. Aquesta fitxa permet modificar els permisos existents.
 
 **IMATGE**
+
+### A través de comandes
+
+Executant la a comanda ```net share``` permet veure les unitats que tenim compartides en l’equip actual.
+  
+![](/assets/win-netshare.png)
+
+
+
+
+
 
 ## Accedir a carpetes compartides
 
@@ -215,10 +226,6 @@ Per compartir recursos de l’equip podem fer servir:
   * **Quota:** és el resum de l’estat de les quotes de l’administrador de recursos sobre la carpeta compartida.
 
 ### Connexió a unitats de xarxa
-
-Executant la a comanda ```net share``` permet veure les unitats que tenim compartides en l’equip actual.
-  
-![](/assets/win-netshare.png)
 
 Per connectar-se a una unitat de xarxa i accedir als recursos que conté, només cal executar l’ordre: 
 
