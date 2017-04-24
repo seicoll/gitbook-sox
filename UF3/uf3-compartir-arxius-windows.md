@@ -98,6 +98,41 @@ Per configurar els permisos de compartició cal anar a les **propietats de la ca
 
 > Un cop s'hagi compartit la carpeta, la ruta que s'ha d'utilitzar per accedir de forma remota és la que apareix a **_Ruta de acceso de red:_** ```\\\WIN-SOX\Compartida```.
 
+### Compartició senzilla
+
+Amb el botó **_Compartir_**, s'accedeix a les opcions per compartir la carpeta de forma senzilla.
+Només es poden afegir o eliminar **usuaris i grups**, i assignar-los permisos de **Lectura **o de **Lectura i escriptura**.
+
+![](/assets/win-permisos-compartits-simple.png)
+
+### Compartició avançada
+
+Amb el botó **_Uso compartido avanzado_**, s'accedeix a les opcions per compartir la carpeta de forma avançada.
+
+![](/assets/win-permisos-compartits-avansats1.png)
+
+En aquest cas es disposa de més opcions per configurar la compartició:
+
+* Marcar o desmarcar la casella **_Compartir esta carpeta_** per compartir-la o deixar-la de compartir.
+* Posar-li un **nom de recurs** compartir diferent del nom original. Aquest nom és el què s'ha d'utilitzar quan es vol accedir a aquest recurs de forma remota.
+* Es pot establir el **nombre màxim d'usuaris** que poden utilitzar la carpeta simultàniament.
+* Els **permisos** que es poden assignar són diferents: **_Llegir, Canviar i Control total_**.
+
+![](/assets/win-permisos-compartits-avansats2.png)
+
+> Es pot simplificar la configuració de permisos de compartició posant **Control total** a **_Compartició_** i gestionar els permisos més detalladament a **_Seguretat_**.
+> En alguns casos no es podrà fer així: per exemple, si es vol que els usuaris tinguin permís de lectura i escriptura quan accedeixin localment però només de lectura quan ho facin de forma remota.
+
+#### Carpetes compartides ocultes
+
+* Si es vol compartir un recurs però que **no sigui visible** (només es podrà connectar qui conegui la ruta a aquest recurs) només cal afegir un **$** darrera del nom del recurs.
+  * Per exemple: C$
+  
+* Amb **\\\ip_equip** o **\\\nom_equip** es pot veure els recursos compartits visibles.
+
+* Es pot accedir a un recurs compartit ocult si es conneix tota la ruta.
+  * Per exemple: \\\192.168.0.1\C$
+
 ## Activar unitats compartides
 
 Per activar les unitats compartides has de fer el següent:
@@ -126,23 +161,20 @@ Per **conèixer els permisos** que té un recurs, es poden seguir els passos que
 
 ## Creació de carpetes compatides
 
-### Carpetes compartides ocultes
 
-* Si es vol compartir un recurs però que **no sigui visible** (només es podrà connectar qui conegui la ruta a aquest recurs) només cal afegir un **$** darrera del nom del recurs.
-  * Per exemple: C$
-  
-* Amb **\\\ip_equip** o **\\\nom_equip** es pot veure els recursos compartits visibles.
 
-* Es pot accedir a un recurs compartit ocult si es conneix tota la ruta.
-  * Per exemple: \\\192.168.0.1\C$
+## Accedir a carpetes compartides
 
 * Si l'**usuari** autentificat a la màquina client està **reconegut** per la màquina servidor i té accés al recurs, aquest es podrà connectar.
 
-* Sinó es possible que demani un usuari i contrasenya que sigui reconegut pel servidor.
+* Sinó és possible que demani un usuari i contrasenya que sigui reconegut pel servidor.
 
 * Si volem que es pugui connectar qualsevol usuari caldrà donar permisos a l'usuari convidat i, si cal, habilitar aquest usuari.
 
-## Accedir a carpetes compartides
+
+
+
+
 
 Per compartir recursos de l’equip podem fer servir:
 
