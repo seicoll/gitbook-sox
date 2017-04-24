@@ -44,7 +44,7 @@ Es poden assignar diferents permisos de compartició per usuaris i grups. Aquest
 Quan s'accedeix a una carpeta o arxiu de forma remota, s'han de combinar els permisos locals amb els de compartició. Sempre s'aplica el permís mes restrictiu.
 
 > Una forma de simplificar la gestió dels permisos quan es comparteixen arxius i carpetes és posar **Control total** als permisos de compartició i gestionar els permisos locals més detalladament.
-Això no sempre es pot fer (depén dels requeriments de seguretat) però en la majoria de casos, sí.
+> Això no sempre es pot fer (depén dels requeriments de seguretat) però en la majoria de casos, sí.
 
 ## Activar unitats compartides
 
@@ -59,7 +59,13 @@ Per activar les unitats compartides has de fer el següent:
 
 * L’opció **_Ús compartit de la carpeta públic_** controla l’accés a les carpetes públiques de l’equip.  
 
-## Utilització d’unitats compartides
+## Gestió de permisos locals
+
+
+## Gestió de permisos de compartició
+
+
+## Accedir a carpetes compartides
 
 Per compartir recursos de l’equip podem fer servir:
 
@@ -87,22 +93,30 @@ Per compartir recursos de l’equip podem fer servir:
   * **Espai lliure:** és la quantitat d’espai lliure en el disc si no hi ha quotes establertes.
   * **Quota:** és el resum de l’estat de les quotes de l’administrador de recursos sobre la carpeta compartida.
   
-4. Executant la a comanda 
+4. 
 
-  ```net share```
+### Connexió a unitats de xarxa
 
-  permet veure les unitats que tenim compartides en l’equip actual.
+Executant la a comanda ```net share``` permet veure les unitats que tenim compartides en l’equip actual.
   
 ![](/assets/win-netshare.png)
+
+Per connectar-se a una unitat de xarxa i accedir als recursos que conté, només cal executar l’ordre: 
+
+  ```net use```
+
+* Per exemple, si es vol accedir a un recurs amb l'etiqueta Imatges que s'emmagatzema en una màquina anomenada Multimedia i la lletra de la unitat és la d, cal escriure el següent:
+
+  ```net use d: \\Multimedia\Imatges```
+
   
-  
-## Crear carpetes compatides
+## Creació de carpetes compatides
 
-## Permisos de carpetes compartides
 
-## Carpetes compartides ocultes
 
-* Si es vol compartir un recurs però que no sigui visible (només es podrà connectar qui conegui la ruta a aquest recurs) només cal afegir un $ darrera del nom del recurs.
+### Carpetes compartides ocultes
+
+* Si es vol compartir un recurs però que **no sigui visible** (només es podrà connectar qui conegui la ruta a aquest recurs) només cal afegir un **$** darrera del nom del recurs.
   * Per exemple: C$
   
 * Amb **\\\ip_equip** o **\\\nom_equip** es pot veure els recursos compartits visibles.
@@ -127,15 +141,7 @@ Per **conèixer els permisos** que té un recurs, es poden seguir els passos que
 
 **IMATGE**
 
-## Connexió a unitats de xarxa
 
-* Per connectar-se a una unitat de xarxa i accedir als recursos que conté, només cal executar l’ordre: 
-
-  ```net use```
-
-* Per exemple, si es vol accedir a un recurs amb l'etiqueta Imatges que s'emmagatzema en una màquina anomenada Multimedia i la lletra de la unitat és la d, cal escriure el següent:
-
-  ```net use d: \\Multimedia\Imatges```
 
 
 
