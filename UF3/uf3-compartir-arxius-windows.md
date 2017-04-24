@@ -55,8 +55,48 @@ Es poden assignar diferents permisos de compartició per usuaris i grups. Aquest
 
 ## Gestió de permisos locals
 
+Per configurar els permisos locals cal anar a les **propietats de la carpeta** i entrar a la pestanya **_Seguridad_**.
+
+![](/assets/win-permisos-locals.png)
+
+### Gestionar els usuaris
+
+Es poden afegir o eliminar usuaris i grups fent clic al botó **_Editar_**.
+
+### Gestionar els permisos simples
+
+Seleccionant l'usuari o grup es poden marcar o desmarcar les caselles **_Permitir o Denegar_** en cada permís.
+
+Per defecte, si no està marcada la casella **_Permitir_**, implica que no es té el permís corresponent.
+
+### Opcions avançades
+
+Amb el botó **_Opciones avanzadas_** es poden canviar algunes propietats avançades:
+
+![](/assets/win-pemisos-avansats.png)
+
+#### Canviar el propietari
+
+A més de canviar el propietari de la carpeta, també es pot canviar en els arxius i subcarpetes.
+
+#### Habilitar / Deshabilitar la herència
+
+En el cas de deshabilitar l'herència es pot triar entre dues opcions:
+* **Mantenir els permisos actuals**: es fa una còpia dels permisos actuals però ara es podran modificar.
+* **Esborrar tots els permisos**: s'hauran de crear de nou tots els permisos.
+
+#### Gestionar els permisos avançatS
+Seleccionant un usuari o grup, es poden afegir, eliminar o editar els permisos avançats:
+
+![](/assets/win-permisos-avansats-afegir.png)
 
 ## Gestió de permisos de compartició
+
+Per configurar els permisos de compartició cal anar a les **propietats de la carpeta** i entrar a la pestanya **_Compartir_**.
+
+![](/assets/win-permisos-compartits.png)
+
+> Un cop s'hagi compartit la carpeta, la ruta que s'ha d'utilitzar per accedir de forma remota és la que apareix a **_Ruta de acceso de red:_** ```\\\WIN-SOX\Compartida```.
 
 ## Activar unitats compartides
 
