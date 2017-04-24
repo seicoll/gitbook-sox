@@ -62,13 +62,35 @@ Per compartir recursos de l’equip podem fer servir:
 * Amb **\\\ip_equip** o **\\\nom_equip** es pot veure els recursos compartits visibles.
 
 * Es pot accedir a un recurs compartit ocult si es conneix tota la ruta.
-  * Per exemple: \\192.168.0.1\C$
+  * Per exemple: \\\192.168.0.1\C$
 
 * Si l'**usuari** autentificat a la màquina client està **reconegut** per la màquina servidor i té accés al recurs, aquest es podrà connectar.
 
 * Sinó es possible que demani un usuari i contrasenya que sigui reconegut pel servidor.
 
 * Si volem que es pugui connectar qualsevol usuari caldrà donar permisos a l'usuari convidat i, si cal, habilitar aquest usuari.
+
+## Conèixer els permisos d’un rescurs compartit
+
+Per **conèixer els permisos** que té un recurs, es poden seguir els passos que es mostren a continuació:
+
+1. Connecteu-vos al recurs dins de l’administració d’equips.
+2. Expandiu Eines de sistema, Carpetes compartides i cliqueu a Recursos compartits.
+3. Cliqueu amb el botó dret al recurs que vulgueu examinar i cliqueu a Propietats.
+4. La fitxa Permisos dels recursos compartits us mostrarà l’usuari o grups d’usuaris que tenen accés al recurs i com és aquest accés. Aquesta fitxa permet modificar els permisos existents.
+
+IMATGE
+
+## Connexió a unitats de xarxa
+
+* Per connectar-se a una unitat de xarxa i accedir als recursos que conté, només cal executar l’ordre: 
+
+  ```net use```
+
+* Per exemple, si es vol accedir a un recurs amb l'etiqueta Imatges que s'emmagatzema en una màquina anomenada Multimedia i la lletra de la unitat és la d, cal escriure el següent:
+
+  ```net use d: \\Multimedia\Imatges```
+
 
 
 
