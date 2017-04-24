@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Introducció
 
 En un entorn on hi ha ordinadors connectats en xarxa i es comparteixen recursos, és molt important controlar qui pot accedir a la xarxa i l'ús que pot fer de les màquines i dels recursos compartits per evitar situacions com les següents:
