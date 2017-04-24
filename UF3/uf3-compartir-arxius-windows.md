@@ -33,7 +33,7 @@ Per compartir recursos de l’equip podem fer servir:
 
 3. El **Server Manager**, dins **_File and Storage Services > Shares_**
 
-  IMATGE
+> IMATGE
 
   * **Nom del recurs compartit:** és el nom del recurs compartit.
   * **Ruta local:** és la ruta completa de la carpeta en el sistema local.
@@ -79,7 +79,7 @@ Per **conèixer els permisos** que té un recurs, es poden seguir els passos que
 3. Cliqueu amb el botó dret al recurs que vulgueu examinar i cliqueu a Propietats.
 4. La fitxa Permisos dels recursos compartits us mostrarà l’usuari o grups d’usuaris que tenen accés al recurs i com és aquest accés. Aquesta fitxa permet modificar els permisos existents.
 
-IMATGE
+**IMATGE**
 
 ## Connexió a unitats de xarxa
 
