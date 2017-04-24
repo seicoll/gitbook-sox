@@ -149,19 +149,6 @@ En cas que no el tingui, en la tercera columna se indica el motiu:
 * **Permisos de archivo**: no s'ha donat permís en la configuració de **permisos locals**.
 * **Compartir**: no s'ha donat permís en la configuració de **permisos de compartició**.
 
-## Activar unitats compartides
-
-Per activar les unitats compartides has de fer el següent:
-
-1. Fer clic a **_Inici > Xarxa_** per accedir al centre de Xarxes i recursos compartits.
-2. Activar l’**_Ús compartit d’arxius i impressores_**.
-
-![](/assets/win-activar-us-compartit.PNG)
-
-* L’opció **_Ús compartit d’arxius i impressores_** controla l’accés als recursos compartits per mitjà de la xarxa i a les impressores connectades a l’equip.
-
-* L’opció **_Ús compartit de la carpeta públic_** controla l’accés a les carpetes públiques de l’equip.  
-
 ## Veure i gestionar les carpetes compartides
 
 ### A través de l'Administrador d'equips
@@ -258,6 +245,21 @@ Per connectar-se a una unitat de xarxa i accedir als recursos que conté, només
 * Per exemple, si es vol accedir a un recurs amb l'etiqueta Imatges que s'emmagatzema en una màquina anomenada Multimedia i la lletra de la unitat és la d, cal escriure el següent:
 
   ```net use d: \\Multimedia\Imatges```
+  
+## Activar unitats compartides
+
+Per activar les unitats compartides has de fer el següent:
+
+1. Fer clic a **_Inici > Xarxa_** per accedir al centre de Xarxes i recursos compartits.
+2. Activar l’**_Ús compartit d’arxius i impressores_**.
+
+![](/assets/win-activar-us-compartit.PNG)
+
+* L’opció **_Ús compartit d’arxius i impressores_** controla l’accés als recursos compartits per mitjà de la xarxa i a les impressores connectades a l’equip.
+
+* L’opció **_Ús compartit de la carpeta públic_** controla l’accés a les carpetes públiques de l’equip.  
+
+
 
   
 
