@@ -53,3 +53,17 @@ Els permisos es poden assignar a usuaris individuals o a grups.
 Quan els permisos s'assignen a un grup, aquests permisos s'aplicaran també als subgrups i usuaris que pertanyin a aquest grup.
 > Si els permisos del grup entren en contradicció amb altres permisos assignats als subgrups o usuaris, s'aplicaran els més específics (els de subgrup o els d'usuari).
 
+## Compartició de recursos
+
+Quan es disposa d'ordinadors connectats en xarxa, és molt convenient compartir recursos.
+
+Alguns dels **principals avantatges** són els següents:
+
+* **Reduir costos**: normalment no fa falta tenir una impressora per cada usuari, ni discos de gran capacitat en tots els ordinadors; es pot compartir una impressora entre vàries màquines o guardar els arxius en un sistema d'emmagatzematge centralitzat.
+
+* **Facilitar la feina dels usuaris**: es pot fer que un usuari pugui treballar en qualsevol ordinador sense haver de reconfigurar cada vegada el seu entorn de treball, i poder accedir fàcilment als seus documents, a documents que comparteixen altres usuaris o a una impressora encara que aquests recursos no estigui en el seu ordinador.
+
+Els **principals recursos** que es poden compartir en xarxa són:
+* **Arxius i carpetes**
+* **Impressores**
+
