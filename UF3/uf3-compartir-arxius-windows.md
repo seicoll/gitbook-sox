@@ -166,14 +166,25 @@ Per activar les unitats compartides has de fer el següent:
 
 ### A través de l'interfície gràfica
 
-Per **conèixer els permisos** que té un recurs, es poden seguir els passos que es mostren a continuació:
+Es poden veure tot el relacionat amb els recursos que està compartint la màquina a **_Administración de equipos_**, dins l'apartat **_Herramientas del sistema > Carpetas compartidas > Recursos compartits_**.
 
-1. Connecteu-vos al recurs dins de l’administració d’equips.
-2. Expandiu Eines de sistema, Carpetes compartides i cliqueu a Recursos compartits.
-3. Cliqueu amb el botó dret al recurs que vulgueu examinar i cliqueu a Propietats.
-4. La fitxa Permisos dels recursos compartits us mostrarà l’usuari o grups d’usuaris que tenen accés al recurs i com és aquest accés. Aquesta fitxa permet modificar els permisos existents.
+![](/assets/win-recursos-compartits.png)
 
-**IMATGE**
+**Recursos compartits**
+
+En aquest apartat es poden veure els recursos compartits i configurar-los:
+* Deixar de compartir-los
+* Nom del recurs compartit
+* Permisos de compartició
+* Permisos locals
+
+**Sessions**
+
+Aquí es pot veure qui està accedint als recursos (usuari o màquina) i, si cal, tancar-li la sessió.
+
+**Arxius oberts**
+
+Mostra els arxius compartits que s'estan utilitzant i, si cal, es poden tancar.
 
 ### A través de comandes
 
