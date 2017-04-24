@@ -62,8 +62,12 @@ Comprova el correcte funcionament i adjunta captures de pantalla.
 
 #### 6. (Ampliació) GPOs d’instal·lació de programari
 
-21. Crea una GPO que **instal·li el paquet PDFCreator automàticament de forma assignada** a tots els equips d’una OU.  Pots ajudar-te del següent enllaç: [http://ebarrova.blogspot.com.es/2014/02/instalar-impresora-mediante-gpos.html](http://ebarrova.blogspot.com.es/2014/02/instalar-impresora-mediante-gpos.html)
-Elimineu el paquet i comproveu com es desintal·la del client.
+21. Crea una GPO que **instal·li el paquet PDFCreator automàticament de forma assignada** a tots els equips d’una OU.  
+  Pots ajudar-te del següent enllaç: 
+
+  [http://ebarrova.blogspot.com.es/2014/02/instalar-impresora-mediante-gpos.html](http://ebarrova.blogspot.com.es/2014/02/instalar-impresora-mediante-gpos.html)
+
+  Elimineu el paquet i comproveu com es desintal·la del client.
 
 22. Crea una GPO que **instal·li el Chrome automàticament de forma publicada ** a tots els equips d'una OU. 
 Documenteu la instal·lació del paquet des del Tauler de Control.
