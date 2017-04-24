@@ -59,12 +59,15 @@ Per compartir recursos de l’equip podem fer servir:
 * Si es vol compartir un recurs però que no sigui visible (només es podrà connectar qui conegui la ruta a aquest recurs) només cal afegir un $ darrera del nom del recurs.
   * Per exemple: C$
   
-* Amb \\ip_equip o \\nom_equip es pot veure els recursos compartits visibles.
+* Amb **\\\ip_equip** o **\\\nom_equip** es pot veure els recursos compartits visibles.
+
 * Es pot accedir a un recurs compartit ocult si es conneix tota la ruta.
   * Per exemple: \\192.168.0.1\C$
 
 * Si l'**usuari** autentificat a la màquina client està **reconegut** per la màquina servidor i té accés al recurs, aquest es podrà connectar.
+
 * Sinó es possible que demani un usuari i contrasenya que sigui reconegut pel servidor.
+
 * Si volem que es pugui connectar qualsevol usuari caldrà donar permisos a l'usuari convidat i, si cal, habilitar aquest usuari.
 
 
