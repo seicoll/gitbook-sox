@@ -85,7 +85,7 @@ En el cas de deshabilitar l'herència es pot triar entre dues opcions:
 * **Mantenir els permisos actuals**: es fa una còpia dels permisos actuals però ara es podran modificar.
 * **Esborrar tots els permisos**: s'hauran de crear de nou tots els permisos.
 
-#### Gestionar els permisos avançatS
+#### Gestionar els permisos avançats
 Seleccionant un usuari o grup, es poden afegir, eliminar o editar els permisos avançats:
 
 ![](/assets/win-permisos-avansats-afegir.png)
@@ -123,7 +123,7 @@ En aquest cas es disposa de més opcions per configurar la compartició:
 > Es pot simplificar la configuració de permisos de compartició posant **Control total** a **_Compartició_** i gestionar els permisos més detalladament a **_Seguretat_**.
 > En alguns casos no es podrà fer així: per exemple, si es vol que els usuaris tinguin permís de lectura i escriptura quan accedeixin localment però només de lectura quan ho facin de forma remota.
 
-#### Carpetes compartides ocultes
+### Carpetes compartides ocultes
 
 * Si es vol compartir un recurs però que **no sigui visible** (només es podrà connectar qui conegui la ruta a aquest recurs) només cal afegir un **$** darrera del nom del recurs.
   * Per exemple: C$
@@ -132,6 +132,22 @@ En aquest cas es disposa de més opcions per configurar la compartició:
 
 * Es pot accedir a un recurs compartit ocult si es conneix tota la ruta.
   * Per exemple: \\\192.168.0.1\C$
+  
+### Veure els permisos efectius
+
+És fàcil cometre errors al combinar permisos locals amb permisos compartits, i sol ser difícil descobrir quins són els permisos que estan mal configurats.
+Per ajudar en aquesta tasca, es pot anar a permisos locals (pestanya **_Seguridad_**), clicar el botó **_Opciones avanzadas_** i entrar a la pestanya **Acceso efectivo**.
+
+Aquesta finestra permet comprovar quins permisos té un usuari i, en cas que no tingui un permís, saber si el problema està en la configuració dels permisos locals o en els permisos de compartició.
+
+Primer cal **triar l'usuari o grup** i després clicar el botó **_Ver acceso efectivo_**.
+
+![](/assets/win-permisos-efectius.png)
+
+En les dues primeres columnes se indica si l'usuari o grup té o no un permís determinat.
+En cas que no el tingui, en la tercera columna se indica el motiu:
+* **Permisos de archivo**: no s'ha donat permís en la configuració de **permisos locals**.
+* **Compartir**: no s'ha donat permís en la configuració de **permisos de compartició**.
 
 ## Activar unitats compartides
 
@@ -158,10 +174,6 @@ Per **conèixer els permisos** que té un recurs, es poden seguir els passos que
 4. La fitxa Permisos dels recursos compartits us mostrarà l’usuari o grups d’usuaris que tenen accés al recurs i com és aquest accés. Aquesta fitxa permet modificar els permisos existents.
 
 **IMATGE**
-
-## Creació de carpetes compatides
-
-
 
 ## Accedir a carpetes compartides
 
