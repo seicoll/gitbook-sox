@@ -162,21 +162,27 @@ Per activar les unitats compartides has de fer el següent:
 
 * L’opció **_Ús compartit de la carpeta públic_** controla l’accés a les carpetes públiques de l’equip.  
 
-## Veure els recursos compartits
+## Veure i gestionar les carpetes compartides
 
-### A través de l'interfície gràfica
+### A través de l'Administrador d'equips
 
-Es poden veure tot el relacionat amb els recursos que està compartint la màquina a **_Administración de equipos_**, dins l'apartat **_Herramientas del sistema > Carpetas compartidas > Recursos compartits_**.
+Es poden veure tot el relacionat amb els recursos que està compartint la màquina a **_Administración de equipos [Computer Management]_**, dins l'apartat **_Herramientas del sistema > Carpetas compartidas_**.
 
 ![](/assets/win-recursos-compartits.png)
 
 **Recursos compartits**
 
-En aquest apartat es poden veure els recursos compartits i configurar-los:
+En aquest apartat es poden veure la següent informació sobre els recursos compartits:
+  * **Nom del recurs:** és el nom del recurs compartit.
+  * **Ruta de la carpeta:** és la ruta sencera en el sistema local.
+  * **Tipus:** és el tipus d’ordinador que pot utilitzar el recurs.
+  * **Num. de connexions de client:** és la quantitat de clients que estan accedint al recurs en aquell precís moment.
+  * **Descripció:** és la descripció del recurs.
+
+I també podem:
 * Deixar de compartir-los
-* Nom del recurs compartit
-* Permisos de compartició
-* Permisos locals
+* Veure els permisos de compartició
+* Veure els permisos locals
 
 **Sessions**
 
@@ -186,49 +192,11 @@ Aquí es pot veure qui està accedint als recursos (usuari o màquina) i, si cal
 
 Mostra els arxius compartits que s'estan utilitzant i, si cal, es poden tancar.
 
-### A través de comandes
+### A través del Administrador del servidor
 
-Executant la a comanda ```net share``` permet veure les unitats que tenim compartides en l’equip actual.
-  
-![](/assets/win-netshare.png)
+En l'**_Administrador del servidor [Server Manager]_**, dins de l'apartat **_ Servicios de archivos i de almacenamiento [File and Storage Services > Shares]_**.
 
-
-
-
-
-
-## Accedir a carpetes compartides
-
-* Si l'**usuari** autentificat a la màquina client està **reconegut** per la màquina servidor i té accés al recurs, aquest es podrà connectar.
-
-* Sinó és possible que demani un usuari i contrasenya que sigui reconegut pel servidor.
-
-* Si volem que es pugui connectar qualsevol usuari caldrà donar permisos a l'usuari convidat i, si cal, habilitar aquest usuari.
-
-
-
-
-
-
-Per compartir recursos de l’equip podem fer servir:
-
-1. L’explorador de Windows i fent botó dret del ratolí > **_Compartir amb_**
-
-2. L’administració d’equips [_Computer Management_]
-
-![](/assets/win-shares.png)
-
-  Des de l’administració d’equips veiem això:
-    
-  * **Nom del recurs:** és el nom del recurs compartit.
-  * **Ruta de la carpeta:** és la ruta sencera en el sistema local.
-  * **Tipus:** és el tipus d’ordinador que pot utilitzar el recurs.
-  * **Num. de connexions de client:** és la quantitat de clients que estan accedint al recurs en aquell precís moment.
-  * **Descripció:** és la descripció del recurs.
-
-3. El **Server Manager**, dins **_File and Storage Services > Shares_**
-
-> IMATGE
+![](/assets/win-recursos-compartits2.png)
 
   * **Nom del recurs compartit:** és el nom del recurs compartit.
   * **Ruta local:** és la ruta completa de la carpeta en el sistema local.
@@ -236,7 +204,48 @@ Per compartir recursos de l’equip podem fer servir:
   * **Espai lliure:** és la quantitat d’espai lliure en el disc si no hi ha quotes establertes.
   * **Quota:** és el resum de l’estat de les quotes de l’administrador de recursos sobre la carpeta compartida.
 
-### Connexió a unitats de xarxa
+### A través de comandes
+
+Executant la a comanda ```net share``` permet veure les unitats que tenim compartides en l’equip actual.
+  
+![](/assets/win-netshare.png)
+
+
+## Accedir a carpetes compartides
+
+Una forma fàcil d'accedir a les carpetes compartides en una màquina és a través de l'explorador d'arxius.
+
+A l'apartat **_Red _** es poden veure les màquines de la mateixa xarxa.
+
+Seleccionant qualsevol d'elles es veuran les carpetes que comparteixen.
+
+Si no apareix la màquina però es coneix la màquina i el nom del recurs compartit, es pot escriure en la barra d'adreces: 
+
+  ```
+  \\NOM_EQUIP o IP\Compartida
+  ```
+
+Si l'**usuari** autentificat a la màquina client està **reconegut** per la màquina servidor i té accés al recurs, aquest es podrà connectar.
+
+Sinó, és possible que demani un usuari i contrasenya que sigui reconegut pel servidor.
+
+Si volem que es pugui connectar qualsevol usuari caldrà donar permisos a l'usuari convidat i, si cal, habilitar aquest usuari.
+
+### Connectar una unitat de xarxa a una carpeta compartida
+
+Es pot connectar la carpeta compartida a una unitat de xarxa assignant-li una lletra d'unitat que estigui disponible.
+D'aquesta forma serà més fàcil accedir-hi, doncs apareixerà com una unitat d'emmagatzematge local.
+
+Per fer la connexió, clicar amb el botó dret sobre Este equipo i triar l'opció Conectar a unidad de red.
+
+* **Unitat:** triar una lletra d'unitat que estigui lliure (X:).
+* **Carpeta:** escriure la ruta o buscar-la (\\NOM_EQUIP\Compartida).
+* **Conectar de nuevo al iniciar sesión:** connectar la unitat a la carpeta cada cop que l'usuari inicïï sessió.
+* **Conectar con otras credenciales:** connectar amb un usuari diferent de l'actual.
+
+**IMATGE**
+
+### Connectar una unitat de xarxa a través de comandes
 
 Per connectar-se a una unitat de xarxa i accedir als recursos que conté, només cal executar l’ordre: 
 
