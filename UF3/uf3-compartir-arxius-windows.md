@@ -4,7 +4,7 @@
 
 ### Conceptes bàsics
 
-Windows utilitza el protocol **CIFS** (antigament anomenat **SMB**) per compartir arxius, carpetes i impressores en un entorn en xarxa.
+Windows utilitza el protocol **CIFS** (antigament anomenat **SMB**) per compartir arxius, carpetes i impressores en un entorn en xarxa. També se'l sol anomenar **SMB/CIFS**.
 
 **Propietari d'un arxiu o carpeta**
 
@@ -37,14 +37,26 @@ Recursos compartits per defecte en un domini
 
 ### Permisos de compartició
 
-Quan es comparteix una carpeta, s'han de configurar els permisos de compartició.
+Quan es comparteixen carpetes, cal distingir entre permisos locals i permisos de compartició:
+
+* **Permisos locals**: s'apliquen quan l'usuari accedeix a l'arxiu o carpeta utilitzant una ruta local:
+  * En Windows: C:\Usuari\Documents
+* **Permisos de compartició**: s'apliquen quan l'usuari accedeix a l'arxiu o carpeta utilitzant una ruta remota:
+  * En Windows: \\Server\Compartida o X: (suposant que X: és una unitat de xarxa connectada amb una carpeta remota)
+
+Quan es comparteix una carpeta, s'han de configurar els **permisos de compartició**.
 
 Es poden assignar diferents permisos de compartició per usuaris i grups. Aquests permisos poden ser diferents dels permisos locals.
 
-Quan s'accedeix a una carpeta o arxiu de forma remota, s'han de combinar els permisos locals amb els de compartició. Sempre s'aplica el permís mes restrictiu.
+> Quan s'accedeix a un recurs **de forma local** només es tenen en compte els permisos locals, però quan s'accedeix a un recurs compartit **de forma remota** s'apliquen els permisos **més restrictius** entre els permisos locals i els permisos de compartició.
 
 > Una forma de simplificar la gestió dels permisos quan es comparteixen arxius i carpetes és posar **Control total** als permisos de compartició i gestionar els permisos locals més detalladament.
 > Això no sempre es pot fer (depén dels requeriments de seguretat) però en la majoria de casos, sí.
+
+## Gestió de permisos locals
+
+
+## Gestió de permisos de compartició
 
 ## Activar unitats compartides
 
@@ -59,10 +71,7 @@ Per activar les unitats compartides has de fer el següent:
 
 * L’opció **_Ús compartit de la carpeta públic_** controla l’accés a les carpetes públiques de l’equip.  
 
-## Gestió de permisos locals
 
-
-## Gestió de permisos de compartició
 
 ## Conèixer els permisos d’un recurs compartit
 
