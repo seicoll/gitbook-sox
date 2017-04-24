@@ -32,7 +32,7 @@
     * [Autenticació LDAP](UF2/uf2-auteticacio-ldap.md)
     * \*\*Gestionar LDAP amb comandes
   * [Activitats](UF2/uf2-activitats.md)
-    * [Qüestionari](UF2/uf2-questionari.md)
+    * [Qüestionari](UF2/act/uf2-questionari.md)
 
 ### [UF3. Compartició de recursos i seguretat](UF3.md)
   * [Introducció a la compartició de recursos i seguretat](UF3/uf3-introduccio.md)
@@ -44,6 +44,7 @@
     * [Compartir impressores amb CUPS](UF3/uf3-compartir-impressores-cups.md)
     * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
   * [Activitats](UF3/uf3-activitats.md)
+    * [Qüestionari](UF3/act/uf3-questionari.md)
 
 ### [UF4. Integració de sistemes operatius](UF4/UF4.md)
   * [Samba 4 com a controlador de domini (DC)](UF4/controlador-domini-samba.md)
@@ -51,6 +52,9 @@
   * [Perfils mòbils en un domini Samba AD](UF4/perfils-mobils-sambaAD.md)
   * [Zentyal com a controlador de domini](UF4/zentyal.md)
   * [Activitats](UF4/uf4-activitats.md)
+    * [Qüestionari](UF4/act/uf4-questionari.md)
+
+
 
 
 
