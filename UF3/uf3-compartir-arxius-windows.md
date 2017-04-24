@@ -221,13 +221,17 @@ Seleccionant qualsevol d'elles es veuran les carpetes que comparteixen.
 
 Si no apareix la màquina però es coneix la màquina i el nom del recurs compartit, es pot escriure en la barra d'adreces: 
 
-  ```
-  \\NOM_EQUIP o IP\Compartida
-  ```
+```
+\\NOM_EQUIP o IP\Compartida
+```
 
-Si l'**usuari** autentificat a la màquina client està **reconegut** per la màquina servidor i té accés al recurs, aquest es podrà connectar.
+### Validació d'usuaris per accedir a carpetes compartides
 
-Sinó, és possible que demani un usuari i contrasenya que sigui reconegut pel servidor.
+Quan s'intenta accedir a una carpeta compartida, el sistema comprova si l'usuari i contrasenya amb el que s'ha accedit al sistema està reconegut per la màquina servidor i té accés al recurs, aquest es podrà connectar.
+
+Si no es reconeix l'identificador de l'usuari, demanarà un usuari i contrasenya.
+
+Si reconeix l'usuari i contrasenya, podrà accedir si té els permisos adequats. Un cop a dins podrà realitzar diferents accions en funció dels permisos que tingui: veure continguts, crear, modificar, esborrar...
 
 Si volem que es pugui connectar qualsevol usuari caldrà donar permisos a l'usuari convidat i, si cal, habilitar aquest usuari.
 
