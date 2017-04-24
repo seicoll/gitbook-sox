@@ -242,9 +242,9 @@ Per connectar-se a una unitat de xarxa i accedir als recursos que conté, només
 
   ```net use```
 
-* Per exemple, si es vol accedir a un recurs amb l'etiqueta Imatges que s'emmagatzema en una màquina anomenada Multimedia i la lletra de la unitat és la d, cal escriure el següent:
+Per **exemple**, si es vol accedir a un recurs anomenat _Compartida_ que s'emmagatzema en una màquina anomenada _Servidor_ i la lletra de la unitat és la d, cal escriure el següent:
 
-  ```net use d: \\Multimedia\Imatges```
+  ```net use d: \\Servidor\Compartida```
   
 ## Activar unitats compartides
 
