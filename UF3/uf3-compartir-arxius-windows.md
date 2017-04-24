@@ -13,3 +13,19 @@ Per activar les unitats compartides has de fer el següent:
 
 * L’opció **_Ús compartit de la carpeta públic_** controla l’accés a les carpetes públiques de l’equip.  
 
+## Utilització d’unitats compartides
+
+Per compartir recursos de l’equip podem fer servir:
+
+1. L’explorador de Windows i fent botó dret del ratolí > **_Compartir amb_**
+
+2. L’administració d’equips [_Computer Management_]
+
+Des de l’administració d’equips veiem això:
+* **Nom del recurs:** és el nom del recurs compartit.
+* **Ruta de la carpeta:** és la ruta sencera en el sistema local.
+* **Tipus:** és el tipus d’ordinador que pot utilitzar el recurs.
+* **Num. de connexions de client:** és la quantitat de clients que estan accedint al recurs en aquell precís moment.
+* **Descripció:** és la descripció del recurs.
+
+
