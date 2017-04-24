@@ -49,6 +49,7 @@ De forma molt general i simplificada, tenim els següents permisos:
   * Administrar les impressores (afegir, eliminar, configurar, posar en pausa...)
 
 **Assignació de permisos**
+
 Els permisos es poden assignar a usuaris individuals o a grups.
 Quan els permisos s'assignen a un grup, aquests permisos s'aplicaran també als subgrups i usuaris que pertanyin a aquest grup.
 > Si els permisos del grup entren en contradicció amb altres permisos assignats als subgrups o usuaris, s'aplicaran els més específics (els de subgrup o els d'usuari).
