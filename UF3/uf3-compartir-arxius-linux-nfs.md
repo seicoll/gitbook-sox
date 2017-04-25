@@ -125,7 +125,7 @@ A continuació, creem la carpeta que farem servir després com a punt de muntatg
 sudo mkdir /mnt/nfs/compartit
 ```
 
-### Muntar directori remot de forma manual
+### Muntar carpetes compartides
 
 Els directoris remots es poden **muntar de forma manual** mitjançant l’ordre `mount`
 
@@ -142,7 +142,7 @@ usuari@ubuntu:~$ mount
 ...
 ```
 
-### Muntar directori remot automàticament
+### Muntar carpetes compartides de forma automàtica
 
 També es pot fer servir el fitxer `/etc/fstab` si es vol que el directori es munti automàticament al iniciar sessió.
 
@@ -150,7 +150,7 @@ També es pot fer servir el fitxer `/etc/fstab` si es vol que el directori es mu
 172.21.1.1:/srv/nfs/compartit /mnt/nfs/compartit nfs rw 0 0
 ```
 
-I executant després la comanda `mount -a` perquè es **munti automàticament** sense haver de reiniciar la sessió:
+Per muntar automàticament els recussos definits a `/etc/fstab` sense necessitat de reiniciar el sistema podeu executar.
 
 ```
 sudo mount -a
