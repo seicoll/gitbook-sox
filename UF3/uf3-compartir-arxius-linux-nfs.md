@@ -35,7 +35,7 @@ En podem destacar les utilitats tradicionals següents:
 
   * Podem compartir dispositius com ara particions de discos durs, etc.    
 
-### **Incovenients NFS**
+### Incovenients NFS
 
 > **Alerta!** Amb NFS **no hi ha cap procés d’acreditació d’usuaris** en l’NFS, de manera que l’administrador ha de decidir amb cautela a quins ordinadors exporta un determinat directori.
 
@@ -56,12 +56,16 @@ Respecte al **servidor**, l’NFS s’implementa mitjançant dos serveis de xarx
 
 ## Instal·lació i configuració del servidor NFS
 
+### Instal·lació del servei NFS
+
 El paquet que cal instal·lar en qualsevol ordinador que hagi de compartir carpetes amb el sistema NFS és **nfs-kernel-server**. 
 Per instal·lar-lo cal executar la comanda:
 
 ```
 sudo apt-get install nfs-kernel-server
 ```
+
+### Configuració del servei NFS
 
 Una vegada actius els serveis NFS, el servidor ha d’indicar quins directoris vol que **s’exportin (compartir)**, a quines màquines s’han d’exportar i amb quines opcions s’ha de fer. 
 
@@ -85,6 +89,25 @@ O també podem **reiniciar el servei NFS** per tal que s'actualitzin els canvis:
 ```
 sudo service nfs-kernel-server reload
 ```
+
+### Veure les carpetes que s'estan compartint
+
+Es pot fer amb la comanda sudo exportfs o, si s'ha instal·lat el client nfs, amb la comanda showmount -e localhost:
+
+```
+usuari@ubuntu:~$ sudo exportfs
+/srv/nfs/Compartit
+        <world>
+/srv/nfs/Compartit2
+        172.21.1.0/16
+
+usuari@ubuntu:~$ showmount -e localhost
+Export list for localhost:
+/srv/nfs/Compartit       *
+/srv/nfs/Compartit2      172.21.1.0/16
+````
+
+
 
 ## Instal·lació i configuració del client NFS
 
