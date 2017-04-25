@@ -8,7 +8,8 @@
         "-sunlight-highlighter",
         "quiz",
         "collapsible-chapters",
-        "back-to-top-button" 
+        "back-to-top-button",
+        "styles-less"
     ],
     "styles": {
         "pdf": "./styles/pdf.css",
