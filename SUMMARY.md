@@ -40,7 +40,7 @@
     * [Compartir arxius i carpetes en Windows](UF3/uf3-compartir-arxius-windows.md)
     * [Compartir impressores en Windows](UF3/uf3-compartir-impressores-windows.md)
   * [Compartir recursos en xarxa i seguretat en sistemes de lliures](UF3/uf3-compartir-recursos-linux.md)
-    * [Compartir arxius i carpetes amb NFS](UF3/uf3-compartir-arxius-nfs.md)
+    * [Compartir arxius i carpetes amb NFS](UF3/uf3-compartir-arxius-linux-nfs.md)
     * [Compartir impressores amb CUPS](UF3/uf3-compartir-impressores-cups.md)
     * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
   * [Activitats](UF3/uf3-activitats.md)
