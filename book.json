@@ -8,8 +8,7 @@
         "-sunlight-highlighter",
         "quiz",
         "collapsible-chapters",
-        "back-to-top-button",
-        "styles-less"
+        "back-to-top-button"
     ],
     "styles": {
         "pdf": "./styles/pdf.css",
@@ -41,15 +40,5 @@
             }
         },
         "collapsible-chapters":{}
-    },
-    "wkhtmltopdf": {
-        "cover": "cover.html",
-        "tocXsl": "styles/wk_toc.xsl",
-        "header": {"contentHtml": "styles/wk_header.html"},
-        "assets": [
-          "styles/wk_headerfooter.less",
-          "styles/wk_toc.less",
-          "styles/wk_toc.xsl"
-        ]
-      }
+    }
 }
