@@ -92,7 +92,7 @@ sudo service nfs-kernel-server reload
 
 ### Veure les carpetes que s'estan compartint
 
-Es pot fer amb la comanda sudo exportfs o, si s'ha instal·lat el client nfs, amb la comanda showmount -e localhost:
+Es pot fer amb la comanda `exportfs` o, si s'ha instal·lat el client nfs, amb la comanda `showmount -e localhost`:
 
 ```
 usuari@ubuntu:~$ sudo exportfs
@@ -107,8 +107,6 @@ Export list for localhost:
 /srv/nfs/Compartit2      172.21.1.0/16
 ````
 
-
-
 ## Instal·lació i configuració del client NFS
 
 ### Instal·lació client NFS
@@ -122,7 +120,7 @@ sudo apt-get install nfs-common
 A continuació, creem la carpeta que farem servir després com a punt de muntatge per a la carpeta compartida amb el servidor.
 
 ```
-sudo mkdir /mnt/nfs/compartit
+sudo mkdir /mnt/nfs/Compartit
 ```
 
 ### Muntar carpetes compartides
@@ -130,7 +128,7 @@ sudo mkdir /mnt/nfs/compartit
 Els directoris remots es poden **muntar de forma manual** mitjançant l’ordre `mount`
 
 ```
-sudo mount -t nfs 172.21.1.1:/srv/nfs/compartit /mnt/nfs/compartit
+sudo mount -t nfs 172.21.1.1:/srv/nfs/Compartit /mnt/nfs/Compartit
 ```
 
 Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la comanda mount.
@@ -138,7 +136,7 @@ Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la coma
 ```bash
 usuari@ubuntu:~$ mount
 ...
-172.21.1.1:/srv/nfs/compartit on /mnt/nfs/compartit type nfs (rw, ... ,_netdev)
+172.21.1.1:/srv/nfs/Compartit on /mnt/nfs/Compartit type nfs (rw, ... ,_netdev)
 ...
 ```
 
@@ -147,7 +145,7 @@ usuari@ubuntu:~$ mount
 També es pot fer servir el fitxer `/etc/fstab` si es vol que el directori es munti automàticament al iniciar sessió.
 
 ```
-172.21.1.1:/srv/nfs/compartit /mnt/nfs/compartit nfs rw 0 0
+172.21.1.1:/srv/nfs/Compartit /mnt/nfs/Compartit nfs rw 0 0
 ```
 
 Per muntar automàticament els recussos definits a `/etc/fstab` sense necessitat de reiniciar el sistema podeu executar.
@@ -156,7 +154,7 @@ Per muntar automàticament els recussos definits a `/etc/fstab` sense necessitat
 sudo mount -a
 ```
 
-### Comprovar que s'ha muntat un directori remot
+### Comprovar que s'ha muntat una carptera compartida
 
 A partir d'aquest moment, quan s'accedeix a aquestes carpetes locals, en realitat s'estarà accedint a les carpetes remotes compartides.
 
