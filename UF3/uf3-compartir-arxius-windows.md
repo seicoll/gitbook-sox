@@ -96,7 +96,9 @@ Seleccionant un usuari o grup, es poden afegir, eliminar o editar els permisos a
 
 ## Gestió de permisos de compartició
 
-Per configurar els permisos de compartició cal anar a les **propietats de la carpeta** i entrar a la pestanya _**Compartir**_.
+Abans de configurar els permisos de compartició que assegurar-se que s'ha [activat l'_**Ús compartit d’arxius i impressores**_](#activar-la-compartició-de-recursos)_**.**_
+
+A continuació, per configurar els permisos de compartició cal anar a les **propietats de la carpeta** i entrar a la pestanya _**Compartir**_.
 
 ![](/assets/win-permisos-compartits.png)
 
@@ -133,11 +135,11 @@ En aquest cas es disposa de més opcions per configurar la compartició:
 
   * Per exemple: C$
 
-* Amb **\\ip\_equip** o **\\nom\_equip** es pot veure els recursos compartits visibles.
+* Amb **\ip\_equip** o **\nom\_equip** es pot veure els recursos compartits visibles.
 
 * Es pot accedir a un recurs compartit ocult si es conneix tota la ruta.
 
-  * Per exemple: \\192.168.0.1\C$
+  * Per exemple: \192.168.0.1\C$
 
 ### Veure els permisos efectius
 
@@ -267,8 +269,4 @@ Per activar l´ús compartit d'arxius i impressores cal el següent:
 Quan s'activa l’opció _**Ús compartit d’arxius i impressores**_, els usuaris de la xarxa podran tenir accés als arxius i impressores compartits en aquest equip.
 
 ![](/assets/win-activar-us-compartit.PNG)
-
-
-
-
 
