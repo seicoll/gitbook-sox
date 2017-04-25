@@ -88,6 +88,8 @@ sudo service nfs-kernel-server reload
 
 ## Instal·lació i configuració del client NFS
 
+### Instal·lació client NFS
+
 En cada equip **client** des del qual es vulgui accedir a una carpeta remota, haurem de instal·lar el paquet **nfs-common**:
 
 ```
@@ -100,7 +102,9 @@ A continuació, creem la carpeta que farem servir després com a punt de muntatg
 sudo mkdir /mnt/nfs/compartit
 ```
 
-Els directoris remots es poden muntar mitjançant l’ordre `mount`
+### Muntar directori remot de forma manual
+
+Els directoris remots es poden **muntar de forma manual** mitjançant l’ordre `mount`
 
 ```
 sudo mount -t nfs 172.21.1.1:/srv/nfs/compartit /mnt/nfs/compartit
@@ -114,6 +118,22 @@ usuari@ubuntu:~$ mount
 172.21.1.1:/srv/nfs/compartit on /mnt/nfs/compartit type nfs (rw, ... ,_netdev)
 ...
 ```
+
+### Muntar directori remot automàticament
+
+També es pot fer servir el fitxer `/etc/fstab` si es vol que el directori es munti automàticament al iniciar sessió.
+
+```
+172.21.1.1:/srv/nfs/compartit /mnt/nfs/compartit nfs rw 0 0
+```
+
+I executant després la comanda `mount -a` perquè es **munti automàticament** sense haver de reiniciar la sessió:
+
+```
+sudo mount -a
+```
+
+### Comprovar que s'ha muntat un directori remot
 
 A partir d'aquest moment, quan s'accedeix a aquestes carpetes locals, en realitat s'estarà accedint a les carpetes remotes compartides.
 
