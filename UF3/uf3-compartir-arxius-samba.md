@@ -24,7 +24,9 @@ També es podrà accedir a aquests recursos des de Linux si es té instal·lat e
 
 > Gràcies al **Samba**, en una xarxa hi pot haver equips amb Windows i equips amb Linux que intercanviïn informació en carpetes compartides i comparteixin impressores.
 
-## Instal·lació Samba
+## Instal·lació i configuració de Samba
+
+### Instal·lació del servidor Samba
 
 El paquet de programari **Samba** es compon de moltes aplicacions i molts paquets amb diverses finalitats.
 
@@ -43,7 +45,7 @@ Per instal·lar el servei Samba a l'Ubuntu.
 sudo apt-get install samba cifs-utils
 ```
 
-## Configuració del servidor Samba
+### Configuració del servidor Samba
 
 La configuració del servidor **Samba** es fa, principalment, a partir del **fitxer de configuració** `/etc/samba/smb.conf`.
 
@@ -80,7 +82,7 @@ El fitxer està dividit en **tres seccions** principals \(_**global, homes i pri
 
 Per **comprovar** que el nostre arxiu `/etc/samba/smb.conf` és **correcte**, és recomenable utilitzar l’ordre `testparm` per localitzar-hi errors.
 
-## Nivells de seguretat
+### Nivells de seguretat
 
 **Samba** es pot configurar en diversos nivells de seguretat.
 
