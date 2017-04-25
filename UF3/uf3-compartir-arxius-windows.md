@@ -1,4 +1,4 @@
-# Compartir recursos i seguretat en Windows
+# Compartir arxius i carpetes en Windows
 
 ## Introducció
 
