@@ -2,7 +2,7 @@
 
 # Introducció
 
-La compartició de recursos en xarxa és una de les utilitats o raons principals perquè els sistemes operatius es connectin en xarxa.
+La **compartició de recursos en xarxa** és una de les utilitats o raons principals perquè els sistemes operatius es connectin en xarxa.
 
 En un entorn on es comparteixen recursos, és molt important controlar qui pot accedir a la xarxa i l'ús que pot fer de les màquines i dels recursos compartits per evitar situacions com les següents:
 * **Accés a ordinadors i recursos de la xarxa**: que una persona no autoritzada pugui utilitzar les màquines i recursos de l'empresa.
