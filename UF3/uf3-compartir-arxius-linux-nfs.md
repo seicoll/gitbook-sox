@@ -1,6 +1,6 @@
-# Compartició d'arxius i carpetes en Linux
+# Compartició d'arxius i carpetes en GNU/Linux
 
-
+dfadsf
 
 
 

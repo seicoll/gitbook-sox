@@ -2,11 +2,17 @@
 
 # Introducció
 
-En un entorn on hi ha ordinadors connectats en xarxa i es comparteixen recursos, és molt important controlar qui pot accedir a la xarxa i l'ús que pot fer de les màquines i dels recursos compartits per evitar situacions com les següents:
+La compartició de recursos en xarxa és una de les utilitats o raons principals perquè els sistemes operatius es connectin en xarxa.
+
+En un entorn on es comparteixen recursos, és molt important controlar qui pot accedir a la xarxa i l'ús que pot fer de les màquines i dels recursos compartits per evitar situacions com les següents:
 * **Accés a ordinadors i recursos de la xarxa**: que una persona no autoritzada pugui utilitzar les màquines i recursos de l'empresa.
 * **Modificació del funcionament del sistema i dels recursos**: que qualsevol pugui modificar la configuració del sistema o canviar els permisos d'accés a carpetes i impressores.
 * **Accés a recursos restringits**: que un usuari pugui veure documents amb informació a la qual no ha de tenir accés o que pugui imprimir sense necessitat en una impressora en color.
 * **Utilització de recursos**: que un usuari pugui omplir un disc o acaparar l'ús d'una impressora impedint l'ús a altres usuaris o, fins i tot, impedint el correcte funcionament del sistema.
+
+Es poden compartir tot tipus de recursos, encara que els més habituals són **directoris** i **impressores**. 
+
+En els **sistemes operatius lliures** hi ha diversos protocols i aplicacions que ens permeten compartir recursos en xarxa, com el **protocol NFS** i el paquet de programari **Samba**.
 
 En aquesta mòdul no es parlarà dels sistemes de protecció activa i passiva que es veuen en altres mòduls (antivirus, còpies de seguretat...) sinó d'altres aspectes gestionats directament pel sistema operatiu: els drets, privilegis i permisos.
 
