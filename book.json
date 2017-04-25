@@ -1,4 +1,7 @@
 {
+    "title": "Sistemes Operatius en Xarxa",
+    "author": "Sergi Coll",
+    "language": "ca",
     "plugins": [
         "etoc",
         "-highlight",
@@ -38,7 +41,14 @@
         },
         "collapsible-chapters":{}
     },
-    "title": "Sistemes Operatius en Xarxa",
-    "author": "Sergi Coll",
-    "language": "ca"
+    "wkhtmltopdf": {
+        "cover": "cover.html",
+        "tocXsl": "styles/wk_toc.xsl",
+        "header": {"contentHtml": "styles/wk_header.html"},
+        "assets": [
+          "styles/wk_headerfooter.less",
+          "styles/wk_toc.less",
+          "styles/wk_toc.xsl"
+        ]
+      }
 }
