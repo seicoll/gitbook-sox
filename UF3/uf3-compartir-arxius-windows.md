@@ -219,7 +219,7 @@ Seleccionant qualsevol d'elles es veuran les carpetes que comparteixen.
 Si no apareix la màquina però es coneix la màquina i el nom del recurs compartit, es pot escriure en la barra d'adreces:
 
 ```
-\\NOM_EQUIP o IP\Compartida
+\\NOM_SERVIDOR\Compartida o \\IP_SERVIDOR\Compartida
 ```
 
 ### Validació d'usuaris per accedir a carpetes compartides
@@ -244,8 +244,6 @@ Per fer la connexió, clicar amb el botó dret sobre Este equipo i triar l'opci�
 * **Conectar de nuevo al iniciar sesión:** connectar la unitat a la carpeta cada cop que l'usuari inicïï sessió.
 * **Conectar con otras credenciales:** connectar amb un usuari diferent de l'actual.
 
-**IMATGE**
-
 ### Connectar una unitat de xarxa a través de comandes
 
 Per connectar-se a una unitat de xarxa i accedir als recursos que conté, només cal executar l’ordre:
@@ -254,7 +252,7 @@ Per connectar-se a una unitat de xarxa i accedir als recursos que conté, només
 
 Per **exemple**, si es vol accedir a un recurs anomenat _Compartida_ que s'emmagatzema en una màquina anomenada _Servidor_ i la lletra de la unitat és la d, cal escriure el següent:
 
-`net use d: \\Servidor\Compartida`
+`net use d: \\IP_SERVIDOR\Compartida`
 
 ## Problemes i altres configuracions
 
