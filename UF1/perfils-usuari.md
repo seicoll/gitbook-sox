@@ -66,7 +66,7 @@ Les carpetes anteriors (perfils, privades i compartides) s'han de compartir de f
 * Clicar amb el botó dret sobre la carpeta determinada i seleccionar **_Propiedades_**
 * Entrar a la pestanya **_Compartir _**i clicar el botó **_Uso compartido avanzado_**
 * Marcar la casella **_Compartir _**esta carpeta i clicar el botó **_Permisos_**
-* Seleccionar l'usuari **_Todos _**i marcar l'opció **_Control Total_**
+* Seleccionar l'usuari **_Todos_** i marcar l'opció **_Control Total_**
 
 La ruta per accedir de forma remota a una carpeta compartida es pot veure a l'apartat **_Propiedades > Compartir_**.
 
