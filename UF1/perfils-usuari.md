@@ -30,9 +30,12 @@ Si no es configura la carpeta de perfil, en cada màquina se li crearà un **per
 
 Si es vol crear perfils mòbils, primer de tot cal crear en el servidor la carpeta on es guardaran les carpetes de perfil de cada usuari i posar els permisos adequats:
 
-> És convenient no posar espais, accents, ñ, ç o altres símbols prohibits (*, ?) o que puguin dificultar l'accés a aquestes carpetes des d'altres sistemes operatius. El millor és utilitzar exclusivament lletres, números i/o guió baix (_).
+> En aquesta carpeta, és convenient no posar espais, accents, ñ, ç o altres símbols prohibits (*, ?) o que puguin dificultar l'accés a aquestes carpetes des d'altres sistemes operatius. 
+El millor és utilitzar exclusivament lletres, números i/o guió baix (_).
 
 > A més, si es canvia el nom de la carpeta, caldrà tornar-la a compartir, i si canvia el nom de recurs compartit s'hauran de tornar a configurar els perfils!
+
+Un cop creada la carpeta:
 
 1. Clicar amb el botó dret sobre la carpeta determinada i seleccionar **_Propiedades_**
 
@@ -55,13 +58,13 @@ Si es vol crear perfils mòbils, primer de tot cal crear en el servidor la carpe
   
 ### Creació de la carpeta per posar les carpetes privades
 
-Si es vol què els usuaris tinguin una carpeta privada en el servidor, cal crear una carpeta on es posaran les seves carpetes privades.
+Si es vol què els usuaris tinguin una **carpeta privada** en el servidor, cal crear una carpeta on es posaran les seves carpetes privades.
 
 Aquesta carpeta ha de tenir els mateixos permisos que la de perfils.
   
 ### Compartició de les carpetes
 
-Les carpetes anteriors (perfils, privades i compartides) s'han de compartir de forma que tothom tingui control total (els permisos necessaris per cada usuari concret s'han d'haver configurat en els permisos de seguretat):
+Les carpetes anteriors (perfils i privades) **s'han de compartir** de forma que tothom tingui control total (els permisos necessaris per cada usuari concret s'han d'haver configurat en els permisos de seguretat):
 
 * Clicar amb el botó dret sobre la carpeta determinada i seleccionar **_Propiedades_**
 * Entrar a la pestanya **_Compartir _**i clicar el botó **_Uso compartido avanzado_**
@@ -75,9 +78,10 @@ La ruta per accedir de forma remota a una carpeta compartida es pot veure a l'ap
 Seleccionar l'usuari i amb el botó secundari, es tria l'opció **_Propiedades _**i s'entra a la pestanya **_Perfil_**.
 
 * **_Ruta de acceso al perfil_**: ha de ser la carpeta que s'ha compartit per guardar els perfils més l'identificador de l'usuari o `%username%`.
-  * Per exemple: `\\IP_SERVIDOR\Perfils\%username%`
-* **_Carpeta particular_**: ha de ser la carpeta que s'ha compartit per guardar les carpetes particulars més l'identificador del l'usuari o `%username%`. També s'ha indicar la lletra de la unitat se xarxa a la què es connectarà aquesta carpeta en la màquina client.
-* **_Script de inicio de sessión_**: no s'ha de posar la ruta. Les màquines unides al domini ja saben on trobar-lo: `\\NOMSERVIDOR\netlogon`.
+  * Per exemple: `\\IP_SERVIDOR\Perfils\%username%` o bé `\\NOM_SERVIDOR\Perfils\%username%`
 
-> La carpeta de perfil per cada usuari no es crearà fins què l'usuari es validi per primera vegada.
-> La carpeta privada de cada usuari es crearà en quant es faci clic a **_Aceptar_**.
+* **_Carpeta particular_**: ha de ser la carpeta que s'ha compartit per guardar les carpetes particulars més l'identificador del l'usuari o `%username%`. També s'ha indicar la lletra de la unitat se xarxa a la què es connectarà aquesta carpeta en la màquina client.
+* **_Script de inicio de sessión_**: no s'ha de posar la ruta. Les màquines unides al domini ja saben on trobar-lo: `\\NOM_SERVIDOR\netlogon`.
+
+> La **carpeta de perfil** per cada usuari no es crearà fins què l'usuari es validi per primera vegada.
+> La **carpeta privada** de cada usuari es crearà en quant es faci clic a **_Aceptar_**.
