@@ -56,14 +56,6 @@
         <answer>/etc/nfs/exports</answer>
         <answer>/etc/nfs/exportt</answer>
     </question>
-
-    <question>
-        <p>Els grups de l'Active Directory NO poden contenir: </p>
-        <answer>Altres grups. </answer>
-        <answer correct>Unitat organitzativa.</answer>
-        <answer>Usuaris. </answer>
-        <answer>Equips. </answer>
-    </question>
     
     <question>
         <p>Si un client NFS vol muntar el directori “/srv/nfs” exportat des del servidor NFS que té IP 192.168.31.2, cal executar:</p>
