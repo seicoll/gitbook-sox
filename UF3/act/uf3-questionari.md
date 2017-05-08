@@ -26,11 +26,11 @@
     </question>
     
     <question>
-        <p>A on se'ns mostren gràfics d'estadístiques amb els paràmetres que li indiquem?</p>
-        <answer>Registre d'esdeveniments.</answer>
-        <answer>Monitor de fiabilitat.</answer>
-        <answer>Administrador de directives.</answer>
-        <answer correct>Monitor de rendiment.</answer>
+        <p>En Windows, per connetar-se a una unitat de xarxa el recurs compartit Dades del servidor 192.168.1.10, cal executar:</p>
+        <answer correct>net use z:  \\192.168.1.10\Dades</answer>
+        <answer>net share \\192.168.1.10\Dades </answer>
+        <answer>mount \\192.168.1.10\Dades</answer>
+        <answer>mount z:  \\192.168.1.10\Dades</answer>
     </question>
     
     <question>
@@ -42,19 +42,19 @@
     </question>  
     
     <question>
-        <p>Com s'anomena el conjunt de dominis relacionats, amb un nom de domini comú? </p>
-        <answer>Controlador de domini. </answer>
-        <answer>Nom de domini. </answer>
-        <answer correct>Arbre de domini. </answer>
-        <answer>Bosc d'arbres de dominis. </answer>
+        <p>On ha d'estar el recurs compartit NFS? Al sistema operatiu Linux...</p>
+        <answer correct>servidor</answer>
+        <answer>client</answer>
+        <answer>a tots dos (al client i servidor)</answer>
+        <answer>al que vulguem (al client o al servidor)</answer>
     </question>
     
     <question>
-        <p>Com s'anomena l'equip amb AD instal·lat que emmagatzema i gestiona la base de dades d'usuaris i recursos de la xarxa? </p>
-        <answer correct>Controlador de domini. </answer>
-        <answer>Nom de domini. </answer>
-        <answer>Arbre de domini. </answer>
-        <answer>Bosc d'arbres de dominis. </answer>
+        <p>On trobem el fitxer de configuració del NFS?</p>
+        <answer>/etc/fstab</answer>
+        <answer correct>/etc/exports</answer>
+        <answer>/etc/nfs/exports</answer>
+        <answer>/etc/nfs/exportt</answer>
     </question>
 
     <question>
@@ -66,18 +66,10 @@
     </question>
     
     <question>
-        <p>Pot un usuari d'Active Directory pertànyer a més d'un grup? </p>
-        <answer correct>Sí, sempre.</answer>
-        <answer>Només si es tracten de grups predefinits. </answer>
-        <answer>Només si utilitzem les versions Standard o Enterprise de Windows Server. </answer>
-        <answer>No, mai. </answer>
-    </question>
-
-    <question>
-        <p>Quina és la FALSA: Una unitat organitzativa...</p>
-        <answer>Pot tenir enllaçades directives de grup (GPOs)</answer>
-        <answer>Pot tenir a dins seu una altra unitat organitzativa.</answer>
-        <answer correct>Conté només usuaris</answer>
-        <answer>És l'entitat més petita a la qual es pot delegar autoritat d'administració.</answer>
+        <p>Si un client NFS vol muntar el directori “/srv/nfs” exportat des del servidor NFS que té IP 192.168.31.2, cal executar:</p>
+        <answer>mount –t nfs  /srv/nfs   192.168.31.2:/srv/nfs</answer>
+        <answer correct>mount –t nfs 192.168.31.2:/srv/nfs  /srv/nfs </answer>
+        <answer>mount –p nfs 192.168.31.2:/srv/nfs</answer>
+        <answer>mount –p 192.168.31.2:/srv/nfs   /svr/nfs</answer>
     </question>
 </quiz>
