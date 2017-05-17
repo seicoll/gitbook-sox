@@ -14,10 +14,12 @@ img{
 }
 
 /* blockquote */
-blockquote
+blockquote, .markdown-section blockquote
+
  {
     background-color: #bccfe2 !important; 
     border-radius: 12px;
+    border-left: 0 !important;
 }
 
 blockquote p {
