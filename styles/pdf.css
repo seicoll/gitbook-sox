@@ -46,8 +46,8 @@ question answer{
 .pdf-footer {
     margin-top: 20px;
     padding-top: 10px;
-    border-top: 1px solid #aaa;
-    color: midnightblue;
+    border-top: 1px solid midnightblue;
+    color: #aaa;
     font-size: 10px;
 }
 
