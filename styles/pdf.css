@@ -7,10 +7,9 @@ body{
 
 h1{
     //font-size: 14px !important;
-    color: midnightblue;
 }
 
-h2, h3 {
+h1, h2, h3 {
     color: #3834BC;
 }
 
