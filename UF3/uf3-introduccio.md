@@ -1,6 +1,8 @@
 <!-- notoc -->
 
-# Introducció
+# UF3. Compartició de recursos i seguretat
+
+## Introducció
 
 La **compartició de recursos en xarxa** és una de les utilitats o raons principals perquè els sistemes operatius es connectin en xarxa.
 
