@@ -48,7 +48,7 @@ question answer{
     margin-top: 20px;
     padding-top: 10px;
     border-top: 1px solid #aaa;
-    color:#aaa;
+    color: midnightblue;
     font-size: 10px;
 }
 
@@ -59,7 +59,7 @@ question answer{
 .pdf-header {
     margin-top: 30px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid midnightblue;
     color: #aaa;
 }
 
