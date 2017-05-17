@@ -14,18 +14,17 @@ img{
 }
 
 /* blockquote */
-blockquote, .markdown-section blockquote
+blockquote,
 
  {
     background-color: #bccfe2 !important; 
     border-radius: 12px;
-    border-left: 0 !important;
+    border-left: 5px solid #bccfe2;
 }
 
 blockquote p {
     padding: 10px;
     color: #000;
-    border-left: 0 !important;
 }
 
 blockquote p:last-child {
