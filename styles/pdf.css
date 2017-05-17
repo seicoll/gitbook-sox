@@ -1,9 +1,7 @@
 body{
     font-family: sans-serif;
     color: #000;
-    /*font-size: 11px;*/
-    font-size: 0.9em;
-    /*line-height: 1.7;*/
+    font-size: 0.8em;
 }
 
 h1, h2, h3 {
@@ -19,7 +17,7 @@ img{
 blockquote {
     background-color: #bccfe2 !important; 
     border-radius: 5px;
-    border: 0;
+    border-left: 0;
 }
 
 blockquote p {
