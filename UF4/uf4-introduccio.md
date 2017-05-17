@@ -13,9 +13,7 @@
 
 * **Samba**: servei compatible amb SMB/CIFS per compartir recursos de forma que s'hi pugui accedir des de Windows.
 
-## Continguts
 
-* [Compartir arxius i carpetes amb SAMBA](../UF3/uf3-compartir-arxius-samba.md)
 
 
 

@@ -1,8 +1,6 @@
 <!-- notoc -->
 
-# UF2. Sistemes operatius lliures en xarxa
-
-## Introducció als dominis en Linux
+# Introducció als dominis en Linux
 
 En Linux, el protocol que s'encarrega de crear, modificar i accedir a informació en un directori és **LDAP**.
 
@@ -13,7 +11,7 @@ El **LDAP** és un protocol obert.
 
 En Linux, un dels programes que permet gestionar la informació d'un directori LDAP és **OpenLDAP**.
 
-### Ús de LDAP
+## Ús de LDAP
 
 L’objectiu principal és permetre l’**autenticació** en xarxa.
 
