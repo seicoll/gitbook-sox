@@ -18,6 +18,7 @@ img{
 blockquote {
     background-color: #bccfe2 !important; 
     border-radius: 3px;
+    border-size: 0px;
 }
 
 blockquote p {
