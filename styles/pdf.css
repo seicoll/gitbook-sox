@@ -17,8 +17,8 @@ img{
 /* blockquote */
 blockquote {
     background-color: #bccfe2 !important; 
-    border-radius: 3px;
-    border-size: 0px;
+    border-radius: 5px;
+    border: 0;
 }
 
 blockquote p {
@@ -41,13 +41,17 @@ question answer{
     display: block;
 }
 
-/* FOOTER */
+/* FOOTER i HEADER */
+.pdf-footer, .pdf-header{
+    color: #033466;
+    font-size: 10px;
+}
+
 .pdf-footer {
     margin-top: 20px;
     padding-top: 10px;
     border-top: 1px solid #033466;
-    color: #aaa;
-    font-size: 10px;
+
 }
 
 .pdf-footer .footer-pages-count {
@@ -58,7 +62,6 @@ question answer{
     margin-top: 30px;
     padding-bottom: 10px;
     border-bottom: 1px solid #033466;
-    color: #aaa;
 }
 
 .pdf-header .header-right{
