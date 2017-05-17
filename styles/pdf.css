@@ -19,7 +19,7 @@ img{
 }
 
 /* blockquote */
-/*blockquote {
+blockquote {
     background-color: #8BBAEC !important;
     color: #333; 
     padding: 8px 15px;
@@ -29,7 +29,7 @@ img{
 
 blockquote p:last-child {
     margin-bottom: 0px;
-}*/
+}
 
 
 /* QUIZ */
