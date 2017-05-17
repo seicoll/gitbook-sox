@@ -10,6 +10,10 @@ h1{
     color: midnightblue;
 }
 
+h2, h3 {
+    color: #3834BC;
+}
+
 img{
     margin: 0 auto;
     display: block;
@@ -17,7 +21,7 @@ img{
 
 /* blockquote */
 /*blockquote {
-    background: #d6e5ec;
+    background-color: #8BBAEC !important;
     color: #333; 
     padding: 8px 15px;
     border-left: 5px solid #78a8d8;
@@ -28,9 +32,10 @@ blockquote p:last-child {
     margin-bottom: 0px;
 }*/
 
+
 /* QUIZ */
 question p{
-    margin-top: 20px;
+    margin-top: 20px !important;
     font-weight: bold;
 }
 
