@@ -25,15 +25,23 @@ Recorda que per configurar un nou domini cal executar al servidor:
 
   > Captura del phpLDAPadmin un cop has iniciat sessió
 
-2. Afegeix al domini bosccoma.local la següent estructura d’objectes:
+2. Afegeix al domini **_bosccoma.local_** la següent estructura d’objectes:
 
-  ESQUEMA
+  ![](/assets/LDAP Domain.png)
 
   > Captura del phpLDAPadmin on es vegi les OUs creades.
 
 3. Crea els següents usuaris en la unitat organitzativa indicada i assignant-los al grup corresponent:
 
-  TAULA
+  | Unitat organitzativa | Nom usuari | Grup |
+  | ------------- |:-------------:| -----:|
+  | Gestió | conserge | administratius |
+  | Gestió | secretaria | administratius |
+  | ESO | alumne1ESO | alumnes |
+  | ESO | profeESO | profes|
+  | Cicles | alumne1SMX | alumnes |
+  | Cicles | alumne2SMX | alumnes |
+  | Cicles | profeCicle | profes |
 
 4. Comprova que pots iniciar sessió des del login gràfic amb els usuaris **_conserge_**, **_profeESO _**i **_alumne1SMX_**.
 
