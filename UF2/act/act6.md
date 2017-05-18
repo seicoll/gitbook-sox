@@ -31,6 +31,7 @@ Recorda que per configurar un nou domini cal executar al servidor:
 
   > Captura del phpLDAPadmin on es vegi les OUs creades.
 
+
 3. Crea els següents usuaris en la unitat organitzativa indicada i assignant-los al grup corresponent:
 
   | Unitat organitzativa | Nom usuari | Grup |
