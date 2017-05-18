@@ -2,8 +2,6 @@
 
 # Activitat 2. Actualització i instal·lació de programari.
 
-## ACTUALITZACIÓ DEL SISTEMA I INSTAL·LACIÓ DE PROGRAMARI
-
 **1. Conceptes generals:**
 
   1.1 Quina extensió tenen els paquets d'instal·lació d'ubuntu? i els de Red Hat?
