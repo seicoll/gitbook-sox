@@ -14,7 +14,7 @@ Crea una màquina virtual amb les característiques recomanades per instal·lar*
 
 1.3 Instal·leu el sistema operatiu amb la següent estructura de particions.
 
-| Punt de muntatge        | Tipus partició           | Mida  | Sistema de fitxers |
+| Punt de muntatge        | Tipus partició           | Mida  | Sistema de fitxers        |
 | ------------- |:-------------:| -----:|-------:|
 | root partition (/)      | Primària | 10 Gb | ext4 |
 | home partition (/home)      | Primària      |   1 Gb | ext4 |

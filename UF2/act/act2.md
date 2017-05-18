@@ -22,11 +22,11 @@
 
 a. Escriu les comandes per fer les següents accions i el resultat:
 
-    * Llista les últimes 10 comandes que has utilitzat
+  * Llista les últimes 10 comandes que has utilitzat
 
-    * Repeteix la comanda nº 12 que vas executar
+  * Repeteix la comanda nº 12 que vas executar
 
-    * Veure per pantalla les 20 últimes ordres efectuades al meu shell i al mateix temps guardar el resultat en un fitxer amb el nom últimes.txt.
+  * Veure per pantalla les 20 últimes ordres efectuades al meu shell i al mateix temps guardar el resultat en un fitxer amb el nom últimes.txt.
 
 b. En quin arxiu es troba l'històric del bash
 
