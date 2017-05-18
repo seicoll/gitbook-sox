@@ -51,7 +51,7 @@ Un servidor ha de tenir una adreça estàtica ja que els clients l'han de conèi
 
 * **Servidors DNS:** 8.8.8.8 i 8.8.4.4
 
-```sh
+```
 # Interfície de bucle local (127.0.0.1)
 auto lo
 iface lo inet loopback
@@ -71,3 +71,14 @@ dns-nameservers 8.8.8.8 8.8.4.4
 sudo ip addr flush enp0s3
 sudo service networking restart
 ```
+
+2.3 Comprova la connectivitat a la xarxa fent ping a diferents adreces:
+
+* Ping a la porta d'enllaç
+* Ping als servidors DNS
+* Ping a una adreça d'Internet, per exemple **google.com**
+
+## Documentació i recursos
+
+Configurar Red NAT VirtualBox: [http://fpg.x10host.com/VirtualBox/modo_red_nat.html#](http://fpg.x10host.com/VirtualBox/modo_red_nat.html#)
+
