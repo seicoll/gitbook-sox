@@ -62,7 +62,6 @@ Des de **_Compartició de fitxers [File Sharing]_** podeu crear tots els recurso
 2. Prement l’icona de _**Control d’accés**_, posa els permisos adequats a les carpetes notes de forma que tots els usuaris del grup professors puguin llegir i escriure.
 
   > Captura de pantalla on es vegin els permisos de la carpeta notes.
-
   > Captura de pantalla des del client windows on es vegi que un professor hi pot crear un document.
 
 3. Posa els permisos adequats a la carpeta **compartida **de forma que tots els usuaris del grup alumnes només han de poder llegir i els usuaris del grup **professors **han de tenir control total.
