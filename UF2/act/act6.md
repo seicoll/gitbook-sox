@@ -60,6 +60,7 @@ A part del phpLDAPAdmin, també hi ha altres programes en entorn gràfic que per
 Instal·la el **JXplorer** i el **LAT** i crea un nou usuari al LDAP amb cadascun d’ells.
 
 [Tutorial Instal·lació JXplorer](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf2/A221-LDAPServer.html#toc_14) i [Gestió d’usuaris amb JXplorer](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf2/A222-LDAP-Usuaris.html#toc_3)
+
 [Tutorial instal·lació LAT](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf2/A221-LDAPServer.html#toc_15) i [Gestió d’usuaris amb LAT](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf2/A222-LDAP-Usuaris.html#toc_6)
 
 
