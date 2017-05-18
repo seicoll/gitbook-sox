@@ -45,6 +45,10 @@
     * [Compartir arxius i carpetes amb NFS](UF3/uf3-compartir-arxius-linux-nfs.md)
     * [Compartir impressores amb CUPS](UF3/uf3-compartir-impressores-cups.md)
   * [Activitats](UF3/uf3-activitats.md)
+    * [Activitat 1. Compartir recursos i seguretat en Windows Server](UF3/act/act1.md)
+    * [Activitat 2. Compartir impressores en Windows Server](UF3/act/act2.md)
+    * [Activitat 3. Compartir carpetes en GNU/Linux amb NFS](UF3/act/act3.md)
+    * [Activitat 4. Compartir impressores en GNU/Linux amb CUPS](UF3/act/act4.md)
     * [Qüestionari](UF3/act/uf3-questionari.md)
 
 ### [UF4. Integració de sistemes operatius](UF4/UF4.md)
