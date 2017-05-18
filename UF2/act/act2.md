@@ -36,27 +36,27 @@ c.  Per a què serveix la comanda "history -c"
 
 1. Quina comanda permet conèixer el directori de treball actual?
 
-2. Vés a la teva carpeta Documents del teu usuari i crea una carpeta anomenada SOX.
+2. Vés a la teva carpeta Documents del teu usuari i crea una carpeta anomenada **_SOX_**.
 
-3. Crea els arxius Interficies.txt, Arxius.sh, Xarxa.txt i Inventari.sh.
+3. Crea els arxius **_Interficies.txt_**, **_Arxius.sh_**, **_Xarxa.txt_** i **_Inventari.sh_**.
 
 4. Llista els arxius mostrant detalladament la informació disponible.
 
-5. Edita l'arxiu Inventari.sh afegint una comanda per llistar els arxius amb detall.
+5. Edita l'arxiu **_Inventari.sh_** afegint una comanda per llistar els arxius amb detall.
 
 6. Guarda l'arxiu, surt de l'editor i mostra el contingut d'aquest arxiu.
 
-7. Torna a la consola, executa l'arxiu Inventari.sh i copia aquí el resultat. És necessari canviar els permisos del fitxer perquè pugui ser executat.
+7. Torna a la consola, executa l'arxiu **_Inventari.sh_** i copia aquí el resultat. És necessari canviar els permisos del fitxer perquè pugui ser executat.
 
-8. Fes que l'arxiu Inventari.sh sigui només de lectura.
+8. Fes que l'arxiu **_Inventari.sh_** sigui només de lectura.
 
 9. Amaga posant a ocults tots els arxius “sh”
 
-10. Executa l'arxiu Inventari.sh i copia aquí el resultat. Apareixen ara els arxius ocults?
+10. Executa l'arxiu **_Inventari.sh_** i copia aquí el resultat. Apareixen ara els arxius ocults?
 
-11. Canvia el nom de l'arxiu Xarxa.txt per Configuració de Xarxa.txt i després esborra'l
+11. Canvia el nom de l'arxiu **_Xarxa.txt_** per Configuració de Xarxa.txt i després esborra'l
 
-12. Esborra la carpeta SOX.
+12. Esborra la carpeta **SOX**.
 
 13. Quin és l’equivalent de chmod u+rwx “arxiu”;chmod go-rwx “arxiu”en notació octal ?
 
@@ -75,15 +75,15 @@ c.  Per a què serveix la comanda "history -c"
 3. Gestió de grups i usuaris:
 
   a. Crea els usuaris “**alumne1**”, “**alumne2**”. Cada usuari ha de tenir el seu director /home/nom_usuari.
-Comprova que s’han creat al fitxer d’usuaris /etc/passwd.
+Comprova que s’han creat al fitxer d’usuaris `/etc/passwd`.
 
-  b. Crea un grup anomenat “**alumnes**” i comprova que s’ha creat en el fitxer /etc/group.
+  b. Crea un grup anomenat “**alumnes**” i comprova que s’ha creat en el fitxer `/etc/group`.
 
-  c. Fes que tots els usuaris que has creat anteriorment formin part d'aquest grup “alumnes”.
+  c. Fes que tots els usuaris que has creat anteriorment formin part d'aquest grup “**alumnes**”.
 
-  d. Crea un usuari “alumne3” i afegeix-lo al grup “alumnes” amb una única comanda.
+  d. Crea un usuari “**alumne3**” i afegeix-lo al grup “alumnes” amb una única comanda.
 
-4. Com ho faries perquè a les carpetes de /home/alumne1, /home/alumne2 i /home/alumne3 només hi poguessin accedir els alumnes que pertanyin al grup “alumnes”?
+4. Com ho faries perquè a les carpetes de `/home/alumne1`, `/home/alumne2` i `/home/alumne3` només hi poguessin accedir els alumnes que pertanyin al grup “**alumnes**”?
 
 5. Crea un usuari “**professor**”.
 
