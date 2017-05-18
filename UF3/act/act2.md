@@ -1,6 +1,6 @@
 <!-- notoc -->
 
-# Activitat 1. Compartir impressores en Windows Server
+# Activitat 2. Compartir impressores en Windows Server
 
 ## Requisits
 
