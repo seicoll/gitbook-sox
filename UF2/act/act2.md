@@ -64,7 +64,7 @@ c.  Per a què serveix la comanda "history -c"
 
 15. Busca tots els arxius del sistema amb la extensió .sh
 
-16. Busca la paraula root en el fitxer d’usuaris (`/etc/passwd`)
+16. Busca la paraula root en el fitxer d’usuaris `/etc/passwd`
 
 ## PART 3. USUARIS I GRUPS
 
@@ -92,8 +92,11 @@ Comprova que s’han creat al fitxer d’usuaris `/etc/passwd`.
 7. En quins arxius es troben:
 
   a. Els usuaris.
+  
   b. Les contrasenyes encriptades dels usuaris.
+  
   c. Els grups i els usuaris que pertanyen a cada grup.
+  
   d. Els usuaris i grups que poden fer “sudo”.
 
 
