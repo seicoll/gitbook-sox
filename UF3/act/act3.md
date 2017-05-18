@@ -2,6 +2,8 @@
 
 # Activitat 3. Compartir carpetes en GNU/Linux amb NFS
 
+![](/assets/nfs.jpg)
+
 ## Requisits
 
 * Utilitzeu dues màquines virtuals amb Ubuntu (Client i Servidor).
