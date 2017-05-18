@@ -2,6 +2,8 @@
 
 # Activitat 2. Compartir impressores en Windows Server
 
+![](/assets/windowsServer.png)
+
 ## Requisits
 
 * Utilitzeu la màquina virtual amb **Windows Server 2012** com a servidor i **Windows 10** com a client. Utilitzeu una xarxa interna i assigneu les adreces IP manualment.
