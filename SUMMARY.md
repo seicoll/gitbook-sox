@@ -32,7 +32,8 @@
     * [Autenticació LDAP](UF2/uf2-auteticacio-ldap.md)
 <!---    * \*\*Gestionar LDAP amb comandes -->
   * [Activitats](UF2/uf2-activitats.md)
-    * * [Activitat 1. Instal·lació Ubuntu Server](UF2/act/act1-instalacio.md)
+    * [Activitat 1. Instal·lació Ubuntu Server](UF2/act/act1-instalacio.md)
+    * [Activitat 2. Gestió d’arxius, directoris, usuaris i grups](UF2/act/act2.md)
     * [Qüestionari](UF2/act/uf2-questionari.md)
 
 ### [UF3. Compartició de recursos i seguretat](UF3.md)
