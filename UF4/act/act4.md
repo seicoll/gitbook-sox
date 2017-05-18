@@ -12,7 +12,7 @@ Configurar-les perquè estiguin connectades a una xarxa interna i tinguin una IP
 
 ##Activitat 
 
-**Part 1: Configuració del servidor**
+###Part 1: Configuració del servidor
 
 Configura el **Zentyal **com 
 
@@ -29,7 +29,7 @@ Uneix el client Windows al domini creat en el servidor Zentyal.
 
    > Captura de pantalla.
 
-**Part 3: Administració del domini**
+###Part 2: Administració del domini
 
 Crea les següents unitats organizatives, usuaris i grups:
   * (OU) groups			
@@ -43,7 +43,7 @@ Crea les següents unitats organizatives, usuaris i grups:
 
     >Captura de pantalla on es vegin tots els usuaris creats.
 
-**Part 3: Perfils mòbils**
+###Part 3: Perfils mòbils
 
 Un perfil és un entorn personalitzat especialment per a un usuari. El perfil conté la configuració de l’escriptori i dels programes de l’usuari. Cada usuari té un perfil, tant si l’administrador ho configura com si no, perquè el perfil es crea automàticament per a cada usuari quan s’inicia sessió en un equip.  
 
@@ -51,7 +51,7 @@ Podem configurar els _**perfils mòbils**_ per tal que els usuaris tinguin els m
 
 El servidor **Zentyal **guarda els perfils mòbils a /home/samba/profiles
 
-**Part4: Creació carpetes compartides  **
+###Part4: Creació carpetes compartides
 
 Des de **_Compartició de fitxers [File Sharing]_** podeu crear tots els recursos compartits que necessiteu tal com ho podíeu fer amb el Samba.  
 
@@ -71,7 +71,7 @@ Des de **_Compartició de fitxers [File Sharing]_** podeu crear tots els recurso
   > Captura de pantalla des del client windows on es vegi que un professor hi pot crear un document.
   > Captura de pantalla des del client windows on es vegi que un alumne NO hi pot crear un document.
 
-##Ampliació 
+### Ampliació 
 **Uneix un client linux al domini**
 
 Uneix el client Ubuntu Desktop al domini creat en el servidor Zentyal. 
