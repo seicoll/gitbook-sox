@@ -2,7 +2,7 @@
 
 # Activitat 5. Instal·lació d’un controlador de domini LDAP i configuració client LDAP.
 
-> imatge
+![](/assets/openladp.png)
 
 ## Requeriments
 
@@ -30,6 +30,8 @@ Es pressuposa que disposeu de dos màquines virtuals:
   1.4 Verifica el seu funcionament amb la comanda `slapcat` que permet veure la base de dades de l’OpenLDAP en format LDIF. 
 
 **2. Instal·lació phpLDAPadmin**
+
+![](/assets/phpLDAPadmin.jpg)
 
   2.1 Instal·la al servidor el phpLDAPadmin amb la comanda:
 apt-get install phpldapadmin
