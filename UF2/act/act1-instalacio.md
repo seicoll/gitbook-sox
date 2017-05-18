@@ -51,4 +51,23 @@ Un servidor ha de tenir una adreça estàtica ja que els clients l'han de conèi
 
 * **Servidors DNS:** 8.8.8.8 i 8.8.4.4
 
+```sh
+# Interfície de bucle local (127.0.0.1)
+auto lo
+iface lo inet loopback
 
+# Interfície de xarxa Ethernet
+auto enp0s3
+iface enp0s3 inet static
+address 172.21.A.20
+netmask 255.255.0.0
+gateway 172.21.0.1
+dns-nameservers 8.8.8.8 8.8.4.4
+```
+
+2.2 Reiniciar la targeta per què agafi la nova configuració:
+
+```
+sudo ip addr flush enp0s3
+sudo service networking restart
+```
