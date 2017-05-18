@@ -2,7 +2,7 @@
 
 # Activitat 1. Instal·lació d’Ubuntu Server.
 
-> imatge
+![> imatge](/assets/ubuntu-logo.png)
 
 ## 1. Instal·lació
 
