@@ -2,8 +2,9 @@
 
 # Activitat 6. Administració de OpenLDAP.
 
-OpenLDAP té eines gràfiques de gestió com per exemple phpLDAPadmin.
+**OpenLDAP** té eines gràfiques de gestió com per exemple **phpLDAPadmin**.
 
+![](/assets/phpLDAPadmin.jpg)
 
 ## REQUERIMENTS
 

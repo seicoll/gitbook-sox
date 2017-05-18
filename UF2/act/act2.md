@@ -2,9 +2,9 @@
 
 # Activitat 2. Gestió d’arxius, directoris, usuaris i grups.
 
-## PART 1. TERMINALS, SHELLS I COMANDES BÀSIQUES
+### PART 1. TERMINALS, SHELLS I COMANDES BÀSIQUES
 
-### 1. Terminals
+**1. Terminals**
 
   a. Obre un emulador de terminal en mode gràfic, executa la comanda “who” i posa aquí una captura amb el resultat.
 
@@ -18,7 +18,7 @@
 
   f. Com es pot diferenciar a través de quin tipus de terminal ha accedit un usuari?
 
-### 3. Shells
+**3. Shells**
 
 a. Escriu les comandes per fer les següents accions i el resultat:
 
@@ -32,7 +32,7 @@ b. En quin arxiu es troba l'històric del bash
 
 c.  Per a què serveix la comanda "history -c"
 
-## PART 2. ARXIUS I DIRECTORIS
+### PART 2. ARXIUS I DIRECTORIS
 
 1. Quina comanda permet conèixer el directori de treball actual?
 
@@ -66,7 +66,7 @@ c.  Per a què serveix la comanda "history -c"
 
 16. Busca la paraula root en el fitxer d’usuaris `/etc/passwd`
 
-## PART 3. USUARIS I GRUPS
+### PART 3. USUARIS I GRUPS
 
 1. Posa o canvia la contrasenya de l'administrador (root).
 
