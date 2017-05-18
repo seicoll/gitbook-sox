@@ -38,9 +38,11 @@ apt-get install phpldapadmin
 > Amb l'editor nano, es pot buscar text amb la combinació de tecles **_Ctrl + W_**
 
   2.3 Des de l’ubuntu desktop, aneu a un navegador web i connecteu-vos al phpldapadmin.
-http://IP/phpldapadmin
+
+  `http://IP/phpldapadmin`
 
   2.4 Crea un grup anomenat SMX.
+
   Opció **_Generico: Grupo Posix_**
 
   2.5 Crea un usuari anomenat alumne.
