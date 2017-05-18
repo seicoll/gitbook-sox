@@ -37,7 +37,7 @@
     * [Activitat 3. Actualització i instal·lació de programari](UF2/act/act3.md)
     * [Activitat 4. Monitorització i automatització de tasques](UF2/act/act4.md)
     * [Activitat 5: Instal·lació d’un controlador de domini LDAP i configuració client LDAP](UF2/act/act5.md)
-    *[Activitat 6: Administració de OpenLDAP](UF2/act/act6.md)
+    * [Activitat 6: Administració de OpenLDAP](UF2/act/act6.md)
     * [Qüestionari](UF2/act/uf2-questionari.md)
 
 ### [UF3. Compartició de recursos i seguretat](UF3.md)
