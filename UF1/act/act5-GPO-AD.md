@@ -67,7 +67,7 @@ Comprova el correcte funcionament i adjunta captures de pantalla.
 
   [http://ebarrova.blogspot.com.es/2014/02/instalar-impresora-mediante-gpos.html](http://ebarrova.blogspot.com.es/2014/02/instalar-impresora-mediante-gpos.html)
 
-  Elimineu el paquet i comproveu com es desintal·la del client.
+  Elimineu el paquet i comproveu com es desinstal·la del client.
 
 22. Crea una GPO que **instal·li el Chrome automàticament de forma publicada ** a tots els equips d'una OU. 
 Documenteu la instal·lació del paquet des del Tauler de Control.
