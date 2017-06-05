@@ -28,7 +28,7 @@
      Dades: 15GB
 ```
 3. Converteix el teu Server GUI en un **Minimal Server Interface**
-4. Torna a convertir-lo a Server **GUI** (https://technet.microsoft.com/)
+4. Torna a convertir-lo a Server **GUI** [https://technet.microsoft.com/es-es/library/jj574205.aspx#BKMK_1_6](https://technet.microsoft.com/es-es/library/jj574205.aspx#BKMK_1_6)
 5. **_Opcional_**. Instal·la el paquet de llenguatge Espanyol des del Tauler de Control.
 6. Crea una altra màquina virtual amb VirtualBox amb les característiques descrites a baix i instal·la **Windows 10**.
 ```
