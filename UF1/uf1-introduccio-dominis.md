@@ -1,18 +1,33 @@
 # Introducció als dominis
 
-## Grup de treball
-
-L’agrupació d'equips informàtics en xarxes té com a objectiu l'intercanvi d'informació i la compartició de recursos. 
+L’agrupació d'equips informàtics en xarxes té com a objectiu l'intercanvi d'informació i la **compartició de recursos**. 
 
 Es pot gestionar de dues formes:
-* **Grups de treball (Workgroup)**: En els grups de treball cada usuari administra els recursos del seu propi equip, decidint la política d'accessos, la seguretat i els recursos que vol compartir.
-* **Dominis**: Permeten una organització més segura i d'administració centralitzada.
+* **Grups de treball (Workgroup)** 
+* **Dominis** 
 
-Els **grups de treball** són útils en xarxes petites per la seva senzillesa d'ús.
+## Grups de treball
+
+Els **grups de treball** són la forma més simple de compartir recursos entre diferents equips d'una xarxa petita.
+
+En els grups de treball, tots els equips tenen el mateix nivell d'importància. Cada usuari administra els recursos del seu propi equip, decidint la política d'accessos, la seguretat i els recursos que vol compartir.
+
+### Limitacions dels Grups de treball
+
+Els grups de treball tenen importants limitacions:
+
+* La seguretat i gestió dels recurosos no està **centralitzada**.
+*  Les **comptes d'usuari** són locals i només les podem utilitzar en l'ordinador on s'han creat.
+
+A causa d'aquestes limitacions, en la majoria de situacions, s'optarà per sistemes basats en **dominis**.
+
+## Dominis
 
 Amb un augment de la mida de la xarxa, la complexitat de l'administració es fa necessari la gestió centralitzada i l'administració basada en **dominis**.
 
 > **Domini**: conjunt d’equips connectats entre ells que comparteixen informació administrativa (usuaris, grups, contrasenyes...) centralitzada, una política de seguretat i una base de dades comú.
+
+Permeten una organització més segura i d'administració centralitzada.
 
 ## Directori Actiu [_Active Directory (AD)_] 
 

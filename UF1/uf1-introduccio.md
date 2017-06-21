@@ -28,3 +28,30 @@ Les característiques principals són:
 
 * **Gestionar la xarxa.** 
   * Controlar el comportament de la xarxa i detectar problemes.
+  
+## Inconvenients de l'arquitectura client/servidor
+
+El principal incovenient és la **dependència del servidor**. 
+
+Tota la xarxa està construïda al voltant del servidor i si aquest deixa de funcionar afectarà a tota la infraestructura.
+
+Aquest inconvenient es pot superar gràcies a sistemes com els servidors redundants.
+
+## Sistemes Operatius més freqüents en un infraestructura client/servidor
+
+En el costat del **servidor**, els sistemes més habituals són:
+
+* **Microsoft Windows Server** (versions 2003, 2008, 2012 y 2016)
+
+* **GNU/Linux Server** (distribucions com RedHat, Ubuntu Server, CentOS, etc)
+
+* **Apple OS X Server**
+
+En el costat del **client**, també anomenats "_sistemes d'escriptori_", els sistemes més habituals són:
+
+* **Microsoft Windows** (Vista, 7, 8, 10, etc).
+
+* **GNU/Linux Desktop** (Ubuntu Desktop, Fedora, Debian, etc)
+
+* **Apple OS X**
+
