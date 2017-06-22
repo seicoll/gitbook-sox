@@ -37,12 +37,14 @@ Cal tenir present que una màquina gestionada amb el Microsoft Server 2012:
 
 ## Windows Server 2012 Edicions
 
+El sistema Windows Server es distribueix empaquetat en diferents **Edicions**.
+
 * **Windows Server 2012 Foundation**. 
   * Per a petites empreses. 
   * Servidors amb 1 processador. 
   * Limitat a 15 usuaris.
 * **Windows Server 2012 Essentials**. 
-  * Per a petites/mitjnes empreses. 
+  * Per a petites/mitjanes empreses. 
   * Servidors amb un o dos processadors. 
   * Limitat a 25 usuaris. 
   * Limitacions en virtualització.

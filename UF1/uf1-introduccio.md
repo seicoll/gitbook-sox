@@ -54,4 +54,3 @@ En el costat del **client**, també anomenats "_sistemes d'escriptori_", els sis
 * **GNU/Linux Desktop** (Ubuntu Desktop, Fedora, Debian, etc)
 
 * **Apple OS X**
-

@@ -60,7 +60,9 @@ Una vegada escollit l’opció d’instal·lació, cal que decidiu si fareu una 
 
 ## Particionar el disc
 
-> **ATENCIÓ**: com a norma general crearem una partició pel sistema i una altra per les dades.
+> Com a norma general crearem una **partició pel sistema operatiu** i una altra per les **dades**.
+
+D'aquesta forma els possibles errors del sistemes operatiu no afectaran tant directament a les dades.
 
 * Amb el botó **_Nuevo_**,  crear una partició d'uns 20 GB.
 * Utilitzar l'espai restant per crear una altra partició.
