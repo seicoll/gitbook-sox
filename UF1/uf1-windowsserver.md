@@ -32,7 +32,6 @@ Cal tenir present que una màquina gestionada amb el Microsoft Server 2012:
   * No es pot restaurar.
   * Té limitacions pel que fa a l’estalvi energètic.
 
-
 ![](/assets/WindowsServer2012Icon.png)
 
 ## Windows Server 2012 Edicions
@@ -58,3 +57,12 @@ El sistema Windows Server es distribueix empaquetat en diferents **Edicions**.
 
 ![](/assets/WindowsServerEdicions.png)
 
+## Sistemes d'arxius
+
+> El **sistema d'arxius** defineix la forma en la que el sistema operatiu organitzarà la informació que guardi al disc (o altres dispositius exerns).
+
+Windows Server pot utilitzar amb els següents sistemes d'arxius:
+
+* **FAT i FAT32 (_File Allocation Table_)**: La seva principal limitació és que no permet arxius més grans de 4GB
+* **NTFS (_New Technology File System_)**
+* **ReFS (_Resilient File System_)**: Millora NTFS en algunes característiques.
