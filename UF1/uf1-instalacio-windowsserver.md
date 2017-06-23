@@ -116,6 +116,30 @@ Per instal·lar les **_Guest Additions_** cal tenir la màquina virtual engegada
  
 En la majoria de sistemes amb entorn gràfic, s'obrirà automàticament una finestra per instal·lar el contingut. Si no, cal obrir el CD i executar el programa **_VBoxWindowsAdditions_**.
 
+### Clau d'activació de Windows i període de proves
+
+Si no s'ha introduït la clau d'activació durant la instal·lació, es disposa de 180 dies per provar-lo.
+A la finestra d'inici ens avisa dels dies què queden.
+Un cop acabat aquest període, es pot allargar 180 dies més obrint un terminal i posant la següent comanda:
+
+`slmgr.vbs /rearm`
+
+Després cal reiniciar la màquina.
+
+#### Introduir o canviar la clau d'activació
+
+Cal anar a _**Sistema **_i a la part inferior hi ha un enllaç amb l'opció **_Introducir o cambiar la clave de producto_**.
+
+### Fer una còpia de seguretat
+
+En una màquina real, només faltaria realitzar una còpia de seguretat completa i configurar les copies de seguretat periòdiques.
+
+En el cas de les màquines virtuals, es pot fer un snapshot o copiar el disc virtual.
+
+Els snapshots es fan i es poden recuperar més ràpidament, però poden fer què la màquina funcioni una mica més lenta, sobre tot si el disc no és SSD. També fan què el disc virtual ocupi més espai.
+
+> **ATENCIÓ**: un cop feta la instal·lació, configuració i comprovacions, feu una còpia del disc virtual de la màquina i guardeu-la bé. Us pot estalviar molta feina si en algun moment se us fa malbé la màquina.
+
 ### Instal·lació noves funcionalitats i característiques
 
 Instal·lar noves funcionalitats o noves característiques: 
