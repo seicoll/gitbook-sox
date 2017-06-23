@@ -118,3 +118,11 @@ Instal·lar noves funcionalitats o noves característiques:
   * Client Telnet
 
 > Un servidor es pot especialitzar en una única funció o en diverses.
+
+## Documentació i recursos
+
+  * **SomeBooks.es**: Instalación de Winsdows Server 2012 R2
+[http://somebooks.es/capitulo-2-instalacion-de-windows-server-2012-r2/4/](http://somebooks.es/capitulo-2-instalacion-de-windows-server-2012-r2/4/)
+ 
+  * **Apunts SOX** de Pere Sánchez   [http://moodlecf.sapalomera.cat/apunts/smx/sox/uf1/A110-WSInstalacio.html](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf1/A110-WSInstalacio.html)
+
