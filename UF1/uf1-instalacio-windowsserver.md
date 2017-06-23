@@ -128,7 +128,7 @@ Després cal reiniciar la màquina.
 
 #### Introduir o canviar la clau d'activació
 
-Cal anar a _**Sistema **_i a la part inferior hi ha un enllaç amb l'opció **_Introducir o cambiar la clave de producto_**.
+Cal anar a _**Sistema**_ i a la part inferior hi ha un enllaç amb l'opció **_Introducir o cambiar la clave de producto_**.
 
 ### Fer una còpia de seguretat
 
