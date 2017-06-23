@@ -119,6 +119,7 @@ En la majoria de sistemes amb entorn gràfic, s'obrirà automàticament una fine
 ### Clau d'activació de Windows i període de proves
 
 Si no s'ha introduït la clau d'activació durant la instal·lació, es disposa de 180 dies per provar-lo.
+
 A la finestra d'inici ens avisa dels dies què queden.
 Un cop acabat aquest període, es pot allargar 180 dies més obrint un terminal i posant la següent comanda:
 
@@ -126,9 +127,7 @@ Un cop acabat aquest període, es pot allargar 180 dies més obrint un terminal 
 
 Després cal reiniciar la màquina.
 
-#### Introduir o canviar la clau d'activació
-
-Cal anar a _**Sistema**_ i a la part inferior hi ha un enllaç amb l'opció **_Introducir o cambiar la clave de producto_**.
+Per **Introduir o canviar la clau d'activació** cal anar a _**Sistema**_ i a la part inferior hi ha un enllaç amb l'opció **_Introducir o cambiar la clave de producto_**.
 
 ### Fer una còpia de seguretat
 
