@@ -86,10 +86,15 @@ Una vegada s’ha instal·lat el sistema operatiu caldrà proporcionar la inform
 
 ### Establir zona horària
 
+Per canvia l'hora del sistema es pot fer fent clic amb el botó secundari sobre la bara de tasques on hi ha la data i hora. I després seleccionar l'opció **_Ajustar data i hora_**.
+
 ### Canviar el nom de l’equip
-  * Fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar l'opció **Sistema**. Després anar a _**Cambiar configuración > Cambiar... > Nombre de equipo**_.
+
+Durant la instal·lació es genera de forma automàtica un nom poc descriptiu pel servidor com _WIN-BOGEMFKQDSH_. Caldrà canviar-lo i posar a la màquina un nom que sigui fàcil de recordar.
+
+Fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar l'opció **Sistema**. Després anar a _**Cambiar configuración > Cambiar... > Nombre de equipo**_.
   
-* Configuració de la **Xarxa**.
+### Configuració de la xarxa.
   * Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de conèixer per poder accedir-hi i utilitzar els seus serveis. 
   
 ### Actualització del sistema operatiu 
@@ -99,7 +104,7 @@ Una vegada s’ha instal·lat el sistema operatiu caldrà proporcionar la inform
   * Per instal·lar les **_Guest Additions_** cal tenir la màquina virtual engegada i, en el menú de la mateixa finestra de la màquina virtual, seleccionar l'opció **_Dispositivos → Insertar imagen del CD de las Guest Additions_**. Això és equivalent a posar el CD d'instal·lació en la màquina virtual. 
   * En la majoria de sistemes amb entorn gràfic, s'obrirà automàticament una finestra per instal·lar el contingut. Si no, cal obrir el CD i executar el programa **_VBoxWindowsAdditions_**.
 
-## Instal·lació noves funcionalitats i característiques
+### Instal·lació noves funcionalitats i característiques
 
 Instal·lar noves funcionalitats o noves característiques: 
 * **Funcions de servidor o rols:** Conjunt de programes que fan una funció específica per diferents usuaris o altres equips d'una xarxa. Un servidor pot realitzar més d'una funció o rol.
