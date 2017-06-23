@@ -97,13 +97,24 @@ Fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i 
 ### Configuració de la xarxa.
 
 Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de conèixer per poder accedir-hi i utilitzar els seus serveis. 
+
+L'adreça ha de pertànyer a la xarxa on està connectada la màquina:
+* **Adreça IP**: `172.21.A.10` (**_A_** és el teu número d'alumne)
+* **Màscara**: `255.255.0.0` (de 16 bits, com la de la xarxa)
+* **Porta d'enllaç (GW)**: `172.21.0.1` (l'adreça del router de l'aula)
+* **Servidors DNS**: `192.168.0.30` i `8.8.8.8`
   
 ### Actualització del sistema operatiu 
 
-* En el cas de **màquines virtuals**, pot ser molt útil instal·lar les eines addicionals del gestor de màquines virtuals (en el cas de VirtualBox, les **_Guest Additions_**). 
-  Aquestes eines permeten disposar de més opcions per configurar el monitor, realitzar accions de "copiar i enganxar" entre la màquina real i la virtual, o accedir des de la màquina virtual a una carpeta de la màquina real per poder passar arxius fàcilment.
-  * Per instal·lar les **_Guest Additions_** cal tenir la màquina virtual engegada i, en el menú de la mateixa finestra de la màquina virtual, seleccionar l'opció **_Dispositivos → Insertar imagen del CD de las Guest Additions_**. Això és equivalent a posar el CD d'instal·lació en la màquina virtual. 
-  * En la majoria de sistemes amb entorn gràfic, s'obrirà automàticament una finestra per instal·lar el contingut. Si no, cal obrir el CD i executar el programa **_VBoxWindowsAdditions_**.
+### Instal·lar _Guest Additions_
+
+En el cas de **màquines virtuals**, pot ser molt útil instal·lar les eines addicionals del gestor de màquines virtuals (en el cas de VirtualBox, les **_Guest Additions_**). 
+
+Aquestes eines permeten disposar de més opcions per configurar el monitor, realitzar accions de "copiar i enganxar" entre la màquina real i la virtual, o accedir des de la màquina virtual a una carpeta de la màquina real per poder passar arxius fàcilment.
+
+Per instal·lar les **_Guest Additions_** cal tenir la màquina virtual engegada i, en el menú de la mateixa finestra de la màquina virtual, seleccionar l'opció **_Dispositivos → Insertar imagen del CD de las Guest Additions_**. Això és equivalent a posar el CD d'instal·lació en la màquina virtual. 
+ 
+En la majoria de sistemes amb entorn gràfic, s'obrirà automàticament una finestra per instal·lar el contingut. Si no, cal obrir el CD i executar el programa **_VBoxWindowsAdditions_**.
 
 ### Instal·lació noves funcionalitats i característiques
 
