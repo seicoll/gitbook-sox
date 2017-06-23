@@ -90,7 +90,7 @@ Per canviar l'hora del sistema es pot fer fent clic amb el botó secundari sobre
 
 ### Canviar el nom de l’equip
 
-Durant la instal·lació es genera de forma automàtica un nom poc descriptiu pel servidor com _WIN-BOGEMFKQDSH_. Caldrà canviar-lo i posar a la màquina un nom que sigui fàcil de recordar.
+Durant la instal·lació es genera de forma automàtica un nom pel servidor poc descriptiu i difícil de recordar com _WIN-BOGEMFKQDSH_. És recomenable canviar-lo i posar a la màquina un nom que sigui fàcil de recordar.
 
 Fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar l'opció **Sistema**. Després anar a _**Cambiar configuración > Cambiar... > Nombre de equipo**_.
   
