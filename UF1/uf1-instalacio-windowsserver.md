@@ -83,15 +83,16 @@ D'aquesta forma els possibles errors del sistemes operatiu no afectaran tant dir
 ## Post-instal·lació
 
 Una vegada s’ha instal·lat el sistema operatiu caldrà proporcionar la informació següent a l’equip:
-* Establir **zona horària**.
 
-* Canviar el **nom de l’equip**.
+### Establir zona horària
+
+### Canviar el nom de l’equip
   * Fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar l'opció **Sistema**. Després anar a _**Cambiar configuración > Cambiar... > Nombre de equipo**_.
   
 * Configuració de la **Xarxa**.
   * Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de conèixer per poder accedir-hi i utilitzar els seus serveis. 
   
-* **Actualització **del sistema operatiu. 
+### Actualització del sistema operatiu 
 
 * En el cas de **màquines virtuals**, pot ser molt útil instal·lar les eines addicionals del gestor de màquines virtuals (en el cas de VirtualBox, les **_Guest Additions_**). 
   Aquestes eines permeten disposar de més opcions per configurar el monitor, realitzar accions de "copiar i enganxar" entre la màquina real i la virtual, o accedir des de la màquina virtual a una carpeta de la màquina real per poder passar arxius fàcilment.
