@@ -86,7 +86,7 @@ Una vegada s’ha instal·lat el sistema operatiu caldrà proporcionar la inform
 
 ### Establir zona horària
 
-Per canvia l'hora del sistema es pot fer fent clic amb el botó secundari sobre la bara de tasques on hi ha la data i hora. I després seleccionar l'opció **_Ajustar data i hora_**.
+Per canviar l'hora del sistema es pot fer fent clic amb el botó secundari sobre la bara de tasques on hi ha la data i hora. I després seleccionar l'opció **_Ajustar data i hora_**.
 
 ### Canviar el nom de l’equip
 
@@ -95,7 +95,8 @@ Durant la instal·lació es genera de forma automàtica un nom poc descriptiu pe
 Fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar l'opció **Sistema**. Després anar a _**Cambiar configuración > Cambiar... > Nombre de equipo**_.
   
 ### Configuració de la xarxa.
-  * Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de conèixer per poder accedir-hi i utilitzar els seus serveis. 
+
+Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de conèixer per poder accedir-hi i utilitzar els seus serveis. 
   
 ### Actualització del sistema operatiu 
 
