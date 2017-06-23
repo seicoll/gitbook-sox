@@ -10,6 +10,9 @@
   
   Cal tenir preparat tot el programari i les dades necessàries: Sistema Operatiu, controladors, claus d'activació, etc.
 
+> **Nota:** Si no disposes d'una **llicència** de Windows Server, pots obtenir, de forma gratuita, un versió d'evaluació durant un període de 180 dies a la següent direcció:
+[https://www.microsoft.com/es-es/evalcenter/evaluate-windows-server-2012-r2](https://www.microsoft.com/es-es/evalcenter/evaluate-windows-server-2012-r2)
+
 * **Crear la màquina virtual**
 
   Cal crear una màquina virtual amb les característiques recomanades per instal·lar Windows Server 2012 R2 64 bits Standard Edition.
@@ -24,20 +27,22 @@
 
 ## Opcions d'instal·lació
 
+Windows Server permet instal·lar-se en dues versions diferents:
+
 * **Opció Instal·lació Servidor amb GUI _[Grafic User Interface]_**
 
-  * S’instal·la la interfície d’usuari estàndard.
+  * S’instal·la la interfície gràfica d'usuari estàndard amb totes les eines d'administració del servidor.
   
   
 * **Opció Instal·lació Server Core. **
 
-  * No s’instal·la la interfície d’usuari estàndard i el servidor s’administra amb la línia de comandes (Windows PowerShell) o bé remotament.
-  * És l’opció predeterminada i recomanada per Micrososft. 
+  * No s’instal·la la interfície gràfica d’usuari estàndard i el servidor s’administra amb la línia de comandes (Windows PowerShell) o bé remotament.
+  * És l’opció predeterminada i recomanada per Microsoft. 
   * **Avantatges**: requereix menys espai de disc (uns 4GB menys), és més eficient i augmenta la seguretat.
 
-> **Es pot passar d’una opció a l’altra** en qualsevol moment.
+> A partir de la versió Windows Server 2012, **es pot passar d’una opció a l’altra** en qualsevol moment.
 
-> Podem instal·lar l’opció Servidor amb GUI al principi, utilitzar les eines gràfiques per configurar el servidor, i després, canviar a l’opció instal·lació Server Core.
+Podem instal·lar l’opció _**Servidor amb GUI**_ al principi, utilitzar les eines gràfiques per configurar el servidor, i després, canviar a l’opció instal·lació _**Server Core**_.
 
 ## Minimal Server Interface
 
@@ -45,7 +50,12 @@ La possibilitat de passar d’una instal·lació a una altra, crea una instal·l
 
 Aquesta interface és el resultat d’iniciar amb una instal·lació** Servidor amb GUI** i després canviar a una instal·lació **Server Core**. 
 
-Amb **Minimal Server Interface**, la Consola d’Administració Microsoft _[Microsoft Management Console (MMC)]_, l’Administrador del Servidor i una part del Tauler de Control, continuen instal·lats.
+Amb **Minimal Server Interface**, continuen instal·lats els següents components:
+  * La Consola d’Administració Microsoft _[Microsoft Management Console (MMC)]_
+  * L’Administrador del Servidor 
+  * Una part del Tauler de Control
+
+Però no hi trobarem intal·lats ni l'Exporador d'arxius ni el Navegador web entre d'altres components.
 
 ![Minimal Server Interface](/assets/WindowsServerMinimal.png)
 
