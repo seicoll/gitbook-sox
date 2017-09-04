@@ -4,15 +4,13 @@ El llibre de _**Sistemes Operatius en Xarxa**_ és un material didàctic enfocat
 
 Aquest llibre és un material viu que evoluciona dia a dia i pot trobar-se la última versió a  [https://www.gitbook.com/book/seicoll/sox](https://www.gitbook.com/book/seicoll/sox).
 
-&lt;!---
+<!---
 
 El llibre no hauria estat possible sense el meus alumnes que m’han anat comunicant, al llarg del curs, les errades que anaven trobant i els paràgrafs que no havien quedar redactats de forma clara. I així, el llibre ha anat millorant dia a dia.
 
 I per suposat, també agrair a la meva dona i els meus fills que m’han recolzat i m’han permès obtenir el temps necessari per dedicar a aquest projecte.
 
---&gt;
-
-![](/assets/Llibre3D.jpg)
+-->
 
 # Continguts
 
@@ -23,6 +21,7 @@ I per suposat, també agrair a la meva dona i els meus fills que m’han recolza
   * [Instal·lació Windows Server](UF1/uf1-instalacio-windowsserver.md)
 * [Supervisió en Windows Server](UF1/uf1-supervisio.md)
 * [Gestió de dominis. Active Directory](UF1/gestio-de-dominis.-active-directory.md)
+
   * [Introducció als dominis](UF1/uf1-introduccio-dominis.md)
   * [Relacions de confiança](UF1/relacions-de-confianca.md)
   * [Instal·lació d'un controlador de domini en Active Directory](UF1/instalacio-AD.md)
@@ -35,6 +34,7 @@ I per suposat, també agrair a la meva dona i els meus fills que m’han recolza
 ### UF2. Sistemes operatius lliures en xarxa
 
 * [Gestió de dominis](UF2/uf2-gestio-dominis.md)
+
   * [Introducció als dominis en Linux](UF2/uf2-dominis-linux.md)
   * [Instal·lació d'un controlador de domini LDAP](UF2/uf2-LDAP.md)
   * [Gestionar LDAP amb interfície gràfica](UF2/uf2-LDAP-gestio-grafica.md)
@@ -49,6 +49,7 @@ I per suposat, també agrair a la meva dona i els meus fills que m’han recolza
   * [Compartir arxius i carpetes en Windows](UF3/uf3-compartir-arxius-windows.md)
   * [Compartir impressores en Windows](UF3/uf3-compartir-impressores-windows.md)
 * [Compartir recursos en xarxa i seguretat en sistemes de lliures](UF3/uf3-compartir-recursos-linux.md)
+
   * [Compartir arxius i carpetes amb NFS](UF3/uf3-compartir-arxius-linux-nfs.md)
   * [Compartir impressores amb CUPS](UF3/uf3-compartir-impressores-cups.md)
 
@@ -59,6 +60,7 @@ I per suposat, també agrair a la meva dona i els meus fills que m’han recolza
 * [Compartició de recursos en escenaris heterogenis](UF4/uf4-introduccio.md)
   * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
 * [Gestió de dominis en escenaris heterogenis](UF4/gestio-dominis.md)
+
   * [Samba 4 com a controlador de domini \(DC\)](UF4/controlador-domini-samba.md)
   * [Administrar el directori actiu de Samba 4](UF4/administrar-sambaAD.md)
   * [Perfils mòbils en un domini Samba AD](UF4/perfils-mobils-sambaAD.md)
@@ -66,5 +68,5 @@ I per suposat, també agrair a la meva dona i els meus fills que m’han recolza
 
 * [Qüestionari](UF4/act/uf4-questionari.md)
 
-
+![](/assets/Llibre3D.jpg)
 
