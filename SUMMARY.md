@@ -22,8 +22,6 @@
     * [Qüestionari](UF1/act/uf1-questionari.md)
 -->
 
-
-
 ### UF2. Sistemes operatius lliures en xarxa
 <!---  * [**Introducció als sistemes operatius Linux](UF2/uf2-introduccio.md) -->
 <!---  * [**Administració i supervisió](UF2/uf2-supervisio.md) -->
@@ -33,6 +31,7 @@
     * [Gestionar LDAP amb interfície gràfica](UF2/uf2-LDAP-gestio-grafica.md)
     * [Autenticació LDAP](UF2/uf2-auteticacio-ldap.md)
 <!---    * \*\*Gestionar LDAP amb comandes -->
+
 <!---
   * [Activitats](UF2/uf2-activitats.md)
     * [Activitat 1. Instal·lació Ubuntu Server](UF2/act/act1.md)
