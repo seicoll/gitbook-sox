@@ -20,7 +20,7 @@
   * Es recomana que l'espai del disc es reservi de forma dinàmica.
   * Es recomana posar 2 CPU com a mínim.
   * Si és possible, habilitar l'acceleració gràfica 2D i 3D.
-  * [Crea i i configura la** xarxa NAT SOX**](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf0/A012-VBoxPlus.html#config_nat_network) amb l'adreça 172.30.0.0/16 i suport per DHCP.
+  * [Crea i i configura la** xarxa NAT SOX**](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf0/A012-VBoxPlus.html#config_nat_network) amb l'adreça **172.30.0.0/16** i suport per DHCP.
 
 * **Planificar el disc**
 
