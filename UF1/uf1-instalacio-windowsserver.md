@@ -1,25 +1,26 @@
-# Instal·lació Windows Server 2012 R2
+# Instal·lació Windows Server 2016
 
 ## Planificació de la instal·lació
 
 * **Comprovar els requeriments de maquinari**
 
-  Cal assegurar-nos que els components del nostre maquinari compleixen els requisits mínims taln del sistema operatiu com de les aplicacions que s'han d'instal·lar.
+  Cal assegurar-nos que el nostre maquinari compleix els requisits mínims tan del sistema operatiu com de les aplicacions que s'han d'instal·lar.
 
 * **Preparar el programari a instal·lar i les dades a configurar**
   
   Cal tenir preparat tot el programari i les dades necessàries: Sistema Operatiu, controladors, claus d'activació, etc.
 
 > **Nota:** Si no disposes d'una **llicència** de Windows Server, pots obtenir, de forma gratuita, un versió d'evaluació durant un període de 180 dies a la següent direcció:
-[https://www.microsoft.com/es-es/evalcenter/evaluate-windows-server-2012-r2](https://www.microsoft.com/es-es/evalcenter/evaluate-windows-server-2012-r2)
+[https://www.microsoft.com/es-es/evalcenter/evaluate-windows-server-2016](https://www.microsoft.com/es-es/evalcenter/evaluate-windows-server-2016)
 
 * **Crear la màquina virtual**
 
-  Cal crear una màquina virtual amb les característiques recomanades per instal·lar Windows Server 2012 R2 64 bits Standard Edition.
+  Cal crear una màquina virtual amb les característiques recomanades per instal·lar **_Windows Server 2016 64 bits Standard Edition_**.
+  * El nom de la màquina pot ser **_SOX Windows Server_**.
   * Es recomana que l'espai del disc es reservi de forma dinàmica.
   * Es recomana posar 2 CPU com a mínim.
   * Si és possible, habilitar l'acceleració gràfica 2D i 3D.
-
+  * [Crea i i configura la** xarxa NAT SOX**](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf0/A012-VBoxPlus.html#config_nat_network) amb l'adreça 172.30.0.0/16 i suport per DHCP.
 
 * **Planificar el disc**
 
