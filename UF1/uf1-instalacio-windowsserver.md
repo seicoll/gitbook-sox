@@ -64,7 +64,7 @@ Però no hi trobarem intal·lats ni l'Exporador d'arxius ni el Navegador web ent
 
 Una vegada escollit l’opció d’instal·lació, cal que decidiu si fareu una instal·lació des de zero o bé optareu per actualitzar el vostre sistema.
 
-* **Instal·lació des de zero: **El sistema operatiu que hi hagi a l’equip se substituirà completament, de manera que les configuracions i les aplicacions es perdran.
+* **Instal·lació des de zero (personalitzada): **El sistema operatiu que hi hagi a l’equip se substituirà completament, de manera que les configuracions i les aplicacions es perdran.
 * **Actualització:** el sistema operatiu s’instal·la i es fa una migració de les configuracions, els documents i les aplicacions.
 
 > Si durant el procés d’instal·lació en falta alguna informació que necessitem per continuar. En el moment que es demana On es vol instal·lar Windows? es pot accedir a la línia de comandes prement Majúscules i F10.
@@ -94,6 +94,12 @@ Per canviar l'hora del sistema es pot fer fent clic amb el botó secundari sobre
 Durant la instal·lació es genera de forma automàtica un nom pel servidor poc descriptiu i difícil de recordar com _WIN-BOGEMFKQDSH_. És recomenable canviar-lo i posar a la màquina un nom que sigui fàcil de recordar.
 
 Fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar l'opció **Sistema**. Després anar a _**Cambiar configuración > Cambiar... > Nombre de equipo**_.
+
+### Contrasenya de l'usuari Administrador
+
+> S'ha de posar una contrasenya que compleixi els requisits de complexitat de Windows (mínim 8 caràcters, minúscules, majúscules, números i símbols).
+
+És recomanable que trieu bé aquesta contrasenya i la poseu a tot arreu, tant per Windows com per Linux (evidentment, en un cas real s'han de posar contrasenyes diferents).
   
 ### Configuració de la xarxa.
 
@@ -104,6 +110,10 @@ L'adreça ha de pertànyer a la xarxa on està connectada la màquina:
 * **Màscara**: `255.255.0.0` (de 16 bits, com la de la xarxa)
 * **Porta d'enllaç (GW)**: `172.21.0.1` (l'adreça del router de l'aula)
 * **Servidors DNS**: `192.168.0.30` i `8.8.8.8`
+
+### Iniciar sessió
+Demana que es premin les tecles _**Ctrl+Alt+Supr**_, però en VirtualBox s'ha de fer amb **_Ctrl dreta + Supr_**.
+Un cop es posi la contrasenya de l'administrador, s'accedirà al sistema.
   
 ### Actualització del sistema operatiu 
 
@@ -161,10 +171,11 @@ Instal·lar noves funcionalitats o noves característiques:
 
 > Un servidor es pot especialitzar en una única funció o en diverses.
 
+
+**Font d'informació:**  [Apunts SOX de Pere Sánchez](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf1/nf1/1202-WSInstalar.html)
+
 ## Documentació i recursos
 
   * **SomeBooks.es**: Instalación de Winsdows Server 2012 R2
 [http://somebooks.es/capitulo-2-instalacion-de-windows-server-2012-r2/4/](http://somebooks.es/capitulo-2-instalacion-de-windows-server-2012-r2/4/)
- 
-  * **Apunts SOX** de Pere Sánchez   [http://moodlecf.sapalomera.cat/apunts/smx/sox/uf1/A110-WSInstalacio.html](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf1/A110-WSInstalacio.html)
 
