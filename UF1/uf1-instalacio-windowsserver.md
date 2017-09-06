@@ -171,12 +171,14 @@ Instal·lar noves funcionalitats o noves característiques:
 
 > Un servidor es pot especialitzar en una única funció o en diverses.
 
-
 **Font d'informació:**  [Apunts SOX de Pere Sánchez](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf1/nf1/1202-WSInstalar.html)
 # Documentació i recursos
 
   * **SomeBooks.es**: Instalación de Winsdows Server 2012 R2
 [http://somebooks.es/capitulo-2-instalacion-de-windows-server-2012-r2/4/] (http://somebooks.es/capitulo-2-instalacion-de-windows-server-2012-r2/4/)
 
+---
+
+**Font d'informació:**  [Apunts SOX de Pere Sánchez](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf1/nf1/1202-WSInstalar.html)
 
 
