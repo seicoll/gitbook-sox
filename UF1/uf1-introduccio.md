@@ -8,7 +8,7 @@ Quan existeix un conjunt de dispositius informàtics connectats en xarxa (ordina
 
 Els recursos de la xarxa (impressores, documents) es gestionaran sempre de forma centralitzada des d’aquest equip que s'anomena **Servidor**.
 
-Els altres equips de la xarxa, actuen com a **Clients** sol·licitant recursos al servidor. Aquests, es connecten i validen al servidor per poder treballar en la xarxa.
+Els altres equips de la xarxa, actuen com a **Clients** sol·licitant recursos al servidor. Aquests, es connecten i validen al servidor per poder treballar en la xarxa. Aquest model de treball es coneix com **arquitectura client/servidor**.
 
 Aquests equips solen tenir instal·lat un **Sistema Operatiu Monolloc** que ja venen preparats per poder-se connectar amb servidors.
 
