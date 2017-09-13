@@ -34,9 +34,9 @@ Cal tenir present que una màquina gestionada amb el Microsoft Server 2012:
 
 ## Windows Server Edicions
 
-### Windows Server 2012 Edicions
-
 El sistema Windows Server es distribueix empaquetat en diferents **Edicions**.
+
+### Windows Server 2012 Edicions
 
 * **Windows Server 2012 Foundation**. 
   * Per a petites empreses. 
@@ -94,3 +94,7 @@ Windows Server pot utilitzar amb els següents sistemes d'arxius:
 * **FAT i FAT32 (_File Allocation Table_)**: La seva principal limitació és que no permet arxius més grans de 4GB
 * **NTFS (_New Technology File System_)**
 * **ReFS (_Resilient File System_)**: Millora NTFS en algunes característiques.
+
+## Documentació i recursos
+
+* **SomeBooks.es: Ediciones de Windows Server 2016:** [http://somebooks.es/ediciones-windows-server-2016/](http://somebooks.es/ediciones-windows-server-2016/)
