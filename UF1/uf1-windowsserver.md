@@ -74,10 +74,14 @@ Amb **Windows Server 2016** es redueixen el nombre d'edicions, eliminant l'edici
   * Sense limitació d’instàncies virtuals.
   
   
+Aquestes 3 edicions principals es complementen amb 3 opcions més:   
 * **Store Server Edition**
   * Pot afegir-se a un servidor amb Active Directory per complementar el seu funcionament com a **servidor d'arxius** incorporant aspectes com el protocol NFS (_Network File System_).
 * **MultiPoint Premium Server Edition**
+  * Permet compartir recursos d'un servidor amb diferents usuaris, on cada usuari disposarà d'una estació de treball (monitor, teclat i ratolí). Aquesta estació de treball es connecta es connecta a un hub que s'uneix al servidor que aporta la capacitat de càlcul.
+  * Només amb llicència educativa.
 * **Microsoft Hyper-V Server Edition**
+  * Edició gratuïta del hipervisor de Microsoft **_Hyper-V_**.
 
 
 ![](/assets/windows2016_edicions.JPG)
