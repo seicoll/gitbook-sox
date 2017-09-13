@@ -4,9 +4,9 @@
 
 ## Introducció als Sistemes Operatius en Xarxa
 
-Si volem realitzar una gestió centralitzada dels recursos d’una xarxa (documents, impressores, etc.) necessitem un equip amb un **Sistema Operatiu en Xarxa** instal·lat.
+Quan existeix un conjunt de dispositius informàtics connectats en xarxa (ordinadors, impressores, ...) i volem realitzar una gestió centralitzada d'aquests recursos, necessitem un equip amb un **Sistema Operatiu en Xarxa** instal·lat.
 
-Els recursos de la xarxa es gestionaran sempre de forma centralitzada des d’aquest equip que s'anomena **Servidor**.
+Els recursos de la xarxa (impressores, documents) es gestionaran sempre de forma centralitzada des d’aquest equip que s'anomena **Servidor**.
 
 Els altres equips de la xarxa, actuen com a **Clients** sol·licitant recursos al servidor. Aquests, es connecten i validen al servidor per poder treballar en la xarxa.
 
@@ -14,9 +14,9 @@ Aquests equips solen tenir instal·lat un **Sistema Operatiu Monolloc** que ja v
 
 ![](/assets/clientServidor.png)
 
-## Característiques dels Sistemes Operatius en Xarxa
+## Funcions dels Sistemes Operatius en Xarxa
 
-Les característiques principals són:
+Les funcions principals són:
 
 * **Compartir recursos**. 
   * Gestiona els recursos (documents, impressores, etc.) disponibles pels usuaris de la xarxa.
