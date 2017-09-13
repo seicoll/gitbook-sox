@@ -2,8 +2,6 @@
 
 # Windows Server
 
-![Windows Server 2012](/assets/WindowsServer2012-2.png)
-
 És un sistema operatiu dissenyat per servidors que treballa sobre un model denominat **domini**.
 
 Un **domini **és un conjunt d’equips (clients i sevidors) que comparteixen una política de seguretat i una base de dades comú. 
@@ -14,10 +12,12 @@ El **controlador de domini** és una part essencial dels sistemes operatius de M
 
 Aquest controlador centralitza la funció d’autenticar l’accés al domini
 
-## Microsoft Windows Server 2012 R2
+## Microsoft Windows Server 2016
 
-El llançament comercial de **Microsoft Windows Server 2012 R2** va tenir lloc l’any 2012.
-Actualment la versió més recent és la Microsoft Windows Server 2016.
+![](/assets/WindowsServer2016.png)
+
+Actualment la versió més recent és la **Microsoft Windows Server 2016** llançada comercialment l'any 2016.
+La versió anterior era el **Microsoft Windows Server 2012 R2** .
 
 Els 3 trets diferenciadors que cal destacar en aquest sistema operatiu són els següents:
 
@@ -31,8 +31,6 @@ Cal tenir present que una màquina gestionada amb el Microsoft Server 2012:
   * No pot ni hivernar ni entrar en mode suspès.
   * No es pot restaurar.
   * Té limitacions pel que fa a l’estalvi energètic.
-
-![](/assets/WindowsServer2012Icon.png)
 
 ## Windows Server Edicions
 
@@ -59,12 +57,28 @@ El sistema Windows Server es distribueix empaquetat en diferents **Edicions**.
 
 ![](/assets/WindowsServerEdicions.png)
 
-### Windows Server 2012 Edicions
+### Windows Server 2016 Edicions
+
+Amb **Windows Server 2016** es redueixen el nombre d'edicions, eliminant l'edició **_Foundation_**.
 
 * **Essentials Edition**
+  * Per a petites empreses.
+  * Servidors amb 1 processador. 
+  * Limitat a 25 usuaris.
+  * Limitat a 50 dispositius.
 * **Standard Edition**
+  * Per a petites/mitjanes empreses.
+  * Limitacions en virtualització (màxim 2 màquines virtuals).
 * **Datacenter Edition**
+  * Per Datacenters amb alta virtualització.
+  * Sense limitació d’instàncies virtuals.
+  
+  
 * **Store Server Edition**
+  * Pot afegir-se a un servidor amb Active Directory per complementar el seu funcionament com a **servidor d'arxius** incorporant aspectes com el protocol NFS (_Network File System_).
+* **MultiPoint Premium Server Edition**
+* **Microsoft Hyper-V Server Edition**
+
 
 ![](/assets/windows2016_edicions.JPG)
 
