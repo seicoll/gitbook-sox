@@ -123,8 +123,6 @@ L'adreça ha de pertànyer a la xarxa on està connectada la màquina:
 * **Porta d'enllaç (GW)**: `172.30.0.1` (l'adreça del router virtual de la xarxa NAT)
 * **Servidors DNS**: `172.30.0.1` i `8.8.8.8` (la mateixa porta d'enllaç de VirtualBox pot fer de servidor DNS).
 
-### Actualització del sistema operatiu 
-
 ### Instal·lar _Guest Additions_
 
 En el cas de **màquines virtuals**, pot ser molt útil instal·lar les eines addicionals del gestor de màquines virtuals (en el cas de VirtualBox, les **_Guest Additions_**). 
