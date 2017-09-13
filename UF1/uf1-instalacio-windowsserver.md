@@ -4,7 +4,7 @@
 
 ### Comprovar els requeriments de maquinari
 
-  Cal assegurar-nos que el nostre maquinari compleix els requisits mínims tan del sistema operatiu com de les aplicacions que s'han d'instal·lar.
+Cal assegurar-nos que el nostre maquinari compleix els requisits mínims tan del sistema operatiu com de les aplicacions que s'han d'instal·lar.
 
 ### Preparar el programari a instal·lar i les dades a configurar
   
@@ -15,25 +15,37 @@
 
 ### Crear la màquina virtual
 
-  Cal crear una màquina virtual amb les característiques recomanades per instal·lar **_Windows Server 2016 64 bits Standard Edition_**.
+Cal crear una màquina virtual amb les característiques recomanades per instal·lar **_Windows Server 2016 64 bits Standard Edition_**.
   * El nom de la màquina pot ser **_SOX Windows Server_**.
   * Es recomana que l'espai del disc es reservi de forma dinàmica.
   * Es recomana posar 2 CPU com a mínim.
   * Si és possible, habilitar l'acceleració gràfica 2D i 3D.
   * [Crea i i configura la** xarxa NAT SOX**](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf0/A012-VBoxPlus.html#config_nat_network) amb l'adreça **172.30.0.0/16** i suport per DHCP.
 
-* **Planificar el disc**
+### Planificar el disc
 
-  Cal planficar la utilització del disc, decidir les particions necessàries i el sistema de fitxers a utilitzar.
+Cal planificar la utilització del disc, decidir les particions necessàries i el sistema de fitxers a utilitzar.
 
-## Opcions d'instal·lació
+## Instal·lar el sistema operatiu
+
+Primer de tot, en la configuració d'emmagatzematge de la MV → unitat òptica (CD/DVD), posar la ISO (CD d'instal·lació) de Windows Server 2016. (_es_windows_server_2016_x64_dvd_9717978.iso_), engegar la MV i seguir els passos següents:
+
+**Triar les opcions relacionades amb el païs**
+Triar l'idioma, el format de la data, hora i moneda, i la disposició de les tecles en el teclat.
+
+**Triar si es vol instal·lar o reparar el sistema**
+Evidentment, s'ha de triar Instalar.
+
+**Introduir la clau d'activació**
+S'ha de posar la clau obtinguda de Microsoft Imagine.
+
+### Triar l'opció d'instal·lació
 
 Windows Server permet instal·lar-se en dues versions diferents:
 
 * **Opció Instal·lació Servidor amb GUI _[Grafic User Interface]_**
 
   * S’instal·la la interfície gràfica d'usuari estàndard amb totes les eines d'administració del servidor.
-  
   
 * **Opció Instal·lació Server Core. **
 
@@ -45,7 +57,7 @@ Windows Server permet instal·lar-se en dues versions diferents:
 
 Podem instal·lar l’opció _**Servidor amb GUI**_ al principi, utilitzar les eines gràfiques per configurar el servidor, i després, canviar a l’opció instal·lació _**Server Core**_.
 
-## Minimal Server Interface
+#### Minimal Server Interface
 
 La possibilitat de passar d’una instal·lació a una altra, crea una instal·lació intermitja anomenda **Mininal Server Interface**.
 
@@ -60,7 +72,7 @@ Però no hi trobarem intal·lats ni l'Exporador d'arxius ni el Navegador web ent
 
 ![Minimal Server Interface](/assets/WindowsServerMinimal.png)
 
-## Tipus d’instal·lació
+### Triar el tipus d’instal·lació
 
 Una vegada escollit l’opció d’instal·lació, cal que decidiu si fareu una instal·lació des de zero o bé optareu per actualitzar el vostre sistema.
 
@@ -69,7 +81,7 @@ Una vegada escollit l’opció d’instal·lació, cal que decidiu si fareu una 
 
 > Si durant el procés d’instal·lació en falta alguna informació que necessitem per continuar. En el moment que es demana On es vol instal·lar Windows? es pot accedir a la línia de comandes prement Majúscules i F10.
 
-## Particionar el disc
+### Particionar el disc
 
 > Com a norma general crearem una **partició pel sistema operatiu** i una altra per les **dades**.
 
