@@ -63,14 +63,13 @@ Amb **Windows Server 2016** es redueixen el nombre d'edicions, eliminant l'edici
 
 * **Essentials Edition**
   * Per a petites empreses.
-  * Servidors amb 1 processador. 
-  * Limitat a 25 usuaris.
-  * Limitat a 50 dispositius.
+  * Servidors amb 1 o 2 processadors. 
+  * Limitat a 25 usuaris i 50 dispositius.
 * **Standard Edition**
   * Per a petites/mitjanes empreses.
   * Limitacions en virtualització (màxim 2 màquines virtuals).
 * **Datacenter Edition**
-  * Per Datacenters amb alta virtualització.
+  * Per datacenters amb alta virtualització.
   * Sense limitació d’instàncies virtuals.
   
 Aquestes 3 edicions principals es complementen amb 3 opcions més:   
@@ -91,9 +90,16 @@ Aquestes 3 edicions principals es complementen amb 3 opcions més:
 
 Windows Server pot utilitzar amb els següents sistemes d'arxius:
 
-* **FAT i FAT32 (_File Allocation Table_)**: La seva principal limitació és que no permet arxius més grans de 4GB
+* **FAT i FAT32 (_File Allocation Table_)** 
+  * La seva principal limitació és que no permet arxius més grans de 4GB.
+  * No permeten gestionar permisos per diferents usuaris
 * **NTFS (_New Technology File System_)**
-* **ReFS (_Resilient File System_)**: Millora NTFS en algunes característiques.
+  * Particions de fins a 2 TiB
+  * Arxius tan grans com la partició
+  * És més eficient que FAT32
+  * Permet gestionar permisos per diferents usuaris
+* **ReFS (_Resilient File System_)** 
+  * Millora NTFS en algunes característiques.
 
 ## Documentació i recursos
 
