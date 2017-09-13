@@ -34,7 +34,9 @@ Cal tenir present que una màquina gestionada amb el Microsoft Server 2012:
 
 ![](/assets/WindowsServer2012Icon.png)
 
-## Windows Server 2012 Edicions
+## Windows Server Edicions
+
+### Windows Server 2012 Edicions
 
 El sistema Windows Server es distribueix empaquetat en diferents **Edicions**.
 
@@ -56,6 +58,15 @@ El sistema Windows Server es distribueix empaquetat en diferents **Edicions**.
   * Sistema de llicències per processador.
 
 ![](/assets/WindowsServerEdicions.png)
+
+### Windows Server 2012 Edicions
+
+* **Essentials Edition**
+* **Standard Edition**
+* **Datacenter Edition**
+* **Store Server Edition**
+
+![](/assets/windows2016_edicions.JPG)
 
 ## Sistemes d'arxius
 
