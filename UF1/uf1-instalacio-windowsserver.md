@@ -93,6 +93,12 @@ D'aquesta forma els possibles errors del sistemes operatiu no afectaran tant dir
 
 ![](/assets/WSInst07-Particionat.png)
 
+### Assignar contrasenya de l'usuari Administrador
+
+> S'ha de posar una contrasenya que compleixi els requisits de complexitat de Windows (mínim 8 caràcters, minúscules, majúscules, números i símbols).
+
+És recomanable que trieu bé aquesta contrasenya i la poseu a tot arreu, tant per Windows com per Linux (evidentment, en un cas real s'han de posar contrasenyes diferents).
+
 ## Post-instal·lació
 
 Una vegada s’ha instal·lat el sistema operatiu caldrà proporcionar la informació següent a l’equip:
@@ -107,26 +113,16 @@ Durant la instal·lació es genera de forma automàtica un nom pel servidor poc 
 
 Fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar l'opció **Sistema**. Després anar a _**Cambiar configuración > Cambiar... > Nombre de equipo**_.
 
-### Contrasenya de l'usuari Administrador
-
-> S'ha de posar una contrasenya que compleixi els requisits de complexitat de Windows (mínim 8 caràcters, minúscules, majúscules, números i símbols).
-
-És recomanable que trieu bé aquesta contrasenya i la poseu a tot arreu, tant per Windows com per Linux (evidentment, en un cas real s'han de posar contrasenyes diferents).
-  
-### Configuració de la xarxa.
+### Configurar la xarxa.
 
 Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de conèixer per poder accedir-hi i utilitzar els seus serveis. 
 
 L'adreça ha de pertànyer a la xarxa on està connectada la màquina:
-* **Adreça IP**: `172.21.A.10` (**_A_** és el teu número d'alumne)
+* **Adreça IP**: `172.30.A.10` (**_A_** és el teu número d'alumne)
 * **Màscara**: `255.255.0.0` (de 16 bits, com la de la xarxa)
-* **Porta d'enllaç (GW)**: `172.21.0.1` (l'adreça del router de l'aula)
-* **Servidors DNS**: `192.168.0.30` i `8.8.8.8`
+* **Porta d'enllaç (GW)**: `172.30.0.1` (l'adreça del router virtual de la xarxa NAT)
+* **Servidors DNS**: `172.30.0.1` i `8.8.8.8` (la mateixa porta d'enllaç de VirtualBox pot fer de servidor DNS).
 
-### Iniciar sessió
-Demana que es premin les tecles _**Ctrl+Alt+Supr**_, però en VirtualBox s'ha de fer amb **_Ctrl dreta + Supr_**.
-Un cop es posi la contrasenya de l'administrador, s'accedirà al sistema.
-  
 ### Actualització del sistema operatiu 
 
 ### Instal·lar _Guest Additions_
@@ -139,19 +135,6 @@ Per instal·lar les **_Guest Additions_** cal tenir la màquina virtual engegada
  
 En la majoria de sistemes amb entorn gràfic, s'obrirà automàticament una finestra per instal·lar el contingut. Si no, cal obrir el CD i executar el programa **_VBoxWindowsAdditions_**.
 
-### Clau d'activació de Windows i període de proves
-
-Si no s'ha introduït la clau d'activació durant la instal·lació, es disposa de 180 dies per provar-lo.
-
-A la finestra d'inici ens avisa dels dies què queden.
-Un cop acabat aquest període, es pot allargar 180 dies més obrint un terminal i posant la següent comanda:
-
-`slmgr.vbs /rearm`
-
-Després cal reiniciar la màquina.
-
-Per **Introduir o canviar la clau d'activació** cal anar a _**Sistema**_ i a la part inferior hi ha un enllaç amb l'opció **_Introducir o cambiar la clave de producto_**.
-
 ### Fer una còpia de seguretat
 
 En una màquina real, només faltaria realitzar una còpia de seguretat completa i configurar les copies de seguretat periòdiques.
@@ -162,7 +145,7 @@ Els snapshots es fan i es poden recuperar més ràpidament, però poden fer què
 
 > **ATENCIÓ**: un cop feta la instal·lació, configuració i comprovacions, feu una còpia del disc virtual de la màquina i guardeu-la bé. Us pot estalviar molta feina si en algun moment se us fa malbé la màquina.
 
-### Instal·lació noves funcionalitats i característiques
+### Instal·lacir noves funcionalitats i característiques
 
 Instal·lar noves funcionalitats o noves característiques: 
 * **Funcions de servidor o rols:** Conjunt de programes que fan una funció específica per diferents usuaris o altres equips d'una xarxa. Un servidor pot realitzar més d'una funció o rol.
@@ -182,6 +165,26 @@ Instal·lar noves funcionalitats o noves característiques:
   * Client Telnet
 
 > Un servidor es pot especialitzar en una única funció o en diverses.
+
+## Altres informacions
+
+### Clau d'activació de Windows i període de proves
+
+Si no s'ha introduït la clau d'activació durant la instal·lació, es disposa de 180 dies per provar-lo.
+
+A la finestra d'inici ens avisa dels dies què queden.
+Un cop acabat aquest període, es pot allargar 180 dies més obrint un terminal i posant la següent comanda:
+
+`slmgr.vbs /rearm`
+
+Després cal reiniciar la màquina.
+
+Per **Introduir o canviar la clau d'activació** cal anar a _**Sistema**_ i a la part inferior hi ha un enllaç amb l'opció **_Introducir o cambiar la clave de producto_**.
+
+### Iniciar sessió
+Demana que es premin les tecles _**Ctrl+Alt+Supr**_, però en VirtualBox s'ha de fer amb **_Ctrl dreta + Supr_**.
+Un cop es posi la contrasenya de l'administrador, s'accedirà al sistema.
+
 
 # Documentació i recursos
 
