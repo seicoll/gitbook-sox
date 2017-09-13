@@ -2,18 +2,18 @@
 
 ## Planificació de la instal·lació
 
-* **Comprovar els requeriments de maquinari**
+### Comprovar els requeriments de maquinari
 
   Cal assegurar-nos que el nostre maquinari compleix els requisits mínims tan del sistema operatiu com de les aplicacions que s'han d'instal·lar.
 
-* **Preparar el programari a instal·lar i les dades a configurar**
+### Preparar el programari a instal·lar i les dades a configurar
   
   Cal tenir preparat tot el programari i les dades necessàries: Sistema Operatiu, controladors, claus d'activació, etc.
 
 > **Nota:** Si no disposes d'una **llicència** de Windows Server, pots obtenir, de forma gratuita, un versió d'evaluació durant un període de 180 dies a la següent direcció:
 [https://www.microsoft.com/es-es/evalcenter/evaluate-windows-server-2016](https://www.microsoft.com/es-es/evalcenter/evaluate-windows-server-2016)
 
-* **Crear la màquina virtual**
+### Crear la màquina virtual
 
   Cal crear una màquina virtual amb les característiques recomanades per instal·lar **_Windows Server 2016 64 bits Standard Edition_**.
   * El nom de la màquina pot ser **_SOX Windows Server_**.
