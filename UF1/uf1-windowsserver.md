@@ -22,7 +22,6 @@ La versió anterior era el **Microsoft Windows Server 2012 R2** .
 Els 3 trets diferenciadors que cal destacar en aquest sistema operatiu són els següents:
 
   * **Utilització d’una tècnica modular**. Dissenyat de manera independent els components del sistema operatiu. Permet eliminar o instal·lar components nous amb facilitat.
-  * **Entorn de preinstal·lació i prearrencada**. 
   * **Control de comptes d’usuari**. Les aplicacions s’executaran sempre sota els privilegis d’un compte d’usuari. El control de comptes d’usuari (UAC, user account control) millora la seguretat de l’equip.
   * L’ús d’un **nou sistema d’arxius ReFS**.
 
