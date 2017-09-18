@@ -43,9 +43,9 @@ S'ha de posar la clau obtinguda de Microsoft Imagine.
 
 Windows Server permet instal·lar-se en dues versions diferents:
 
-* **Opció Instal·lació Servidor amb GUI _[Grafic User Interface]_**
-
-  * S’instal·la la interfície gràfica d'usuari estàndard amb totes les eines d'administració del servidor.
+* **Opció _Windows Server (Server with Desktop Experience)_**
+  * Instal·lació del Servidor amb **GUI _[Grafic User Interface]_**
+  * S’instal·la la interfície gràfica d'usuari amb totes les eines d'administració del servidor.
   
 * **Opció Instal·lació Server Core. **
 
