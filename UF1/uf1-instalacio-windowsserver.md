@@ -43,11 +43,11 @@ S'ha de posar la clau obtinguda de Microsoft Imagine.
 
 Windows Server permet instal·lar-se en dues versions diferents:
 
-* **Opció _Windows Server (Server with Desktop Experience)_**
+* **Opció _Windows Server 2016 Standard (Desktop Experience)_**
   * Instal·lació del Servidor amb **GUI _[Grafic User Interface]_**
   * S’instal·la la interfície gràfica d'usuari amb totes les eines d'administració del servidor.
   
-* **Opció Instal·lació Server Core. **
+* **Opció _Windows Server 2016 Standard (Core)._ **
 
   * No s’instal·la la interfície gràfica d’usuari estàndard i el servidor s’administra amb la línia de comandes (Windows PowerShell) o bé remotament.
   * És l’opció predeterminada i recomanada per Microsoft. 
