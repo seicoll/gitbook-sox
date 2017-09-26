@@ -1,7 +1,5 @@
 # Supervisió de sistemes operatius propietaris
 
-[Tasca 2. Supervisió de SO de propietat](https://docs.google.com/document/d/1aZatpgwGRXZ65yfxLJHetD_sjlh9s_9upYWcs7rdSEo/edit?usp=sharing)
-
 ## Tasques de l’administrador de sistemes
 
 Algunes de **tasques d'un administrador de sistemes **d'informació:
