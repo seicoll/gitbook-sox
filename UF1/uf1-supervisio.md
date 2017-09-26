@@ -22,7 +22,7 @@ Algunes de **tasques d'un administrador de sistemes **d'informació:
 
 ## Eines de supervisió
 
-El sistema operatiu Microsoft Windows Server 2012 us proporciona una sèrie d’**eines** i facilitats perquè pugueu **administrar el sistema** de manera efectiva i ràpida:
+El sistema operatiu Microsoft Windows Server us proporciona una sèrie d’**eines** perquè pugueu **administrar el sistema** de manera efectiva i ràpida:
 
 * **Administrador del servidor**
 * **Administració de tasques**
@@ -31,7 +31,7 @@ El sistema operatiu Microsoft Windows Server 2012 us proporciona una sèrie d’
 
 ### Administrador del servidor _\[Server Manager\]_
 
-L'**Administrador del servidor** permet veure, en una única pantalla, la informació del sistema, opcions de configuració de seguretat i  les rols i caracterísiques intal·lats i els seus possibles problemes de configuració.
+L'**Administrador del servidor** permet veure, en una única pantalla, la informació del sistema, opcions de configuració de seguretat i els seus possibles problemes de configuració.
 
 ![](/assets/ServerManager.png)
 
@@ -51,8 +51,8 @@ Disposa de cinc pestanyes. Aquestes pestanyes us ajudaran a administrar **proces
 
 * **Processos _[Processes]_**: aplicacions d'usuari i processos que s'estan executant en segon pla (processos del sistema), i la utilització què estan fent del sistema (CPU i memòria)
 * **Detalls _[Details]_**: programes associats a les aplicacions. Permet canviar la prioritat de cada un
-* **Usuaris _[Users]_**: quins usuaris estan connectats i quines aplicacions estan utilitzant; també es poden desconnectar
-* **Serveis _[Services]_**: quins serveis estan engegats o aturats. Permet aturar o iniciar serveis. També es pot obrir l'administrador de serveis per gestionar els serveis de forma més detallada
+* **Usuaris _[Users]_**: quins usuaris estan connectats i quines aplicacions estan utilitzant; també es poden desconnectar usuaris.
+* **Serveis _[Services]_**: quins serveis estan engegats o aturats. Permet aturar o iniciar serveis. També es pot obrir l'administrador de serveis per gestionar els serveis de forma més detallada.
 * **Rendimient _[Performance]_**: veure la utilització global de la CPU, la memòria i la xarxa. Des d'aquest apartat es pot obrir el Monitor de recursos, que permet veure amb més detall la utilització de la CPU, la memòria, la xarxa i els discos.
 
 ![](/assets/TaskManager.png)
@@ -66,11 +66,11 @@ Teniu **quatre vies per accedir** a l’administrador de tasques:
 
 ### Administrador de serveis _[Services]_
 
-Els **serveis** són programes que funcionen sense interactuar directament amb l'usuari.
+> Els **serveis** són programes que funcionen sense interactuar directament amb l'usuari.
 
 Normalment són programes que s'arranquen amb el sistema operatiu.
 
-L'eina **Serveis** mostra l'estat dels serveis i permet gestionar-los.
+L'eina **_Serveis_** mostra l'estat dels serveis i permet gestionar-los.
 
 Cada servei el podem configurar: Ens posem a sobre &gt; boto dret ratolí &gt; propietats:
 
