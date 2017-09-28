@@ -119,14 +119,14 @@ Els principals són:
 
 ## Actualitzacions
 
-Tant important és la monitorització com **l’actualització **dels components del Sistema Operatiu.
+Tant important és la monitorització com **l’actualització** dels components del Sistema Operatiu.
 
 **Tipus d'actualitzacions:** 
 
   * **Pedaç, “Parches” (Hot fixes)**: Un fitxer que modifica el codi de programes intentant solucionar problemes de seguretat trobats en el programa fins el moment, intenta no modificar el funcionament del programa. 
   * **Services pack (SP)**: Consteix en un conjunt de pedaços que actualitzen, corregeixen i milloren aplicacions i sistemes operatius.
   
-Des de **Windows Update** existeixen **quatre configuracions** possibles: 
+En el **Windows Update** (en Windows Server 2012 i Windows 8) existeixen **quatre configuracions** possibles: 
 
 ![](/assets/WindowsUpdate.png)
 
@@ -137,4 +137,6 @@ Des de **Windows Update** existeixen **quatre configuracions** possibles:
   * Quan volem controlar quines actualitzacions s’instal·len.
 * **No buscar actualitzacions (no recomenat)**
   * Podem instal·lar manualment les actualitzacions des de la web oficial de Windows.
+  
+En el **Windows Update** (en Windows Server 2016 i Windows 10) podem configurar:
 
