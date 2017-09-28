@@ -140,3 +140,4 @@ En el **Windows Update** (en Windows Server 2012 i Windows 8) existeixen **quatr
   
 En el **Windows Update** (en Windows Server 2016 i Windows 10) podem configurar:
 
+[http://somebooks.es/instalar-actualizaciones-windows-server-2016-gui-parte-1/](http://somebooks.es/instalar-actualizaciones-windows-server-2016-gui-parte-1/)
