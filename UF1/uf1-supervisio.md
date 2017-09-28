@@ -119,13 +119,19 @@ Els principals són:
 
 ## Actualitzacions
 
-Tant important és la monitorització com **l’actualització** dels components del Sistema Operatiu.
+Una de les tasques que ha de fer l'administrador de sistemes és assegurar-se que els sistemes operatius s'**actualitzen** correctament. 
+
+En **versions anteriors de Windows Server 2016**, les actualitzacions venien deshabilitades de forma predeterminada. 
+En canvi, en **Windows Server 2016**, la configuració predeterminada estableix que les actualitzacions es descarreguin però sigui l'administrador qui decideixi quan instal·lar-les.
+
 
 **Tipus d'actualitzacions:** 
 
   * **Pedaç, “Parches” (Hot fixes)**: Un fitxer que modifica el codi de programes intentant solucionar problemes de seguretat trobats en el programa fins el moment, intenta no modificar el funcionament del programa. 
   * **Services pack (SP)**: Consteix en un conjunt de pedaços que actualitzen, corregeixen i milloren aplicacions i sistemes operatius.
-  
+
+### En versions anteriors a Windows Server 2016
+    
 En el **Windows Update** (en Windows Server 2012 i Windows 8) existeixen **quatre configuracions** possibles: 
 
 ![](/assets/WindowsUpdate.png)
@@ -138,6 +144,23 @@ En el **Windows Update** (en Windows Server 2012 i Windows 8) existeixen **quatr
 * **No buscar actualitzacions (no recomenat)**
   * Podem instal·lar manualment les actualitzacions des de la web oficial de Windows.
   
+### En Windows Server 2016 
+ 
 En el **Windows Update** (en Windows Server 2016 i Windows 10) podem configurar:
 
-[http://somebooks.es/instalar-actualizaciones-windows-server-2016-gui-parte-1/](http://somebooks.es/instalar-actualizaciones-windows-server-2016-gui-parte-1/)
+> IMATGE
+
+ * **Canviar hores actives **
+ Un cop instal·lades actualitzacions, si és necessari reiniciar, tenim dos opcions: 
+   * reiniciar el servidor manualment 
+   * esperar un reinici automàtic fora de les hores de major activitat del sistema.
+
+    De forma predeterminada, les hores de major activitat estan definides entre les 8:00 i las 17:00. Si aquests valors no s'adapten a l'horari de la teva empresa es podem modificar amb l'opció **_Cambiar horas activas_**. 
+
+ * Opcions de reinici:
+ * Opcions avançades:
+
+SomeBooks.es: [Instalar actualizaciones en Windows Server 2016 con GUI (Parte 1)](http://somebooks.es/instalar-actualizaciones-windows-server-2016-gui-parte-1/)
+
+SomeBooks.es: [Actualizar Windows Server 2016 con GUI (Parte 2)](http://somebooks.es/actualizar-windows-server-2016-gui-parte-2/)
+
