@@ -155,10 +155,18 @@ En el **Windows Update** (en Windows Server 2016 i Windows 10) podem configurar:
    * reiniciar el servidor manualment 
    * esperar un reinici automàtic fora de les hores de major activitat del sistema.
 
-    De forma predeterminada, les hores de major activitat estan definides entre les 8:00 i las 17:00. Si aquests valors no s'adapten a l'horari de la teva empresa es podem modificar amb l'opció **_Cambiar horas activas_**. 
+    De forma predeterminada, les hores de major activitat estan definides entre les 8:00 i las 17:00. Si aquests valors no s'adapten a l'horari de la teva empresa els podem modificar amb l'opció **_Cambiar horas activas_**. 
 
- * Opcions de reinici:
- * Opcions avançades:
+ * **Opcions de reinici**
+ Quan es programa un reinici automàtic després d'instal·lar actualitzacoins, amb aquesta opció podrem canviar l'hora i el dia en el qual es realitzarà el reinici.
+ 
+ 
+ * **Opcions avançades**
+   * **Ofrecer actualizaciones para otros productos de Microsoft cuando actualice Windows**. Permet mantenir actualitzades la resta d'aplicacions que hàgim adquirit de Microsoft al mateix temps que actualitzem el sistema operatiu. 
+
+  * **Aplazar actualizaciones de características**. Permet deixar d'instal·lar aplicacions del sistema operatiu que no tinguin a veure amb la seguretat. Això redueix els temps necessari en instal·lar actualitzacions, però deixes de disposar de les últimes funcions que s'incorporin al sistema operatiu.
+
+## Documentació i recursos
 
 SomeBooks.es: [Instalar actualizaciones en Windows Server 2016 con GUI (Parte 1)](http://somebooks.es/instalar-actualizaciones-windows-server-2016-gui-parte-1/)
 
