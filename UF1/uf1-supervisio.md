@@ -11,7 +11,7 @@ Algunes de **tasques d'un administrador de sistemes **d'informació:
   * Recomanables depen de si ens soluciona un problema o no. 
 * Gestió i comprovació de les** còpies de seguretat**. 
 * **Monitorització i vigilar:**
-  * l’estat del sistema
+  * l’estat del sistema comprovant el rendiment de l'equip
   * l’estat de la xarxa
   * l’estat dels serveis
   * l’espai físic d’emmagatzematge

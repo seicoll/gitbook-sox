@@ -143,10 +143,11 @@ Els snapshots es fan i es poden recuperar més ràpidament, però poden fer què
 
 > **ATENCIÓ**: un cop feta la instal·lació, configuració i comprovacions, feu una còpia del disc virtual de la màquina i guardeu-la bé. Us pot estalviar molta feina si en algun moment se us fa malbé la màquina.
 
-### Instal·lacir noves funcionalitats i característiques
+### Instal·lació noves funcionalitats i característiques
 
 Instal·lar noves funcionalitats o noves característiques: 
-* **Funcions de servidor o rols:** Conjunt de programes que fan una funció específica per diferents usuaris o altres equips d'una xarxa. Un servidor pot realitzar més d'una funció o rol.
+
+* **Funcions de servidor (rols):** Conjunt de programes que fan una funció específica per diferents usuaris o altres equips d'una xarxa. Un servidor pot realitzar més d'una funció o rol.
   * Servidor de fitxers. 
   * Servidor d'aplicacions. 
   * Servidor de correu. 
@@ -155,7 +156,7 @@ Instal·lar noves funcionalitats o noves característiques:
   * Servidor DNS: realitza la resolució de noms del domini. 
   * Servidor DHCP: realitza l’assignació direccions IP automàtiques.
   * etc.
-* **Serveis de funcions** (serveis de rol): afegeixen més funcionalitat a un servidor. 
+* **Serveis de funcions (serveis de rol) **: afegeixen més funcionalitat a un servidor. 
   * Alguns rols, com per exemple el de servidor de DNS, només tenen una funcionalitat, i per tant no tenen serveis de rol disponibles. 
   * Altres, com per exemple el de servidor d'escriptori remot, tenen diferents serveis de rol que es poden afegir en funció de les necessitats de l'empresa.
 * **Característiques:** són programes per complementar o augmentar la funcionalitat del servidor però no tenen cap relació amb els rols que desenvolupa. 
@@ -163,6 +164,10 @@ Instal·lar noves funcionalitats o noves característiques:
   * Client Telnet
 
 > Un servidor es pot especialitzar en una única funció o en diverses.
+
+#### Instal·lació de funcions, serveis i característiques.
+
+[http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=0.5.6](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=0.5.6)
 
 ## Altres informacions
 
