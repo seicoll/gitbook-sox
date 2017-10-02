@@ -148,7 +148,7 @@ En el **Windows Update** (en Windows Server 2012 i Windows 8) existeixen **quatr
  
 En el **Windows Update** (en Windows Server 2016 i Windows 10) podem configurar:
 
-> IMATGE
+![](/assets/win2016-updates.png)
 
  * **Canviar hores actives **
  Un cop instal·lades actualitzacions, si és necessari reiniciar, tenim dos opcions: 
