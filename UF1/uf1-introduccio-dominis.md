@@ -97,7 +97,7 @@ L’estructura del servei de directori està constituïda per diferents elements
 
 ![](/assets/BoscDomini.svg)
 
-# Documentació i recursos
+## Documentació i recursos
 
 * **Introducció al dominis**. Apunts de Pere Sánchez: [http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=0.1.12](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=0.1.12)
 
