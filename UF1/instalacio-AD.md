@@ -54,7 +54,7 @@ El domini no existirà realment a Internet, per tant serà de tipus **.local**,i
 
 Després ens demana el nivell de funcionalitat del sistema. Sempre escollirem el més alt, a no ser que calgui garantir la compatibilitat amb altres dominis gestionats per versions inferior. 
 
-En el nostre cas, cal seleccionar l'opció "**Nivell de funcionalitat Windows Server 2016**" o bé "**Windows Server Technical Preview**" si no has aplicat la última actualització de Windows Server.
+En el nostre cas, a **Nivell de funcionalitat** cal seleccionar l'opció _Windows Server 2016_ o bé _Windows Server Technical Preview_ si no has aplicat la última actualització de Windows Server.
 
 L'assistent ens demana ara una **contrasenya **per poder administrar el **Directori Actiu**. En general, encara que poden ser diferents, sol ser convenient posar la mateixa contrasenya que l'administrador de l'equip. 
 
