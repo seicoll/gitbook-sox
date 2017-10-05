@@ -12,9 +12,7 @@ Els **grups de treball** són la forma més simple de compartir recursos entre d
 
 En els grups de treball, tots els equips tenen el mateix nivell d'importància. Cada usuari administra els recursos del seu propi equip, decidint la política d'accessos, la seguretat i els recursos que vol compartir.
 
-### Limitacions dels Grups de treball
-
-Els grups de treball tenen importants limitacions:
+Els grups de treball tenen importants **limitacions**:
 
 * La seguretat i gestió dels recurosos no està **centralitzada**.
 * Els **comptes d'usuari** són locals i només els podem utilitzar en l'ordinador on s'han creat.
