@@ -123,9 +123,10 @@ Finalment, fes pings per a verificar que el client pot comunicar-se amb el servi
 
 7. Si tot ha anat bé, ens indicarà que l'equip s'ha unit al domini però que **cal reiniciar**.
 
-6. Ara entreu a la màquina client i veureu que podeu entrar al domini mitjançant les credencials de l'administrador. L'inici de sessió amb l'usuari de domini es pot fer posant `Administrator@adxxx.local` o bé `ADXXX\Adminitrator` tal i com s'indica a la [teoria](/UF1/usuaris-grups-i-unitats-organitzatives.html#usuaris-globals).
+6. Ara entreu a la màquina client i veureu que podeu entrar al domini mitjançant les credencials de l'administrador. L'inici de sessió amb l'usuari de domini es pot fer, tal i com s'indica a la [teoria](/UF1/usuaris-grups-i-unitats-organitzatives.html#usuaris-globals), posant:
 
-7. Finalment, entra al servidor i busca el nou equip a **_Eines administratives > Usuaris i equips de l’Active Directory_**.
+  * `Administrator@adxxx.local` 
+  * `ADXXX\Adminitrator` 
 
 ### Desconnectar un client del domini
 
