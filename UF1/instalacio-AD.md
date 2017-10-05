@@ -2,6 +2,14 @@
 
 ![Active Directory](/assets/ActiveDirectory.png)
 
+## Configuració prèvia
+**
+Configurar el nom del servidor**
+
+El nom ha de ser `wsxxx` (`xxx` són les inicials del vostre nom).
+
+> **ATENCIÓ**: és molt important assegurar-se que el nom del servidor sigui correcte, ja que un cop configurat com a controlador de domini, el nom no s'ha de canviar
+
 ## Instal·lació del Directori Actiu
 
 1. La instal·lació del **Directori Actiu** és la implementació d'una funció bàsica o rol del nostre Windows Server. Com qualsevol altre rol de servidor el podem instal·lar des l’**_Administrador del servidor_** i seleccionar l'opció _**Agregar roles y características**_ que obrirà l'assistent per afegir funcions.
@@ -22,28 +30,31 @@
 
   ![](/assets/AD_ins4.png)
 
-## Creació del domini
-Un cop instal·lats els serveis bàsics de **Directori Actiu** és necessari completar la instal·lació mitjançant la creació d'un **nou domini** i la promoció de l'equip a controlador de domini mitjançant els següents passos:
+## Promocionar el servidor a controlador de domini i creació del domini
+
+Un cop instal·lats els serveis bàsics de **Directori Actiu** és necessari completar la instal·lació mitjançant la **promoció de l'equip a controlador de domini** i la creació d'un **nou domini** mitjançant els següents passos:
 
 En l’_**Administrador del servidor**_ ens apareix una notificació indicant que es requereix una confinguració del AD i mostra l’opció de _**Promover este servidor a controlador de dominio**_.
 
   ![](/assets/AD_ins5.png)
 
 Després de la pantalla d'inici de l’assistent hi ha tres opcions: 
-  * **_Afegir l'equip com a controlador de domini a un domini ja existent_**: serveix per afegir un controlador secundari a un domini ja creat. 
-  * **_Afegir un nou domini en un bosc existent_**.
+  * **_Afegir l'equip com a controlador de domini a un domini ja existent_**: serveix per afegir un controlador secundari o de «backup» a un domini ja creat. Això permetrà repartir la càrrega entre els dos servidors i, en cas què el controlador principal caigui, el sistema podrà continuar proporcionant el servei amb el controlador secundari.
+  * **_Afegir un nou domini en un bosc existent_**: 
   * **_Afegir un nou bosc_**.
   
-Com que no tenim encara cap domini creat escollim la tercera opció _**Afegir un nou bosc**_.
+Com es tracta de crear un domini aïllat (sense relació amb altres dominis, ni serà un subdomini, ni tampoc un controlador secundari dins del mateix domini...) escollim la tercera opció _**Afegir un nou bosc**_.
 
-A continuació has d'introduir el nom complet del domini arrel. Aquest nom ha de complir l'estructura DNS (_Domain Name System_) amb sufix inclòs amb el que definirem el nom del bosc i l'espai de noms, per exemple `bosccoma.local`. 
+A continuació has d'introduir el nom complet del domini arrel. Aquest nom ha de complir l'estructura DNS (_Domain Name System_).
+
+El domini no existirà realment a Internet, per tant serà de tipus **.local**,i el nom ha de ser `adxxx.local` (`xxx` són les inicials del vostre nom i cognoms).
 
   ![](/assets/AD_ins6.png)
 
 
 Després ens demana el nivell de funcionalitat del sistema. Sempre escollirem el més alt, a no ser que calgui garantir la compatibilitat amb altres dominis gestionats per versions inferior. 
 
-En el nostre cas, cal seleccionar l'opció "**_Nivell de funcionalitat Windows Server 2012 R2_**" i prem **_Següent_**.
+En el nostre cas, cal seleccionar l'opció "**_Nivell de funcionalitat Windows Server 2016**" i prem **_Següent_**.
 
 L'assistent ens demana ara una **contrasenya **per poder administrar el **Directori Actiu**. En general, encara que poden ser diferents, sol ser convenient posar la mateixa contrasenya que l'administrador de l'equip. 
 
@@ -53,7 +64,7 @@ Introdueix doncs la contrasenya de l'administrador i prem **_Següent_**.
 
 A continuació indicarà que no troba un servidor DNS, però **no cal fer res**; automàticament s'instal·larà el servei de DNS en aquest mateix servidor doncs **cal tenir instal·lat el servei de resolució de noms per al correcte funcionament del Directori Actiu**.
 
-La finestra següent, demanarà el **nom NetBIOS** del domini. Es pot deixar el què proposa per defecte, que serà `BOSCCOMA` (el nom del domini en majúscules i sense .local).
+La finestra següent, demanarà el **nom NetBIOS** del domini. Es pot deixar el què proposa per defecte, que serà `ADXXX` (el nom del domini en majúscules i sense .local).
 
 Després s'ha d'indicar la localització dels arxius bàsics que utilitzarà el Directori Actiu: la carpeta per a base de dades, la carpeta d'arxius de registre i la carpeta SYSVOL que conté els arxius públics del domini que han de ser compartits. Podem deixar les opcions per defecte.
 
@@ -65,7 +76,7 @@ Un cop acabada la instal·lació es **reiniciarà l'equip** perquè el Directori
 
 > Si tot ha funcionat correctament, el nostre equip ja està convertit en un controlador de domini del Directori Actiu per gestionar de forma centralitzada els recursos de la xarxa.
 
-Un cop reiniciat el sistema, en la **pantalla d'inici** de sessió, on demana l'usuari i contrasenya, ja es pot veure un canvi: el nom d'usuari és `BOSCCOMA\Administrador`. 
+Un cop reiniciat el sistema, en la **pantalla d'inici** de sessió, on demana l'usuari i contrasenya, ja es pot veure un canvi: el nom d'usuari és `ADXXX\Administrador`. 
 
 ### Eliminació del domini
 
@@ -94,13 +105,13 @@ Després de  reiniciar, en l'inici de sessió, el nom d'usuari ja no inclou el n
 4. Entreu a la màquina client i **afegiu-la al domini**, canviant el mode de grup de treball al mode de domini. 
   Una forma d'arribar a la configuracio és fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar **_Sistema > Cambiar configuración > Cambiar..._**
   
-5. Cal seleccionar l'opció **_Dominio _**i posar el nom del domini al qual voleu connercar-la (`bosccoma.local`). El nom del domini també es pot posar en el format NetBIOS (`BOSCCOMA`).
+5. Cal seleccionar l'opció **_Dominio _**i posar el nom del domini al qual voleu connercar-la (`adxxx.local`). El nom del domini també es pot posar en el format NetBIOS (`ADXXX`).
   
 6. Si pot connectar amb el servidor, demanarà les credencials de l'administrador del domini. 
 
 7. Si tot ha anat bé, ens indicarà que l'equip s'ha unit al domini però que **cal reiniciar**.
 
-6. Ara entreu a la màquina client i veureu que podeu entrar al domini mitjançant les credencials de l'administrador. L'inici de sessió amb l'usuari de domini es pot fer posant `Administrator@bosccoma.local` o bé `BOSCCOMA\Adminitrator` tal i com s'indica a la [teoria](/UF1/usuaris-grups-i-unitats-organitzatives.html#usuaris-globals).
+6. Ara entreu a la màquina client i veureu que podeu entrar al domini mitjançant les credencials de l'administrador. L'inici de sessió amb l'usuari de domini es pot fer posant `Administrator@adxxx.local` o bé `ADXXX\Adminitrator` tal i com s'indica a la [teoria](/UF1/usuaris-grups-i-unitats-organitzatives.html#usuaris-globals).
 
 7. Finalment, entra al servidor i busca el nou equip a **_Eines administratives > Usuaris i equips de l’Active Directory_**.
 
