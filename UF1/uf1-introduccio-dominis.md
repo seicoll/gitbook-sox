@@ -86,11 +86,16 @@ Cada **equip **que forma part d’un domini tindrà la categoria de subdomini i 
 L’estructura del servei de directori està constituïda per diferents elements: 
 
 * **Objecte**: Entitats en el directori (usuaris, ordinadors, encaminadors, impressores, ...).
-* **Domini (_Domain_)**: És l'element central i consisteix bàsicament en un conjunt d'objectes identificats per un nom de tipus DNS (Domain Name System).
-* **Arbre**: És un conjunt de dominis que s’estructuren jeràrquicament i comparteixen recursos, clients i un sistema de resolució de noms. 
-* **Bosc (_Forest_)**: Si el conjunt de dominis no comparteixen un nom d’arrel comú, s’anomen bosc. Per tant, un bosc és un conjunt d’arbres de domini.
 
-Aquesta estructura facilita la cerca i l'accés als recursos dins de l'arbre formant un espai que compateix un nom d'arrel únic. 
+* **Domini (_Domain_)**: És l'element central i consisteix bàsicament en un conjunt d'objectes identificats per un nom de tipus DNS (Domain Name System).
+
+* **Arbre**: És un conjunt de dominis que s’estructuren jeràrquicament i comparteixen recursos, clients i un sistema de resolució de noms. Conté un domini principal i subdominis (domini.com, www.domini.com, ftp.domini.com).
+
+![](/assets/ArbreDomini.svg)
+
+* **Bosc (_Forest_)**: Si el conjunt de dominis no comparteixen un nom d’arrel comú, s’anomena bosc. Per tant, un bosc és un conjunt d’arbres de domini.
+
+![](/assets/BoscDomini.svg)
 
 **Per exemple:**
 * `institut1.local` i `aula1.institut1.local` és un arbre AD amb 2 dominis.
@@ -98,3 +103,9 @@ Aquesta estructura facilita la cerca i l'accés als recursos dins de l'arbre for
 * Tots 3 poden estar dins el mateix bosc.
 
 > IMATGE
+
+# Documentació i recursos
+
+* **Introducció al dominis**. Apunts de Pere Sánchez: [http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=0.1.12](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=0.1.12)
+
+
