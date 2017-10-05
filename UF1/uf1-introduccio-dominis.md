@@ -89,7 +89,9 @@ L’estructura del servei de directori està constituïda per diferents elements
 
 * **Domini (_Domain_)**: És l'element central i consisteix bàsicament en un conjunt d'objectes identificats per un nom de tipus DNS (Domain Name System).
 
-* **Arbre**: És un conjunt de dominis que s’estructuren jeràrquicament i comparteixen recursos, clients i un sistema de resolució de noms. Conté un domini principal i subdominis (domini.com, www.domini.com, ftp.domini.com).
+* **Arbre**: És un conjunt de dominis que s’estructuren jeràrquicament i comparteixen recursos, clients i un sistema de resolució de noms. 
+
+La següent imatge representa un arbre que conté un domini principal (sapa.cat) i subdominis ( www.sapa.cat, ftp.sapa.cat).
 
 ![](/assets/ArbreDomini.svg)
 
