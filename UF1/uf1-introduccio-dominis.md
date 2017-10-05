@@ -97,13 +97,6 @@ L’estructura del servei de directori està constituïda per diferents elements
 
 ![](/assets/BoscDomini.svg)
 
-**Per exemple:**
-* `institut1.local` i `aula1.institut1.local` és un arbre AD amb 2 dominis.
-* `institut1.local` i `institut2.local` són dos arbres amb dos dominis 
-* Tots 3 poden estar dins el mateix bosc.
-
-> IMATGE
-
 # Documentació i recursos
 
 * **Introducció al dominis**. Apunts de Pere Sánchez: [http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=0.1.12](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=0.1.12)
