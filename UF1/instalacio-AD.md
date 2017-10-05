@@ -6,7 +6,7 @@
 **
 Configurar el nom del servidor**
 
-El nom ha de ser `wsxxx` (`xxx` són les inicials del vostre nom).
+El nom ha de ser `wsxxx` (`xxx` són les inicials del vostre nom i cognoms).
 
 > **ATENCIÓ**: és molt important assegurar-se que el nom del servidor sigui correcte, ja que un cop configurat com a controlador de domini, el nom no s'ha de canviar
 
