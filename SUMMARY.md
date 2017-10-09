@@ -14,15 +14,13 @@
     * [Perfils d'usuaris](UF1/perfils-usuari.md)
     * [Directives de grup](UF1/directives-de-grup.md)
     
-<!---
-  * [Activitats](UF1/uf1-activitats.md)
-    * [Activitat 1. Instal·lació Windows Server 2012](UF1/act/act1-instalacio.md)
-    * [Activitat 2. Administració i supervisió de Windows Server 2012](UF1/act/act2-supervisio.md)
-    * [Activitat 3. Instal·lació d'Active Directory](UF1/act/act3-instalacio-AD.md)
-    * [Activitat 4. Administració d'Active Directory](UF1/act/act4-administracio-AD.md)
-    * [Activitat 5. Polítiques de grup d'Active Directory](UF1/act/act5-GPO-AD.md)
-    * [Qüestionari](UF1/act/uf1-questionari.md)
--->
+<!---  * [Activitats](UF1/uf1-activitats.md) -->
+<!---    * [Activitat 1. Instal·lació Windows Server 2012](UF1/act/act1-instalacio.md) -->
+<!---    * [Activitat 2. Administració i supervisió de Windows Server 2012](UF1/act/act2-supervisio.md) -->
+<!---    * [Activitat 3. Instal·lació d'Active Directory](UF1/act/act3-instalacio-AD.md) -->
+<!---    * [Activitat 4. Administració d'Active Directory](UF1/act/act4-administracio-AD.md) -->
+<!---    * [Activitat 5. Polítiques de grup d'Active Directory](UF1/act/act5-GPO-AD.md) -->
+<!---    * [Qüestionari](UF1/act/uf1-questionari.md) -->
 
 ### UF2. Sistemes operatius lliures en xarxa
 <!---  * [**Introducció als sistemes operatius Linux](UF2/uf2-introduccio.md) -->
