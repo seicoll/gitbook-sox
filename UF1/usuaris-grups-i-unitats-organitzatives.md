@@ -242,10 +242,11 @@ Les seves principals **funcions** són :
 ### Unitats organitzatives predeterminades
 
 Les principals unitats organitzatives que ja estan creades són:
-**Builtin:** conté els grups locals
-**Computers:** les màquines unides al domini
-**Domain Controllers:** els controladors de domini
-**Users:** usuaris i grups per defecte del domini
+
+* **Builtin:** conté els grups locals
+* **Computers:** les màquines unides al domini
+* **Domain Controllers:** els controladors de domini
+* **Users:** usuaris i grups per defecte del domini
 
 Per evitar barrejar els usuaris i grups de l'empresa amb els que ja té Windows per defecte, pot ser convenient crear una unitat organitzativa en el primer nivell (just per sota de l'arrel del domini) i crear a dins les nostres pròpies unitats organitzatives (Grups i Usuaris).
 
