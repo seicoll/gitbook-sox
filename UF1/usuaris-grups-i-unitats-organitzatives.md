@@ -113,7 +113,7 @@ Altres opcions de la compte d'usuari:
  
 * **L’usuari ha de canviar la contrasenya en el següent inici de sessió**. 
   * Si activem aquesta opció, quan l’usuari es connecti per primera vegada li exigirà un canvi obligatori de contrasenya. Li demanarà la contrasenya anterior (per tant l’haurà de conèixer i la nova.
-* **L´usuari no pot canviar la contrassenya**.
+* **L'usuari no pot canviar la contrassenya**.
   * A diferència del cas anterior, ara l’administrador sí que coneix la clau d’accés del nou usuari. En el cas anterior, l’administrador coneixerà la primera clau (l’haurà donada ell) però quan el usuari la canviï no coneixerà el nou password. Aquest fet no afecta per res a la gestió que l’administrador faci de les contrasenyes, ja que, encara que no la conegui, la podrà modificar i fins i tot borrar. 
 * **La contrasenya mai caduca**. 
   * Si no marquem aquesta casella, la contrasenya caducarà, per defecte, al cap de 42 dies.
@@ -123,9 +123,11 @@ Altres opcions de la compte d'usuari:
   
   ![](/assets/AD_usuari_hores.png)
   
-També podem realitzar tasques en un compte, com eliminar-lo, deshabilitar-lo, restablir la contrassenya, etc.
+També podem realitzar **tasques** en un compte, com eliminar-lo, deshabilitar-lo, restablir contrassenya, etc.
 * **Tasques > Deshabilitar**. 
-  *Permet que un usuari no es pugui connectar sense haver d’esborrar el compte amb totes les dades que contenia. Això es fa quan volem denegar l’accés temporalment.
+  * Serveix per deshabilitar una compte temporalment. Permet que un usuari no es pugui connectar sense haver d’esborrar el compte amb totes les dades que contenia. 
+* **Tasques > Restablir contrassenya**
+  * Serveix per canviar la contrasenya a un usuari. Es sol utilitzar quan un usuari no recorda la seva contrasenya. 
 
 > Les **contrasenyes **en **Windows Server** han de tenir un mínim de 7 caràcters amb al menys una lletra majúscula, una minúscula i un número.
 
