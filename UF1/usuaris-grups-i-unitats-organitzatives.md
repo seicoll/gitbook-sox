@@ -99,7 +99,7 @@ L’**inici de sessió** al domini utilitzant un usuari global por fer-se de due
 A l'inici de sessió en qualsevol **equip del domini** utilitzant un compte d'usuari global, l'ordinador en qüestió realitzarà una **consulta al Directori Actiu** per validar les credencials de l'usuari.
 El resultat de la validació és enviat a l'equip on s'està iniciant la sessió, concedint o rebutjant la connexió.
 
-### Creació d'usuaris globals
+#### Creació d'usuaris globals
 
 1. Ves a l’_**Administrador del servidor > Herramientas > Centro de administración de Active Directory**_
 2. Situa't **sobre l'arrel del domini o una unitat organitzativa** on vulguis crear l'usuari i en el menú de la dreta selecciona l'opció **Nou > Usuari**.
@@ -141,7 +141,7 @@ També podem realitzar **tasques** en un compte, com eliminar-lo, deshabilitar-l
 
 > Les **contrasenyes **en **Windows Server** han de tenir un mínim de 7 caràcters amb al menys una lletra majúscula, una minúscula i un número.
 
-### Creació de plantilles d'usuaris
+#### Creació de plantilles d'usuaris
 
 Una de les tasques més repetitives en l’administració de Sistemes Operatius és la creació de comptes d’usuari que acostumen a tenir molts valors de configuració similars.
 
@@ -155,7 +155,7 @@ Les **plantilles de comptes d’usuaris** ens ajuden en aquesta tasca ja que só
   
   3. Finalment, **personalitzem el nou compte** amb el nom, cognoms, contrasenya, etc. particulars però la resta de treball de configuració ja estarà realitzat.
   
-### Configurar varis usuaris simultàniament
+#### Configurar varis usuaris simultàniament
 
 Algunes opcions de les propietats d'un usuari es poden modificar en diversos usuaris simultàniament. Per fer-ho només cal seleccionar tots els usuaris en els que es vulgui canviar algun paràmetre, i amb el botó secundari triar l'opció **_Propiedades_**.
 
