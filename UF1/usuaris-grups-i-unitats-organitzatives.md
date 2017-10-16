@@ -116,7 +116,12 @@ Altres opcions de la compte d'usuari:
 * **L´usuari no pot canviar la contrassenya**.
   * A diferència del cas anterior, ara l’administrador sí que coneix la clau d’accés del nou usuari. En el cas anterior, l’administrador coneixerà la primera clau (l’haurà donada ell) però quan el usuari la canviï no coneixerà el nou password. Aquest fet no afecta per res a la gestió que l’administrador faci de les contrasenyes, ja que, encara que no la conegui, la podrà modificar i fins i tot borrar. 
 * **La contrasenya mai caduca**. 
-  * Si no marquem aquesta casella, la contrasenya caducarà, per defecte, al cap de 42 dies. 
+  * Si no marquem aquesta casella, la contrasenya caducarà, per defecte, al cap de 42 dies.
+   
+* **Hores d'inici de sessió**
+  * Permet definir els dies i hores en els que pot iniciar sessió.  
+  
+  ![](/assets/AD_usuari_hores.png)
   
 També podem realitzar tasques en un compte, com eliminar-lo, deshabilitar-lo, restablir la contrassenya, etc.
 * **Tasques > Deshabilitar**. 
