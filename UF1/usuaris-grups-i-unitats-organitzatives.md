@@ -210,10 +210,11 @@ En dominis Windows Server els grups es poden definir en **tres àmbits** diferen
   
 ### Creació de grups
 
-1. Ves al **_Administrador del Servidor > Usuaris i equips del Directori Actiu_**.
-2. Situa't **sobre l'arrel del domini o una unitat organitzativa** on vulguis crear grup i obre el menú contextual amb el botó dret del ratolí. 
-3. Selecciona l'opció **Nou > Unitat Organitzativa**. 
+1. Ves a l’_**Administrador del servidor > Herramientas > Centro de administración de Active Directory**_.
+2. Situa't **sobre l'arrel del domini o una unitat organitzativa** on vulguis crear grup i al menú de la dreta selecciona l'opció **Nou > Grup**. 
 4. Ara has d'**introduir el nom del grup** i seleccionar l'**àmbit** i el **tipus **de grup.
+
+![](/assets/ADNewGroup.png)
 
 ## Unitats Organitzatives (UO)
 
