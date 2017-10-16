@@ -27,14 +27,15 @@ Els **objectes **que administra un domini són:
 * **Unitats organitzatives (UO)** 
   * Són objectes de directori que contenen altres objectes com usuaris, grups, equips o altres unitats organitzatives.
 
+## Centre d'administració de Active Directory
 
-## Eines per a l’administració del domini
+El **centre d'administració de Active Directory** permet administrar els objectes de Active Directory de forma gràfica.
 
-Per accedir a les eines que permeten la gestió del Directori Actiu cal anar a _**Administrador del servidor > Herramientas > Usuarios y equipos de Active Directory**_
+Per accedir-hi cal anar a _**Administrador del servidor > Herramientas > Centro de administración de Active Directory**_
 
 En aquesta pantalla podrem administrar els usuaris globals, grups i equips del domini.
 
-![Usuarios y equipos de Active Directory](/assets/users_active_directori.png)
+![](/assets/AD_Centre_administracio.png)
 
 ## Equips
 
