@@ -139,7 +139,6 @@ Seleccionem compte la que volem modificar i amb botó dret farem **propiedades**
 ![Usuaris propietats](/assets/user_propietats.png)
 
 Això és el que podem fer a les pestanyes més significatives:
-* **_General_**: Dades identificatives del usuari.
 * **_Cuenta_**: Nom d’inici de sessió, restricció d’inici de sessió, opcions de contrasenya, caducitat del compte i dies hores en què pot iniciar sessió.
   * Hores de inici de sessió, podem indicar a quines hores cada usuari podrà connectar-se.
 * **_Miembro de_**: A quins grups pertany l'usuari.
