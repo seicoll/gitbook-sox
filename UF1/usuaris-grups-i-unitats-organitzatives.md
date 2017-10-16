@@ -52,7 +52,7 @@ Entre altres dades, el compte d'equip que cada ordinador té al domini inclou el
 
 Aquesta contrasenya es genera automàticament quan s'agrega l'equip al domini, i es canvia automàticament cada 30 dies.
 
-## Comptes d'usuari
+## Usuaris
 
 En un sistema en xarxa cada persona que tingui accés al sistema requereix d'un compte d'usuari que l'identifiqui amb **un nom únic de compte (login)** i una **contrasenya (password)**. 
 
@@ -99,7 +99,7 @@ L’**inici de sessió** al domini utilitzant un usuari global por fer-se de due
 A l'inici de sessió en qualsevol **equip del domini** utilitzant un compte d'usuari global, l'ordinador en qüestió realitzarà una **consulta al Directori Actiu** per validar les credencials de l'usuari.
 El resultat de la validació és enviat a l'equip on s'està iniciant la sessió, concedint o rebutjant la connexió.
 
-#### Creació d'usuaris globals
+### Creació d'usuaris globals
 
 1. Ves a l’_**Administrador del servidor > Herramientas > Centro de administración de Active Directory**_
 2. Situa't **sobre l'arrel del domini o una unitat organitzativa** on vulguis crear l'usuari i en el menú de la dreta selecciona l'opció **Nou > Usuari**.
