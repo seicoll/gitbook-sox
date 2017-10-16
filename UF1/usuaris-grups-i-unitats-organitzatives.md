@@ -108,11 +108,6 @@ En aquesta pantalla introduirem:
 * **_Nombre_** i **_Apellidos_**: Nom de l'usuari (que no és el login) i les inicials per identificar l’usuari. 
 * _**Nombre completo**_: s’omplirà automàticament. 
 * _**Inicio de sesión UPN de usuario**_: El login de usuari que ens permetrà iniciar sessió al sistema (ja sigui des d’un client o des del propi servidor).
-* _**Nombre de inicio anterior a Windows 2000**_: Aquesta opció serveix per tal que l’usuari pugui iniciar sessió en un domini Windows NT4.0 Server amb el que s’han establert relacions de confiança. 
-
-Premem **_Siguiente_** i apareix una pantalla de **contrasenyes: **
-
-![Nou usuari](/assets/usuari_contrassenyes.png)
 
 Disposem de diverses opcions: 
 * **L’usuari ha de canviar la contrasenya en el següent inici de sessió**. 
