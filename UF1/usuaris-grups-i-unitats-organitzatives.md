@@ -85,6 +85,8 @@ Es poden **crear usuaris locals** en un equip anant a _**Inici > Eines Administr
 
 Els comptes d'**usuari del domini o usuaris globals** s'emmagatzemen en el directori actiu i per tant són coneguts per tots els ordinadors del domini.
 
+#### Inici de sessió
+
 L’**inici de sessió** al domini utilitzant un usuari global por fer-se de dues formes:
 * Nom NetBios del domini seguit del símbol “\” i nom d’usuari: 
 
