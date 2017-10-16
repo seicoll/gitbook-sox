@@ -104,7 +104,15 @@ El resultat de la validació és enviat a l'equip on s'està iniciant la sessió
 
 ![](/assets/AD_usuri_nou.png)
 
-En aquesta pantalla introduirem: 
+Les dades d'un usuari es divideixen en diferents seccions:
+
+* **_Cuenta_**: Nom d’inici de sessió, restricció d’inici de sessió, opcions de contrasenya, caducitat del compte i dies hores en què pot iniciar sessió.
+* Hores de inici de sessió, podem indicar a quines hores cada usuari podrà connectar-se.
+* **_Miembro de_**: A quins grups pertany l'usuari.
+* **_Perfil_**: permet configurar alguns paràmetres del perfil, com ara la carpeta on es guarden els perfils, una carpeta personal o un script d'inici de sessió.
+* **_Control remoto_**: permet habilitar el control remot de la sessió del usuari.
+
+En la secció **_Cuenta_** introduirem: 
 * **_Nombre_** i **_Apellidos_**: Nom de l'usuari (que no és el login) i les inicials per identificar l’usuari. 
 * _**Nombre completo**_: s’omplirà automàticament. 
 * _**Inicio de sesión UPN de usuario**_: El login de usuari que ens permetrà iniciar sessió al sistema (ja sigui des d’un client o des del propi servidor).
@@ -131,20 +139,6 @@ També podem realitzar **tasques** en un compte, com eliminar-lo, deshabilitar-l
 
 > Les **contrasenyes **en **Windows Server** han de tenir un mínim de 7 caràcters amb al menys una lletra majúscula, una minúscula i un número.
 
-#### Modificació d'usuaris globals
-
-Un cop creats els usuaris es poden fer moltes modificacions.
-Seleccionem compte la que volem modificar i amb botó dret farem **propiedades**.
-
-![Usuaris propietats](/assets/user_propietats.png)
-
-Això és el que podem fer a les pestanyes més significatives:
-* **_Cuenta_**: Nom d’inici de sessió, restricció d’inici de sessió, opcions de contrasenya, caducitat del compte i dies hores en què pot iniciar sessió.
-  * Hores de inici de sessió, podem indicar a quines hores cada usuari podrà connectar-se.
-* **_Miembro de_**: A quins grups pertany l'usuari.
-* **_Perfil_**: permet configurar alguns paràmetres del perfil, com ara la carpeta on es guarden els perfils, una carpeta personal o un script d'inici de sessió.
-* **_Control remoto_**: permet habilitar el control remot de la sessió del usuari.
-
 ### Creació de plantilles d'usuaris
 
 Una de les tasques més repetitives en l’administració de Sistemes Operatius és la creació de comptes d’usuari que acostumen a tenir molts valors de configuració similars.
@@ -155,9 +149,19 @@ Les **plantilles de comptes d’usuaris** ens ajuden en aquesta tasca ja que só
 
   1. En primer lloc es crea un compte d’usuari normal amb tots els valors de configuració, permisos, pertinences a grups, etc. corresponents a un tipus d’usuari en concret. Per exemple “professors” i guardem aquest compte amb un nom com **_Plantilla_Professor_**.
   
-  2. Cada vegada que haguem de donar d’alta un comercial, **farem un còpia d’aquest usuari** i així el nou usuari hereda tota la configuració original de la plantilla.
+  2. Cada vegada que haguem de donar d’alta un professor, **farem un còpia d’aquest usuari** i així el nou usuari agafa tota la configuració original de la plantilla excepte el nom, l'identificador i la contrasenya.
   
   3. Finalment, **personalitzem el nou compte** amb el nom, cognoms, contrasenya, etc. particulars però la resta de treball de configuració ja estarà realitzat.
+  
+### Configurar varis usuaris simultàniament
+
+Algunes opcions de les propietats d'un usuari es poden modificar en diversos usuaris simultàniament. Per fer-ho només cal seleccionar tots els usuaris en els que es vulgui canviar algun paràmetre, i amb el botó secundari triar l'opció **_Propiedades_**.
+
+Només es veuen algunes seccions de la compte d'ususari perquè no es poden canviar totes les propietats per diversos usuaris simultàniament (algunes propietats, com per exemple el nom, identificador... no es poden repetir en més d'un usuari).
+
+Per poder canviar una propietat, abans cal seleccionar la casella que hi ha al davant. Després, els canvis que es facin en aquesta propietat s'aplicaran a tots els usuaris seleccionats, mentre que les que no s'hagin marcat quedaran sense modificar (cada usuari mantindrà les que tenia).
+
+![](/assets/AD_usuaris_varis.png)
 
 ## Grups 
 
