@@ -99,11 +99,10 @@ El resultat de la validació és enviat a l'equip on s'està iniciant la sessió
 
 #### Creació d'usuaris globals
 
-1. Ves a l’_**Administrador del Servidor > Usuaris i equips de Active Directory.**_
-2. Situa't **sobre l'arrel del domini o una unitat organitzativa** on vulguis crear l'usuari i obre el menú contextual amb el botó dret del ratolí. 
-3. Selecciona l'opció **Nou > Usuari**.
+1. Ves a l’_**Administrador del servidor > Herramientas > Centro de administración de Active Directory**_
+2. Situa't **sobre l'arrel del domini o una unitat organitzativa** on vulguis crear l'usuari i en el menú de la dreta selecciona l'opció **Nou > Usuari**.
 
-![Nou usuari](/assets/usuari_nou.png)
+![](/assets/AD_usuri_nou.png)
 
 En aquesta pantalla introduirem: 
 * **_Nombre de pila_** i **_Apellidos_**: Nom de l'usuari (que no és el login) i les inicials per identificar l’usuari. 
