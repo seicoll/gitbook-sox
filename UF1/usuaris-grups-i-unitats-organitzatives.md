@@ -221,6 +221,16 @@ En dominis Windows Server els grups es poden definir en tres àmbits diferents:
 
 ![](/assets/ADNewGroup.png)
 
+### Gestió de grups
+
+Les opcions més importatns que podem fer amb un grup, a part de poder esborrar o moure un grup, es troben a **Propiedades**:
+
+* **Miembros:** en aquesta secció es poden veure els membres que pertanyen a aquest grup i també es poden afegir altres membres o treure'ls del grup.
+
+* **Miembro de:** serveix per veure a quins grups pertany aquest grup i afegir-lo a altres grups o treure'l.
+
+![](/assets/ADNewGroupMember.png)
+
 ## Unitats Organitzatives (UO)
 
 Les **unitats organitzatives (OU)** són objectes contenidors del directori actiu que agrupen altres objectes com a usuaris, grups, equips i altres unitats organitzatives. 
