@@ -197,16 +197,21 @@ Al directori actiu es poden crear **dos tipus de grups**:
 
 Quan es crea un grup se li assigna un **àmbit** que determini la visibilitat dins del domini.
 
-En dominis Windows Server els grups es poden definir en **tres àmbits** diferents: 
-* **Grups d’àmbit local**: 
+En dominis Windows Server els grups es poden definir en tres àmbits diferents: 
+* **Grups d'àmbit local**: 
   * Només són visibles en el domini en què es creen. 
-  * Només es poden assignar permisos sobre recursos del mateix domini en el que es crea el grup.
-* **Grups d’àmbit global**: 
-  * Són visibles en tots els dominis del bosc. 
-  * Poden contenir usuaris del mateix domini i els permisos concedits a aquest grup tenen validesa en qualsevol domini.
-* **Grups d’àmbit universal**: 
+  * Només es poden assignar permisos sobre **recursos del mateix domini** en el que es crea el grup.
+  
+  
+* **Grups d'àmbit global**: 
+  * Són visibles en tots els dominis del bosc. Els permisos concedits a aquest grup tenen validesa en qualsevol domini.
+  * Només se li poden assignar permisos sobre **recursos que pertanyin a dominis del bosc**.
+  
+  
+* **Grups d'àmbit universal**: 
   * Són visibles a tot el bosc. 
   * Poden tenir membres procedents de qualsevol domini.
+  * Se li poden assignar permisos sobre **recursos de qualsevol domini o bosc.**
   
 ### Creació de grups
 
@@ -260,3 +265,7 @@ La creació d'unitats organitzatives és molt senzilla:
 5. Apareixerà un nou contenidor al menú i ara ja pots **crear nous objectes** (usuaris, grups, equips, etc.) en aquesta nova unitat organitzativa **o bé moure objectes ja existents** senzillament arrossegant des d'altres contenidors.
 
 > Per poder **esborrar o moure la Unitat Organitzativa** cal prémer sobre Ver i activar l’opció _Característiques avançades_. Després a les _Propietats_ de la UO apareix una pestanya _Objecte_ on es pot desactivar la casella _Protegir contenidor contra esborrat accidental_. I ara sí es pot eliminar la UO.
+
+## Documentació i recursos
+
+*  **MSDN: Ámbito de grupo. ** [https://msdn.microsoft.com/es-es/library/cc755692.aspx](https://msdn.microsoft.com/es-es/library/cc755692.aspx)
