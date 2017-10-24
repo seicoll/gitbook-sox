@@ -18,8 +18,8 @@
     * [Activitat 2. Supervisió de Windows Server](https://drive.google.com/open?id=1aZatpgwGRXZ65yfxLJHetD_sjlh9s_9upYWcs7rdSEo) 
     * [Activitat 3. Instal·lació d'Active Directory](Uhttps://drive.google.com/open?id=16Ddp_d43bT3go725VozfLP06ObiSW13Jx7t4y44qraY) 
     * [Activitat 4. Administració d'Active Directory](https://drive.google.com/open?id=1dXKgtlbsv7Tt4r8mJhoBh9EZkhFVR1rbRmkG82HdAUA)
-<!---    * [Activitat 5. Polítiques de grup d'Active Directory](UF1/act/act5-GPO-AD.md) -->
-  * [Qüestionari](UF1/act/uf1-questionari.md) 
+    * [Activitat 5. Polítiques de grup d'Active Directory](https://drive.google.com/open?id=1rzo-XJakvzQSfTHgQG_WttA6heeOmwc2IjpS9F9aTDg)
+    * [Qüestionari](UF1/act/uf1-questionari.md) 
 
 ### UF2. Sistemes operatius lliures en xarxa
 <!---  * [**Introducció als sistemes operatius Linux](UF2/uf2-introduccio.md) -->
