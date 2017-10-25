@@ -5,6 +5,7 @@
 > El **perfil d'un usuari** és un conjunt de dades que serveixen per personalitzar l'entorn de treball d'aquest usuari.
 
 Aquestes dades inclouen:
+
 * En **quina carpeta es guarda la configuració** que l'usuari fa del seu entorn de treball (fons de l'escriptori, mida de les icones, la lletra del sistema, configuració del teclat i ratoli...).
 * En **quina carpeta es guardaran els seus arxius** personals. Només ell hi podrà accedir.
 * **Quin script s'executarà cada cop que l'usuari iniciï sessió**. Pot servir entre altres coses per què l'usuari pugui accedir a impressores i carpetes compartides
@@ -32,10 +33,10 @@ Si no es configura la carpeta de perfil, en cada màquina se li crearà un **per
 
 Si es vol configurar els **perfils mòbils**, primer de tot cal crear en el **servidor** la carpeta on es guardaran les carpetes de perfil de cada usuari i posar els permisos adequats:
 
-> En aquesta carpeta, és convenient no posar espais, accents, ñ, ç o altres símbols prohibits (*, ?) o que puguin dificultar l'accés a aquestes carpetes des d'altres sistemes operatius. 
+> En el **nom carpeta** dels perfils, és convenient no posar espais, accents, ñ, ç o altres símbols prohibits (*, ?) o que puguin dificultar l'accés a aquestes carpetes des d'altres sistemes operatius. 
 El millor és utilitzar exclusivament lletres, números i/o guió baix (_).
 
-> A més, si es canvia el nom de la carpeta, caldrà tornar-la a compartir, i si canvia el nom de recurs compartit s'hauran de tornar a configurar els perfils!
+> A més, **si es canvia el nom de la carpeta**, caldrà tornar-la a compartir, i si canvia el nom de recurs compartit s'hauran de tornar a configurar els perfils!
 
 Un cop creada la carpeta cal posar els **permisos** adequats:
 
