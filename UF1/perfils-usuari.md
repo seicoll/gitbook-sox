@@ -24,18 +24,20 @@ Si no es configura la carpeta de perfil, en cada màquina se li crearà un **per
 * **Perfil Obligatori**: l'usuari pot fer canvis però s'esborren al tancar la sessió.
 * **Perfil Súper-obligatori**: si no es pot carregar el perfil, no es pot iniciar sessió.
 
+> Els perfils mòbils són molt útils però també tenen inconvenients: augmenten molt el tràfic de xarxa i, si falla la xarxa o el servidor, els usuaris no podran accedir als seus arxius.
+
 ## Configuració de perfils d'usuaris
 
 ### Creació de la carpeta per guardar els perfils
 
-Si es vol crear perfils mòbils, primer de tot cal crear en el servidor la carpeta on es guardaran les carpetes de perfil de cada usuari i posar els permisos adequats:
+Si es vol configurar els **perfils mòbils**, primer de tot cal crear en el **servidor** la carpeta on es guardaran les carpetes de perfil de cada usuari i posar els permisos adequats:
 
 > En aquesta carpeta, és convenient no posar espais, accents, ñ, ç o altres símbols prohibits (*, ?) o que puguin dificultar l'accés a aquestes carpetes des d'altres sistemes operatius. 
 El millor és utilitzar exclusivament lletres, números i/o guió baix (_).
 
 > A més, si es canvia el nom de la carpeta, caldrà tornar-la a compartir, i si canvia el nom de recurs compartit s'hauran de tornar a configurar els perfils!
 
-Un cop creada la carpeta:
+Un cop creada la carpeta cal posar els **permisos** adequats:
 
 1. Clicar amb el botó dret sobre la carpeta determinada i seleccionar **_Propiedades_**
 
@@ -60,11 +62,11 @@ Un cop creada la carpeta:
 
 Si es vol què els usuaris tinguin una **carpeta privada** en el servidor, cal crear una carpeta on es posaran les seves carpetes privades.
 
-Aquesta carpeta ha de tenir els mateixos permisos que la de perfils.
+Aquesta carpeta ha de tenir els mateixos permisos que la de **_perfils_**.
   
 ### Compartició de les carpetes
 
-Les carpetes anteriors (perfils i privades) **s'han de compartir** de forma que tothom tingui control total (els permisos necessaris per cada usuari concret s'han d'haver configurat en els permisos de seguretat):
+Les carpetes anteriors (**_perfils_** i **_privades_**) **s'han de compartir** de forma que tothom tingui control total (els permisos necessaris per cada usuari concret s'han d'haver configurat en els permisos de seguretat):
 
 * Clicar amb el botó dret sobre la carpeta determinada i seleccionar **_Propiedades_**
 * Entrar a la pestanya **_Compartir _**i clicar el botó **_Uso compartido avanzado_**
@@ -78,10 +80,33 @@ La ruta per accedir de forma remota a una carpeta compartida es pot veure a l'ap
 Seleccionar l'usuari i amb el botó secundari, es tria l'opció **_Propiedades _**i s'entra a la pestanya **_Perfil_**.
 
 * **_Ruta de acceso al perfil_**: ha de ser la carpeta que s'ha compartit per guardar els perfils més l'identificador de l'usuari o `%username%`.
-  * Per exemple: `\\IP_SERVIDOR\Perfils\%username%` o bé `\\NOM_SERVIDOR\Perfils\%username%`
+  * Per exemple: `\\WSXXX\Perfils\%username%` o bé `\\IP_SERVIDOR\Perfils\%username%`
 
 * **_Carpeta particular_**: ha de ser la carpeta que s'ha compartit per guardar les carpetes particulars més l'identificador del l'usuari o `%username%`. També s'ha indicar la lletra de la unitat se xarxa a la què es connectarà aquesta carpeta en la màquina client.
-* **_Script de inicio de sessión_**: no s'ha de posar la ruta. Les màquines unides al domini ja saben on trobar-lo: `\\NOM_SERVIDOR\netlogon`.
+* **_Script de inicio de sessión_**: no s'ha de posar la ruta. Les màquines unides al domini ja saben on trobar-lo: `\\WSXXX\netlogon`.
 
 > La **carpeta de perfil** per cada usuari no es crearà fins què l'usuari es validi per primera vegada.
 > La **carpeta privada** de cada usuari es crearà en quant es faci clic a **_Aceptar_**.
+
+### Comprovació de la carpeta de perfil mòbil
+
+En el **client**, iniciar sessió amb un usuari del domini a qui se li ha configurat el perfil mòbil.
+Si surt un error indicant que s'ha creat un perfil temporal, dos possibles errors són:
+* No s'ha trobat la ruta cap a la carpeta del perfil de l'usuari en el servidor
+* Els permisos de la carpeta de perfil de l'usuari no són correctes.
+
+Si no surt cap error, en la carpeta de perfils del servidor apareixerà una carpeta per l'usuari. Aquesta carpeta pot tenir la extensió **_.V2_** depenent de la versió de sistema operatiu que tingui la màquina client (Windows XP, Windows 8.1...).
+
+Si s'han fet canvis en el perfil, es guarden al tancar la sessió. Al tornar a entrar des de qualsevol màquina del domini, els canvis s'han de mantenir.
+
+### Comprovació de la carpeta privada
+
+Un cop iniciada la sessió en el **client**, l'usuari ha de veure una unitat de xarxa (la que s'hagi configurat en el perfil) i ha de poder entrar, crear, esborrar i modificar arxius i carpetes.
+
+Si no apareix la unitat de xarxa, segurament és per què no s'ha trobat la ruta. Cal revisar la ruta de la carpeta privada que s'ha configurat en el perfil.
+
+Si no es poden crear arxius, carpetes... s'han de revisar els permisos de la carpeta privada, tant els de seguretat com els de compartició.
+
+## Document i recursos
+
+* **Font d'informació: ** Apunts SOX Pere Sánchez ([http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17))
