@@ -108,6 +108,6 @@ Si no apareix la unitat de xarxa, segurament és per què no s'ha trobat la ruta
 
 Si no es poden crear arxius, carpetes... s'han de revisar els permisos de la carpeta privada, tant els de seguretat com els de compartició.
 
-## Document i recursos
+## Documentació i recursos
 
 * **Font d'informació: ** Apunts SOX Pere Sánchez ([http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17))
