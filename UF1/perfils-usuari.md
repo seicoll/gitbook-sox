@@ -102,9 +102,9 @@ Si surt un error indicant que s'ha creat un perfil temporal, dos possibles error
 * No s'ha trobat la ruta cap a la carpeta del perfil de l'usuari en el servidor
 * Els permisos de la carpeta de perfil de l'usuari no són correctes.
 
-Si no surt cap error, en la carpeta de perfils del servidor apareixerà una carpeta per l'usuari. Aquesta carpeta pot tenir la extensió **_.V2_** depenent de la versió de sistema operatiu que tingui la màquina client (Windows XP, Windows 8.1...).
+Si no surt cap error, en la carpeta de perfils del servidor apareixerà una carpeta per l'usuari. Aquesta carpeta pot tenir la extensió **_.V6_** depenent de la versió de sistema operatiu que tingui la màquina client (Windows XP, Windows 8.1, Windows 10, etc).
 
-Si s'han fet canvis en el perfil, es guarden al tancar la sessió. Al tornar a entrar des de qualsevol màquina del domini, els canvis s'han de mantenir.
+Si s'han fet canvis en el perfil, es guarden al tancar la sessió. Al tornar a entrar des de **qualsevol màquina del domini**, els canvis s'han de mantenir.
 
 ### Comprovació de la carpeta privada
 
