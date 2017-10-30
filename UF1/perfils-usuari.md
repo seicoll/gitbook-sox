@@ -52,9 +52,9 @@ Un cop creada la carpeta cal posar els **permisos** adequats:
 
 5. A cada un dels següents usuaris, se li han de donar els permisos necessaris clicant el botó     
 **_Agregar > Seleccionar una entidad de seguridad_**:
-  * **Administador**: aplicar permisos sobre aquest directori, els subdirectoris i els fitxers i marcar la casella **control total**.
+  * **Administador (Administrator)**: aplicar permisos sobre aquest directori, els subdirectoris i els fitxers i marcar la casella **control total**.
   * **Propietari (CREATOR OWNER)**: aplicar permisos sobre els subdirectoris i els fitxers i marcar la casella **control total**.
-  * **Usuaris del domini**: aplicar els següents permisos però només sobre aquest directori (clicar **_Mostrar permisos avanzados_**):
+  * **Usuaris del domini (Domain Users)**: aplicar els següents permisos però només sobre aquest directori (clicar **_Mostrar permisos avanzados_**):
     * Permís per travessar aquest directori / executar arxius
     * Permís per mostrar carpeta / llegir dades
     * Permís per crear carpetes / adjuntar dades
@@ -74,13 +74,13 @@ Les carpetes anteriors (**_perfils_** i **_privades_**) **s'han de compartir** d
 * Clicar amb el botó dret sobre la carpeta determinada i seleccionar **_Propiedades_**
 * Entrar a la pestanya **_Compartir _**i clicar el botó **_Uso compartido avanzado_**
 * Marcar la casella **_Compartir _**esta carpeta i clicar el botó **_Permisos_**
-* Seleccionar l'usuari **_Todos_** i marcar l'opció **_Control Total_**
+* Seleccionar l'usuari **_Todos (Everyone)_** i marcar l'opció **_Control Total_**
 
 La ruta per accedir de forma remota a una carpeta compartida es pot veure a l'apartat **_Propiedades > Compartir_**.
 
 ### Configuració del perfil d'usuari
 
-Seleccionar l'usuari i amb el botó secundari, es tria l'opció **_Propiedades _**i s'entra a la pestanya **_Perfil_**.
+Seleccionar l'usuari i amb el botó secundari, es tria l'opció **_Propiedades _** i anar a la secció **_Perfil_**.
 
 * **_Ruta de acceso al perfil_**: ha de ser la carpeta que s'ha compartit per guardar els perfils més l'identificador de l'usuari o `%username%`.
   * Per exemple: `\\WSXXX\Perfils\%username%` o bé `\\IP_SERVIDOR\Perfils\%username%`
