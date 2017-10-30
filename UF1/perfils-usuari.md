@@ -87,6 +87,7 @@ Seleccionar l'usuari i amb el botó secundari, es tria l'opció **_Propiedades _
 
 * **_Carpeta particular_**: ha de ser la carpeta que s'ha compartit per guardar les carpetes particulars més l'identificador del l'usuari o `%username%`. 
   * Per exemple: `\\WSXXX\Privades\%username%`
+  
    També s'ha indicar la lletra de la unitat se xarxa a la què es connectarà aquesta carpeta en la màquina client.
 * **_Script de inicio de sessión_**: no s'ha de posar la ruta. Les màquines unides al domini ja saben on trobar-lo: `\\WSXXX\netlogon`.
 
