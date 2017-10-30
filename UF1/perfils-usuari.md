@@ -113,3 +113,5 @@ Si no es poden crear arxius, carpetes... s'han de revisar els permisos de la car
 ## Documentació i recursos
 
 * **Font d'informació: ** Apunts SOX Pere Sánchez ([http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17))
+
+* **Somebooks:** Crear un perfil móvil ([http://somebooks.es/5-7-crear-un-perfil-movil/](http://somebooks.es/5-7-crear-un-perfil-movil/))
