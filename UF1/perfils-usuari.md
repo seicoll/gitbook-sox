@@ -89,6 +89,7 @@ Seleccionar l'usuari i amb el botó secundari, es tria l'opció **_Propiedades _
   * Per exemple: `\\WSXXX\Privades\%username%`
   
    També s'ha indicar la lletra de la unitat se xarxa a la què es connectarà aquesta carpeta en la màquina client.
+   
 * **_Script de inicio de sessión_**: no s'ha de posar la ruta. Les màquines unides al domini ja saben on trobar-lo: `\\WSXXX\netlogon`.
 
 > La **carpeta de perfil** per cada usuari no es crearà fins què l'usuari es validi per primera vegada.
