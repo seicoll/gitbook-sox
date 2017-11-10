@@ -21,6 +21,8 @@ S'ha de crear una màquina virtual amb les característiques recomanades per ins
 
 Després de la instal·lació, la memòria RAM es pot reduir fins a 512 MB.
 
+## Instal·lar el sistema operatiu
+
 ### Paràmetres bàsics de configuració
 
 * Triar l'idioma i altres dades regionals (país, teclat...).
