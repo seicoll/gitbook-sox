@@ -31,8 +31,6 @@ Després de la instal·lació, la memòria RAM es pot reduir fins a 512 MB.
 * No cal encriptar la carpeta personal.
 * Seleccionar la zona horària.
 
-
-### Particionat del disc
 ### Planificar el disc
 
 * Primer s'ha de seleccionar el particionat manual, triar el disc i crear la taula de particions.
@@ -40,8 +38,10 @@ Després de la instal·lació, la memòria RAM es pot reduir fins a 512 MB.
   * Crear-la com a partició primària, al principi del disc i amb el format ext4.
   * El punt de muntatge ha de ser l'arrel del sistema (/).
   * No cal afegir cap opció addicional de muntatge.
-Repetir els passos anteriors per crear una partició primària de 2 GB per la carpeta d'usuaris (/home).
-Finalment, crear una altra partició primària amb la resta de l'espai per a la swap (àrea d'intercanvi).
+
+* Repetir els passos anteriors per crear una partició primària de 2 GB per la carpeta d'usuaris (/home).
+* Finalment, crear una altra partició primària amb la resta de l'espai per a la swap (àrea d'intercanvi).
+
 Abans de confirmar, comprovar les particions creades:
 
 ### Planificar el disc
