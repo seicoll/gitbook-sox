@@ -98,7 +98,7 @@ En **_Ubuntu Server_**, la xarxa es configura editant l'arxiu `/etc/network/inte
 * **Porta d'enllaç (GW)**: `172.30.0.1` (l'adreça del router virtual de la xarxa NAT)
 * **Servidors DNS**: `172.30.0.1` i `8.8.8.8` (la mateixa porta d'enllaç de VirtualBox pot fer de servidor DNS).
 
-> **ATENCIÓ**: en Ubuntu, per configurar l'adreça dels servidors DNS no s'ha d'editar l'arxiu /etc/resolv.conf
+> **ATENCIÓ**: en Ubuntu, per configurar l'adreça dels servidors DNS no s'ha d'editar l'arxiu `/etc/resolv.conf`
 
 ```
 # Interfície de bucle local (127.0.0.1)
