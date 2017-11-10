@@ -87,19 +87,39 @@ lo        Link encap:Bucle local
           ...
 ```
 
-En **_Ubuntu Server_**, la xarxa es configura editant l'arxiu `/etc/network/interfaces`.
-Un servidor ha de tenir una adreça estàtica ja que els clients l'han de conèixer per poder utilitzar els seus serveis.
-
-> **ATENCIÓ**: en Ubuntu, per configurar l'adreça dels servidors DNS no s'ha d'editar l'arxiu /etc/resolv.conf
-
 Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de conèixer per poder utilitzar els seus serveis.
 
-L'adreça ha de pertànyer a la xarxa on està connectada la màquina:
+L'adreça ha de pertànyer a la xarxa on està connectada la màquina.
+
+En **_Ubuntu Server_**, la xarxa es configura editant l'arxiu `/etc/network/interfaces`.
+
 * **Adreça IP**: `172.30.A.20` (**_A_** és el teu número d'alumne)
 * **Màscara**: `255.255.0.0` (de 16 bits, com la de la xarxa)
 * **Porta d'enllaç (GW)**: `172.30.0.1` (l'adreça del router virtual de la xarxa NAT)
 * **Servidors DNS**: `172.30.0.1` i `8.8.8.8` (la mateixa porta d'enllaç de VirtualBox pot fer de servidor DNS).
 
+> **ATENCIÓ**: en Ubuntu, per configurar l'adreça dels servidors DNS no s'ha d'editar l'arxiu /etc/resolv.conf
+
+```
+# Interfície de bucle local (127.0.0.1)
+auto lo
+iface lo inet loopback
+
+# Interfície de xarxa Ethernet
+auto enp0s3
+iface enp0s3 inet static
+address 172.30.A.20
+netmask 255.255.0.0
+gateway 172.30.0.1
+dns-nameservers 172.20.0.1 8.8.8.8
+```
+
+**Reiniciar la targeta** per què agafi la nova configuració:
+
+```
+sudo ip addr flush enp0s3
+sudo service networking restart
+```
 
 
 ### Actualitzar el sistema
