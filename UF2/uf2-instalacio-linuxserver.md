@@ -33,6 +33,8 @@ Després de la instal·lació, la memòria RAM es pot reduir fins a 512 MB.
 
 ### Planificar el disc
 
+Cal planificar la utilització del disc, decidir les particions necessàries i el sistema de fitxers a utilitzar.
+
 * Primer s'ha de seleccionar el particionat manual, triar el disc i crear la taula de particions.
   * En l'espai lliure, crear una partició nova de 6 GB.
   * Crear-la com a partició primària, al principi del disc i amb el format ext4.
@@ -44,7 +46,41 @@ Després de la instal·lació, la memòria RAM es pot reduir fins a 512 MB.
 
 Abans de confirmar, comprovar les particions creades:
 
-### Planificar el disc
+![](/assets/US-Instalacio-particions.png)
 
-Cal planificar la utilització del disc, decidir les particions necessàries i el sistema de fitxers a utilitzar.
+### Altres paràmetres
+
+* No cal configurar un proxy.
+* No cal activar les actualitzacions automàtiques.
+* Instal·lar el servei **SSH** (seleccionar/deseleccionar serveis amb la tecla ESPAI).
+* Instal·lar GRUB (el gestor d'arrencada) en el disc principal.
+
+## Post-instal·lació
+
+### Canviar el nom de l'equip
+
+Si es vol canviar el nom d'una màquina Linux, cal fer-ho en els arxius `/etc/hostname` i `/etc/hosts` i reiniciar el sistema.
+
+### Configurar la xarxa
+
+
+### Actualitzar el sistema
+
+La comanda per actualitzar Linux és `apt-get upgrade`, però abans s'ha d'executar `apt-get update` per saber quins paquets cal actualitzar:
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+En el cas d'**_Ubuntu Server_**, el nucli del sistema Linux no s'actualitza automàticament perquè cal reiniciar la màquina, i això és preferible que sigui l'administrador qui decideixi quan s'ha fer.
+
+Quan sigui possible actualitzar el nucli i reiniciar el servidor, es pot utilitzar la comanda `apt-get dist-upgrade`:
+
+```
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo reboot
+```
+
+
 
