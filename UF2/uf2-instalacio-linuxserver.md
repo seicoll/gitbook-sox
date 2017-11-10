@@ -90,6 +90,18 @@ lo        Link encap:Bucle local
 En **_Ubuntu Server_**, la xarxa es configura editant l'arxiu `/etc/network/interfaces`.
 Un servidor ha de tenir una adreça estàtica ja que els clients l'han de conèixer per poder utilitzar els seus serveis.
 
+> **ATENCIÓ**: en Ubuntu, per configurar l'adreça dels servidors DNS no s'ha d'editar l'arxiu /etc/resolv.conf
+
+Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de conèixer per poder utilitzar els seus serveis.
+
+L'adreça ha de pertànyer a la xarxa on està connectada la màquina:
+* **Adreça IP**: `172.30.A.20` (**_A_** és el teu número d'alumne)
+* **Màscara**: `255.255.0.0` (de 16 bits, com la de la xarxa)
+* **Porta d'enllaç (GW)**: `172.30.0.1` (l'adreça del router virtual de la xarxa NAT)
+* **Servidors DNS**: `172.30.0.1` i `8.8.8.8` (la mateixa porta d'enllaç de VirtualBox pot fer de servidor DNS).
+
+
+
 ### Actualitzar el sistema
 
 La comanda per actualitzar Linux és `apt-get upgrade`, però abans s'ha d'executar `apt-get update` per saber quins paquets cal actualitzar:
