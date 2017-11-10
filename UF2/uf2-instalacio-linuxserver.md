@@ -63,6 +63,32 @@ Si es vol canviar el nom d'una màquina Linux, cal fer-ho en els arxius `/etc/ho
 
 ### Configurar la xarxa
 
+Primer, amb la comanda `ifconfig -a` cal comprovar quina és la targeta de xarxa que s'ha de configurar.
+
+Antigament s'utilitzaven els noms **_eth0_**, **_eth1_**... en funció de l'ordre en què es trobaven les interfícies.
+
+Actualment s'utilitza el sistema [Predictable Network Interface Names](https://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames/) que assigna sempre el mateix nom a una interfície de xarxa.
+
+En aquest sistema els noms depenen, entre altes coses, del tipus i d'on està instal·lada (si és Ethernet o Wireless, si està integrada a la placa base, en un port PCI, en  un port USB...).
+* Interfícies **en**....: corresponen a targetes Ethernet (amb cable).
+* Interfícies **wl**...: corresponen a targetes Wireless LAN (sense cable).
+* Interfície **lo**: correspon a la interfície de **loopback**.
+
+```sh
+usuari@usxxx:~$ ifconfig -a
+enp0s3    Link encap:Ethernet  direcciónHW 08:00:27:79:94:29
+           Direc. inet:172.30.0.20  Difus.:172.30.255.255  Másc:255.255.0.0
+          ...
+wlp2s0    Link encap:Ethernet  direcciónHW 00:13:f7:40:1c:a6  
+          Direc. inet:192.168.1.128  Difus.:192.168.1.255  Másc:255.255.255.0
+          ...
+lo        Link encap:Bucle local  
+          Direc. inet:127.0.0.1  Másc:255.0.0.0
+          ...
+```
+
+En **_Ubuntu Server_**, la xarxa es configura editant l'arxiu `/etc/network/interfaces`.
+Un servidor ha de tenir una adreça estàtica ja que els clients l'han de conèixer per poder utilitzar els seus serveis.
 
 ### Actualitzar el sistema
 
