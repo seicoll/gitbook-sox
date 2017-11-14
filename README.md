@@ -33,6 +33,7 @@ I per suposat, també agrair a la meva dona i els meus fills que m’han recolza
 * [Qüestionari](UF1/act/uf1-questionari.md)
 
 ### UF2. Sistemes operatius lliures en xarxa
+* [Introducció als sistemes operatius Linux](UF2/uf2-introduccio.md)
 
 * [Gestió de dominis](UF2/uf2-gestio-dominis.md)
 
