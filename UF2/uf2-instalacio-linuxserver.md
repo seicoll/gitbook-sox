@@ -113,7 +113,7 @@ iface enp0s3 inet static
 address 172.30.A.20
 netmask 255.255.0.0
 gateway 172.30.0.1
-dns-nameservers 172.20.0.1 8.8.8.8
+dns-nameservers 172.30.0.1 8.8.8.8
 ```
 
 **Reiniciar la targeta** per què agafi la nova configuració:
