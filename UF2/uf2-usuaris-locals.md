@@ -179,7 +179,7 @@ Per saber en **quin usuari hem iniciat la secció actual**.
 
 Mostra l'**identificador de l'usuari (_UID_)** i els **grups al que pertany** un usuari juntament amb l'idenficacio de cada grup (_GID_).
 
-```
+```bash+theme:dark
 usuari@ucxxx:~$ id
 uid=1000(usuari) gid=1000(usuari) grupos=1000(usuari),4(adm),27(sudo),46(plugdev)...
 ```
@@ -199,7 +199,7 @@ usuari adm cdrom sudo dip plugdev lpadmin sambashare
 
 Mostra **informació dels usuaris**. Pot mostrar tant usuaris locals com de domini (LDAP).
 
-```
+```bash+theme:dark
 usuari@ucxxx:~$ getent passwd
 root:x:0:0:root:/root:/bin/bash
 ...
@@ -217,7 +217,7 @@ Per mostrar la **informació només d'un usuari**:
 
 Mostra **informació dels grups**. Pot mostrar tant grups locals com de domini (LDAP).
 
-```bash+theme:dark+lineNumbers:false
+```bash+theme:dark
 usuari@ucxxx:~$ getent group
 root:x:0:
 sudo:x:27:usuari
