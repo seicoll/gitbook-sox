@@ -121,3 +121,39 @@ Per **canviar el nom del compte (login)**:
 Per **canviar l'identificador del compte (UID)**; `nou_id` no ha d'existir i ha de ser un número positiu:
 
 `sudo usermod -u nou_id usuari`
+
+## Canviar contrassenyes
+
+### passwd
+
+La comanda `passwd` serveix per canviar contrasenyes.
+
+> **ATENCIÓ:** un usuari que no tingui contrasenya no pot accedir al sistema.
+
+Per **canviar la pròpia contrasenya** (la de l'usuari amb el què s'està treballant):
+
+`passwd`
+
+Per **canviar la contrasenya d'un usuari** (si no es posa usuari, s'aplica al root):
+
+`sudo passwd usuari`
+
+Per **eliminar la contrasenya d'un usuari i desactivar el compte** (si no es posa usuari, s'aplica al root):
+
+`sudo passwd -l usuari`
+
+## Iniciar sessió
+
+**Iniciar sessió amb un altre usuari**
+
+Per **canviar a l'usuari root**:
+
+`sudo su`
+
+Per **canviar a un altre usuari**:
+
+`sudo login usuari`
+
+Per **tancar sessió** i tornar a la sessió del l'usuari anterior:
+
+`exit`
