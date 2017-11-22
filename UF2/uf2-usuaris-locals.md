@@ -39,18 +39,20 @@ La comanda `adduser` serveix per **crear usuaris**.
 * El nom d'usuari no pot començar amb un número ni incloure accents ni determinats símbols.
 Si es vol evitar aquestes restriccions, es pot afegir el paràmetre `--force-badname`.
 
-* Per defecte, quan es crea un usuari també **es crea un grup amb el seu mateix nom** i se li assigna com a grup principal.
+* Per defecte, quan es crea un usuari també **es crea un grup amb el seu mateix nom** i se li assigna com a **grup principal**.
+
+  > Tot usuari ha de pertànyer, almenys, a un grup, encara que pot ser de més d'un.
 
 * La **carpeta de l'usuari** no es crea fins que l'usuari es valida per primera vegada.
 Per defecte, les carpetes d'usuari es creen dins de `/home` i se li copia el contingut de la carpeta `/etc/skel`.
 
 Per crear un usuari:
 
-`sudo adduser usuari`
+`sudo adduser <usuari>`
 
 Per crear un usuari i assignar-li el grup principal (el grup ha d'existir):
 
-`sudo adduser usuari --ingroup grup`
+`sudo adduser <usuari> --ingroup grup`
 
 ## Eliminació d'usuaris
 
@@ -62,11 +64,11 @@ Per defecte, **no esborra la carpeta de l'usuari.** Si es vol esborrar cal afegi
 
 Per eliminar un usuari:
 
-`sudo deluser usuari`
+`sudo deluser <usuari>`
 
 Per eliminar un usuari i el seu directori:
 
-`sudo deluser --remove-home usuari`
+`sudo deluser --remove-home <usuari>`
 
 ## Creació de grups
 
@@ -76,25 +78,27 @@ La comanda `addgrou` serveix per **crear grups**.
 
 Per crear un grup:
 
-`sudo addgroup grup`
+`sudo addgroup <grup>`
 
 ## Eliminació e grups
 
 ### delgroup
 
-La comanda `ddlgroup` serveix per **eliminar grups**.
+La comanda `delgroup` serveix per **eliminar grups**.
 
 Per eliminar un grup:
 
-`sudo addgroup grup`
+`sudo delgroup <grup>`
 
 ## Assignar usuaris a grups
 
 ### adduser
 
-Per afegir un grup secundari a un usuari (l'usuari i el grup han d'existir):
+Per **afegir un grup secundari a un usuari**
 
-`sudo adduser usuari grup`
+> **ATENCIÓ**: l'usuari i el grup han d'existir.
+
+`sudo adduser <usuari> <grup>`
 
 ### usermod
 
@@ -104,29 +108,29 @@ Per exemple, es pot canviar el nom del compte (**login**), el grup principal, af
 
 Per **canviar el grup principal** de l'usuari:
 
-`sudo usermod -g grup usuari`
+`sudo usermod -g grup <usuari>`
 
 Per afegir l'usuari a **grups secundaris**:
 
-`sudo usermod -aG grup [grup ...] usuari`
+`sudo usermod -aG grup [grup ...] <usuari>`
 
 Per **canviar el directori personal** i moure els seus arxius al nou directori:
 
-`sudo usermod -m -d /home/nou_dir usuari`
+`sudo usermod -m -d /home/nou_dir <usuari>`
 
 Per **canviar el nom del compte (login)**:
 
-`sudo usermod -l nou_login usuari`
+`sudo usermod -l nou_login <usuari>`
 
 Per **canviar l'identificador del compte (UID)**; `nou_id` no ha d'existir i ha de ser un número positiu:
 
-`sudo usermod -u nou_id usuari`
+`sudo usermod -u nou_id <usuari>`
 
 ## Canviar contrassenyes
 
 ### passwd
 
-La comanda `passwd` serveix per canviar contrasenyes.
+La comanda `passwd` serveix per assignar o canviar contrasenyes.
 
 > **ATENCIÓ:** un usuari que no tingui contrasenya no pot accedir al sistema.
 
@@ -136,11 +140,15 @@ Per **canviar la pròpia contrasenya** (la de l'usuari amb el què s'està treba
 
 Per **canviar la contrasenya d'un usuari** (si no es posa usuari, s'aplica al root):
 
-`sudo passwd usuari`
+`sudo passwd <usuari>`
 
 Per **eliminar la contrasenya d'un usuari i desactivar el compte** (si no es posa usuari, s'aplica al root):
 
-`sudo passwd -l usuari`
+`sudo passwd -l <usuari>`
+
+Per **reactivar un compte d'usuari** que ha estat desactivat.
+
+`sudo passwd -u <usuari>`
 
 ## Iniciar sessió
 
@@ -152,8 +160,40 @@ Per **canviar a l'usuari root**:
 
 Per **canviar a un altre usuari**:
 
-`sudo login usuari`
+`sudo login <usuari>`
 
 Per **tancar sessió** i tornar a la sessió del l'usuari anterior:
 
 `exit`
+
+Per saber en **quin usuari hem iniciat la secció actual**.
+
+`whoami`
+
+
+## Veure informació sobre usuaris i grups
+
+
+Per veure els grups al que pertany un usuari juntament amb el seu UID i el GID de cada grup:
+id [usuari]
+Per veure els grups als que pertany un usuari:
+groups [usuari]
+NOTA: El primer grup que apareix és el grup principal.
+
+
+
+Hi ha diversos fitxers de text en Linux que contenen informació referent als usuaris i als grups d’usuaris donats d’alta en el sistema.
+
+/etc/passwd
+Conté la informació dels usuaris del sistema (nom, directori home, etc.)
+
+
+/etc/shadow
+Conté la les contrasenyes xifrades dels usuaris.
+
+/etc/group
+Conté la informació dels grups.
+
+
+
+
