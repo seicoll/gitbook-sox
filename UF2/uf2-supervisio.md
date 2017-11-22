@@ -1,3 +1,3 @@
 # Administració i supervisió
 
-* [Gestió d'usuaris i grups](UF2/uf2-usuaris-locals.md)
+* [Gestió d'usuaris i grups](uf2-usuaris-locals.md)
