@@ -233,7 +233,7 @@ Per mostrar la **informació només d'un grup**:
 `getent group <grup>`
 
 
-## A través de fitxers especials
+### A través de fitxers especials
 
 Hi ha diversos **fitxers de text** en Linux que contenen informació referent als usuaris i als grups d'usuaris donats d'alta en el sistema.
 
