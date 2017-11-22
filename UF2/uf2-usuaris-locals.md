@@ -190,7 +190,7 @@ Mostra els **noms dels grups als que pertany** un usuari.
 
 > **NOTA**: El primer grup que apareix és el grup principal.
 
-```
+```bash+theme:dark
 usuari@ucxxx:~$ groups
 usuari adm cdrom sudo dip plugdev lpadmin sambashare
 ```
