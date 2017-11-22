@@ -217,7 +217,7 @@ Per mostrar la **informació només d'un usuari**:
 
 Mostra **informació dels grups**. Pot mostrar tant grups locals com de domini (LDAP).
 
-```
+```bash+theme:dark+lineNumbers:false
 usuari@ucxxx:~$ getent group
 root:x:0:
 sudo:x:27:usuari
