@@ -5,7 +5,7 @@
     "plugins": [
         "etoc",
         "-highlight",
-        "-sunlight-highlighter",
+        "sunlight-highlighter",
         "quiz",
         "collapsible-chapters",
         "back-to-top-button"
