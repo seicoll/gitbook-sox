@@ -173,25 +173,78 @@ Per saber en **quin usuari hem iniciat la secció actual**.
 
 ## Veure informació sobre usuaris i grups
 
+### Per comandes
 
-Per veure els grups al que pertany un usuari juntament amb el seu UID i el GID de cada grup:
-id [usuari]
-Per veure els grups als que pertany un usuari:
-groups [usuari]
-NOTA: El primer grup que apareix és el grup principal.
+**id [usuari]**
+
+Mostra l'**identificador de l'usuari (_UID_)** i els **grups al que pertany** un usuari juntament amb l'idenficacio de cada grup (_GID_).
+
+```
+usuari@ucxxx:~$ id
+uid=1000(usuari) gid=1000(usuari) grupos=1000(usuari),4(adm),27(sudo),46(plugdev)...
+```
+
+**groups [usuari]**
+
+Mostra els **noms dels grups als que pertany** un usuari.
+
+> **NOTA**: El primer grup que apareix és el grup principal.
+
+```
+usuari@ucxxx:~$ groups
+usuari adm cdrom sudo dip plugdev lpadmin sambashare
+```
+
+**getent passwd **
+
+Mostra **informació dels usuaris**. Pot mostrar tant usuaris locals com de domini (LDAP).
+
+```
+usuari@ucxxx:~$ getent passwd
+root:x:0:0:root:/root:/bin/bash
+...
+usuari:x:1000:1000:usuari,,,:/home/usuari:/bin/bash
+alumne:x:1001:1001:alumne,,,,:/home/alumne:/bin/bash
+profe:x:1002:1002:profe,,,,:/home/profe:/bin/bash
+director:x:1003:1003:,,,:/home/director:/bin/bash
+```
+
+Per mostrar la **informació només d'un usuari**: 
+
+`getent passwd <usuari>`
+
+**getent group **
+
+Mostra **informació dels grups**. Pot mostrar tant grups locals com de domini (LDAP).
+
+```
+usuari@ucxxx:~$ getent group
+root:x:0:
+sudo:x:27:usuari
+...
+usuari:x:1000:
+alumnes:x:1001:
+profes:x:1002:usuari,director
+director:x:1003:
+```
+
+Per mostrar la **informació només d'un grup**:
+
+`getent group <grup>`
 
 
+## A través de fitxers especials
 
-Hi ha diversos fitxers de text en Linux que contenen informació referent als usuaris i als grups d’usuaris donats d’alta en el sistema.
+Hi ha diversos **fitxers de text** en Linux que contenen informació referent als usuaris i als grups d'usuaris donats d'alta en el sistema.
 
-/etc/passwd
+**/etc/passwd**
 Conté la informació dels usuaris del sistema (nom, directori home, etc.)
 
 
-/etc/shadow
+**/etc/shadow**
 Conté la les contrasenyes xifrades dels usuaris.
 
-/etc/group
+**/etc/group**
 Conté la informació dels grups.
 
 
