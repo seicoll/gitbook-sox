@@ -25,7 +25,7 @@
   * [Introducció als sistemes operatius Linux](UF2/uf2-introduccio.md)
     * [Instal·lació Linux Server](UF2/uf2-instalacio-linuxserver.md)
   * [Administració i supervisió](UF2/uf2-supervisio.md)
-     * [Gestió d'usuaris i grups](UF2/uf2-usuaris-locals.md)
+    * [Gestió d'usuaris i grups](UF2/uf2-usuaris-locals.md)
   * [Gestió de dominis](UF2/uf2-gestio-dominis.md)
     * [Introducció als dominis en Linux](UF2/uf2-dominis-linux.md)
     * [Instal·lació d'un controlador de domini LDAP](UF2/uf2-LDAP.md)
