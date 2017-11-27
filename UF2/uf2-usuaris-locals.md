@@ -74,7 +74,7 @@ Per eliminar un usuari i el seu directori:
 
 ### addgroup
 
-La comanda `addgrou` serveix per **crear grups**.
+La comanda `addgroup` serveix per **crear grups**.
 
 Per crear un grup:
 
