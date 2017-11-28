@@ -35,25 +35,28 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable utilitzar a
 
 ### Actualització de paquets
 
-* Per instal·lar paquets:
+* Per **instal·lar** paquets:
 
-`sudo apt-get install <nom_paquet>`
+  `sudo apt-get install <nom_paquet>`
 
 * Per **desinstal·lar** paquets:
 
-`sudo apt-get remove [–purge] <nom_paquet>`
+  `sudo apt-get remove [–purge] <nom_paquet>`
  
   * L’opció **purge** també elimina qualsevol fitxer de configuració del paquet desinstal·lat. 
 
-`sudo apt-get purge <nom_paquet>`
+
+* Per **desinstal·lar** paquets i eliminar els fitxers de configuració :
+
+    `sudo apt-get purge <nom_paquet>`
 
 * Per **desinstal·lar paquets** del sistema que ja no s’utilitzen: 
 
-`sudo apt-get autoremove`
+  `sudo apt-get autoremove`
 
 * Per **esborrar paquets** d’instal·lació i guanyar espai en el disc dur: 
 
-`apt-get clean`
+  `sudo apt-get clean`
   
 ## Gestors de paquets
 
