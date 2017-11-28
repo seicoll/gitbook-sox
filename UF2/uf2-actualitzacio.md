@@ -1,0 +1,1 @@
+# Instal·lació de paquets i actualització del sistema
