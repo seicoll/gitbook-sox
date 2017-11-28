@@ -15,7 +15,7 @@ Els més comuns són:
   * Es poden utilitzar qualsevol tipus de màquina si el codi es compilen correctament. 
   * Els trobem empaquetats i comprimits amb formats com .tar.gz o tar.bz2. 
   
-## Repositoris
+### Repositoris
   
 Els paquets els trobarem als **repositoris**. 
 
@@ -32,6 +32,12 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable utilitzar a
 * Per **actualitzar els repositoris**:
 
 `sudo apt-get update` 
+
+### Actualització de paquets
+
+Abans d'actualitzar el sistema o instal·lar paquets és recomanable utilitzar actualitzar els repositoris per què el sistema sàpiga si ha hagut canvis (nous paquets, actualitzacions, canvis de dependències...).
+Per actualitzar els repositoris:
+sudo apt-get update
   
 ## Gestors de paquets
 
