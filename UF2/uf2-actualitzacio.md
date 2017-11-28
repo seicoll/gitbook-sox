@@ -58,6 +58,19 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable utilitzar a
 
   `sudo apt-get clean`
   
+## Actualització del sistema operatiu
+  
+* Per **actualitzar tots els paquets** a les últimes versions que hi ha en els repositoris i sense canviar de versió del sistema:
+
+  `sudo apt-get update` 
+  `sudo apt-get upgrade`
+  
+* Per **actualitzar el sistema a una versió superior**.
+
+  `sudo apt-get update`
+  `sudo apt-get dist-upgrade`
+  
+  
 ## Gestors de paquets
 
 > Els **gestors de paquets** són aplicacions que permeten gestionar paquets. 
