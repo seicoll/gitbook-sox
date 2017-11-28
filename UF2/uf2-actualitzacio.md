@@ -40,7 +40,8 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable utilitzar a
 `sudo apt-get install <nom_paquet>`
 
 * Per **desinstal·lar** paquets:
-`apt-get remove [–purge] <nom_paquet>`
+
+`sudo apt-get remove [–purge] <nom_paquet>`
  
   * L’opció **purge** també elimina qualsevol fitxer de configuració del paquet desinstal·lat. 
 
