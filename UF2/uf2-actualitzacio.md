@@ -17,13 +17,21 @@ Els més comuns són:
   
 ## Repositoris
   
-Els paquets els trobarem als repositoris. 
+Els paquets els trobarem als **repositoris**. 
 
 > **Repositori:** lloc centralitzat on s’emmagatzema i es manté informació digital, habitualment bases de dades o arxius informàtics. 
 
 Els repositoris des d'on es poden descarregar, instal·lar i actualitzar paquets es troben definits a l'arxiu `/etc/apt/sources.list`
 
   * També en altres arxius dins de `/etc/apt/sources.list.d/`.
+  
+### Actualitzar repositoris
+
+Abans d'actualitzar el sistema o instal·lar paquets és recomanable utilitzar actualitzar els repositoris per què el sistema sàpiga si ha hagut canvis (nous paquets, actualitzacions, canvis de dependències...).
+
+* Per actualitzar els repositoris:
+
+`sudo apt-get update` 
   
 ## Gestors de paquets
 
