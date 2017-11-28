@@ -24,3 +24,17 @@ Els paquets els trobarem als repositoris.
 Els repositoris des d'on es poden descarregar, instal·lar i actualitzar paquets es troben definits a l'arxiu `/etc/apt/sources.list`
 
   * També en altres arxius dins de `/etc/apt/sources.list.d/`.
+  
+## Gestors de paquets
+
+> Els **gestors de paquets** són aplicacions que permeten gestionar paquets. 
+
+Faciliten les tasques més habituals relacionades amb la gestió de paquets (instal·lació, cerques, eliminacions, etc.)
+
+* El programa principal utilitzat per gestionar aquest tipus de fitxers és el dpkg (abreviatura de Debian package), 
+
+* Normalment s’utilitzen els frontals (front ends) com **apt** i **aptitude**. 
+
+* També podeu utilitzar **interfícies gràfiques** com el Synaptic, el PackageKit o el Gdebi. 
+
+* Els fitxers .deb dels paquets instal·lats els podem trobar en la carpeta /var/cache/apt/archives  
