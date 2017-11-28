@@ -29,7 +29,7 @@ Els repositoris des d'on es poden descarregar, instal·lar i actualitzar paquets
 
 Abans d'actualitzar el sistema o instal·lar paquets és recomanable utilitzar actualitzar els repositoris per què el sistema sàpiga si ha hagut canvis (nous paquets, actualitzacions, canvis de dependències...).
 
-* Per actualitzar els repositoris:
+* Per **actualitzar els repositoris**:
 
 `sudo apt-get update` 
   
