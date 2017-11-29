@@ -1,6 +1,8 @@
 # Instal·lació de paquets i actualització del sistema
 
-## Paquets de programari
+## Instal·lació de paquets
+
+### Paquets de programari
 
 > Un **paquet de programari** és un arxiu que conté una sèrie de fitxers que es distribueixen conjuntament i permeten la instal·lació d’un programa 
 
@@ -9,7 +11,6 @@ Hi ha diversos tipus de paquets:
 Els més comuns són:
   * Els **.rpm**, que els utilitzen **_Red Hat_**, **_Suse_** i derivats
   * Els **.deb**, que els utilitzen **_Debian_**, **_Ubuntu_** i derivats. 
-  
 
 * Els **paquets font** són senzillament paquets que inclouen codi font.
   * Es poden utilitzar qualsevol tipus de màquina si el codi es compilen correctament. 
@@ -68,15 +69,17 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable **actualitz
 * Per **actualitzar tots els paquets** a les últimes versions que hi ha en els repositoris i sense canviar de versió del sistema:
 
   `sudo apt update` 
+  
   `sudo apt upgrade`
   
 * Per **actualitzar el sistema a una versió superior**.
 
   `sudo apt update`
+
   `sudo apt dist-upgrade` 
   
   
-## Gestió de paquets i actualitzacions amb entorn gràfic
+## Instal·lació de paquets i actualitzacions amb entorn gràfic
 
 > Els **gestors de paquets** són aplicacions que permeten gestionar paquets. 
 
