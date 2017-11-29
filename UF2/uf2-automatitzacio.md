@@ -55,16 +55,16 @@ Les línies són formades pels camps:
 &nbsp;&nbsp; (0-59) &nbsp;&nbsp;&nbsp; (0-23) &nbsp;&nbsp;&nbsp; (1-31)   &nbsp;&nbsp;&nbsp;&nbsp; (1-12) &nbsp;  (0 o 7=diumenge - 6)
 
 
-**Usuari:** l'usuari que s'utilitzarà per a executar la comanda especificada.
+* **Usuari:** l'usuari que s'utilitzarà per a executar la comanda especificada.
 
 | Símbol        | Significat                                          | Exemple          |                                      |
-|---------------|-----------------------------------------------------|------------------|--------------------------------------|
-| *             | Cada unitat de temps                                |     diaMes *     | Cada dia                             |
-| num           | Per indicar el moment concret                       |      Hora 15     | A les 15:00h                         |
-| num-num       | Rang de números                                     |      Mes 1-6     | Del Gener al Juny                    |
-| num, num, num | Per indicar valors concrets de hores, dies o mesos. | diaSetmana 1,3,5 | Cada dilluns, dimecres i divendres   |
-| */num         | Cada determinat temps                               |     Hores */2    | Cada 2 hores                         |
-| num-num/num   |                                                     |    Hora 8-20/5   | Entre les 8h i les 20h, cada 5 hores |
+|---------------|-----------------------------------------------------|:----------------:|--------------------------------------|
+| *             | Cada unitat de temps                                |     diaMes<br> *     | Cada dia                             |
+| num           | Per indicar el moment concret                       |      Hora<br> 15     | A les 15:00h                         |
+| num-num       | Rang de números                                     |      Mes<br> 1-6     | Del Gener al Juny                    |
+| num, num, num | Per indicar valors concrets de hores, dies o mesos. | diaSetmana<br> 1,3,5 | Cada dilluns, dimecres i divendres   |
+| */num         | Cada determinat temps                               |     Hores<br> */2    | Cada 2 hores                         |
+| num-num/num   |                                                     |    Hora<br> 8-20/5   | Entre les 8h i les 20h, cada 5 hores |
 
 
 ## Amb entorn gràfic
@@ -74,5 +74,3 @@ Per automatitzar tasques en mode gràfic, s'utilitza el programa anomenat **Tare
 Amb Ubuntu hi accedim des de **_Aplicacions> Eines del sistema > Tasques programades_**
 
 Aquest programa permet programar tasques per ser realitzades només una vegada o periòdicament.
-
-> IMATGE
