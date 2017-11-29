@@ -54,7 +54,7 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable **actualitz
 
 * Per **desinstal·lar** paquets i eliminar els fitxers de configuració associats al paquet desinstal·lat:
 
-    `sudo apt purge <nom_paquet>`
+  `sudo apt purge <nom_paquet>`
 
 * Per **desinstal·lar paquets** del sistema que ja no s’utilitzen: 
 
