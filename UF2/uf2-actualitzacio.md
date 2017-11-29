@@ -16,6 +16,16 @@ Els més comuns són:
   * Es poden utilitzar qualsevol tipus de màquina si el codi es compilen correctament. 
   * Els trobem empaquetats i comprimits amb formats com .tar.gz o tar.bz2. 
   
+### Gestors de paquets
+
+> Els **gestors de paquets** són aplicacions que permeten gestionar paquets. 
+
+Faciliten les tasques més habituals relacionades amb la gestió de paquets (instal·lació, cerques, eliminacions, etc.)
+
+* El programa principal utilitzat per gestionar aquest tipus de fitxers és el **_dpkg_** (abreviatura de Debian package), 
+
+* Normalment s'utilitzen els frontals (front ends) com **apt** i **aptitude**. 
+
 ### Repositoris
   
 Els paquets els trobarem als **repositoris**. 
@@ -64,6 +74,37 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable **actualitz
 
   `sudo apt autoclean`
   
+
+### Afegir repositoris externs
+
+> Els repositoris externs es diuen **PPA** (**_Personal Package Archives_**).
+
+Podeu trobar diferents PPA per Internet.
+
+#### Exemple d'instal·lació de VirtualBox
+
+1. Per **afegir un PPA** dins de l'arxiu de repositoris es pot:
+
+  * **Editar l'arxiu** `/etc/apt/sources.list` i afegir una línia com la següent:
+
+   `deb http://download.virtualbox.org/virtualbox/debian trusty contrib`
+
+  * O bé amb la **comanda** `apt-add-repository`:
+
+  `sudo apt-add-repository "deb http://download.virtualbox.org/virtualbox/debian trusty contrib"`
+
+2. Abans de poder instal·lar el programa, normalment, cal fer alguna operació més, com ara **descarregar i instal·lar una clau de seguretat**:
+
+  `wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -`
+
+3. La **instal·lació** (i desinstal·lació) d'aquests paquets es fa de la forma habitual:
+
+  `sudo apt update`
+
+  `sudo apt install virtualbox-5.0`
+
+4. Si es vol **eliminar un repositori afegit** amb aquests mètodes, es pot editar l'arxiu `/etc/apt/sources.list` i esborrar la línia corresponent.
+ 
 ## Actualització del sistema operatiu
   
 * Per **actualitzar tots els paquets** a les últimes versions que hi ha en els repositoris i sense canviar de versió del sistema:
@@ -81,20 +122,8 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable **actualitz
   
 ## Instal·lació de paquets i actualitzacions amb entorn gràfic
 
-> Els **gestors de paquets** són aplicacions que permeten gestionar paquets. 
-
-Faciliten les tasques més habituals relacionades amb la gestió de paquets (instal·lació, cerques, eliminacions, etc.)
-
-* El programa principal utilitzat per gestionar aquest tipus de fitxers és el dpkg (abreviatura de Debian package), 
-
-* Normalment s’utilitzen els frontals (front ends) com **apt** i **aptitude**. 
-
-* També podeu utilitzar **interfícies gràfiques** com el Synaptic, el PackageKit o el Gdebi. 
-
-* Els fitxers .deb dels paquets instal·lats els podem trobar en la carpeta /var/cache/apt/archives  
-
-
-
 * **Centro de software de Ubuntu:** serveix per instal·lar i desinstal·lar programes i paquets que hi ha en els repositoris d'Ubuntu.
+
 * **Software i actualizaciones:** serveix per configurar les actualitzacions del sistema i del programari (triar els repositoris, la periodicitat...). També mostra i permet seleccionar possibles controladors de hardware, tant lliures com privatius (per exemple, els de la targeta gràfica).
+
 * **Actualización de software:** permet comprovar manualment si hi ha actualitzacions i triar quins paquets es volen actualitzar.
