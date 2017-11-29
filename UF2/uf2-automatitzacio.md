@@ -15,7 +15,7 @@ El **dimoni [_daemon_]** anomenat **_crond_** és el que s'encarrega de gestiona
 
 ## Servei cron
 
-El Linux té un servei anomenat **_cron_** treballa despertant-se cada minut i mirant un fitxer on hi ha les tasques programades.
+El Linux té un servei anomenat **_cron_** que funciona despertant-se cada minut i mirant un fitxer on hi ha les tasques programades.
 
 Podem saber que el procés s'està executant amb la comanda: 
 
