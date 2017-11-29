@@ -47,15 +47,27 @@ La comanda `crontab` permet **programar tasques periòdiques** i especificar el 
 
   `crontab -r`
   
-## l????
+### Editar tasques programades
 
-Les línies són formades pels camps: 
+`sudo crontab -e`
+
+La primera vegada què es posi en marxa, demanarà amb quin editor es vol modificar la configuració: per defecte està marcada la opció 2 (`/bin/nano`)
+
+Els camps què s'han de posar a cada línia són els següents: 
 
 **&lt; minut >  &lt; hora>  &lt; diaMes>  &lt; mes>  &nbsp;&nbsp;  &lt; diaSetmana>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt; usuari>  &lt; comanda>**
+
 &nbsp;&nbsp; (0-59) &nbsp;&nbsp;&nbsp; (0-23) &nbsp;&nbsp;&nbsp; (1-31)   &nbsp;&nbsp;&nbsp;&nbsp; (1-12) &nbsp;  (0 o 7=diumenge - 6)
 
+* **minut (0-59)**: en quin minut o minuts s'ha d'executar la comanda.
+* **hora (0-23)**: en quina o quines hores s'ha d'executar la comanda.
+* **dia del mes (1-31)**: en quin o quins dies del mes s'ha d'executar la comanda.
+* **mes (1-12)**: en quin o quins mesos s'ha d'executar la comanda.
+* **dia de la setmana (0-7)**: tant el 0 com el 7 representen el diumenge. La comanda només s'executarà si cau en un dels dies especificats.
+* **usuari:** l'usuari que s'utilitzarà per a executar la comanda.
+* **comanda**: comanda o script a exectura. Si és un script, convé indicar tota la ruta, per exemple: `/home/usuari/script.sh`
 
-* **Usuari:** l'usuari que s'utilitzarà per a executar la comanda especificada.
+**Exemples:**
 
 | Símbol        | Significat                                          | Exemple          |                                      |
 |---------------|-----------------------------------------------------|:----------------:|--------------------------------------|
