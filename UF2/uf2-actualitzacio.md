@@ -27,51 +27,56 @@ Els repositoris des d'on es poden descarregar, instal·lar i actualitzar paquets
   
 ### Actualitzar repositoris
 
-Abans d'actualitzar el sistema o instal·lar paquets és recomanable utilitzar actualitzar els repositoris per què el sistema sàpiga si ha hagut canvis (nous paquets, actualitzacions, canvis de dependències...).
+Abans d'actualitzar el sistema o instal·lar paquets és recomanable **actualitzar els repositoris** per tal que el sistema sàpiga si ha hagut canvis (nous paquets, actualitzacions, canvis de dependències...).
 
 * Per **actualitzar els repositoris**:
 
-`sudo apt-get update` 
+  `sudo apt-get update` 
 
-### Actualització de paquets
+  o bé
 
-* Per **instal·lar** paquets:
+  `sudo apt update` 
 
-  `sudo apt-get install <nom_paquet>`
+### Gestió de paquets
 
-* Per **desinstal·lar** paquets:
+* **Per veure els paquets instal·lats:**
 
-  `sudo apt-get remove [–purge] <nom_paquet>`
- 
-  * L’opció **purge** també elimina qualsevol fitxer de configuració del paquet desinstal·lat. 
+  `dpkg -l`
 
+* **Per instal·lar paquets**:
 
-* Per **desinstal·lar** paquets i eliminar els fitxers de configuració :
+  `sudo apt install <nom_paquet>`
 
-    `sudo apt-get purge <nom_paquet>`
+* **Per desinstal·lar paquets:**
+
+  `sudo apt remove <nom_paquet>` 
+
+* Per **desinstal·lar** paquets i eliminar els fitxers de configuració associats al paquet desinstal·lat:
+
+    `sudo apt purge <nom_paquet>`
 
 * Per **desinstal·lar paquets** del sistema que ja no s’utilitzen: 
 
-  `sudo apt-get autoremove`
+  `sudo apt autoremove`
 
-* Per **esborrar paquets** d’instal·lació i guanyar espai en el disc dur: 
+* Per **esborrar els paquets d'instal·lació** i guanyar espai en el disc dur: 
 
-  `sudo apt-get clean`
+  `sudo apt autoclean`
   
 ## Actualització del sistema operatiu
   
 * Per **actualitzar tots els paquets** a les últimes versions que hi ha en els repositoris i sense canviar de versió del sistema:
 
-  `sudo apt-get update` 
-  `sudo apt-get upgrade`
+  `sudo apt update` 
+  `sudo apt upgrade`
   
 * Per **actualitzar el sistema a una versió superior**.
 
-  `sudo apt-get update`
-  `sudo apt-get dist-upgrade`
+  `sudo apt update`
+  `sudo apt dist-upgrade` 
   
   
-## Gestors de paquets
+## Gestió de paquets i actualitzacions amb entorn gràfic
 
 > Els **gestors de paquets** són aplicacions que permeten gestionar paquets. 
 
@@ -84,3 +89,9 @@ Faciliten les tasques més habituals relacionades amb la gestió de paquets (ins
 * També podeu utilitzar **interfícies gràfiques** com el Synaptic, el PackageKit o el Gdebi. 
 
 * Els fitxers .deb dels paquets instal·lats els podem trobar en la carpeta /var/cache/apt/archives  
+
+
+
+* **Centro de software de Ubuntu:** serveix per instal·lar i desinstal·lar programes i paquets que hi ha en els repositoris d'Ubuntu.
+* **Software i actualizaciones:** serveix per configurar les actualitzacions del sistema i del programari (triar els repositoris, la periodicitat...). També mostra i permet seleccionar possibles controladors de hardware, tant lliures com privatius (per exemple, els de la targeta gràfica).
+* **Actualización de software:** permet comprovar manualment si hi ha actualitzacions i triar quins paquets es volen actualitzar.
