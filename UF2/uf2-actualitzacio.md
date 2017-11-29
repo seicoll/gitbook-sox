@@ -81,7 +81,7 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable **actualitz
 
 Podeu trobar diferents PPA per Internet.
 
-#### Exemple d'instal·lació de VirtualBox
+**Exemple d'instal·lació de VirtualBox:**
 
 1. Per **afegir un PPA** dins de l'arxiu de repositoris es pot:
 
