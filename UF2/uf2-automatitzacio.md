@@ -78,7 +78,11 @@ Els camps què s'han de posar a cada línia són els següents:
 | */num         | Cada determinat temps                               |     Hores<br> */2    | Cada 2 hores                         |
 | num-num/num   |                                                     |    Hora<br> 8-20/5   | Entre les 8h i les 20h, cada 5 hores |
 
+**Exercici**
+
 ![](/assets/US-automatitzacio1.PNG)
+
+**Solució**
 
 ![](/assets/US-automatitzacio2.PNG)
 
