@@ -79,9 +79,7 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable **actualitz
 
 ### Afegir repositoris externs
 
-> Els repositoris externs es diuen **PPA** (**_Personal Package Archives_**).
-
-Podeu trobar diferents PPA per Internet.
+> Els repositoris externs es diuen **PPA** (**_Personal Package Archives_**). Podeu trobar diferents PPA per Internet.
 
 **Exemple d'instal·lació de VirtualBox:**
 
