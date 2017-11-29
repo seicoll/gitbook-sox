@@ -2,7 +2,9 @@
 
 ## Instal·lació de paquets
 
-### Paquets de programari
+### Intoducció
+
+#### Paquets de programari
 
 > Un **paquet de programari** és un arxiu que conté una sèrie de fitxers que es distribueixen conjuntament i permeten la instal·lació d’un programa 
 
@@ -16,7 +18,7 @@ Els més comuns són:
   * Es poden utilitzar qualsevol tipus de màquina si el codi es compilen correctament. 
   * Els trobem empaquetats i comprimits amb formats com .tar.gz o tar.bz2. 
   
-### Gestors de paquets
+#### Gestors de paquets
 
 > Els **gestors de paquets** són aplicacions que permeten gestionar paquets. 
 
@@ -26,7 +28,7 @@ Faciliten les tasques més habituals relacionades amb la gestió de paquets (ins
 
 * Normalment s'utilitzen els frontals (front ends) com **apt** i **aptitude**. 
 
-### Repositoris
+#### Repositoris
   
 Els paquets els trobarem als **repositoris**. 
 
@@ -127,3 +129,7 @@ Podeu trobar diferents PPA per Internet.
 * **Software i actualizaciones:** serveix per configurar les actualitzacions del sistema i del programari (triar els repositoris, la periodicitat...). També mostra i permet seleccionar possibles controladors de hardware, tant lliures com privatius (per exemple, els de la targeta gràfica).
 
 * **Actualización de software:** permet comprovar manualment si hi ha actualitzacions i triar quins paquets es volen actualitzar.
+
+## Documentació i altres recursos
+
+* **Apunts SOX Pere Sànchez**: Instal·lació i actualització del sistema i altre programari [http://moodlecf.sapalomera.cat/apunts/smx/sox/?cap=1.5.9](http://moodlecf.sapalomera.cat/apunts/smx/sox/?cap=1.5.9)
