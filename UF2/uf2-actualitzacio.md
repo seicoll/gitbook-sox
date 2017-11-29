@@ -109,7 +109,7 @@ Podeu trobar diferents PPA per Internet.
  
 ## Actualització del sistema operatiu
   
-* Per **actualitzar tots els paquets** a les últimes versions que hi ha en els repositoris i sense canviar de versió del sistema:
+* Per **actualitzar tots els paquets** a les últimes versions que hi ha en els repositoris i **sense canviar de versió del sistema**:
 
   `sudo apt update` 
   
@@ -122,7 +122,7 @@ Podeu trobar diferents PPA per Internet.
   `sudo apt dist-upgrade` 
   
   
-## Instal·lació de paquets i actualitzacions amb entorn gràfic
+## Amb entorn gràfic
 
 * **Centro de software de Ubuntu:** serveix per instal·lar i desinstal·lar programes i paquets que hi ha en els repositoris d'Ubuntu.
 
