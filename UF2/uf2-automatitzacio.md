@@ -82,6 +82,8 @@ Els camps què s'han de posar a cada línia són els següents:
 
 ![](/assets/US-automatitzacio2.PNG)
 
+![](/assets/US-automatitzacio3.PNG)
+
 ## Amb entorn gràfic
 
 Per automatitzar tasques en mode gràfic, s'utilitza el programa anomenat **Tareas programadas (_gnome-schedule_)**.
