@@ -51,11 +51,11 @@ La comanda `crontab` permet **programar tasques periòdiques** i especificar el 
 
 Les línies són formades pels camps: 
 
-&lt;minut>  <hora>  <diaMes>  <mes>    <diaSetmana>    <usuari>  <comanda>
-  (0-59)      (0-23)     (1-31)      (1-12)   (0 o 7=diumenge - 6)
+**&lt; minut >  &lt; hora>  &lt; diaMes>  &lt; mes>  &nbsp;&nbsp;  &lt; diaSetmana>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt; usuari>  &lt; comanda>**
+&nbsp;&nbsp; (0-59) &nbsp;&nbsp;&nbsp; (0-23) &nbsp;&nbsp;&nbsp; (1-31)   &nbsp;&nbsp;&nbsp;&nbsp; (1-12) &nbsp;  (0 o 7=diumenge - 6)
 
 
-Usuari: l'usuari que s'utilitzarà per a executar la comanda especificada.
+**Usuari:** l'usuari que s'utilitzarà per a executar la comanda especificada.
 
 | Símbol        | Significat                                          | Exemple          |                                      |
 |---------------|-----------------------------------------------------|------------------|--------------------------------------|
