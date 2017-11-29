@@ -71,10 +71,10 @@ Els camps què s'han de posar a cada línia són els següents:
 
 | Símbol        | Significat                                          | Exemple          |                                      |
 |---------------|-----------------------------------------------------|:----------------:|--------------------------------------|
-| *             | Cada unitat de temps                                |     diaMes<br> *     | Cada dia                             |
+| *             | Tot el rang. Cada unitat de temps                   |     diaMes<br> *     | Cada dia                             |
 | num           | Per indicar el moment concret                       |      Hora<br> 15     | A les 15:00h                         |
-| num-num       | Rang de números                                     |      Mes<br> 1-6     | Del Gener al Juny                    |
-| num, num, num | Per indicar valors concrets de hores, dies o mesos. | diaSetmana<br> 1,3,5 | Cada dilluns, dimecres i divendres   |
+| num-num       | Rang de valors consecutius **No posar espais**      |      Mes<br> 1-6     | Del Gener al Juny                    |
+| num, num, num | Per indicar valors concrets de hores, dies o mesos. **No posar espais** | diaSetmana<br> 1,3,5 | Cada dilluns, dimecres i divendres   |
 | */num         | Cada determinat temps                               |     Hores<br> */2    | Cada 2 hores                         |
 | num-num/num   |                                                     |    Hora<br> 8-20/5   | Entre les 8h i les 20h, cada 5 hores |
 
