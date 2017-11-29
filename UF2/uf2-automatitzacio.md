@@ -47,7 +47,7 @@ La comanda `crontab` permet **programar tasques periòdiques** i especificar el 
 
   `crontab -r`
   
-### Editar tasques programades
+## Editar tasques programades
 
 `sudo crontab -e`
 
