@@ -69,8 +69,10 @@ Les línies són formades pels camps:
 
 ## Amb entorn gràfic
 
-S’utilitza l’eina anomenada **Tareas programadas (_gnome-schedule_)**.
+Per automatitzar tasques en mode gràfic, s'utilitza el programa anomenat **Tareas programadas (_gnome-schedule_)**.
 
 Amb Ubuntu hi accedim des de **_Aplicacions> Eines del sistema > Tasques programades_**
+
+Aquest programa permet programar tasques per ser realitzades només una vegada o periòdicament.
 
 > IMATGE
