@@ -74,7 +74,7 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable **actualitz
 
 * Per **esborrar els paquets d'instal·lació** i guanyar espai en el disc dur: 
 
-  `sudo apt autoclean`
+  `sudo apt clean`
   
 
 ### Afegir repositoris externs
