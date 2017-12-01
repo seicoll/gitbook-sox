@@ -48,7 +48,7 @@ Mem:            4047564    3640916       406648       96748       38364     5327
 Intercambio:    1179644      98332      1081312
 ```
 
-## Processos
+## Monitorització dels processos
 
 La comanda **top** mostra una llista interactiva dels processos i permet realitzar diferents accions sobre cadascun d’ells, com matar-los o canviar la seva prioritat.
 
