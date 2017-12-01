@@ -48,6 +48,30 @@ Mem:            4047564    3640916       406648       96748       38364     5327
 Intercambio:    1179644      98332      1081312
 ```
 
+## Processos
+
+La comanda **top** mostra una llista interactiva dels processos i permet realitzar diferents accions sobre cadascun d’ells, com matar-los o canviar la seva prioritat.
+
+```bash+theme:dark
+top - 22:58:01 up 26 min,  1 user,  load average: 0,22, 0,25, 0,26
+Tasks: 273 total,   3 running, 270 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3,1 us,  1,2 sy,  0,0 ni, 95,1 id,  0,6 wa,  0,0 hi,  0,0 si,  0,0 st
+KiB Mem :  5985624 total,   770544 free,  2628672 used,  2586408 buff/cache
+KiB Swap:  6168572 total,  6168572 free,        0 used.  2166152 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     
+ 1365 root      20   0  558316 111516  85580 R   4,9  1,9   0:42.35 Xorg        
+ 1836 usuarixxx       20   0 2060704 146844  60344 R   4,9  2,5   0:51.43 cinnamon    
+ 2637 usuarixxx       20   0 1383888 300880 137884 S   4,9  5,0   1:24.64 chrome      
+ 5361 usuarixxx       20   0   43440   3828   3092 R   2,4  0,1   0:00.07 top         
+    1 root      20   0  119912   6064   3972 S   0,0  0,1   0:01.69 systemd     
+    2 root      20   0       0      0      0 S   0,0  0,0   0:00.00 kthreadd    
+    4 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 kworker/0:+ 
+    5 root      20   0       0      0      0 S   0,0  0,0   0:01.00 kworker/u1+ 
+```
+
+La comanda **ps** jlj
+
 ## Monitorització de la xarxa
 
 Per obtenir informació sobre la configuració de la xarxa, es poden utilitzar les següents comandes:
