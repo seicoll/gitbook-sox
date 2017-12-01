@@ -63,3 +63,7 @@ Per comprovar la connectivitat:
 
 Per comprovar la seguretat (ports oberts):
 * **nmap**: serveix per comprovar els ports oberts en l'ordinador.
+
+## Documentació i recursos
+
+* **Guia del servidor de l'Ubuntu** [https://help.ubuntu.com/lts/serverguide/monitoring.html](https://help.ubuntu.com/lts/serverguide/monitoring.html)
