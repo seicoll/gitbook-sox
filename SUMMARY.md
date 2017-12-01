@@ -27,6 +27,7 @@
   * [Administració i supervisió](UF2/uf2-supervisio.md)
     * [Gestió d'usuaris i grups](UF2/uf2-usuaris-locals.md)
     * [Instal·lació de paquets i actualització](UF2/uf2-actualitzacio.md)
+    * [Monitorització](UF2/uf2-monitoritzacio.md)
     * [Automatització de tasques](UF2/uf2-automatitzacio.md)
 
   * [Gestió de dominis](UF2/uf2-gestio-dominis.md)
