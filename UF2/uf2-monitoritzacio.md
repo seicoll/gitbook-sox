@@ -61,15 +61,25 @@ KiB Swap:  6168572 total,  6168572 free,        0 used.  2166152 avail Mem
 
   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     
  1365 root      20   0  558316 111516  85580 R   4,9  1,9   0:42.35 Xorg        
- 1836 usuarixxx 20   0 2060704 146844  60344 R   4,9  2,5   0:51.43 cinnamon    
- 2637 usuarixxx 20   0 1383888 300880 137884 S   4,9  5,0   1:24.64 chrome      
- 5361 usuarixxx 20   0   43440   3828   3092 R   2,4  0,1   0:00.07 top         
+ 1836 usuari    20   0 2060704 146844  60344 R   4,9  2,5   0:51.43 cinnamon    
+ 2637 usuari    20   0 1383888 300880 137884 S   4,9  5,0   1:24.64 chrome      
+ 5361 usuari    20   0   43440   3828   3092 R   2,4  0,1   0:00.07 top         
     1 root      20   0  119912   6064   3972 S   0,0  0,1   0:01.69 systemd     
     2 root      20   0       0      0      0 S   0,0  0,0   0:00.00 kthreadd    
     4 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 kworker/0:+ 
 ```
 
-La comanda **ps** jlj
+La comanda **ps** permet conèixer els processos que s'estan executant al sistema.
+
+```bash+theme:dark
+usuari@usxxx:~$ ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000  5341  5337  0  80   0 -  6021 wait   pts/0    00:00:00 bash
+4 R  1000  5775  5341  0  80   0 -  7607 -      pts/0    00:00:00 ps
+```
+
+* Per veure la informació detalla de tots els processos:
+`ps aux`
 
 ## Monitorització de la xarxa
 
