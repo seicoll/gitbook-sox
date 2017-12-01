@@ -61,9 +61,9 @@ KiB Swap:  6168572 total,  6168572 free,        0 used.  2166152 avail Mem
 
   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     
  1365 root      20   0  558316 111516  85580 R   4,9  1,9   0:42.35 Xorg        
- 1836 usuarixxx     20   0 2060704 146844  60344 R   4,9  2,5   0:51.43 cinnamon    
- 2637 usuarixxx     20   0 1383888 300880 137884 S   4,9  5,0   1:24.64 chrome      
- 5361 usuarixxx     20   0   43440   3828   3092 R   2,4  0,1   0:00.07 top         
+ 1836 usuarixxx 20   0 2060704 146844  60344 R   4,9  2,5   0:51.43 cinnamon    
+ 2637 usuarixxx 20   0 1383888 300880 137884 S   4,9  5,0   1:24.64 chrome      
+ 5361 usuarixxx 20   0   43440   3828   3092 R   2,4  0,1   0:00.07 top         
     1 root      20   0  119912   6064   3972 S   0,0  0,1   0:01.69 systemd     
     2 root      20   0       0      0      0 S   0,0  0,0   0:00.00 kthreadd    
     4 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 kworker/0:+ 
