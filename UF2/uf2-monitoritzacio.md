@@ -4,8 +4,7 @@
 
 Amb les comandes `cat /proc/cpuinfo` i `cat /proc/meminfo` es pot veure informació detallada sobre la **CPU** i la **RAM**:
 
-```bash
-
+```bash+theme:dark
 usuari@usxxx:~$ cat /proc/cpuinfo
 processor     : 0
 vendor_id     : GenuineIntel
@@ -22,7 +21,9 @@ flags         : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge
 bogomips      : 5343.28
 cache_alignment    : 64
 address sizes      : 36 bits physical, 48 bits virtual
+```
 
+```bash+theme:dark
 usuari@usxxx:~$ cat /proc/meminfo
 peter@ubuntu14:~$ cat /proc/meminfo
 MemTotal:        4047564 kB
