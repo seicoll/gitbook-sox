@@ -25,7 +25,6 @@ address sizes      : 36 bits physical, 48 bits virtual
 
 ```bash+theme:dark
 usuari@usxxx:~$ cat /proc/meminfo
-peter@ubuntu14:~$ cat /proc/meminfo
 MemTotal:        4047564 kB
 MemFree:          244320 kB
 Buffers:           44824 kB
@@ -38,3 +37,29 @@ SwapFree:        1081312 kB
 DirectMap4k:     1541632 kB
 DirectMap2M:     2652160 kB
 ```
+
+Amb la comanda `free` es pot veure informació resumida sobre la memòria RAM i la memòria virtual (memòria d'intercanvi o **swap**): el total, la quantitat utilitzada i la quantitat lliure.
+
+```bash+theme:dark
+usuari@usxxx:~$ free
+                  total      usado        libre    compart.     búffers     almac.
+Mem:            4047564    3640916       406648       96748       38364     532712
+-/+ buffers/cache:         3069840       977724
+Intercambio:    1179644      98332      1081312
+```
+
+## Monitorització de la xarxa
+
+Per obtenir informació sobre la configuració de la xarxa, es poden utilitzar les següents comandes:
+* **ipconfig** mostra l'adreça IP, la màscara (i altres, com per exemple l'adreça MAC).
+* **route** permet veure la porta porta d'enllaç.
+* **cat /etc/resolv.conf** serveix per saber quins servidors DNS s'han configurat.
+
+Per comprovar la connectivitat:
+* **ping** per comprovar la connectivitat punt a punt.
+* **traceroute** per descobrir en quin punt falla la connectivitat entre dos punts.
+* **host** permet comprovar la resolució DNS.
+* **nslookup** (obsolet; és equivalent a host): per defecte no ve instal·lat.
+
+Per comprovar la seguretat (ports oberts):
+* **nmap**: serveix per comprovar els ports oberts en l'ordinador.
