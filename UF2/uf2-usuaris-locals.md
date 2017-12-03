@@ -110,15 +110,15 @@ Serveix per **canviar la configuració** del compte d'usuari.
 
 Per exemple, es pot canviar el nom del compte (**login**), el grup principal, afegir o treure grups secundaris, canviar i/o moure el directori personal, canviar l'identificador, l'intèrpret de comandes per defecte (**shell**)...
 
-Per **canviar el grup principal** de l'usuari:
+**_-g_**: Per **canviar el grup principal** de l'usuari.
 
-`sudo usermod -g grup <usuari>`
+`sudo usermod -g <grup> <usuari>`
 
-Per afegir l'usuari a **grups secundaris**:
+**_-aG_**: Per afegir l'usuari a **grups secundaris**:
 
-`sudo usermod -aG grup [grup ...] <usuari>`
+`sudo usermod -aG <grup> [grup ...] <usuari>`
 
-Per **canviar el directori personal** i moure els seus arxius al nou directori:
+**_-m_**: Per **canviar el directori personal** i moure els seus arxius al nou directori:
 
 `sudo usermod -m -d /home/nou_dir <usuari>`
 
