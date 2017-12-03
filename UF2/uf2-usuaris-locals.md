@@ -41,7 +41,7 @@ Si es vol evitar aquestes restriccions, es pot afegir el paràmetre `--force-bad
 
 * Per defecte, quan es crea un usuari també **es crea un grup amb el seu mateix nom** i se li assigna com a **grup principal**.
 
-  > Tot usuari ha de pertànyer, almenys, a un grup, encara que pot ser de més d'un.
+  > Tot usuari ha de pertànyer, almenys, a un grup (**grup principal**), encara que pot ser de més d'un.
 
 * La **carpeta de l'usuari** no es crea fins que l'usuari es valida per primera vegada.
 Per defecte, les carpetes d'usuari es creen dins de `/home` i se li copia el contingut de la carpeta `/etc/skel`.
