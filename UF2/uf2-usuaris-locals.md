@@ -62,7 +62,7 @@ Per **crear un usuari**:
 
 ### deluser
 
-La comanda `deluser`serveix per **eliminar usuaris**.
+La comanda `deluser` serveix per **eliminar usuaris**.
 
 Per defecte, **no esborra la carpeta de l'usuari.** Si es vol esborrar cal afegir el paràmetre `--remove-home`.
 
@@ -70,7 +70,7 @@ Per **eliminar un usuari**:
 
 `sudo deluser <usuari>`
 
-Per **eliminar un usuari i el seu directori**:
+**_--remove-home_**: Per eliminar un usuari i el seu directori:
 
 `sudo deluser --remove-home <usuari>`
 
@@ -122,11 +122,11 @@ Per exemple, es pot canviar el nom del compte (**login**), el grup principal, af
 
 `sudo usermod -m -d /home/nou_dir <usuari>`
 
-Per **canviar el nom del compte (login)**:
+**_-l_**: Per **canviar el nom del compte (login)**:
 
 `sudo usermod -l nou_login <usuari>`
 
-Per **canviar l'identificador del compte (UID)**; `nou_id` no ha d'existir i ha de ser un número positiu:
+**_-u_**: Per **canviar l'identificador del compte (UID)**; `nou_id` no ha d'existir i ha de ser un número positiu:
 
 `sudo usermod -u nou_id <usuari>`
 
@@ -244,12 +244,15 @@ Hi ha diversos **fitxers de text** en Linux que contenen informació referent al
 **/etc/passwd**
 Conté la informació dels usuaris del sistema (nom, directori home, etc.)
 
-
 **/etc/shadow**
 Conté la les contrasenyes xifrades dels usuaris.
 
 **/etc/group**
 Conté la informació dels grups.
+
+* Informació de cada línia del fitxer
+
+  `nomgrup:password:GID:Llista_Usuaris`
 
 
 
