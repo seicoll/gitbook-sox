@@ -154,9 +154,7 @@ Per **reactivar un compte d'usuari** que ha estat desactivat.
 
 `sudo passwd -u <usuari>`
 
-## Iniciar sessió
-
-**Iniciar sessió amb un altre usuari**
+## Iniciar sessió amb un altre usuari
 
 Per **canviar a l'usuari root**:
 
