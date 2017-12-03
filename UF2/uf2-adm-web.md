@@ -1,5 +1,7 @@
 # Administració amb interfície web
 
+## Introducció
+
 Encara que un servidor no tingui interfície gràfica, existeixen molts **programes** que permeten **configurar un servidor de forma gràfica utilitzant una interfície web** (navegador d'Internet).
 
 Només cal saber com instal·lar-los i fer, si cal, alguna configuració bàsica, i com accedir a través del navegador (en alguns casos es fa a través d'un port específic, en altres cal utilitzar https, per utilitzar alguns cal tenir instal·lat un servidor de pàgines web com Apache).
@@ -42,8 +44,8 @@ L'usuari administrador de **ntop** per defecte es diu **admin**.
 ## Nagios
 
 **Nagios** és un sistema de **monitoratge d'equips i serveis de xarxa** que permet tenir un complet control de la disponibilitat de serveis, processos i recursos d'equips.
-[
-https://www.nagios.org/](https://www.nagios.org/)
+
+[https://www.nagios.org/](https://www.nagios.org/)
 
 ## Cacti
 
