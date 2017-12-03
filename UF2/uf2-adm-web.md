@@ -6,7 +6,8 @@ Només cal saber com instal·lar-los i fer, si cal, alguna configuració bàsica
 
 ## Webmin
 
-Aquest programa permet **administrar un servidor** de forma remota a través d'una interfície web gràfica que fa més fàcil la configuració.
+**Webmin** és un programa que permet **administrar un servidor** de forma remota a través d'una interfície web gràfica que fa més fàcil la seva configuració.
+
 Entre altres coses, permet administrar els usuaris, els serveis, la instal·lació de paquets i l'actualització del sistema, els sistemes de fitxers locals i remots, RAID i LVM, les quotes de disc, les còpies de seguretat, programar tasques, compartició de carpetes, permisos, configuració de xarxa, tallafocs, monitoratge...
 
 La millor forma d'**instal·lar**-ho és seguir les instruccions de [la seva web](http://www.webmin.com/deb.html) per afegir **_Webmin_** als repositoris. D'aquesta forma, s'actualitzarà automàticament quan s'actualitzi el sistema.
@@ -20,9 +21,11 @@ Finalment demanarà un usuari administrador (que pugui fer sudo) i la seva contr
 
 ![](/assets/uf2-webmin.png)
 
+[http://www.webmin.com/](http://www.webmin.com/)
+
 ## ntop
 
-Aquest programa serveix per **monitoritzar la xarxa**. Ens permet triar quines interfícies es vol monitoritzar i mostra en gràfics i en taules estadístiques tota la informació de la xarxa. Es pot filtrar en funció dels diversos protocols.
+**Ntop** és un programa que serveix per **monitoritzar la xarxa**. Ens permet triar quines interfícies es vol monitoritzar i mostra en gràfics i en taules estadístiques tota la informació de la xarxa. Es pot filtrar en funció dels diversos protocols.
 
 Es troba en els repositoris d'Ubuntu i per tant es pot instal·lar amb **apt**.
 Demanarà quines interfícies es vol monitoritzar. S'han d'introduir separades per comes, per exemple: eth0,wlan0....
@@ -38,8 +41,15 @@ L'usuari administrador de **ntop** per defecte es diu **admin**.
 
 ## Nagios
 
+**Nagios** és un sistema de **monitoratge d'equips i serveis de xarxa** que permet tenir un complet control de la disponibilitat de serveis, processos i recursos d'equips.
+[
+https://www.nagios.org/](https://www.nagios.org/)
+
 ## Cacti
-És una potent eina de monitorització. Permet recollir tot tipus de dades de l'ordinador: ventiladors, temperatures, utilització de disc i de memòria... i representar-los a través d'una interfície web en forma gràfica amb diferents escales temporals.
+
+**Cacti** és una potent **eina de monitorització** que permet recollir tot tipus de dades de l'ordinador: ventiladors, temperatures, utilització de disc i de memòria... i representar-los a través d'una interfície web en forma gràfica amb diferents escales temporals.
+
+[https://www.cacti.net/](https://www.cacti.net/)
 
 ## Documentació i recursos
 
