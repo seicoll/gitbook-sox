@@ -53,8 +53,4 @@ https://www.nagios.org/](https://www.nagios.org/)
 
 ## Documentació i recursos
 
-* **Apunts SOX Pere Sánchez: Administració amb interfície web **[http://moodlecf.sapalomera.cat/apunts/smx/sox/?cap=1.5.15](http://moodlecf.sapalomera.cat/apunts/smx/sox/?cap=1.5.15)
-
-* **20 Command Line Tools to Monitor Linux Performance** [http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/](http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/)
-
-* **20 Linux System Monitoring Tools Every SysAdmin Should Know** [https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html](https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html)
+* **Apunts SOX Pere Sánchez: Administració amb interfície web** [http://moodlecf.sapalomera.cat/apunts/smx/sox/?cap=1.5.15](http://moodlecf.sapalomera.cat/apunts/smx/sox/?cap=1.5.15)

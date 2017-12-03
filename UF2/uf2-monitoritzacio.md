@@ -100,4 +100,11 @@ Per comprovar la seguretat (ports oberts):
 
 ## Documentació i recursos
 
-* **Guia del servidor de l'Ubuntu** [https://help.ubuntu.com/lts/serverguide/monitoring.html](https://help.ubuntu.com/lts/serverguide/monitoring.html)
+* **Guia del servidor de l'Ubuntu** 
+[https://help.ubuntu.com/lts/serverguide/monitoring.html](https://help.ubuntu.com/lts/serverguide/monitoring.html)
+
+* **20 Command Line Tools to Monitor Linux Performance** 
+[http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/](http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/)
+
+* **20 Linux System Monitoring Tools Every SysAdmin Should Know**
+[https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html](https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html)
