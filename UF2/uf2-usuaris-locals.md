@@ -239,19 +239,45 @@ Per mostrar la **informació només d'un grup**:
 
 Hi ha diversos **fitxers de text** en Linux que contenen informació referent als usuaris i als grups d'usuaris donats d'alta en el sistema.
 
+> **ATENCIÓ**: aquests arxius no s'haurien d'editar mai manualment!
+Per fer qualsevol modificació s'han d'utilitzar les comandes corresponents.
+
 **/etc/passwd**
-Conté la informació dels usuaris del sistema (nom, directori home, etc.)
+Conté la informació dels usuaris del sistema (nom, directori home, etc.). Cada línia és un usuari i cada camp està separat per dos punts (:).
+
+  `usuari:x:1000:2000:usuari local,,,:/home/usuari:/bin/bash`
+
+* **usuari** és el nom del compte d'usuari (_login_)
+* Una **x** en el segon camp indica que la contrasenya es troba en l'arxiu /etc/shadow.
+* El tercer camp (**1000**) és l'identificador d'usuari.
+* El quart camp (**2000**) és l'identificador del grup principal.
+* Nom complet de l'usuari i altres informacions.
+* `/home/usuari` és el directori personal de l'usuari.
+* `/bin/bash` és l'intèrpret de comandes per defecte.
 
 **/etc/shadow**
-Conté la les contrasenyes xifrades dels usuaris.
+Conté la les contrasenyes xifrades dels usuaris  i altres informacions, com per exemple l'última data en què es va canviar la contrasenya.
 
 **/etc/group**
-Conté la informació dels grups.
+Conté la informació dels grups. Cada camp està separat per :
 
-* Informació de cada línia del fitxer
+  `profes:x:2000:usuari,director`
+  
+* **profes** és el  nom del grup.
+* Una **x** en el segon camp indica que la contrasenya es troba en l'arxiu /etc/gshadow.
+* El tercer camp (**2000**) és l'identificador del grup.
+* El quart camp conté els noms dels usuaris que tenen aquest grup com a grup secundari.
 
-  `nomgrup:password:GID:Llista_Usuaris`
+**/etc/sudoers**
 
+Conté informació sobre els drets i privilegis dels usuaris.
+La seva principal utilitat és afegir grups o usuaris que puguin actuar com a administradors (que puguin utilitzar la comanda `sudo`).
 
+```bash
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
 
+# Allow members of group sudo to execute any command
+%sudo    ALL=(ALL:ALL) ALL
+```
 
