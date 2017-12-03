@@ -242,7 +242,7 @@ Hi ha diversos **fitxers de text** en Linux que contenen informació referent al
 > **ATENCIÓ**: aquests arxius no s'haurien d'editar mai manualment!
 Per fer qualsevol modificació s'han d'utilitzar les comandes corresponents.
 
-**/etc/passwd**
+#### /etc/passwd
 Conté la informació dels usuaris del sistema (nom, directori home, etc.). Cada línia és un usuari i cada camp està separat per dos punts (:).
 
   `usuari:x:1000:2000:usuari local,,,:/home/usuari:/bin/bash`
@@ -255,10 +255,10 @@ Conté la informació dels usuaris del sistema (nom, directori home, etc.). Cada
 * `/home/usuari` és el directori personal de l'usuari.
 * `/bin/bash` és l'intèrpret de comandes per defecte.
 
-**/etc/shadow**
+#### /etc/shadow
 Conté la les contrasenyes xifrades dels usuaris  i altres informacions, com per exemple l'última data en què es va canviar la contrasenya.
 
-**/etc/group**
+#### /etc/group
 Conté la informació dels grups. Cada camp està separat per :
 
   `profes:x:2000:usuari,director`
@@ -268,7 +268,7 @@ Conté la informació dels grups. Cada camp està separat per :
 * El tercer camp (**2000**) és l'identificador del grup.
 * El quart camp conté els noms dels usuaris que tenen aquest grup com a grup secundari.
 
-**/etc/sudoers**
+#### /etc/sudoers
 
 Conté informació sobre els drets i privilegis dels usuaris.
 La seva principal utilitat és afegir grups o usuaris que puguin actuar com a administradors (que puguin utilitzar la comanda `sudo`).
