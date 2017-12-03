@@ -28,6 +28,7 @@
     * [Gestió d'usuaris i grups](UF2/uf2-usuaris-locals.md)
     * [Instal·lació de paquets i actualització](UF2/uf2-actualitzacio.md)
     * [Monitorització](UF2/uf2-monitoritzacio.md)
+    * [Administració web](UF2/uf2-adm-web.md)
     * [Automatització de tasques](UF2/uf2-automatitzacio.md)
 
   * [Gestió de dominis](UF2/uf2-gestio-dominis.md)
