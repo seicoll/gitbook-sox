@@ -46,13 +46,17 @@ Si es vol evitar aquestes restriccions, es pot afegir el paràmetre `--force-bad
 * La **carpeta de l'usuari** no es crea fins que l'usuari es valida per primera vegada.
 Per defecte, les carpetes d'usuari es creen dins de `/home` i se li copia el contingut de la carpeta `/etc/skel`.
 
-Per crear un usuari:
+Per **crear un usuari**:
 
 `sudo adduser <usuari>`
 
-Per crear un usuari i assignar-li el grup principal (el grup ha d'existir):
+**_--ingroup_**: Per crear un usuari i assignar-li el grup principal (el grup ha d'existir):
 
-`sudo adduser <usuari> --ingroup grup`
+`sudo adduser <usuari> --ingroup <grup>`
+
+**_-d, --home_**: Per assignar un directori $HOME a l'usuari:
+
+`sudo adduser <usuari> --home <directori_home>`
 
 ## Eliminació d'usuaris
 
@@ -62,11 +66,11 @@ La comanda `deluser`serveix per **eliminar usuaris**.
 
 Per defecte, **no esborra la carpeta de l'usuari.** Si es vol esborrar cal afegir el paràmetre `--remove-home`.
 
-Per eliminar un usuari:
+Per **eliminar un usuari**:
 
 `sudo deluser <usuari>`
 
-Per eliminar un usuari i el seu directori:
+Per **eliminar un usuari i el seu directori**:
 
 `sudo deluser --remove-home <usuari>`
 
