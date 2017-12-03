@@ -6,7 +6,7 @@ Només cal saber com instal·lar-los i fer, si cal, alguna configuració bàsica
 
 ## Webmin
 
-Aquest programa permet administrar un servidor de forma remota a través d'una interfície web gràfica que fa més fàcil la configuració.
+Aquest programa permet **administrar un servidor** de forma remota a través d'una interfície web gràfica que fa més fàcil la configuració.
 Entre altres coses, permet administrar els usuaris, els serveis, la instal·lació de paquets i l'actualització del sistema, els sistemes de fitxers locals i remots, RAID i LVM, les quotes de disc, les còpies de seguretat, programar tasques, compartició de carpetes, permisos, configuració de xarxa, tallafocs, monitoratge...
 
 La millor forma d'**instal·lar**-ho és seguir les instruccions de [la seva web](http://www.webmin.com/deb.html) per afegir **_Webmin_** als repositoris. D'aquesta forma, s'actualitzarà automàticament quan s'actualitzi el sistema.
@@ -18,12 +18,11 @@ Per **accedir només cal obrir un navegador** en el client, utilitzar https i po
 Possiblement indicarà què s'està accedint a un lloc segur sense certificació reconeguda però s'ha de permetre l'accés.
 Finalment demanarà un usuari administrador (que pugui fer sudo) i la seva contrasenya.
 
+![](/assets/uf2-webmin.png)
+
 ## ntop
 
-Aquest programa serveix per monitoritzar la xarxa.
-Permet triar quines interfícies es vol monitoritzar.
-Mostra en gràfics i en taules estadístiques tota la informació de la xarxa. Es pot filtrar en 
-funció dels diversos protocols.
+Aquest programa serveix per **monitoritzar la xarxa**. Ens permet triar quines interfícies es vol monitoritzar i mostra en gràfics i en taules estadístiques tota la informació de la xarxa. Es pot filtrar en funció dels diversos protocols.
 
 Es troba en els repositoris d'Ubuntu i per tant es pot instal·lar amb **apt**.
 Demanarà quines interfícies es vol monitoritzar. S'han d'introduir separades per comes, per exemple: eth0,wlan0....
@@ -35,6 +34,8 @@ Per **accedir a través d'un navegador web** cal escriure l'adreça del servidor
 
 L'usuari administrador de **ntop** per defecte es diu **admin**.
 
+![](/assets/uf2-ntop.png)
+
 ## Nagios
 
 ## Cacti
@@ -43,3 +44,7 @@ L'usuari administrador de **ntop** per defecte es diu **admin**.
 ## Documentació i recursos
 
 * **Apunts SOX Pere Sánchez: Administració amb interfície web **[http://moodlecf.sapalomera.cat/apunts/smx/sox/?cap=1.5.15](http://moodlecf.sapalomera.cat/apunts/smx/sox/?cap=1.5.15)
+
+* **20 Command Line Tools to Monitor Linux Performance** [http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/](http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/)
+
+* **20 Linux System Monitoring Tools Every SysAdmin Should Know** [https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html](https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html)
