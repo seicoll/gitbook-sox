@@ -177,7 +177,7 @@ Per saber en **quin usuari hem iniciat la secció actual**.
 
 ### Per comandes
 
-**id [usuari]**
+#### id [usuari]
 
 Mostra l'**identificador de l'usuari (_UID_)** i els **grups al que pertany** un usuari juntament amb l'idenficacio de cada grup (_GID_).
 
@@ -186,7 +186,7 @@ usuari@ucxxx:~$ id
 uid=1000(usuari) gid=1000(usuari) grupos=1000(usuari),4(adm),27(sudo),46(plugdev)...
 ```
 
-**groups [usuari]**
+#### groups [usuari]
 
 Mostra els **noms dels grups als que pertany** un usuari.
 
@@ -197,7 +197,7 @@ usuari@ucxxx:~$ groups
 usuari adm cdrom sudo dip plugdev lpadmin sambashare
 ```
 
-**getent passwd **
+#### getent passwd
 
 Mostra **informació dels usuaris**. Pot mostrar tant usuaris locals com de domini (LDAP).
 
@@ -215,7 +215,7 @@ Per mostrar la **informació només d'un usuari**:
 
 `getent passwd <usuari>`
 
-**getent group **
+#### getent group
 
 Mostra **informació dels grups**. Pot mostrar tant grups locals com de domini (LDAP).
 
@@ -273,7 +273,7 @@ Conté la informació dels grups. Cada camp està separat per :
 Conté informació sobre els drets i privilegis dels usuaris.
 La seva principal utilitat és afegir grups o usuaris que puguin actuar com a administradors (que puguin utilitzar la comanda `sudo`).
 
-```bash
+```
 # User privilege specification
 root    ALL=(ALL:ALL) ALL
 
