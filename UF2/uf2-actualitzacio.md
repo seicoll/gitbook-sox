@@ -122,19 +122,19 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable **actualitz
   
 ## Amb entorn gràfic
 
-### Centro de software de Ubuntu
+### Centre de software de Ubuntu
 
 Serveix per instal·lar i desinstal·lar programes i paquets que hi ha en els repositoris d'Ubuntu.
 
 ![](/assets/uf2-SoftwareUbuntu.png)
 
-### Software i actualizaciones
+### Software i actualitzacions
 
 Serveix per configurar les actualitzacions del sistema i del programari (triar els repositoris, la periodicitat...). També mostra i permet seleccionar possibles controladors de hardware, tant lliures com privatius (per exemple, els de la targeta gràfica).
 
 ![](/assets/uf2-SoftwareActualitzacions.png)
 
-### Actualización de software
+### Actualització de software
 
 Permet comprovar manualment si hi ha actualitzacions i triar quins paquets es volen actualitzar.
 
