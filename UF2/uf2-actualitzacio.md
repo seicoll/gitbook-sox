@@ -9,7 +9,7 @@
 > Un **paquet de programari** és un arxiu que conté una sèrie de fitxers que es distribueixen conjuntament i permeten la instal·lació d’un programa 
 
 Hi ha diversos tipus de paquets: 
-* Els **paquets binaris** són paquets construïts (o complilats) específicament per a uma distribució.
+* Els **paquets binaris** són paquets construïts (o compilats) específicament per a una distribució.
 Els més comuns són:
   * Els **.rpm**, que els utilitzen **_Red Hat_**, **_Suse_** i derivats
   * Els **.deb**, que els utilitzen **_Debian_**, **_Ubuntu_** i derivats. 
