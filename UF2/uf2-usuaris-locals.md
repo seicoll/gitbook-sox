@@ -8,7 +8,6 @@ Per accedir a un sistema Linux,** s'ha de tenir un compte d'usuari**, és a dir,
 
 Només l'usuari **_root_**, també anomenat **superusuari**, que en Linux és l'administrador del sistema, pot crear, eliminar o administrar els comptes d'usuari.
 
-
 ## Tipus d'usuaris
 
 Existeix 3 tipus d'usuaris:
