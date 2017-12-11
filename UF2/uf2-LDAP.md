@@ -1,26 +1,36 @@
 # Instal·lació d'un controlador de domini LDAP
+
 ## Instal·lació OpenLDAP
 
-La instal·lació consisteix en instal·lar el paquet **_slapd_**.
+El programa OpenLDAP s'instal·la com a servei amb el paquet **_slapd_**.
 
-  `sudo apt-get update`
+  ```
+  sudo apt-get update`
+  sudo apt-get install slapd
+  ```
 
-  `sudo apt-get install slapd`
+**Slapd **(_Independent LDAP Daemon_) és un programa que s'executa en segon pla, atenent les sol·licituds d'autenticació LDAP que es rebin al servidor.
 
-* **Slapd **(_Independent LDAP Daemon_) és un programa multiplataforma, que s'executa en segon pla, atenent les sol·licituds d'autenticació LDAP que es rebin al servidor.
-
-Durant l’instal·lació, us demana que introduïu una contrasenya de l’administrador del servei LDAP.
+Durant l’instal·lació, només us demana que introduïu una **contrasenya de l’administrador** del servei LDAP.
 
 ![](/assets/slapd_instalacio.png)
 
 ## Instal·lació d'utilitzats d'administració de LDAP
 
-També instal·larem el paquet **_ldap-utils_** que conté les utilitats d'administració de LDAP.
-* Conté comandes per realitzar consultes i modificacions a la base de dades del servei LDAP.
+També instal·larem el paquet **_ldap-utils_** que proporciona algunes comandes per realitzar consultes i modificacions a la base de dades del servei LDAP.
 
 Com que aquest paquet es troba en els repositoris oficials d'Ubuntu, cal escriure la següent comanda:
 
   `sudo apt-get install ldap-utils`
+  
+Per no haver d'indicar la base del domini i el servidor en cada comanda, es pot configurar l'arxiu `/etc/ldap/ldap.conf` :
+  * Descomentant les línies amb els paràmetres **BASE** i **URI**
+  * I posant la base del domini i la IP del servidor LDAP (si hi hagués un servidor de DNS, també es podria utilitzar el nom DNS del servidor de LDAP, per exemple **_usxxx.ldapxxx.local_**):
+
+  ```
+  BASE   dc=ldapxxx,dc=local
+  URI    ldap://172.30.A.20  
+  ```
 
 ## Configuració servidor LDAP
 
@@ -31,9 +41,10 @@ Un cop instal·lat **OpenLADP **cal configurar-lo amb la comanda:
 1. La primera pantalla que es mostra, actua com a mesura de seguretat, per assegurar-se que no fem canvis per error.
 Cal anar amb compte perquè la pregunta es fa a l'inrevés, és a dir , ens pregunta si volem ometre la configuració del servidor haurem de triar la opció **NO**. 
 
-2. El directori OpenLDAP ha de tenir una arrel de la qual penja la resta d’elements. Com a nom de l’arrel s’utilitza un nom DNS. En el nostre cas utilitzarem el domini **_bosccoma.local_**
+2. El directori OpenLDAP ha de tenir una arrel de la qual penja la resta d’elements. Com a nom de l’arrel s’utilitza un nom DNS. En el nostre cas utilitzarem el domini **_ldapxxx.local_** (xxx són les teves inicials en minúscules).
 
-3. Nom de l'entitat en la qual estem instal·lant el directori LDAP: **_bosccoma.local_**
+
+3. Nom de l'entitat en la qual estem instal·lant el directori LDAP: **_ldapxxx.local_**
 
 4. Se us informarà sobre els possibles gestors de bases de dades per emmagatzemar el directori. Es recomana **HDB** perquè ens permetrà canviar els noms dels subarbres si fos necessari.
 

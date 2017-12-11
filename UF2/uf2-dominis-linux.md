@@ -2,7 +2,7 @@
 
 # Introducció als dominis en Linux
 
-En Linux, el protocol que s'encarrega de crear, modificar i accedir a informació en un directori és **LDAP**.
+En Linux, el **protocol** que s'encarrega de crear, modificar i accedir a informació en un directori és **LDAP**.
 
 **LDAP **són les sigles de **_lightweight directory access protocol_** o protocol d’accés lleuger a directoris.
 
@@ -26,7 +26,3 @@ Es pot utilitzar de manera conjunta amb una gran quantitat d’**aplicacions que
 En general, el LDAP s’utilitza quan es vol accedir a una base de dades i cal autenticar-se des de **diferents plataformes** i des de múltiples ordinadors o aplicacions ubicats en una xarxa.
 
 El servei de directori LDAP té una **arquitectura client-servidor**.
-
-
-
-En Linux, un dels programes que permet gestionar la informació d'un directori LDAP és OpenLDAP
