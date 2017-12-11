@@ -14,7 +14,7 @@ gunzip -k document.gz
 
 ### Comanda tar
 
-La comanda tar serveix per empaquetar/desempaquetar un conjunt d'arxius (sense comprimir-los).
+La comanda **tar** serveix per empaquetar/desempaquetar un conjunt d'arxius (sense comprimir-los).
 
 ```
 tar -cvf documents.tar ./documents/
