@@ -29,15 +29,15 @@ Finalment demanarà un usuari administrador (que pugui fer sudo) i la seva contr
 
 **Ntop** és un programa que serveix per **monitoritzar la xarxa**. Ens permet triar quines interfícies es vol monitoritzar i mostra en gràfics i en taules estadístiques tota la informació de la xarxa. Es pot filtrar en funció dels diversos protocols.
 
-Es troba en els repositoris d'Ubuntu i per tant es pot instal·lar amb **apt**.
-Demanarà quines interfícies es vol monitoritzar. S'han d'introduir separades per comes, per exemple: eth0,wlan0....
-També demanarà una contrasenya per l'administrador.
+**Ntopng** és la nova generació del **Ntop** original. Aquest programa es troba en els repositoris d'Ubuntu i per tant es pot instal·lar amb **apt**.
 
+`sudo apt install ntopng`
+ 
 Per **accedir a través d'un navegador web** cal escriure l'adreça del servidor i el **port 3000**:
 
-`IP_servidor:3000`
+`http://IP_servidor:3000`
 
-L'usuari administrador de **ntop** per defecte es diu **admin**.
+L'usuari administrador de **Ntopng** per defecte es diu ***admin*** i la contrassenya és ***admin***.
 
 ![](/assets/uf2-ntop.png)
 
