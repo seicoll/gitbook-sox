@@ -46,7 +46,7 @@ Per descomprimir:
 ### Comanda zip
 
 **Paràmetres:**
-* -r per comprimir de forma recursiva (directoris).
+* `-r` per comprimir de forma recursiva (directoris).
 
 Per comprimir tot un directori:
 `zip -r arxiu_comprimit.zip directori`
