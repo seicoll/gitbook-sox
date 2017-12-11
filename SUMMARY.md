@@ -25,6 +25,7 @@
   * [Introducció als sistemes operatius Linux](UF2/uf2-introduccio.md)
     * [Instal·lació Linux Server](UF2/uf2-instalacio-linuxserver.md)
   * [Administració i supervisió](UF2/uf2-supervisio.md)
+    * [Gestió d'arxius](UF2/uf2-arxius.md)
     * [Gestió d'usuaris i grups](UF2/uf2-usuaris-locals.md)
     * [Instal·lació de paquets i actualització](UF2/uf2-actualitzacio.md)
     * [Monitorització](UF2/uf2-monitoritzacio.md)
