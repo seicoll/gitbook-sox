@@ -49,7 +49,9 @@ Per descomprimir:
 * `-r` per comprimir de forma recursiva (directoris).
 
 Per comprimir tot un directori:
+
 `zip -r arxiu_comprimit.zip directori`
 
 Per descomprimir:
+
 `unzip arxiu_comprimit.zip`
