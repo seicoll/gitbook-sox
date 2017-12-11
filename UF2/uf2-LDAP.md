@@ -15,23 +15,6 @@ Durant l’instal·lació, només us demana que introduïu una **contrasenya de 
 
 ![](/assets/slapd_instalacio.png)
 
-## Instal·lació d'utilitzats d'administració de LDAP
-
-També instal·larem el paquet **_ldap-utils_** que proporciona algunes comandes per realitzar consultes i modificacions a la base de dades del servei LDAP.
-
-Com que aquest paquet es troba en els repositoris oficials d'Ubuntu, cal escriure la següent comanda:
-
-  `sudo apt-get install ldap-utils`
-  
-Per no haver d'indicar la base del domini i el servidor en cada comanda, es pot configurar l'arxiu `/etc/ldap/ldap.conf` :
-  * Descomentant les línies amb els paràmetres **BASE** i **URI**
-  * I posant la base del domini i la IP del servidor LDAP (si hi hagués un servidor de DNS, també es podria utilitzar el nom DNS del servidor de LDAP, per exemple **_usxxx.ldapxxx.local_**):
-
-  ```
-  BASE   dc=ldapxxx,dc=local
-  URI    ldap://172.30.A.20  
-  ```
-
 ## Configuració servidor LDAP
 
 Un cop instal·lat **OpenLADP **cal configurar-lo amb la comanda:
@@ -76,5 +59,24 @@ Per tal d’**arrencar o reiniciar el servidor LDAP**, executeu l’ordre següe
 Si no hem configurat correctament el servei LDAP o volem canviar el nom del domini, es pot tornar a configurar el servei amb la comanda:
 
  `sudo dpkg-reconfigure slapd`
+ 
+## Instal·lació d'utilitzats d'administració de LDAP
+
+També instal·larem el paquet **_ldap-utils_** que proporciona algunes comandes per realitzar consultes i modificacions a la base de dades del servei LDAP.
+
+Com que aquest paquet es troba en els repositoris oficials d'Ubuntu, cal escriure la següent comanda:
+
+  `sudo apt-get install ldap-utils`
+  
+Per no haver d'indicar la base del domini i el servidor en cada comanda, es pot configurar l'arxiu `/etc/ldap/ldap.conf` :
+  * Descomentant les línies amb els paràmetres **BASE** i **URI**
+  * I posant la base del domini i la IP del servidor LDAP (si hi hagués un servidor de DNS, també es podria utilitzar el nom DNS del servidor de LDAP, per exemple **_usxxx.ldapxxx.local_**):
+
+  ```
+  BASE   dc=ldapxxx,dc=local
+  URI    ldap://172.30.A.20  
+  ```
+
+
 
 
