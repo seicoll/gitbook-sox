@@ -17,6 +17,7 @@ Per configurar el **phpLDAPadmin** per tal que accedeixi al nostre domini, edita
 I modifiqueu **a dos llocs** `dc=example,dc=com` per `dc=ldapxxx,dc=local`
 
 > **Important**: Només hi ha dos llocs on cal canviar-ho, la resta són línies que estan comentades).
+Les línies que comencen amb **#** o **//** són comentaris i no cal modificar-les.
 
 ```
 /* Array of base DNs of your LDAP server. Leave this blank to have phpLDAPadmin auto-detect it for you. */
@@ -32,8 +33,6 @@ $servers->setValue('login','bind_id','cn=admin,dc=ldapxxx,dc=local');
 ```
 
 > Amb l'editor _**nano**_, es pot buscar text amb la combinació de tecles **Ctrl + W**.
-
-> Les línies que comencen amb **#** o **//** són comentaris i no cal modificar-les.
 
 ### Accedir a phpLDAPadmin
 
