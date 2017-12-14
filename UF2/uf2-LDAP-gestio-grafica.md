@@ -8,13 +8,14 @@
 
 Per instal·lar una interfície web de gestió del directori LDAP, instal·la al servidor el **phpLDAPadmin** amb la comanda:
 
-  `apt-get install phpldapadmin`
+  `apt install phpldapadmin`
 
 Per configurar el **phpLDAPadmin** per tal que accedeixi al nostre domini, edita el fitxer `/etc/phpldapadmin/config.php`.
 
   `sudo nano /etc/phpldapadmin/config.php`
 
-I modifiqueu `dc=example,dc=com` per `dc=ldapxxx,dc=local`
+I modifiqueu **a dos llocs** `dc=example,dc=com` per `dc=ldapxxx,dc=local`
+(només hi ha dos llocs on cal canviar-ho, la resta són línies que estan comentades).
 
 > Amb l'editor _**nano**_, es pot buscar text amb la combinació de tecles **Ctrl + W**.
 
@@ -61,7 +62,7 @@ També hi ha programes per entorn gràfic que permeten gestionar LDAP de forma r
 
 Es pot instal·lar **LAT **des del Centre de Software d'Ubuntu o per comandes:
 
-`sudo apt-get install lat`
+`sudo apt install lat`
 
 Per posar-lo en marxa és preferible fer-ho des de la consola:
 

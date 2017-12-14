@@ -5,8 +5,8 @@
 El programa OpenLDAP s'instal·la com a servei amb el paquet **_slapd_**.
 
   ```
-  sudo apt-get update
-  sudo apt-get install slapd
+  sudo apt update
+  sudo apt install slapd
   ```
 
 **Slapd **(_Independent LDAP Daemon_) és un programa que s'executa en segon pla, atenent les sol·licituds d'autenticació LDAP que es rebin al servidor.
@@ -66,7 +66,7 @@ També instal·larem el paquet **_ldap-utils_** que proporciona algunes comandes
 
 Com que aquest paquet es troba en els repositoris oficials d'Ubuntu, cal escriure la següent comanda:
 
-  `sudo apt-get install ldap-utils`
+  `sudo apt install ldap-utils`
   
 Per no haver d'indicar la base del domini i el servidor en cada comanda, es pot configurar l'arxiu `/etc/ldap/ldap.conf` :
   * Descomentant les línies amb els paràmetres **BASE** i **URI**
