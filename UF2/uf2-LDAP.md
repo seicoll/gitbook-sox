@@ -76,7 +76,24 @@ Per no haver d'indicar la base del domini i el servidor en cada comanda, es pot 
   BASE   dc=ldapxxx,dc=local
   URI    ldap://172.30.A.20  
   ```
+  
+Per **comprovar amb ldap-utils que la configuració** del servei LDAP és correcta i veure els elements que hi ha a la base de dades LDAP es pot utilitzar la següent comanda que mostra tots els dn dels objectes del domini (de moment només el del domini i el de l'usuari admin):
 
+```bash
+usuari@usxxx:~$ ldapsearch -x -LLL dn
+dn: dc=ldapxxx,dc=local
+
+dn: cn=admin,dc=ldapxxx,dc=local
+```
+
+Sense la configuració prèvia de l'arxiu `/etc/ldap/ldap.conf`, la comanda hauria de ser:
+
+```bash
+usuari@usxxx:~$ ldapsearch -x -LLL -H ldap://172.30.0.20 -b dc=ldapxxx,dc=local dn
+dn: dc=ldapxxx,dc=local
+
+dn: cn=admin,dc=ldapxxx,dc=local
+```
 
 
 
