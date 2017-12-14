@@ -14,7 +14,7 @@ Per configurar el **phpLDAPadmin** per tal que accedeixi al nostre domini, edita
 
   `sudo nano /etc/phpldapadmin/config.php`
 
-I modifiqueu `dc=example,dc=com` per `dc=bosccoma,dc=local`
+I modifiqueu `dc=example,dc=com` per `dc=ldapxx,dc=local`
 
 > Amb l'editor _**nano**_, es pot buscar text amb la combinació de tecles **Ctrl + W**.
 
@@ -28,7 +28,7 @@ Des de l’ubuntu desktop o qualsevol altre clien, aneu a un navegador web i con
   
 > Cal substituir _**IP_SERVIDOR**_ per la IP del vostre servidor LDAP.
 
-Us demanarà l'usuari (hauria de ser `cn=admin,dc=bosccoma,dc=local`) i la seva contrasenya.
+Us demanarà l'usuari (hauria de ser `cn=admin,dc=ldapxxx,dc=local`) i la seva contrasenya.
 
 Si l'identificador no és correcte, cal revisar els canvis fets a l'arxiu `/etc/phpldapadmin/config.php`
 
