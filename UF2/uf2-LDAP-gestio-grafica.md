@@ -15,14 +15,13 @@ Per configurar el **phpLDAPadmin** per tal que accedeixi al nostre domini, edita
   `sudo nano /etc/phpldapadmin/config.php`
 
 I modifiqueu **a dos llocs** `dc=example,dc=com` per `dc=ldapxxx,dc=local`
-(només hi ha dos llocs on cal canviar-ho, la resta són línies que estan comentades).
+
+> **Important**: Només hi ha dos llocs on cal canviar-ho, la resta són línies que estan comentades).
 
 ```
 /* Array of base DNs of your LDAP server. Leave this blank to have phpLDAPadmin auto-detect it for you. */
 $servers->setValue('server','base',array('dc=ldapxxx,dc=local'));
-
 ...
-
 /* The DN of the user for phpLDAPadmin to bind with. For anonymous binds or
    'cookie','session' or 'sasl' auth_types, LEAVE THE LOGIN_DN AND LOGIN_PASS
    BLANK. If you specify a login_attr in conjunction with a cookie or session
