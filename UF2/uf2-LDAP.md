@@ -5,7 +5,7 @@
 El programa OpenLDAP s'instal·la com a servei amb el paquet **_slapd_**.
 
   ```
-  sudo apt-get update`
+  sudo apt-get update
   sudo apt-get install slapd
   ```
 
