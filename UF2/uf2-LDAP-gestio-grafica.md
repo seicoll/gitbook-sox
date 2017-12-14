@@ -17,6 +17,21 @@ Per configurar el **phpLDAPadmin** per tal que accedeixi al nostre domini, edita
 I modifiqueu **a dos llocs** `dc=example,dc=com` per `dc=ldapxxx,dc=local`
 (només hi ha dos llocs on cal canviar-ho, la resta són línies que estan comentades).
 
+```
+/* Array of base DNs of your LDAP server. Leave this blank to have phpLDAPadmin auto-detect it for you. */
+$servers->setValue('server','base',array('dc=ldapxxx,dc=local'));
+
+...
+
+/* The DN of the user for phpLDAPadmin to bind with. For anonymous binds or
+   'cookie','session' or 'sasl' auth_types, LEAVE THE LOGIN_DN AND LOGIN_PASS
+   BLANK. If you specify a login_attr in conjunction with a cookie or session
+   auth_type, then you can also specify the bind_id/bind_pass here for searching
+   the directory for users (ie, if your LDAP server does not allow anonymous
+   binds. */
+$servers->setValue('login','bind_id','cn=admin,dc=ldapxxx,dc=local');
+```
+
 > Amb l'editor _**nano**_, es pot buscar text amb la combinació de tecles **Ctrl + W**.
 
 > Les línies que comencen amb **#** o **//** són comentaris i no cal modificar-les.
