@@ -14,7 +14,7 @@ Per configurar el **phpLDAPadmin** per tal que accedeixi al nostre domini, edita
 
   `sudo nano /etc/phpldapadmin/config.php`
 
-I modifiqueu `dc=example,dc=com` per `dc=ldapxx,dc=local`
+I modifiqueu `dc=example,dc=com` per `dc=ldapxxx,dc=local`
 
 > Amb l'editor _**nano**_, es pot buscar text amb la combinació de tecles **Ctrl + W**.
 
