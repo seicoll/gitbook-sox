@@ -35,11 +35,11 @@ Per tal que en nostre ubuntu desktop client s'autentiqui per LDAP, instal·larem
 
 Els paràmetres de configuració que demana són els següents:
 * Servidor LDAP: **ldap://_IP_SERVIDOR_** (poseu la IP del vostre servidor!!)
-* Base del domini (DN): **dc=bosccoma,dc=local**
+* Base del domini (DN): **dc=ldapxxx,dc=local**
 * Versió de LDAP: **3**
 * Crear una base de dades local: **Sí**
 * Determinar si es requereix login per accedir a la base de dades: **No**
-* CN (common name) de l'usuari administrador del directori LDAP: **cn=admin,dc=bosccoma,dc=local**
+* CN (common name) de l'usuari administrador del directori LDAP: **cn=admin,dc=ldapxxx,dc=local**
 * Contrasenya per accedir a LDAP com a root: No posar contrasenya (Intro)
 
 La comprovació es farà validant usuaris un cop s'hagin creat alguns.
@@ -56,8 +56,10 @@ La configuració es modifica en el fitxer `/etc/nsswitch.conf`.
 
 En la segona comanda cal deixar les opcions per defecte.
 
-> A partir ara, quan s'engegui la màquina, buscarà el servidor LDAP per validar els usuaris.
-Per tant, cal tenir engegat el servidor abans d'engegar el client, apagar el client abans que el servidor, i no s'hauria de canviar l'adreça del servidor.
+> A partir ara, quan s'engegui la màquina, buscarà el servidor LDAP per validar els usuaris, per tant:
+* Cal tenir engegat el servidor abans d'engegar el client, 
+* Cal apagar el client abans que el servidor
+* No s'hauria de canviar l'adreça del servidor (si es canvia, cal reconfigurar el client LDAP).
 
 ### Més configuracions necessàries
 
