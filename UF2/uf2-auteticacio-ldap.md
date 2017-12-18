@@ -48,12 +48,13 @@ La comprovació es farà validant usuaris un cop s'hagin creat alguns.
 
 Les següents comandes serveixen per indicar al sistema que es puguin autenticar usuaris utilitzant tant base de dades d'usuaris locals (arxius `/etc/password`, `/etc/shadow` i `/etc/group`) com la base de dades del servei LDAP.
 
-> En la segona comanda s'ha de marcar l'opció **_Create home directory on login_**.
+> En la **segona comanda** s'ha de marcar l'opció **_Create home directory on login_**.
 Si no se selecciona, no es crearà automàticament el directori de l'usuari i no podrà iniciar sessió (en el mode gràfic) o no tindrà un directori on guardar els seus arxius.
 
-`sudo auth-client-config -t nss -p lac_ldap`
-
-`sudo pam-auth-update`
+```
+sudo auth-client-config -t nss -p lac_ldap
+sudo pam-auth-update
+```
 
 L'execució d'aquestes comandes, modifica la configuració de NSS en el fitxer `/etc/nsswitch.conf`.
 
