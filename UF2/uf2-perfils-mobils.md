@@ -66,13 +66,13 @@ S'ha d'afegir la següent línia que serveix per compartir la carpeta on es trob
 
 Com sempre que es modifica la configuració d'un servei, cal reiniciar-lo i comprovar que no hi hagi errors:
 
-```sh
+```bash+theme:dark
 usuari@usxxx:~$ sudo service nfs-kernel-server restart
 ```
 
 Per comprovar que s'està compartint la carpeta:
 
-```sh
+```bash+theme:dark
 usuari@usxxx:~$ sudo exportfs
 /srv/nfs/ldapxxx
         <world>
@@ -110,7 +110,7 @@ Per muntar la carpeta remota sense haver de reiniciar (cal comprovar que no doni
 
 Comprovar que es pot validar un usuari (la primera vegada es crea la seva carpeta personal):
 
-```sh
+```bash+theme:dark
 usuari@ucxxx:~$ sudo login pverde
 Contraseña:
 Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-45-generic x86_64)
@@ -120,13 +120,13 @@ pverde@ucxxx:~$
 
 Comprovar que l'usuari pot crear un arxiu:
 
-```sh
+```bash+theme:dark
 pverde@ucxxx:~$ touch prova
 ```
 
 **Des del servidor**, comprovar que existeix la carpeta d'aquest usuari i que s'ha creat l'arxiu amb el propietari i grup correctes:
 
-```sh
+```bash+theme:dark
 usuari@usxxx:~$ ls -l /home/ldapxxx/pverde
 total 0
 -rw-r--r-- 1 pverde profes 0 nov 19 19:46 prova
@@ -140,7 +140,7 @@ Es pot mostrar el nom de l'usuari al costat del botó d'apagada anant a **_Confi
 
 **Des del servidor**, comprovar quins arxius s'han creat en la seva carpeta personal (carpeta del perfil):
 
-```sh
+```bash+theme:dark
 usuari@usxxx:~$ ls -l /home/ldapxxx/pverde/
 total 8
 drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Descargas
