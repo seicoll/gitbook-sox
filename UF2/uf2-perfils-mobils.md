@@ -135,8 +135,12 @@ total 0
 ### Comprovar des de l'entorn gràfic
 
 En el client, tancar la sessió de l'usuari actual i intentar validar un usuari del domini (no cal indicar el domini).
-Es pot mostrar el nom de l'usuari al costat del botó d'apagada anant a Configuración del sistema → Cuentas de usuario i marcant la casella Mostrar mi nombre de usuario en la barra de menús.
-Des del servidor, comprovar quins arxius s'han creat en la seva carpeta personal (carpeta del perfil):
+
+Es pot mostrar el nom de l'usuari al costat del botó d'apagada anant a **_Configuración del sistema_** → **_Cuentas de usuario _**i marcant la casella **_Mostrar mi nombre de usuario en la barra de menús_**.
+
+**Des del servidor**, comprovar quins arxius s'han creat en la seva carpeta personal (carpeta del perfil):
+
+```sh
 usuari@usxxx:~$ ls -l /home/ldapxxx/pverde/
 total 8
 drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Descargas
@@ -148,4 +152,4 @@ drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Plantillas
 -rw-r--r-- 1 pverde profes    0 nov 19 19:46 prova
 drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Público
 drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Vídeos
-
+```
