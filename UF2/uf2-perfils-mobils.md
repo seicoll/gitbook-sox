@@ -79,3 +79,73 @@ usuari@usxxx:~$ sudo exportfs
 usuari@usxxx:~$
 ```
 
+## Configuració de les màquines clients
+
+### Instal·lar el client del servei NFS
+
+Per utilitzar el **servei NFS** (accedir a carpetes compartides en xarxa) cal instal·lar el paquet client de NFS, **_nfs-common_**:
+
+`sudo apt install nfs-common`
+
+### Crear la carpeta on s'ha de muntar la carpeta remota
+
+Si en LDAP s'ha configurat que el directori dels usuaris del domini sigui `/home/ldapxxx`, el primer que s'ha de fer és crear aquesta carpeta (a no ser que ja existeixi):
+
+`sudo mkdir /home/ldapxxx`
+
+Després s'ha de fer que es munti automàticament cada cop que s'engegui la màquina, afegint la següent línia a l'arxiu `/etc/fstab`:
+
+```
+# Muntar la carpeta remota d'usuaris en el servidor
+172.30.A.20:/srv/nfs/ldapxxx   /home/ldapxxx   nfs    _netdev,auto  0  4
+```
+
+Per muntar la carpeta remota sense haver de reiniciar (cal comprovar que no doni cap error):
+
+`sudo mount -a`
+
+## Comprovació dels perfils mòbils en els clients
+
+### Comprovar des de la consola
+
+Comprovar que es pot validar un usuari (la primera vegada es crea la seva carpeta personal):
+
+```sh
+usuari@ucxxx:~$ sudo login pverde
+Contraseña:
+Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-45-generic x86_64)
+...
+pverde@ucxxx:~$
+```
+
+Comprovar que l'usuari pot crear un arxiu:
+
+```sh
+pverde@ucxxx:~$ touch prova
+```
+
+**Des del servidor**, comprovar que existeix la carpeta d'aquest usuari i que s'ha creat l'arxiu amb el propietari i grup correctes:
+
+```sh
+usuari@usxxx:~$ ls -l /home/ldapxxx/pverde
+total 0
+-rw-r--r-- 1 pverde profes 0 nov 19 19:46 prova
+```
+
+### Comprovar des de l'entorn gràfic
+
+En el client, tancar la sessió de l'usuari actual i intentar validar un usuari del domini (no cal indicar el domini).
+Es pot mostrar el nom de l'usuari al costat del botó d'apagada anant a Configuración del sistema → Cuentas de usuario i marcant la casella Mostrar mi nombre de usuario en la barra de menús.
+Des del servidor, comprovar quins arxius s'han creat en la seva carpeta personal (carpeta del perfil):
+usuari@usxxx:~$ ls -l /home/ldapxxx/pverde/
+total 8
+drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Descargas
+drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Documentos
+drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Escritorio
+drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Imágenes
+drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Música
+drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Plantillas
+-rw-r--r-- 1 pverde profes    0 nov 19 19:46 prova
+drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Público
+drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Vídeos
+
