@@ -93,7 +93,7 @@ S'haurien de veure tots els usuaris i grups, tant els locals com els configurats
 
 Els **usuaris i grups LDAP** tenen un * en lloc d'una x, l'identificador ha de ser superior o igual a 10000 i la carpeta personal ha d'estar dins de `/home/ldapUsuari`.
 
-Ara podem entrar amb un usuari de LDAP a través de terminal fent:
+Ara podem **entrar amb un usuari de LDAP a través de terminal** fent:
 
 `su usuariLDAP`
 
