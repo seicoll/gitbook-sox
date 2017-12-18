@@ -64,11 +64,15 @@ L'execució d'aquestes comandes, modifica la configuració de NSS en el fitxer `
 * **Cal apagar el client abans que el servidor**.
 * **No s'hauria de canviar l'adreça del servidor** (si es canvia, cal reconfigurar el client LDAP).
 
+
+<!--
 ### Més configuracions necessàries
 
 Per tal que que es crei un directori per l’usuari de forma automàtica quan s’inicia la sessió, editem el fitxer `/etc/pam.d/common-session` i afegim la següent línia just després del comentaris inicials:
 
 `session required pam_mkhomedir.so skel=/etc/skel umask=0022`
+
+-->
 
 ## Comprovació autenticació LDAP
 
