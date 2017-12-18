@@ -55,6 +55,7 @@ Si no se selecciona, no es crearà automàticament el directori de l'usuari i no
 sudo auth-client-config -t nss -p lac_ldap
 sudo pam-auth-update
 ```
+![](/assets/uf2-nsspam.png)
 
 L'execució d'aquestes comandes, modifica la configuració de NSS en el fitxer `/etc/nsswitch.conf`.
 
