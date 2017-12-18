@@ -85,3 +85,13 @@ Per posar-lo en marxa és preferible fer-ho des de la consola:
 Al posar-lo en marxa demanarà amb quin servidor LDAP es vol connectar:
 
 ![LAT](/assets/LAT.png)
+
+# Documentació i recursos
+
+* **Apunts SOX Pere Sánchez: [Instal·lació JXplorer](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.8.5) i [Gestió d’usuaris amb JXplorer](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.8.6)**
+
+* **Apunts SOX Pere Sánchez: [Instal·lació LAT](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.8.9) i [Gestió d’usuaris amb LAT](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.8.10)**
+
+* **Apunts SOX Pere Sánchez: Diferències entre phpldapadmin, JXplorer i LAT**
+
+[http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.8.12](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.8.12)
