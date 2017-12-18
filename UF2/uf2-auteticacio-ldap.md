@@ -58,9 +58,9 @@ Si no se selecciona, no es crearà automàticament el directori de l'usuari i no
 L'execució d'aquestes comandes, modifica la configuració de NSS en el fitxer `/etc/nsswitch.conf`.
 
 > A partir ara, quan s'engegui la màquina, buscarà el servidor LDAP per validar els usuaris, per tant:
-* Cal tenir engegat el servidor abans d'engegar el client, 
-* Cal apagar el client abans que el servidor
-* No s'hauria de canviar l'adreça del servidor (si es canvia, cal reconfigurar el client LDAP).
+* **Cal tenir engegat el servidor** abans d'engegar el client.
+* **Cal apagar el client abans que el servidor**.
+* N**o s'hauria de canviar l'adreça del servidor** (si es canvia, cal reconfigurar el client LDAP).
 
 ### Més configuracions necessàries
 
