@@ -92,6 +92,4 @@ Al posar-lo en marxa demanarà amb quin servidor LDAP es vol connectar:
 
 * **Apunts SOX Pere Sánchez: [Instal·lació LAT](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.8.9) i [Gestió d’usuaris amb LAT](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.8.10)**
 
-* **Apunts SOX Pere Sánchez: Diferències entre phpldapadmin, JXplorer i LAT**
-
-[http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.8.12](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.8.12)
+* **Apunts SOX Pere Sánchez: [Diferències entre phpldapadmin, JXplorer i LAT](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.8.12)**
