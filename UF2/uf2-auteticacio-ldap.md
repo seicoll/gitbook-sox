@@ -74,7 +74,7 @@ Si s'ha configurat correctament el client LDAP, es podran veure els usuaris i gr
 `getent passwd`
 
 ```bash
-usuari@ubuntuclient:~$ getent passwd
+usuari@ucxxx:~$ getent passwd
 root:x:0:0:root:/root:/bin/bash
 ...
 usuari:x:1000:1000:usuari,,,:/home/usuari:/bin/bash
