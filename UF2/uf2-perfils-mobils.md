@@ -153,3 +153,51 @@ drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Plantillas
 drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Público
 drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Vídeos
 ```
+
+## Deshabilitar els perfils mòbils
+
+### En els clients
+
+En l'arxiu `/etc/fstab`, comentar o eliminar la línia que munta la carpeta remota dels usuaris del domini:
+
+```
+# 172.30.A.20:/srv/nfs/ldapxxx   /home/ldapxxx   nfs    _netdev,auto  0  4
+```
+
+Desmuntar aquesta carpeta sense haver de reiniciar el sistema:
+
+`sudo umount /home/ldapxxx`
+
+Es pot comprovar que aquesta carpeta ja no està muntada utilitzant la comanda mount.
+A partir d'aquest moment, els perfils es crearan en els clients en lloc de fer-ho en el servidor.
+
+### En el servidor
+
+En l'arxiu `/etc/exports`, comentar o eliminar la línia que comparteix la carpeta en el sistema NFS:
+
+```
+# /srv/nfs/ldapxxx   *(rw,no_root_squash,no_subtree_check,no_wdelay,sync)
+```
+
+Reiniciar el sistema NFS:
+
+`sudo service nfs-kernel-server reload`
+
+Amb la comanda **exportfs** es pot comprovar que ja no s'està compartint aquesta carpeta:
+
+```bash+theme:dark
+usuari@usxxx:~$ sudo exportfs
+usuari@usxxx:~$
+```
+
+En l'arxiu `/etc/fstab`, comentar o eliminar la línia que enllaça la carpeta dels usuaris amb la carpeta compartida amb el sistema NFS:
+
+```
+# /home/ldapxxx      /srv/nfs/ldapxxx      none      bind      0      4
+```
+
+Desenllaçar aquestes carpetes sense haver de reiniciar el sistema:
+
+`sudo umount /srv/nfs/ldapxxx`
+
+Es pot comprovar que aquestes carpetes ja no estan enllaçades utilitzant la comanda mount.
