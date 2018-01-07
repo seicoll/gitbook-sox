@@ -77,7 +77,7 @@ Per tal que que es crei un directori per l’usuari de forma automàtica quan s�
 
 -->
 
-## Comprovació autenticació LDAP
+### Comprovació autenticació LDAP
 
 Si s'ha configurat correctament el client LDAP, es podran veure els usuaris i grups LDAP amb la comanda `getent`:
 
