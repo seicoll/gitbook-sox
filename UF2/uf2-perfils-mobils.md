@@ -42,7 +42,7 @@ Si en **LDAP** s'ha configurat que el directori dels usuaris del domini sigui `/
 
 Si s'ha configurat el servidor per fer que es puguin validar usuaris del domini, també s'han de fer les següents configuracions:
 
-1. Crear la carpeta `/home/ldapxxx` (si no està ja creada):
+1. **Crear la carpeta** `/home/ldapxxx` (si no està ja creada):
 
   `sudo mkdir /home/ldapxxx`
 
