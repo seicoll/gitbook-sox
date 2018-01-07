@@ -46,7 +46,7 @@ Si s'ha configurat el servidor per fer que es puguin validar usuaris del domini,
 
   `sudo mkdir /home/ldapxxx`
 
-2. Enllaçar la carpeta que es vol compartir (`/srv/nfs/ldapxxx`) amb el directori on es troben les carpetes dels usuaris del domini (`/home/ldapxxx`).
+2. **Enllaçar la carpeta** que es vol compartir (`/srv/nfs/ldapxxx`) amb el directori on es troben les carpetes dels usuaris del domini (`/home/ldapxxx`).
 Per fer que s'enllacin automàticament cada cop que arrenqui el servidor, afegirem la següent línia al final de l'arxiu `/etc/fstab` (és similar a muntar una partició en una carpeta, però el tipus de format és none i l'única opció que posarme és bind):
 
   ```
@@ -54,7 +54,7 @@ Per fer que s'enllacin automàticament cada cop que arrenqui el servidor, afegir
   /home/ldapxxx      /srv/nfs/ldapxxx      none      bind      0      4
   ```
 
-3. I per enllaçar immediatament, sense haver de reiniciar:
+3. I per **enllaçar immediatament**, sense haver de reiniciar:
 
    `sudo mount -a`
 
