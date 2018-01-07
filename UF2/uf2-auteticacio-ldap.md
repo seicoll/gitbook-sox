@@ -69,7 +69,7 @@ L'execució d'aquestes comandes, modifica la configuració de NSS en el fitxer `
 
 <!--
 NO NECESSARI
-### Més configuracions necessàries
+Més configuracions necessàries
 
 Per tal que que es crei un directori per l’usuari de forma automàtica quan s’inicia la sessió, editem el fitxer `/etc/pam.d/common-session` i afegim la següent línia just després del comentaris inicials:
 
