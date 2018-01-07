@@ -36,6 +36,8 @@ Si en **LDAP** s'ha configurat que el directori dels usuaris del domini sigui `/
 
 `sudo mkdir -p /srv/nfs/ldapxxx`
 
+**Nota**: El paràmetre **_-p_** crea tots els directoris anidats si no existeixen.
+
 ### Enllaçar la carpeta compartida amb la carpeta local d'usuaris del domini
 
 Si s'ha configurat el servidor per fer que es puguin validar usuaris del domini, també s'han de fer les següents configuracions:
