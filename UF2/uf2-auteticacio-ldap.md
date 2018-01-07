@@ -101,15 +101,13 @@ Si no es veuen els usuaris i grups LDAP, s'ha de tornar a reconfigurar el client
 
 ## Validar usuaris per consolar
 
-Ara podem **entrar amb un usuari de LDAP a través de terminal** fent:
-
-`su usuariLDAP`
-
-o bé
+Ara podem **validar-nos amb un usuari de LDAP a través de terminal** fent:
 
 `sudo login usuariLDAP`
 
-i veurem que s'ha creat la carpeta home per aquest usuari de LDAP
+i veurem que s'ha creat la carpeta home per aquest usuari de LDAP. 
+
+Per comprovar quin és el **directori de treball** de l'usuari es pot utilitzar la comanda `pwd`.
 
 ## Validar usuaris amb entorn gràfic
 
@@ -119,7 +117,7 @@ Cal crear el fitxer `/etc/lightdm/lightdm.conf` i afegim les línies següents:
 
 ```
 [Seat:*] 
-greeter-hide-users=true
+greeter-hide-users=false
 greeter-show-manual-login=true
 ```
 
