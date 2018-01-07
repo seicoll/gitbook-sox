@@ -83,7 +83,7 @@ Si s'ha configurat correctament el client LDAP, es podran veure els usuaris i gr
 
 `getent passwd`
 
-```bash
+```bash+theme:dark
 usuari@ucxxx:~$ getent passwd
 root:x:0:0:root:/root:/bin/bash
 ...
@@ -140,7 +140,7 @@ Es pot reconfigurar el client LDAP amb la comanda
 
 `sudo dpkg-reconfigure ldap-auth-config`
 
-## Anular la validació d'usuaris LDAP
+## Anul·lar la validació d'usuaris LDAP
 
 Per fer que un client deixi de validar usuaris LDAP cal executar la següent comanda:
 
