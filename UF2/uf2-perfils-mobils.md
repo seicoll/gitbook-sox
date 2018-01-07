@@ -60,20 +60,21 @@ Per fer que s'enllacin automàticament cada cop que arrenqui el servidor, afegir
 
 ### Configurar el servei per compartir la carpeta dels usuaris del domini
 
-El servei NFS es configura en l'arxiu `/etc/exports`.
-S'ha d'afegir la següent línia que serveix per compartir la carpeta on es troben els perfils dels usuaris:
+El **servei NFS** es configura en l'arxiu `/etc/exports`.
 
-```
-/srv/nfs/ldapxxx   *(rw,no_root_squash,no_subtree_check,no_wdelay,sync)
-```
+S'ha d'afegir la següent línia que serveix per **compartir la carpeta** on es troben els perfils dels usuaris:
 
-Com sempre que es modifica la configuració d'un servei, cal reiniciar-lo i comprovar que no hi hagi errors:
+  ```
+  /srv/nfs/ldapxxx   *(rw,no_root_squash,no_subtree_check,no_wdelay,sync)
+  ```
+
+Com sempre que es modifica la configuració d'un servei, cal **reiniciar-lo** i comprovar que no hi hagi errors:
 
 ```bash+theme:dark
 usuari@usxxx:~$ sudo service nfs-kernel-server restart
 ```
 
-Per comprovar que s'està compartint la carpeta:
+Per **comprovar** que s'està compartint la carpeta:
 
 ```bash+theme:dark
 usuari@usxxx:~$ sudo exportfs
@@ -92,26 +93,26 @@ Per utilitzar el **servei NFS** (accedir a carpetes compartides en xarxa) cal in
 
 ### Crear la carpeta on s'ha de muntar la carpeta remota
 
-Si en LDAP s'ha configurat que el directori dels usuaris del domini sigui `/home/ldapxxx`, el primer que s'ha de fer és crear aquesta carpeta (a no ser que ja existeixi):
+1. Si en LDAP s'ha configurat que **el directori dels usuaris** del domini sigui `/home/ldapxxx`, el primer que s'ha de fer és **crear** aquesta **carpeta** (a no ser que ja existeixi):
 
-`sudo mkdir /home/ldapxxx`
+  `sudo mkdir /home/ldapxxx`
 
-Després s'ha de fer que es munti automàticament cada cop que s'engegui la màquina, afegint la següent línia a l'arxiu `/etc/fstab`:
+2. Després s'ha de fer que es **munti automàticament** cada cop que s'engegui la màquina, afegint la següent línia a l'arxiu `/etc/fstab`:
 
-```
-# Muntar la carpeta remota d'usuaris en el servidor
-172.30.A.20:/srv/nfs/ldapxxx   /home/ldapxxx   nfs    _netdev,auto  0  4
-```
+  ```
+  # Muntar la carpeta remota d'usuaris en el servidor
+  172.30.A.20:/srv/nfs/ldapxxx   /home/ldapxxx   nfs    _netdev,auto  0  4
+  ```
 
-Per muntar la carpeta remota sense haver de reiniciar (cal comprovar que no doni cap error):
+3. Per **muntar la carpeta remota immediatament**, sense haver de reiniciar (cal comprovar que no doni cap error):
 
-`sudo mount -a`
+  `sudo mount -a`
 
 ## Comprovació dels perfils mòbils en els clients
 
 ### Comprovar des de la consola
 
-Comprovar que es pot validar un usuari (la primera vegada es crea la seva carpeta personal):
+Comprovar que es **pot validar un usuari** (la primera vegada es crea la seva carpeta personal):
 
 ```bash+theme:dark
 usuari@ucxxx:~$ sudo login pverde
@@ -121,7 +122,7 @@ Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-45-generic x86_64)
 pverde@ucxxx:~$
 ```
 
-Comprovar que l'usuari pot crear un arxiu:
+Comprovar que l'usuari **pot crear un arxiu**:
 
 ```bash+theme:dark
 pverde@ucxxx:~$ touch prova
