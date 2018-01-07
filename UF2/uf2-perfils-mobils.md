@@ -2,17 +2,18 @@
 
 ## Introducció
 
-Configurar **perfils mòbils** serveix per evitar que cada cop que un usuari canviï de màquina, hagi de tornar a configurar el seu entorn de treball.
+> Configurar **perfils mòbils** serveix per evitar que cada cop que un usuari canviï de màquina, hagi de tornar a configurar el seu entorn de treball.
 
-A més, amb els perfils mòbils, els documents que l'usuari guardi a la seva carpeta personal, també els trobarà en qualsevol màquina a la que vagi a treballar.
+A més, amb els perfils mòbils, els **documents** que l'usuari guardi a la seva carpeta personal, també **els trobarà en qualsevol màquina** a la que vagi a treballar.
 
-Però també hi ha un **inconvenient**: si hi ha molts clients o els clients tenen moltes dades, pot augmentar molt la càrrega del servidor i de la xarxa.
+Però també hi ha un **inconvenient**: 
+* Si hi ha molts clients o els clients tenen moltes dades, pot augmentar molt la càrrega del servidor i de la xarxa.
 
 En **Linux**, per poder utilitzar perfils mòbils cal fer els següents passos:
 
-1. Crear una carpeta en el servidor on es guardaran els perfils dels usuaris del domini.
-2. Compartir aquesta carpeta de forma que s'hi pugui accedir des dels clients.
-3. En els clients, s'ha de fer que montin automàticament aquesta carpeta remota cada cop que arrenqui el sistema.
+1. Crear una **carpeta** en el servidor on es guardaran els **perfils dels usuaris** del domini.
+2. **Compartir** aquesta carpeta de forma que s'hi pugui accedir des dels clients.
+3. En els **clients**, s'ha de fer que **montin automàticament aquesta carpeta** remota cada cop que arrenqui el sistema.
 
 ## Configuració del servidor
 
