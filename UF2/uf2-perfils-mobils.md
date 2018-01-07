@@ -145,7 +145,7 @@ Es pot mostrar el nom de l'usuari al costat del botó d'apagada anant a **_Confi
 **Des del servidor**, comprovar quins arxius s'han creat en la seva carpeta personal (carpeta del perfil):
 
 ```bash+theme:dark
-usuari@usxxx:~$ ls -l /home/ldapxxx/pverde/
+usuari@usxxx:~$ ls -l /home/ldapxxx/conserge/
 total 8
 drwxr-xr-x 2 conserge administratius 1024 nov 19 20:03 Descargas
 drwxr-xr-x 2 conserge administratius 1024 nov 19 20:03 Documentos
