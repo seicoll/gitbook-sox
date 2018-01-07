@@ -48,13 +48,15 @@ La comprovació es farà validant usuaris un cop s'hagin creat alguns.
 
 Les següents comandes serveixen per indicar al sistema que es puguin autenticar usuaris utilitzant tant base de dades d'usuaris locals (arxius `/etc/password`, `/etc/shadow` i `/etc/group`) com la base de dades del servei LDAP.
 
-> En la **segona comanda** s'ha de marcar l'opció **_Create home directory on login_**.
-Si no se selecciona, no es crearà automàticament el directori de l'usuari i no podrà iniciar sessió (en el mode gràfic) o no tindrà un directori on guardar els seus arxius.
 
 ```
 sudo auth-client-config -t nss -p lac_ldap
 sudo pam-auth-update
 ```
+
+> En la **segona comanda** s'ha de marcar l'opció **_Create home directory on login_**.
+Si no se selecciona, no es crearà automàticament el directori de l'usuari i no podrà iniciar sessió (en el mode gràfic) o no tindrà un directori on guardar els seus arxius.
+
 ![](/assets/uf2-nsspam.png)
 
 L'execució d'aquestes comandes, modifica la configuració de NSS en el fitxer `/etc/nsswitch.conf`.
@@ -86,12 +88,18 @@ usuari@ucxxx:~$ getent passwd
 root:x:0:0:root:/root:/bin/bash
 ...
 usuari:x:1000:1000:usuari,,,:/home/usuari:/bin/bash
-ldapUsuari:*:10000:10000:usuariLDAP:/home/ldapUsuari/ldaUsuari:/bin/bash
+usuariLDAP:*:10000:10000:usuariLDAP:/home/users/usuariLDAP:/bin/bash
 ```
 
 S'haurien de veure tots els usuaris i grups, tant els locals com els configurats amb LDAP.
 
-Els **usuaris i grups LDAP** tenen un * en lloc d'una x, l'identificador ha de ser superior o igual a 10000 i la carpeta personal ha d'estar dins de `/home/ldapUsuari`.
+Els **usuaris i grups LDAP** tenen un * en lloc d'una x en el segon camp.
+
+Si no es veuen els usuaris i grups LDAP, s'ha de tornar a reconfigurar el client LDAP.
+
+<!--, l'identificador ha de ser superior o igual a 10000 i la carpeta personal ha d'estar dins de `/home/ldapUsuari`.-->
+
+## Validar usuaris per consolar
 
 Ara podem **entrar amb un usuari de LDAP a través de terminal** fent:
 
@@ -103,9 +111,9 @@ o bé
 
 i veurem que s'ha creat la carpeta home per aquest usuari de LDAP
 
-## Configurar el login d'Ubuntu
+## Validar usuaris amb entorn gràfic
 
-Per últim hem d’**activar el login d’Ubuntu** a la màquina client per poder escriure el nom de l’usuari. 
+Per últim hem d'**activar el login d’Ubuntu** a la màquina client per poder escriure el nom de l’usuari. 
 
 Cal crear el fitxer `/etc/lightdm/lightdm.conf` i afegim les línies següents:
 
