@@ -112,28 +112,28 @@ Per utilitzar el **servei NFS** (accedir a carpetes compartides en xarxa) cal in
 
 ### Comprovar des de la consola
 
-Comprovar que es **pot validar un usuari** (la primera vegada es crea la seva carpeta personal):
+Comprovar que **es pot validar un usuari** (la primera vegada es crea la seva carpeta personal):
 
 ```bash+theme:dark
-usuari@ucxxx:~$ sudo login pverde
+usuari@ucxxx:~$ sudo login conserge
 Contraseña:
 Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-45-generic x86_64)
 ...
-pverde@ucxxx:~$
+conserge@ucxxx:~$
 ```
 
 Comprovar que l'usuari **pot crear un arxiu**:
 
-```bash+theme:dark
-pverde@ucxxx:~$ touch prova
-```
+  ```bash+theme:dark
+  conserge@ucxxx:~$ touch prova
+  ```
 
 **Des del servidor**, comprovar que existeix la carpeta d'aquest usuari i que s'ha creat l'arxiu amb el propietari i grup correctes:
 
 ```bash+theme:dark
-usuari@usxxx:~$ ls -l /home/ldapxxx/pverde
+usuari@usxxx:~$ ls -l /home/ldapxxx/conserge
 total 0
--rw-r--r-- 1 pverde profes 0 nov 19 19:46 prova
+-rw-r--r-- 1 conserge administratius 0 nov 19 19:46 prova
 ```
 
 ### Comprovar des de l'entorn gràfic
@@ -147,61 +147,62 @@ Es pot mostrar el nom de l'usuari al costat del botó d'apagada anant a **_Confi
 ```bash+theme:dark
 usuari@usxxx:~$ ls -l /home/ldapxxx/pverde/
 total 8
-drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Descargas
-drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Documentos
-drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Escritorio
-drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Imágenes
-drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Música
-drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Plantillas
--rw-r--r-- 1 pverde profes    0 nov 19 19:46 prova
-drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Público
-drwxr-xr-x 2 pverde profes 1024 nov 19 20:03 Vídeos
+drwxr-xr-x 2 conserge administratius 1024 nov 19 20:03 Descargas
+drwxr-xr-x 2 conserge administratius 1024 nov 19 20:03 Documentos
+drwxr-xr-x 2 conserge administratius 1024 nov 19 20:03 Escritorio
+drwxr-xr-x 2 conserge administratius 1024 nov 19 20:03 Imágenes
+drwxr-xr-x 2 conserge administratius 1024 nov 19 20:03 Música
+drwxr-xr-x 2 conserge administratius 1024 nov 19 20:03 Plantillas
+-rw-r--r-- 1 conserge administratius    0 nov 19 19:46 prova
+drwxr-xr-x 2 conserge administratius 1024 nov 19 20:03 Público
+drwxr-xr-x 2 conserge administratius 1024 nov 19 20:03 Vídeos
 ```
 
 ## Deshabilitar els perfils mòbils
 
 ### En els clients
 
-En l'arxiu `/etc/fstab`, comentar o eliminar la línia que munta la carpeta remota dels usuaris del domini:
+1. En l'arxiu `/etc/fstab`, **comentar o eliminar la línia que munta la carpeta remota** dels usuaris del domini:
 
-```
-# 172.30.A.20:/srv/nfs/ldapxxx   /home/ldapxxx   nfs    _netdev,auto  0  4
-```
+  ```
+  # 172.30.A.20:/srv/nfs/ldapxxx   /home/ldapxxx   nfs    _netdev,auto  0  4
+  ```
 
-Desmuntar aquesta carpeta sense haver de reiniciar el sistema:
+2. **Desmuntar aquesta carpeta** sense haver de reiniciar el sistema:
 
-`sudo umount /home/ldapxxx`
+  `sudo umount /home/ldapxxx`
 
-Es pot comprovar que aquesta carpeta ja no està muntada utilitzant la comanda mount.
-A partir d'aquest moment, els perfils es crearan en els clients en lloc de fer-ho en el servidor.
+3. Es pot **comprovar** que aquesta carpeta ja no està muntada utilitzant la comanda mount.
+
+> A partir d'aquest moment, els perfils es crearan en els clients en lloc de fer-ho en el servidor.
 
 ### En el servidor
 
-En l'arxiu `/etc/exports`, comentar o eliminar la línia que comparteix la carpeta en el sistema NFS:
+1. En l'arxiu `/etc/exports`, **comentar o eliminar la línia que comparteix la carpeta** en el sistema NFS:
 
-```
-# /srv/nfs/ldapxxx   *(rw,no_root_squash,no_subtree_check,no_wdelay,sync)
-```
+  ```
+  # /srv/nfs/ldapxxx   *(rw,no_root_squash,no_subtree_check,no_wdelay,sync)
+  ```
 
-Reiniciar el sistema NFS:
+2. **Reiniciar el sistema NFS**:
 
-`sudo service nfs-kernel-server reload`
+  `sudo service nfs-kernel-server reload`
 
-Amb la comanda **exportfs** es pot comprovar que ja no s'està compartint aquesta carpeta:
+3. Amb la comanda `exportfs` es pot **comprovar** que ja no s'està compartint aquesta carpeta:
 
-```bash+theme:dark
-usuari@usxxx:~$ sudo exportfs
-usuari@usxxx:~$
-```
+  ```bash+theme:dark
+  usuari@usxxx:~$ sudo exportfs
+  usuari@usxxx:~$
+  ```
 
-En l'arxiu `/etc/fstab`, comentar o eliminar la línia que enllaça la carpeta dels usuaris amb la carpeta compartida amb el sistema NFS:
+4. En l'arxiu `/etc/fstab`, **comentar o eliminar la línia que enllaça la carpeta dels usuaris amb la carpeta compartida** amb el sistema NFS:
 
-```
-# /home/ldapxxx      /srv/nfs/ldapxxx      none      bind      0      4
-```
+  ```
+  # /home/ldapxxx      /srv/nfs/ldapxxx      none      bind      0      4
+  ```
 
-Desenllaçar aquestes carpetes sense haver de reiniciar el sistema:
+5. **Desenllaçar aquestes carpetes** sense haver de reiniciar el sistema:
 
-`sudo umount /srv/nfs/ldapxxx`
+  `sudo umount /srv/nfs/ldapxxx`
 
-Es pot comprovar que aquestes carpetes ja no estan enllaçades utilitzant la comanda mount.
+6. Es pot **comprovar** que aquestes carpetes ja no estan enllaçades utilitzant la comanda mount.
