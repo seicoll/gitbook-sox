@@ -14,4 +14,7 @@
   * [Instal·lació d'un controlador de domini LDAP](uf2-LDAP.md)
   * [Gestionar LDAP amb interfície gràfica](uf2-LDAP-gestio-grafica.md)
   * [Autenticació LDAP](uf2-auteticacio-ldap.md)
+  * [Perfils mòbils](uf2-perfils-mobils.md)
+
+
 

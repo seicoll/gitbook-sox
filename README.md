@@ -41,6 +41,7 @@ I per suposat, també agrair a la meva dona i els meus fills que m’han recolza
   * [Instal·lació d'un controlador de domini LDAP](UF2/uf2-LDAP.md)
   * [Gestionar LDAP amb interfície gràfica](UF2/uf2-LDAP-gestio-grafica.md)
   * [Autenticació LDAP](UF2/uf2-auteticacio-ldap.md)
+  * [Perfils mòbils](UF2/uf2-perfils-mobils.md)
 
 * [Qüestionari](UF2/act/uf2-questionari.md)
 
