@@ -134,7 +134,7 @@ Per acabar, es convenient reiniciar el sistema i comprovar que pot entrar amb un
 
 ## Reconfigurar el client LDAP
 
-Es pot reconfigurar el client LDAP amb la comanda 
+Es pot reconfigurar el client LDAP amb la comanda: 
 
 `sudo dpkg-reconfigure ldap-auth-config`
 
