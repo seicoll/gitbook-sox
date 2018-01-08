@@ -38,6 +38,8 @@ Si en **LDAP** s'ha configurat que el directori dels usuaris del domini sigui `/
 
 **Nota**: El paràmetre **_-p_** crea tots els directoris anidats si no existeixen.
 
+> Si el **directori dels usuaris LDAP** no és `/home/ldapxxx`, cal modificar-lo amb algun dels programes de gestió de LDAP com per exemple phpLDAPadmin.
+
 ### Enllaçar la carpeta compartida amb la carpeta local d'usuaris del domini
 
 Si s'ha configurat el servidor per fer que es puguin validar usuaris del domini, també s'han de fer les següents configuracions:
