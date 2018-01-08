@@ -64,7 +64,7 @@ L'execució d'aquestes comandes, modifica la configuració de NSS en el fitxer `
 > A partir ara, quan s'engegui la màquina, buscarà el servidor LDAP per validar els usuaris, per tant:
 * **Cal tenir engegat el servidor** abans d'engegar el client.
 * **Cal apagar el client abans que el servidor**.
-* **No s'hauria de canviar l'adreça del servidor** (si es canvia, cal reconfigurar el client LDAP).
+* **No s'hauria de canviar l'adreça del servidor** (si es canvia, cal [reconfigurar el client LDAP](#reconfigurar-el-client-ldap)).
 
 
 <!--
@@ -95,7 +95,7 @@ S'haurien de veure tots els usuaris i grups, tant els locals com els configurats
 
 Els **usuaris i grups LDAP** tenen un * en lloc d'una x en el segon camp.
 
-Si no es veuen els usuaris i grups LDAP, s'ha de tornar a reconfigurar el client LDAP.
+Si no es veuen els usuaris i grups LDAP, s'ha de tornar a [reconfigurar el client LDAP](#reconfigurar-el-client-ldap).
 
 <!--, l'identificador ha de ser superior o igual a 10000 i la carpeta personal ha d'estar dins de `/home/ldapUsuari`.-->
 
