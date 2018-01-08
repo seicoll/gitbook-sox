@@ -83,6 +83,9 @@ L'entrada no ha de contenir subelements
 
 ## Documentació i recursos
 
+* **Apunts SOX Pere Sánchez:** [Gestió d'usuaris i grups LDAP amb scripts](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.9.19)
+
+
 * **Apunts SOX Pere Sánchez:** [Altres comandes per gestionar LDAP](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.9.21)
 
 
