@@ -1,4 +1,4 @@
-# Gestionar LDAP amb interfície gràfica
+# Gestió LDAP amb interfície gràfica
 
 ## phpLDAPadmin
 
