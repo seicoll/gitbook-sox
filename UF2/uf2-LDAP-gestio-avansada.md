@@ -44,8 +44,8 @@ Algunes comandes que es poden utilitzar (sempre amb sudo):
 * ldapaddusertogroup usuari grup
 * ldapdeleteuserfromgroup usuari grup
 
-> Els usuaris es creen amb una plantilla diferent que la que utilitza phpldapadmin, per tant poden haver-hi camps diferents.
-Es pot fer la prova creant un usuari amb aquests scripts i observar la diferència amb phpldapadmin o amb ldapsearch.
+> Els usuaris es creen amb una plantilla diferent que la que utilitza **phpldapadmin**, per tant poden haver-hi camps diferents.
+Es pot fer la prova creant un usuari amb aquests scripts i observar la diferència amb **phpldapadmin** o amb **ldapsearch**.
 > No hi ha comandes per crear, modificar o eliminar unitats organitzatives.
 > El usuaris es creen en la unitat organitzativa configurada en l'arxiu `/etc/ldapscripts/ldapscripts.conf`.
 > Si es volen crear en altres unitats organitzatives, s'ha d'anar canviant la configuració en aquest arxiu.
