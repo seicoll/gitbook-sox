@@ -38,17 +38,16 @@
     * [Gestionar LDAP amb interfície gràfica](UF2/uf2-LDAP-gestio-grafica.md)
     * [Autenticació LDAP](UF2/uf2-auteticacio-ldap.md)
     * [Perfils mòbils](UF2/uf2-perfils-mobils.md)
+    * [Gestionar avançada de LDAP](UF2/uf2-LDAP-gestio-avansada.md)
 
-<!---    * \*\*Gestionar LDAP amb comandes -->
-
-<!---   * [Activitats](UF2/uf2-activitats.md) -->
+   * [Activitats](UF2/uf2-activitats.md) 
 <!---     * [Activitat 1. Instal·lació Ubuntu Server](UF2/act/act1.md)-->
 <!---    * [Activitat 2. Gestió d’arxius, directoris, usuaris i grups](UF2/act/act2.md)-->
  <!---   * [Activitat 3. Actualització i instal·lació de programari](UF2/act/act3.md)-->
 <!--- * [Activitat 4. Monitorització i automatització de tasques](UF2/act/act4.md)-->
 <!--- * [Activitat 5: Instal·lació d’un controlador de domini LDAP i configuració client LDAP](UF2/act/act5.md)-->
 <!--- * [Activitat 6: Administració de OpenLDAP](UF2/act/act6.md)-->
-<!--- * [Qüestionari](UF2/act/uf2-questionari.md) -->
+   * [Qüestionari](UF2/act/uf2-questionari.md) 
 
 ### [UF3. Compartició de recursos i seguretat](UF3.md)
   * [Introducció a la compartició de recursos i seguretat](UF3/uf3-introduccio.md)
