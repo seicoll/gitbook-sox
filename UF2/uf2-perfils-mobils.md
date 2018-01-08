@@ -208,3 +208,7 @@ drwxr-xr-x 2 conserge administratius 1024 nov 19 20:03 Vídeos
   `sudo umount /srv/nfs/ldapxxx`
 
 6. Es pot **comprovar** que aquestes carpetes ja no estan enllaçades utilitzant la comanda mount.
+
+## Documentació i recursos
+
+* **SomeBooks.es**: [Perfiles móviles de usuario usando NFS y LDAP](http://somebooks.es/capitulo-11-instalar-y-configurar-openldap-en-ubuntu-14-04-lts/12/)
