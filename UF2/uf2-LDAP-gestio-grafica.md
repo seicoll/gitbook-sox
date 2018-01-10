@@ -60,9 +60,9 @@ Per crear usuaris, grups i unitats organitzatives heu d'escollir una d'aquestes 
 * **_Número UID_**: (automàtic)
 * **_Nom comú (cn):_** el sol posar el nom i cognom de l’usuari.
 * **_ID del usuario_**: identificador del compte de l'usuari (login)
-* **_Directorio personal_**: /home/ldap/usuari
+* **_Directorio personal_**: /home/**ldapxxx**/usuari
 
-    És preferible posar els usuaris de LDAP en un directori diferent dels usuaris locals (/home/ldap/...)
+    És preferible posar els usuaris de LDAP en un directori diferent dels usuaris locals (`/home/ldapxxx/...`)
 * **_Número GID_**: grup principal al què pertany l'usuari
 * **_Contraseña_**: \*\*\*\*\*\* (md5)
 * **_Consola de login_**: cap (per defecte agafa `/bin/bash`)
