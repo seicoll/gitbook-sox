@@ -95,11 +95,11 @@ Per utilitzar el **servei NFS** (accedir a carpetes compartides en xarxa) cal in
 
 ### Crear la carpeta on s'ha de muntar la carpeta remota
 
-1. Si en LDAP s'ha configurat que **el directori dels usuaris** del domini sigui `/home/ldapxxx`, el primer que s'ha de fer és **crear** aquesta **carpeta** (a no ser que ja existeixi):
+1. Si en LDAP s'ha configurat que **el directori dels usuaris** del domini sigui `/home/ldapxxx`, el primer que s'ha de fer és **crear** aquesta **carpeta** (a no ser que ja existeixi) que farem servir després com a punt de muntatge:
 
   `sudo mkdir /home/ldapxxx`
 
-2. Després s'ha de fer que es **munti automàticament** cada cop que s'engegui la màquina, afegint la següent línia a l'arxiu `/etc/fstab`:
+2. Després s'ha de fer que el directori del servidor `/srv/nfs/ldapxxx` es **munti automàticament** cada cop que s'engegui la màquina, afegint la següent línia a l'arxiu `/etc/fstab`:
 
   ```
   # Muntar la carpeta remota d'usuaris en el servidor
@@ -128,6 +128,12 @@ Comprovar que l'usuari **pot crear un arxiu**:
 
   ```bash+theme:dark
   conserge@ucxxx:~$ touch prova
+  ```
+
+Comprova que l'usuari **no pot crear un arxiu a la carpeta personal d'un altre usuari**:
+
+  ```bash+theme:dark
+  conserge@ucxxx:~$ touch /home/ldapxxx/secretaria/prova
   ```
 
 **Des del servidor**, comprovar que existeix la carpeta d'aquest usuari i que s'ha creat l'arxiu amb el propietari i grup correctes:
