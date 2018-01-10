@@ -79,9 +79,7 @@ Per tal que que es crei un directori per l’usuari de forma automàtica quan s�
 
 ### Comprovació autenticació LDAP
 
-Si s'ha configurat correctament el client LDAP, es podran veure els usuaris i grups LDAP amb la comanda `getent`:
-
-`getent passwd`
+Si s'ha configurat correctament el client LDAP, es podran veure els usuaris i grups LDAP amb la comanda `getent passwd`:
 
 ```bash+theme:dark
 usuari@ucxxx:~$ getent passwd
