@@ -4,7 +4,7 @@
 
 > Configurar **perfils mòbils** serveix per evitar que cada cop que un usuari canviï de màquina, hagi de tornar a configurar el seu entorn de treball.
 
-A més, amb els perfils mòbils, els **documents** que l'usuari guardi a la seva carpeta personal, també **els trobarà en qualsevol màquina** a la que vagi a treballar.
+A més, amb els perfils mòbils, els **documents** que els usuaris del domini guardin a la seva carpeta personal es guardaran al servidor i **hi podran accedir des de qualsevol màquina del domini** a la que vagin a treballar.
 
 Però també hi ha un **inconvenient**: 
 * Si hi ha molts clients o els clients tenen moltes dades, pot augmentar molt la càrrega del servidor i de la xarxa.
