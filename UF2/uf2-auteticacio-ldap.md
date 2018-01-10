@@ -59,7 +59,7 @@ Si no se selecciona, no es crearà automàticament el directori de l'usuari i no
 
 ![](/assets/uf2-nsspam.png)
 
-L'execució d'aquestes comandes, modifica la configuració de NSS en el fitxer `/etc/nsswitch.conf`.
+L'execució d'aquestes comandes, modifica la configuració de **[NSS (_Name Service Switch_)](https://es.wikipedia.org/wiki/Name_Service_Switch)** en el fitxer `/etc/nsswitch.conf`.
 
 > A partir ara, quan s'engegui la màquina, buscarà el servidor LDAP per validar els usuaris, per tant:
 * **Cal tenir engegat el servidor** abans d'engegar el client.
