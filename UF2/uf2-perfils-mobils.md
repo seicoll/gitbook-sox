@@ -67,7 +67,7 @@ El **servei NFS** es configura en l'arxiu `/etc/exports`.
 S'ha d'afegir la següent línia que serveix per **compartir la carpeta** on es troben els perfils dels usuaris:
 
   ```
-  /srv/nfs/ldapxxx   *   (rw,no_root_squash,no_subtree_check,no_wdelay,sync)
+  /srv/nfs/ldapxxx  *(rw,no_root_squash,no_subtree_check,no_wdelay,sync)
   ```
 
 Com sempre que es modifica la configuració d'un servei, cal **reiniciar-lo** i comprovar que no hi hagi errors:
