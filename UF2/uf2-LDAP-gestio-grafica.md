@@ -16,26 +16,29 @@ Per configurar el **phpLDAPadmin** s'han de fer els següents canvis al fitxer `
 
   1. Per tal que phpLDAPadmin accedeixi al nostre domini, cal **canviar la base del domini a dos llocs** `dc=example,dc=com` per `dc=ldapxxx,dc=local`
 
-  > **Important**: Només hi ha dos llocs on cal canviar-ho, la resta són línies que estan comentades).
-
+  > **Important**: Només s'ha de canviar en un lloc (la resta són línies que estan comentades).
   >Les línies que comencen amb **#** o **//** són comentaris i no cal modificar-les.
 
   ```
   /* Array of base DNs of your LDAP server. Leave this blank to have phpLDAPadmin auto-detect it for you. */
   $servers->setValue('server','base',array('dc=ldapxxx,dc=local'));
-  ...
-  /* The DN of the user for phpLDAPadmin to bind with. For anonymous binds or
-     'cookie','session' or 'sasl' auth_types, LEAVE THE LOGIN_DN AND LOGIN_PASS
-     BLANK. If you specify a login_attr in conjunction with a cookie or session
-     auth_type, then you can also specify the bind_id/bind_pass here for searching
-     the directory for users (ie, if your LDAP server does not allow anonymous
-     binds. */
-  $servers->setValue('login','bind_id','cn=admin,dc=ldapxxx,dc=local');
   ```
 
   > Amb l'editor _**nano**_, es pot buscar text amb la combinació de tecles **Ctrl + W**.
+  2. **Canviar el DN de l'usuari amb qui s'ha de fer el _login_** a phpldapadmin per administrar LDAP.
+  > **Important**: Només s'ha de canviar en un lloc (la resta són línies que estan comentades).
 
-  2. **Canviar el valor inicial dels identificadors d'usuaris i grups** per tal que no coincideixin amb els valors dels usuaris i grups locals.
+  ```
+  /* The DN of the user for phpLDAPadmin to bind with. For anonymous binds or
+  'cookie','session' or 'sasl' auth_types, LEAVE THE LOGIN_DN AND LOGIN_PASS
+  BLANK. If you specify a login_attr in conjunction with a cookie or session
+  auth_type, then you can also specify the bind_id/bind_pass here for searching
+  the directory for users (ie, if your LDAP server does not allow anonymous
+  binds. */
+  $servers->setValue('login','bind_id','cn=admin,dc=ldapxxx,dc=local');
+  ```
+  
+  3. **Canviar el valor inicial dels identificadors d'usuaris i grups** per tal que no coincideixin amb els valors dels usuaris i grups locals.
   Convé canviar-los, per exemple, a **10000 i 10000**.
   Aquests paràmetres es troben en una **línia que cal descomentar i modificar**:
   
@@ -43,7 +46,7 @@ Per configurar el **phpLDAPadmin** s'han de fer els següents canvis al fitxer `
   $servers->setValue('auto_number','min',array('uidNumber'=>10000,'gidNumber'=>10000));
   ```
   
-  3. També es poden **evitar avisos innecessaris** descomentant i modificant la següent línia:
+  4. També es poden **evitar avisos innecessaris** descomentant i modificant la següent línia:
   
   ```
   $config->custom->appearance['hide_template_warning'] = true;
