@@ -51,15 +51,17 @@ Per configurar el **phpLDAPadmin** s'han de fer els següents canvis al fitxer `
   
 ### Accedir a phpLDAPadmin
 
-Des de l’ubuntu desktop o qualsevol altre clien, aneu a un navegador web i connecteu-vos al phpldapadmin posant l'adreça.
+Des de l’ubuntu desktop o qualsevol altre client, aneu a un navegador web i connecteu-vos al phpLDAPadmin posant l'adreça.
 
-  `http://IP_SERVIDOR/phpldapadmin`
+  `http://172.30.A.20/phpldapadmin`
   
 > Cal substituir _**IP_SERVIDOR**_ per la IP del vostre servidor LDAP.
 
 Us demanarà l'usuari (hauria de ser `cn=admin,dc=ldapxxx,dc=local`) i la seva contrasenya.
 
-Si l'identificador no és correcte, cal revisar els canvis fets a l'arxiu `/etc/phpldapadmin/config.php`
+![](/assets/uf2-phpldapadmin-login.png)
+
+> Si les dades que apareixen al _login_ no són correctes, cal revisar els canvis fets a l'arxiu `/etc/phpldapadmin/config.php`
 
 ### Gestionar usuaris, grups i unitats organitzatives
 
