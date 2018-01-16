@@ -74,6 +74,8 @@ Per crear usuaris, grups i unitats organitzatives heu d'escollir una d'aquestes 
 * **Grups**: _Generico: Grupo Posix_
 * **Usuaris**: _Generico: Cuenta usuario_
 
+![](/assets/uf2-CrearObjectesLDAP.png)
+
 **Dades de l'usuari**:
 
 * **_Número UID_**: (automàtic)
