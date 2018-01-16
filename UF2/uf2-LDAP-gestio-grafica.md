@@ -88,7 +88,7 @@ Per crear usuaris, grups i unitats organitzatives heu d'escollir una d'aquestes 
 * **_Contraseña_**: \*\*\*\*\*\* (md5)
 * **_Consola de login_**: cap (per defecte agafa `/bin/bash`)
 
-> Si al crear usuaris o grups, els identificadors són inferiors a 10000, cal revisar els canvis fets a l'arxiu `/etc/phpldapadmin/config.php`.
+> Si al crear usuaris o grups, els **identificadors** d'usuaris o grups (**_uid_** i **_gid_**) **són inferiors a 10000**, cal revisar els canvis fets a l'arxiu `/etc/phpldapadmin/config.php`.
 
 ## LAT (_LDAP Administration Tool_)
 
