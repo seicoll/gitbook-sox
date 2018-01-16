@@ -34,7 +34,7 @@ Per tal que en nostre ubuntu desktop client s'autentiqui per LDAP, instal·larem
 > **ATENCIÓ**: Si la següent configuració no es fa correctament, el més probable és que la màquina no s'engegui o trigui molt en fer-ho!!!
 
 Els paràmetres de configuració que demana són els següents:
-* Servidor LDAP: **ldap://_IP_SERVIDOR_** (poseu la IP del vostre servidor!!)
+* Servidor LDAP: **ldap://172.30.A.20** (poseu la IP del vostre servidor!!)
 * Base del domini (DN): **dc=ldapxxx,dc=local**
 * Versió de LDAP: **3**
 * Crear una base de dades local: **Sí**
