@@ -83,11 +83,12 @@ Per crear usuaris, grups i unitats organitzatives heu d'escollir una d'aquestes 
 * **_ID del usuario_**: identificador del compte de l'usuari (login)
 * **_Directorio personal_**: /home/**ldapxxx**/usuari
 
-    És preferible posar els usuaris de LDAP en un directori diferent dels usuaris locals (`/home/ldapxxx/...`)
+    És preferible posar el directori _home_ dels usuaris de LDAP en un directori diferent dels usuaris locals (`/home/ldapxxx/...`)
 * **_Número GID_**: grup principal al què pertany l'usuari
 * **_Contraseña_**: \*\*\*\*\*\* (md5)
 * **_Consola de login_**: cap (per defecte agafa `/bin/bash`)
 
+> Si al crear usuaris o grups, els identificadors són inferiors a 10000, cal revisar els canvis fets a l'arxiu `/etc/phpldapadmin/config.php`.
 
 ## LAT (_LDAP Administration Tool_)
 
