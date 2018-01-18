@@ -134,14 +134,14 @@ En aquest cas es disposa de més opcions per configurar la compartició:
 ### Carpetes compartides ocultes
 
 * Si es vol compartir un recurs però que **no sigui visible** \(només es podrà connectar qui conegui la ruta a aquest recurs\) només cal afegir un **$** darrera del nom del recurs.
-
   * Per exemple: C$
+
 
 * Amb **\ip\_equip** o **\nom\_equip** es pot veure els recursos compartits visibles.
 
 * Es pot accedir a un recurs compartit ocult si es conneix tota la ruta.
-
   * Per exemple: \192.168.0.1\C$
+
 
 ### Veure els permisos efectius
 
