@@ -16,11 +16,15 @@ Es poden compartir tot tipus de recursos, encara que els més habituals són **d
 
 En els **sistemes operatius lliures** hi ha diversos protocols i aplicacions que ens permeten compartir recursos en xarxa, com el **protocol NFS** i el paquet de programari **Samba**.
 
-En aquesta mòdul no es parlarà dels sistemes de protecció activa i passiva que es veuen en altres mòduls (antivirus, còpies de seguretat...) sinó d'altres aspectes gestionats directament pel sistema operatiu: els drets, privilegis i permisos.
+En aquesta mòdul no es parlarà dels sistemes de protecció activa i passiva que es veuen en altres mòduls (antivirus, còpies de seguretat...) sinó d'altres aspectes gestionats directament pel sistema operatiu: 
+  * **Drets**
+  * **Privilegis**
+  * **Permisos**
 
 ## Drets d'inici de sessió o drets d'accés
 
-Aquests **drets** determinen qui pot accedir al nostre sistema i de quina forma:
+> Els **drets** determinen qui pot accedir al nostre sistema i de quina forma.
+
 * **Formes d'accés**
   * Accés local o remot a una màquina
   * Accés al domini
@@ -30,8 +34,9 @@ Aquests **drets** determinen qui pot accedir al nostre sistema i de quina forma:
 
 ## Privilegis
 
-Els **privilegis** determinen quins usuaris poden realitzar determinades accions que afecten a la màquina, al sistema operatiu o al domini.
-Els següents són aluns exemples:
+> Els **privilegis** determinen quins usuaris poden realitzar determinades accions que afecten a la màquina, al sistema operatiu o al domini.
+
+Els següents són alguns **exemples**:
 * Aturar el sistema o apagar la màquina
 * Canviar la data i hora
 * Instal·lar programes i controladors de dispositius
@@ -42,7 +47,7 @@ Els següents són aluns exemples:
 
 ## Permisos
 
-Els **permisos** determinen què poden fer els diferents usuaris amb els recursos, siguin locals o compartits.
+> Els **permisos** determinen què poden fer els diferents usuaris amb els recursos, siguin locals o compartits.
 
 Els principals recursos que es comparteixen en una xarxa son els arxius, les carpetes i les impressores.
 
