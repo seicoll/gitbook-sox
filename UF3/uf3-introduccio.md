@@ -57,6 +57,10 @@ Els següents són alguns **exemples**:
 * Afegir equips al domini o treure'ls
 * Fer auditories i configurar la seguretat
 
+Els **privilegis en Windows** es configuren a través de **directives de grup local** o **directives de grup d'Active Directory**.
+
+Els **privilegis en Linux** es configuren en l'arxiu `/etc/sudoers`. 
+
 ## Permisos
 
 > Els **permisos** determinen què poden fer els diferents usuaris amb els recursos, siguin locals o compartits.
