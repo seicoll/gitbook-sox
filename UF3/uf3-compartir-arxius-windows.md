@@ -32,7 +32,7 @@ Recursos compartits per defecte en un domini
 * **NETLOGON**: Conté els scripts d'inici de sessió. C:\Windows\SYSVOL\sysvol\domini\SCRIPTS
 * **SYSVOL**: Conté els fitxers públics del domini. C:\Windows\SYSVOL\sysvol
 
-## Compartició de carpetes
+### Compartició de carpetes
 
 Quan es comparteixen carpetes, cal distingir entre permisos locals i permisos de compartició:
 
