@@ -10,9 +10,14 @@
 
 Alguns dels **principals avantatges** són els següents:
 
-* **Reduir costos**: normalment no fa falta tenir una impressora per cada usuari, ni discos de gran capacitat en tots els ordinadors; es pot compartir una impressora entre vàries màquines o guardar els arxius en un sistema d'emmagatzematge centralitzat.
+* **Reduir costos**: 
+  * normalment no fa falta tenir una impressora per cada usuari, ni discos de gran capacitat en tots els ordinadors.
+  * es pot compartir una impressora entre vàries màquines o guardar els arxius en un sistema d'emmagatzematge centralitzat.
 
-* **Facilitar la feina dels usuaris**: es pot fer que un usuari pugui treballar en qualsevol ordinador sense haver de reconfigurar cada vegada el seu entorn de treball, i poder accedir fàcilment als seus documents, a documents que comparteixen altres usuaris o a una impressora encara que aquests recursos no estigui en el seu ordinador.
+
+* **Facilitar la feina dels usuaris**: 
+   * es pot fer que un usuari pugui treballar en qualsevol ordinador sense haver de reconfigurar cada vegada el seu entorn de treball
+   * i poder accedir fàcilment als seus documents, a documents que comparteixen altres usuaris o a una impressora encara que aquests recursos no estigui en el seu ordinador.
 
 #### Recursos
 
@@ -23,10 +28,13 @@ Els poden compartir en xarxa tots tipus de recursos, encara que els **recursos m
 #### Servidor i client
 
 Qualsevol ordinador pot actuar com a **servidor** i com a **client**.
-Només cal que tingui instal·lats els programes adequats: un programa per gestionar el servei (en aquest cas, compartir un recurs) i un programa per poder accedir al servei (accedir al recurs compartit).
 
 * **Servidor**: ordinador que comparteix un recurs.
 * **Client**: ordinador que accedeix a un recurs compartit.
+
+Només cal que tingui instal·lats els **programes** adequats: 
+  * Un programa per **gestionar el servei** (en aquest cas, compartir un recurs) 
+  * Un programa per poder **accedir al servei** (accedir al recurs compartit).
 
 **Exemple:**
 
