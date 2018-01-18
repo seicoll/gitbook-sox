@@ -65,9 +65,10 @@ Els **privilegis en Linux** es configuren en l'arxiu `/etc/sudoers`.
 
 > Els **permisos** determinen què poden fer els diferents usuaris amb els recursos, siguin locals o compartits.
 
-Els principals recursos que es comparteixen en una xarxa son els arxius, les carpetes i les impressores.
+Els **principals recursos que es comparteixen** en una xarxa son els arxius, les carpetes i les impressores.
 
-De forma molt general i simplificada, tenim els següents permisos:
+De forma molt general i simplificada, tenim els següents **permisos**:
+
 * **Permisos per arxius i carpetes**
   * Lectura
   * Modificació (o escriptura)
@@ -77,11 +78,13 @@ De forma molt general i simplificada, tenim els següents permisos:
   * Gestionar la llista de documents pendents d'imprimir (canviar prioritats, eliminar...)
   * Administrar les impressores (afegir, eliminar, configurar, posar en pausa...)
 
-**Assignació de permisos**
+### Assignació de permisos
 
-Els permisos es poden assignar a usuaris individuals o a grups.
+Els permisos es poden assignar **a usuaris individuals o a grups**.
+
 Quan els permisos s'assignen a un grup, aquests permisos s'aplicaran també als subgrups i usuaris que pertanyin a aquest grup.
-> Si els permisos del grup entren en contradicció amb altres permisos assignats als subgrups o usuaris, s'aplicaran els més específics (els de subgrup o els d'usuari).
+
+> Si els **permisos del grup** entren en **contradicció** amb altres **permisos assignats als subgrups o usuaris**, s'aplicaran els més específics (els de subgrup o els d'usuari).
 
 
 
