@@ -49,7 +49,7 @@ En un entorn on es comparteixen recursos, és molt important controlar qui pot a
 * **Accés a ordinadors i recursos de la xarxa**: que una persona no autoritzada pugui utilitzar les màquines i recursos de l'empresa.
 * **Modificació del funcionament del sistema i dels recursos**: que qualsevol pugui modificar la configuració del sistema o canviar els permisos d'accés a carpetes i impressores.
 * **Accés a recursos restringits**: que un usuari pugui veure documents amb informació a la qual no ha de tenir accés o que pugui imprimir sense necessitat en una impressora en color.
-* **Utilització de recursos**: que un usuari pugui omplir un disc o acaparar l'ús d'una impressora impedint l'ús a altres usuaris o, fins i tot, impedint el correcte funcionament del sistema.
+* **Utilització de recursos**: que un usuari pugui omplir tot un disc o acaparar l'ús d'una impressora impedint l'ús a altres usuaris o, fins i tot, impedint el correcte funcionament del sistema.
 
 En aquesta mòdul no es parlarà dels sistemes de protecció activa i passiva que es veuen en altres mòduls (antivirus, còpies de seguretat...) sinó d'altres aspectes gestionats directament pel sistema operatiu: 
   * **Drets**
@@ -78,7 +78,6 @@ Els següents són alguns **exemples**:
 * Crear, modificar i eliminar usuaris i grups
 * Configurar i compartir els recursos
 * Afegir equips al domini o treure'ls
-* Fer auditories i configurar la seguretat
 
 Els **privilegis en Windows** es configuren a través de **directives de grup local** o **directives de grup d'Active Directory**.
 
