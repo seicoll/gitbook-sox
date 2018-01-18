@@ -50,10 +50,11 @@ Quan es comparteix una carpeta, s'han de configurar els **permisos de compartici
 
 Es poden assignar diferents permisos de compartició per usuaris i grups. Aquests permisos poden ser diferents dels permisos locals.
 
-> Quan s'accedeix a un recurs **de forma local** només es tenen en compte els permisos locals, però quan s'accedeix a un recurs compartit **de forma remota** s'apliquen els permisos **més restrictius** entre els permisos locals i els permisos de compartició.
->
-> Una forma de simplificar la gestió dels permisos quan es comparteixen arxius i carpetes és posar **Control total** als permisos de compartició i gestionar els permisos locals més detalladament.  
-> Això no sempre es pot fer \(depén dels requeriments de seguretat\) però en la majoria de casos, sí.
+> Quan s'accedeix a un recurs **de forma local** només es tenen en compte els **permisos locals**.
+> Però quan s'accedeix a un recurs compartit **de forma remota** s'apliquen els permisos **més restrictius** entre els permisos locals i els permisos de compartició.
+
+Una forma de simplificar la gestió dels permisos quan es comparteixen arxius i carpetes és posar **Control total** als permisos de compartició i gestionar els permisos locals més detalladament.  
+Això no sempre es pot fer \(depén dels requeriments de seguretat\) però en la majoria de casos, sí.
 
 ## Gestió de permisos locals
 
