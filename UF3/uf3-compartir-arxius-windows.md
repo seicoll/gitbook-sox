@@ -38,13 +38,14 @@ El **nom del recurs compartit** \(el que s'ha d'utilitzar quan s'accedeix de for
 
 ### Compartició de carpetes
 
-Quan es comparteixen carpetes, cal distingir entre permisos locals i permisos de compartició:
+Quan es comparteixen carpetes, cal distingir entre **permisos locals** i **permisos de compartició**:
 
 * **Permisos locals \(de seguretat o NTFS\)**: s'apliquen quan l'usuari accedeix a l'arxiu o carpeta utilitzant una ruta local:
-  * En Windows: C:\Usuari\Documents
+  * En Windows: `C:\Usuari\Documents`
+  
   
 * **Permisos de compartició**: s'apliquen quan l'usuari accedeix a l'arxiu o carpeta utilitzant una ruta remota:
-  * En Windows: \Server\Compartida o X: \(suposant que X: és una unitat de xarxa connectada amb una carpeta remota\)
+  * En Windows: `\\Server\Compartida` o `X:` (suposant que `X:` és una unitat de xarxa connectada amb una carpeta remota)
 
 Quan es comparteix una carpeta, s'han de configurar els **permisos de compartició**.
 
