@@ -128,24 +128,14 @@ En aquest cas es disposa de més opcions per configurar la compartició:
 
 ![](/assets/win-permisos-compartits-avansats2.png)
 
-> Es pot simplificar la configuració de permisos de compartició posant **Control total** a _**Compartició**_ i gestionar els permisos més detalladament a _**Seguretat**_.  
-> En alguns casos no es podrà fer així: per exemple, si es vol que els usuaris tinguin permís de lectura i escriptura quan accedeixin localment però només de lectura quan ho facin de forma remota.
+> Es pot simplificar la configuració de permisos de compartició posant **Control total** a _**Compartició**_ i gestionar els permisos locals més detalladament a la pestanya _**Seguretat**_.  
 
-### Carpetes compartides ocultes
-
-* Si es vol compartir un recurs però que **no sigui visible** \(només es podrà connectar qui conegui la ruta a aquest recurs\) només cal afegir un **$** darrera del nom del recurs.
-  * Per exemple: C$
-
-
-* Amb **\ip\_equip** o **\nom\_equip** es pot veure els recursos compartits visibles.
-
-* Es pot accedir a un recurs compartit ocult si es conneix tota la ruta.
-  * Per exemple: \192.168.0.1\C$
-
+En alguns casos no es podrà fer així: per exemple, si es vol que els usuaris tinguin permís de lectura i escriptura quan accedeixin localment però només de lectura quan ho facin de forma remota.
 
 ### Veure els permisos efectius
 
 És fàcil cometre errors al combinar permisos locals amb permisos compartits, i sol ser difícil descobrir quins són els permisos que estan mal configurats.  
+
 Per ajudar en aquesta tasca, es pot anar a permisos locals \(pestanya _**Seguridad**_\), clicar el botó _**Opciones avanzadas**_ i entrar a la pestanya **Acceso efectivo**.
 
 Aquesta finestra permet comprovar quins permisos té un usuari i, en cas que no tingui un permís, saber si el problema està en la configuració dels permisos locals o en els permisos de compartició.
@@ -154,11 +144,23 @@ Primer cal **triar l'usuari o grup** i després clicar el botó _**Ver acceso ef
 
 ![](/assets/win-permisos-efectius.png)
 
-En les dues primeres columnes se indica si l'usuari o grup té o no un permís determinat.  
-En cas que no el tingui, en la tercera columna se indica el motiu:
+En les **dues primeres columnes** s'indica si l'usuari o grup té o no un permís determinat.  
+En cas que no el tingui, en la **tercera columna** s'indica el motiu:
 
 * **Permisos de archivo**: no s'ha donat permís en la configuració de **permisos locals**.
 * **Compartir**: no s'ha donat permís en la configuració de **permisos de compartició**.
+
+### Carpetes compartides ocultes
+
+Si es vol compartir un recurs però que **no sigui visible** \(només es podrà connectar qui conegui la ruta a aquest recurs\) només cal afegir un **$** darrera del nom del recurs.
+  * Per exemple: C$
+
+
+Amb `\\ip_equip` o `\\nom_equip` es pot veure els recursos compartits **visibles**.
+
+Es pot **accedir a un recurs compartit ocult** si es conneix tota la ruta.
+  * Per exemple: `\\192.168.0.1\C$`
+
 
 ## Veure i gestionar les carpetes compartides
 
