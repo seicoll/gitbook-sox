@@ -2,47 +2,43 @@
 
 ## Introducció
 
-### Conceptes bàsics
-
 > Windows utilitza el protocol **CIFS** \(antigament anomenat **SMB**\) per compartir arxius, carpetes i impressores en un entorn en xarxa. També se'l sol anomenar **SMB/CIFS**.
 
-**Propietari d'un arxiu o carpeta**
+### Propietari d'un arxiu o carpeta
 
 En Windows, cada carpeta i arxiu pertany a un usuari o a un grup d'usuaris, que és qui l'ha creat, però es pot canviar sempre que es tinguin els permisos per fer-ho.  
 L'usuari o grup propietari, per defecte té tots els permisos.
 
-**Permisos per arxius i carpetes**  
+### Permisos per arxius i carpetes
 A part del propietari, es poden afegir altres usuaris i grups, i assignar permisos diferents.
 
 > Si un usuari pertany a dos grups, se sumen els permisos dels dos grups.
 
-**Permisos locals \(de seguretat o NTFS\)**  
-Són els permisos que tindran els usuaris quan accedeixin als recursos \(arxius, carpetes i impressores\) de forma local.
-
-**Herència**  
-Quan es crea una carpeta, aquesta hereta els permisos de la carpeta pare, però aquesta dependència es pot trencar per canviar i posar els permisos adequats a cada cas.
+### Herència
+Quan es crea una carpeta, aquesta **hereta els permisos de la carpeta pare**, però aquesta dependència es pot trencar per canviar i posar els permisos adequats a cada cas.
 
 ### Recursos compartits
 
-Un recurs compartit és un objecte al qual es pot accedir de forma remota.  
-El recursos que es poden compartir són:
+> Un **recurs compartit** és un objecte al qual es pot accedir de forma remota.  
 
+El recursos que es poden compartir són:
 * **Arxius i carpetes**
 * **Impressores**
 
-El nom del recurs compartit \(el que s'ha d'utilitzar quan s'accedeix de forma remota\) pot ser diferent del nom real.
+El **nom del recurs compartit** \(el que s'ha d'utilitzar quan s'accedeix de forma remota\) pot ser diferent del nom real.
 
 Recursos compartits per defecte en un domini
 
 * **NETLOGON**: Conté els scripts d'inici de sessió. C:\Windows\SYSVOL\sysvol\domini\SCRIPTS
 * **SYSVOL**: Conté els fitxers públics del domini. C:\Windows\SYSVOL\sysvol
 
-### Compartició de carpetes
+## Compartició de carpetes
 
 Quan es comparteixen carpetes, cal distingir entre permisos locals i permisos de compartició:
 
-* **Permisos locals**: s'apliquen quan l'usuari accedeix a l'arxiu o carpeta utilitzant una ruta local:
+* **Permisos locals \(de seguretat o NTFS\)**: s'apliquen quan l'usuari accedeix a l'arxiu o carpeta utilitzant una ruta local:
   * En Windows: C:\Usuari\Documents
+  
 * **Permisos de compartició**: s'apliquen quan l'usuari accedeix a l'arxiu o carpeta utilitzant una ruta remota:
   * En Windows: \Server\Compartida o X: \(suposant que X: és una unitat de xarxa connectada amb una carpeta remota\)
 
