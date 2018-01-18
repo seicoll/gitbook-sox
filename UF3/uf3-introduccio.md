@@ -6,15 +6,34 @@
 
 > La **compartició de recursos en xarxa** és una de les utilitats o raons principals perquè els sistemes operatius es connectin en xarxa.
 
+#### Avantatges
+
 Alguns dels **principals avantatges** són els següents:
 
 * **Reduir costos**: normalment no fa falta tenir una impressora per cada usuari, ni discos de gran capacitat en tots els ordinadors; es pot compartir una impressora entre vàries màquines o guardar els arxius en un sistema d'emmagatzematge centralitzat.
 
 * **Facilitar la feina dels usuaris**: es pot fer que un usuari pugui treballar en qualsevol ordinador sense haver de reconfigurar cada vegada el seu entorn de treball, i poder accedir fàcilment als seus documents, a documents que comparteixen altres usuaris o a una impressora encara que aquests recursos no estigui en el seu ordinador.
 
+#### Recursos
+
 Els poden compartir en xarxa tots tipus de recursos, encara que els **recursos més habituals** són:
 * **Arxius i carpetes**
 * **Impressores**
+
+#### Servidor i client
+
+Qualsevol ordinador pot actuar com a **servidor** i com a **client**.
+Només cal que tingui instal·lats els programes adequats: un programa per gestionar el servei (en aquest cas, compartir un recurs) i un programa per poder accedir al servei (accedir al recurs compartit).
+
+* **Servidor**: ordinador que comparteix un recurs.
+* **Client**: ordinador que accedeix a un recurs compartit.
+
+**Exemple:**
+
+![](/assets/uf3-ServidorClient.svg)
+
+**PC1** comparteix la carpeta C1 i per tant actua com a servidor, però a la vegada accedeix a la carpeta C2 compartida en PC2, per tant també actua com a client.
+En canvi, el **Windows Server** només actua com a client, i el **PC2** només actua com a servidor.
 
 ## Seguretat en els sistemes en xarxa
 
@@ -24,16 +43,12 @@ En un entorn on es comparteixen recursos, és molt important controlar qui pot a
 * **Accés a recursos restringits**: que un usuari pugui veure documents amb informació a la qual no ha de tenir accés o que pugui imprimir sense necessitat en una impressora en color.
 * **Utilització de recursos**: que un usuari pugui omplir un disc o acaparar l'ús d'una impressora impedint l'ús a altres usuaris o, fins i tot, impedint el correcte funcionament del sistema.
 
-Es poden compartir tot tipus de recursos, encara que els més habituals són **directoris** i **impressores**. 
-
-En els **sistemes operatius lliures** hi ha diversos protocols i aplicacions que ens permeten compartir recursos en xarxa, com el **protocol NFS** i el paquet de programari **Samba**.
-
 En aquesta mòdul no es parlarà dels sistemes de protecció activa i passiva que es veuen en altres mòduls (antivirus, còpies de seguretat...) sinó d'altres aspectes gestionats directament pel sistema operatiu: 
   * **Drets**
   * **Privilegis**
   * **Permisos**
 
-## Drets d'inici de sessió o drets d'accés
+### Drets d'inici de sessió o drets d'accés
 
 > Els **drets** determinen qui pot accedir al nostre sistema i de quina forma.
 
@@ -44,7 +59,7 @@ En aquesta mòdul no es parlarà dels sistemes de protecció activa i passiva qu
   * En quines màquines es pot accedir
   * Durant quins períodes de temps es pot accedir
 
-## Privilegis
+### Privilegis
 
 > Els **privilegis** determinen quins usuaris poden realitzar determinades accions que afecten a la màquina, al sistema operatiu o al domini.
 
@@ -61,7 +76,7 @@ Els **privilegis en Windows** es configuren a través de **directives de grup lo
 
 Els **privilegis en Linux** es configuren en l'arxiu `/etc/sudoers`. 
 
-## Permisos
+### Permisos
 
 > Els **permisos** determinen què poden fer els diferents usuaris amb els recursos, siguin locals o compartits.
 
@@ -78,7 +93,7 @@ De forma molt general i simplificada, tenim els següents **permisos**:
   * Gestionar la llista de documents pendents d'imprimir (canviar prioritats, eliminar...)
   * Administrar les impressores (afegir, eliminar, configurar, posar en pausa...)
 
-### Assignació de permisos
+#### Assignació de permisos
 
 Els permisos es poden assignar **a usuaris individuals o a grups**.
 
