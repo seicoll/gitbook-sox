@@ -13,7 +13,7 @@ Alguns dels **principals avantatges** són els següents:
 * **Facilitar la feina dels usuaris**: es pot fer que un usuari pugui treballar en qualsevol ordinador sense haver de reconfigurar cada vegada el seu entorn de treball, i poder accedir fàcilment als seus documents, a documents que comparteixen altres usuaris o a una impressora encara que aquests recursos no estigui en el seu ordinador.
 
 Els poden compartir en xarxa tots tipus de recursos, encara que els **recursos més habituals** són:
-* **Directoris**
+* **Arxius i carpetes**
 * **Impressores**
 
 ## Seguretat en els sistemes en xarxa
