@@ -29,10 +29,12 @@ El recursos que es poden compartir són:
 
 El **nom del recurs compartit** \(el que s'ha d'utilitzar quan s'accedeix de forma remota\) pot ser diferent del nom real.
 
-Recursos compartits per defecte en un domini
+<!--
+**Recursos compartits per defecte en un domini**
 
 * **NETLOGON**: Conté els scripts d'inici de sessió. C:\Windows\SYSVOL\sysvol\domini\SCRIPTS
 * **SYSVOL**: Conté els fitxers públics del domini. C:\Windows\SYSVOL\sysvol
+-->
 
 ### Compartició de carpetes
 
