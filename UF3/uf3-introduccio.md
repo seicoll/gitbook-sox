@@ -86,5 +86,9 @@ Quan els permisos s'assignen a un grup, aquests permisos s'aplicaran també als 
 
 > Si els **permisos del grup** entren en **contradicció** amb altres **permisos assignats als subgrups o usuaris**, s'aplicaran els més específics (els de subgrup o els d'usuari).
 
+## Documentació i recursos
+
+* **Font d'informació:** [Apunts SOX (Pere Sánchez)](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=2.0.0)
+
 
 
