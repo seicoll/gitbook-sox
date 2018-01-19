@@ -14,3 +14,7 @@ Per instal·lar el **Servidor d'impressió** en el servidor, cal afegir la funci
 Finalment, podem obrir l'administrador d'impressió anant a **_Eines > Administrador d'impressió_**.
 
 ![](/assets/win-print-management.png)
+
+## Documentació i recursos
+
+* **Somebooks**: Compartir una impresora del controlador de dominio con Windows Server 2016 (http://somebooks.es/compartir-una-impresora-del-controlador-dominio-windows-server-2016/)
