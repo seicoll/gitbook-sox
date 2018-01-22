@@ -91,15 +91,15 @@ Podem instal·lar una impressora de xarxa de dues formes en funció de sí conei
 
 **Opció 1: Si no sabem la IP o nom de la impressora**
 
-**_Afegir impressora..._** > **_Buscar impressores de xarxa_**
+  **_Afegir impressora..._** > **_Buscar impressores de xarxa_**
 
-A continuació ens ha de detectar la impressora compartida i la seleccionem de la llista.
+  A continuació ens ha de detectar la impressora compartida i la seleccionem de la llista.
 
 
 **Opció 2: Si sabem la IP de la impressora**
 
-**_Afegir impressora..._** > **_Afegir impressora TCP/IP escrivint la direcció IP o nom de host_**.
-Posar la IP de la impressora
+  **_Afegir impressora..._** > **_Afegir impressora TCP/IP escrivint la direcció IP o nom de host_**.
+  Posar la IP de la impressora
 
 
 Instal·lar controlador
