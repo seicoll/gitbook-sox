@@ -15,11 +15,25 @@ Per instal·lar el **Servidor d'impressió** en el servidor, cal afegir el rol d
 3. Seleccionem únicament el servei de rol **_Servidor de impressió (Print Server)_**.
 4. I fem instal·lar.
 
-Finalment, podem obrir l'administrador d'impressió anant a **_Eines > Administrador d'impressió_**.
+
+## Compartir la impressora
+
+Un cop instal·lat l’**_Administrador del Servidor_**, podem obrir l'administrador d'impressió anant a **_Eines > Administrador d'impressió_**.
 
 ![](/assets/win-print-management.png)
 
-## Compartir la impressora
+En el panell esquerra, dins la categoria de **_Serveis d'impressió_** trobem:
+
+* Controladors
+* Formularis
+* Ports
+* Impressores
+
+### Controladors
+
+> Si la impressora està correctament instal·lada i configurada de forma local en el servidor, ja disposarem dels controladors necessaris per imprimir localment.
+
+Tot i així, és interessant **guardar controlador pels diferents sistemes operatius** que utilitzen els equips clients del nostre domini. Així quan s'instal·li la impressora en el client ja tindrà disponible els controladors necessaris i no ens sol·licitarà el disc de la impressora. 
 
 ## Gestió de permisos de compartició
 
