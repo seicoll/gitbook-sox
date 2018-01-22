@@ -52,9 +52,11 @@ Si compartim aquesta impressora amb usuaris que tinguin altres versions de Windo
 
 ## Gestió de permisos de compartició
 
-La pestanya **_Seguretat_** s'accedeix a les opcions per configurar els permisos de compartició de la ipressora.
+La pestanya **_Seguretat_** s'accedeix a les opcions per configurar els permisos de compartició de la impressora.
 
 ![](/assets/uf3-compartir-impressora.png)
+
+> Cal treure el grup **_Everyone_** per tal que només puguin utilitzar la impressora els usuaris que indiquem a continuació.
 
 ### Gestionar els usuaris
 
