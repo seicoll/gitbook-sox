@@ -24,10 +24,10 @@ Un cop instal·lat l’**_Administrador del Servidor_**, podem obrir l'administr
 
 En el panell esquerra, dins la categoria de **_Serveis d'impressió_** trobem:
 
-* Controladors
-* Formularis
-* Ports
-* Impressores
+* Controladors [_Drivers_]
+* Formularis [_Forms_]
+* Ports [_Ports_]
+* Impressores [_Printers_]
 
 ### Controladors
 
@@ -35,9 +35,17 @@ En el panell esquerra, dins la categoria de **_Serveis d'impressió_** trobem:
 
 Tot i així, és interessant **guardar controlador pels diferents sistemes operatius** que utilitzen els equips clients del nostre domini. Així quan s'instal·li la impressora en el client ja tindrà disponible els controladors necessaris i no ens sol·licitarà el disc de la impressora. 
 
+Podem afegir un nou controlador fent **_Botó dret de ratolí > Afegir controlador..._**
+
+### Impressores
+
+
+
 ## Gestió de permisos de compartició
 
 ## Configuració de la impressora compartida en el client
+
+## Implementar impressora compartida amb directiva de grup
 
 ## Documentació i recursos
 
