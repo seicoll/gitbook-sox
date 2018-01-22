@@ -77,7 +77,7 @@ Amb el botó **_Opciones avanzadas_** es poden canviar algunes propietats avanç
     * _Prendre possessió_
 * Veure els permisos efectius.
 
-## Configuració de la impressora compartida en el client
+## Instal·lar la impressora compartida en el client
 
 
 
