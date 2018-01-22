@@ -90,10 +90,8 @@ Amb el botó **_Opciones avanzadas_** es poden canviar algunes propietats avanç
 Obrir l'**_Administrador d'impressió_** anant a **_Eines > Administrador d'impressió_**, fer botó dret del ratolí i escollir **_Afegir impressora..._** >
 
 
-
-
-Podem instal·lar una impressora de xarxa de dues formes en funció de si coneixem la IP o nom de la impressora o sinó tenim cap informació
 ![](/assets/uf3-afegir-impressora-buscar.png)
+
 
 **Opció 1: Si no sabem la IP o nom de la impressora**
 
