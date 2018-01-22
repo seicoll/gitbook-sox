@@ -43,7 +43,7 @@ Per compartir una impressora cal anar l'**_Administració d'impressió_**, selec
 ![](/assets/uf3-compartir-impressora-general.png)
 
 * Marquem l'opció **_Compartir aquesta impressora_**
-* Ens permet escollir el **nom del recurs compartit**: nom amb què es veurà la impressora a la xarxa.
+* **Nom del recurs compartit**: nom amb què es veurà la impressora a la xarxa.
 * Marquem l'opció **_Presentar treballs d'impressió en els equips clients_**.
 * Marquem l'opció **_Mostrar llista en el directori_**.
 
