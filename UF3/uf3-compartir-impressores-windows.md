@@ -87,12 +87,22 @@ Amb el botó **_Opciones avanzadas_** es poden canviar algunes propietats avanç
 
 ## Instal·lar impressora de xarxa
 
-Podem instal·lar una impressora de xarxa de dues formes en funció de sí coneixem la IP o nom de la impressora o si no tenim cap informació.
+Obrir l'**_Administrador d'impressió_** anant a **_Eines > Administrador d'impressió_**, fer botó dret del ratolí i escollir **_Afegir impressora..._** >
+
+
+
+
+Podem instal·lar una impressora de xarxa de dues formes en funció de si coneixem la IP o nom de la impressora o sinó tenim cap informació
+![](/assets/uf3-afegir-impressora-buscar.png)
 
 **Opció 1: Si no sabem la IP o nom de la impressora**
 
-  **_Afegir impressora..._** > **_Buscar impressores de xarxa_**
+   **_Buscar impressores a la xarxa_**
 
+![](/assets/uf3-afegir-impressora-buscar.png)
+
+
+Podem instal·lar una impressora de xarxa de dues formes en funció de si coneixem la IP o nom de la impressora o sinó tenim cap informació.
   A continuació ens ha de detectar la impressora compartida i la seleccionem de la llista.
 
 
@@ -101,8 +111,9 @@ Podem instal·lar una impressora de xarxa de dues formes en funció de sí conei
   **_Afegir impressora..._** > **_Afegir impressora TCP/IP escrivint la direcció IP o nom de host_**.
   Posar la IP de la impressora
 
+![](/assets/uf3-afegir-impressora-IP.png)
 
-Instal·lar controlador
+### Instal·lar controlador
 
 
 ## Documentació i recursos
