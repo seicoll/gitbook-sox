@@ -49,28 +49,32 @@ Per compartir una impressora cal anar, per configurar els permisos de compartici
 
 La pestanya **_Seguretat_** s'accedeix a les opcions per compartir la impressora de forma avançada.
 
-
-
+![](/assets/uf3-compartir-impressora.png)
 
 ### Gestionar els usuaris
-Es poden afegir o eliminar usuaris i grups fent clic al botó **_Afegir_**.
+Es poden afegir o eliminar usuaris i grups fent clic al botó **_Agregar..._**.
 
 ### Gestionar els permisos simples
+
 Seleccionant l'usuari o grup es poden marcar o desmarcar les caselles **_Permitir_** o **_Denegar_** en cada permís.
 
 Per defecte, si no està marcada la casella **_Permitir_**, implica que no es té el permís corresponent.
 
-Els permisos que es poden assignar són: 
+Els **permisos** que es poden assignar són: 
  * _Imprimir_
  * _Administrar aquesta impressora_
  * _Administrar documents_ 
  * _Permisos especials_
 
 ### Opcions avançades
+
 Amb el botó **_Opciones avanzadas_** es poden canviar algunes propietats avançades com:
 
 * Canviar el propietari.
-* Assignar **_Permisos especials_** com: **_Permisos de lectura_**, **_Canviar permisos_** i **_Prendre possessió_**.
+* Assignar **_Permisos especials_** com: 
+    * _Permisos de lectura_ 
+    * _Canviar permisos_  
+    * _Prendre possessió_
 * Veure els permisos efectius.
 
 
