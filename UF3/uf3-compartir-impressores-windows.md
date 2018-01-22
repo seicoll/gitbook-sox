@@ -91,7 +91,32 @@ Amb el botó **_Opciones avanzadas_** es poden canviar algunes propietats avanç
 
 ## Implementar impressora compartida amb directiva de grup
 
+Puede usar el complemento Administración de impresión con directiva de grupo para implementar automáticamente conexiones de impresora para usuarios o equipos e instalar los controladores de impresora apropiados. Este método de instalación de una impresora resulta útil donde la mayoría de los equipos o usuarios necesitan obtener acceso a las mismas impresoras. 
 
+Para implementar impresoras para usuarios o equipos mediante una directiva de grupo
+Abra Administración de impresión.
+
+En el panel izquierdo, haga clic en Servidores de impresión, seleccione el servidor de impresión correspondiente y, a continuación, haga clic en Impresoras.
+
+En el panel central, haga clic con el botón secundario en la impresora correspondiente y, a continuación, haga clic en Implementar con directiva de grupo.
+
+En el cuadro de diálogo Implementar con directiva de grupo, haga clic en Examinar y, a continuación, seleccione o cree un nuevo objeto de directiva de grupo para almacenar las conexiones de impresora.
+
+Haga clic en Aceptar.
+
+Especifique si se implementan conexiones de impresora para usuarios o equipos:
+
+Para la implementación en grupos de equipos de forma que todos los usuarios de los equipos puedan tener acceso a las impresoras, active la casilla Los equipos a los que se aplica este GPO (por equipo).
+
+Para la implementación en grupos de usuarios de forma que los usuarios puedan obtener acceso a las impresoras desde cualquier equipo en que inicien sesión, active la casilla Los usuarios a los que se aplica este GPO (por usuario).
+
+8. Haga clic en Agregar.
+
+Si es necesario, repita los pasos del 3 al 6 para agregar la configuración de conexión de impresora a otro GPO.
+
+9. Haga clic en Aceptar.
+
+Quan iniciem el client, s'aplicarà la directiu i s'intal·larà la impressora compartida.
 
 ## Instal·lar impressora de xarxa
 
