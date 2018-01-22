@@ -56,7 +56,7 @@ La pestanya **_Seguretat_** s'accedeix a les opcions per configurar els permisos
 
 ![](/assets/uf3-compartir-impressora.png)
 
-> Cal treure el grup **_Everyone_** per tal que només puguin utilitzar la impressora els usuaris que indiquem a continuació.
+> Cal treure el grup **_Tots [Everyone]_** per tal que només puguin utilitzar la impressora els usuaris que indiquem a continuació.
 
 ### Gestionar els usuaris
 
