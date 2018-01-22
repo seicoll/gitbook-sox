@@ -15,7 +15,6 @@ Per instal·lar el **Servidor d'impressió** en el servidor, cal afegir el rol d
 3. Seleccionem únicament el servei de rol **_Servidor de impressió (Print Server)_**.
 4. I fem instal·lar.
 
-
 ## Compartir la impressora
 
 Un cop instal·lat l’**_Administrador del Servidor_**, podem obrir l'administrador d'impressió anant a **_Eines > Administrador d'impressió_**.
