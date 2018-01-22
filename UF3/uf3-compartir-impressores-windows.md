@@ -49,6 +49,23 @@ Per compartir una impressora cal anar, per configurar els permisos de compartici
 
 ## Implementar impressora compartida amb directiva de grup
 
+
+
+## Instal·lar impressora de xarxa
+
+Opció 1: Si no sabem la IP de la impressora
+Afegir impressora... > Busca impressores de xarxa
+Seleccionar impressora de la llista
+
+
+Opció 2: Si sabem la IP de la impressora
+Afegir impressora TCP/IP escrivint la direcció IP o nom de host.
+Posar la IP de la impressora
+
+
+Instal·lar controlador
+
+
 ## Documentació i recursos
 
 * **Somebooks**: Compartir una impresora del controlador de dominio con Windows Server 2016 (http://somebooks.es/compartir-una-impresora-del-controlador-dominio-windows-server-2016/)
