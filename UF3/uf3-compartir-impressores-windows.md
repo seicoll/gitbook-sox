@@ -77,9 +77,9 @@ Amb el botó **_Opciones avanzadas_** es poden canviar algunes propietats avanç
     * _Prendre possessió_
 * Veure els permisos efectius.
 
-
-
 ## Configuració de la impressora compartida en el client
+
+
 
 ## Implementar impressora compartida amb directiva de grup
 
@@ -87,13 +87,18 @@ Amb el botó **_Opciones avanzadas_** es poden canviar algunes propietats avanç
 
 ## Instal·lar impressora de xarxa
 
-Opció 1: Si no sabem la IP de la impressora
-Afegir impressora... > Busca impressores de xarxa
-Seleccionar impressora de la llista
+Podem instal·lar una impressora de xarxa de dues formes en funció de sí coneixem la IP o nom de la impressora o si no tenim cap informació.
+
+**Opció 1: Si no sabem la IP o nom de la impressora**
+
+**_Afegir impressora..._** > **_Buscar impressores de xarxa_**
+
+A continuació ens ha de detectar la impressora compartida i la seleccionem de la llista.
 
 
-Opció 2: Si sabem la IP de la impressora
-Afegir impressora TCP/IP escrivint la direcció IP o nom de host.
+**Opció 2: Si sabem la IP de la impressora**
+
+**_Afegir impressora..._** > **_Afegir impressora TCP/IP escrivint la direcció IP o nom de host_**.
 Posar la IP de la impressora
 
 
