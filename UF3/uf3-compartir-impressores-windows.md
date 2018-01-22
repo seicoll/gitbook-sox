@@ -96,23 +96,16 @@ Obrir l'**_Administrador d'impressió_** anant a **_Eines > Administrador d'impr
 Podem instal·lar una impressora de xarxa de dues formes en funció de si coneixem la IP o nom de la impressora o sinó tenim cap informació
 
 
-**Opció 1: Si no sabem la IP o nom de la impressora**
+* Opció **_Buscar impressores a la xarxa:_** Si no sabem la IP o nom de la impressora.
 
-   **_Buscar impressores a la xarxa_**
-
-![](/assets/uf3-afegir-impressora-buscar.png)
-
-
-Podem instal·lar una impressora de xarxa de dues formes en funció de si coneixem la IP o nom de la impressora o sinó tenim cap informació.
   A continuació ens ha de detectar la impressora compartida i la seleccionem de la llista.
 
 
-**Opció 2: Si sabem la IP de la impressora**
+* Opció  **_Afegir impressora TCP/IP escrivint la direcció IP o nom de host_**
 
-  **_Afegir impressora..._** > **_Afegir impressora TCP/IP escrivint la direcció IP o nom de host_**.
-  Posar la IP de la impressora
+  A continuació caldrà posar la IP o nom de la impressora
 
-![](/assets/uf3-afegir-impressora-IP.png)
+  ![](/assets/uf3-afegir-impressora-IP.png)
 
 ### Instal·lar controlador
 
