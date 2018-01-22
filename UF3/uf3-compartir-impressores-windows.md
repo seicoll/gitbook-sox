@@ -47,6 +47,8 @@ Per compartir una impressora cal anar l'**_Administració d'impressió_**, selec
 * Marquem l'opció **_Presentar treballs d'impressió en els equips clients_**.
 * Marquem l'opció **_Mostrar llista en el directori_**.
 
+Si compartim aquesta impressora amb usuaris que tinguin altres versions de Windows, cal fer ús del botó **_Controladors addicionals..._** que ens permet instal·lar controladors per altres versions de Windows i així no l'hauran de buscar al instal·lar la impressora.
+
 
 ## Gestió de permisos de compartició
 
