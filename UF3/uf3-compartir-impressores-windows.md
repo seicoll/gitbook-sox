@@ -50,16 +50,17 @@ La pestanya **_Seguretat_** s'accedeix a les opcions per configurar els permisos
 
 ![](/assets/uf3-compartir-impressora.png)
 
-### Gestionar els usuaris
-Es poden afegir o eliminar usuaris i grups fent clic al botó **_Agregar..._**.
+** Gestionar els usuaris**
 
-### Gestionar els permisos simples
+  Es poden afegir o eliminar usuaris i grups fent clic al botó **_Agregar..._**.
 
-Seleccionant l'usuari o grup es poden marcar o desmarcar les caselles **_Permitir_** o **_Denegar_** en cada permís.
+**Gestionar els permisos simples**
 
-Per defecte, si no està marcada la casella **_Permitir_**, implica que no es té el permís corresponent.
+  Seleccionant l'usuari o grup es poden marcar o desmarcar les caselles **_Permitir_** o **_Denegar_** en cada permís.
 
-Els **permisos** que es poden assignar són: 
+  Per defecte, si no està marcada la casella **_Permitir_**, implica que no es té el permís corresponent.
+
+  Els **permisos** que es poden assignar són: 
  * _Imprimir_
  * _Administrar aquesta impressora_
  * _Administrar documents_ 
