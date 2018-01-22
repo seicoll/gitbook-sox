@@ -93,6 +93,9 @@ Obrir l'**_Administrador d'impressió_** anant a **_Eines > Administrador d'impr
 ![](/assets/uf3-afegir-impressora-buscar.png)
 
 
+Podem instal·lar una impressora de xarxa de dues formes en funció de si coneixem la IP o nom de la impressora o sinó tenim cap informació
+
+
 **Opció 1: Si no sabem la IP o nom de la impressora**
 
    **_Buscar impressores a la xarxa_**
