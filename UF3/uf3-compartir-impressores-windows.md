@@ -20,7 +20,7 @@ Per instal·lar el **Servidor d'impressió** en el servidor, cal afegir el rol d
 
 Un cop instal·lat l’**_Administrador del Servidor_**, podem obrir l'administrador d'impressió anant a **_Eines > Administrador d'impressió_**.
 
-![](/assets/win-print-management.png)
+![](/assets/uf3-win-print-management.png)
 
 En el panell esquerra, dins la categoria de **_Serveis d'impressió_** trobem:
 
@@ -93,8 +93,7 @@ Obrir l'**_Administrador d'impressió_** anant a **_Eines > Administrador d'impr
 ![](/assets/uf3-afegir-impressora-buscar.png)
 
 
-Podem instal·lar una impressora de xarxa de dues formes en funció de si coneixem la IP o nom de la impressora o sinó tenim cap informació
-
+Podem instal·lar una impressora de xarxa varies formes en funció de si coneixem la IP o nom de la impressora o sinó tenim cap informació.
 
 * Opció **_Buscar impressores a la xarxa:_** Si no sabem la IP o nom de la impressora.
 
