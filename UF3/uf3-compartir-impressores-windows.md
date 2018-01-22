@@ -41,8 +41,7 @@ Podem afegir un nou controlador fent **_Botó dret de ratolí > Afegir controlad
 
 Per compartir una impressora cal anar, per configurar els permisos de compartició cal anar a **_Administrar ús compartit_** o bé a les **_propietats de la impressora_** i entrar a la pestanya **_Compartir_**.
 
-> Imatge
-
+![](/assets/uf3-compartir-impressora-general.png)
 
 
 ## Gestió de permisos de compartició
