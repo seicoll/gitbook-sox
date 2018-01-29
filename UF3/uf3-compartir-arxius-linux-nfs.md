@@ -56,11 +56,13 @@ Respecte al **servidor**, l’NFS s’implementa mitjançant dos serveis de xarx
 
 ### Instal·lació del servei NFS
 
-El paquet que cal instal·lar en qualsevol ordinador que hagi de compartir carpetes amb el sistema NFS és **nfs-kernel-server**. 
+El **paquet** que cal instal·lar en qualsevol ordinador que hagi de compartir carpetes amb el sistema NFS és **nfs-kernel-server**.
+
 Per instal·lar-lo cal executar la comanda:
 
 ```
-sudo apt-get install nfs-kernel-server
+sudo apt update
+sudo apt install nfs-kernel-server
 ```
 
 ### Configuració del servei NFS
