@@ -110,16 +110,16 @@ sudo service nfs-kernel-server reload
 Es pot fer amb la comanda `exportfs` o, si s'ha instal·lat el client nfs, amb la comanda `showmount -e localhost`:
 
 ```bash+theme:dark
-usuari@ucxxx:~$ sudo exportfs
+usuari@usxxx:~$ sudo exportfs
 /srv/nfs/compartit1
         <world>
-/srv/nfs/Compartit2
-        172.21.1.0/16
+/srv/nfs/compartit2
+        172.30.0.0/16
 
-usuari@ucxxx:~$ showmount -e localhost
+usuari@usxxx:~$ showmount -e localhost
 Export list for localhost:
-/srv/nfs/compartit1       *
-/srv/nfs/compartit2      172.21.1.0/16
+/srv/nfs/compartit1      *
+/srv/nfs/compartit2      172.30.0.0/16
 ````
 
 ## Instal·lació i configuració del client NFS
