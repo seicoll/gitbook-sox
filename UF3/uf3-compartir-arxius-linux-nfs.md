@@ -190,7 +190,7 @@ usuari@ucxxx:~$ mount
 
 Amb la comanda `ls -l` es poden veure els propietaris i permisos de les carpetes remotes:
 
-```
+```bash+theme:dark
 usuari@ucxxx:~$ ls -l /mnt/nfs
 drwxrwxr-x 3 root     profes   4096 ene 29 11:01 compartit1
 drwxrwxr-x 2 alumne   alumnes  4096 ene 29 11:01 compartit2
