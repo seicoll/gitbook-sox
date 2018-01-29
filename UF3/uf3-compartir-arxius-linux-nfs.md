@@ -2,13 +2,11 @@
 
 ## Introducció
 
-### Conceptes bàsics
-
 En els sistemes operatius lliures hi ha diversos protocols i aplicacions que ens permeten compartir recursos en xarxa, com el **protocol NFS** i el paquet de programari **Samba**.
 
 ### Protocol NFS \(Network File System\)
 
-El **protocol NFS \(**_**Network File System**_**\)** és un protocol que s’utilitza en l’àmbit de els xarxes local per compartir fitxers entre màquines de la mateixa xarxa.
+> El **protocol NFS \(**_**Network File System**_**\)** és un protocol que s’utilitza en l’àmbit de els xarxes local per compartir fitxers entre màquines de la mateixa xarxa.
 
 El **protocol NFS** fa possible que diversos sistemes GNU/Linux connectats a una mateixa xarxa puguin accedir a fitxers en altres equips de la xarxa, com si es tractés de fitxers locals.
 
