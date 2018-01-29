@@ -146,33 +146,27 @@ Export list for 172.30.0.20:
 
 ### Muntar carpetes compartides
 
-Primer **creem la carpeta** que farem servir després com a **punt de muntatge** per a la carpeta compartida amb el servidor.
+Primer **creem la carpeta** que farem servir després com a **punt de muntatge** per a la carpeta compartida amb el servidor. 
+
+Això es fa normalment dins de la carpeta `/mnt` en una carpeta amb el nom del servei, en aquest cas, `nfs`:
 
 ```
 sudo mkdir -p /mnt/nfs/compartit1
 ```
 
-Els directoris remots es poden **muntar de forma manual** mitjançant l’ordre `mount`
+Després cal muntar less carpetes remotes compartides dins d'aquestes carpetes locals.
+Es poden **muntar de forma manual** mitjançant la comanda `mount`
 
 ```
-sudo mount -t nfs 172.30.0.210:/srv/nfs/compartit1 /mnt/nfs/compartit1
-```
-
-Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la comanda mount.
-
-```bash+theme:dark
-usuari@ucxxx:~$ mount
-...
-172.30.0.20:/srv/nfs/compartit1 on /mnt/nfs/compartit1 type nfs (rw, ... ,_netdev)
-...
+sudo mount -t nfs 172.30.0.21:/srv/nfs/compartit1 /mnt/nfs/compartit1
 ```
 
 ### Muntar carpetes compartides de forma automàtica
 
-També es pot fer servir el fitxer `/etc/fstab` si es vol que el directori es munti automàticament al iniciar sessió.
+També es pot fer servir el fitxer `/etc/fstab` si es vol que el directori es **munti automàticament** al iniciar sessió.
 
 ```
-172.21.1.1:/srv/nfs/Compartit /mnt/nfs/Compartit nfs rw 0 0
+172.30.0.20:/srv/nfs/compartit1 /mnt/nfs/compartit1 nfs rw 0 0
 ```
 
 Per muntar automàticament els recussos definits a `/etc/fstab` sense necessitat de reiniciar el sistema podeu executar.
@@ -183,14 +177,25 @@ sudo mount -a
 
 ### Comprovar que s'ha muntat una carptera compartida
 
-A partir d'aquest moment, quan s'accedeix a aquestes carpetes locals, en realitat s'estarà accedint a les carpetes remotes compartides.
+
+
+Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la comanda mount.
+
+```bash+theme:dark
+usuari@ucxxx:~$ mount
+...
+172.30.0.20:/srv/nfs/compartit1 on /mnt/nfs/compartit1 type nfs (rw, ... ,_netdev)
+...
+```
+
+>A partir d'aquest moment, quan s'accedeix a aquestes carpetes locals, en realitat s'estarà accedint a les carpetes remotes compartides.
 
 Amb la comanda `ls -l` es poden veure els propietaris i permisos de les carpetes remotes:
 
 ```
-usuari@ubuntu:~$ ls -l /mnt/nfs
-drwxrwxr-x 3 root     profes   4096 ene 29 11:01 Compartit
-drwxrwxr-x 2 alumne   alumnes  4096 ene 29 11:01 Compartit2
+usuari@ucxxx:~$ ls -l /mnt/nfs
+drwxrwxr-x 3 root     profes   4096 ene 29 11:01 compartit1
+drwxrwxr-x 2 alumne   alumnes  4096 ene 29 11:01 compartit2
 ```
 
 ## Documentació i recursos
