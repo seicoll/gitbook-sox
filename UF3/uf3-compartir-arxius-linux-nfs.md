@@ -200,12 +200,9 @@ drwxrwxr-x 2 alumne   alumnes  4096 ene 29 11:01 compartit2
 
 * **Apunts SOX (Pere Sánchez): Compartició de carpetes en Linux** [http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=2.8.7 ](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=2.8.7)
 
-* NFS: Sistema de archivos de red  [http://recursostic.educacion.es/observatorio/web/gl/software/software-general/733-nfs-sistema-de-archivos-de-red](http://recursostic.educacion.es/observatorio/web/gl/software/software-general/733-nfs-sistema-de-archivos-de-red)
+* **NFS: Sistema de archivos de red**[http://recursostic.educacion.es/observatorio/web/gl/software/software-general/733-nfs-sistema-de-archivos-de-red](http://recursostic.educacion.es/observatorio/web/gl/software/software-general/733-nfs-sistema-de-archivos-de-red)
   
-* Cómo montar un sistema de ficheros NFS (Cliente Linux)
-  [http://rm-rf.es/como-montar-sistema-ficheros-nfs/](http://rm-rf.es/como-montar-sistema-ficheros-nfs/)
-  
-* Compartir carpetas NFS
+* **Compartir carpetas NFS**
   [https://waytoit.wordpress.com/2013/03/17/compartir-carpetas-nfs/](https://waytoit.wordpress.com/2013/03/17/compartir-carpetas-nfs/)
 
 
