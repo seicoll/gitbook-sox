@@ -67,16 +67,28 @@ sudo apt install nfs-kernel-server
 
 ### Configuració del servei NFS
 
-Una vegada actius els serveis NFS, el servidor ha d’indicar quins directoris vol que **s’exportin (compartir)**, a quines màquines s’han d’exportar i amb quines opcions s’ha de fer. 
+> Una vegada actius els serveis NFS, el servidor ha d'indicar quins directoris vol que **s'exportin (compartir)**, a quines màquines s'han d'exportar i amb quines opcions s'ha de fer. 
 
-Tot això es defineix al fitxer ```/etc/exports``` indicant quines carpetes es volen compartir i els permisos per cada una.
+El primer que cal fer és **crear les carpetes** que es volen compartir (si no són carpetes que ja existeixen).
 
-```bash
-/srv/nfs/compartit   172.21.1.0/16(rw)
+Normalment, quan es comparteixen carpetes, es creen dins de `/srv`, i totes les d'un mateix servei s'agrupen dins d'una carpeta amb el nom del servei, en aquest cas `nfs`:
+
+```
+sudo mkdir -p /srv/nfs/compartit
 ```
 
-Cada línia del fitxer ```/etc/exports``` especifica un directori a exportar i una llista d’autoritzacions.
-* En aquest **exemple** compartim la carpeta /srv/nfs/comptartit per a tots els equips de la xarxa 172.21.1.0/16 amb permissos de lectura i escriptura (rw).
+Després cal **configurar els propietaris i permisos** adequats en cada carpeta.
+
+Finalment, per **exportar (compartir) les carpetes**, s'ha de definir al fitxer `/etc/exports` indicant quines carpetes es volen compartir i els permisos per cada una.
+
+Cada línia del fitxer `/etc/exports` especifica un directori a exportar i una llista d’autoritzacions.
+
+
+  ```
+  /srv/nfs/compartit   172.30.0.0/16(rw)
+  ```
+
+* En aquest **exemple** compartim la carpeta /srv/nfs/comptartit per a tots els equips de la xarxa 172.30.0.0/16 amb permissos de lectura i escriptura (rw).
 
 Cada vegada que es modifica aquest fitxer, el **servidor NFS s’ha d’actualitzar** a fi que s’activin els canvis amb l’ordre: 
 
