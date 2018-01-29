@@ -74,7 +74,8 @@ El primer que cal fer és **crear les carpetes** que es volen compartir (si no s
 Normalment, quan es comparteixen carpetes, es creen dins de `/srv`, i totes les d'un mateix servei s'agrupen dins d'una carpeta amb el nom del servei, en aquest cas `nfs`:
 
 ```
-sudo mkdir -p /srv/nfs/compartit
+sudo mkdir -p /srv/nfs/compartit1
+sudo mkdir -p /srv/nfs/compartit2
 ```
 
 Després cal **configurar els propietaris i permisos** adequats en cada carpeta.
@@ -85,10 +86,12 @@ Cada línia del fitxer `/etc/exports` especifica un directori a exportar i una l
 
 
   ```
-  /srv/nfs/compartit   172.30.0.0/16(rw)
+  /srv/nfs/compartit1   *(rw)
+  /srv/nfs/compartit2   172.30.0.0/16(ro)
   ```
 
-* En aquest **exemple** compartim la carpeta /srv/nfs/comptartit per a tots els equips de la xarxa 172.30.0.0/16 amb permissos de lectura i escriptura (rw).
+* En la primera línia compartim la carpeta `/srv/nfs/comptartit1` per a tots els equips de la xarxa amb permissos de lectura i escriptura (rw).
+* En la segona línia compartim la carpeta `/srv/nfs/comptartit2` per a tots els equips de tota la xarxa 172.30.0.0/16 amb permissos de només de lectura (ro).
 
 Cada vegada que es modifica aquest fitxer, el **servidor NFS s’ha d’actualitzar** a fi que s’activin els canvis amb l’ordre: 
 
@@ -106,17 +109,17 @@ sudo service nfs-kernel-server reload
 
 Es pot fer amb la comanda `exportfs` o, si s'ha instal·lat el client nfs, amb la comanda `showmount -e localhost`:
 
-```
-usuari@ubuntu:~$ sudo exportfs
-/srv/nfs/Compartit
+```bash+theme:dark
+usuari@ucxxx:~$ sudo exportfs
+/srv/nfs/compartit1
         <world>
 /srv/nfs/Compartit2
         172.21.1.0/16
 
-usuari@ubuntu:~$ showmount -e localhost
+usuari@ucxxx:~$ showmount -e localhost
 Export list for localhost:
-/srv/nfs/Compartit       *
-/srv/nfs/Compartit2      172.21.1.0/16
+/srv/nfs/compartit1       *
+/srv/nfs/compartit2      172.21.1.0/16
 ````
 
 ## Instal·lació i configuració del client NFS
