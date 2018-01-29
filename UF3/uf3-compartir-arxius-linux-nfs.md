@@ -124,34 +124,46 @@ Export list for localhost:
 
 ## Instal·lació i configuració del client NFS
 
-### Instal·lació client NFS
+### Instal·lació del client NFS
 
-En cada equip **client** des del qual es vulgui accedir a una carpeta remota, haurem de instal·lar el paquet **nfs-common**:
-
-```
-sudo apt-get install nfs-common
-```
-
-A continuació, creem la carpeta que farem servir després com a punt de muntatge per a la carpeta compartida amb el servidor.
+En cada equip **client** des del qual es vulgui accedir a una carpeta remota (compartida), haurem de instal·lar el paquet **nfs-common**:
 
 ```
-sudo mkdir /mnt/nfs/Compartit
+sudo apt update
+sudo apt install nfs-common
 ```
+
+Amb la comanda **showmount** es poden veure les carpetes que comparteix el servidor:
+
+```bash+theme:dark
+usuari@ucxxx:~$ showmount -e 172.30.0.20
+Export list for 172.30.0.20:
+/srv/nfs/compartit1     *
+/srv/nfs/compartit2     172.30.0.0/16
+```
+
+
 
 ### Muntar carpetes compartides
+
+Primer **creem la carpeta** que farem servir després com a **punt de muntatge** per a la carpeta compartida amb el servidor.
+
+```
+sudo mkdir -p /mnt/nfs/compartit1
+```
 
 Els directoris remots es poden **muntar de forma manual** mitjançant l’ordre `mount`
 
 ```
-sudo mount -t nfs 172.21.1.1:/srv/nfs/Compartit /mnt/nfs/Compartit
+sudo mount -t nfs 172.30.0.210:/srv/nfs/compartit1 /mnt/nfs/compartit1
 ```
 
 Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la comanda mount.
 
-```bash
-usuari@ubuntu:~$ mount
+```bash+theme:dark
+usuari@ucxxx:~$ mount
 ...
-172.21.1.1:/srv/nfs/Compartit on /mnt/nfs/Compartit type nfs (rw, ... ,_netdev)
+172.30.0.20:/srv/nfs/compartit1 on /mnt/nfs/compartit1 type nfs (rw, ... ,_netdev)
 ...
 ```
 
