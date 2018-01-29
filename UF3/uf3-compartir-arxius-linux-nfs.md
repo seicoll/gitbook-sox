@@ -158,7 +158,7 @@ Després cal muntar less carpetes remotes compartides dins d'aquestes carpetes l
 Es poden **muntar de forma manual** mitjançant la comanda `mount`
 
 ```
-sudo mount -t nfs 172.30.0.21:/srv/nfs/compartit1 /mnt/nfs/compartit1
+sudo mount -t nfs 172.30.0.20:/srv/nfs/compartit1 /mnt/nfs/compartit1
 ```
 
 ### Muntar carpetes compartides de forma automàtica
