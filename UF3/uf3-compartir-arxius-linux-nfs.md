@@ -177,9 +177,7 @@ sudo mount -a
 
 ### Comprovar que s'ha muntat una carptera compartida
 
-
-
-Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la comanda mount.
+Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la comanda **mount**.
 
 ```bash+theme:dark
 usuari@ucxxx:~$ mount
