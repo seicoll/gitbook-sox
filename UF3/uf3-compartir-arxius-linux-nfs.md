@@ -192,7 +192,7 @@ O també es pot fer:
 usuari@ucxxx:~$ df -h --type=nfs
 S.ficheros                      Tamaño Usados  Disp Uso% Montado en
 172.30.0.20:/srv/nfs/compartit1   9,8G   1,6G  7,7G  17% /mnt/nfs/compartit1
-...
+172.30.0.20:/srv/nfs/compartit2   9,8G   1,6G  7,7G  17% /mnt/nfs/compartit2
 ```
 
 >A partir d'aquest moment, quan s'accedeix a aquestes carpetes locals, en realitat s'estarà accedint a les carpetes remotes compartides.
