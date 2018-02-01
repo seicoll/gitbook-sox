@@ -78,7 +78,7 @@ sudo mkdir -p /srv/nfs/compartit1
 sudo mkdir -p /srv/nfs/compartit2
 ```
 
-Després cal **configurar els propietaris i permisos** adequats en cada carpeta.
+Després cal **configurar els propietaris i permisos locals** adequats en cada carpeta.
 
 Finalment, per **exportar (compartir) les carpetes**, s'ha de definir al fitxer `/etc/exports` indicant quines carpetes es volen compartir i els permisos per cada una.
 
@@ -104,6 +104,33 @@ O també podem **reiniciar el servei NFS** per tal que s'actualitzin els canvis:
 ```
 sudo service nfs-kernel-server reload
 ```
+
+### Gestió de permisos de compartició
+
+> Els **permisos** que tindrà un usuari quan accedeix a una carpeta compartida seran els **més restrictius** entre els permisos locals i els permisos de compartició, però també dependrà d'un **sistema de transformació d'usuaris** que pot realitzar el sistema NFS.
+
+Aquest sistema de transformació d'usuaris es realitza en dos passos:
+
+**Transformació a usuari anònim**
+Només es pot posar un dels següents paràmetres:
+* **root_squash** (per defecte): indica que si s'accedeix amb l'usuari root, aquest es transforma en l'usuari anònim (usuari **nobody**, grup **nogroup**).
+* **no_root_squash**: ningú es transformarà en usuari anònim.
+* **all_squash**: tothom es transforma en usuari anònim (usuari **nobody**, grup **nogroup**).
+
+> **ATENCIÓ**: no és recomanable posar **no_root_squash**, ja que el root d'una màquina no té perquè ser el mateix que en una altra, però igualment tindrà tots els privilegis!
+
+**Transformació de l'usuari anònim en un usuari/grup concret**
+
+Es pot posar un dels dos paràmetres, tots dos o cap:
+
+* **anonuid=nnnn**: transforma l'usuari anònim en l'usuari amb l'identificador nnnn
+* **anongid=nnnn**: transforma el grup anònim en el grup amb l'identificador nnnn
+
+> **ATENCIÓ**: aquest identificador fa referència a un usuari o grup del servidor, però el mateix usuari o grup pot tenir un identificador diferent en el client. Si es tracta d'usuaris LDAP (domini), això no té importància: tots els usuaris tenen el mateix indicador en totes les màquines.
+
+
+
+
 
 ### Veure les carpetes que s'estan compartint
 
