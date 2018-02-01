@@ -186,6 +186,17 @@ usuari@ucxxx:~$ mount
 ...
 ```
 
+O també es pot fer:
+
+```bash+theme:dark
+usuari@ucxxx:~$ df -h --type=nfs
+
+
+...
+```
+
+
+
 >A partir d'aquest moment, quan s'accedeix a aquestes carpetes locals, en realitat s'estarà accedint a les carpetes remotes compartides.
 
 Amb la comanda `ls -l` es poden veure els propietaris i permisos de les carpetes remotes:
