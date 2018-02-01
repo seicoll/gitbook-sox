@@ -90,8 +90,8 @@ Cada línia del fitxer `/etc/exports` especifica un directori a exportar i una l
   /srv/nfs/compartit2   172.30.0.0/16(ro)
   ```
 
-* En la primera línia compartim la carpeta `/srv/nfs/comptartit1` per a tots els equips de la xarxa amb permissos de lectura i escriptura (rw).
-* En la segona línia compartim la carpeta `/srv/nfs/comptartit2` per a tots els equips de tota la xarxa 172.30.0.0/16 amb permissos de només de lectura (ro).
+* En la **primera línia** compartim la carpeta `/srv/nfs/comptartit1` per a tots els equips de la xarxa (** * **) amb permissos de lectura i escriptura (**rw**).
+* En la **segona línia** compartim la carpeta `/srv/nfs/comptartit2` per a tots els equips de tota la xarxa **172.30.0.0/16** amb permissos de només de lectura [_read only_] (**ro**).
 
 Cada vegada que es modifica aquest fitxer, el **servidor NFS s’ha d’actualitzar** a fi que s’activin els canvis amb l’ordre: 
 
