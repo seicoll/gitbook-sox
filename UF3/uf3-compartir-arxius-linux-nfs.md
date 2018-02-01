@@ -118,7 +118,9 @@ El sistema de transformació d'usuari s'indica com a paràmetre al configurar el
 Aquest sistema de transformació d'usuaris es realitza en dos passos:
 
 **Transformació a usuari anònim**
+
 Només es pot posar un dels següents paràmetres:
+
 * **root_squash** (per defecte): indica que si s'accedeix amb l'usuari root, aquest es transforma en l'usuari anònim (usuari **nobody**, grup **nogroup**).
 * **no_root_squash**: ningú es transformarà en usuari anònim.
 * **all_squash**: tothom es transforma en usuari anònim (usuari **nobody**, grup **nogroup**).
