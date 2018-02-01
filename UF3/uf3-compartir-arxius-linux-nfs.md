@@ -105,9 +105,15 @@ O també podem **reiniciar el servei NFS** per tal que s'actualitzin els canvis:
 sudo service nfs-kernel-server reload
 ```
 
-### Gestió de permisos de compartició
+### Opcions de compartició
 
 > Els **permisos** que tindrà un usuari quan accedeix a una carpeta compartida seran els **més restrictius** entre els permisos locals i els permisos de compartició, però també dependrà d'un **sistema de transformació d'usuaris** que pot realitzar el sistema NFS.
+
+El sistema de transformació d'usuari s'indica com a paràmetre al configurar el fitxer `/etc/exports`.
+
+  ```
+  /srv/nfs/compartit1   *(rw,no_root_squash,no_subtree_check,no_wdelay,sync)
+  ```
 
 Aquest sistema de transformació d'usuaris es realitza en dos passos:
 
@@ -127,10 +133,6 @@ Es pot posar un dels dos paràmetres, tots dos o cap:
 * **anongid=nnnn**: transforma el grup anònim en el grup amb l'identificador nnnn
 
 > **ATENCIÓ**: aquest identificador fa referència a un usuari o grup del servidor, però el mateix usuari o grup pot tenir un identificador diferent en el client. Si es tracta d'usuaris LDAP (domini), això no té importància: tots els usuaris tenen el mateix indicador en totes les màquines.
-
-
-
-
 
 ### Veure les carpetes que s'estan compartint
 
