@@ -23,7 +23,7 @@ El paquet **cups **instal·la el servidor d'impressió CUPS que permet instal·l
 Es podria instal·lar amb la comanda:
 
 ```
-sudo apt-get install cups
+sudo apt install cups
 ```
 
 ### Administrar el servidor d'impressió CUPS
@@ -57,7 +57,7 @@ El paquet **cups-pdf** ens instal·la una impressora virtual que permet crear fi
 
 És similar al PDFCreator de Windows.
 
-`sudo apt-get install cups-pdf`
+`sudo apt install cups-pdf`
 
 ### Afegir la impressora CUPS-PDF en el servidor CUPS
 
