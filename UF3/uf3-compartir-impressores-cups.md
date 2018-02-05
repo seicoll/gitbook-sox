@@ -51,6 +51,19 @@ sudo cupsctl --remote-admin
 sudo service cups restart
 ```
 
+### Configurar CUPS de forma remota a través d'una interfície web
+
+Per accedir de forma remota a la web de configuració del servidor d'impressió, només cal obrir un navegador web i posar l'adreça `https://172.30.A.20:631`.
+
+Si demana un **usuari** i contrasenya per canviar alguna configuració, es pot utilitzar qualsevol usuari que pertanyi al grup **_lpadmin_**, per exemple l'usuari principal.
+
+Si no hi ha cap usuari que pertanyi a aquest grup, es pot afegir un usuari a aquest grup amb les següents comandes:
+
+```
+sudo adduser usuari lpadmin
+sudo service cups restart
+```
+
 ## Instal·lació de la impressora CUPS-PDF en xarxa
 
 El paquet **cups-pdf** ens instal·la una impressora virtual que permet crear fitxers PDF. Quan s'envia un document a aquesta impressora, enlloc d'imprimir-se, es converteix a PDF i es guarda en una carpeta predeterminada.
