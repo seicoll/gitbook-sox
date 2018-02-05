@@ -22,7 +22,9 @@ El paquet **cups **instal·la el servidor d'impressió CUPS que permet instal·l
 
 Es podria instal·lar amb la comanda:
 
-`sudo apt-get install cups`
+```
+sudo apt-get install cups
+```
 
 ### Administrar el servidor d'impressió CUPS
 
@@ -44,13 +46,16 @@ La interfície web per l'**administració remota** de CUPS està per defecte des
 Per permetre l'accés remot utilitzarem la comanda `cupsctl`.  
 amb el paràmebre `--remote-admin` que habilita l'accés remot però només des de la xarxa local
 
-`sudo cupsctl --remote-admin`
+```
+sudo cupsctl --remote-admin
+sudo service cups restart
+```
 
 ## Instal·lació de la impressora CUPS-PDF en xarxa
 
 El paquet **cups-pdf** ens instal·la una impressora virtual que permet crear fitxers PDF. Quan s'envia un document a aquesta impressora, enlloc d'imprimir-se, es converteix a PDF i es guarda en una carpeta predeterminada.
 
-És similar al PDFCreator del Windows.
+És similar al PDFCreator de Windows.
 
 `sudo apt-get install cups-pdf`
 
