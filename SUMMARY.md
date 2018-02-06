@@ -41,7 +41,7 @@
     * [Gestió avançada de LDAP](UF2/uf2-LDAP-gestio-avansada.md)
 
   * [Activitats](UF2/uf2-activitats.md) 
-     * [Activitat 1. Instal·lació Ubuntu Server](https://docs.google.com/document/d/1lOGL7Tvnh6tke1GjP1PjEIBhUQKZbfjOGKwb_W-DG2k/edit?usp=sharing)
+    * [Activitat 1. Instal·lació Ubuntu Server](https://docs.google.com/document/d/1lOGL7Tvnh6tke1GjP1PjEIBhUQKZbfjOGKwb_W-DG2k/edit?usp=sharing)
     * [Activitat 2. Repàs comandes Linux](https://docs.google.com/document/d/1Vd23vWKWHfe3CiNTlpyoPdIdtppBaocPVNcJ_CsbkhA/edit?usp=sharing)
     * [Activitat 3. Administració de Linux - Usuaris, grups, paquets i actualitzacions](https://docs.google.com/document/d/1F877b3d8EG1K1-cOGYReJHKgfej0Bmyz5-MJr36HZig/edit?usp=sharing)
     * [Activitat 4. Monitorització i automatització de tasques](https://docs.google.com/document/d/1pN9nfE5v6R6hdDW7PldfMycmKWqfRND670ycCcM62wI/edit?usp=sharing)
