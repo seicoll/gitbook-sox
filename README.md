@@ -45,7 +45,7 @@ I per suposat, també agrair a la meva dona i els meus fills que m’han recolza
 
 * [Qüestionari](UF2/act/uf2-questionari.md)
 
-### [UF3. Compartició de recursos i seguretat](UF3.md)
+### UF3. Compartició de recursos i seguretat
 
 * [Introducció a la compartició de recursos i seguretat](UF3/uf3-introduccio.md)
 * [Compartir recursos en xarxa i seguretat en sistemes de propietat](UF3/uf3-compartir-recursos-windows.md)
@@ -58,7 +58,7 @@ I per suposat, també agrair a la meva dona i els meus fills que m’han recolza
 
 * [Qüestionari](UF3/act/uf3-questionari.md)
 
-### [UF4. Integració de sistemes operatius](UF4/UF4.md)
+### UF4. Integració de sistemes operatius
 
 * [Compartició de recursos en escenaris heterogenis](UF4/uf4-introduccio.md)
   * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
