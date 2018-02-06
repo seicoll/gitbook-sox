@@ -36,6 +36,7 @@ img
 
 /* Ampliem l'amplada */
 .book-summary{
+   left:-400px;
    width: 400px;
 }
 
