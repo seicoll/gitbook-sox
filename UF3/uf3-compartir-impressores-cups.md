@@ -53,6 +53,8 @@ Per accedir de forma remota a la web de configuració del servidor d'impressió,
 
  > `https://172.30.A.20:631`
 
+On `172.30.A.20` és la IP del servidor d'impressió.
+
 Si demana un **usuari** i contrasenya per canviar alguna configuració, es pot utilitzar qualsevol usuari que pertanyi al grup **_lpadmin_**, per exemple l'usuari principal.
 
 Si no hi ha cap usuari que pertanyi a aquest grup, es pot afegir un usuari a aquest grup amb les següents comandes:
