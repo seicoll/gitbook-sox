@@ -35,10 +35,6 @@ Per poder configurar i administrar el servidor CUPS disposes de:
 
 La interfície web permet afegir, cercar i eliminar impressores i controlar els treballs en les cues d’impressió.
 
-S'hi pot accedir, de forma remota, des de qualsevol navegador a través de l'adreça:
-
-> [http://IP\_servidor:631](http://IP_servidor:631)
-
 ### Permetre la configuració remota a través de la interfície web
 
 La interfície web per l'**administració remota** de CUPS està per defecte deshabilitada.
@@ -53,7 +49,9 @@ sudo service cups restart
 
 ### Configurar CUPS de forma remota a través d'una interfície web
 
-Per accedir de forma remota a la web de configuració del servidor d'impressió, només cal obrir un navegador web i posar l'adreça `https://172.30.A.20:631`.
+Per accedir de forma remota a la web de configuració del servidor d'impressió, només cal obrir un navegador web i posar l'adreça:
+
+ > `https://172.30.A.20:631`
 
 Si demana un **usuari** i contrasenya per canviar alguna configuració, es pot utilitzar qualsevol usuari que pertanyi al grup **_lpadmin_**, per exemple l'usuari principal.
 
