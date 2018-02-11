@@ -56,8 +56,8 @@ img
     color:black;
 }
 
-.book-summary ul.sumary li.header > li.active
-{
+/* titol principal seleccionat actualment */
+.book-summary ul.sumary li.header + li ul li.active {
     color:red;
 }
 
