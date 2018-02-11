@@ -57,7 +57,7 @@ img
 }
 
 /* titol principal seleccionat actualment */
-.book-summary ul.sumary li.header:has(li.active) {
+.book-summary ul.sumary li.chapter:has(li.active) {
     color:red;
 }
 
