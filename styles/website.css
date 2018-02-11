@@ -50,12 +50,18 @@ img
     white-space: normal;        //perquè salti de línia si és molt llarg
 }
 
+/* titols principals */
 .book-summary ul.summary li.header {
     font-weight:bold;
     color:black;
 }
 
-/* footer */
+.book-summary ul.sumary li.header > li.active
+{
+    color:red;
+}
+
+/* FOOTER */
 
 footer{
     float: right;
