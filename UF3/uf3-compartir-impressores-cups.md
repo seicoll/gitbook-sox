@@ -122,7 +122,7 @@ Es pot afegir la línia a continuació de les que configuren els directoris pers
 
 ```
 @{HOME}/PDF/* rw,
-/srv/docs/pdf/* rw,
+/srv/documents/pdf/* rw,
 ```
 
 I reiniciar el servei **apparmor**:
