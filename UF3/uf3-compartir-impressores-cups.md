@@ -51,7 +51,7 @@ sudo service cups restart
 
 Per accedir de forma remota a la web de configuració del servidor d'impressió, només cal obrir un navegador web i posar l'adreça:
 
- > `https://172.30.A.20:631`
+ > `http://172.30.A.20:631`
 
 On `172.30.A.20` és la IP del servidor d'impressió.
 
