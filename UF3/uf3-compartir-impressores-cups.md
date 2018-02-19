@@ -109,7 +109,7 @@ sudo chmod 777 /srv/documents/pdf
 
 Després, en l'arxiu `/etc/cups/cups-pdf.conf`, posar en el paràmetre **Out** el nou directori.
 
-`Out  /svr/documents/pdf`
+`Out  /srv/documents/pdf`
 
 I reiniciar el servei cups:
 
