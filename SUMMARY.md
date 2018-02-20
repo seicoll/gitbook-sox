@@ -64,8 +64,8 @@
     * [Qüestionari](UF3/act/uf3-questionari.md)
 
 ### [UF4. Integració de sistemes operatius](UF4/UF4.md)
-  * [Compartició de recursos en escenaris heterogenis](UF4/uf4-introduccio.md)
-    * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
+  * [Introducció a la Compartició de recursos en escenaris heterogenis](UF4/uf4-introduccio.md)
+  * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
   * [Gestió de dominis en escenaris heterogenis](UF4/gestio-dominis.md)
     * [Samba 4 com a controlador de domini (DC)](UF4/controlador-domini-samba.md)
     * [Administrar el directori actiu de Samba 4](UF4/administrar-sambaAD.md)
