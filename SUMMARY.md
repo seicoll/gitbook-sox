@@ -50,7 +50,7 @@
     * [Qüestionari](UF2/act/uf2-questionari.md) 
 
 ### [UF3. Compartició de recursos i seguretat](UF3.md)
-  * [Introducció a la compartició de recursos i seguretat](UF3/uf3-introduccio.md)
+  * [Introducció](UF3/uf3-introduccio.md)
   * [Compartir recursos en xarxa i seguretat en sistemes de propietat](UF3/uf3-compartir-recursos-windows.md)
     * [Compartir arxius i carpetes en Windows](UF3/uf3-compartir-arxius-windows.md)
     * [Compartir impressores en Windows](UF3/uf3-compartir-impressores-windows.md)
@@ -64,7 +64,7 @@
     * [Qüestionari](UF3/act/uf3-questionari.md)
 
 ### [UF4. Integració de sistemes operatius](UF4/UF4.md)
-  * [Introducció a la Compartició de recursos en escenaris heterogenis](UF4/uf4-introduccio.md)
+  * [Introducció](UF4/uf4-introduccio.md)
   * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
   * [Gestió de dominis en escenaris heterogenis](UF4/gestio-dominis.md)
     * [Samba 4 com a controlador de domini (DC)](UF4/controlador-domini-samba.md)
