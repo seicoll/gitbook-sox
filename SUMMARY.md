@@ -65,7 +65,7 @@
 
 ### [UF4. Integració de sistemes operatius](UF4/UF4.md)
   * [Introducció](UF4/uf4-introduccio.md)
-  * [Gestió recursos en escenaris heterogenis](UF4/compartir.md)
+  * [Compartir recursos en escenaris heterogenis](UF4/compartir.md)
     * [Accedir a recursos compartits en Windows des de Linus](UF4/uf4-compartir-de-windows-a-linux.md)
     * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
   * [Gestió de dominis en escenaris heterogenis](UF4/gestio-dominis.md)
