@@ -2,7 +2,7 @@
 
 ## Introducció
 
-En el tema anterior van compartir carpetes utilitzant el protocol **NFS**.
+En temes anteriors van compartir carpetes utilitzant el protocol **NFS**.
 
 Amb **NFS**, no hi ha cap procés d’acreditació d’usuaris per accedir al recursos compartits.
 
@@ -35,14 +35,13 @@ Els paquets més utilitzats són els següents:
 * **samba**: servidor d'arxius i impressores de xarxa local per a Unix/GNU/Linux.
 * **smbclient**: client simple de xarxa local per a Unix/GNU/Linux.
 * **samba-common**: arxius comuns del Samba que utilitzen els clients i els servidors.
-* **swat**: eina d'administració del Samba via web.
 * **samba-doc**: documentació del Samba.
 * **cifs-utils**: ordres per muntar i desmuntar unitats de xarxa Samba.
 
 Per instal·lar el servei Samba a l'Ubuntu.
 
-```sh
-sudo apt-get install samba cifs-utils
+```
+sudo apt install samba cifs-utils
 ```
 
 ### Configuració del servidor Samba
@@ -87,7 +86,7 @@ Per **comprovar** que el nostre arxiu `/etc/samba/smb.conf` és **correcte**, é
 **Samba** es pot configurar en diversos nivells de seguretat.
 
 * _**security=share**_: Permet que els clients es connectin als recursos compartits sense proporcionar cap nom d'usuari ni contrasenya.
-   
+  
 * _**security=user**_: És l'opció per defecte i és la més simple. Es requereix un usuari i contrasenya per accedir a un recurs compartit.
 
 * _**security=domain**_: el servidor Samba actua com un controlador de domini.
@@ -163,7 +162,7 @@ Si volem accedir al recurs compartit a través de **comandes**:
 
 ## Accedir a recursos compartits Samba des de Linux
 
-
+[Apunts accedir a recursos compartits amb Windows o Samba (mitjançant el protocol SMB/CIFS).](https://seicoll.gitbooks.io/sox/content/UF4/uf4-compartir-de-windows-a-linux.html)
 
 ## Gestió d'usuaris Samba
 
