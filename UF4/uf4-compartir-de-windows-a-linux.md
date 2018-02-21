@@ -88,7 +88,7 @@ També hi ha la possibilitat **muntar les carpetes compartides** en carpetes del
 
 Cal instal·lar el paquet **cifs-utils**:
 
-`sudo apt-get install cifs-utils`
+`sudo apt install cifs-utils`
 
 **Per exemple**, si volem accedir des de l’equip d’un professor a una carpeta compartida amb el nom de professors al servidor, executarem:
 
@@ -98,7 +98,7 @@ Si el servidor no requereix que l’usuari s’autentiqui \(permet accés a conv
 
 `mount –t cifs //IP_servidor/alumnes /mnt/alumnes`
 
-> **ATENCIÓ:** per saber els permisos efectius d'accés a una carpeta compartida cal tenir en compte els permisos que té l'usuari que es connecta a la carpeta remota \(usuari Samba\) i els permisos que té l'usuari actual sobre la carpeta local on està muntada la carpeta compartida.
+> **ATENCIÓ:** per saber els permisos efectius d'accés a una carpeta compartida cal tenir en compte els permisos que té l'usuari que es connecta a la carpeta remota \(usuari Windows o Samba\) i els permisos que té l'usuari actual sobre la carpeta local on està muntada la carpeta compartida.
 
 ### Muntar carpetes compartides de forma automàtica
 
@@ -118,7 +118,8 @@ Per muntar automàticament els recussos definits a `/etc/fstab` sense necessitat
 
 Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la comanda `mount`.
 
-**Més informació**: 
-[https://wiki.ubuntu.com](https://wiki.ubuntu.com/MountWindowsSharesPermanently)
-[ITE Educacion: Cliente de Samba](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/cliente_de_samba.html)
+## Referències 
+ 
+* **Wiki Ubuntu**: [https://wiki.ubuntu.com](https://wiki.ubuntu.com/MountWindowsSharesPermanently)
+* **ITE Educacion: Cliente de Samba**: [http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/cliente_de_samba.html](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/cliente_de_samba.html)
 
