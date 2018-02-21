@@ -10,20 +10,23 @@
 
 Per accedir a un recurs compartit amb Windows o Samba \(mitjançant el protocol **SMB/CIFS**\) des de Linux cal instal·lar el **client Samba** \(paquet **smbclient**\):
 
-`sudo apt install smbclient cifs-utils`
+```
+sudo apt update
+sudo apt install smbclient cifs-utils
+```
 
 Per defecte, aquest paquet ja està instal·lat en Ubuntu Desktop.
 
-Es pot comprovar si està instal·lat amb la comanda dpkg:
+Es pot comprovar si està instal·lat amb la comanda `dpkg`:
 
-```bash
+```bash+theme:dark
 usuari@ucxxx:~$ dpkg -s smbclient
 Package: smbclient
 Status: install ok installed
 ...
 ```
 
-La comanda `smbclient` obre un petita aplicació que ens permet accedir a un recurs del servidor Samba.
+La comanda `smbclient` obre un petita aplicació que ens permet accedir a un recurs del servidor Windows o Samba.
 
 * Per **exemple**, si volem accedir a la carpeta compartida '_alumnes_' del servidor, executarem:
 
@@ -37,15 +40,17 @@ Si el recurs està protegit amb contrasenya, també podem indicar amb quin usuar
 
 `smbclient -U usuari -L IP_servidor`
 
+> Quan s'accedeix de forma remota a un recurs compartit, cal identificar-se amb un usuari que tingui permisos sobre aquest recurs. Els **permisos efectius** que tindrà aquest usuari seran **els més restrictius** entre els permisos locals (NTFS) i els permisos de compartició (SMB/CIFS).
+
 ### Accedir a carpetes compartides de forma gràfica
 
-L’Ubuntu ens permet accedir **gràficament** als recursos disponibles dels grups de treball del Samba amb el navegador Nautilus.
+L'Ubuntu ens permet accedir **gràficament** als recursos compartits amb Windows o Samba amb el navegador **_Nautilus_**.
 
 Es pot fer de vàries formes:
 
-* Per mitjà del menú _**Xarxa**_ &gt; `IP_servidor` .
-* **Conectar con el servidor** \(`smb://IP_servidor`\)
-* **Ctrl + L** per poder escriure a la barra d'adreces i escriure `smb://IP_servidor`
+* Per mitjà del menú _**Xarxa**_ &gt; `IP_servidor o NOM(WSXXX)` .
+* **Conectar con el servidor** \(`smb://IP_servidor o smb://WSXXX`\)
+* **Ctrl + L** per poder escriure a la barra d'adreces i escriure `smb://IP_servidor o smb://WSXXX`
 
 També es pot accedir directament a una de les carpetes compartides si es coneix el nom del recurs compartit:
 
