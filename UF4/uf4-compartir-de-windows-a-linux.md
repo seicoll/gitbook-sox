@@ -26,6 +26,34 @@ Status: install ok installed
 ...
 ```
 
+> Quan s'accedeix de forma remota a un recurs compartit, cal identificar-se amb un usuari que tingui permisos sobre aquest recurs. Els **permisos efectius** que tindrà aquest usuari seran **els més restrictius** entre els permisos locals (NTFS) i els permisos de compartició (SMB/CIFS).
+
+## Accedir a una carpeta compartides de forma gràfica
+
+L'Ubuntu ens permet accedir **gràficament** als recursos compartits amb Windows o Samba amb el navegador **_Nautilus_**.
+
+Es pot fer de vàries formes:
+
+* Per mitjà del menú _**Xarxa**_ &gt; `IP_servidor o NOM(WSXXX)` .
+* **Conectar con el servidor** \(`smb://IP_servidor o smb://WSXXX`\)
+* **Ctrl + L** per poder escriure a la barra d'adreces i escriure `smb://IP_servidor o smb://WSXXX`
+
+També es pot accedir directament a una de les carpetes compartides si es coneix el nom del recurs compartit:
+
+`smb://IP_servidor/alumnes` o bé `smb://WSXXX/alumnes`
+
+Per accedir al servidor s'hauran d'introduir les següents dades:
+
+* **Nom d'usuari**: usuari de Windows amb els permisos adequats.
+* **Domini**: `ADXXX` (domini de Windows) o un grup de treball de Windows.
+* **Contrasenya**: contrasenya de l'usuari de Windows.
+  * **Oblidar immediatament la contrasenya **(**recomanada per fer proves**): cada cop que es vulgui accedir, caldrà tornar a posar l'usuari i la contrasenya.
+  * **Recordar la contrasenya mentre no es tanqui la sessió de l'usuari actual** (**recomanada per treballar**): si es vol accedir amb un usuari diferent, caldrà tancar la sessió i tornar a entrar.
+  * **Recordar sempre aquesta contrasenya**: si més endavant es vol eliminar l'usuari i contrasenya guardats, caldrà anar al programa **_Contraseñas y claves_**, dins l'apartat Contraseñas.
+  
+
+## Accedir a una carpeta utilitzant comandes
+
 La comanda `smbclient` obre un petita aplicació que ens permet accedir a un recurs del servidor Windows o Samba.
 
 * Per **exemple**, si volem accedir a la carpeta compartida '_alumnes_' del servidor, executarem:
@@ -40,23 +68,9 @@ Si el recurs està protegit amb contrasenya, també podem indicar amb quin usuar
 
 `smbclient -U usuari -L IP_servidor`
 
-> Quan s'accedeix de forma remota a un recurs compartit, cal identificar-se amb un usuari que tingui permisos sobre aquest recurs. Els **permisos efectius** que tindrà aquest usuari seran **els més restrictius** entre els permisos locals (NTFS) i els permisos de compartició (SMB/CIFS).
 
-### Accedir a carpetes compartides de forma gràfica
 
-L'Ubuntu ens permet accedir **gràficament** als recursos compartits amb Windows o Samba amb el navegador **_Nautilus_**.
-
-Es pot fer de vàries formes:
-
-* Per mitjà del menú _**Xarxa**_ &gt; `IP_servidor o NOM(WSXXX)` .
-* **Conectar con el servidor** \(`smb://IP_servidor o smb://WSXXX`\)
-* **Ctrl + L** per poder escriure a la barra d'adreces i escriure `smb://IP_servidor o smb://WSXXX`
-
-També es pot accedir directament a una de les carpetes compartides si es coneix el nom del recurs compartit:
-
-`smb://IP_servidor/alumnes`
-
-### Muntar carpetes compartides
+## Muntar carpetes compartides
 
 També hi ha la possibilitat **muntar les carpetes compartides** en carpetes del nostre sistema com si es tractés d'una carpeta local.
 
