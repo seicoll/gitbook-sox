@@ -34,9 +34,9 @@ L'Ubuntu ens permet accedir **gràficament** als recursos compartits amb Windows
 
 Es pot fer de vàries formes:
 
-* Per mitjà del menú _**Xarxa**_ &gt; `IP_servidor o NOM(WSXXX)` .
-* **Conectar con el servidor** \(`smb://IP_servidor o smb://WSXXX`\)
-* **Ctrl + L** per poder escriure a la barra d'adreces i escriure `smb://IP_servidor o smb://WSXXX`
+* Per mitjà del menú _**Xarxa**_ &gt; **_IP_servidor_** o **_NOM(WSXXX)_** .
+* **Conectar con el servidor** \ &gt; `smb://IP_servidor` o bé `smb://WSXXX`
+* **Ctrl + L** per poder escriure a la barra d'adreces i escriure `smb://IP_servidor` o bé `smb://WSXXX`
 
 També es pot accedir directament a una de les carpetes compartides si es coneix el nom del recurs compartit:
 
@@ -50,7 +50,6 @@ Per accedir al servidor s'hauran d'introduir les següents dades:
   * **Oblidar immediatament la contrasenya **(**recomanada per fer proves**): cada cop que es vulgui accedir, caldrà tornar a posar l'usuari i la contrasenya.
   * **Recordar la contrasenya mentre no es tanqui la sessió de l'usuari actual** (**recomanada per treballar**): si es vol accedir amb un usuari diferent, caldrà tancar la sessió i tornar a entrar.
   * **Recordar sempre aquesta contrasenya**: si més endavant es vol eliminar l'usuari i contrasenya guardats, caldrà anar al programa **_Contraseñas y claves_**, dins l'apartat Contraseñas.
-  
 
 ## Accedir a una carpeta utilitzant comandes
 
@@ -60,15 +59,25 @@ La comanda `smbclient` obre un petita aplicació que ens permet accedir a un rec
 
   `smbclient //IP_servidor/alumnes`
 
-Aquesta comanda s'utilitza, sobretot, per **llistar els recursos compartits** d’una màquina remota:
-
-`smbclient -L IP_servidor`
-
-Si el recurs està protegit amb contrasenya, també podem indicar amb quin usuari hi accedim fent.
-
-`smbclient -U usuari -L IP_servidor`
+Aquesta comanda s'utilitza, sobretot, per **llistar els recursos compartits** d’una màquina remota.
+  * Fins i tot els recursos amagats (aquells que s'han creat afegint un **$** al final del nom).
+  * Si el recurs està protegit amb contrasenya, podem indicar amb quin usuari hi accedim amb el paràmetre -U.
 
 
+```bash+theme:dark
+usuari@ucxxx:~$ smbclient -L //WSXXX -U usuariSMB
+Enter usuariSMB's password:
+Domain=[WSXXX] OS=[Windows 10 Enterprise Evaluation 9600] Server=[Windows 10 Enterprise Evaluation 6.3]
+    Sharename       Type      Comment
+    ---------       ----      -------
+    ADMIN$          Disk      Admin remota
+    Alumnes         Disk    
+    C$              Disk      Recurso predeterminado
+    IPC$            IPC       IPC remota
+    Profes          Disk    
+    Users           Disk    
+...
+```
 
 ## Muntar carpetes compartides
 
