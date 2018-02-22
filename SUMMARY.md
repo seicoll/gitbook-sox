@@ -73,12 +73,9 @@
     * [Administrar el directori actiu de Samba 4](UF4/administrar-sambaAD.md)
     * [Perfils mòbils en un domini Samba AD](UF4/perfils-mobils-sambaAD.md)
     * [Zentyal com a controlador de domini](UF4/zentyal.md)
-<!--
   * [Activitats](UF4/uf4-activitats.md)
--->
-<!--
-    * [Activitat 1. Compartir recursos amb Samba](UF4/act/act1.md)
--->
+    * [Activitat 1. Compartir recursos amb Windows i accedir des de Linux](https://docs.google.com/document/d/1KDLMK1oI_3DBKD2G8YdXofjKtSx51vbF1XcLiZ_nPHo/edit?usp=sharing)
+
 <!--
     * [Activitat 2. Unir un client Linux a un domini Windows](UF4/act/act2.md)
 -->

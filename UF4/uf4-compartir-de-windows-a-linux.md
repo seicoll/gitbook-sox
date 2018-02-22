@@ -35,7 +35,7 @@ L'Ubuntu ens permet accedir **gràficament** als recursos compartits amb Windows
 Es pot fer de vàries formes:
 
 * Per mitjà del menú _**Xarxa**_ &gt; **_IP_servidor_** o **_NOM(WSXXX)_** .
-* **Conectar con el servidor** \ &gt; `smb://IP_servidor` o bé `smb://WSXXX`
+* **Conectar con el servidor** &gt; `smb://IP_servidor` o bé `smb://WSXXX`
 * **Ctrl + L** per poder escriure a la barra d'adreces i escriure `smb://IP_servidor` o bé `smb://WSXXX`
 
 També es pot accedir directament a una de les carpetes compartides si es coneix el nom del recurs compartit:
