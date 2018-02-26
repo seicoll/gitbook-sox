@@ -58,11 +58,13 @@ La comanda `smbclient` obre un petita aplicació que ens permet accedir a un rec
 * Per **exemple**, si volem accedir a la carpeta compartida '_alumnes_' del servidor, executarem:
 
   `smbclient //IP_servidor/alumnes`
+  
+* Si el recurs està protegit amb contrasenya, podem indicar amb quin usuari hi accedim amb el **paràmetre -U**.
 
-Aquesta comanda s'utilitza, sobretot, per **llistar els recursos compartits** d’una màquina remota.
+  `smbclient //IP_servidor/alumnes -U usuariSMB`
+
+Aquesta comanda s'utilitza, sobretot, per **llistar els recursos compartits** d’una màquina remota posant el paràmetre -L.
   * Fins i tot els recursos amagats (aquells que s'han creat afegint un **$** al final del nom).
-  * Si el recurs està protegit amb contrasenya, podem indicar amb quin usuari hi accedim amb el paràmetre -U.
-
 
 ```bash+theme:dark
 usuari@ucxxx:~$ smbclient -L //WSXXX -U usuariSMB
