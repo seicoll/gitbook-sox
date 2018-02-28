@@ -16,7 +16,7 @@ Per aquesta raó cada vegada s’utilitzen més altres sistemes de compartició 
 
 ## Què és Samba?
 
-El **Samba** és un paquet de programari per **Linux** que permet compartir recursos \(arxius, carptes i impressores\) utilitzant el protocol de comunicació **SMB/CIFS** que és el protocol  utilitzat per sistemes operatius **Windows** per compartir carpetes i impressores.
+El **Samba** és un paquet de programari per **Linux** que permet compartir recursos \(arxius, carpetes i impressores\) utilitzant el protocol de comunicació **SMB/CIFS** que és el protocol  utilitzat per sistemes operatius **Windows** per compartir carpetes i impressores.
 
 Això fa possible que es pugui accedir a recursos compartits amb **Linux** des de clients **Windows**.
 
@@ -107,7 +107,9 @@ workgroup = BOSCCOMA
 
 ## Compartir un nou recurs amb Samba
 
-Per compartir un recurs \(arxiu o carpeta\), hem d’editar el fitxer `/etc/samba/smb.conf` i crear un **nova secció amb un nom entre claudàtors** que serà el **nom que el recurs compartit** tindrà a la xarxa. Normalment aquesta nova secció es posa al final del fitxer.
+Per compartir un recurs \(arxiu o carpeta\), hem d'editar el fitxer `/etc/samba/smb.conf` i crear un **nova secció amb un nom entre claudàtors** que serà el **nom que el recurs compartit** tindrà a la xarxa. 
+
+> Normalment aquesta nova secció es posa al final del fitxer.
 
 Per **exemple**, si volem compartir la carpeta `/home/samba/alumnes` i anomenar al recurs _**alumnes**_, crearem una secció _**\[alumnes\]**_ on es configurarà amb els paràmetres específics.
 
@@ -120,28 +122,28 @@ Els principals **paràmetres** que s'han de configurar per un recurs compartit s
 * **Visibilitat**: si serà visible de forma remota \(_**browsable**_\).
 * **Accessibilitat**: si serà accessible per tothom o només per alguns usuaris o grups.
 
-En aquest **exemple** compartim el recurs _**alumnes**_ de manera que es permeti l'accés als usuaris convidats sense necessitat d'introduir una contrasenya d'accés.
+**Exemple 1:** compartim el recurs _**public**_ de manera que es permeti l'accés als usuaris convidats sense necessitat d'introduir una contrasenya d'accés.
 
-```
-# Carpeta comuna alumnes
-[alumnes] 
-path = /home/samba/alumnes    ; carpeta a compartir
-browsable = yes               ; la carpeta serà visible quan accedir a \\IP_servidor
-read only = no                ; es permet l'escriptura
-guest ok = yes                ; s'admet l'usuari convidat
-guest account = nobody        ; els usuaris convidats utilitzaran el compte d'usuari nobody de Linux per accedir al recurs
-guest only = yes              ; tots els accessos al recurs s'accepten en mode convidat
-```
+  ```
+  # Carpeta comuna public
+  [public] 
+  path = /srv/samba/public     ; carpeta a compartir
+  browsable = yes               ; la carpeta serà visible quan accedir a \\IP_servidor
+  read only = no                ; es permet l'escriptura, també es pot posar writeable=yes
+  guest ok = yes                ; s'admet l'usuari convidat de Linux per accedir al recurs
+  guest only = yes              ; tots els accessos al recurs s'accepten en mode convidat
+  ```
 
-Creem la carpeta al servidor i canviem els seus permisos.
+  Creem la carpeta al servidor i canviem els seus permisos.
 
-`sudo mkdir -p /home/samba/alumnes`
+  ```
+  sudo mkdir -p /srv/samba/public
+  sudo chown nobody:nogroup /srv/samba/public
+  ```
+ 
+  I reiniciem Samba.
 
-`sudo chown nobody:nogroup /home/samba/alumnes`
-
-I reiniciem Samba.
-
-`service smbd restart`
+  `service smbd restart`
 
 ## Accedir a recursos compartit Samba des de Windows
 
@@ -264,21 +266,23 @@ drwxrwx--- 2 root alumnes 4096 alumnes
 
 Si es vol definir un **grup** en el fitxer de configuració del Samba, `/etc/samba/smb.conf`, cal posar "**@**" davant del nom del grup.
 
-**Per exemple**, si heu definit una carpeta compartida del Samba anomenada **share** i desitgeu:
+**Exemple:** Compartim el recurs _**apunts**_ i voleu que:
 
-* Tot i que el recurs hem compartit el recurs amb permisos de lectura i escriptura \(_**read only=no**_\), volem donar permisos només de  lectura al grup d'usuaris anomenat _**alumnes**_. 
-* Restringir l’accés a l’usuari _**alumne1**_.
-* Permetre l'escriptura al grup anomenat _**professors**_ i a l'usuari _**sergi**_.
+* Tot i que el recurs hem compartit el recurs amb permisos només de lectura i \(_**writeable=no**_\), volem donar permisos només d'escriptura al grup d'usuaris anomenat _**profes**_ i a l'usuari _**sergi**_.
+* Restringir l’accés a l'usuari _**alumne1**_.
+
 
 ```
-# Carpeta comú alumnes
-[share] 
-path = /home/samba/alumnes
-browsable = yes
+# Carpeta comuna apunts
+[apunts] 
+path = /srv/samba/apunts      ; carpeta a compartir
+browsable = yes               ; la carpeta serà visible quan accedir a \\IP_servidor
 read only = no
+writeable = no                ; no es permet l'escriptura, també es pot posar read only=yes
+guest ok = no                 ; no s'admet l'usuari convidat
 invalid users = alumne1
 read list = @alumnes
-write list = @professors, sergi
+write list = @profes, sergi
 ```
 
 * **valid users**: Llista d'usuaris que poden accedir al recurs. 
@@ -291,6 +295,7 @@ write list = @professors, sergi
 > Si es configuren els paràmetres **valid users** i **write list**, els usuaris de **write list** també han d'estar a **valid users**.
 >
 > Quan s'accedix a un recurs compartit amb Samba, cal utilitzar l'identificador i la contrasenya configurats en la base de dades d'usuaris de Samba, no amb usuaris locals.
+
 
 ### Determinar els permisos efectius
 
