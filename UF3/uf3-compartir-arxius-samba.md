@@ -236,20 +236,17 @@ Per defecte, el **Samba** utilitza el sistema de permisos de GNU/Linux. Tot i qu
 
 Una forma senzilla de configurar els permisos desitjats és posar tots els permisos en els permisos locals, i en la configuració de Samba indicar els usuaris que tenen accés i amb quins permisos.
 
-Per **exemple**, per compartir la carpeta alumnes i donar permisos de lectura, escriptura i execució a tots els usuaris del grup alumnes.
-
-```bash
-# ls -l /home/samba/
-drwxrwx--- 2 root alumnes 4096 alumnes
-```
-
-Si es vol definir un **grup** en el fitxer de configuració del Samba, `/etc/samba/smb.conf`, cal posar "**@**" davant del nom del grup.
-
 **Exemple:** Compartim el recurs _**apunts**_ i voleu que:
 
 * Tot i que el recurs hem compartit el recurs amb permisos només de lectura i \(_**writeable=no**_\), volem donar permisos només d'escriptura al grup d'usuaris anomenat _**profes**_ i a l'usuari _**sergi**_.
 * Restringir l’accés a l'usuari _**alumne1**_.
 
+```bash+theme:dark
+# ls -l /srv/samba/apunts
+drwxrwx--- 2 root profes 4096 apunts
+```
+
+Si es vol definir un **grup** en el fitxer de configuració del Samba, `/etc/samba/smb.conf`, cal posar "**@**" davant del nom del grup.
 
 ```
 # Carpeta comuna apunts
