@@ -145,27 +145,6 @@ Els principals **paràmetres** que s'han de configurar per un recurs compartit s
 
   `service smbd restart`
 
-## Accedir a recursos compartit Samba des de Windows
-
-Si, hem configurat els servidor Samba en mode `security=share`, cal afegir el client **Windows** al **grup de treball**:
-
-* Botó dret a l’icona de _**Equip &gt; propietats**_
-* I afegim l’equip al grup de treball que hem creat en el server.
-
-### Accedir a carpetes compartides de forma gràfica
-
-Si volem accedir al recurs compartit a través de l'**interfície gràfica**, anem al explorador d’arxius i dintre de xarxes cerquem el nostre equip i la nostra carpeta compartida.
-
-### Accedir a carpetes compartides amb comandes
-
-Si volem accedir al recurs compartit a través de **comandes**:
-
-`net use X: \\servidor\recurs`
-
-## Accedir a recursos compartits Samba des de Linux
-
-[Apunts accedir a recursos compartits amb Windows o Samba (mitjançant el protocol SMB/CIFS).](https://seicoll.gitbooks.io/sox/content/UF4/uf4-compartir-de-windows-a-linux.html)
-
 ## Gestió d'usuaris Samba
 
 El **Samba** disposa de la seva **pròpia base de dades d’usuaris** Samba que podran accedir als recursos compartits.
@@ -319,6 +298,32 @@ Per **determinar els permisos que tindrà l'usuari**, Samba realitza les següen
 Podem fer un símil amb l'accés a una vivenda. Els permisos de Samba serien la valla i els permisos locals la porta de casa.
 
 ![](/assets/samba-permisos.png)
+
+## Accedir a recursos compartit Samba des de Windows
+
+<!-- Si, hem configurat els servidor Samba en mode `security=share`, cal afegir el client **Windows** al **grup de treball**:
+
+* Botó dret a l’icona de _**Equip &gt; propietats**_
+* I afegim l’equip al grup de treball que hem creat en el server.
+
+-->
+
+### Accedir a carpetes compartides de forma gràfica
+
+Es fa de la mateixa forma que per accedir a una carpeta compartida en un altre Windows:
+[Com accedir a una carpeta compartida](https://seicoll.gitbooks.io/sox/content/UF3/uf3-compartir-arxius-windows.html#accedir-a-carpetes-compartides)
+
+> Quan es creen arxius o carpetes des del client, en el servidor es crearan amb l'usuari Linux relacionat amb l'usuari Samba. 
+
+### Accedir connectant una unitat de xarxa a través de comandes
+
+Es fa de la mateixa forma que per connectar una carpeta compartida en un altre Windows:
+
+[Com connectar una unitat de xarxa a una carpeta compartida](https://seicoll.gitbooks.io/sox/content/UF3/uf3-compartir-arxius-windows.html#connectar-una-unitat-de-xarxa-a-trav%C3%A9s-de-comandes)
+
+## Accedir a recursos compartits Samba des de Linux
+
+[Apunts accedir a recursos compartits amb Windows o Samba (mitjançant el protocol SMB/CIFS).](https://seicoll.gitbooks.io/sox/content/UF4/uf4-compartir-de-windows-a-linux.html)
 
 ## Documentació i recursos
 
