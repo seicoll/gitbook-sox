@@ -232,7 +232,7 @@ Per defecte, el **Samba** utilitza el sistema de permisos de GNU/Linux. Tot i qu
 
 > Per fer la gestió d’usuaris, grups i permisos, es recomana fer servir els **permisos GNU/Linux**, els quals permeten assignar permisos de lectura, escriptura i execució \(rwx\) a l’usuari propietari de l’arxiu, al grup propietari de l’arxiu i a la resta d’usuaris del sistema.
 
-### Configurar propietaris i permisos locals, i usuaris i permisos Samba
+### Comparició d'arxius i carpetes amb Samba
 
 Una forma senzilla de configurar els permisos desitjats és posar tots els permisos en els permisos locals, i en la configuració de Samba indicar els usuaris que tenen accés i amb quins permisos.
 
@@ -241,12 +241,16 @@ Una forma senzilla de configurar els permisos desitjats és posar tots els permi
 * Tot i que el recurs hem compartit el recurs amb permisos només de lectura i \(_**writeable=no**_\), volem donar permisos només d'escriptura al grup d'usuaris anomenat _**profes**_ i a l'usuari _**sergi**_.
 * Restringir l’accés a l'usuari _**alumne1**_.
 
+Creem la carpeta i assignem els permisos locals:
+
 ```bash+theme:dark
 # ls -l /srv/samba/apunts
 drwxrwx--- 2 root profes 4096 apunts
 ```
 
-Si es vol definir un **grup** en el fitxer de configuració del Samba, `/etc/samba/smb.conf`, cal posar "**@**" davant del nom del grup.
+Compartim la carpeta configurant el fitxer `/etc/samba/smb.conf`.
+
+* Si es vol definir un **grup** en el fitxer de configuració del Samba, `/etc/samba/smb.conf`, cal posar "**@**" davant del nom del grup.
 
 ```
 # Carpeta comuna apunts
