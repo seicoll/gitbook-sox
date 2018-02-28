@@ -238,7 +238,7 @@ Una forma senzilla de configurar els permisos desitjats és posar tots els permi
 
 **Exemple:** Compartim el recurs _**apunts**_ i voleu que:
 
-* Tot i que el recurs hem compartit el recurs amb permisos només de lectura i \(_**writeable=no**_\), volem donar permisos només d'escriptura al grup d'usuaris anomenat _**profes**_ i a l'usuari _**sergi**_.
+* Tot i que el recurs hem compartit el recurs amb permisos només de lectura i \(_**writeable=no**_\), volem donar permisos només d'escriptura al grup d'usuaris anomenat _**profes**_ i a l'usuari _**root**_.
 * Restringir l’accés a l'usuari _**alumne1**_.
 
 Creem la carpeta i assignem els permisos locals:
@@ -257,12 +257,11 @@ Compartim la carpeta configurant el fitxer `/etc/samba/smb.conf`.
 [apunts] 
 path = /srv/samba/apunts      ; carpeta a compartir
 browsable = yes               ; la carpeta serà visible quan accedir a \\IP_servidor
-read only = no
 writeable = no                ; no es permet l'escriptura, també es pot posar read only=yes
 guest ok = no                 ; no s'admet l'usuari convidat
 invalid users = alumne1
 read list = @alumnes
-write list = @profes, sergi
+write list = @profes, root
 ```
 
 * **valid users**: Llista d'usuaris que poden accedir al recurs. 
