@@ -1,10 +1,12 @@
 # Accedir a recursos compartits en Windows des de Linux
 
-## Compartir arxius i carpetes en Windows
+## Accedir a arxiu i carpetes compartits en Windows des de Linux
+
+### Compartir arxius i carpetes en Windows
 
 [Apunts sobre compartició d'arxius i carpetes en Windows](https://seicoll.gitbooks.io/sox/content/UF3/uf3-compartir-arxius-windows.html#compartici%C3%B3-de-carpetes)
 
-## Preparar Linux per accedir a carpetes compartides en Windows
+### Preparar Linux per accedir a carpetes compartides en Windows
 
 > Tot el que s'explica a continuació també serveix per accedir a una carpeta que s'ha compartit en Linux utilitzant el protocol **Samba**.
 
@@ -28,7 +30,7 @@ Status: install ok installed
 
 > Quan s'accedeix de forma remota a un recurs compartit, cal identificar-se amb un usuari que tingui permisos sobre aquest recurs. Els **permisos efectius** que tindrà aquest usuari seran **els més restrictius** entre els permisos locals (NTFS) i els permisos de compartició (SMB/CIFS).
 
-## Accedir a una carpeta compartides de forma gràfica
+### Accedir a una carpeta compartides de forma gràfica
 
 L'Ubuntu ens permet accedir **gràficament** als recursos compartits amb Windows o Samba amb el navegador **_Nautilus_**.
 
@@ -51,7 +53,7 @@ Per accedir al servidor s'hauran d'introduir les següents dades:
   * **Recordar la contrasenya mentre no es tanqui la sessió de l'usuari actual** (**recomanada per treballar**): si es vol accedir amb un usuari diferent, caldrà tancar la sessió i tornar a entrar.
   * **Recordar sempre aquesta contrasenya**: si més endavant es vol eliminar l'usuari i contrasenya guardats, caldrà anar al programa **_Contraseñas y claves_**, dins l'apartat Contraseñas.
 
-## Accedir a una carpeta utilitzant comandes
+### Accedir a una carpeta utilitzant comandes
 
 La comanda `smbclient` obre un petita aplicació que ens permet accedir a un recurs del servidor Windows o Samba.
 
@@ -81,7 +83,7 @@ Domain=[WSXXX] OS=[Windows 10 Enterprise Evaluation 9600] Server=[Windows 10 Ent
 ...
 ```
 
-## Muntar carpetes compartides
+### Muntar carpetes compartides
 
 També hi ha la possibilitat **muntar les carpetes compartides** en carpetes del nostre sistema com si es tractés d'una carpeta local.
 
@@ -102,7 +104,7 @@ Si el servidor no requereix que l’usuari s’autentiqui \(permet accés a conv
 
 > **ATENCIÓ:** per saber els permisos efectius d'accés a una carpeta compartida cal tenir en compte els permisos que té l'usuari que es connecta a la carpeta remota \(usuari Windows o Samba\) i els permisos que té l'usuari actual sobre la carpeta local on està muntada la carpeta compartida.
 
-## Muntar carpetes compartides de forma automàtica
+### Muntar carpetes compartides de forma automàtica
 
 Si volem que una carpeta compartida **es connecti sempre de forma automàtica** quan iniciem el nostre Linux, cal afegir a l'arxiu `/etc/fstab` una línia com:
 
@@ -120,8 +122,13 @@ Per muntar automàticament els recussos definits a `/etc/fstab` sense necessitat
 
 Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la comanda `mount`.
 
+## Accedir a impressores compartides en Windows des de Linux
 
-## Instal·lar en Linux impressores compartides en Windows
+### Compartir impressores en Windows
+
+[Apunts Compartir impressores en Windows](https://seicoll.gitbooks.io/sox/content/UF3/uf3-compartir-impressores-windows.html)
+
+### Instal·lar en Linux impressores compartides en Windows
 
 Per instal·lar impressores cal anar a **_Configuración_** > **_Impresoras_** i clicar el botó **_Añadir_**.
 
