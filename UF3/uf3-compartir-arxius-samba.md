@@ -327,7 +327,7 @@ Es fa de la mateixa forma que per connectar una carpeta compartida en un altre W
 
 ## Documentació i recursos
 
-* Més informació: [https://help.ubuntu.com/lts/serverguide/samba-fileprint-security.html](https://help.ubuntu.com/lts/serverguide/samba-fileprint-security.html)
+* **Més informació: **[https://help.ubuntu.com/lts/serverguide/samba-fileprint-security.html](https://help.ubuntu.com/lts/serverguide/samba-fileprint-security.html)
 
 * [Ite Educacion](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m4/instalacin_y_configuracin_de_samba.html)
 
