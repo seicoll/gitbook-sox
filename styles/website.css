@@ -5,6 +5,12 @@ img
     display: block;
 }
 
+/* HEADERS */
+
+.markdown-section h2
+{
+    border-bottom: 1px solid #0000004a;
+}
 
 /* blockquote */
 .markdown-section blockquote
