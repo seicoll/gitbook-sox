@@ -21,7 +21,7 @@
             "notoc": false
         },
         "theme-default": {
-            "showLevel": true
+            "showLevel": false
         },
         "sunlight-highlighter": {
             "theme": "light",
