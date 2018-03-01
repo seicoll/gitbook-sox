@@ -120,6 +120,29 @@ Per muntar automàticament els recussos definits a `/etc/fstab` sense necessitat
 
 Per comprovar si s'han muntat correctament les carpetes es pot utilitzar la comanda `mount`.
 
+
+## Instal·lar en Linux impressores compartides en Windows
+
+Per instal·lar impressores cal anar a **_Configuración_** > **_Impresoras_** i clicar el botó **_Añadir_**.
+
+* **Opció Impresora Windows via SAMBA:**
+
+  Per instal·lar una impressora compartida amb SMB/CIFS cal desplegar la llista Impresora en red i triar l'opció **_Impresora Windows via SAMBA_**.
+
+* **Opció Impresora SMB:**
+
+  Normalment, trobarem la impressora fent clic al botó **_Examinar_** i buscant en la xarxa el servidor (`WSXXX`). Demanarà un usuari i contrasenya del servidor i es podrà seleccionar la impressora compartida.
+
+  També es pot posar a la finestra d'edició **_Impresora SMB_** la ruta de la impressora (**_domini/servidor/impressora_**):  `WSXXX/HPLaserColor` (no cal posar smb://).
+
+  Després cal seleccionar l'opció **_Poner detalles de autenticación_** i posar el nom i la contrasenya d'un usuari de Windows amb permís per imprimir. Convé clicar al botó Verificar per assegurar-se que l'usuari té accés i que la contrasenya és correcta.
+
+Un cop seguim endavant, demanarà la marca i el model per instal·lar els **drivers**.
+
+Es pot imprimir una pàgina de prova i comprovar en el servidor que li ha arribat correctament. L'usuari propietari del document hauria de ser l'usuari que hem configurat prèviament en els paràmetres de verificació.
+
+A part dels permisos que es posin en el servidor, també es pot limitar l'accés a la impressora dels usuaris locals (els del client) indicant quins usuaris podran utilitzar la impressora o quins no ho podran fer.
+
 ## Referències 
  
 * **Wiki Ubuntu**: [https://wiki.ubuntu.com](https://wiki.ubuntu.com/MountWindowsSharesPermanently)
