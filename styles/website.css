@@ -62,10 +62,7 @@ img
     color:black;
 }
 
-/* ----------------------------------*/
-
-.book .book-summary ul.summary li a:hover,
-.book .book-summary ul.summary li.active a {
+.book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active a {
   background-color: #bac2c6;
 }
 
