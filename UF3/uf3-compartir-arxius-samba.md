@@ -210,13 +210,12 @@ La **gestió d’usuaris Samba** \(crear, eliminar, canviar contrassenya, etc\) 
 
 L’ordre `smbpasswd` disposa d’altres opcions interessants:
 
-  **-d**: deshabilitar un usuari.
+  * **-d**: deshabilitar un usuari.
 
-  **-i**: habilitar un usuari.
+  * **-i**: habilitar un usuari.
 
-  **-n**: establir un usuari sense contrasenya.
-
-\(Necessita paràmetre null **passwords = yes** en secció GLOBAL de l’arxiu de configuració del Samba\).
+  * **-n**: establir un usuari sense contrasenya.
+  Necessita paràmetre null `passwords = yes` en secció [GLOBAL] de l’arxiu de configuració del Samba.
 
 ## Permisos Samba
 
