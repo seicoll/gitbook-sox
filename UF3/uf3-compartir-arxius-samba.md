@@ -219,7 +219,7 @@ L’ordre `smbpasswd` disposa d’altres opcions interessants:
 
 ## Permisos Samba
 
-Un **permís** és una marca associada a cada recurs de xarxa \(fitxers, directoris, impressores, etc.\) que regula quins usuaris i de quina manera hi tenen accés.
+> Un **permís** és una marca associada a cada recurs de xarxa \(fitxers, directoris, impressores, etc.\) que regula quins usuaris i de quina manera hi tenen accés.
 
 La gestió de grups, usuaris i permisos és diferent en sistemes GNU/Linux i en sistemes Microsoft Windows.
 
