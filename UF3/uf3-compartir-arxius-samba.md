@@ -182,15 +182,15 @@ La **gestió d’usuaris Samba** \(crear, eliminar, canviar contrassenya, etc\) 
 
 ### Creació d’usuaris Samba
 
-1. Haurem de crear l’usuari a l’Ubuntu amb l’ordre següent:
+1. Haurem de **crear l’usuari** a l’Ubuntu amb l’ordre següent:
 
-`sudo adduser alumne`
+  `sudo adduser alumne`
 
-1. Habilitar l’usuari al Samba, executant aquesta ordre:
+2. **Habilitar l’usuari** al Samba, executant aquesta ordre:
 
-`sudo smbpasswd -a alumne`
+  `sudo smbpasswd -a alumne`
 
-`-a` vol dir que Samba afegirà l’usuari a la llista d’usuaris Samba
+  `-a` vol dir que Samba afegirà l'usuari a la llista d’usuaris Samba.
 
 ### Eliminació d’usuaris Samba
 
@@ -200,21 +200,23 @@ La **gestió d’usuaris Samba** \(crear, eliminar, canviar contrassenya, etc\) 
 
 ### Llistar usuaris Samba
 
-Mostrar la llista d'usuaris Samba:  
-`sudo pdbedit -L`
+* Mostrar la llista d'usuaris Samba:  
 
-Mostrar la llista d'usuaris Samba amb més detalls:  
-`sudo pdbedit -Lv`
+  `sudo pdbedit -L`
+
+* Mostrar la llista d'usuaris Samba amb més detalls:  
+
+  `sudo pdbedit -Lv`
 
 ### Altres opcions de gestió d'usuaris
 
 L’ordre `smbpasswd` disposa d’altres opcions interessants:
 
--d: deshabilitar un usuari.
+  **-d**: deshabilitar un usuari.
 
--i: habilitar un usuari.
+  **-i**: habilitar un usuari.
 
--n: establir un usuari sense contrasenya.
+  **-n**: establir un usuari sense contrasenya.
 
 \(Necessita paràmetre null **passwords = yes** en secció GLOBAL de l’arxiu de configuració del Samba\).
 
