@@ -223,9 +223,9 @@ L’ordre `smbpasswd` disposa d’altres opcions interessants:
 
 La gestió de grups, usuaris i permisos és diferent en sistemes GNU/Linux i en sistemes Microsoft Windows.
 
-En els **sistemes GNU/Linux**, la gestió dels permisos que els usuaris i els grups tenen sobre els arxius es fa mitjançant un esquema senzill de tres tipus de permisos (lectura, escriptura i execució) aplicables a tres tipus d'usuaris (propietari, grup propietari i resta d'usuaris).
+* En els **sistemes GNU/Linux**, la gestió dels permisos que els usuaris i els grups tenen sobre els arxius es fa mitjançant un esquema senzill de tres tipus de permisos (lectura, escriptura i execució) aplicables a tres tipus d'usuaris (propietari, grup propietari i resta d'usuaris).
 
-En els **sistemes Windows**, la gestió dels permisos que els usuaris i els grups tenen sobre els arxius es fa mitjançant un esquema complex de llistes de control d'accés (access control lists, ACL) per a cada directori i arxiu.
+* En els **sistemes Windows**, la gestió dels permisos que els usuaris i els grups tenen sobre els arxius es fa mitjançant un esquema complex de llistes de control d'accés (access control lists, ACL) per a cada directori i arxiu.
 
 El sistema **ACL** té l'avantatge de ser molt més flexible que el sistema GNU/Linux, ja que es poden establir més tipus de permisos, donar permisos només a uns quants usuaris i grups, denegar permisos, etc.
 
