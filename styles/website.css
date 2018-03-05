@@ -41,36 +41,29 @@ img
 /* SUMMARY */ 
 
 /* Ampliem l'amplada */
-.book-summary{
+.book .book-summary{
    left:-400px;
    width: 400px;
 }
 
 @media (min-width: 600px){
-   .book.with-summary .book-body {
+   .book .book.with-summary .book-body {
       left: 400px;
   }
 }
 
-.book-summary ul.summary li a, .book-summary ul.summary li span {
+.book .book-summary ul.summary li a, .book-summary ul.summary li span {
     white-space: normal;        //perquè salti de línia si és molt llarg
 }
 
 /* titols principals */
-.book-summary ul.summary li.header {
+.book .book-summary ul.summary li.header {
     font-weight:bold;
     color:black;
 }
 
 /* ----------------------------------*/
 
-
-
-
-.book .book-summary {
-  background-color: #bac2c6;
-  box-shadow: inset -4px 0 0 rgb(34, 101, 134);
-}
 
 .book .book-summary ul.summary {
   background-color: #bac2c6;
@@ -79,7 +72,7 @@ img
 
 .book .book-summary ul.summary li a:hover,
 .book .book-summary ul.summary li.active a {
-  background-color: rgb(34, 101, 134);
+  background-color: #bac2c6;
 }
 
 /* ----------------------------------*/
