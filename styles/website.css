@@ -64,12 +64,6 @@ img
 
 /* ----------------------------------*/
 
-
-.book .book-summary ul.summary {
-  background-color: #bac2c6;
-  box-shadow: inset -4px 0 0 rgb(34, 101, 134);
-}
-
 .book .book-summary ul.summary li a:hover,
 .book .book-summary ul.summary li.active a {
   background-color: #bac2c6;
