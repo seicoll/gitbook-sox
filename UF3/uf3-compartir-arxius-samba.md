@@ -123,8 +123,8 @@ Per compartir un recurs \(arxiu o carpeta\), hem d'editar el fitxer `/etc/samba/
   # Carpeta comuna public
   [public] 
   path = /srv/samba/public     ; carpeta a compartir
-  browsable = yes               ; la carpeta serà visible quan accedir a \\IP_servidor
   read only = no                ; es permet l'escriptura, també es pot posar writeable=yes
+  browsable = yes               ; la carpeta serà visible quan accedir a \\IP_servidor
   guest ok = yes                ; s'admet l'usuari convidat de Linux per accedir al recurs
   guest only = yes              ; tots els accessos al recurs s'accepten en mode convidat
   ```
