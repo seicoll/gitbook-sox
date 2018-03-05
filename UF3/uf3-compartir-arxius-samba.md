@@ -149,7 +149,7 @@ Per compartir un recurs \(arxiu o carpeta\), hem d'editar el fitxer `/etc/samba/
 
 ## Gestió d'usuaris Samba
 
-El **Samba** disposa de la seva **pròpia base de dades d’usuaris** Samba que podran accedir als recursos compartits.
+> El **Samba** disposa de la seva **pròpia base de dades d’usuaris** Samba que podran accedir als recursos compartits.
 
 Per tant, el **Samba** és un servei que **requereix l’administració dels usuaris** per poder-ne gestionar els permisos.
 
@@ -162,11 +162,11 @@ En funció de l’usuari que hi accedeixi, el **Samba** es comportarà d’una m
 **Samba** té un arxiu que relaciona usuaris de Samba amb usuaris de Linux:
 
 * Cada usuari Samba ha d'estar relacionat amb un usuari Linux, però no té perquè tenir el mateix nom
-* Diversos usuaris Samb poden estar relacionats amb un mateix usuari Linux.
+* Diversos usuaris Samba poden estar relacionats amb un mateix usuari Linux.
 
 | **Usuari Samba** | **Usuari Linux** |  |
 | --- | --- | --- |
-| alumne | alumne | L'usuari Samba _**alumne **_es transformarà en l'usuari Linux _**alumne**_ |
+| alumne | alumne | L'usuari Samba _**alumne**_ es transformarà en l'usuari Linux _**alumne**_ |
 | professorESO | professor | L'usuri Samba i l'usuari Linux no tenen perquè tenir el mateix nom |
 | professorCF | professor | L'usuari Linux _**professor**_ té més d'un usuari Samba relacionat |
 
