@@ -10,19 +10,23 @@ Amb **NFS**, no hi ha cap procés d’acreditació d’usuaris per accedir al re
 
 La **manca d’autenticació d’usuaris** és un dels majors inconvenients del protocol **NFS**.
 
-* Només podem **restringir els permisos dels usuaris** utilitzant mecanisme habitual de permisos en sistema de fitxer Linux.
+* Només podem **restringir els permisos dels usuaris** utilitzant mecanisme habitual de permisos en sistema de fitxers Linux.
 
 Per aquesta raó cada vegada s’utilitzen més altres sistemes de compartició de fitxers com, per exemple, el **Samba**.
 
 ## Què és Samba?
 
-> El **Samba** és un paquet de programari per **Linux** que permet compartir recursos \(arxius, carpetes i impressores\) utilitzant el protocol de comunicació **SMB/CIFS** que és el protocol  utilitzat per sistemes operatius **Windows** per compartir carpetes i impressores.
+> El **Samba** és un paquet de programari per **Linux** que permet compartir recursos \(carpetes i impressores\) utilitzant el protocol de comunicació **SMB/CIFS** que és el protocol  utilitzat per sistemes operatius **Windows** per compartir carpetes i impressores.
 
-Això fa possible que es pugui accedir a recursos compartits amb **Linux** des de clients **Windows**.
+Samba té com a **objectiu** oferir una alternativa **lliure** perquè els sistemes "_no Microsoft_" puguin intercanviar arxius i impressores amb sistemes Microsoft.
 
-També es podrà accedir a aquests recursos des de Linux si es té instal·lat el client **smbclient**.
+* Això fa possible que es pugui accedir a **recursos compartits amb Linux** des de clients **Windows**.
+
+* I també es podrà accedir a aquests recursos compatits des de Linux si es té instal·lat el client **smbclient**.
 
 > Gràcies al **Samba**, en una xarxa hi pot haver equips amb Windows i equips amb Linux que intercanviïn informació en carpetes compartides i comparteixin impressores.
+
+El nom **_Samba_** prové d'afegir dues vocals al nom del protocol estàndard usat pel sistema de xarxa de Microsoft Windows, **_SMB_**. 
 
 ## Instal·lació i configuració de Samba
 
