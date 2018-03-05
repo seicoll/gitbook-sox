@@ -115,18 +115,9 @@ Per compartir un recurs \(arxiu o carpeta\), hem d'editar el fitxer `/etc/samba/
 
 > Normalment aquesta nova secció es posa al final del fitxer.
 
-Per **exemple**, si volem compartir la carpeta `/home/samba/alumnes` i anomenar al recurs _**alumnes**_, crearem una secció _**\[alumnes\]**_ on es configurarà amb els paràmetres específics.
+**Exemple 1:** si volem compartir la carpeta `srv/samba/public` i anomenar al recurs _**public**_ crearem una secció _**\[public\]**_ on es configurarà amb els paràmetres específics.
 
-Els principals **paràmetres** que s'han de configurar per un recurs compartit són:
-
-* **Nom** del recurs compartit: No cal que sigui el mateix nom que té l'arxiu o carpeta que es vol compartir. 
-* **Path**: Ruta local on es troba l'arxiu o carpeta que es vol compartir.
-* **Mode de compartició**: si tindrà permís de lectura i/o escriptura \(_**read only**_ o _**writeable**_\).
-  * Només es pot posar un d'aquests dos últims paràmetres: tots dos serveixen per indicar el mode de compartició però amb l'efecte contrari un de l'altre \(_**writable = no**_ seria el mateix que _**read only = yes**_\).
-* **Visibilitat**: si serà visible de forma remota \(_**browsable**_\).
-* **Accessibilitat**: si serà accessible per tothom o només per alguns usuaris o grups.
-
-**Exemple 1:** compartim el recurs _**public**_ de manera que es permeti l'accés als usuaris convidats sense necessitat d'introduir una contrasenya d'accés.
+1. Si volem que es permeti l'accés als **usuaris convidats** sense necessitat d'introduir una contrasenya d'accés, configurament el recurs compartit de la següent forma:
 
   ```
   # Carpeta comuna public
@@ -137,15 +128,24 @@ Els principals **paràmetres** que s'han de configurar per un recurs compartit s
   guest ok = yes                ; s'admet l'usuari convidat de Linux per accedir al recurs
   guest only = yes              ; tots els accessos al recurs s'accepten en mode convidat
   ```
+  
+  Els principals **paràmetres** que s'han de configurar per un recurs compartit són:
 
-  Creem la carpeta al servidor i canviem els seus permisos.
+  * **Nom** del recurs compartit: No cal que sigui el mateix nom que té l'arxiu o carpeta que es vol compartir. 
+  * **Path**: Ruta local on es troba l'arxiu o carpeta que es vol compartir.
+  * **Mode de compartició**: si tindrà permís de lectura i/o escriptura \(_**read only**_ o _**writeable**_\).
+    * Només es pot posar un d'aquests dos últims paràmetres: tots dos serveixen per indicar el mode de compartició però amb l'efecte contrari un de l'altre \(_**writable = no**_ seria el mateix que _**read only = yes**_\).
+  * **Visibilitat**: si serà visible de forma remota \(_**browsable**_\).
+  * **Accessibilitat**: si serà accessible per tothom o només per alguns usuaris o grups.
+
+2. Creem la carpeta al servidor i canviem els seus permisos.
 
   ```
   sudo mkdir -p /srv/samba/public
   sudo chown nobody:nogroup /srv/samba/public
   ```
  
-  I reiniciem Samba.
+3. I reiniciem Samba.
 
   `service smbd restart`
 
