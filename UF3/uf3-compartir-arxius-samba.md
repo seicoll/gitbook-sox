@@ -42,7 +42,7 @@ Els **paquets** més utilitzats són els següents:
 * **samba-doc**: documentació del Samba.
 * **cifs-utils**: ordres per muntar i desmuntar unitats de xarxa Samba.
 
-Per **instal·lar** el servei Samba a l'Ubuntu.
+Per **instal·lar** el servei Samba:
 
 ```
 sudo apt install samba cifs-utils
