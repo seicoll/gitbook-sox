@@ -134,7 +134,7 @@ Per compartir un recurs \(arxiu o carpeta\), hem d'editar el fitxer `/etc/samba/
   * **Nom** del recurs compartit: No cal que sigui el mateix nom que té l'arxiu o carpeta que es vol compartir. 
   * **Path**: Ruta local on es troba l'arxiu o carpeta que es vol compartir.
   * **Mode de compartició**: si tindrà permís de lectura i/o escriptura \(_**read only**_ o _**writeable**_\).
-    * Només es pot posar un d'aquests dos últims paràmetres: tots dos serveixen per indicar el mode de compartició però amb l'efecte contrari un de l'altre \(_**writable = no**_ seria el mateix que _**read only = yes**_\).
+    * Només es pot posar un d'aquests dos últims paràmetres: tots dos serveixen per indicar el mode de compartició però amb l'efecte contrari un de l'altre \(_**writeable = no**_ seria el mateix que _**read only = yes**_\).
   * **Visibilitat**: si serà visible de forma remota \(_**browsable**_\).
   * **Accessibilitat**: si serà accessible per tothom o només per alguns usuaris o grups.
 
