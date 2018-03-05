@@ -51,7 +51,6 @@ La configuració del servidor **Samba** es fa, principalment, a partir del **fit
 ```
 [global]
     workgroup = WORKGROUP
-    security = user
     server role = standalone server
 ...
 [homes]
@@ -81,6 +80,7 @@ El fitxer està dividit en **tres seccions** principals \(_**global, homes i pri
 
 Per **comprovar** que el nostre arxiu `/etc/samba/smb.conf` és **correcte**, és recomenable utilitzar l’ordre `testparm` per localitzar-hi errors.
 
+<!--
 ### Nivells de seguretat
 
 **Samba** es pot configurar en diversos nivells de seguretat.
@@ -91,6 +91,8 @@ Per **comprovar** que el nostre arxiu `/etc/samba/smb.conf` és **correcte**, é
 
 * _**security=domain**_: el servidor Samba actua com un controlador de domini.
 
+-->
+
 ## Configurar Samba com a servidor d'arxius
 
 Una de les formes de compartir axius en xarxa amb equips **Ubuntu i Windows** és configurar **Samba com a servidor d'arxius**.
@@ -99,7 +101,9 @@ El servidor es configurarà per **compartir arxius amb qualsevol client de la xa
 
 En la secció **\[global\]** del fitxer de configuració de samba `/etc/samba/smb.conf` hi ha un paràmetre anomenat **workgroup **on hi posarem el nom de la nostra xarxa.
 
+<!--
 I definirem el paràmetre **security = share** per què no demani usuari i contrasenya per entrar a la carpeta compartida.
+-->
 
 ```
 workgroup = BOSCCOMA
