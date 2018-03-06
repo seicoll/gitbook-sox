@@ -115,7 +115,7 @@ Per exemple, es pot canviar el nom del compte (**login**), el grup principal, af
 
 **_-aG_**: Per afegir l'usuari a **grups secundaris**:
 
-`sudo usermod -aG <grup> [grup ...] <usuari>`
+`sudo usermod -aG <grup> [, grup ...] <usuari>`
 
 **_-m_**: Per **canviar el directori personal** i moure els seus arxius al nou directori:
 
