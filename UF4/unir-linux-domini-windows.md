@@ -146,6 +146,10 @@ Es poden utilitzar els mateixos formats que s'utilitzen en Windows:
 
 Si s'utilitza la primera forma quan es valida des de la consola, és possible que calgui posar **doble contrabarra** (\\) entre el nom del domini i el nom d'usuari: `ADXXX\\usuari`
 
+## Desconnexió del domini i desinstal·lació de PBIS en el client Linux
+
+
+
 
 
 
