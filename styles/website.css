@@ -41,13 +41,13 @@ img
 /* SUMMARY */ 
 
 /* Ampliem l'amplada */
-.book .book-summary{
+.book-summary{
    left:-400px;
    width: 400px;
 }
 
 @media (min-width: 600px){
-   .book .book.with-summary .book-body {
+   .book.with-summary .book-body {
       left: 400px;
   }
 }
