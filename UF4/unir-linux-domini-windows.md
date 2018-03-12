@@ -133,3 +133,19 @@ ADXXX\profes:PBIS:2035287124:ADXXX\ppadilla
 ADXXX\alumnes:PBIS:2035287125:ADXXX\aamat
 ```
 
+Els usuaris i grups del domini apareixen amb el nom NetBIOS del domini al davant: `ADXXX\usuari` o  `ADXXX\grup`.
+
+### Validar usuaris del domini Windows
+
+Per poder validar usuaris des de l'entorn gràfic escrivint el seu identificador, cal [configurar **LightDM**](https://seicoll.gitbooks.io/sox/content/UF2/uf2-auteticacio-ldap.html#validar-usuaris-amb-entorn-gr%C3%A0fic).
+
+Es poden utilitzar els mateixos formats que s'utilitzen en Windows:
+
+* **ADXXX\usuari**
+* **usuari@adxxx.local**
+
+Si s'utilitza la primera forma quan es valida des de la consola, és possible que calgui posar **doble contrabarra** (\\) entre el nom del domini i el nom d'usuari: `ADXXX\\usuari`
+
+
+
+
