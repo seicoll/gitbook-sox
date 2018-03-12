@@ -69,6 +69,7 @@
     * [Accedir a recursos compartits en Windows des de Linux](UF4/uf4-compartir-de-windows-a-linux.md)
     * [Compartir arxius i carpetes amb SAMBA](UF3/uf3-compartir-arxius-samba.md)
   * [Gestió de dominis en escenaris heterogenis](UF4/gestio-dominis.md)
+    * [Unir un client Linux a un domini Windows](UF4/unir-linux-domini-windows.md)
     * [Samba 4 com a controlador de domini (DC)](UF4/controlador-domini-samba.md)
     * [Administrar el directori actiu de Samba 4](UF4/administrar-sambaAD.md)
     * [Perfils mòbils en un domini Samba AD](UF4/perfils-mobils-sambaAD.md)

@@ -1,6 +1,6 @@
 <!-- notoc -->
 
-# Introducció
+# Gestió de dominis en escenaris heterogenis 
 
 **Windows** utilitza **Active Directory** per gestionar els usuaris i recursos d'un domini.
 
