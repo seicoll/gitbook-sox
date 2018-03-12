@@ -28,7 +28,7 @@ Per motius de seguretat, el programa PBIS Open utilitza ssh per comunicar-se amb
 ## Instal·lació del programa PBIS Open en el client Linux
 
 ### Descarregar PBIS Open
-En un client Linux, descarregar el paquet PBIS Open que es pot trobar en aquesta web: [https://www.beyondtrust.com/powerbroker-identity-services-open-request/?Pass=True](https://www.beyondtrust.com/powerbroker-identity-services-open-request/?Pass=True). Cal triar l'opció adequada en funció del sistema on es vulgui instal·lar.
+En un client Linux, descarregar el paquet PBIS Open que es pot trobar en aquesta web: [https://github.com/BeyondTrust/pbis-open/wiki](https://github.com/BeyondTrust/pbis-open/wiki). 
 
 Descarrega el paquet PBIS Open del repositori de [GitHub](https://github.com/BeyondTrust/pbis-open/releases) (32 o 64 bits):
 * [https://github.com/BeyondTrust/pbis-open/releases/download/8.5.7/pbis-open-8.5.7.385.linux.x86.deb.sh](https://github.com/BeyondTrust/pbis-open/releases/download/8.5.7/pbis-open-8.5.7.385.linux.x86.deb.sh)
@@ -41,6 +41,10 @@ Descarrega el paquet PBIS Open del repositori de [GitHub](https://github.com/Bey
 ```
 wget https://github.com/BeyondTrust/pbis-open/releases/download/8.5.2/pbis-open-8.5.2.265.linux.x86_64.deb.sh
 ```
+
+També es pot **instal·lar PBIS Open mitjançant APT** seguin les següents instruccions:
+
+[https://repo.pbis.beyondtrust.com/apt.html](https://repo.pbis.beyondtrust.com/apt.html)
 
 ### Instal·lar PBIS Open
 
