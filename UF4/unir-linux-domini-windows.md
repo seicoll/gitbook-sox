@@ -54,7 +54,7 @@ sudo reboot
 ### Comprovar el servei PBIS
 Amb la comanda **pbis status** es pot comprovar l'estat del servei:
 
-```bash+theme=dark
+```bash+theme:dark
 usuari@ucxxx:~$ pbis status
 ...
 [Authentication provider: lsa-activedirectory-provider]
