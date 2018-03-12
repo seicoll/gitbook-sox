@@ -25,4 +25,53 @@ Per motius de seguretat, el programa PBIS Open utilitza ssh per comunicar-se amb
 
 ## Instal·lació del programa PBIS Open en el client Linux
 
+### Descarregar PBIS Open
+En un client Linux, descarregar el paquet PBIS Open que es pot trobar en aquesta web: [https://www.beyondtrust.com/powerbroker-identity-services-open-request/?Pass=True](https://www.beyondtrust.com/powerbroker-identity-services-open-request/?Pass=True). Cal triar l'opció adequada en funció del sistema on es vulgui instal·lar.
+
+Si no es disposa d'un entorn gràfic amb navegador, també es pot descarregar mirant l'adreça de l'enllaç adequat i utilitzant la comanda wget:
+
+```
+wget https://github.com/BeyondTrust/pbis-open/releases/download/8.5.2/pbis-open-8.5.2.265.linux.x86_64.deb.sh
+```
+
+### Instal·lar PBIS Open
+
+Per instal·lar-lo, primer se li han de donar permisos d'execució a l'arxiu descarregat.
+
+`chmod a+x pbis-open-8.5.2.265.linux.x86_64.deb.sh`
+
+Després ja es pot executar amb la següent comanda (cal respondre sempre yes):
+
+`sudo ./pbis-open-8.5.2.265.linux.x86_64.deb.sh`
+
+>**ATENCIÓ**: encara que s'obri una finestra per connectar al domini, abans s'ha de comprovar que el servei **lwsmd** es reinicia correctament, i després reiniciar el sistema:
+
+```
+sudo service lwsmd restart
+sudo reboot
+```
+
+### Comprovar el servei PBIS
+Amb la comanda **pbis status** es pot comprovar l'estat del servei:
+
+```bash+theme=dark
+usuari@ucxxx:~$ pbis status
+...
+[Authentication provider: lsa-activedirectory-provider]
+    Status:        Online
+    Mode:          Un-provisioned
+    Domain:        ADXXX.LOCAL
+    Domain SID:    S-1-5-21-3903495518-2577291124-556879616
+    Forest:        adxxx.local
+...
+    [Domain: ADXXX]
+        DNS Domain:       adxxx.local
+        Netbios name:     ADXXX
+        Forest name:      adxxx.local
+...
+        [Domain Controller (DC) Information]
+            DC Name:              wsxxx.adxxx.local
+            DC Address:           172.30.0.10
+...
+```
 
