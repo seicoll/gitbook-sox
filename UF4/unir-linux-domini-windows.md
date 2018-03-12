@@ -150,7 +150,9 @@ Si s'utilitza la primera forma quan es valida des de la consola, és possible qu
 
 ## Desconnexió del domini i desinstal·lació de PBIS en el client Linux
 
-### Mode gràfic
+### Desconnectar la màquina client del domini
+
+**Mode gràfic**
 
 `sudo /opt/pbis/bin/domainjoin-gui leave`
 
@@ -159,12 +161,12 @@ En el diàleg que apareixerà, només cal comprovar que les dades siguin correct
 
 ![](/assets/PBIS-nodomini.png)
 
-### Amb comandes
+**Amb comandes**
 
 `sudo /opt/pbis/bin/domainjoin-cli leave`
 
 
-## Desinstal·lar el programa PBIS
+### Desinstal·lar el programa PBIS
 
 Per desinstal·lar el programa després de desconnectar la màquina del domini:
 
@@ -172,7 +174,7 @@ Per desinstal·lar el programa després de desconnectar la màquina del domini:
 
 >**ATENCIÓ**: abans d'utilitzar la comanda anterior, s'ha d'haver desconnectat la màquina del domini. A més, s'ha d'executar des de qualsevol carpeta que no sigui (o estigui dins de) la carpeta de pbis per tal que el programa de desinstal·lació pugui esborrar la carpeta.
 
-## Desconnectar i desinstal·lar simultàniament
+### Desconnectar i desinstal·lar simultàniament
 Amb la següent comanda es pot desinstal·lar i esborrar completament el programa sense haver de desconnectar la màquina del domini:
 
 `sudo /opt/pbis/bin/uninstall.sh purge`
