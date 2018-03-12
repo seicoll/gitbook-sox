@@ -1,5 +1,7 @@
 # Unir un client Linux a un domini Windows
 
+## Introducció
+
 Hi ha moltes formes d'unir un client Linux a un domini Windows amb Active Directory, però una de les més senzilles és utilitzar un programa que s'encarregui de fer la major part de la configuració del sistema en lloc de fer-ho manualment.
 
 En versions més antigues d'Ubuntu Desktop podem trobar en els mateixos repositoris d'Ubuntu el paquet **_Likewise Open_**, però actualment l'empresa Beyond Trust s'ha encarregat d'actualitzar-lo i li ha canviat el nom per **_PBIS Open_**.
@@ -147,6 +149,43 @@ Es poden utilitzar els mateixos formats que s'utilitzen en Windows:
 Si s'utilitza la primera forma quan es valida des de la consola, és possible que calgui posar **doble contrabarra** (\\) entre el nom del domini i el nom d'usuari: `ADXXX\\usuari`
 
 ## Desconnexió del domini i desinstal·lació de PBIS en el client Linux
+
+### Mode gràfic
+
+`sudo /opt/pbis/bin/domainjoin-gui leave`
+
+
+En el diàleg que apareixerà, només cal comprovar que les dades siguin correctes (nom de la màquina i el domini) i clicar el botó **Leave Domain**.
+
+![](/assets/PBIS-nodomini.png)
+
+### Amb comandes
+
+`sudo /opt/pbis/bin/domainjoin-cli leave`
+
+
+## Desinstal·lar el programa PBIS
+
+Per desinstal·lar el programa després de desconnectar la màquina del domini:
+
+`sudo /opt/pbis/bin/uninstall.sh uninstall`
+
+>**ATENCIÓ**: abans d'utilitzar la comanda anterior, s'ha d'haver desconnectat la màquina del domini. A més, s'ha d'executar des de qualsevol carpeta que no sigui (o estigui dins de) la carpeta de pbis per tal que el programa de desinstal·lació pugui esborrar la carpeta.
+
+## Desconnectar i desinstal·lar simultàniament
+Amb la següent comanda es pot desinstal·lar i esborrar completament el programa sense haver de desconnectar la màquina del domini:
+
+`sudo /opt/pbis/bin/uninstall.sh purge`
+
+Si cal, també s'hauran de canviar els servidors DNS i eliminar el domini de cerca.
+
+## Documentació i recursos
+
+* **Font d'informació**: [Apunts SOX (Pere Sánchez)](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=3.5.0)
+
+
+
+
 
 
 
