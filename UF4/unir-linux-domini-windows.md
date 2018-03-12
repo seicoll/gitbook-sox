@@ -75,3 +75,61 @@ usuari@ucxxx:~$ pbis status
 ...
 ```
 
+## Unir el client Linux a un domini Windows
+
+### Utilitzant la interfície gràfica
+
+Per obrir la interfície gràfica cal executar la següent comanda:
+
+`sudo /opt/pbis/bin/domainjoin-gui`
+
+![](/assets/PBIS-domini.png)
+
+* Nom del domini: `adxxx.local`
+* Deshabilitar l'opció _**Enable default user name prefix**_
+
+Quan es faci clic a l'opció **_Join Domain_** demanarà el nom d'un usuari que pugui unir màquines al domini (normalment l'administrador del domini) i la seva contrasenya.
+
+> **ATENCIÓ**: si no es desmarca l'opció **_Enable default user name prefix_** es podran validar usuaris sense haver de posar el prefix **ADXXX\** o el sufix **@adxxx.local**, però pot portar a confusió si existeixen usuaris locals amb el mateix nom que usuaris del domini.
+
+Ha de sortir el missatge **_SUCCESS_** si s'ha unit correctament al domini.
+
+Cal **reiniciar** el sistema per poder validar usuaris de l'Active Directory.
+
+### Utilitzant la consola
+
+Al executar la següent comanda, demanarà la contrasenya de l'usuari **administrador** del domini.
+
+`
+sudo /opt/pbis/bin/domainjoin-cli join adxxx.local administrador
+`
+
+Ha de sortir el missatge **_SUCCESS_** si s'ha unit correctament al domini.
+
+Cal **reiniciar el sistema** per poder validar usuaris de l'Active Directory.
+
+## Comprovació i validació d'usuaris en el client Linux
+
+Comprovar que el sistema pot mostrar els usuaris del domini
+Amb les comandes **getent passwd** i **getent group** es poden veure els usuaris del sistema:
+
+```bash+theme:dark
+usuari@ucxxx:~$ getent passwd
+root:x:0:0:root:/root:/bin/bash
+usuari:x:1000:1000:usuari,,,:/home/usuari:/bin/bash
+...
+ADXXX\administrador:PBIS:2035286516:2035286529::/home/ADXXX/administrador:/bin/bash
+ADXXX\usuari:PBIS:2035287018:2035286529:usuari:/home/ADXXX/usuari:/bin/bash
+ADXXX\ppadilla:PBISX:2035287130:2035286529:Pau Padilla Verde:/home/ADXXX/ppadilla:/bin/bash
+ADXXX\aamat:PBISx:2035287137:2035286529:Albert Amat:/home/ADXXX/aamat:/bin/bash
+
+usuari@ucxxx:~$ getent group
+root:x:0:
+usuari:x:1000:
+...
+ADXXX\admins.^del^dominio:PBIS:2035286528:
+ADXXX\usuarios^del^dominio:PBIS:2035286529:ADXXX\pverde
+ADXXX\profes:PBIS:2035287124:ADXXX\ppadilla
+ADXXX\alumnes:PBIS:2035287125:ADXXX\aamat
+```
+
