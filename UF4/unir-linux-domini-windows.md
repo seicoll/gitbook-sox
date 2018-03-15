@@ -135,7 +135,7 @@ Amb la següent comanda s'aconsegueix que el directori personal d'un usuari del 
 
 **Obligar a posar el prefix del domini per validar els usuaris**
 
-`sudo /opt/pbis/bin/config AssumeDefaultDomain false`
+`sudo /opt/pbis/bin/config AssumeDefaultDomain false` 
 
 ## Unir el client Linux a un domini Windows
 
