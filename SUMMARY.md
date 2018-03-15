@@ -77,9 +77,12 @@
   * [Activitats](UF4/uf4-activitats.md)
     * [Activitat 1. Compartir recursos amb Windows i accedir des de Linux](https://docs.google.com/document/d/1KDLMK1oI_3DBKD2G8YdXofjKtSx51vbF1XcLiZ_nPHo/edit?usp=sharing)
 
-<!--
-    * [Activitat 2. Unir un client Linux a un domini Windows](UF4/act/act2.md)
--->
+    * [Activitat 2. Compartir recursos amb Samba](https://docs.google.com/document/d/1YPA6u2vNXcuZ4WO0kzYZPs_MVBPQzZpaOOce2bKWHZA/edit?usp=sharing)
+    
+    * [Activitat 3. Unir un client Linux a un domini Windows](https://docs.google.com/document/d/1V4aPQy2GKtNZtHiSlvXqdzxrRb8hojm1E86clAJAJ7A/edit?usp=sharing)
+
+
+
 <!--
     * [Activitat 3. Samba 4 com a controlador primari de domini (AD DC)](UF4/act/act3.md)
 -->
