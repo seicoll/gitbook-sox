@@ -87,6 +87,56 @@ usuari@ucxxx:~$ pbis status
 ...
 ```
 
+## Configuració dels paràmetres bàsics
+
+### Comanda per configurar PBIS
+
+Per canviar la configuració de PBIS s'utilitza la comanda **/opt/pbis/bin/config**.
+
+Amb els paràmetres **--list** i **--dump** es poden veure tot els paràmetres que es poden configurar i quins valors tenen actualment:
+
+```bash+theme:dark
+usuari@ucxxx:~$ /opt/pbis/bin/config --dump
+AllowDeleteTo ""
+AllowReadTo ""
+AllowWriteTo ""
+...
+DomainSeparator "\\"
+SpaceReplacement "^"
+...
+AssumeDefaultDomain false
+CreateHomeDir true
+...
+HomeDirPrefix "/home"
+HomeDirTemplate "%H/%D/%U"
+RemoteHomeDirTemplate ""
+HomeDirUmask "022"
+LoginShellTemplate "/bin/bash"
+SkeletonDirs "/etc/skel"
+UserDomainPrefix ""
+...
+Local_HomeDirTemplate "%H/local/%D/%U"
+Local_HomeDirUmask "022"
+Local_LoginShellTemplate "/bin/sh"
+Local_SkeletonDirs "/etc/skel"
+```
+
+### Configuracions bàsiques
+
+**Canviar el shell (intèrpret de comandes) per defecte que utilitzaran els usuaris**
+
+`sudo /opt/pbis/bin/config LoginShellTemplate /bin/bash`
+
+**Canviar el directori de treball dels usuaris**
+
+Amb la següent comanda s'aconsegueix que el directori personal d'un usuari del domini sigui **/home/ADXXX/usuari**:
+
+`sudo /opt/pbis/bin/config HomeDirTemplate %H/%D/%U`
+
+**Obligar a posar el prefix del domini per validar els usuaris**
+
+`sudo /opt/pbis/bin/config AssumeDefaultDomain false`
+
 ## Unir el client Linux a un domini Windows
 
 ### Utilitzant la interfície gràfica
