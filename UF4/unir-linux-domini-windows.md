@@ -182,8 +182,8 @@ usuari:x:1000:1000:usuari,,,:/home/usuari:/bin/bash
 ...
 ADXXX\administrador:PBIS:2035286516:2035286529::/home/ADXXX/administrador:/bin/bash
 ADXXX\usuari:PBIS:2035287018:2035286529:usuari:/home/ADXXX/usuari:/bin/bash
-ADXXX\ppadilla:PBISX:2035287130:2035286529:Pau Padilla :/home/ADXXX/ppadilla:/bin/bash
-ADXXX\aamat:PBISx:2035287137:2035286529:Albert Amat:/home/ADXXX/aamat:/bin/bash
+ADXXX\ppadilla:PBIS:2035287130:2035286529:Pau Padilla :/home/ADXXX/ppadilla:/bin/bash
+ADXXX\aamat:PBIS:2035287137:2035286529:Albert Amat:/home/ADXXX/aamat:/bin/bash
 
 usuari@ucxxx:~$ getent group
 root:x:0:
