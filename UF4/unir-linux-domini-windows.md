@@ -19,6 +19,10 @@ Es pot trobar tota la documentació sobre PBIS a la [web de Beyond Trust](https:
 domain-name=.alocal
 ```
 
+I reiniciem el servei:
+
+`sudo service avahi-daemon restart`
+
 ### Instal·lació del servei SSH
 
 Per motius de seguretat, el programa PBIS Open utilitza ssh per comunicar-se amb el servidor de forma encriptada, i necessita que estigui instal·lat el servei de **ssh** en el client:
