@@ -44,7 +44,7 @@ Un cop tenim instal·lat Samba, podem **promoure l'equip com a controlador de do
   `sudo samba-tool domain provision --use-rfc2307 --interactive`
   
 Les dades que cal introduir són les següents (excepte la contrasenya, si s'han fet les configuracions anteriors correctament, només caldrà confirmar l'opció per defecte amb la tecla Intro):
-* **Realm** (Nom del domini): **_ELTEUNOM_.LOCAL** (tot en majúscules)
+* **Realm** (Nom del domini): **_SAMBAXXX_.LOCAL** (tot en majúscules) (XXX són les teves inicials)
 * **Domain** (Nom _NetBIOS_ del domini): _**ELTEUNOM**_
 * **Server Role** (Funció de Samba): **dc** (controlador de domini)
 * **DNS backend** (Servidor DNS): **SAMBA_INTERNAL** (els sevidor DNS serà el propi Samba). 
@@ -78,11 +78,11 @@ netmask x.x.x.x
 gateway x.x.x.x
 
 dns-nameservers 127.0.0.1
-dns-search elteunom.local
+dns-search sambaxxx.local
 ```
 
-La segona línia `dns-search elteunom.local` serveix per facilitar les cerques dins del domini. 
-* Per exemple, en lloc d'haver d'escriure la comanda  `nslookup server.elteunom.local` per obtenir l'adreça del servidor, n'hi haurà prou posant `nslookup server`.
+La segona línia `dns-search sambaxxx.local` serveix per facilitar les cerques dins del domini. 
+* Per exemple, en lloc d'haver d'escriure la comanda  `nslookup server.sambaxxx.local` per obtenir l'adreça del servidor, n'hi haurà prou posant `nslookup server`.
 
 Per actualitzar tots els serveis que s'han configurat, el més fàcil és reiniciar el servidor:
 
@@ -110,10 +110,10 @@ Per tant, comprovem que el servei DNS funciona correctament comprovant si el ser
 
 ```bash+theme:dark
 root@server:~# host -t SRV _ldap._tcp.elteunom.local.
-_ldap._tcp.elteunom.local has SRV record 0 100 389 server.elteunom.local.
+_ldap._tcp.sambaxxx.local has SRV record 0 100 389 server.sambaxxx.local.
 
-root@server:~# host -t A server.elteunom.local.
-server.elteunom.local has address 172.21.0.10
+root@server:~# host -t A server.sambaxxx.local.
+server.sambaxxx.local has address 172.21.0.10
 ```
 
 ### Comprovació del servidor de fitxers
@@ -129,7 +129,7 @@ Domain=[ELTEUNOM] OS=[windows 6.1] Server=[Samba 4.3.11-Ubuntu]
     netlogon        Disk     
     sysvol          Disk     
     IPC$            IPC       IPC Service (Samba 4.3.11-Ubuntu)
-Domain=[ELTEUNOM] OS=[windows 6.1] Server=[Samba 4.3.11-Ubuntu]
+Domain=[SAMBAXXX] OS=[windows 6.1] Server=[Samba 4.3.11-Ubuntu]
 
     Server               Comment
     ---------            -------
@@ -164,7 +164,7 @@ En el procés d'instal·lació ens demana el nom del Real, on cal introduir el q
 
 Finalment, fem la comprovació del servei kerberos.
 
-  `kinit administrator@ELTEUNOM.LOCAL`
+  `kinit administrator@SAMBAXXX.LOCAL`
   
 > **Recorda** que l'usuari administrador de Samba es diu _**administrator**_ i vam assignar-li una contrasenya durant la creació del domini.
 
@@ -207,7 +207,7 @@ Es fa de la mateixa forma que per unir-lo a un domini Windows:
 
 3. Connectar-lo al nou domini: _**Panel de control > Sistema > Cambiar configuración > Dominio**_
 
-  Caldrà posar el nom del domini (_ELTEUNOM_ o _elteunom.local_) i quan demani un usuari, s'ha de posar **_Administrator_**, que és l'usuari administrador del domini fet amb Samba.
+  Caldrà posar el nom del domini (_SAMBAXXX_ o _sambaxxx.local_) i quan demani un usuari, s'ha de posar **_Administrator_**, que és l'usuari administrador del domini fet amb Samba.
 
   ![](/assets/samba4_unir_client2.jpg)
   
