@@ -26,7 +26,7 @@ Aquest fet suposa un millora molt atractiva ja que permet a moltes organitzacion
   
 Un cop instal·lat, podem comprovar que tenim instal·lada la versió 4 executant la comanda:
    
-```bash
+```bash+theme:dark
 root@server# samba -V
 Version 4.3.11-Ubuntu
 ```
