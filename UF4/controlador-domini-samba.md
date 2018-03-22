@@ -45,7 +45,7 @@ Un cop tenim instal·lat Samba, podem **promoure l'equip com a controlador de do
   
 Les dades que cal introduir són les següents (excepte la contrasenya, si s'han fet les configuracions anteriors correctament, només caldrà confirmar l'opció per defecte amb la tecla Intro):
 * **Realm** (Nom del domini): **_SAMBAXXX_.LOCAL** (tot en majúscules) (XXX són les teves inicials)
-* **Domain** (Nom _NetBIOS_ del domini): _**ELTEUNOM**_
+* **Domain** (Nom _NetBIOS_ del domini): _**SAMBAXXX**_
 * **Server Role** (Funció de Samba): **dc** (controlador de domini)
 * **DNS backend** (Servidor DNS): **SAMBA_INTERNAL** (els sevidor DNS serà el propi Samba). 
 * **DNS forwarder IP address** (Reenviador de DNS): **8.8.8.8** (servidor DNS al que es preguntarà quan no es pugui resoldre un nom, posem el de Google, el del centre o d'un altre servidor extern). 
@@ -109,7 +109,7 @@ Perquè Samba funcioni correctament és necessari que els servidor DNS associat 
 Per tant, comprovem que el servei DNS funciona correctament comprovant si el servei ldap i el servidor es resolen a través del servei de noms DNS.
 
 ```bash+theme:dark
-root@server:~# host -t SRV _ldap._tcp.elteunom.local.
+root@server:~# host -t SRV _ldap._tcp.sambaxxx.local.
 _ldap._tcp.sambaxxx.local has SRV record 0 100 389 server.sambaxxx.local.
 
 root@server:~# host -t A server.sambaxxx.local.
