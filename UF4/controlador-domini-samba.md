@@ -92,7 +92,7 @@ Per actualitzar tots els serveis que s'han configurat, el més fàcil és reinic
 
 ### Comprovació que el servei Samba està funcionant
 
-```bash
+```bash+theme:dark
 root@server:~# service smbd status
  * smbd.service - LSB: start Samba SMB/CIFS daemon (smbd)
  Loaded: loaded
@@ -108,7 +108,7 @@ Perquè Samba funcioni correctament és necessari que els servidor DNS associat 
 
 Per tant, comprovem que el servei DNS funciona correctament comprovant si el servei ldap i el servidor es resolen a través del servei de noms DNS.
 
-```bash
+```bash+theme:dark
 root@server:~# host -t SRV _ldap._tcp.elteunom.local.
 _ldap._tcp.elteunom.local has SRV record 0 100 389 server.elteunom.local.
 
@@ -120,7 +120,7 @@ server.elteunom.local has address 172.21.0.10
 
 Per llistar tots els recursos compartits del controlador de domini (DC) executa:
 
-```bash
+```bash+theme:dark
 root@server:~# smbclient -L localhost -U%
 Domain=[ELTEUNOM] OS=[windows 6.1] Server=[Samba 4.3.11-Ubuntu]
 
