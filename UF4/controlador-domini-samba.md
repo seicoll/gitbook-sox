@@ -8,7 +8,7 @@ En aquesta tema, veurem la configuració d’un servidor **Samba** com a control
 
 És a dir, un domini on s’autenticaran i compartiran recursos màquines Windows i GNU/Linux.
 
-## Samba 4
+### Samba 4
 
 **Active Directory** és la característica més important alhora de decantar-se per **Windows Server** com a Sistema Operatiu en Xarxa. 
 
@@ -17,6 +17,21 @@ En aquesta tema, veurem la configuració d’un servidor **Samba** com a control
 Entre les principals millores de la **versió 4 de Samba** cal destacar el suport a **Microsoft Active Directory** que permet la implementació d’un Controlador de Domini basat en Active Directory.
 
 Aquest fet suposa un millora molt atractiva ja que permet a moltes organitzacions **estalviar diners** en la compra de llicències Microsoft Windows Server i utilitzar Samba com a controlador de domini.
+
+### Conceptes bàsics
+
+Abans de començar cal saber que el servei d'**Active Directory (AD)** necessita d'altres serveis per funcionar correctament. 
+  * Quan instal·lem un controlador de domini en un Windows Server, aquests serveis ja estan instal·lats o s'instal·len de forma automàtica, però en Linux s'ha de fer manualment.
+
+Primer de tot, el programa que ens proporcionarà el servei d'AD per Linux és el **Samba**, però ha de ser com a mínim la **versió 4**.
+
+I els serveis que necessita Samba per fer de servidor d'AD són els següents:
+
+* **Servei DNS**: permet obtenir informació sobre els objectes del domini a partir del seu nom dins del domini (per exemple, l'adreça IP d'una màquina a partir del seu nom). En un cas senzill com el nostre, el mateix Samba farà de servidor DNS.
+
+* **Servei NTP**: serveix per sincronitzar els rellotges de les màquines del domini amb precisió. Kerberos, per defecte, no accepta errors de més de 5 minuts entre el servidor i el client que està validant.
+
+* **Servei Kerberos**: és un protocol d'autenticació entre ordinadors d'una xarxa perquè tant el client com el servidor puguin comprovar de forma fiable la identitat de l'altre.
 
 ## Instal·lació de Samba 4
 
@@ -48,7 +63,7 @@ Les dades que cal introduir són les següents (excepte la contrasenya, si s'han
 * **Domain** (Nom _NetBIOS_ del domini): _**SAMBAXXX**_
 * **Server Role** (Funció de Samba): **dc** (controlador de domini)
 * **DNS backend** (Servidor DNS): **SAMBA_INTERNAL** (els sevidor DNS serà el propi Samba). 
-* **DNS forwarder IP address** (Reenviador de DNS): **8.8.8.8** (servidor DNS al que es preguntarà quan no es pugui resoldre un nom, posem el de Google, el del centre o d'un altre servidor extern). 
+* **DNS forwarder IP address** (Reenviador de DNS): **8.8.8.8** (servidor DNS al que es preguntarà quan no es pugui resoldre un nom, posem el de Google, el del centre o un altre servidor extern). 
 * **Administrator password** (Contrasenya per l'usuari _Administrator_): **\*\*\*\*\*\*** (ha de complir els criteris de complexitat de Windows)
 
 ![](/assets/saba-domain.png)
