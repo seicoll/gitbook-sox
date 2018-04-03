@@ -56,6 +56,12 @@ Version 4.3.11-Ubuntu
 A continuació, fem un còpia de l'arxiu de configuració de Samba `/etc/samba/smb.conf` per conservar-lo ja que el procés de creació del domini crearà un arxiu nou.
 
   `sudo mv /etc/samba/smb.conf  /etc/samba/smb.conf.old`
+  
+##  Configurar el nom DNS del servidor
+
+En l'arxiu `/etc/hosts', afegir el nom DNS del servidor davant del nom de la màquina:
+
+127.0.1.1   usxxx.sambaxxx.local   usxxx
 
 ## Creació d'un domini amb Samba
 
