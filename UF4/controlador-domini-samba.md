@@ -18,7 +18,7 @@ Entre les principals millores de la **versió 4 de Samba** cal destacar el supor
 
 Aquest fet suposa un millora molt atractiva ja que permet a moltes organitzacions **estalviar diners** en la compra de llicències Microsoft Windows Server i utilitzar Samba com a controlador de domini.
 
-### Conceptes bàsics
+### Conceptes previs
 
 Abans de començar cal saber que el servei d'**Active Directory (AD)** necessita d'altres serveis per funcionar correctament. 
   * Quan instal·lem un controlador de domini en un Windows Server, aquests serveis ja estan instal·lats o s'instal·len de forma automàtica, però en Linux s'ha de fer manualment.
@@ -32,6 +32,13 @@ I els serveis que necessita Samba per fer de servidor d'AD són els següents:
 * **Servei NTP**: serveix per sincronitzar els rellotges de les màquines del domini amb precisió. Kerberos, per defecte, no accepta errors de més de 5 minuts entre el servidor i el client que està validant.
 
 * **Servei Kerberos**: és un protocol d'autenticació entre ordinadors d'una xarxa perquè tant el client com el servidor puguin comprovar de forma fiable la identitat de l'altre.
+
+### Resum de passos a seguir
+
+1. Instal·lar el servei Samba.
+2. Crear el domini Samba.
+3. Instal·lar Kerberos.
+4. Instal·lar el servei NTP.
 
 ## Instal·lació de Samba 4
 
@@ -58,7 +65,8 @@ Un cop tenim instal·lat Samba, podem **promoure l'equip com a controlador de do
 
   `sudo samba-tool domain provision --use-rfc2307 --interactive`
   
-Les dades que cal introduir són les següents (excepte la contrasenya, si s'han fet les configuracions anteriors correctament, només caldrà confirmar l'opció per defecte amb la tecla Intro):
+Les dades que cal introduir són les següents (es pot confirmar l'opció per defecte amb la tecla Intro):
+
 * **Realm** (Nom del domini): **_SAMBAXXX_.LOCAL** (tot en majúscules) (XXX són les teves inicials)
 * **Domain** (Nom _NetBIOS_ del domini): _**SAMBAXXX**_
 * **Server Role** (Funció de Samba): **dc** (controlador de domini)
