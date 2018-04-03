@@ -29,9 +29,9 @@ I els serveis que necessita Samba per fer de servidor d'AD són els següents:
 
 * **Servei DNS**: permet obtenir informació sobre els objectes del domini a partir del seu nom dins del domini (per exemple, l'adreça IP d'una màquina a partir del seu nom). En un cas senzill com el nostre, el mateix Samba farà de servidor DNS.
 
-* **Servei NTP**: serveix per sincronitzar els rellotges de les màquines del domini amb precisió. Kerberos, per defecte, no accepta errors de més de 5 minuts entre el servidor i el client que està validant.
-
 * **Servei Kerberos**: és un protocol d'autenticació entre ordinadors d'una xarxa perquè tant el client com el servidor puguin comprovar de forma fiable la identitat de l'altre.
+
+* **Servei NTP**: serveix per sincronitzar els rellotges de les màquines del domini amb precisió. Kerberos, per defecte, no accepta errors de més de 5 minuts entre el servidor i el client que està validant.
 
 ### Resum de passos a seguir
 
