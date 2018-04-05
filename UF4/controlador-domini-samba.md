@@ -220,7 +220,7 @@ En el nostre cas, l'utilitzarem per sincronitzar els rellotges de les màquines 
 Així doncs, cal instal·lar el paquet **_ntp_**.
 
 ```bash
-sudo apt-get install ntp
+sudo apt-get install ntp ntpdate
 sudo service ntp stop
 sudo ntpdate ntp.ubunbu.com
 sudo service ntp start
@@ -256,7 +256,7 @@ em surt l'error:
 kinit: Generic preauthentication failure while getting initial credentials
 ```
 
-Edit file /etc/krb5.conf and update it to actively specify older cryptos:
+Edit file `/etc/krb5.conf` and update it to actively specify older cryptos:
 
 `
 [libdefaults]
