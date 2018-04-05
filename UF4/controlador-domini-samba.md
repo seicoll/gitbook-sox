@@ -111,7 +111,7 @@ dns-search sambaxxx.local
 ```
 
 La segona línia `dns-search sambaxxx.local` serveix per facilitar les cerques dins del domini. 
-* Per exemple, en lloc d'haver d'escriure la comanda  `nslookup usxxx.sambaxxx.local` per obtenir l'adreça del servidor, n'hi haurà prou posant `nslookup server`.
+* Per exemple, en lloc d'haver d'escriure la comanda  `nslookup usxxx.sambaxxx.local` per obtenir l'adreça del servidor, n'hi haurà prou posant `nslookup usxxx`.
 
 Per actualitzar tots els serveis que s'han configurat, el més fàcil és reiniciar el servidor:
 
