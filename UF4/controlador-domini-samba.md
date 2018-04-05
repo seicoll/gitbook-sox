@@ -41,14 +41,15 @@ I els serveis que necessita Samba per fer de servidor d'AD són els següents:
 4. Instal·lar Kerberos.
 5. Instal·lar el servei NTP.
 
- 
-## Canviar el nom de l'equip
+## Configuració inicial
+
+### Canviar el nom de l'equip
 
 El nom de l'equip Ubuntu Server ha de ser **_usxxx_** (xxx són les teves inicials):
 
 Per canviar el nom d'una màquina Linux, cal fer-ho en els arxius `/etc/hostname` i `/etc/hosts` i reiniciar el sistema.
 
-##  Configurar el nom DNS del servidor
+###  Configurar el nom DNS del servidor
 
 En l'arxiu `/etc/hosts', afegir el nom DNS del servidor davant del nom de la màquina:
 
