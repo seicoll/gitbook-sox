@@ -189,7 +189,7 @@ Instal·larem els **client kerberos** al sevidor per poder comprovar si funciona
  
   `sudo apt-get install krb5-user`
 
-En el procés d'instal·lació ens demana el nom del Real, on cal introduir el que hem utilitzat per el nostre domini **_ELTEUNOM.LOCAL_** . **Molt important en MAJÚSCULES!!**
+En el procés d'instal·lació ens demana el nom del Real, on cal introduir el que hem utilitzat per el nostre domini **_SAMBAXXX.LOCAL_** . **Molt important en MAJÚSCULES!!**
 
 ![](/assets/kerberos1.png)
 
