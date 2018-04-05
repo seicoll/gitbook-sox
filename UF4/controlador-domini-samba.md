@@ -111,7 +111,7 @@ dns-search sambaxxx.local
 ```
 
 La segona línia `dns-search sambaxxx.local` serveix per facilitar les cerques dins del domini. 
-* Per exemple, en lloc d'haver d'escriure la comanda  `nslookup server.sambaxxx.local` per obtenir l'adreça del servidor, n'hi haurà prou posant `nslookup server`.
+* Per exemple, en lloc d'haver d'escriure la comanda  `nslookup usxxx.sambaxxx.local` per obtenir l'adreça del servidor, n'hi haurà prou posant `nslookup server`.
 
 Per actualitzar tots els serveis que s'han configurat, el més fàcil és reiniciar el servidor:
 
@@ -137,12 +137,14 @@ Perquè Samba funcioni correctament és necessari que els servidor DNS associat 
 
 Per tant, comprovem que el servei DNS funciona correctament comprovant si el servei ldap i el servidor es resolen a través del servei de noms DNS.
 
+Recordeu que `usxxx` ha de ser el nom del vostre servidor i `sambaxxx` el nom del vostre domini.
+
 ```bash+theme:dark
 root@server:~# host -t SRV _ldap._tcp.sambaxxx.local.
-_ldap._tcp.sambaxxx.local has SRV record 0 100 389 server.sambaxxx.local.
+_ldap._tcp.sambaxxx.local has SRV record 0 100 389 usxxx.sambaxxx.local.
 
-root@server:~# host -t A server.sambaxxx.local.
-server.sambaxxx.local has address 172.21.0.10
+root@server:~# host -t A usxxx.sambaxxx.local.
+usxxx.sambaxxx.local has address 172.21.0.10
 ```
 
 ### Comprovació del servidor de fitxers
