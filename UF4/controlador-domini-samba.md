@@ -233,8 +233,6 @@ Password for administrator@SAMBAXXX.LOCAL:
 Warning: Your password will expire in 41 days on dom 09 abr 2018 21:54:26 CEST
 ```
 
-![](/assets/kerberos2.png)
-
 Si tot va bé, `Kinit` ens respon amb la data i hora que caducarà la contrasenya que acaben d'introduir.
 
 També podem utilitzar la comanda `klist` per consultar les autenticacions que hi ha guardades actualment a la caché de Kerberos.
@@ -249,8 +247,7 @@ Valid starting     Expires            Service principal
     renew until 28/02/17 08:45:27
 ``` 
 
-
-Si et cal reconfigurar els kerberos, utilitza la comanda.
+Si et cal **reconfigurar els kerberos**, utilitza la comanda.
 
 `dpkg-reconfigure krb5-config`
 
