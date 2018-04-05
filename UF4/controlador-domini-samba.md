@@ -258,12 +258,12 @@ kinit: Generic preauthentication failure while getting initial credentials
 
 Edit file `/etc/krb5.conf` and update it to actively specify older cryptos:
 
-`
+```
 [libdefaults]
     default_realm = SAMBAXXX.LOCAL
     default_tkt_enctypes = rc4-hmac des-cbc-crc des-cbc-md5
     default_tgs_enctypes = rc4-hmac des-cbc-crc des-cbc-md5
-`
+```
 
 ## Documentació i recursos
 
