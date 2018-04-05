@@ -193,6 +193,8 @@ En el procés d'instal·lació ens demana el nom del Real, on cal introduir el q
 
 ![](/assets/kerberos1.png)
 
+A continuació, l'intal·lador ens demana el nom dels servidors de Kerberos per els nostre regne. En el nostre cas només en tenim un i es diu USXXX.SAMBAXXX.LOCAL (USXXX és el nom del teu servidor).
+
 Finalment, fem la comprovació del servei kerberos.
 
   `kinit administrator@SAMBAXXX.LOCAL`
