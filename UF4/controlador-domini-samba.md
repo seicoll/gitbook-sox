@@ -106,6 +106,18 @@ I tornar a crear el domini amb la comanda anterior.
 
 `sudo samba-tool domain provision --use-rfc2307 --interactive --use-ntvfs`
 
+## Canviar l'arxiu de configuració de Kerberos
+
+Samba també generarà un arxiu de configuració per Kerberos adequat a la configuració del domini.
+
+L'únic que cal fer és copiar l'arxiu de configuració a la carpeta correcta:
+
+```
+sudo cp /var/lib/samba/private/krb5.conf /etc/krb5.conf
+```
+
+## Canviar la configuració de xarxa relacionada amb el servei DNS
+
 Finalment, i **molt important**, cal fer que el servidor s'apunti a sí mateix com a **servidor DNS** (recordeu que un controlador de domini de Active Directory utilitza el servei DNS).
 
 Així doncs, canviem la configuració de la xarxa editant l'arxiu `/etc/network/interfaces` per indicar com a primer servidor DNS el propi equip.
@@ -205,7 +217,9 @@ En el procés d'instal·lació ens demana el nom del Real, on cal introduir el q
 
 ![](/assets/kerberos1.png)
 
-A continuació, l'intal·lador ens demana el nom dels servidors de Kerberos per els nostre regne. En el nostre cas només en tenim un i es diu **USXXX.SAMBAXXX.LOCAL** (`USXXX` és el nom del teu servidor).
+<!--
+A continuació, l'instal·lador ens demana el nom dels servidors de Kerberos per els nostre regne. En el nostre cas només en tenim un i es diu **USXXX.SAMBAXXX.LOCAL** (`USXXX` és el nom del teu servidor).
+-->
 
 Finalment, fem la comprovació del servei kerberos.
 
@@ -213,11 +227,28 @@ Finalment, fem la comprovació del servei kerberos.
   
 > **Recorda** que l'usuari administrador de Samba es diu _**administrator**_ i vam assignar-li una contrasenya durant la creació del domini.
 
+```bash+theme:dark
+usuari@usxxx:~$ sudo kinit administrator
+Password for administrator@SAMBAXXX.LOCAL:
+Warning: Your password will expire in 41 days on dom 09 abr 2018 21:54:26 CEST
+```
+
 ![](/assets/kerberos2.png)
 
 Si tot va bé, `Kinit` ens respon amb la data i hora que caducarà la contrasenya que acaben d'introduir.
 
 També podem utilitzar la comanda `klist` per consultar les autenticacions que hi ha guardades actualment a la caché de Kerberos.
+
+```bash+theme:dark
+usuari@usxxx:~$ sudo klist
+Ticket cache: FILE:/tmp/krb5cc_0
+Default principal: administrator@SAMBAXXX.LOCAL
+
+Valid starting     Expires            Service principal
+27/02/17 08:45:31  27/02/17 18:45:31  krbtgt/SAMBAXXX.LOCAL@SAMBAXXX.LOCAL
+    renew until 28/02/17 08:45:27
+``` 
+
 
 Si et cal reconfigurar els kerberos, utilitza la comanda.
 
