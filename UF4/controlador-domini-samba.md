@@ -243,7 +243,27 @@ Es fa de la mateixa forma que per unir-lo a un domini Windows:
   Caldrà posar el nom del domini (_SAMBAXXX_ o _sambaxxx.local_) i quan demani un usuari, s'ha de posar **_Administrator_**, que és l'usuari administrador del domini fet amb Samba.
 
   ![](/assets/samba4_unir_client2.jpg)
-  
+
+## Possibles errors
+
+Al fer:
+
+`kinit administrator@SAMBAXXX.LOCAL`
+
+em surt l'error:
+
+```
+kinit: Generic preauthentication failure while getting initial credentials
+```
+
+Edit file /etc/krb5.conf and update it to actively specify older cryptos:
+
+`
+[libdefaults]
+    default_realm = SAMBAXXX.LOCAL
+    default_tkt_enctypes = rc4-hmac des-cbc-crc des-cbc-md5
+    default_tgs_enctypes = rc4-hmac des-cbc-crc des-cbc-md5
+`
 
 ## Documentació i recursos
 
