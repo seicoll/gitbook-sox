@@ -246,3 +246,5 @@ Es fa de la mateixa forma que per unir-lo a un domini Windows:
 * [Samba Wiki: Setting up Samba as an Active Directory Domain Controller](https://wiki.samba.org/index.php/Setting_up_Samba_as_an_Active_Directory_Domain_Controller)
 
 * [Somebooks: Crear un controlador de dominio de Active Directory con Samba 4](http://somebooks.es/capitulo-12-integracion-de-redes-mixtas-con-windows-y-linux/7/)
+
+* [Video Configuració de samba com a controlador de domini (by Miquel Boada](https://youtu.be/s5QaIx1EDyM)
