@@ -62,7 +62,7 @@ En l'arxiu `/etc/hosts', afegir el nom DNS del servidor davant del nom de la mà
 
 **Samba 4** s'instal·la amb la comanda:
 
-  `sudo apt-get install samba`
+  `sudo apt-get install samba smbclient winbind`
   
 Un cop instal·lat, podem comprovar que tenim instal·lada la versió 4 executant la comanda:
    
@@ -73,7 +73,7 @@ Version 4.3.11-Ubuntu
 
 A continuació, fem un còpia de l'arxiu de configuració de Samba `/etc/samba/smb.conf` per conservar-lo ja que el procés de creació del domini crearà un arxiu nou.
 
-  `sudo mv /etc/samba/smb.conf  /etc/samba/smb.conf.old`
+  `sudo mv /etc/samba/smb.conf  /etc/samba/smb.conf.bak`
 
 ## Creació d'un domini amb Samba
 
