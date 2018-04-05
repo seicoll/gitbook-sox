@@ -52,7 +52,10 @@ Per canviar el nom d'una màquina Linux, cal fer-ho en els arxius `/etc/hostname
 
 En l'arxiu `/etc/hosts', afegir el nom DNS del servidor davant del nom de la màquina:
 
+```
+127.0.0.1   localhost
 127.0.1.1   usxxx.sambaxxx.local   usxxx
+```
 
 ## Instal·lació de Samba 4
 
