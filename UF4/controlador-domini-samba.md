@@ -35,10 +35,24 @@ I els serveis que necessita Samba per fer de servidor d'AD són els següents:
 
 ### Resum de passos a seguir
 
-1. Instal·lar el servei Samba.
-2. Crear el domini Samba.
-3. Instal·lar Kerberos.
-4. Instal·lar el servei NTP.
+1. Configurar el nom DNS del servidor en l'arxiu `/etc/hosts`.
+2. Instal·lar el servei Samba.
+3. Crear el domini Samba.
+4. Instal·lar Kerberos.
+5. Instal·lar el servei NTP.
+
+ 
+## Canviar el nom de l'equip
+
+El nom de l'equip Ubuntu Server ha de ser **_usxxx_** (xxx són les teves inicials):
+
+Per canviar el nom d'una màquina Linux, cal fer-ho en els arxius `/etc/hostname` i `/etc/hosts` i reiniciar el sistema.
+
+##  Configurar el nom DNS del servidor
+
+En l'arxiu `/etc/hosts', afegir el nom DNS del servidor davant del nom de la màquina:
+
+127.0.1.1   usxxx.sambaxxx.local   usxxx
 
 ## Instal·lació de Samba 4
 
@@ -56,12 +70,6 @@ Version 4.3.11-Ubuntu
 A continuació, fem un còpia de l'arxiu de configuració de Samba `/etc/samba/smb.conf` per conservar-lo ja que el procés de creació del domini crearà un arxiu nou.
 
   `sudo mv /etc/samba/smb.conf  /etc/samba/smb.conf.old`
-  
-##  Configurar el nom DNS del servidor
-
-En l'arxiu `/etc/hosts', afegir el nom DNS del servidor davant del nom de la màquina:
-
-127.0.1.1   usxxx.sambaxxx.local   usxxx
 
 ## Creació d'un domini amb Samba
 
