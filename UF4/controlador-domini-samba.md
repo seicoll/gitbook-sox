@@ -259,7 +259,7 @@ En el nostre cas, l'utilitzarem per sincronitzar els rellotges de les màquines 
 
 Així doncs, cal instal·lar el paquet **_ntp_**.
 
-```bash
+```bash+theme:dark
 sudo apt-get install ntp ntpdate
 sudo service ntp stop
 sudo ntpdate ntp.ubunbu.com
