@@ -51,7 +51,7 @@ Per canviar el nom d'una màquina Linux, cal fer-ho en els arxius `/etc/hostname
 
 ###  Configurar el nom DNS del servidor
 
-En l'arxiu `/etc/hosts', afegir el nom DNS del servidor davant del nom de la màquina:
+En l'arxiu `/etc/hosts`, afegir el nom DNS del servidor davant del nom de la màquina:
 
 ```
 127.0.0.1   localhost
