@@ -48,6 +48,14 @@ Mem:            4047564    3640916       406648       96748       38364     5327
 Intercambio:    1179644      98332      1081312
 ```
 
+### Altres comandes per veure el maquinari
+
+* **lshw**: mostra tota la configuració del maquinari.
+* **lspci**: maquinari connectat als ports de la placa mare.
+* **lsusb**: maquinari connectat als ports usb.
+* **hardinfo**: eina que recull de forma gràfica la informació sobre el maquinari (cal tenir un entorn gràfic).
+
+
 ## Monitorització dels processos
 
 La comanda **top** mostra una llista en temps real dels processos actius al sistema. També permet realitzar diferents accions sobre cadascun d'ells, com matar-los o canviar la seva prioritat.
@@ -96,8 +104,22 @@ Per comprovar la connectivitat:
 * **host** permet comprovar la resolució DNS.
 * **nslookup** (obsolet; és equivalent a host): per defecte no ve instal·lat.
 
-Per comprovar la seguretat (ports oberts):
+Per comprovar la seguretat (ports oberts i servei associat):
 * **nmap**: serveix per comprovar els ports oberts en l'ordinador.
+
+```bash+theme:dark
+usuari@usxxx ~ $ nmap localhost
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2018-05-10 19:04 CEST
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000059s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+631/tcp  open  ipp
+3306/tcp open  mysql
+
+```
 
 ## Documentació i recursos
 
