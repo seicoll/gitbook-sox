@@ -10,7 +10,9 @@ Els recursos de la xarxa (impressores, documents) es gestionaran sempre de forma
 
 ### Servidors
 
-Els **servidors** disposen de programes específics (**serveis**) per oferir-los als clients:
+> Els **servidors** són els encarregats de proporcionar recursos als clients.
+
+Disposen de programes específics (**serveis**) per oferir-los als clients:
 * Servei de fitxers i impressores.
 * Servei de correu.
 * Servei de domini.
@@ -22,7 +24,8 @@ Els **servidors** disposen de programes específics (**serveis**) per oferir-los
 
 Els altres equips de la xarxa, actuen com a **clients** sol·licitant recursos al servidor. 
 
-Aquests clients es connecten i validen al servidor per poder treballar en la xarxa i solen tenir instal·lat un **Sistema Operatiu Monolloc** que ja venen preparats per poder-se connectar amb servidors.
+> Els **clients** es connecten i validen al servidor per poder  tenir accés als recursos de la xarxa.
+> Solen tenir instal·lat un **Sistema Operatiu Monolloc** que ja venen preparats per poder-se connectar amb servidors.
 
 Aquest model de treball es coneix com **arquitectura client/servidor**.
 
