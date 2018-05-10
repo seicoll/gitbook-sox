@@ -8,6 +8,8 @@ Quan existeix un conjunt de dispositius informàtics connectats en xarxa (ordina
 
 Els recursos de la xarxa (impressores, documents) es gestionaran sempre de forma centralitzada des d’aquest equip que s'anomena **Servidor**.
 
+### Servidors
+
 Els **servidors** disposen de programes específics (**serveis**) per oferir-los als clients:
 * Servei de fitxers i impressores.
 * Servei de correu.
@@ -15,6 +17,8 @@ Els **servidors** disposen de programes específics (**serveis**) per oferir-los
 * Servei DNS.
 * Servei DHCP.
 * Etc.
+
+### Clients
 
 Els altres equips de la xarxa, actuen com a **clients** sol·licitant recursos al servidor. 
 
