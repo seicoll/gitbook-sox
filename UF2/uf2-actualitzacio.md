@@ -93,7 +93,7 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable **actualitz
 
   `sudo apt-add-repository "deb http://download.virtualbox.org/virtualbox/debian trusty contrib"`
 
-2. Abans de poder instal·lar el programa, normalment, cal fer alguna operació més, com ara **descarregar i instal·lar una clau de seguretat**:
+2. Abans de poder instal·lar el programa, normalment, cal fer alguna operació més, com ara **descarregar i instal·lar una clau de seguretat pública** per comprovar la validesa dels paquets:
 
   `wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -`
 
