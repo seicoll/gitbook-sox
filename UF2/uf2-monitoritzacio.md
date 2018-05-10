@@ -104,8 +104,8 @@ Per comprovar la connectivitat:
 * **host** permet comprovar la resolució DNS.
 * **nslookup** (obsolet; és equivalent a host): per defecte no ve instal·lat.
 
-Per comprovar la seguretat (ports oberts i servei associat):
-* **nmap**: serveix per comprovar els ports oberts en l'ordinador.
+Per comprovar la seguretat (ports oberts):
+* **nmap**: serveix per comprovar els ports oberts en l'ordinador i veure el servei associat.
 
 ```bash+theme:dark
 usuari@usxxx ~ $ nmap localhost
