@@ -25,6 +25,8 @@ El nom ha de ser `wsxxx` (`xxx` són les inicials del vostre nom i cognoms).
   ![](/assets/AD_ins3.png)
 
 4. Marcar l'opció **_Serveis de Domini d'Active Directory (AD DS)_** i **_DNS Server_** i prémer el botó de **_Següent_**.
+  
+  Donat que es fan servir noms de domini caldrà instal·lar i configurar al servidor el servei de DNS per tal que resolgui els noms de domini que es fan servir.
 
 5. Un cop finalitzada la instal·lació ens apareix una pantalla informativa on ens adverteix que per convertir el servidor en un controlador de domini funcional cal obrir l'assistent per crear un nou domini seleccionant _**Promover este servidor a controlador de dominio**_.
 

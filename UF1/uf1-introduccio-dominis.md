@@ -43,7 +43,7 @@ Un **controlador de domini** és una part essencial dels sistemes operatius de M
 
 ## Directori Actiu [_Active Directory (AD)_] 
 
-> Els l'àmbit dels sistemes operatius en xarxa el concepte de **Directori** fa referència a un magatzem de dades estructurat que emmagatzema la informació sobre els diferents objectes de la xarxa.
+> Els l'àmbit dels sistemes operatius en xarxa el concepte de **Directori** fa referència a un magatzem de dades estructurat que emmagatzema la informació sobre els diferents objectes de la xarxa (equip, usuaris, recursos compartits, etc).
 
 > El **servei de directori** és el sistema que proporciona mètodes per emmagatzemar i recuperar les dades del directori.
 
