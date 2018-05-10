@@ -38,7 +38,7 @@ Per configurar el **phpLDAPadmin** s'han de fer els següents canvis al fitxer `
   $servers->setValue('login','bind_id','cn=admin,dc=ldapxxx,dc=local');
   ```
   
-  3. **Canviar el valor inicial dels identificadors d'usuaris i grups** per tal que no coincideixin amb els valors dels usuaris i grups locals.
+  3. **Canviar el valor inicial dels identificadors d'usuaris  (uidNumber) i grups (gidNumber)** per tal que no coincideixin amb els valors dels usuaris i grups locals.
   Convé canviar-los, per exemple, a **10000 i 10000**.
   Aquests paràmetres es troben en una **línia que cal descomentar i modificar**:
   
@@ -89,6 +89,33 @@ Per crear usuaris, grups i unitats organitzatives heu d'escollir una d'aquestes 
 * **_Consola de login_**: cap (per defecte agafa `/bin/bash`)
 
 > Si al crear usuaris o grups, els **identificadors** d'usuaris o grups (**_uid_** i **_gid_**) **són inferiors a 10000**, cal revisar els canvis fets a l'arxiu `/etc/phpldapadmin/config.php`.
+
+### Activar https
+
+Donat que s’envien dades com noms d’usuari i contrasenyes, seria interessant enviar-ho a través d’https (SSL).
+
+* Habilitar SSL:
+
+  `sudo a2enmod ssl`
+
+* Crear certificat:
+
+  ```
+  sudo mkdir /etc/apache2/ssl
+  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
+```
+
+* Configurar apache per fer servir SSL, canviant a `/etc/apache2/sites-available/default-ssl.conf`:
+
+  ```
+  SSLCertificateFile /etc/apache2/ssl/apache.crt
+  SSLCertificateKeyFile /etc/apache2/ssl/apache.key
+  ```
+* Activar SSL virtual host:
+
+  `sudo a2ensite default-ssl.conf`
+
+* Provar la connexió: https://ip_servidor/phpldapadmin
 
 ## LAT (_LDAP Administration Tool_)
 
