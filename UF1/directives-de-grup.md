@@ -55,7 +55,7 @@ Dins cada configuració d’equip o d’usuari, hi trobem directives i preferèn
   
   * **Configuració de Windows**: entre altres, aspectes de configuració de seguretat i execució de scripts.
 
-  * **Plantilles administratives**: inclouen aquelles polítiques basades en la configuració de l'equip,  com els següents: Tauler de control, escriptori, impressores, xarxa, carpetes compartides, etc. 
+  * **Plantilles administratives**: inclouen aquelles polítiques basades en la configuració de l'equip, com els següents: Tauler de control, escriptori, impressores, xarxa, carpetes compartides, etc. 
 
 * **Preferències**: aspectes de configuració que típicament es feien amb scripts en versions anteriors de Windows. 
 
