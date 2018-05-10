@@ -25,7 +25,9 @@ El sistema operatiu Microsoft Windows Server us proporciona una sèrie d’**ein
 * **Administrador del servidor**
 * **Administració de tasques**
 * **Administració de serveis**
+* **Administrador de discs**
 * **Registre d’esdeveniments**
+
 
 ### Administrador del servidor _\[Server Manager\]_
 
@@ -101,6 +103,12 @@ Existeixen tres opcions de **recuperació d’un servei**:
 * **No fer cap acció:** el sistema no intentarà recuperar-se d’aquest error, però sí de la resta.
 * **Reiniciar el servei:** atura el servei, fa una pausa i el torna a iniciar.
 * **Executar un programa:** si es produeix un error en aquest servei, es llançarà un script o un programa.
+
+### Administrador de discs _[Disk Management]_
+
+L'**administrador de discs** permet administrar els discs, particions i volums.
+
+![](/assets/WSDiskManagement.png)
 
 ### Registre d’esdeveniments _[Event Viewer]_
 
