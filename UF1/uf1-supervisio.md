@@ -79,7 +79,8 @@ Cada servei el podem configurar: Ens posem a sobre &gt; boto dret ratolí &gt; p
 #### Configuració d'inici d'un servei
 
 És important que feu la **configuració d’inici** dels serveis més escaient.  
-Que un servei estigui instal·lat no vol dir que s'estigui executant.
+
+> Que un servei estigui instal·lat no vol dir que s'estigui executant.
 
 ![](/assets/SevicesStart.png)
 
@@ -112,7 +113,7 @@ L'**administrador de discs** permet administrar els discs, particions i volums.
 
 ### Registre d’esdeveniments _[Event Viewer]_
 
-El **registre d’esdeveniments** mostra a l’administrador informació sobre els error o avisos que s'han produït.
+El **registre d’esdeveniments** mostra a l’administrador informació sobre els error o avisos que s'han produït al sistema.
 
 Els principals són:
 * Registres de Windows
