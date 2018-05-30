@@ -88,6 +88,32 @@ En els scripts s’utilitzen **tres tipus de cometes**:
 | **Cometes dobles (" ") **    | echo "Hola $NOM"                 | Hola Jordi                |
 | **Cometes invertides (\` \`)** | echo 'Avui és el dia' `date +%D` | Avui és el dia 25/04/2020 |
 
+**Exemple:**
+
+```bash
+#!/bin/bash
+#Script amb cometes
+
+#Demanem per pantalla el nom i el guardem a la variable NOM
+read –p ‘Escriu el teu nom: ‘ NOM
+
+echo ‘Hola $NOM’
+echo “Hola $NOM”
+echo `Hola $NOM`
+```
+
+```bash+theme:dark
+$ ./exemple.sh
+Escriu el teu nom: Jordi
+Hola $NOM
+Hola Jordi
+./exemple.sh: line 8: Hola: no s'ha trobat l'ordre
+```
+
+* La primera línia `echo 'Hola $NOM'` amb cometes simples no s'ha substituït el valor de la variable.
+* La segona línia `echo "Hola $NOM"` amb cometes dobles s'ha substituït la variable NOM per Jordi.
+* La tercera línia echo `\`Hola $NOM\` ` amb cometes invertides dóna un error al executar-se perquè s'intenta executar una comanda però **_Hola_** no és una comanda.
+
 ## Variables
 
 ## Exemples d'scripts
