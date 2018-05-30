@@ -1,5 +1,7 @@
 # Scripts
 
+## Introducció
+
 > Un **script** és un arxiu de text executable que conté una sèrie de comandes. Quan s'executa l'script, s'executen les comandes que conté.
 
 Es pot crear i editar un script amb qualsevol editor de text pla (nano, gedit...).
