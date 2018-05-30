@@ -25,13 +25,19 @@ mkdir /home/usuari/SOX/UF1/Apunts
 mkdir /home/usuari/SOX/UF1/Practiques
 ```
 
+> Tota línia que comenci amb coixinet `#`  es tracta d'un **comentari** i no serà llegida pel intèrpret de comandes (excepte la primera línia que estableix el shell pel que ha sigut dissenyat el script).
+
 ### Assignació de permisos
 
 Un cop creat el script cal modificar els permisos de l'arxiu per permetre que s'executi:
 
+Li podem donar permisos d'execució amb la comanda:
+
 ```bash+theme:dark
 chmod a+x crea_directoris.sh
 ```
+
+> Un cop assignats els permisos, si fem la comanda `ls` veurem com el **color del fitxer** ha canviat indicant que és un fitxer executable i per tant es pot executar.
 
 ### Execució de l'script
 
