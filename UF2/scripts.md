@@ -25,17 +25,23 @@ Un cop creat el script cal modificar els permisos de l'arxiu per permetre que s'
 chmod a+x crea_directoris.sh
 ```
 
-Per executar-lo des del mateix directori on es troba cal posar ./ (o la ruta sencera):
+Per executar-lo des del mateix directori on es troba cal posar `./` (o la ruta sencera):
 
 ```bash+theme:dark
 ./crea_directoris.sh
 ```
 
-També es pot executar amb la comanda bash.
-En aquest cas no caldria canviar els permisos ni posar ./ al davant si estem en el mateix directori:
+També es pot executar amb la comanda **bash**.
+En aquest cas no caldria canviar els permisos ni posar `./` al davant si estem en el mateix directori:
 
 ```bash+theme:dark
 bash crea_directoris.sh
+```
+
+Per comprovar que l'script funsció correctament, es pot executar l'script **pas a pas** amb el paràmetre `-x`.
+
+```bash+theme:dark
+bash -x crea_directoris.sh
 ```
 
 ## Exemples d'scripts
