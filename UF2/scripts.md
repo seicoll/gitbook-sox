@@ -86,7 +86,7 @@ En els scripts s’utilitzen **tres tipus de cometes**:
 |------------------------------|----------------------------------|---------------------------|
 | **Cometes simples (' ') **   | echo 'Hola $NOM'                 | Hola $NOM                 |
 | **Cometes dobles (" ") **    | echo "Hola $NOM"                 | Hola Jordi                |
-| **Cometes invertides (\` \`)** | echo 'Avui és el dia' `date +%D` | Avui és el dia 25/04/2020 |
+| **Cometes invertides (\` \`)** | echo 'Avui és el dia' \`date +%D\` | Avui és el dia 25/04/2020 |
 
 **Exemple:**
 
