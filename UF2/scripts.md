@@ -2,30 +2,38 @@
 
 ## Introducció
 
-> Un **script** és un arxiu de text executable que conté una sèrie de comandes. Quan s'executa l'script, s'executen les comandes que conté.
+> Un guió o **script** és un arxiu de text executable que conté una sèrie de comandes. Quan s'executa l'script, s'executen les comandes que conté.
 
-Es pot crear i editar un script amb qualsevol editor de text pla (nano, gedit...).
+Es pot crear i editar un script amb qualsevol editor de text pla (**nano**, **gedit**...).
+
+### Creació de l'script
 
 El més habitual és posar l'extensió **.sh** als scripts de Linux:
 
 `nano crea_directoris.sh`
 
-En la primera línia cal indicar amb quin intèrpret de comandes s'han d'executar les comandes que conté (#!/bin/bash).
+En la **primera línia** cal indicar amb quin intèrpret de comandes s'han d'executar les comandes que conté (`#!/bin/bash`).
+
 A continuació es posen les comandes en el mateix ordre en què s'han d'executar:
 
 ```bash
 #!/bin/bash
+#Comentari explicatiu de què fa l'script
 mkdir /home/usuari/SOX
 mkdir /home/usuari/SOX/UF1
 mkdir /home/usuari/SOX/UF1/Apunts
 mkdir /home/usuari/SOX/UF1/Practiques
 ```
 
+### Assignació de permisos
+
 Un cop creat el script cal modificar els permisos de l'arxiu per permetre que s'executi:
 
 ```bash+theme:dark
 chmod a+x crea_directoris.sh
 ```
+
+### Execució de l'script
 
 Per executar-lo des del mateix directori on es troba cal posar `./` (o la ruta sencera):
 
