@@ -71,11 +71,21 @@ bash -x crea_directoris.sh
 
 ## Cometes
 
+En els scripts s’utilitzen tres tipus de cometes:
+
 |                            |            Teclat            |        Significat        | Acció |
 |----------------------------|:----------------------------:|:------------------------:|:-----:|
 | **Cometes simples (' ')**    | Estan a sota l'interrogant ? | Literal                  | S'interpreta de forma literal, sense substituir camp variable.      |
 | **Cometes dobles (" ")**     | Shift + Tecla 2              | Substitució de variables | Es substitueixen les variables.      |
 | **Cometes invertides (` `)** | Tecla accent obert + Espai   | Execució de comanda o expressió | S'executen les línies de comandes o expresions.      |
+
+Exemples:
+
+|                              |              Comanda             |          Resultat         |
+|------------------------------|:--------------------------------:|:-------------------------:|
+| **Cometes simples (' ') **   | echo 'Hola $NOM'                 | Hola $NOM                 |
+| **Cometes dobles (" ") **    | echo "Hola $NOM"                 | Hola Jordi                |
+| **Cometes invertides (` `)** | echo 'Avui és el dia' `date +%D` | Avui és el dia 25/04/2020 |
 
 ## Variables
 
