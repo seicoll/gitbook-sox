@@ -71,7 +71,7 @@ bash -x crea_directoris.sh
 
 ## Cometes
 
-En els scripts s’utilitzen tres tipus de cometes:
+En els scripts s’utilitzen **tres tipus de cometes**:
 
 |                            |            Teclat            |        Significat        | Acció |
 |----------------------------|:----------------------------:|:------------------------:|:-----:|
@@ -79,7 +79,8 @@ En els scripts s’utilitzen tres tipus de cometes:
 | **Cometes dobles (" ")**     | Shift + Tecla 2              | Substitució de variables | Es substitueixen les variables.      |
 | **Cometes invertides (` `)** | Tecla accent obert + Espai   | Execució de comanda o expressió | S'executen les línies de comandes o expresions.      |
 
-Exemples:
+
+**Exemples**:
 
 |                              |              Comanda             |          Resultat         |
 |------------------------------|:--------------------------------:|:-------------------------:|
