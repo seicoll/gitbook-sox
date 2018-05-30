@@ -71,6 +71,12 @@ bash -x crea_directoris.sh
 
 ## Cometes
 
+|                          |            Teclat            |        Significat        | Acció |
+|--------------------------|:----------------------------:|:------------------------:|:-----:|
+| **Cometes simples (' ')**    | Estan a sota l'interrogant ? | Literal                  | S'interpreta de forma literal, sense substituir camp variable.      |
+| **Cometes dobles (" ")**     | Shift + Tecla 2              | Substitució de variables | Es substitueixen les variables.      |
+| **Cometes invertides (` `)** | Tecla accent obert + Espai   | Execució de comanda o expressió | S'executen les línies de comandes o expresions.      |
+
 ## Variables
 
 ## Exemples d'scripts
