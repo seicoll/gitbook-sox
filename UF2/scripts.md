@@ -112,7 +112,7 @@ Hola Jordi
 
 * La primera línia `echo 'Hola $NOM'` amb cometes simples no s'ha substituït el valor de la variable.
 * La segona línia `echo "Hola $NOM"` amb cometes dobles s'ha substituït la variable NOM per Jordi.
-* La tercera línia `echo  \` Hola $NOM\` ` amb cometes invertides dóna un error al executar-se perquè s'intenta executar una comanda però **_Hola_** no és una comanda.
+* La tercera línia echo  \`Hola $NOM\` amb cometes invertides dóna un error al executar-se perquè s'intenta executar una comanda però **_Hola_** no és una comanda.
 
 ## Variables
 
