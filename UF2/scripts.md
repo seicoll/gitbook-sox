@@ -41,7 +41,16 @@ chmod a+x crea_directoris.sh
 
 ### Execució de l'script
 
-Per executar-lo des del mateix directori on es troba cal posar `./` (o la ruta sencera):
+> Linux busca els programes executables en els directoris que estan definits a la variable de sistema `$PATH`.
+
+```bash+theme:dark
+$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+```
+
+Si el nostre script es troba en una d'aquestes ubicacions podrem executar-lo posant únicament el nom del script.
+
+Si no es troba en aquestes ubicacions haurem d'indicar la ruta sencera on es troba el fitxer executable o bé si està al mateix directori cal posar `./`:
 
 ```bash+theme:dark
 ./crea_directoris.sh
@@ -59,6 +68,10 @@ Per comprovar que l'script funsció correctament, es pot executar l'script **pas
 ```bash+theme:dark
 bash -x crea_directoris.sh
 ```
+
+## Cometes
+
+## Variables
 
 ## Exemples d'scripts
 
