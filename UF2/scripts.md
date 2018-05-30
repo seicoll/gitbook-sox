@@ -95,10 +95,10 @@ En els scripts s’utilitzen **tres tipus de cometes**:
 #Script amb cometes
 
 #Demanem per pantalla el nom i el guardem a la variable NOM
-read –p ‘Escriu el teu nom: ‘ NOM
+read –p 'Escriu el teu nom: ' NOM
 
-echo ‘Hola $NOM’
-echo “Hola $NOM”
+echo 'Hola $NOM'
+echo "Hola $NOM"
 echo `Hola $NOM`
 ```
 
