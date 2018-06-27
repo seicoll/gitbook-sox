@@ -72,7 +72,6 @@ img
 /* FOOTER */
 
 footer{
-    //float: right;
     display: flex;
     justify-content: space-between;
     
