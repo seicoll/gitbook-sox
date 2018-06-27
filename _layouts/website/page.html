@@ -4,10 +4,14 @@
 {% block page %}
     {{ super() }}
     <footer>
-        <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/es/'>
-            <img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.eu.png' width=120px'/>
-        </a>
-        <p>Autor: Sergi Coll<p>
-        <p>#FpInfor #SmxMp04 #AsixMp01 #SistemesOperatius #LDAP #Samba #WindowsServer</p>
+        <div id='left'>
+            <p>#FpInfor #SmxMp04 #AsixMp01 #SistemesOperatius #LDAP #Samba #WindowsServer</p>
+        </div>
+        <div id='right'>
+            <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/es/'>
+                <img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.eu.png' width=120px'/>
+            </a>
+            <p>Autor: Sergi Coll<p>
+        </div>
     </footer>
 {% endblock %}
