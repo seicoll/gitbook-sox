@@ -72,7 +72,10 @@ img
 /* FOOTER */
 
 footer{
-    float: right;
+    //float: right;
+    diplay: flex;
+    justify-content: space-between;
+    
     padding-top: 1em;
     font-size: 0.9em !important;
     color: #333;
@@ -80,7 +83,10 @@ footer{
     font-weight: bold;
 }
 
-footer #right
+footer div
+{
+
+}
 
 
 
