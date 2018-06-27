@@ -73,7 +73,7 @@ img
 
 footer{
     //float: right;
-    diplay: flex;
+    display: flex;
     justify-content: space-between;
     
     padding-top: 1em;
