@@ -175,18 +175,33 @@ En el **Windows Update** (en Windows Server 2016 i Windows 10) podem configurar:
 
   * **Aplazar actualizaciones de características**. Permet deixar d'instal·lar aplicacions del sistema operatiu que no tinguin a veure amb la seguretat. Això redueix els temps necessari en instal·lar actualitzacions, però deixes de disposar de les últimes funcions que s'incorporin al sistema operatiu.
 
+
 <!--
 ### Cas d'exemple: Impedir actualitzacions a Windows 
  
-Com s'ha pogut veure, amb l'arribada de **Windows 10** el servei d'actualitzacions va fer un canvi significatiu de paradigma. Es va pensar més en els usuaris inexperts que no pas en els professionals. S'ha volgut evitar que per manca de coneixement o d'atenció, es deixi d'actualitzar el sistema amb el gran risc de seguretat que pot comportar. Per això, quan un pedaç de seguretat crític es emés pels servidors d'actualització de Microsoft, el servei d'actualització el descarregarà, l'instal·larà i reiniciarà el sistema si és necessari o es reservarà la instal·lació en fred per la següent vegada de aturem o reiniciem manualment el sistema. 
+Com s'ha pogut veure, amb l'arribada de **Windows 10** el servei d'actualitzacions va fer un canvi significatiu de paradigma. Es va pensar més en els usuaris inexperts que no pas en els professionals. S'ha volgut evitar que per manca de coneixement o d'atenció, es deixi d'actualitzar el sistema amb el gran risc de seguretat que pot comportar. Per això, quan un pedaç de seguretat crític es emès pels servidors d'actualització de Microsoft, el servei d'actualització el descarregarà, l'instal·larà i reiniciarà el sistema si és necessari o es reservarà la instal·lació en fred per la següent vegada de aturem o reiniciem manualment el sistema. 
 
 Tot això ho farà sense demanar consentiment a l'usuari i, si ens descuidem, ens reiniciarà el sistema sense tenir en compte el que estiguem fent en aquell moment.
 
 ![](/assets/new-upgrade-UI.png)
 
-En el nostre cas
+En el nostre cas una actualització forçada ens podria destorbar durant la realització d'alguna pràctica o control. Per això, farem servir algunes eines administratives per impedir-ho.
+
+#### A) Deshabilitar el servei d'actualitzacions 
+
+El servei responsable de les actualitzacions de Windows s'anomena _**wuausrv**_ però en l'_Administrador de serveis_ el podrem trobar com **_Windows Update_**. A partir d'aqui només haurem de deshabilitar el servei.
+
+_Administrador de serveis > "Windows Update" - Propietats > 
+-->"Tipus d'inici" - Deshabilitat_ 
+--> "Estat del servei" - Detenir
+
+![](/assets/UF1_wuauserv.PNG)
+
+
+#### B) Deshabilitar el servei d'actualitzacions 
 
 -->
+
 
 ## Documentació i recursos
 
