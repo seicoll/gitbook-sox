@@ -176,7 +176,6 @@ En el **Windows Update** (en Windows Server 2016 i Windows 10) podem configurar:
   * **Aplazar actualizaciones de características**. Permet deixar d'instal·lar aplicacions del sistema operatiu que no tinguin a veure amb la seguretat. Això redueix els temps necessari en instal·lar actualitzacions, però deixes de disposar de les últimes funcions que s'incorporin al sistema operatiu.
 
 
-<!--
 ### Cas d'exemple: Impedir actualitzacions a Windows 
  
 Com s'ha pogut veure, amb l'arribada de **Windows 10** el servei d'actualitzacions va fer un canvi significatiu de paradigma. Es va pensar més en els usuaris inexperts que no pas en els professionals. S'ha volgut evitar que per manca de coneixement o d'atenció, es deixi d'actualitzar el sistema amb el gran risc de seguretat que pot comportar. Per això, quan un pedaç de seguretat crític es emès pels servidors d'actualització de Microsoft, el servei d'actualització el descarregarà, l'instal·larà i reiniciarà el sistema si és necessari o es reservarà la instal·lació en fred per la següent vegada de aturem o reiniciem manualment el sistema. 
@@ -200,9 +199,30 @@ _Administrador de serveis > "Windows Update" - Propietats >
 
 #### B) Deshabilitar la directiva de grup (GPO) responsable de les actualitzacions
 
-  
+La Directiva de grup (GPO) és un conjunt de regles de Windows que ens permeten gestionar i configurar el sistema operatiu, les aplicacions i els usuaris. I això ho podrà fer de manera local o en un domini i, distingint-los entre regles vinculades a usuaris i a equips.
+Però aquest és un tema que tractarem àmpliament més endavant. El que ens interessa saber ara mateix és com utilitzar una de les directives responsables de les actualitzacions automàtiques.
 
--->
+Accedim a l'editor de directives. Tres opcions:
+* _[Win + R]_ -> Escriu "gpedit.msc" per executar-lo
+* _"Botó dret sobre Inici de Windows" > Executar_
+* _[CLica sobre el botó d'inici -> Escriu "Editar directiva de grupo"_
+
+
+
+Dins de l'editor seguirem la següent ruta:
+
+_Configuració de l'equip > Plantilles administratives > Components de Windows > Windows Update_
+
+A la dreta, trobarem un llarg llistat de regles. Entre elles, deshabilitarem almenys una de les següent regles:
+
+* _Configurar Actualitzacions automàtiques_ 
+* _No reiniciar automàticament amb usuaris que hagin iniciat sessions en instal·lacions d'actualitzacions automàtiques_
+
+  
+![](/assets/UF1_gpo_editor.PNG)
+
+Per forçar l'aplicació de directives editades haurem d'executar [Win + R]: _gpupdate /force /boot /logoff_
+
 
 
 ## Documentació i recursos
