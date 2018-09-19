@@ -20,7 +20,7 @@ Cal crear una màquina virtual amb les característiques recomanades per instal�
   * Es recomana que l'espai del disc es reservi de forma dinàmica.
   * Es recomana posar 2 CPU com a mínim.
   * Si és possible, habilitar l'acceleració gràfica 2D i 3D.
-  * [Crea i i configura la** xarxa NAT SOX**](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf0/A012-VBoxPlus.html#config_nat_network) amb l'adreça **172.30.0.0/16** i suport per DHCP.
+<!--  * [Crea i i configura la** xarxa NAT SOX**](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf0/A012-VBoxPlus.html#config_nat_network) amb l'adreça **172.30.0.0/16** i suport per DHCP.-->
 
 ### Planificar el disc
 
@@ -111,27 +111,39 @@ Per canviar l'hora del sistema es pot fer fent clic amb el botó secundari sobre
 
 Durant la instal·lació es genera de forma automàtica un nom pel servidor poc descriptiu i difícil de recordar com _WIN-BOGEMFKQDSH_. És recomenable canviar-lo i posar a la màquina un nom que sigui fàcil de recordar.
 
-Fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar l'opció **Sistema**. Després anar a _**Cambiar configuración > Cambiar... > Nombre de equipo**_.
+Fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar l'opció **Sistema**. Després anar a _**Cambiar configuración > Cambiar... > Nombre de equipo**_ o bé **_Settings > System > About > Rename PC_**.
 
 ### Configurar la xarxa.
 
 Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de conèixer per poder accedir-hi i utilitzar els seus serveis. 
 
 L'adreça ha de pertànyer a la xarxa on està connectada la màquina:
-* **Adreça IP**: `172.30.A.10` (**_A_** és el teu número d'alumne)
+* **Adreça IP**: `172.30.0.10` 
 * **Màscara**: `255.255.0.0` (de 16 bits, com la de la xarxa)
 * **Porta d'enllaç (GW)**: `172.30.0.1` (l'adreça del router virtual de la xarxa NAT)
 * **Servidors DNS**: `172.30.0.1` i `8.8.8.8` (la mateixa porta d'enllaç de VirtualBox pot fer de servidor DNS).
 
-### Instal·lar _Guest Additions_
+### Instal·lar _Guest Additions_ o _VMTools_
 
-En el cas de **màquines virtuals**, pot ser molt útil instal·lar les eines addicionals del gestor de màquines virtuals (en el cas de VirtualBox, les **_Guest Additions_**). 
+En el cas de **màquines virtuals**, pot ser molt útil instal·lar les eines addicionals del gestor de màquines virtuals (en el cas de VirtualBox, les **_Guest Additions_** i en VMWare les **_VMTools_**). 
 
-Aquestes eines permeten disposar de més opcions per configurar el monitor, realitzar accions de "copiar i enganxar" entre la màquina real i la virtual, o accedir des de la màquina virtual a una carpeta de la màquina real per poder passar arxius fàcilment.
+Aquestes eines permeten disposar de més opcions per: 
+* Configurar la resolució de pantalla per tal que s'adapti a la mida de la finestra.  
+* realitzar accions de **_copiar i enganxar_**  text, gràfics i arxius entre la màquina real i la virtual. 
+* Accedir des de la màquina virtual (guest) a una carpeta de la màquina real (host) per poder passar arxius fàcilment.
+
+#### Instal·lació en Virtual Box
 
 Per instal·lar les **_Guest Additions_** cal tenir la màquina virtual engegada i, en el menú de la mateixa finestra de la màquina virtual, seleccionar l'opció **_Dispositivos → Insertar imagen del CD de las Guest Additions_**. Això és equivalent a posar el CD d'instal·lació en la màquina virtual. 
  
 En la majoria de sistemes amb entorn gràfic, s'obrirà automàticament una finestra per instal·lar el contingut. Si no, cal obrir el CD i executar el programa **_VBoxWindowsAdditions_**.
+
+#### Instal·lació en VMWare
+
+Iniciar la màquina virtual.
+Clicar a VM > Install VMWare Tools.
+Si no s’ha iniciat automàticament, anar al CD i executar el programa setup.exe que hi ha dins la carpeta setup.
+Fer servir l’assistent per instal·lar les VMWare Tools.
 
 ### Fer una còpia de seguretat
 
