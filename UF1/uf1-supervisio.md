@@ -133,11 +133,12 @@ Una de les tasques que ha de fer l'administrador de sistemes és assegurar-se qu
 En **versions anteriors de Windows Server 2016**, les actualitzacions venien deshabilitades de forma predeterminada. 
 En canvi, en **Windows Server 2016**, la configuració predeterminada estableix que les actualitzacions es descarreguin però sigui l'administrador qui decideixi quan instal·lar-les.
 
-
+<!--
 **Tipus d'actualitzacions:** 
 
   * **Pedaç, “Parches” (Hot fixes)**: Un fitxer que modifica el codi de programes intentant solucionar problemes de seguretat trobats en el programa fins el moment, intenta no modificar el funcionament del programa. 
   * **Services pack (SP)**: Consteix en un conjunt de pedaços que actualitzen, corregeixen i milloren aplicacions i sistemes operatius.
+-->
 
 ### En versions anteriors a Windows Server 2016
     
