@@ -201,21 +201,21 @@ _**Administrador de serveis > "Windows Update" > Propietats >  Estat del servei 
 
 #### B) Deshabilitar la directiva de grup (GPO) responsable de les actualitzacions
 
-La Directiva de grup (GPO) és un conjunt de regles de Windows que ens permeten gestionar i configurar el sistema operatiu, les aplicacions i els usuaris. I això ho podrà fer de manera local o en un domini i, distingint-los entre regles vinculades a usuaris i a equips.
+La _**Directiva de grup (GPO)**_ és un conjunt de regles de Windows que ens permeten gestionar i configurar el sistema operatiu, les aplicacions i els usuaris. I això ho podrà fer de manera local o en un domini i, distingint-los entre regles vinculades a usuaris i a equips.
 Però aquest és un tema que tractarem àmpliament més endavant. El que ens interessa saber ara mateix és com utilitzar una de les directives responsables de les actualitzacions automàtiques.
 
 Accedim a l'editor de directives. Tres opcions:
 * _[Win + R]_ -> Escriu "gpedit.msc" per executar-lo
 * _"Botó dret sobre Inici de Windows" > Executar_
-* _[CLica sobre el botó d'inici -> Escriu "Editar directiva de grupo"_
+* _[Clica sobre el botó d'inici -> Escriu "Editar directiva de grupo"_
 
 
 
 Dins de l'editor seguirem la següent ruta:
 
-_Configuració de l'equip > Plantilles administratives > Components de Windows > Windows Update_
+_**Configuració de l'equip > Plantilles administratives > Components de Windows > Windows Update**_
 
-A la dreta, trobarem un llarg llistat de regles. Entre elles, deshabilitarem almenys una de les següent regles:
+A la dreta, trobarem un llarg llistat de regles. Entre elles, **deshabilitarem** almenys una de les següent regles:
 
 * _Configurar Actualitzacions automàtiques_ 
 * _No reiniciar automàticament amb usuaris que hagin iniciat sessions en instal·lacions d'actualitzacions automàtiques_
@@ -223,8 +223,8 @@ A la dreta, trobarem un llarg llistat de regles. Entre elles, deshabilitarem alm
   
 ![](/assets/UF1_gpo_editor.PNG)
 
-Per forçar l'aplicació de directives editades haurem d'executar [Win + R]: _gpupdate /force /boot /logoff_
-
+Per forçar l'aplicació de directives editades haurem d'executar [Win + R]: 
+`gpupdate /force /boot /logoff`
 
 
 ## Documentació i recursos
