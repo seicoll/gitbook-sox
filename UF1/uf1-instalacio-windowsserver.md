@@ -140,10 +140,9 @@ En la majoria de sistemes amb entorn gràfic, s'obrirà automàticament una fine
 
 #### Instal·lació en VMWare
 
-Iniciar la màquina virtual.
-Clicar a VM > Install VMWare Tools.
-Si no s’ha iniciat automàticament, anar al CD i executar el programa setup.exe que hi ha dins la carpeta setup.
-Fer servir l’assistent per instal·lar les VMWare Tools.
+Per instal·lar les **_VMTools_** cal tenir la màquina virtual engegada i, en el menú de la mateixa finestra de la màquina virtual, seleccionar l'opció **_VM → Install VMWare Tools_**.
+
+En la majoria de sistemes amb entorn gràfic, s'obrirà automàticament una finestra per instal·lar. Si no s'ha iniciat automàticament, cal anar al CD i executar el programa **setup.exe** que hi ha dins la carpeta setup.
 
 ### Fer una còpia de seguretat
 
