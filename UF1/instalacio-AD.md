@@ -102,15 +102,17 @@ Primer de tot, **canvia el nom** de la màquina client. Ha de ser `wcxxx` (`xxx`
 
 A continuació, assigna IP Estàtica al client. El controlador de domini també dona servei DNS al client per tant, al client, **cal posar com a servidor DNS principal la IP del servidor de domini**.
 
+<!--
   * IP: `172.30.A.11`
   * Màscara: `255.255.0.0`
   * Porta d'enllaç: `172.30.0.1` (adreça interna del router virtual)
   * Servidors DNS: `172.30.A.10` (adreça del servidor DNS del domini)
+-->
 
   > **ATENCIÓ**: és important recordar que per unir un client a un domini, el primer que cal fer és configurar com a **DNS principal** l'adreça **IP del servidor DNS** del domini, que és també el controlador de domini.
 
 Finalment, fes pings per a verificar que el client pot comunicar-se amb el servidor.
- * ping a `172.30.A.10`
+ * ping a la ip del servidor <!--`172.30.A.10`-->
  * ping a google.com
  * ping al servidor del domini (`wsxxx.adxxx.local`)
 
