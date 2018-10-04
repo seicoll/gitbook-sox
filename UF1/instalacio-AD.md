@@ -49,7 +49,7 @@ Com es tracta de crear un domini aïllat (sense relació amb altres dominis, ni 
 
 A continuació has d'introduir el nom complet del domini arrel. Aquest nom ha de complir l'estructura DNS (_Domain Name System_).
 
-El domini no existirà realment a Internet, per tant serà de tipus **.local**,i el nom ha de ser `adxxx.local` (`xxx` són les inicials del vostre nom i cognoms).
+El domini no existirà realment a Internet, per tant serà de tipus **.local**.<!--, i el nom ha de ser `adxxx.local` (`xxx` són les inicials del vostre nom i cognoms).-->
 
   ![](/assets/AD_ins6.png)
 
@@ -66,7 +66,7 @@ Introdueix doncs la contrasenya de l'administrador i prem **_Següent_**.
 
 A continuació indicarà que no troba un servidor DNS, però **no cal fer res**; automàticament s'instal·larà el servei de DNS en aquest mateix servidor doncs **cal tenir instal·lat el servei de resolució de noms per al correcte funcionament del Directori Actiu**.
 
-La finestra següent, demanarà el **nom NetBIOS** del domini. Es pot deixar el què proposa per defecte, que serà `ADXXX` (el nom del domini en majúscules i sense .local).
+La finestra següent, demanarà el **nom NetBIOS** del domini. Es pot deixar el què proposa per defecte, que serà <!--`ADXXX`--> el nom del domini en majúscules i sense .local.
 
 Després s'ha d'indicar la localització dels arxius bàsics que utilitzarà el Directori Actiu: la carpeta per a base de dades, la carpeta d'arxius de registre i la carpeta SYSVOL que conté els arxius públics del domini que han de ser compartits. Podem deixar les opcions per defecte.
 
@@ -74,7 +74,7 @@ A continuació, se'ns informa mitjançant un **resum**, de tota les configuracio
 
 En prémer **_Següent_** comença el procés de comprovació de requeriment previs i després podem sel·leccionar **_Instal·lar_** i comença el procés de **promoció de l'equip a Controlador de Domini**. 
 
-Un cop acabada la instal·lació es **reiniciarà l'equip** perquè el Directori Actiu s’iniciï i estigui operatiu.
+Un cop acabada la instal·lació es **reiniciarà l'equip** perquè el Directori Actiu s'iniciï i estigui operatiu.
 
 > Si tot ha funcionat correctament, el nostre equip ja està convertit en un controlador de domini del Directori Actiu per gestionar de forma centralitzada els recursos de la xarxa.
 
