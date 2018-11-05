@@ -6,15 +6,21 @@
 
 Aquestes dades inclouen:
 
-* En **quina carpeta es guarda la configuració** que l'usuari fa del seu entorn de treball (fons de l'escriptori, mida de les icones, la lletra del sistema, configuració del teclat i ratoli...).
-* En **quina carpeta es guardaran els seus arxius** personals. Només ell hi podrà accedir.
-* **Quin script s'executarà cada cop que l'usuari iniciï sessió**. Pot servir entre altres coses per què l'usuari pugui accedir a impressores i carpetes compartides
+* En quina **carpeta on es guarda el perfil d'usuari** on es guarda la configuració que l'usuari fa del seu entorn de treball 
+  * Fons de l'escriptori, mida de les icones, la lletra del sistema, configuració del teclat i ratoli...
+  * **Accés ràpid**: arxius que l'usuari guarda a l'escriptori, arxius descarregats d'Internet, música, fotos i vídeos.
+![](/assets/ADPerfil_AccesRapid.png)
+
+* En quina **carpeta privada** on es guarden els seus arxius personals. Només ell hi podrà accedir.
+
+* Quin **script s'executarà cada cop que l'usuari iniciï sessió**. 
+  * Pot servir entre altres coses per què l'usuari pugui accedir a impressores i carpetes compartides
 
 Els diferents arxius que formen el perfil s'estructuren en carpetes com per exemples **_Dades de programes_**, **_Escriptori_**, **_Favorits_**, **_Els meus documents_**, **_Impressores_**, etc.
 
-Si es fa què la carpeta del seu perfil es guardi en un servidor, l'usuari tindrà la seva configuració en qualsevol màquina del domini, i en aquest cas es diu que té un **perfil mòbil**.
+> Si es fa què la carpeta del seu perfil d'usuari es guardi en un servidor, l'usuari tindrà la seva configuració en qualsevol màquina del domini, i en aquest cas es diu que té un **perfil mòbil (_roaming profile_)**.
 
-Si no es configura la carpeta de perfil, en cada màquina se li crearà un **perfil local**.
+Si no es configura un perfil mòbil, en cada màquina on es validi l'usuari se li crearà un **perfil local**.
 
 ## Tipus de perfils
 
