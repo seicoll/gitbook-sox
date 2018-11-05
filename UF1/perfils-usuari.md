@@ -33,7 +33,10 @@ Si no es configura un perfil mòbil, en cada màquina on es validi l'usuari se l
 * **Perfil Obligatori**: l'usuari pot fer canvis però s'esborren al tancar la sessió.
 * **Perfil Súper-obligatori**: si no es pot carregar el perfil, no es pot iniciar sessió.
 
-> Els **perfils mòbils** són molt útils però també tenen inconvenients: augmenten molt el tràfic de xarxa i, si falla la xarxa o el servidor, els usuaris no podran accedir als seus arxius.
+> Els **perfils mòbils** són molt útils però també tenen inconvenients:
+  * Si l'usuari té molts arxius o arxius molt grans, l'inici i tancament de sessió es ralentitza molt. 
+  * Pot augmentar molt el tràfic de xarxa 
+  * Si falla la xarxa o el servidor, els usuaris no podran accedir als seus arxius.
 
 ## Configuració de perfils d'usuaris
 
