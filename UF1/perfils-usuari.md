@@ -88,7 +88,7 @@ Un cop creada la carpeta cal posar els **permisos** adequats:
   
 ### Creació de la carpeta per posar les carpetes privades
 
-Si es vol què els usuaris tinguin una **carpeta privada** en el servidor, cal crear una carpeta on es posaran les seves carpetes privades.
+Si es vol què els usuaris tinguin una **carpeta privada** en el servidor  per poder-hi accedir des de qualsevol màquina unida al domini, cal crear una carpeta on es posaran les seves carpetes privades de cada usuari.
 
 Aquesta carpeta ha de tenir els mateixos permisos que la de **_perfils_**.
   
@@ -134,6 +134,8 @@ Per configurar el perfil mòbil d'un usuari  cal seleccionar l'usuari i amb el b
   * Per exemple: `\\WSXXX\Privades\%username%`
   
    També s'ha indicar la lletra de la unitat se xarxa a la què es connectarà aquesta carpeta en la màquina client.
+   
+   ![](/assets/ADPerfilPrivada.png)
    
   > La **carpeta privada** de cada usuari es crearà en quant es faci clic a **_Aceptar_**.
  
