@@ -69,10 +69,12 @@ Un cop creada la carpeta cal posar els **permisos** adequats:
     * Marcar la casella **control total**.
   ![](/assets/ADPermisosAdmin.png)
   
+  
   * **Propietari (CREATOR OWNER)**: 
     * Aplicar permisos sobre **_"Solo subcarpetas y archivos" _**.
     * Marcar la casella **control total**.
   ![](/assets/ADPermisosCreator.png)
+  
   
   * **Usuaris del domini (Domain Users)**: 
     * Aplicar permisos a **_"Solo esta carpeta"_**.
@@ -92,14 +94,23 @@ Aquesta carpeta ha de tenir els mateixos permisos que la de **_perfils_**.
   
 ### Compartició de les carpetes
 
-Les carpetes anteriors (**_perfils_** i **_privades_**) **s'han de compartir** de forma que tothom tingui control total (els permisos necessaris per cada usuari concret s'han d'haver configurat en els permisos de seguretat):
+Per poder accedir des de les màquines clients a les carpetes dels perfils en el servidor, **cal compartir** la carpeta dels perfils i la carpeta privada i configurar els permisos de compartició adequats.
+
+Les carpetes anteriors (**_perfils_** i **_privades_**) s'han de compartir de forma que tothom tingui **control total** (els permisos necessaris per cada usuari concret ja s'han d'haver configurat en els permisos de seguretat).
 
 * Clicar amb el botó dret sobre la carpeta determinada i seleccionar **_Propiedades_**
 * Entrar a la pestanya **_Compartir _**i clicar el botó **_Uso compartido avanzado_**
-* Marcar la casella **_Compartir _**esta carpeta i clicar el botó **_Permisos_**
+* Marcar la casella **_Compartir esta carpeta_** i clicar el botó **_Permisos_**
 * Seleccionar l'usuari **_Todos (Everyone)_** i marcar l'opció **_Control Total_**
 
-La ruta per accedir de forma remota a una carpeta compartida es pot veure a l'apartat **_Propiedades > Compartir_**.
+![](/assets/ADPerfilsPermisosComparticio.png)
+
+La ruta per accedir de forma remota a una carpeta compartida es pot veure a l'apartat **_Propiedades > Compartir > Ruta de acceso a la red_**.
+
+![](/assets/ADPerfilsRutaCompartida.png)
+
+El nom de la ruta només hauria de contenir el nom del servidor (`\\WSXXX`) i el nom de la carpeta compartida (`\Perfils`).
+Si surt una ruta més llarga, segurament és perquè s'ha utilitzat el botó **_Compartir..._** en lloc de **_Uso compartido avanzado..._**.
 
 ### Configuració del perfil d'usuari
 
