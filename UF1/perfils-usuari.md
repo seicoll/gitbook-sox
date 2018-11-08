@@ -114,10 +114,19 @@ Si surt una ruta més llarga, segurament és perquè s'ha utilitzat el botó **_
 
 ### Configuració del perfil d'usuari
 
-Seleccionar l'usuari i amb el botó secundari, es tria l'opció **_Propiedades _** i anar a la secció **_Perfil_**.
+Per configurar el perfil mòbil d'un usuari  cal seleccionar l'usuari i amb el botó secundari, es tria l'opció **_Propiedades _** i anar a la secció **_Perfil_**.
 
 * **_Ruta de acceso al perfil_**: ha de ser la carpeta que s'ha compartit per guardar els perfils més l'identificador de l'usuari o `%username%`.
-  * Per exemple: `\\WSXXX\Perfils\%username%` o bé `\\IP_SERVIDOR\Perfils\%username%`
+  * Per exemple: 
+  `\\WSXXX\Perfils\%username%` o bé 
+  `\\IP_SERVIDOR\Perfils\%username%`
+
+  > La ruta de la carpeta **Perfils** es pot trobar dins de les seves propietats, a la pestanya **_Compartir > Ruta de acceso a la red_** .
+  > **MAI** s'ha de posar la ruta local (`C:\...`).
+
+  ![](/assets/ADPerfilsPerfilRuta.png)
+
+  La carpeta de perfil mòbil de l'usuari no es crearà fins que l'usuari es validi per primera vegada.
 
 * **_Carpeta particular_**: ha de ser la carpeta que s'ha compartit per guardar les carpetes particulars més l'identificador del l'usuari o `%username%`. 
   * Per exemple: `\\WSXXX\Privades\%username%`
