@@ -144,6 +144,7 @@ Per configurar el perfil mòbil d'un usuari  cal seleccionar l'usuari i amb el b
 ### Comprovació de la carpeta de perfil mòbil
 
 En el **client**, iniciar sessió amb un usuari del domini a qui se li ha configurat el perfil mòbil.
+
 Podria ser que surtís un error indicant que s'ha creat un perfil temporal.
 
 ![](/assets/ADPerfilTemporal.png)
@@ -159,16 +160,19 @@ Els possibles motius són:
   * Comprovar en el servidor que la ruta configurada en el perfil inclogui el nom d'usuari (`\\WSXXX\Perfils\usuari`) i coincideixi amb la ruta de la carpeta compartida: **configuració del perfil mòbil**.
 
 Quan es tanca la sessió, si s'han fet canvis en el perfil es guarden al servidor. 
+
 Al tornar a entrar des de **qualsevol màquina del domini**, els canvis s'han de mantenir.
 
 #### Comprovació del tipus de perfil creat en la màquina client
 
 Des del **client** es poden veure els perfils i modificar algun paràmetre a **_Sistema > Configuración avanzada_**.
+
 Per poder-ho fer, cal validar-se amb l'**administrador del domini** o amb l'**administrador local**.
 
 #### Comprovació de la carpeta del perfil en el servidor
 
 Si no surtit cap error al iniciar sessió en l'equip client, en la carpeta de perfils del servidor apareixerà una carpeta per l'usuari. 
+
 Aquesta carpeta pot tenir la extensió **_.V6_** depenent de la versió de sistema operatiu que tingui la màquina client (Windows XP, Windows 8.1, Windows 10, etc).
 
 > Si les màquines clients no tenen la mateixa versió de sistema operatiu, per exemple Windows 10 en unes i Windows 7 en altres, els canvis que es facin en unes, no quedaran reflectits en les altres.
