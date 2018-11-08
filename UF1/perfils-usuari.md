@@ -142,11 +142,22 @@ Per configurar el perfil mòbil d'un usuari  cal seleccionar l'usuari i amb el b
 ### Comprovació de la carpeta de perfil mòbil
 
 En el **client**, iniciar sessió amb un usuari del domini a qui se li ha configurat el perfil mòbil.
-Si surt un error indicant que s'ha creat un perfil temporal, dos possibles errors són:
-* No s'ha trobat la ruta cap a la carpeta del perfil de l'usuari en el servidor
-* Els permisos de la carpeta de perfil de l'usuari no són correctes.
+Podria ser que surtís un error indicant que s'ha creat un perfil temporal.
 
-Si s'han fet canvis en el perfil, es guarden al tancar la sessió. Al tornar a entrar des de **qualsevol màquina del domini**, els canvis s'han de mantenir.
+![](/assets/ADPerfilTemporal.png)
+ 
+Els possibles motius són:
+* No s'ha pogut contactar amb el servidor: s'ha de provar a fer **ping** al servidor. Si no funciona:
+  * Comprovar si el servidor i el client estan connectats en la mateixa xarxa.
+  * Comprovar que les seves adreces IP i les màscares siguin correctes.
+  * Comprovar la configuració del tallafocs.
+* No s'ha trobat la carpeta del perfil de l'usuari en el servidor o els permisos no són els adequats:
+  * Comprovar en el servidor els permisos locals:** creació de la carpeta de perfils mòbils**.
+  * Comprovar en el servidor que la carpeta estigui compartida i tingui els permisos adequats: **compartició de la carpeta de perfils mòbils**.
+  * Comprovar en el servidor que la ruta configurada en el perfil inclogui el nom d'usuari (`\\WSXXX\Perfils\usuari`) i coincideixi amb la ruta de la carpeta compartida: **configuració del perfil mòbil**.
+
+Quan es tanca la sessió, si s'han fet canvis en el perfil es guarden al servidor. 
+Al tornar a entrar des de **qualsevol màquina del domini**, els canvis s'han de mantenir.
 
 #### Comprovació del tipus de perfil creat en la màquina client
 
