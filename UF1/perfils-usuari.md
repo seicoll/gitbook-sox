@@ -130,14 +130,14 @@ Per configurar el perfil mòbil d'un usuari  cal seleccionar l'usuari i amb el b
   > La **carpeta de perfil mòbil** de l'usuari no es crearà fins que l'usuari es validi per primera vegada.
 
 
-* **_Carpeta particular_**: ha de ser la carpeta que s'ha compartit per guardar les carpetes particulars més l'identificador del l'usuari o `%username%`. 
+* **_Carpeta particular_**: ha de ser la carpeta que s'ha compartit per guardar les carpetes privades més l'identificador del l'usuari o `%username%`. 
   * Per exemple: `\\WSXXX\Privades\%username%`
   
    També s'ha indicar la lletra de la unitat se xarxa a la què es connectarà aquesta carpeta en la màquina client.
    
    ![](/assets/ADPerfilPrivada.png)
    
-  > La **carpeta privada** de cada usuari es crearà en quant es faci clic a **_Aceptar_**.
+  > La **carpeta privada** de cada usuari es crearà dins de `Privades`en quant es faci clic a **_Aceptar_**.
  
      
 * **_Script de inicio de sessión_**: no s'ha de posar la ruta. Les màquines unides al domini ja saben on trobar-lo: `\\WSXXX\netlogon`.
@@ -179,13 +179,17 @@ Aquesta carpeta pot tenir la extensió **_.V6_** depenent de la versió de siste
 
 > Si les màquines clients no tenen la mateixa versió de sistema operatiu, per exemple Windows 10 en unes i Windows 7 en altres, els canvis que es facin en unes, no quedaran reflectits en les altres.
 
-### Comprovació de la carpeta privada
+### Comprovació de la carpeta privada des del client
 
 Un cop iniciada la sessió en el **client**, l'usuari ha de veure una unitat de xarxa (la que s'hagi configurat en el perfil) i ha de poder entrar, crear, esborrar i modificar arxius i carpetes.
 
-Si no apareix la unitat de xarxa, segurament és per què no s'ha trobat la ruta. Cal revisar la ruta de la carpeta privada que s'ha configurat en el perfil.
+![](/assets/ADCarpetaPrivada.png)
 
-Si no es poden crear arxius, carpetes... s'han de revisar els permisos de la carpeta privada, tant els de seguretat com els de compartició.
+Alguns errors que es poden produir són:
+
+* **No apareix la unitat de xarxa** degut a que no s'ha trobat la ruta a la carpeta privada: cal assegurar-se que la carpeta  `Privades` està compartida en el servidor i que la ruta configurada en el perfil (`\\WSXXX\Privades\usuari`) és correcta.
+
+* **L'usuari no pot entrar o no pot modificar el contingut** degut a la configuració incorrecta dels permisos de la carpeta  `Privada`: cal esborrar les carpetes privades dels usuaris, revisar els permisos de la carpeta `Privades`, tant els de seguretat com els de compartició, i tornar a configurar el perfil dels usuaris per a què es tornin a crear les carpetes de cada usuari amb els permisos adequats.  
 
 ## Documentació i recursos
 
