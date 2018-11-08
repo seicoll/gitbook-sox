@@ -121,12 +121,13 @@ Per configurar el perfil mòbil d'un usuari  cal seleccionar l'usuari i amb el b
   `\\WSXXX\Perfils\%username%` o bé 
   `\\IP_SERVIDOR\Perfils\%username%`
 
-  > La ruta de la carpeta **Perfils** es pot trobar dins de les seves propietats, a la pestanya **_Compartir > Ruta de acceso a la red_** .
+  > La ruta de la carpeta **Perfils** es pot trobar dins de les seves propietats, a la pestanya **_Compartir > Ruta de acceso a la red_**.
+  
   > **MAI** s'ha de posar la ruta local (`C:\...`).
 
   ![](/assets/ADPerfilsPerfilRuta.png)
 
-  La carpeta de perfil mòbil de l'usuari no es crearà fins que l'usuari es validi per primera vegada.
+  > La **carpeta de perfil mòbil** de l'usuari no es crearà fins que l'usuari es validi per primera vegada.
 
 * **_Carpeta particular_**: ha de ser la carpeta que s'ha compartit per guardar les carpetes particulars més l'identificador del l'usuari o `%username%`. 
   * Per exemple: `\\WSXXX\Privades\%username%`
@@ -135,7 +136,6 @@ Per configurar el perfil mòbil d'un usuari  cal seleccionar l'usuari i amb el b
    
 * **_Script de inicio de sessión_**: no s'ha de posar la ruta. Les màquines unides al domini ja saben on trobar-lo: `\\WSXXX\netlogon`.
 
-> La **carpeta de perfil** per cada usuari no es crearà fins què l'usuari es validi per primera vegada.
 > La **carpeta privada** de cada usuari es crearà en quant es faci clic a **_Aceptar_**.
 
 ### Comprovació de la carpeta de perfil mòbil
