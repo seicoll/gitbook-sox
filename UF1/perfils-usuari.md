@@ -134,9 +134,10 @@ Per configurar el perfil mòbil d'un usuari  cal seleccionar l'usuari i amb el b
   
    També s'ha indicar la lletra de la unitat se xarxa a la què es connectarà aquesta carpeta en la màquina client.
    
+  > La **carpeta privada** de cada usuari es crearà en quant es faci clic a **_Aceptar_**.
+   
 * **_Script de inicio de sessión_**: no s'ha de posar la ruta. Les màquines unides al domini ja saben on trobar-lo: `\\WSXXX\netlogon`.
 
-> La **carpeta privada** de cada usuari es crearà en quant es faci clic a **_Aceptar_**.
 
 ### Comprovació de la carpeta de perfil mòbil
 
@@ -145,9 +146,19 @@ Si surt un error indicant que s'ha creat un perfil temporal, dos possibles error
 * No s'ha trobat la ruta cap a la carpeta del perfil de l'usuari en el servidor
 * Els permisos de la carpeta de perfil de l'usuari no són correctes.
 
-Si no surt cap error, en la carpeta de perfils del servidor apareixerà una carpeta per l'usuari. Aquesta carpeta pot tenir la extensió **_.V6_** depenent de la versió de sistema operatiu que tingui la màquina client (Windows XP, Windows 8.1, Windows 10, etc).
-
 Si s'han fet canvis en el perfil, es guarden al tancar la sessió. Al tornar a entrar des de **qualsevol màquina del domini**, els canvis s'han de mantenir.
+
+#### Comprovació del tipus de perfil creat en la màquina client
+
+Des del **client** es poden veure els perfils i modificar algun paràmetre a **_Sistema > Configuración avanzada_**.
+Per poder-ho fer, cal validar-se amb l'**administrador del domini** o amb l'**administrador local**.
+
+#### Comprovació de la carpeta del perfil en el servidor
+
+Si no surtit cap error al iniciar sessió en l'equip client, en la carpeta de perfils del servidor apareixerà una carpeta per l'usuari. 
+Aquesta carpeta pot tenir la extensió **_.V6_** depenent de la versió de sistema operatiu que tingui la màquina client (Windows XP, Windows 8.1, Windows 10, etc).
+
+> Si les màquines clients no tenen la mateixa versió de sistema operatiu, per exemple Windows 10 en unes i Windows 7 en altres, els canvis que es facin en unes, no quedaran reflectits en les altres.
 
 ### Comprovació de la carpeta privada
 
