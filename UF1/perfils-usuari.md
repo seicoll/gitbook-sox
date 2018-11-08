@@ -129,13 +129,15 @@ Per configurar el perfil mòbil d'un usuari  cal seleccionar l'usuari i amb el b
 
   > La **carpeta de perfil mòbil** de l'usuari no es crearà fins que l'usuari es validi per primera vegada.
 
+
 * **_Carpeta particular_**: ha de ser la carpeta que s'ha compartit per guardar les carpetes particulars més l'identificador del l'usuari o `%username%`. 
   * Per exemple: `\\WSXXX\Privades\%username%`
   
    També s'ha indicar la lletra de la unitat se xarxa a la què es connectarà aquesta carpeta en la màquina client.
    
   > La **carpeta privada** de cada usuari es crearà en quant es faci clic a **_Aceptar_**.
-   
+ 
+     
 * **_Script de inicio de sessión_**: no s'ha de posar la ruta. Les màquines unides al domini ja saben on trobar-lo: `\\WSXXX\netlogon`.
 
 
