@@ -13,8 +13,11 @@ Aquestes dades inclouen:
 
 * En quina **carpeta privada** on es guarden els seus arxius personals. Només ell hi podrà accedir.
 
-* Quin **script s'executarà cada cop que l'usuari iniciï sessió**. 
-  * Pot servir entre altres coses per què l'usuari pugui accedir a impressores i carpetes compartides
+* Quin **script s'executarà cada cop que l'usuari iniciï sessió**.
+Algunes de les coses que es poden programar son:
+  * Sincronitzar la data i hora del client amb el servidor.
+  * Configurar les impressores a les que pot accedir l'usuari.
+  * Connectar una unitat de xarxa a una carpeta compartida en el servidor. 
 
 Els diferents arxius que formen el perfil s'estructuren en carpetes com per exemples **_Dades de programes_**, **_Escriptori_**, **_Favorits_**, **_Els meus documents_**, **_Impressores_**, etc.
 
@@ -59,16 +62,27 @@ Un cop creada la carpeta cal posar els **permisos** adequats:
 
 4. Clicar el botó Deshabilitar herencia i seleccionar **_Quitar todos los permisos heredados..._**
 
-5. A cada un dels següents usuaris, se li han de donar els permisos necessaris clicant el botó     
+5. Afegir els següents usuaris i donar-los els permisos necessaris clicant el botó     
 **_Agregar > Seleccionar una entidad de seguridad_**:
-  * **Administador (Administrator)**: aplicar permisos sobre aquest directori, els subdirectoris i els fitxers i marcar la casella **control total**.
-  * **Propietari (CREATOR OWNER)**: aplicar permisos sobre els subdirectoris i els fitxers i marcar la casella **control total**.
-  * **Usuaris del domini (Domain Users)**: aplicar els següents permisos però només sobre aquest directori (clicar **_Mostrar permisos avanzados_**):
-    * Permís per travessar aquest directori / executar arxius
-    * Permís per mostrar carpeta / llegir dades
-    * Permís per crear carpetes / adjuntar dades
+  * **Administadors (Administrators)** 
+    * Aplicar permisos sobre **_"Esta carpeta, subcarpetas y archivos"_**.
+    * Marcar la casella **control total**.
+  ![](/assets/ADPermisosAdmin.png)
+  
+  * **Propietari (CREATOR OWNER)**: 
+    * Aplicar permisos sobre **_"Solo subcarpetas y archivos" _**.
+    * Marcar la casella **control total**.
+  ![](/assets/ADPermisosCreator.png)
+  
+  * **Usuaris del domini (Domain Users)**: 
+    * Aplicar permisos a **_"Solo esta carpeta"_**.
+    * Clicar **_Mostrar permisos avanzados_**:
+      * Permís per **_Travessar aquest directori/executar arxius_**.
+      * Permís per _**Mostrar carpeta / llegir dades**_.
+      * Permís per _**Crear carpetes / adjuntar dades**_.
+      * **_Permisos de lectura_**.
     
-  ![](/assets/perfilmobils_permisos.png)
+  ![](/assets/ADPermisosUsuaris.png)
   
 ### Creació de la carpeta per posar les carpetes privades
 
