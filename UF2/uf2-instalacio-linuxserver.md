@@ -76,52 +76,43 @@ En aquest sistema els noms depenen, entre altes coses, del tipus i d'on està in
 * Interfície **lo**: correspon a la interfície de **loopback**.
 
 ```sh
-usuari@usxxx:~$ ifconfig -a
-enp0s3    Link encap:Ethernet  direcciónHW 08:00:27:79:94:29
-           Direc. inet:172.30.0.20  Difus.:172.30.255.255  Másc:255.255.0.0
-          ...
-wlp2s0    Link encap:Ethernet  direcciónHW 00:13:f7:40:1c:a6  
-          Direc. inet:192.168.1.128  Difus.:192.168.1.255  Másc:255.255.255.0
-          ...
-lo        Link encap:Bucle local  
-          Direc. inet:127.0.0.1  Másc:255.0.0.0
-          ...
+usuari@usxxx:~$ ip -br link
+lo       UNKNOWN   00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP>
+enp3s0   DOWN      d0:17:c2:97:22:69 <NO-CARRIER,BROADCAST,MULTICAST,UP>
+wlp2s0   UP        00:13:f7:40:1c:a6 <BROADCAST,MULTICAST,UP,LOWER_UP>
 ```
 
 Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de conèixer per poder utilitzar els seus serveis.
 
 L'adreça ha de pertànyer a la xarxa on està connectada la màquina.
 
-En **_Ubuntu Server_**, la xarxa es configura editant l'arxiu `/etc/network/interfaces`.
+En **_Ubuntu Server_**, la xarxa es configura editant l'arxiu `/etc/netplan/50-cloud-init.yaml`.
 
 * **Adreça IP**: `172.30.A.20` (**_A_** és el teu número d'alumne)
 * **Màscara**: `255.255.0.0` (de 16 bits, com la de la xarxa)
 * **Porta d'enllaç (GW)**: `172.30.0.1` (l'adreça del router virtual de la xarxa NAT)
 * **Servidors DNS**: `172.30.0.1` i `8.8.8.8` (la mateixa porta d'enllaç de VirtualBox pot fer de servidor DNS).
 
-> **ATENCIÓ**: en Ubuntu, per configurar l'adreça dels servidors DNS no s'ha d'editar l'arxiu `/etc/resolv.conf`
-
 ```
-# Interfície de bucle local (127.0.0.1)
-auto lo
-iface lo inet loopback
-
-# Interfície de xarxa Ethernet
-auto enp0s3
-iface enp0s3 inet static
-address 172.30.A.20
-netmask 255.255.0.0
-gateway 172.30.0.1
-dns-nameservers 172.30.0.1 8.8.8.8
+network:
+    ethernets:
+        enp0s3:
+            addresses:
+            - 172.30.0.20/16
+            gateway4: 172.30.0.1
+            nameservers:
+                addresses:
+                - 172.30.0.1
+                search: []
+            optional: true
+    version: 2
 ```
 
 **Reiniciar la targeta** per què agafi la nova configuració:
 
 ```
-sudo ip addr flush enp0s3
-sudo service networking restart
+sudo netplan apply
 ```
-
 
 ### Actualitzar el sistema
 
