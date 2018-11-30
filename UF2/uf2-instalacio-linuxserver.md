@@ -38,12 +38,12 @@ Després de la instal·lació, la memòria RAM es pot reduir fins a 512 MB.
 Cal planificar la utilització del disc, decidir les particions necessàries i el sistema de fitxers a utilitzar.
 
 * Primer s'ha de seleccionar el particionat manual, triar el disc i crear la taula de particions.
-  * En l'espai lliure, crear una partició nova de 6 GB.
+  * En l'espai lliure, crear una partició nova de 8 GB.
   * Crear-la com a partició primària, al principi del disc i amb el format ext4.
   * El punt de muntatge ha de ser l'arrel del sistema (/).
   * No cal afegir cap opció addicional de muntatge.
 
-* Repetir els passos anteriors per crear una partició primària de 2 GB per la carpeta d'usuaris (/home).
+* Repetir els passos anteriors per crear una partició primària de 1.6 GB per la carpeta d'usuaris (/home).
 * Finalment, crear una altra partició primària amb la resta de l'espai per a la swap (àrea d'intercanvi).
 
 Abans de confirmar, comprovar les particions creades:
@@ -52,7 +52,6 @@ Abans de confirmar, comprovar les particions creades:
 
 ### Altres paràmetres
 
-* No cal configurar un proxy.
 * No cal activar les actualitzacions automàtiques.
 * Instal·lar el servei **SSH** (seleccionar/deseleccionar serveis amb la tecla ESPAI).
 * Instal·lar GRUB (el gestor d'arrencada) en el disc principal.
@@ -65,7 +64,7 @@ Si es vol canviar el nom d'una màquina Linux, cal fer-ho en els arxius `/etc/ho
 
 ### Configurar la xarxa
 
-Primer, amb la comanda `ifconfig -a` cal comprovar quina és la targeta de xarxa que s'ha de configurar.
+Primer, amb la comanda `ip -a -4 -br address` cal comprovar quina és la targeta de xarxa que s'ha de configurar.
 
 Antigament s'utilitzaven els noms **_eth0_**, **_eth1_**... en funció de l'ordre en què es trobaven les interfícies.
 
