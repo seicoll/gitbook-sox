@@ -78,7 +78,7 @@ En aquest sistema els noms depenen, entre altes coses, del tipus i d'on està in
 ```sh
 usuari@usxxx:~$ ip -br link
 lo       UNKNOWN   00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP>
-enp3s0   DOWN      d0:17:c2:97:22:69 <NO-CARRIER,BROADCAST,MULTICAST,UP>
+ens33   DOWN      d0:17:c2:97:22:69 <NO-CARRIER,BROADCAST,MULTICAST,UP>
 wlp2s0   UP        00:13:f7:40:1c:a6 <BROADCAST,MULTICAST,UP,LOWER_UP>
 ```
 
@@ -96,7 +96,7 @@ En **_Ubuntu Server_**, la xarxa es configura editant l'arxiu `/etc/netplan/50-c
 ```
 network:
     ethernets:
-        enp0s3:
+        ens33:
             addresses:
             - 172.30.0.20/16
             gateway4: 172.30.0.1
@@ -112,6 +112,31 @@ network:
 
 ```
 sudo netplan apply
+```
+
+### Comprovació de la xarxa
+Les comandes que podem utilitzar per comprovar la configuració de xarxa són:
+
+* `ip -4 -br addr` per comprovar la IP i la màscara de cada targeta de xarxa.
+* `ip route` per veure la porta d'enllaç.
+* `systemd-resolve --status` per veure quins servidors DNS s'utilitzaran per resoldre noms de domini.
+
+```
+usuari@usxxx:~$ ip -4 -br address
+lo       UNKNOWN   127.0.0.1/8 
+ens33   UP        172.30.0.20/16
+wlp2s0   UP        192.168.0.157/24 
+
+usuari@usxxx:~$ ip route
+default via 172.30.0.1 dev ens33 proto static
+   ...
+
+usuari@usxxx:~$ systemd-resolve --status
+Global
+   ...
+Link 2 (ens33)
+   ...
+   DNS Servers: 172.30.0.1
 ```
 
 ### Actualitzar el sistema
