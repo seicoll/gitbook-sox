@@ -66,10 +66,13 @@
 * [Compartir recursos en xarxa i seguretat en sistemes de lliures](UF3/uf3-compartir-recursos-linux.md)
   * [Compartir arxius i carpetes amb NFS](UF3/uf3-compartir-arxius-linux-nfs.md)
   * [Compartir impressores amb CUPS](UF3/uf3-compartir-impressores-cups.md)
+  
+<!--
 * [Activitats](UF3/uf3-activitats.md)
   * [Activitat 1. Compartir recursos i seguretat en Windows](https://docs.google.com/document/d/1pAmK7k5k4E8RfdJMY5JtkYPQHS3MnSXRif_j_-WEMfE/edit?usp=sharing)
   * [Activitat 2. Compartir carpetes en GNU/Linux amb NFS](https://docs.google.com/document/d/1rhndBqwGHlEeQAqH_YffvbTO3Xy77_z_FqqXNp2DWyg/edit?usp=sharing)
   * [Activitat 3. Compartir impressores en GNU/Linux amb CUPS](https://docs.google.com/document/d/1JLT5b6rdPAaFzbdeYJCli48qAQLooiDyhcrfd1Favwk/edit?usp=sharing)
+-->
   * [Qüestionari](UF3/act/uf3-questionari.md)
 
 ## UF4. Integració de sistemes operatius
@@ -84,7 +87,10 @@
   * [Administrar el directori actiu de Samba 4](UF4/administrar-sambaAD.md)
   * [Perfils mòbils en un domini Samba AD](UF4/perfils-mobils-sambaAD.md)
   * [Zentyal com a controlador de domini](UF4/zentyal.md)
+
+<!--
 * [Activitats](UF4/uf4-activitats.md)
+
   * [Activitat 1. Compartir recursos amb Windows i accedir des de Linux](https://docs.google.com/document/d/1KDLMK1oI_3DBKD2G8YdXofjKtSx51vbF1XcLiZ_nPHo/edit?usp=sharing)
   * [Activitat 2. Compartir recursos amb Samba](https://docs.google.com/document/d/1YPA6u2vNXcuZ4WO0kzYZPs_MVBPQzZpaOOce2bKWHZA/edit?usp=sharing)
   * [Activitat 3. Unir un client Linux a un domini Windows](https://docs.google.com/document/d/1V4aPQy2GKtNZtHiSlvXqdzxrRb8hojm1E86clAJAJ7A/edit?usp=sharing)
@@ -93,5 +99,6 @@
 ---
 
 * [Activitat 4. Zentyal com a controlador primari de domini](UF4/act/act4.md)
+-->
 * [Qüestionari](UF4/act/uf4-questionari.md)
 
