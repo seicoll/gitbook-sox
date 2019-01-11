@@ -105,29 +105,34 @@ Per **afegir un grup secundari a un usuari**
 
 ### usermod
 
-Serveix per **canviar la configuració** del compte d'usuari.
+Serveix per **canviar la configuració** del compte d'usuari, així com bloquejar i desbloquejar un compte.
 
 Per exemple, es pot canviar el nom del compte (**login**), el grup principal, afegir o treure grups secundaris, canviar i/o moure el directori personal, canviar l'identificador, l'intèrpret de comandes per defecte (**shell**)...
 
 **_-g_**: Per **canviar el grup principal** de l'usuari.
 
-`sudo usermod -g <grup> <usuari>`
+  `sudo usermod -g <grup> <usuari>`
 
 **_-aG_**: Per afegir l'usuari a **grups secundaris**:
 
-`sudo usermod -aG <grup> [, grup ...] <usuari>`
+  `sudo usermod -aG <grup> [, grup ...] <usuari>`
 
 **_-m_**: Per **canviar el directori personal** i moure els seus arxius al nou directori:
 
-`sudo usermod -m -d /home/nou_dir <usuari>`
+  `sudo usermod -m -d /home/nou_dir <usuari>`
 
 **_-l_**: Per **canviar el nom del compte (login)**:
 
-`sudo usermod -l nou_login <usuari>`
+  `sudo usermod -l nou_login <usuari>`
+
+**_-L_**: Per **deshabilitar temporalment un usuari**:
+
+  `sudo usermod -L <usuari>`
+
 
 **_-u_**: Per **canviar l'identificador del compte (UID)**; `nou_id` no ha d'existir i ha de ser un número positiu:
 
-`sudo usermod -u nou_id <usuari>`
+  `sudo usermod -u nou_id <usuari>`
 
 ## Canviar contrassenyes
 
