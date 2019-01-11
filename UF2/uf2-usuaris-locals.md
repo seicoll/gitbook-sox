@@ -158,6 +158,31 @@ Per **reactivar un compte d'usuari** que ha estat desactivat.
 
 `sudo passwd -u <usuari>`
 
+#### chage
+
+La comanda `chage` modifica el nombre de dies entre canvis de contrasenya i la data de l'últim canvi de contrasenya.
+
+Per **obtenir informació sobre el 'temps de vida' de la contrasenya** d'un usuari:
+
+`sudo chage -l <usuari>`
+
+[IMATGE]
+
+Per definir que l'usuari hagi de **canviar la contrasenya cada cert temps** (per exemple 90 dies):
+
+`sudo chage -M 90 <usuari>`
+
+Per **definir la data de caducitat de la contrasenya** (per exemple el proper 17/03/2020):
+
+`sudo chage -E 2020-03-17 <usuari>`
+
+
+Per **comprovar que els canvis s'han fet** efectius:
+
+`sudo chage -l <usuari>`
+
+[IMATGE]
+
 ## Iniciar sessió amb un altre usuari
 
 Per **canviar a l'usuari root**:
@@ -259,11 +284,15 @@ Conté la informació dels usuaris del sistema (nom, directori home, etc.). Cada
 * `/home/usuari` és el directori personal de l'usuari.
 * `/bin/bash` és l'intèrpret de comandes per defecte.
 
+Només el **_root_** té permís d'escriptura. La resta d'usuaris i grups només el poden llegir.
+
 #### /etc/shadow
 Conté la les contrasenyes xifrades dels usuaris  i altres informacions, com per exemple l'última data en què es va canviar la contrasenya.
 
+Només l'usuari **_root_** té permís d'escriptura. Només el grup **_shadow_** té permís de lectura. La resta d'usuaris i grups no tenen cap permís.
+
 #### /etc/group
-Conté la informació dels grups. Cada camp està separat per :
+Conté la informació dels grups. Cada camp està separat per `:`
 
   `profes:x:2000:usuari,director`
   
@@ -272,10 +301,25 @@ Conté la informació dels grups. Cada camp està separat per :
 * El tercer camp (**2000**) és l'identificador del grup.
 * El quart camp conté els noms dels usuaris que tenen aquest grup com a grup secundari.
 
+Només el **_root_** té permís d'escriptura. La resta d'usuaris i grups només el poden llegir.
+
+#### /etc/gshadow
+
+Conté les contrasenyes encriptades dels grups.
+
+Només l'usuari **_root_** té permís d'escriptura. Només el grup **_shadow_** té permís de lectura.
+
 #### /etc/sudoers
 
 Conté informació sobre els drets i privilegis dels usuaris.
+
 La seva principal utilitat és afegir grups o usuaris que puguin actuar com a administradors (que puguin utilitzar la comanda `sudo`).
+
+Només el **_root_** pot llegir-lo. La resta d'usuaris i grups no tenen cap permís.
+
+Per editar-lo cal utilitzar la comanda `visudo`:
+
+`sudo visudo`
 
 ```
 # User privilege specification
@@ -285,3 +329,8 @@ root    ALL=(ALL:ALL) ALL
 %sudo    ALL=(ALL:ALL) ALL
 ```
 
+## Referències
+
+* **Apunts SOX Pere Sánchez:** [Arxius de Linux relacionats amb els usuaris i grups locals](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=92&ref=2023)
+
+* **Apunts SOX Pere Sánchez:** [Crear i eliminar usuaris locals](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=120&ref=2321)
