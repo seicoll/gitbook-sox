@@ -158,7 +158,7 @@ Per **reactivar un compte d'usuari** que ha estat desactivat.
 
 `sudo passwd -u <usuari>`
 
-#### chage
+### chage
 
 La comanda `chage` modifica el nombre de dies entre canvis de contrasenya i la data de l'últim canvi de contrasenya.
 
