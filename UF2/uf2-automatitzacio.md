@@ -65,7 +65,7 @@ Els camps què s'han de posar a cada línia són els següents:
 * **mes (1-12)**: en quin o quins mesos s'ha d'executar la comanda.
 * **dia de la setmana (0-7)**: tant el 0 com el 7 representen el diumenge. La comanda només s'executarà si cau en un dels dies especificats.
 * **usuari:** l'usuari que s'utilitzarà per a executar la comanda.
-* **comanda**: comanda o script a exectura. Si és un script, convé indicar tota la ruta, per exemple: `/home/usuari/script.sh`
+* **comanda**: comanda o script a executar. Si és un script, convé indicar tota la ruta, per exemple: `/home/usuari/script.sh`
 
 **Exemples:**
 
