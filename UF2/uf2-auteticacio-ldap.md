@@ -102,10 +102,10 @@ Si no es veuen els usuaris i grups LDAP, s'ha de tornar a [reconfigurar el clien
 
 Si l'identificador o el directori d'usuari no són correctes, cal modificar-los amb algun dels programes de gestió de LDAP (per exemple, phpldapadmin).
 
->A partir d'aquest moment, quan s'engegui la màquina, buscarà el servidor LDAP per validar els usuaris, per tant:
-1.Cal tenir engegat el servidor abans d'engegar el client.
-2.Cal apagar el client abans que el servidor.
-3.No s'hauria de canviar l'adreça del servidor (si es canvia, cal [reconfigurar el client LDAP](#reconfigurar-el-client-ldap) en totes les màquines).
+>A partir d'aquest moment, quan s'engegui la màquina, **buscarà el servidor LDAP per validar els usuaris**, per tant:
+  1.Cal tenir engegat el servidor abans d'engegar el client.
+  2.Cal apagar el client abans que el servidor.
+  3.No s'hauria de canviar l'adreça del servidor (si es canvia, cal [reconfigurar el client LDAP](#reconfigurar-el-client-ldap) en totes les màquines).
 
 ## Validar usuaris per consola
 
