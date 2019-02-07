@@ -50,12 +50,14 @@ Les següents comandes serveixen per indicar al sistema que es puguin autenticar
 
 
 ```
+sudo apt install ldap-auth-client nscd
 sudo auth-client-config -t nss -p lac_ldap
 sudo pam-auth-update
 ```
 
-> En la **segona comanda** s'ha de marcar l'opció **_Create home directory on login_**.
+> En la **tercera comanda** s'ha de marcar l'opció **_Create home directory on login_**.
 Si no se selecciona, no es crearà automàticament el directori de l'usuari i no podrà iniciar sessió (en el mode gràfic) o no tindrà un directori on guardar els seus arxius.
+
 
 ![](/assets/uf2-nsspam.png)
 
@@ -91,13 +93,21 @@ usuariLDAP:*:10000:10000:usuariLDAP:/home/users/usuariLDAP:/bin/bash
 
 S'haurien de veure tots els usuaris i grups, tant els locals com els configurats amb LDAP.
 
-Els **usuaris i grups LDAP** tenen un * en lloc d'una x en el segon camp.
+Els **usuaris i grups LDAP** es distingeixen per les següents dades:
+ * Tenen un `*` en lloc d'una `x` en el segon camp.
+ * L'identificador ha de ser superior o igual a **10000**.
+ * La carpeta personal ha d'estar dins de `/home/ldapxxx`.
 
 Si no es veuen els usuaris i grups LDAP, s'ha de tornar a [reconfigurar el client LDAP](#reconfigurar-el-client-ldap).
 
-<!--, l'identificador ha de ser superior o igual a 10000 i la carpeta personal ha d'estar dins de `/home/ldapUsuari`.-->
+Si l'identificador o el directori d'usuari no són correctes, cal modificar-los amb algun dels programes de gestió de LDAP (per exemple, phpldapadmin).
 
-## Validar usuaris per consolar
+>A partir d'aquest moment, quan s'engegui la màquina, buscarà el servidor LDAP per validar els usuaris, per tant:
+1.Cal tenir engegat el servidor abans d'engegar el client.
+2.Cal apagar el client abans que el servidor.
+3.No s'hauria de canviar l'adreça del servidor (si es canvia, cal [reconfigurar el client LDAP](#reconfigurar-el-client-ldap) en totes les màquines).
+
+## Validar usuaris per consola
 
 Ara podem **validar-nos amb un usuari de LDAP a través de terminal** fent:
 
