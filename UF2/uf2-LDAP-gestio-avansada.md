@@ -6,7 +6,7 @@ Primer de tot, en el servidor cal instal·lar el paquet ldapscripts:
 
 `sudo apt install ldapscripts`
 
-Configurar els paràmetres del fitxer `/etc/ldapscripts/ldapscripts.conf` (se suposa que ja s'han creat les unitats organitzatives usuaris, grups i maquines):
+Configurar els paràmetres del fitxer `/etc/ldapscripts/ldapscripts.conf` (se suposa que ja s'han creat les unitats organitzatives **usuaris**, **grups** i **maquines**):
 
 ```
 SERVER="ldap://localhost"
@@ -18,10 +18,10 @@ BINDDN="cn=admin,dc=ldapxxx,dc=local"
 BINDPWDFILE="/etc/ldapscripts/ldapscripts.passwd"
 UIDSTART=10000
 GIDSTART=10000
-MIDSTART=10000
+MIDSTART=20000
+GCLASS="posixGroup"
 USHELL="/bin/bash"
 UHOMES="/home/ldapxxx/%u"
-GCLASS="posixGroup" 
 ```
 
 Guardar la contrasenya en un arxiu per permetre l'accés :
@@ -33,22 +33,26 @@ sudo chmod 400 /etc/ldapscripts/ldapscripts.passwd
 
 ## Comandes per gestionar usuaris
 
-Algunes comandes que es poden utilitzar (sempre amb sudo):
+Algunes comandes que es poden utilitzar (sempre amb `sudo`):
 
-* ldapadduser usuari grup
-* ldapsetpasswd usuari
-* ldapdeleteuser usuari
-* ldapaddgroup grup
-* ldapdeletegroup grup
-* ldapsetprimarygroup usuari grup
-* ldapaddusertogroup usuari grup
-* ldapdeleteuserfromgroup usuari grup
+* `ldapadduser usuari grup`
+* `ldapsetpasswd usuari`
+* `ldapdeleteuser usuari`
+* `ldapaddgroup grup`
+* `ldapdeletegroup grup`
+* `ldapsetprimarygroup usuari grup`
+* `ldapaddusertogroup usuari grup`
+* `ldapdeleteuserfromgroup usuari grup`
 
 > Els usuaris es creen amb una plantilla diferent que la que utilitza **phpldapadmin**, per tant poden haver-hi camps diferents.
+
 Es pot fer la prova creant un usuari amb aquests scripts i observar la diferència amb **phpldapadmin** o amb **ldapsearch**.
-> No hi ha comandes per crear, modificar o eliminar unitats organitzatives.
-> El usuaris es creen en la unitat organitzativa configurada en l'arxiu `/etc/ldapscripts/ldapscripts.conf`.
-> Si es volen crear en altres unitats organitzatives, s'ha d'anar canviant la configuració en aquest arxiu.
+
+### Inconvenients d'aquest mètode
+
+* No hi ha comandes per crear, modificar o eliminar unitats organitzatives.
+* Tots els usuaris es creen en la unitat organitzativa configurada en l'arxiu `/etc/ldapscripts/ldapscripts.conf`.
+  * Si es volen crear en altres unitats organitzatives, s'ha d'anar canviant la configuració en aquest arxiu.
 
 ## Altres comandes per gestionar LDAP
 
