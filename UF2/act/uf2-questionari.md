@@ -3,8 +3,8 @@
 <quiz name="">
     <question>
         <p>Quin és l’equivalent de fer chmod u+rwx examen.txt i després chmod go-rwx examen.txt en notació octal?</p>
-        <answer>chmod 700 examen.txt</answer>
-        <answer correct>chmod 777 examen.txt</answer>
+        <answer correct>chmod 700 examen.txt</answer>
+        <answer>chmod 777 examen.txt</answer>
         <answer>chmod 555 examen.txt</answer>
         <answer>chmod 000 examen.txt</answer>
     </question>
