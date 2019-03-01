@@ -1,11 +1,27 @@
 # Compartir arxius i carpetes en Windows
 
-## Introducció
-
-### Conceptes bàsics
+## Compartició de recursos en Windows
 
 > Windows utilitza el protocol **CIFS** \(antigament anomenat **SMB**\) per compartir arxius, carpetes i impressores en un entorn en xarxa. També se'l sol anomenar **SMB/CIFS**.
 
+### Recursos compartits
+
+> Un **recurs compartit** és un objecte al qual es pot accedir de forma remota.  
+
+El recursos que es poden compartir són:
+* **Arxius i carpetes**
+* **Impressores**
+
+> El **nom del recurs compartit** \(el que s'ha d'utilitzar quan s'accedeix de forma remota\) pot ser diferent del nom real.
+
+<!--
+**Recursos compartits per defecte en un domini**
+
+* **NETLOGON**: Conté els scripts d'inici de sessió. C:\Windows\SYSVOL\sysvol\domini\SCRIPTS
+* **SYSVOL**: Conté els fitxers públics del domini. C:\Windows\SYSVOL\sysvol
+-->
+
+### Permisos de compartició en Windows
 #### Propietari d'un arxiu o carpeta
 
 En Windows, cada carpeta i arxiu pertany a un usuari o a un grup d'usuaris, que és qui l'ha creat, però es pot canviar sempre que es tinguin els permisos per fer-ho.  
@@ -36,22 +52,6 @@ Això no sempre es pot fer \(depén dels requeriments de seguretat\) però en la
 #### Herència
 Quan es crea una carpeta, aquesta **hereta els permisos de la carpeta pare**, però aquesta dependència es pot trencar per canviar i posar els permisos adequats a cada cas.
 
-### Recursos compartits
-
-> Un **recurs compartit** és un objecte al qual es pot accedir de forma remota.  
-
-El recursos que es poden compartir són:
-* **Arxius i carpetes**
-* **Impressores**
-
-> El **nom del recurs compartit** \(el que s'ha d'utilitzar quan s'accedeix de forma remota\) pot ser diferent del nom real.
-
-<!--
-**Recursos compartits per defecte en un domini**
-
-* **NETLOGON**: Conté els scripts d'inici de sessió. C:\Windows\SYSVOL\sysvol\domini\SCRIPTS
-* **SYSVOL**: Conté els fitxers públics del domini. C:\Windows\SYSVOL\sysvol
--->
 
 ## Gestió de permisos locals
 
