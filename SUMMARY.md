@@ -60,7 +60,7 @@
 ## UF3. Compartició de recursos i seguretat
 
 * [Introducció](UF3/uf3-introduccio.md)
-  * [Compartició de carpetes](UF3/uf3-introduccio/comparticio-de-carpetesuf3uf3-compartir-carpetesmd.md)
+  * [Compartició de carpetes](UF3/uf3-introduccio/comparticio-de-carpetes.md)
 * [Compartir recursos en xarxa i seguretat en sistemes de propietat](UF3/uf3-compartir-recursos-windows.md)
   * [Compartir arxius i carpetes en Windows](UF3/uf3-compartir-arxius-windows.md)
   * [Compartir impressores en Windows](UF3/uf3-compartir-impressores-windows.md)
