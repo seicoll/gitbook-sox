@@ -16,6 +16,23 @@ A part del propietari, es poden afegir altres usuaris i grups, i assignar permis
 
 > Si un usuari pertany a dos grups, se sumen els permisos dels dos grups.
 
+##### Permisos locals (de seguretat o NTFS)
+
+Són els permisos que tindran els usuaris quan **accedeixin als recursos** (arxius, carpetes i impressores) **de forma local**.
+
+Aquests permisos es poden configurar de forma simplificada o avançada.
+
+<!--Per conèixer la funció de cada permís i l'equivalència entre permisos detallats i simplificats, es pot consultar el resum sobre els permisos d'arxius i carpetes en Windows.-->
+
+##### Permisos de compartició
+
+Quan s'accedeix a una carpeta o arxiu de forma remota, s'han de **combinar els permisos locals amb els de compartició**. Sempre s'aplica el permís **més restrictiu**.
+
+<!--Consulta l'equivalència entre permisos locals i de compartició.-->
+
+Una forma de simplificar la gestió dels permisos quan es comparteixen arxius i carpetes és posar **Control total** als permisos de compartició i gestionar els permisos locals més detalladament.  
+Això no sempre es pot fer \(depén dels requeriments de seguretat\) però en la majoria de casos, sí.
+
 #### Herència
 Quan es crea una carpeta, aquesta **hereta els permisos de la carpeta pare**, però aquesta dependència es pot trencar per canviar i posar els permisos adequats a cada cas.
 
@@ -27,7 +44,7 @@ El recursos que es poden compartir són:
 * **Arxius i carpetes**
 * **Impressores**
 
-El **nom del recurs compartit** \(el que s'ha d'utilitzar quan s'accedeix de forma remota\) pot ser diferent del nom real.
+> El **nom del recurs compartit** \(el que s'ha d'utilitzar quan s'accedeix de forma remota\) pot ser diferent del nom real.
 
 <!--
 **Recursos compartits per defecte en un domini**
@@ -35,11 +52,6 @@ El **nom del recurs compartit** \(el que s'ha d'utilitzar quan s'accedeix de for
 * **NETLOGON**: Conté els scripts d'inici de sessió. C:\Windows\SYSVOL\sysvol\domini\SCRIPTS
 * **SYSVOL**: Conté els fitxers públics del domini. C:\Windows\SYSVOL\sysvol
 -->
-
-### Compartició de carpetes
-
-Una forma de simplificar la gestió dels permisos quan es comparteixen arxius i carpetes és posar **Control total** als permisos de compartició i gestionar els permisos locals més detalladament.  
-Això no sempre es pot fer \(depén dels requeriments de seguretat\) però en la majoria de casos, sí.
 
 ## Gestió de permisos locals
 
