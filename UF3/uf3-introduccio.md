@@ -64,8 +64,8 @@ En aquesta mòdul no es parlarà dels sistemes de protecció activa i passiva qu
   * Accés local o remot a una màquina
   * Accés al domini
 * **Limitacions d'accés**
-  * En quines màquines es pot accedir
-  * Durant quins períodes de temps es pot accedir
+  * En quines màquines es pot accedir.
+  * Durant quins períodes de temps es pot accedir.
 
 ### Privilegis
 
@@ -79,9 +79,11 @@ Els següents són alguns **exemples**:
 * Configurar i compartir els recursos
 * Afegir equips al domini o treure'ls
 
-Els **privilegis en Windows** es configuren a través de **directives de grup local** o **directives de grup d'Active Directory**.
+Els **privilegis en Windows** es configuren a través de:
+* Directives de grup local. 
+* Directives de grup d'Active Directory.
 
-Els **privilegis en Linux** es configuren en l'arxiu `/etc/sudoers`. 
+Els **privilegis en Linux** [es configuren en l'arxiu `/etc/sudoers`](https://seicoll.gitbooks.io/sox/content/UF2/uf2-usuaris-locals.html#etcsudoers). 
 
 ### Permisos
 
