@@ -25,6 +25,22 @@ Els poden compartir en xarxa tots tipus de recursos, encara que els **recursos m
 * **Arxius i carpetes**
 * **Impressores**
 
+#### Protocols utilitzats per compartir recursos
+
+**En Windows**
+
+> Windows utilitza el protocol **CIFS **(antigament **SMB**) per compartir tant arxius i carpetes com impressores.
+
+També se'l sol anomenar **SMB/CIFS**.
+
+**En Linux**
+
+> El protocol propi de Linux per compartir carpetes és **NFS**.
+
+Per compartir carpetes, Linux utilitza **CUPS**.
+
+Linux també pot utilitzar **SAMBA**, que és compatible amb **SMB/CIFS**, per compartir recursos amb Windows i també amb altres Linux.
+
 #### Servidor i client
 
 Qualsevol ordinador pot actuar com a **servidor** i com a **client**.
