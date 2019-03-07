@@ -219,7 +219,9 @@ Seleccionant qualsevol d'elles es veuran les carpetes que comparteixen.
 Si no apareix la màquina però es coneix la màquina i el nom del recurs compartit, es pot escriure en la barra d'adreces:
 
 ```
-\\NOM_SERVIDOR\Compartida o \\IP_SERVIDOR\Compartida
+\\NOM_SERVIDOR\Compartida 
+o 
+\\IP_SERVIDOR\Compartida
 ```
 
 ### Validació d'usuaris per accedir a carpetes compartides
