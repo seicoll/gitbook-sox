@@ -224,33 +224,38 @@ Si no apareix la màquina però es coneix la màquina i el nom del recurs compar
 
 ### Validació d'usuaris per accedir a carpetes compartides
 
-Quan s'intenta accedir a una carpeta compartida, el sistema comprova si l'usuari i contrasenya amb el que s'ha accedit al sistema està reconegut per la màquina servidor i té accés al recurs, aquest es podrà connectar.
+Quan **s'intenta accedir a una carpeta compartida**, el sistema comprova si l'usuari i contrasenya amb el que s'ha accedit al sistema està reconegut per la màquina servidor, ens podrem trobar en dos casos:
 
-Si no es reconeix l'identificador de l'usuari, demanarà un usuari i contrasenya.
+ * Si l'**usuari està reconegut** per la màquina servidor i té accés al recurs, aquest es podrà connectar.
+ * Si **no es reconeix l'identificador de l'usuari**, demanarà un usuari i contrasenya.
 
-Si reconeix l'usuari i contrasenya, podrà accedir si té els permisos adequats. Un cop a dins podrà realitzar diferents accions en funció dels permisos que tingui: veure continguts, crear, modificar, esborrar...
+Si reconeix l'usuari i contrasenya, podrà accedir si té els permisos adequats. **Un cop a dins podrà realitzar diferents accions** en funció dels permisos que tingui: veure continguts, crear, modificar, esborrar...
 
-Si volem que es pugui connectar qualsevol usuari caldrà donar permisos a l'usuari convidat i, si cal, habilitar aquest usuari.
+Si volem **que es pugui connectar qualsevol usuari** caldrà donar permisos a l'**usuari convidat** i, si cal, habilitar aquest usuari.
 
 ### Connectar una unitat de xarxa a una carpeta compartida
 
-Es pot connectar la carpeta compartida a una unitat de xarxa assignant-li una lletra d'unitat que estigui disponible.  
+Es pot connectar la carpeta compartida a una **unitat de xarxa** assignant-li una lletra d'unitat que estigui disponible.  
 D'aquesta forma serà més fàcil accedir-hi, doncs apareixerà com una unitat d'emmagatzematge local.
 
-Per fer la connexió, clicar amb el botó dret sobre Este equipo i triar l'opció Conectar a unidad de red.
+Per fer la connexió, clicar amb el botó dret sobre **_Este equipo_** i triar l'opció **_Conectar a unidad de red_**.
 
-* **Unitat:** triar una lletra d'unitat que estigui lliure \(X:\).
-* **Carpeta:** escriure la ruta o buscar-la \(\NOM\_EQUIP\Compartida\).
+* **Unitat:** triar una lletra d'unitat que estigui lliure \(`X:`\).
+* **Carpeta:** escriure la ruta o buscar-la \(`\\NOM\_EQUIP\Compartida\`).
 * **Conectar de nuevo al iniciar sesión:** connectar la unitat a la carpeta cada cop que l'usuari inicïï sessió.
 * **Conectar con otras credenciales:** connectar amb un usuari diferent de l'actual.
 
 ### Connectar una unitat de xarxa a través de comandes
 
-Per connectar-se a una unitat de xarxa i accedir als recursos que conté, només cal executar l’ordre:
+Per connectar-se a una unitat de xarxa i accedir als recursos que conté, només cal executar la comanda:
 
 `net use`
 
-Per **exemple**, si es vol accedir a un recurs anomenat _Compartida_ que s'emmagatzema en una màquina anomenada _Servidor_ i la lletra de la unitat és la d, cal escriure el següent:
+Per **exemple**, si es vol accedir a un recurs anomenat `Compartida` que s'emmagatzema en una màquina anomenada `NOM_SERVIDOR` i la lletra de la unitat és la d, cal escriure el següent:
+
+`net use d: \\NOM_SERVIDOR\Compartida`
+ 
+ o bé 
 
 `net use d: \\IP_SERVIDOR\Compartida`
 
