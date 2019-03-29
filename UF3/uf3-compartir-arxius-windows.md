@@ -100,7 +100,7 @@ A continuació, per configurar els permisos de compartició cal anar a les **pro
 
 ![](/assets/win-permisos-compartits.png)
 
-> Un cop s'hagi compartit la carpeta, la ruta que s'ha d'utilitzar per accedir de forma remota és la que apareix a _**Ruta de acceso de red:**_ `\\\WIN-SOX\Compartida`.
+> Un cop s'hagi compartit la carpeta, la ruta que s'ha d'utilitzar per accedir de forma remota és la que apareix a _**Ruta de acceso de red:**_ `\\WIN-SOX\Compartida`.
 
 ### Compartició senzilla
 
