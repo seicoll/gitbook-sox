@@ -26,7 +26,7 @@ Samba té com a **objectiu** oferir una alternativa **lliure** perquè els siste
 
 > Gràcies al **Samba**, en una xarxa hi pot haver equips amb Windows i equips amb Linux que intercanviïn informació en carpetes compartides i comparteixin impressores.
 
-El nom **_Samba_** prové d'afegir dues vocals al nom del protocol estàndard usat pel sistema de xarxa de Microsoft Windows, **_SMB_** (no que estava registrat). 
+El nom **_Samba_** prové d'afegir dues vocals al nom del protocol estàndard usat pel sistema de xarxa de Microsoft Windows, **_SMB_** (nom que estava registrat). 
 
 ## Instal·lació i configuració de Samba
 
