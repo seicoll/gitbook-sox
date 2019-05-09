@@ -49,18 +49,6 @@ blockquote p:last-child {
     margin-bottom: 0px;
 }
 
-/* code */
-.markdown-section code, .markdown-section pre {
-    background-color: #ddd;
-    padding: 7px;
-    border-radius: 3px;
-}
-
-.sunlight-code-container{
-    background-color: black;
-}
-
-
 /* QUIZ */
 question p{
     margin-top: 35px !important;
