@@ -8,6 +8,7 @@ El llibre no hauria estat possible sense el meus alumnes que m'han anat comunica
 
 I per suposat, també agrair a la meva dona i els meus fills que m'han recolzat i m'han permès obtenir el temps necessari per dedicar a aquest projecte.
 
+<!--
 
 # Continguts
 
@@ -93,6 +94,8 @@ I per suposat, també agrair a la meva dona i els meus fills que m'han recolzat 
 
 
 * [Qüestionari](UF4/act/uf4-questionari.md)
+
+-->
 
 ![](/assets/Llibre3D.jpg)
 
