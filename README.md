@@ -2,16 +2,12 @@
 
 El llibre de _**Sistemes Operatius en Xarxa**_ és un material didàctic enfocat als alumnes del _CFGM de Sistemes Microinformàtics i Xarxes_. En ell es desenvolupen els continguts del mòdul professional de _Sistemes Operatius en Xarxa_ i s’hi proposen activitats i qüestionaris d’autoavaluació.
 
-<!---
+Aquest llibre és un material viu que evoluciona dia a dia i pot trobar-se la última versió a  [https://legacy.gitbook.com/book/seicoll/sox](https://legacy.gitbook.com/book/seicoll/sox).
 
+El llibre no hauria estat possible sense el meus alumnes que m'han anat comunicant, al llarg del curs, les errades que anaven trobant i els paràgrafs que no havien quedat redactats de forma clara. I així, el llibre ha anat millorant dia a dia.
 
-Aquest llibre és un material viu que evoluciona dia a dia i pot trobar-se la última versió a  [https://www.gitbook.com/book/seicoll/sox](https://www.gitbook.com/book/seicoll/sox).
+I per suposat, també agrair a la meva dona i els meus fills que m'han recolzat i m'han permès obtenir el temps necessari per dedicar a aquest projecte.
 
-El llibre no hauria estat possible sense el meus alumnes que m’han anat comunicant, al llarg del curs, les errades que anaven trobant i els paràgrafs que no havien quedar redactats de forma clara. I així, el llibre ha anat millorant dia a dia.
-
-I per suposat, també agrair a la meva dona i els meus fills que m’han recolzat i m’han permès obtenir el temps necessari per dedicar a aquest projecte.
-
--->
 
 # Continguts
 
