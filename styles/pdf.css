@@ -1,16 +1,22 @@
 body{
     font-family: sans-serif;
     color: #000;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
-h1, h2, h3 {
-    color: #033466;
+h1, h2, h3 {    
     font-family: Arial;
 }
 
 h1
 {
+    background-color: #033466;
+    color:white;
+    text-align: right;
+}
+
+h2{
+    color: #033466;
     border-bottom: 1px solid #033466;
 }
 
