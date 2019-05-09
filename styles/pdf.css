@@ -56,7 +56,7 @@ blockquote p:last-child {
     border-radius: 3px;
 }
 
-code.lang-bash+theme:dark{
+.sunlight-code-container{
     background-color: black;
 }
 
