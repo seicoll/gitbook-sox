@@ -56,6 +56,10 @@ blockquote p:last-child {
     border-radius: 3px;
 }
 
+code.lang-bash+theme:dark{
+    background-color: black;
+}
+
 
 /* QUIZ */
 question p{
