@@ -23,7 +23,7 @@ h2{
 
 h3
 {
-    font-size: 12pt;
+    font-size: 7pt;
 }
 
 img{
@@ -36,7 +36,7 @@ blockquote
 {
     background-color: #bccfe2 !important; 
     border-radius: 3px;
-    border-left: 5px solid #78a8d8;
+    border-left: 5px solid #033466 !important;
 }
 
 blockquote p {
