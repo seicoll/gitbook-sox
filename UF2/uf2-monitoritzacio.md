@@ -58,6 +58,8 @@ Intercambio:    1179644      98332      1081312
 
 ## Monitorització dels processos
 
+### Comanda top
+
 La comanda **top** mostra una llista en temps real dels processos actius al sistema. També permet realitzar diferents accions sobre cadascun d'ells, com matar-los o canviar la seva prioritat.
 La _tecla q_ permet sortir del programa.
 
@@ -78,8 +80,9 @@ KiB Swap:  6168572 total,  6168572 free,        0 used.  2166152 avail Mem
     4 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 kworker/0:+ 
 ```
 
-La comanda **ps** permet conèixer els processos que s’estan executant al sistema.
-Sense opcions ens permet conèixer els processos que s’estan executant en el terminal actual.
+### Comanda ps
+La comanda **ps** permet conèixer els processos que s'estan executant al sistema.
+Sense opcions ens permet conèixer els processos que s'estan executant en el terminal actual.
 
 ```bash+theme:dark
 usuari@usxxx:~$ ps -l
@@ -88,7 +91,7 @@ F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
 4 R  1000  5775  5341  0  80   0 -  7607 -      pts/0    00:00:00 ps
 ```
 
-* Per veure la informació detallada de tots els processos:
+Per veure la **informació detallada** de tots els processos:
 `ps aux`
 
 ## Monitorització de la xarxa
