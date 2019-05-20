@@ -16,30 +16,28 @@ gunzip -k document.gz
 
 La comanda **tar** serveix per empaquetar/desempaquetar un conjunt d'arxius (sense comprimir-los).
 
+**Opcions d'empaquetat:**
+* `-c` crear arxiu empaquetat (si existeix, primer l'esborra).
+* `-x` desempaquetar arxiu.
+* `-f` indica la ruta al fitxer creat (tar).
+* `-v` verificar (mostra els arxius comprimits o descomprimits).
+
+**Opcions de compressió:**
+* `-z` comprimir / descomprimir amb algoritme gzip.
+
+**Empaquetar i desempaquetar un directori**:
 ```
 tar -cvf documents.tar ./documents/
 tar -xvf documents.tar
 ```
 
-Si a més es vol comprimir/descomprimir utilitzant el format **.gz** cal afegir el paràmetre **z**.
+Si a més es vol **comprimir/descomprimir** utilitzant el format **.gz** cal afegir el paràmetre **z**.
 
-```
-tar -zcvf documents.tar.gz ./documents/
-tar -zxvf documents.tar.gz
-```
-
-**Paràmetres:**
-* `-z` comprimir / descomprimir.
-* `-c` crear arxiu empaquetat (si existeix, primer l'esborra).
-* `-x` desempaquetar arxiu.
-* `-f` indica que ha de treballar amb arxius.
-* `-v` verificar (mostra els arxius comprimits o descomprimits).
-
-Per comprimir tot un directori:
+Per **comprimir tot un directori**:
 
 `tar -zcfv arxiu_comprimit.tar.gz directori`
 
-Per descomprimir:
+Per **descomprimir**:
 
 `tar -xfv arxiu_comprimit.tar.gz`
 
