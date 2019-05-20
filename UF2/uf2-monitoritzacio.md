@@ -61,7 +61,12 @@ Intercambio:    1179644      98332      1081312
 ### Comanda top
 
 La comanda **top** mostra una llista en temps real dels processos actius al sistema. També permet realitzar diferents accions sobre cadascun d'ells, com matar-los o canviar la seva prioritat.
-La _tecla q_ permet sortir del programa.
+
+**Opcions de menú:**
+* `h`: mostra l'ajuda.
+* `p`: Ordena els processos per càrrega de CPU
+* `m`: Ordena els processos per càrrega de RAM
+* `q`: Permet sortir del programa.
 
 ```bash+theme:dark
 top - 22:58:01 up 26 min,  1 user,  load average: 0,22, 0,25, 0,26
