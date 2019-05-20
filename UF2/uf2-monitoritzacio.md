@@ -85,6 +85,10 @@ KiB Swap:  6168572 total,  6168572 free,        0 used.  2166152 avail Mem
     4 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 kworker/0:+ 
 ```
 
+### Comanda htop
+
+La comanda **htop** és una evolució de la comanda **top**.
+
 ### Comanda ps
 La comanda **ps** permet conèixer els processos que s'estan executant al sistema.
 Sense opcions ens permet conèixer els processos que s'estan executant en el terminal actual.
