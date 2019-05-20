@@ -58,5 +58,9 @@ Per descomprimir:
 
 ## Documentació i altres recursos
 
-* **Apunts SOX Pere Sánchez:** Gestió d'arxius
-[http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.3.9](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=1.3.9)
+* **Apunts SOX Pere Sánchez:** [Edició d'arxius](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?ref=2221)
+* **Apunts SOX Pere Sánchez:** [Gestió d'arxius](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?ref=2222)
+* **Apunts SOX Pere Sánchez:** [Gestió de carpetes](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?ref=2223)
+
+
+
