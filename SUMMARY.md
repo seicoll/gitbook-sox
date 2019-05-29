@@ -16,6 +16,8 @@
   * [Perfils d'usuaris](UF1/perfils-usuari.md)
   * [Directives de grup](UF1/directives-de-grup.md)
 
+* [Qüestionari](UF1/act/uf1-questionari.md)
+
 <!--
 * [Activitats](UF1/uf1-activitats.md)
   * [Activitat 1. Instal·lació Windows Server](https://drive.google.com/open?id=1E2DFZmvudwRWrE0o0FsneeMEixtd0mzvMEaNrS8OhqA)
@@ -24,7 +26,7 @@
   * [Activitat 4. Administració d'Active Directory](https://drive.google.com/open?id=1dXKgtlbsv7Tt4r8mJhoBh9EZkhFVR1rbRmkG82HdAUA)
   * [Activitat 5. Perfils d'usuari i Directives de grup](https://drive.google.com/open?id=1rzo-XJakvzQSfTHgQG_WttA6heeOmwc2IjpS9F9aTDg)
 -->
-* [Qüestionari](UF1/act/uf1-questionari.md)
+
 
 ## UF2. Sistemes operatius lliures en xarxa
 
@@ -45,10 +47,9 @@
   * [Autenticació LDAP](UF2/uf2-auteticacio-ldap.md)
   * [Perfils mòbils](UF2/uf2-perfils-mobils.md)
   * [Gestió avançada de LDAP](UF2/uf2-LDAP-gestio-avansada.md)
+* [Qüestionari](UF2/act/uf2-questionari.md)
 
 <!--
-
----
 
 * [Activitats](UF2/uf2-activitats.md)
   * [Activitat 1. Instal·lació Ubuntu Server](https://docs.google.com/document/d/1lOGL7Tvnh6tke1GjP1PjEIBhUQKZbfjOGKwb_W-DG2k/edit?usp=sharing)
@@ -58,7 +59,7 @@
   * [Activitat 5: Instal·lació i administració d’un domini Linux](https://docs.google.com/document/d/1QE7MbVMyVPBRwBqLnQWOFp4BWWiMFh1QsrQjjO_VqnM/edit?usp=sharing)
   * [Activitat 6: Perfils mòbils amb LDAP](https://docs.google.com/document/d/1VBH9FkhTzcjgfkBWnAQEYT94toewM9iLN5ZqkQQ9Ihg/edit?usp=sharing)
 -->
-  * [Qüestionari](UF2/act/uf2-questionari.md)
+ 
 
 ## UF3. Compartició de recursos i seguretat
 
@@ -70,17 +71,16 @@
 * [Compartir recursos en xarxa i seguretat en sistemes de lliures](UF3/uf3-compartir-recursos-linux.md)
   * [Compartir arxius i carpetes amb NFS](UF3/uf3-compartir-arxius-linux-nfs.md)
   * [Compartir impressores amb CUPS](UF3/uf3-compartir-impressores-cups.md)
+* [Qüestionari](UF3/act/uf3-questionari.md)
+
 
 <!--
-
----
-
 * [Activitats](UF3/uf3-activitats.md)
   * [Activitat 1. Compartir recursos i seguretat en Windows](https://docs.google.com/document/d/1pAmK7k5k4E8RfdJMY5JtkYPQHS3MnSXRif_j_-WEMfE/edit?usp=sharing)
   * [Activitat 2. Compartir carpetes en GNU/Linux amb NFS](https://docs.google.com/document/d/1rhndBqwGHlEeQAqH_YffvbTO3Xy77_z_FqqXNp2DWyg/edit?usp=sharing)
   * [Activitat 3. Compartir impressores en GNU/Linux amb CUPS](https://docs.google.com/document/d/1JLT5b6rdPAaFzbdeYJCli48qAQLooiDyhcrfd1Favwk/edit?usp=sharing)
 -->
-  * [Qüestionari](UF3/act/uf3-questionari.md)
+  
 
 ## UF4. Integració de sistemes operatius
 
@@ -94,10 +94,10 @@
   * [Administrar el directori actiu de Samba 4](UF4/administrar-sambaAD.md)
   * [Perfils mòbils en un domini Samba AD](UF4/perfils-mobils-sambaAD.md)
   * [Zentyal com a controlador de domini](UF4/zentyal.md)
+* [Qüestionari](UF4/act/uf4-questionari.md)
+
 
 <!--
-
----
 
 * [Activitats](UF4/uf4-activitats.md)
   * [Activitat 1. Compartir recursos amb Windows i accedir des de Linux](https://docs.google.com/document/d/1KDLMK1oI_3DBKD2G8YdXofjKtSx51vbF1XcLiZ_nPHo/edit?usp=sharing)
@@ -105,9 +105,8 @@
   * [Activitat 3. Unir un client Linux a un domini Windows](https://docs.google.com/document/d/1V4aPQy2GKtNZtHiSlvXqdzxrRb8hojm1E86clAJAJ7A/edit?usp=sharing)
   * [Activitat 4. Samba 4 com a controlador primari de domini \(AD DC\)](https://docs.google.com/document/d/11F9Rsqkry8bO31QAJ8B5DJWzd8ZZF7k7AazVZMlD9ZY/edit?usp=sharing)
 
----
 
 * [Activitat 4. Zentyal com a controlador primari de domini](UF4/act/act4.md)
 -->
-* [Qüestionari](UF4/act/uf4-questionari.md)
+
 
