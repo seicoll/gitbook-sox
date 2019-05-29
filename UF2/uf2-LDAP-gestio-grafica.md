@@ -54,7 +54,7 @@ Per configurar el **phpLDAPadmin** s'han de fer els següents canvis al fitxer `
   
 ### Accedir a phpLDAPadmin
 
-Des de l’ubuntu desktop o qualsevol altre client, aneu a un navegador web i connecteu-vos al phpLDAPadmin posant l'adreça.
+Des de l’ubuntu desktop o qualsevol altre client, aneu a un **navegador web** i connecteu-vos al phpLDAPadmin posant l'adreça.
 
   `http://172.30.A.20/phpldapadmin`
   
@@ -65,6 +65,30 @@ Us demanarà l'usuari (hauria de ser `cn=admin,dc=ldapxxx,dc=local`) i la seva c
 ![](/assets/uf2-phpldapadmin-login.png)
 
 > Si les dades que apareixen al _login_ no són correctes, cal revisar els canvis fets a l'arxiu `/etc/phpldapadmin/config.php`
+
+### Problema amb les versions de PHP
+
+Depenent de la versió de PHP que s'estigui utilitzant, **phpldapadmin **pot donar alguns problemes.
+
+Per saber quina versió té instal·lada el sistema es pot utiltzar la comanda `php -v`
+
+#### Versions superiors a la 7.2
+
+En accedir a **phpldapadmin** surten un parell d'avisos:
+
+* **Deprecated**: __autoload() is deprecated, use spl_autoload_register() instead in **/usr/share/phpldapadmin/lib/functions.php** on line **54**
+* **Deprecated**: Function create_function() is deprecated in **/usr/share/phpldapadmin/lib/functions.php** on line **1083**
+
+Ens indiquen que hi ha funcions que han quedat obsoletes però encara es poden utilitzar.
+
+De moment, **aquests avisos es poden ignorar**, però podria ser que en futures versions de PHP ja no es puguin utilitzar aquestes funcions i es produeixi un error que impedeixi utilitzar phpldapadmin.
+
+> Sempre és recomanable buscar solucions als avisos abans que es produeixi l'error.
+
+* **Solució pas a pas:** [http://moodlecf.sapalomera.cat/apunts/smx/sox/uf2/nf2/2713-SolucioPHP.html](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf2/nf2/2713-SolucioPHP.html)
+* **Fitxer funcions.php modificat:** [funcions.php](https://drive.google.com/open?id=15fSJwwD_GsRkiF6D6ckFJNtQqrqYifCd)
+* Per enviar el fitxer al servidor: `scp funcions.php username@remotehost_IP:/usr/share/phpldapadmin/lib/functions.php`
+
 
 ### Gestionar usuaris, grups i unitats organitzatives
 
