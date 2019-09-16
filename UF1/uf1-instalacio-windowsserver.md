@@ -53,6 +53,9 @@ Windows Server permet instal·lar-se en dues versions diferents:
   * És l’opció predeterminada i recomanada per Microsoft. 
   * **Avantatges**: requereix menys espai de disc (uns 4GB menys), és més eficient i augmenta la seguretat.
 
+
+<!--
+
 > A partir de la versió Windows Server 2012, **es pot passar d’una opció a l’altra** en qualsevol moment.
 
 Podem instal·lar l’opció _**Servidor amb GUI**_ al principi, utilitzar les eines gràfiques per configurar el servidor, i després, canviar a l’opció instal·lació _**Server Core**_.
@@ -71,6 +74,8 @@ Amb **Minimal Server Interface**, continuen instal·lats els següents component
 Però no hi trobarem intal·lats ni l'Exporador d'arxius ni el Navegador web entre d'altres components.
 
 ![Minimal Server Interface](/assets/WindowsServerMinimal.png)
+
+-->
 
 ### Triar el tipus d’instal·lació
 
