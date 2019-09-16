@@ -35,6 +35,7 @@ Cal tenir present que una màquina gestionada amb el Microsoft Server 2012:
 
 El sistema Windows Server es distribueix empaquetat en diferents **Edicions**.
 
+<!--
 ### Windows Server 2012 Edicions
 
 * **Windows Server 2012 Foundation**. 
@@ -56,17 +57,21 @@ El sistema Windows Server es distribueix empaquetat en diferents **Edicions**.
 
 ![](/assets/WindowsServerEdicions.png)
 
+-->
+
 ### Windows Server 2016 Edicions
 
-Amb **Windows Server 2016** es redueixen el nombre d'edicions, eliminant l'edició **_Foundation_**.
+Amb **Windows Server 2016** es redueixen el nombre d'edicions respecte al Windows Server 2012, eliminant l'edició **_Foundation_**.
 
 * **Essentials Edition**
   * Per a petites empreses.
   * Servidors amb 1 o 2 processadors. 
   * Limitat a 25 usuaris i 50 dispositius.
+  
 * **Standard Edition**
   * Per a petites/mitjanes empreses.
   * Limitacions en virtualització (màxim 2 màquines virtuals).
+  
 * **Datacenter Edition**
   * Per datacenters amb alta virtualització.
   * Sense limitació d’instàncies virtuals.
