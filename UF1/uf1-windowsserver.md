@@ -14,18 +14,19 @@ Aquest controlador centralitza la funció d’autenticar l’accés al domini
 
 ## Microsoft Windows Server 2016
 
-![](/assets/WindowsServer2016.png)
 
-Actualment la versió més recent és la **Microsoft Windows Server 2016** llançada comercialment l'any 2016.
-La versió anterior era el **Microsoft Windows Server 2012 R2** .
+
+Actualment la versió més recent és la **Microsoft Windows Server 2019** llançada comercialment l'any 2019.
+La versió anterior era el **Microsoft Windows Server 2016** .
+
+![](/assets/WindowsServer2016.png)
 
 Els 3 trets diferenciadors que cal destacar en aquest sistema operatiu són els següents:
 
   * **Utilització d’una tècnica modular**. Dissenyat de manera independent els components del sistema operatiu. Permet eliminar o instal·lar components nous amb facilitat.
   * **Control de comptes d’usuari**. Les aplicacions s’executaran sempre sota els privilegis d’un compte d’usuari. El control de comptes d’usuari (UAC, user account control) millora la seguretat de l’equip.
-  * L’ús d’un **nou sistema d’arxius ReFS**.
 
-Cal tenir present que una màquina gestionada amb el Microsoft Server 2012:
+Cal tenir present que una màquina gestionada amb el Microsoft Server:
 
   * No pot ni hivernar ni entrar en mode suspès.
   * No es pot restaurar.
