@@ -207,9 +207,8 @@ Un cop es posi la contrasenya de l'administrador, s'accedirà al sistema.
 
 # Documentació i recursos
 
-  * **SomeBooks.es**: Instalación de Winsdows Server 2012 R2
-[http://somebooks.es/capitulo-2-instalacion-de-windows-server-2012-r2/4/] (http://somebooks.es/capitulo-2-instalacion-de-windows-server-2012-r2/4/)
-
+  * **SomeBooks.es**: [Instalar Windows Server 2016 con interfaz gráfica, paso a paso](http://somebooks.es/instalar-windows-server-2016-con-interfaz-grafica-paso-a-paso/)
+  
 ---
 
 **Font d'informació:**  [Apunts SOX de Pere Sánchez](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf1/nf1/1202-WSInstalar.html)
