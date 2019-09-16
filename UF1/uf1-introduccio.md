@@ -10,10 +10,11 @@ Els recursos de la xarxa (impressores, documents) es gestionaran sempre de forma
 
 ### Servidors
 
-> Els **servidors** són els encarregats de proporcionar recursos als clients.
+> Els **servidors** són els equips encarregats de proporcionar recursos als clients.
 
 Disposen de programes específics (**serveis**) per oferir-los als clients:
-* Servei de fitxers i impressores.
+* Servei de fitxers
+* Servei d'impressió.
 * Servei de correu.
 * Servei de domini.
 * Servei DNS.
@@ -39,7 +40,7 @@ Les funcions principals són:
   * Gestiona els recursos (documents, impressores, etc.) disponibles pels usuaris de la xarxa.
   * Optimitzar la utilització dels recursos.
 
-* **Gestionar usuaris:** el mateix mateix usuari i contrassenya ha de servir per accedir als recursos de la xarxa. 
+* **Gestionar usuaris:** el mateix mateix usuari i contrasenya ha de servir per accedir als recursos de la xarxa. 
   * Afegir, modificar i eliminar usuaris i grups.
   * Controlar quins usuaris o grups poden accedir als recursos de la xarxa.
 
@@ -48,19 +49,19 @@ Les funcions principals són:
   
 ## Inconvenients de l'arquitectura client/servidor
 
-El principal incovenient és la **dependència del servidor**. 
+El principal inconvenient és la **dependència del servidor**. 
 
-Tota la xarxa està construïda al voltant del servidor i si aquest deixa de funcionar afectarà a tota la infraestructura.
+Tota la xarxa està construïda al voltant del servidor i si aquest deixa de funcionar, afectarà a tota la infraestructura.
 
-Aquest inconvenient es pot superar gràcies a sistemes com els servidors redundants.
+Aquest inconvenient es pot superar gràcies a sistemes com els **servidors redundants**.
 
 ## Sistemes Operatius més freqüents en un infraestructura client/servidor
 
 En el costat del **servidor**, els sistemes més habituals són:
 
-* **Microsoft Windows Server** (versions 2003, 2008, 2012 y 2016)
+* **Microsoft Windows Server** (versions 2003, 2008, 2012, 2016 i 2019)
 
-* **GNU/Linux Server** (distribucions com RedHat, Ubuntu Server, CentOS, etc)
+* **GNU/Linux Server** (distribucions com Red Hat, Ubuntu Server, CentOS, etc)
 
 * **Apple OS X Server**
 
