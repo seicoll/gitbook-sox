@@ -88,6 +88,8 @@ Aquestes 3 edicions principals es complementen amb 3 opcions més:
 
 ![](/assets/windows2016_edicions.JPG)
 
+
+<!--
 ## Sistemes d'arxius
 
 > El **sistema d'arxius** defineix la forma en la que el sistema operatiu organitzarà la informació que guardi al disc (o altres dispositius exerns).
@@ -104,6 +106,8 @@ Windows Server pot utilitzar amb els següents sistemes d'arxius:
   * Permet gestionar permisos per diferents usuaris
 * **ReFS (_Resilient File System_)** 
   * Millora NTFS en algunes característiques.
+
+-->
 
 ## Documentació i recursos
 
