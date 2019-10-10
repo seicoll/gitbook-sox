@@ -18,11 +18,12 @@
 
 * [Qüestionari](UF1/act/uf1-questionari.md)
 
-<!--
+
 * [Activitats](UF1/uf1-activitats.md)
-  * [Activitat 1. Instal·lació Windows Server](https://drive.google.com/open?id=1E2DFZmvudwRWrE0o0FsneeMEixtd0mzvMEaNrS8OhqA)
-  * [Activitat 2. Supervisió de Windows Server](https://drive.google.com/open?id=1aZatpgwGRXZ65yfxLJHetD_sjlh9s_9upYWcs7rdSEo)
-  * [Activitat 3. Instal·lació d'Active Directory](Uhttps://drive.google.com/open?id=16Ddp_d43bT3go725VozfLP06ObiSW13Jx7t4y44qraY)
+  * [Task 1. Installation and monitoring of Windows Server 2016](https://docs.google.com/document/d/1E2DFZmvudwRWrE0o0FsneeMEixtd0mzvMEaNrS8OhqA/edit?usp=sharing)
+  * [Task 2. Install Active Directory](https://docs.google.com/document/d/1e6O7Kz1-TvT7Ju9er7qybyE5IRLHAvuLR2arfoxU0CA/edit?usp=sharing)
+  * [Task 3. Users, groups and OUs](https://docs.google.com/document/d/1pii_GTsZd64J5mrw0fkWXuEkkPEveKp8AM749LMikGo/edit?usp=sharing)
+<!--
   * [Activitat 4. Administració d'Active Directory](https://drive.google.com/open?id=1dXKgtlbsv7Tt4r8mJhoBh9EZkhFVR1rbRmkG82HdAUA)
   * [Activitat 5. Perfils d'usuari i Directives de grup](https://drive.google.com/open?id=1rzo-XJakvzQSfTHgQG_WttA6heeOmwc2IjpS9F9aTDg)
 -->
