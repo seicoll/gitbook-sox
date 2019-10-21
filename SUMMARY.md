@@ -16,14 +16,13 @@
   * [Perfils d'usuaris](UF1/perfils-usuari.md)
   * [Directives de grup](UF1/directives-de-grup.md)
 
-* [Qüestionari](UF1/act/uf1-questionari.md)
-
-
 * [Activitats](UF1/uf1-activitats.md)
   * [Task 1. Installation and monitoring of Windows Server 2016](https://docs.google.com/document/d/1E2DFZmvudwRWrE0o0FsneeMEixtd0mzvMEaNrS8OhqA/edit?usp=sharing)
   * [Task 2. Install Active Directory](https://docs.google.com/document/d/1e6O7Kz1-TvT7Ju9er7qybyE5IRLHAvuLR2arfoxU0CA/edit?usp=sharing)
   * [Task 3. Users, groups and OUs](https://docs.google.com/document/d/1pii_GTsZd64J5mrw0fkWXuEkkPEveKp8AM749LMikGo/edit?usp=sharing)
   * [Task 4. Roaming profiles and Group Policy Objects](https://docs.google.com/document/d/1Vy9Kp9nal8gRUIfY5HuTUf3C_VO-PPoe5JPoaEkfxLQ/edit?usp=sharing)
+* [Qüestionari](UF1/act/uf1-questionari.md)
+
 
 <!--
   * [Activitat 4. Administració d'Active Directory](https://drive.google.com/open?id=1dXKgtlbsv7Tt4r8mJhoBh9EZkhFVR1rbRmkG82HdAUA)
