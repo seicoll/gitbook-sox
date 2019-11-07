@@ -4,13 +4,16 @@
 
 ### Comandes gzip i gunzip
 
-Les comandes **gzip/gunzip** serveixen per comprimir/descomprimir un únic arxiu.
-El nom de l'arxiu comprimir és el mateix que el de l'arxiu original però afegint l'extensió **.gz**.
+> Les comandes **gzip/gunzip** serveixen per comprimir/descomprimir un únic arxiu.
+
+El nom de l'arxiu comprimit és el mateix que el de l'arxiu original però afegint l'extensió **.gz**.
 
 ```
 gzip -k document
 gunzip -k document.gz
 ```
+**Opcions:**
+* `-k, --keep` manté l'arxiu original (evita que s'elimini automàticament)
 
 ### Comanda tar
 
