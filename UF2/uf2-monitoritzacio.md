@@ -115,17 +115,6 @@ La comanda **htop** és una evolució de la comanda **top**.
 17977 sei        20   0 1805M  6356  5752 S  0.0  0.1  0:00.00 ├─ C:\windows\system32\plugplay.exe
 17980 sei        20   0 1805M  6356  5752 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\plugplay.exe
 17979 sei        20   0 1805M  6356  5752 S  0.0  0.1  0:00.00 │  └─ C:\windows\system32\plugplay.exe
-17966 sei        20   0 2018M  7568  6744 S  0.0  0.1  0:00.19 ├─ C:\windows\system32\winedevice.exe
-17975 sei        20   0 2018M  7568  6744 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\winedevice.exe
-17971 sei        20   0 2018M  7568  6744 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\winedevice.exe
-17970 sei        20   0 2018M  7568  6744 S  0.0  0.1  0:00.00 │  └─ C:\windows\system32\winedevice.exe
-17963 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.07 ├─ C:\windows\system32\services.exe
-17986 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\services.exe
-17983 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\services.exe
-17978 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\services.exe
-17972 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\services.exe
-17967 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\services.exe
-17964 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.00 │  └─ C:\windows\system32\services.exe
 ``` 
 
 ### Comanda ps
