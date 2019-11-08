@@ -2,7 +2,7 @@
 
 ## CPU, memòria RAM i memòria d'intercanvi
 
-Amb les comandes `cat /proc/cpuinfo` i `cat /proc/meminfo` es pot veure informació detallada sobre la **CPU** i la **RAM**:
+Amb les comandes `cat /proc/cpuinfo` i `cat /proc/meminfo` es pot veure informació detallada sobre la **CPU** i la **RAM**.
 
 **Veure la informació detallada de cadascun dels processadors:**
 
@@ -25,7 +25,7 @@ cache_alignment    : 64
 address sizes      : 36 bits physical, 48 bits virtual
 ```
 
-****
+**Veure la informació detallada de la RAM:**
 
 ```bash+theme:dark
 usuari@usxxx:~$ cat /proc/meminfo
