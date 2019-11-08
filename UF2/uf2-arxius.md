@@ -8,6 +8,8 @@
 
 El nom de l'arxiu comprimit és el mateix que el de l'arxiu original però afegint l'extensió **.zip**.
 
+**ZIP** és la forma de cmpressió més popular en Windows.
+
 ![](/assets/uf2-zip.png)
 
 **Paràmetres:**
@@ -24,6 +26,8 @@ El nom de l'arxiu comprimit és el mateix que el de l'arxiu original però afegi
 ### Comandes gzip i gunzip
 
 > Les comandes **gzip** i **gunzip** serveixen per comprimir/descomprimir **un únic arxiu**.
+
+**GZIP** és el sistema de compressió estàndard en Linux.
 
 El nom de l'arxiu comprimit és el mateix que el de l'arxiu original però afegint l'extensió **.gz**.
 
