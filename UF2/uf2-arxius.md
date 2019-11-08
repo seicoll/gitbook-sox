@@ -18,6 +18,25 @@ gunzip -c document.gz
 * `-c` manté l'arxiu original (evita que s'elimini automàticament)
 * `-r` per comprimir de forma recursiva (directoris).
 
+### Comandes zip i unzip
+
+Les comandes `zip` i `unzip` permeten comprimir i descomprimir arxius i directoris.
+
+![](/assets/uf2-zip.png)
+
+**Paràmetres:**
+* `-r` per comprimir de forma recursiva (directoris).
+
+**Per comprimir tot un directori:**
+
+`zip -r arxiu_comprimit.zip directori`
+
+**Per descomprimir:**
+
+`unzip arxiu_comprimit.zip`
+
+## Empaquetar i desempaquetar
+
 ### Comanda tar
 
 La comanda **tar** serveix per empaquetar/desempaquetar un conjunt d'arxius (sense comprimir-los).
@@ -56,22 +75,7 @@ Per **descomprimir**:
 
 `tar -xfv arxiu_comprimit.tar.gz`
 
-### Comanda zip
 
-Les comandes `zip` i `unzip` permeten comprimir i descomprimir arxius i directoris.
-
-![](/assets/uf2-zip.png)
-
-**Paràmetres:**
-* `-r` per comprimir de forma recursiva (directoris).
-
-**Per comprimir tot un directori:**
-
-`zip -r arxiu_comprimit.zip directori`
-
-**Per descomprimir:**
-
-`unzip arxiu_comprimit.zip`
 
 ## Documentació i altres recursos
 
