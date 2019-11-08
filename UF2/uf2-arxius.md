@@ -4,20 +4,25 @@
 
 ### Comandes gzip i gunzip
 
-> Les comandes **gzip/gunzip** serveixen per comprimir/descomprimir un únic arxiu.
+> Les comandes **gzip/gunzip** serveixen per comprimir/descomprimir un únic arxiu o directori.
+
+![](/assets/uf2-gzip.png)
 
 El nom de l'arxiu comprimit és el mateix que el de l'arxiu original però afegint l'extensió **.gz**.
 
 ```
-gzip -k document
-gunzip -k document.gz
+gzip -c document
+gunzip -c document.gz
 ```
 **Opcions:**
-* `-k, --keep` manté l'arxiu original (evita que s'elimini automàticament)
+* `-c` manté l'arxiu original (evita que s'elimini automàticament)
+* `-r` comprimeix recursivament tots els arxius d'una carpeta.
 
 ### Comanda tar
 
 La comanda **tar** serveix per empaquetar/desempaquetar un conjunt d'arxius (sense comprimir-los).
+
+![](/assets/uf2-tar.png)
 
 **Opcions d'empaquetat:**
 * `-c` crear arxiu empaquetat (si existeix, primer l'esborra).
@@ -25,16 +30,24 @@ La comanda **tar** serveix per empaquetar/desempaquetar un conjunt d'arxius (sen
 * `-f` indica la ruta al fitxer creat (tar).
 * `-v` verificar (mostra els arxius comprimits o descomprimits).
 
-**Opcions de compressió:**
-* `-z` comprimir / descomprimir amb algoritme gzip.
+
 
 **Empaquetar i desempaquetar un directori**:
+
 ```
 tar -cvf documents.tar ./documents/
 tar -xvf documents.tar
 ```
 
 Si a més es vol **comprimir/descomprimir** utilitzant el format **.gz** cal afegir el paràmetre **z**.
+
+![](/assets/uf2-tar2.png)
+
+
+**Opcions de compressió:**
+* `-z` comprimir / descomprimir amb algoritme gzip.
+
+![](/assets/uf2-tar2.png)
 
 Per **comprimir tot un directori**:
 
@@ -45,6 +58,8 @@ Per **descomprimir**:
 `tar -xfv arxiu_comprimit.tar.gz`
 
 ### Comanda zip
+
+Les comandes `zip` i `unzip` permeten comprimir i descomprimir arxius i directoris.
 
 **Paràmetres:**
 * `-r` per comprimir de forma recursiva (directoris).
