@@ -94,6 +94,40 @@ KiB Swap:  6168572 total,  6168572 free,        0 used.  2166152 avail Mem
 
 La comanda **htop** és una evolució de la comanda **top**.
 
+```bash+theme:dark
+  1  [||||||||||||||||||||                                                 25.9%]   Tasks: 171, 675 thr; 4 running
+  2  [||||||||||||||||||||||||||||||||||||||||||||||||||||||||||           77.6%]   Load average: 1.97 2.08 1.79 
+  3  [||||||||||||||||||||||||||||||||                                     42.3%]   Uptime: 06:30:20
+  4  [||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||100.0%]
+  Mem[|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||5.12G/5.70G]
+  Swp[|||||||||||||||||                                              1.29G/5.88G]
+
+  PID USER      PRI  NI  VIRT   RES   SHR S CPU% MEM%   TIME+  Command
+    1 root       20   0  181M  3752  2044 S  0.0  0.1  0:02.88 /sbin/init splash
+17991 sei        20   0 1890M 18508 15120 S  0.0  0.3  0:00.46 ├─ C:\windows\system32\explorer.exe /desktop
+17995 sei        20   0 1890M 18508 15120 S  0.0  0.3  0:00.00 │  ├─ C:\windows\system32\explorer.exe /desktop
+17994 sei        20   0 1890M 18508 15120 S  0.0  0.3  0:00.00 │  ├─ C:\windows\system32\explorer.exe /desktop
+17993 sei        20   0 1890M 18508 15120 S  0.0  0.3  0:00.04 │  └─ C:\windows\system32\explorer.exe /desktop
+17982 sei        20   0 2033M 11800 10224 S  0.0  0.2  0:00.15 ├─ C:\windows\system32\winedevice.exe
+17992 sei        20   0 2033M 11800 10224 S  0.0  0.2  0:00.00 │  ├─ C:\windows\system32\winedevice.exe
+17985 sei        20   0 2033M 11800 10224 S  0.0  0.2  0:00.00 │  ├─ C:\windows\system32\winedevice.exe
+17984 sei        20   0 2033M 11800 10224 S  0.0  0.2  0:00.00 │  └─ C:\windows\system32\winedevice.exe
+17977 sei        20   0 1805M  6356  5752 S  0.0  0.1  0:00.00 ├─ C:\windows\system32\plugplay.exe
+17980 sei        20   0 1805M  6356  5752 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\plugplay.exe
+17979 sei        20   0 1805M  6356  5752 S  0.0  0.1  0:00.00 │  └─ C:\windows\system32\plugplay.exe
+17966 sei        20   0 2018M  7568  6744 S  0.0  0.1  0:00.19 ├─ C:\windows\system32\winedevice.exe
+17975 sei        20   0 2018M  7568  6744 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\winedevice.exe
+17971 sei        20   0 2018M  7568  6744 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\winedevice.exe
+17970 sei        20   0 2018M  7568  6744 S  0.0  0.1  0:00.00 │  └─ C:\windows\system32\winedevice.exe
+17963 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.07 ├─ C:\windows\system32\services.exe
+17986 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\services.exe
+17983 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\services.exe
+17978 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\services.exe
+17972 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\services.exe
+17967 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.00 │  ├─ C:\windows\system32\services.exe
+17964 sei        20   0 1936M  6928  6164 S  0.0  0.1  0:00.00 │  └─ C:\windows\system32\services.exe
+``` 
+
 ### Comanda ps
 La comanda **ps** permet conèixer els processos que s'estan executant al sistema.
 Sense opcions ens permet conèixer els processos que s'estan executant en el terminal actual.
