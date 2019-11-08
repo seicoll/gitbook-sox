@@ -4,6 +4,8 @@
 
 Amb les comandes `cat /proc/cpuinfo` i `cat /proc/meminfo` es pot veure informació detallada sobre la **CPU** i la **RAM**:
 
+**Veure la informació detallada de cadascun dels processadors:**
+
 ```bash+theme:dark
 usuari@usxxx:~$ cat /proc/cpuinfo
 processor     : 0
@@ -22,6 +24,8 @@ bogomips      : 5343.28
 cache_alignment    : 64
 address sizes      : 36 bits physical, 48 bits virtual
 ```
+
+****
 
 ```bash+theme:dark
 usuari@usxxx:~$ cat /proc/meminfo
