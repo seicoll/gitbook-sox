@@ -50,9 +50,10 @@ Intercambio:    1179644      98332      1081312
 
 ### Altres comandes per veure el maquinari
 
-* **lshw**: mostra tota la configuració del maquinari.
-* **lspci**: maquinari connectat als ports de la placa mare.
-* **lsusb**: maquinari connectat als ports usb.
+* **lshw** (list hardware): mostra tota la configuració del maquinari.
+* **lscpu** (list cpu): mostra informació sobre la CPU.
+* **lspci** (list pci): maquinari connectat als ports de la placa mare.
+* **lsusb** (list usb): maquinari connectat als ports usb.
 * **hardinfo**: eina que recull de forma gràfica la informació sobre el maquinari (cal tenir un entorn gràfic).
 
 
