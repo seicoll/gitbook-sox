@@ -65,11 +65,11 @@ Les comandes `zip` i `unzip` permeten comprimir i descomprimir arxius i director
 **Paràmetres:**
 * `-r` per comprimir de forma recursiva (directoris).
 
-Per comprimir tot un directori:
+**Per comprimir tot un directori:**
 
 `zip -r arxiu_comprimit.zip directori`
 
-Per descomprimir:
+**Per descomprimir:**
 
 `unzip arxiu_comprimit.zip`
 
