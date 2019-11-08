@@ -80,14 +80,19 @@ Tasks: 273 total,   3 running, 270 sleeping,   0 stopped,   0 zombie
 KiB Mem :  5985624 total,   770544 free,  2628672 used,  2586408 buff/cache
 KiB Swap:  6168572 total,  6168572 free,        0 used.  2166152 avail Mem 
 
-  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     
- 1365 root      20   0  558316 111516  85580 R   4,9  1,9   0:42.35 Xorg        
- 1836 usuari    20   0 2060704 146844  60344 R   4,9  2,5   0:51.43 cinnamon    
- 2637 usuari    20   0 1383888 300880 137884 S   4,9  5,0   1:24.64 chrome      
- 5361 usuari    20   0   43440   3828   3092 R   2,4  0,1   0:00.07 top         
-    1 root      20   0  119912   6064   3972 S   0,0  0,1   0:01.69 systemd     
-    2 root      20   0       0      0      0 S   0,0  0,0   0:00.00 kthreadd    
-    4 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 kworker/0:+ 
+  PID USER      PRI  NI  VIRT   RES   SHR S CPU% MEM%   TIME+  Command
+20642 sei        20   0 28228  4436  3108 R 100.  0.1  0:00.06 htop
+13774 sei       20   0 1036M  146M 83696 S 50.0  2.5  1:10.47 /opt/google/chrome/chrome
+    1 root       20   0  181M  3740  2052 S  0.0  0.1  0:02.91 /sbin/init splash
+    2 root       20   0     0     0     0 S  0.0  0.0  0:00.00 kthreadd
+    4 root        0 -20     0     0     0 I  0.0  0.0  0:00.00 kworker/0:0H
+    6 root        0 -20     0     0     0 I  0.0  0.0  0:00.00 mm_percpu_wq
+    7 root       20   0     0     0     0 S  0.0  0.0  0:00.31 ksoftirqd/0
+    8 root       20   0     0     0     0 I  0.0  0.0  0:24.56 rcu_sched
+    9 root       20   0     0     0     0 I  0.0  0.0  0:00.00 rcu_bh
+   10 root       RT   0     0     0     0 S  0.0  0.0  0:00.04 migration/0
+   11 root       RT   0     0     0     0 S  0.0  0.0  0:00.04 watchdog/0
+   12 root       20   0     0     0     0 S  0.0  0.0  0:00.00 cpuhp/0
 ```
 
 ### Comanda htop
