@@ -2,25 +2,11 @@
 
 ## Comprimir i descomprimir
 
-### Comandes gzip i gunzip
-
-> Les comandes **gzip/gunzip** serveixen per comprimir/descomprimir un únic arxiu o directori.
-
-![](/assets/uf2-gzip.png)
-
-El nom de l'arxiu comprimit és el mateix que el de l'arxiu original però afegint l'extensió **.gz**.
-
-```
-gzip -c document
-gunzip -c document.gz
-```
-**Opcions:**
-* `-c` manté l'arxiu original (evita que s'elimini automàticament)
-* `-r` per comprimir de forma recursiva (directoris).
-
 ### Comandes zip i unzip
 
-Les comandes `zip` i `unzip` permeten comprimir i descomprimir arxius i directoris.
+> Les comandes **zip** i **unzip** permeten comprimir i descomprimir **varis arxius o directoris**.
+
+El nom de l'arxiu comprimit és el mateix que el de l'arxiu original però afegint l'extensió **.zip**.
 
 ![](/assets/uf2-zip.png)
 
@@ -34,6 +20,28 @@ Les comandes `zip` i `unzip` permeten comprimir i descomprimir arxius i director
 **Per descomprimir:**
 
 `unzip arxiu_comprimit.zip`
+
+### Comandes gzip i gunzip
+
+> Les comandes **gzip** i **gunzip** serveixen per comprimir/descomprimir **un únic arxiu**.
+
+El nom de l'arxiu comprimit és el mateix que el de l'arxiu original però afegint l'extensió **.gz**.
+
+Si volem **comprimir més d'un arxiu** en un sol arxiu `.gz` necessitarem l'ajuda d'una altre comanda com per exemple `tar`.
+
+![](/assets/uf2-gzip.png)
+
+**Paràmetres:**
+* `-c` manté l'arxiu original (evita que s'elimini automàticament)
+* `-r` per comprimir de forma recursiva (directoris).
+
+**Per comprimir un arxiu:**
+
+`gzip -c document`
+
+**Per descomprimir un arxiu: **
+
+`gunzip -c document.gz`
 
 ## Empaquetar i desempaquetar
 
