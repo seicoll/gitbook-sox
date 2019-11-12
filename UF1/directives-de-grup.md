@@ -88,7 +88,7 @@ Per introduir-nos a les directives de grup el millor és començar amb un exempl
 
 7. S’obrirà l’**Editor de directrius** de la GPO.
 
-8. Anem a **_Configuració d'usuari > Directives > Plantilles administratives > Active Desktop > Active Desktop > Tapiz del escritorio_**.
+8. Anem a **_Configuració d'usuari > Directives > Plantilles administratives > Desktop > Desktop > Tapiz del escritorio_**.
 
 ![](/assets/directriu_escriptori.png)
 
