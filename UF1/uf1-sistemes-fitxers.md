@@ -1,58 +1,60 @@
-# Particions
+# Sistemes de fitxers
 
 ## Introducció
 
-Actualment, els discos tenen molta capacitat d'emmagatzematge. Això permet que es puguin fer subdivisions.
+> Per poder utilitzar una partició, cal donar-li format per gestionar els arxius que s'hi guardaran.
 
-**Perquè crear particions?**
+Els sistemes de fitxers divideixen l'espai de la partició en diferents zones. Per exemple, en el cas del sistema **FAT** hi ha les següents (els altres sistemes solen ser semblants):
 
-* Per poder instal·lar més d'un sistema operatiu (_Dual boot systems_). 
-* Per separar les dades del sistema de les dades dels usuaris.
-Els sistemes operatius inclouen **programes per gestionar les particions** amb les opcions més importants:
+Sector d'arrencada (BOOT): conté informació del sistema de fitxers i l'arrencada del sistema.
+Regió FAT: gestiona l'espai lliure de la partició i normalment està duplicada ja que la informació que conté és molt important.
+Directori arrel: conté la informació dels fitxers i les subcarpetes que es troben en el directori principal (nom, mida, on està guardat, permisos...).
+Àrea de fitxers: és on es guarden els propis fitxers i carpetes.
 
-* Crear el sistema de particionat.
-* Crear i esborrar particions.
-* Redimensionar.
-* Formatar...
 
-Però també es poden trobar altres programes, fins i tot gratuïts, amb altres funcions que els primers no tenen:
+**Característiques importants que han de tenir**
+* Han de permetre la gestió de permisos per diferents usuaris i grups.
+* Han de ser transaccionals (en anglès, **_journaling_**): aquesta característica disminueix molt el perill de perdre arxius o de que el sistema de fitxers quedi danyat en cas que falli una operació d'escriptura.
 
-* Moure particions.
-* Clonar.
+## Sistemes de fitxers Windows
 
-> Els sistemes més habituals per gestionar les particions són **MBR** i **GPT**.
+### FAT32
+Particions de fins a 2 TiB.
+Arxius de fins a 4 GiB.
+No permeten gestionar permisos per diferents usuaris.
+No és transaccional.
 
-### Particionat MBR
+### exFAT
+Particions de fins a 512 TiB (màxim recomanat).
+Arxius de fins a 16 EiB (límit teòric).
+No permeten gestionar permisos per diferents usuaris.
+Per defecte, no és transaccional, però se li pot afegir suport per ser-ho.
 
-* Tota la informació sobre les particions es troba al final del primer sector del disc (**MBR**).
-* Només es poden crear **4 particions primàries**.
-* La mida màxima d'aquestes particions primàries és de **2 TiB**.
-Una de les particions primàries es pot marcar com a **partició activa**. Si hi ha diversos sistemes operatius, arrencarà el que es trobi en aquesta partició.
+### NTFS
+Particions de fins a 16 TiB (màxim 256 TiB).
+Arxius tan grans com la partició.
+És més eficient que FAT32.
+Permet gestionar permisos per diferents usuaris.
+Sistema de fitxers transaccional.
 
-![](/assets/uf1-MBR.png)
+## Sistemes de fitxers Linux
 
-Per superar la **limitació de 4 particions** és possible fer que una d'aquestes 4 sigui una partició estesa.
+### Ext4
+Particions de fins a **1 EiB** (1 exbibyte = 260 Bytes = 1.152.921.504.606.846.976 Bytes).
+Arxius de fins a 16 TiB.
+És compatible amb **ext3**, i **ext3 **també ho és amb **ext4**.
+Permet gestionar permisos per diferents usuaris.
+Sistema de fitxers transaccional.
 
-La **partició estesa (_extended partition_)** serveix per contenir **particions lògiques**, tantes com es vulgui.
+### Reiser4
+Característiques similars a **ext4**, excepte amb la compatibilitat amb **ext3**
 
-![](/assets/uf1-MBR2.png)
-
-### Particionat GPT
-
-* Manté el sector MBR per compatibilitat però no l'utilitza.
-* La informació es troba en els 33 sectors següents al MBR.
-  * Aquesta informació està duplicada en els 33 últims sectors del disc.
-  * En el primer sector (l'últim en la 2ª GPT) hi ha l'encapçalament de GPT.
-  * En els altres 32 sectors hi ha la informació de les 128 particions.
-* Totes les particions són primàries (**no hi ha particions esteses ni lògiques**).
-
-![](/assets/uf1-GPT.svg)
-
-En l'espai lliure encara es poden crear moltes particions més.
+### Swap (o memòria d'intercanvi)
+És un sistema de fitxers especial que s'utilitza quan es necessita més memòria RAM de la que té el maquinari.
 
 ## Documentació i recursos
 
-* **Font d'informació: ** Apunts SOX Pere Sánchez ([http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=7&ref=1012](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=7&ref=1012))
+* **Font d'informació: ** Apunts SOX Pere Sánchez ([http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=9&ref=1014](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=9&ref=1014))
 
 
 
