@@ -1,4 +1,4 @@
-# Sistemes de fitxers
+# Particions
 
 ## Introducció
 
@@ -22,7 +22,7 @@ Però també es poden trobar altres programes, fins i tot gratuïts, amb altres 
 
 > Els sistemes més habituals per gestionar les particions són **MBR** i **GPT**.
 
-## Particionat MBR
+### Particionat MBR
 
 * Tota la informació sobre les particions es troba al final del primer sector del disc (**MBR**).
 * Només es poden crear **4 particions primàries**.
@@ -37,7 +37,7 @@ La **partició estesa (_extended partition_)** serveix per contenir **particions
 
 ![](/assets/uf1-MBR2.png)
 
-## Particionat GPT
+### Particionat GPT
 
 * Manté el sector MBR per compatibilitat però no l'utilitza.
 * La informació es troba en els 33 sectors següents al MBR.
