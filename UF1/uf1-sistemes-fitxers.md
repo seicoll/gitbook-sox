@@ -39,8 +39,16 @@ La **partició estesa (_extended partition_)** serveix per contenir **particions
 
 ## Particionat GPT
 
-![](/assets/uf1-MBR2.png)
+* Manté el sector MBR per compatibilitat però no l'utilitza.
+* La informació es troba en els 33 sectors següents al MBR.
+  * Aquesta informació està duplicada en els 33 últims sectors del disc.
+  * En el primer sector (l'últim en la 2ª GPT) hi ha l'encapçalament de GPT.
+  * En els altres 32 sectors hi ha la informació de les 128 particions.
+* Totes les particions són primàries (**no hi ha particions esteses ni lògiques**).
 
+![](/assets/uf1-GPT.svg)
+
+En l'espai lliure encara es poden crear moltes particions més.
 
 ## Documentació i recursos
 
