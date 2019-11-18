@@ -20,9 +20,26 @@ Però també es poden trobar altres programes, fins i tot gratuïts, amb altres 
 * Moure particions.
 * Clonar.
 
+> Els sistemes més habituals per gestionar les particions són **MBR** i **GPT**.
 
+## Particionat MBR
 
+* Tota la informació sobre les particions es troba al final del primer sector del disc (**MBR**).
+* Només es poden crear **4 particions primàries**.
+* La mida màxima d'aquestes particions primàries és de **2 TiB**.
+Una de les particions primàries es pot marcar com a **partició activa**. Si hi ha diversos sistemes operatius, arrencarà el que es trobi en aquesta partició.
 
+![](/assets/uf1-MBR.png)
+
+Per superar la **limitació de 4 particions** és possible fer que una d'aquestes 4 sigui una partició estesa.
+
+La **partició estesa (_extended partition_)** serveix per contenir **particions lògiques**, tantes com es vulgui.
+
+![](/assets/uf1-MBR2.png)
+
+## Particionat GPT
+
+![](/assets/uf1-MBR2.png)
 
 
 ## Documentació i recursos
