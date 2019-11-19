@@ -86,7 +86,7 @@ Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de co
 
 L'adreça ha de pertànyer a la xarxa on està connectada la màquina.
 
-En **_Ubuntu Server_**, la xarxa es configura editant l'arxiu `/etc/netplan/50-cloud-init.yaml`.
+En **_Ubuntu Server_**, la xarxa es configura editant l'arxiu `/etc/netplan/01-netcfg.yaml`.
 
 * **Adreça IP**: `172.30.A.20` (**_A_** és el teu número d'alumne)
 * **Màscara**: `255.255.0.0` (de 16 bits, com la de la xarxa)
