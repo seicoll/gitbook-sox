@@ -43,7 +43,7 @@ Cal planificar la utilització del disc, decidir les particions necessàries i e
   * El punt de muntatge ha de ser l'arrel del sistema (/).
   * No cal afegir cap opció addicional de muntatge.
 
-* Repetir els passos anteriors per crear una partició primària de 1.6 GB per la carpeta d'usuaris (/home).
+* Repetir els passos anteriors per crear una partició primària per la carpeta d'usuaris (/home).
 * Finalment, crear una altra partició primària amb la resta de l'espai per a la swap (àrea d'intercanvi).
 
 Abans de confirmar, comprovar les particions creades:
