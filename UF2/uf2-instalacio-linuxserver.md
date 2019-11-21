@@ -95,20 +95,17 @@ En **_Ubuntu Server_**, la xarxa es configura editant l'arxiu `/etc/netplan/01-n
 
 ```
 network:
+    version: 2
+    renderer: networkd
     ethernets:
         ens33:
-            addresses:
-            - 172.30.0.20/16
+            addresses: [172.30.0.20/16]
             gateway4: 172.30.0.1
             nameservers:
-                addresses:
-                - 172.30.0.1
-                search: []
-            optional: true
-    version: 2
+                addresses: [172.30.0.1]
 ```
 
-**Reiniciar la targeta** per què agafi la nova configuració:
+**Reiniciar la targeta** perquè agafi la nova configuració:
 
 ```
 sudo netplan apply
