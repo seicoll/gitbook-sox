@@ -52,13 +52,11 @@
 * [Activitats](UF2/uf2-activitats.md)
   * [Task 1. Installation and monitoring of Ubuntu Server](https://docs.google.com/document/d/1FEF6Lwhx1gBTquaueCxxP8tsCwCrZjjinXufxtjQz1E/edit?usp=sharing)
   * [Task 2. Users and groups administration](https://docs.google.com/document/d/1kjiAiGS4XTSVwp8VL9g23Tp2bsWy0rgtnY7ueO7dDKE/edit?usp=sharing)
-  
-<!--
-  * [Activitat 3. Administració de Linux - Usuaris, grups, paquets i actualitzacions](https://docs.google.com/document/d/1F877b3d8EG1K1-cOGYReJHKgfej0Bmyz5-MJr36HZig/edit?usp=sharing)
-  * [Activitat 4. Monitorització i automatització de tasques](https://docs.google.com/document/d/1pN9nfE5v6R6hdDW7PldfMycmKWqfRND670ycCcM62wI/edit?usp=sharing)
-  * [Activitat 5: Instal·lació i administració d’un domini Linux](https://docs.google.com/document/d/1QE7MbVMyVPBRwBqLnQWOFp4BWWiMFh1QsrQjjO_VqnM/edit?usp=sharing)
-  * [Activitat 6: Perfils mòbils amb LDAP](https://docs.google.com/document/d/1VBH9FkhTzcjgfkBWnAQEYT94toewM9iLN5ZqkQQ9Ihg/edit?usp=sharing)
+  * [Task 3. Monitoring and task automation](https://docs.google.com/document/d/1gEU1VATekXAd67NTZOiwI9LIbnVt68Meq2Mr5MSEKus/edit?usp=sharing)
 
+<!--
+  * [Activitat 5: Instal·lació i administració d'un domini Linux](https://docs.google.com/document/d/1QE7MbVMyVPBRwBqLnQWOFp4BWWiMFh1QsrQjjO_VqnM/edit?usp=sharing)
+  * [Activitat 6: Perfils mòbils amb LDAP](https://docs.google.com/document/d/1VBH9FkhTzcjgfkBWnAQEYT94toewM9iLN5ZqkQQ9Ihg/edit?usp=sharing)
 -->
 
 ## UF3. Compartició de recursos i seguretat
