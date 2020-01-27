@@ -23,7 +23,7 @@ El **PAM **està compost per un paquet de llibreries compartides que permeten es
 
 ## Configurar el client LDAP
 
-A continuació configurarem un ubuntu desktop per tal que s’autentifiqui amb un domini ja creat en un servidor LDAP.
+A continuació configurarem un ubuntu desktop per tal que s'autentifiqui amb un domini ja creat en un servidor LDAP.
 
 Per tal que en nostre ubuntu desktop client s'autentiqui per LDAP, instal·larem els paquets i eines necessàries per configurar el client. 
 
@@ -48,6 +48,7 @@ La comprovació es farà validant usuaris un cop s'hagin creat alguns.
 
 Les següents comandes serveixen per indicar al sistema que es puguin autenticar usuaris utilitzant tant base de dades d'usuaris locals (arxius `/etc/password`, `/etc/shadow` i `/etc/group`) com la base de dades del servei LDAP.
 
+**Nova versió: **https://computingforgeeks.com/how-to-configure-ubuntu-18-04-ubuntu-16-04-lts-as-ldap-client/
 
 ```
 sudo apt install ldap-auth-client nscd
