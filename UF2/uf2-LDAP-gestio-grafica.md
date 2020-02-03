@@ -87,7 +87,7 @@ De moment, **aquests avisos es poden ignorar**, però podria ser que en futures 
 
 * **Solució pas a pas:** [http://moodlecf.sapalomera.cat/apunts/smx/sox/uf2/nf2/2713-SolucioPHP.html](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf2/nf2/2713-SolucioPHP.html)
 * **Fitxer funcions.php modificat:** [funcions.php](https://drive.google.com/open?id=15fSJwwD_GsRkiF6D6ckFJNtQqrqYifCd)
-* Per enviar el fitxer al servidor: `scp funcions.php username@remotehost_IP:/usr/share/phpldapadmin/lib/functions.php`
+* Per enviar el fitxer al servidor: `scp functions.php username@remotehost_IP:/usr/share/phpldapadmin/lib/functions.php`
 
 
 ### Gestionar usuaris, grups i unitats organitzatives
