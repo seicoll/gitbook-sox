@@ -86,8 +86,11 @@ De moment, **aquests avisos es poden ignorar**, però podria ser que en futures 
 > Sempre és recomanable buscar solucions als avisos abans que es produeixi l'error.
 
 * **Solució pas a pas:** [http://moodlecf.sapalomera.cat/apunts/smx/sox/uf2/nf2/2713-SolucioPHP.html](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf2/nf2/2713-SolucioPHP.html)
-* **Fitxer funcions.php modificat:** [funcions.php](https://drive.google.com/open?id=15fSJwwD_GsRkiF6D6ckFJNtQqrqYifCd)
-* Per enviar el fitxer al servidor: `scp functions.php username@remotehost_IP:/usr/share/phpldapadmin/lib/functions.php`
+
+1. Descarrega't el fitxer `functions.php`  el teu ordinador:
+   * **Fitxer funcions.php modificat:** [funcions.php](https://drive.google.com/open?id=15fSJwwD_GsRkiF6D6ckFJNtQqrqYifCd)
+2. Envia el fitxer `functions.php` al teu servidor: 
+  `scp functions.php username@remotehost_IP:/usr/share/phpldapadmin/lib/functions.php`
 
 
 ### Gestionar usuaris, grups i unitats organitzatives
