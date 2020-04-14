@@ -68,7 +68,7 @@ D'aquesta forma els possibles errors del sistemes operatiu no afectaran tant dir
 * Utilitzar l'espai restant per crear una altra partició.
 * Seleccionar la partició de 20 GB per instal·lar el sistema i continuar endavant.
 
-![](https://github.com/seicoll/sox/tree/0d2f60ffb695541608217beec864370e547005e0/assets/WSInst07-Particionat.png)
+![](../../.gitbook/assets/wsinst07-particionat.png)
 
 #### Assignar contrasenya de l'usuari Administrador
 
